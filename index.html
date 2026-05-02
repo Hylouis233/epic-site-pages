@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球传染病监测仪表盘</title>
+    <link rel="stylesheet" href="./assets/epic/css/leaflet.css">
+    <link rel="stylesheet" href="./assets/epic/css/MarkerCluster.css">
+    <link rel="stylesheet" href="./assets/epic/css/app.css?v=1777573534">
+    <script>
+        (function () {
+            try {
+                const savedTheme = window.localStorage.getItem("epic-theme");
+                const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                document.documentElement.dataset.theme = savedTheme || systemTheme;
+            } catch (error) {
+                document.documentElement.dataset.theme = "light";
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero-panel">
+            <div class="hero-panel__eyebrow">GLOBAL EPIDEMIC MONITOR</div>
+            <div class="hero-panel__body">
+                <div class="hero-copy">
+                    <p class="hero-copy__kicker">传染病事件监测</p>
+                    <h1>全球传染病监测工作台</h1>
+                    <p class="hero-copy__summary">
+                        汇总邮件、RSS、ProMED 与地区卫生机构数据，按疾病、地点、来源和时间组织近七天监测结果。
+                    </p>
+                </div>
+                <div class="hero-actions">
+                    <button class="button button--ghost button--theme-toggle" id="theme-toggle" type="button" aria-pressed="false">深色</button>
+                    <a class="button button--primary" href="./data/weekly_merged_latest.csv">下载周报 CSV</a>
+                    <a class="button button--secondary" href="#table-panel">查看明细表</a>
+                </div>
+            </div>
+            <div class="hero-meta">
+                <div class="meta-chip">
+                    <span class="meta-chip__label">数据更新时间</span>
+                    <strong id="last-updated">加载中</strong>
+                </div>
+                <div class="meta-chip">
+                    <span class="meta-chip__label">当前状态</span>
+                    <strong id="hero-status">准备加载监测数据</strong>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-layout">
+            <section class="overview-grid" id="overview-grid" aria-label="监测摘要">
+                <article class="metric-card">
+                    <span class="metric-card__marker">REC</span>
+                    <p class="metric-card__label">记录总数</p>
+                    <h2 class="metric-card__value skeleton-line">--</h2>
+                </article>
+                <article class="metric-card">
+                    <span class="metric-card__marker">DIS</span>
+                    <p class="metric-card__label">疾病类型</p>
+                    <h2 class="metric-card__value skeleton-line">--</h2>
+                </article>
+                <article class="metric-card">
+                    <span class="metric-card__marker">CON</span>
+                    <p class="metric-card__label">洲别覆盖</p>
+                    <h2 class="metric-card__value skeleton-line">--</h2>
+                </article>
+                <article class="metric-card">
+                    <span class="metric-card__marker">UPD</span>
+                    <p class="metric-card__label">最新日期</p>
+                    <h2 class="metric-card__value skeleton-line">--</h2>
+                </article>
+            </section>
+
+            <section class="control-panel" aria-labelledby="filters-title">
+                <div class="panel-heading">
+                    <div>
+                        <p class="panel-heading__eyebrow">筛选与检索</p>
+                        <h2 id="filters-title">同一组条件，同时驱动摘要、地图和明细。</h2>
+                    </div>
+                    <button class="button button--ghost" id="reset-filters" type="button">重置筛选</button>
+                </div>
+
+                <form class="filters-grid" id="filters-form">
+                    <label class="field">
+                        <span class="field__label">关键词</span>
+                        <input id="keyword-input" name="keyword" type="search" placeholder="疾病、地点、来源机构、描述">
+                    </label>
+
+                    <label class="field">
+                        <span class="field__label">疾病类型</span>
+                        <select id="disease-select" name="disease">
+                            <option value="">全部疾病</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span class="field__label">洲别</span>
+                        <select id="continent-select" name="continent">
+                            <option value="">全部洲别</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span class="field__label">开始日期</span>
+                        <input id="date-from-input" name="date_from" type="date">
+                    </label>
+
+                    <label class="field">
+                        <span class="field__label">结束日期</span>
+                        <input id="date-to-input" name="date_to" type="date">
+                    </label>
+                </form>
+
+                <div class="filter-summary">
+                    <span class="filter-summary__label">当前条件</span>
+                    <strong id="filter-summary-text">未应用筛选。</strong>
+                </div>
+            </section>
+
+            <section class="panel panel--intel" aria-labelledby="epietl-title">
+                <div class="panel-heading">
+                    <div>
+                        <p class="panel-heading__eyebrow">外部情报</p>
+                        <h2 id="epietl-title">EpiETL 公共风险摘要</h2>
+                    </div>
+                    <div class="panel-heading__meta" id="epietl-meta">正在同步公开情报快照</div>
+                </div>
+
+                <div class="intel-grid">
+                    <div class="intel-metrics" id="epietl-metrics">
+                        <article class="metric-card">
+                            <span class="metric-card__marker">CHN</span>
+                            <p class="metric-card__label">监测通道</p>
+                            <h2 class="metric-card__value skeleton-line">--</h2>
+                        </article>
+                        <article class="metric-card">
+                            <span class="metric-card__marker">RPT</span>
+                            <p class="metric-card__label">累计报告</p>
+                            <h2 class="metric-card__value skeleton-line">--</h2>
+                        </article>
+                        <article class="metric-card">
+                            <span class="metric-card__marker">PDG</span>
+                            <p class="metric-card__label">待处理</p>
+                            <h2 class="metric-card__value skeleton-line">--</h2>
+                        </article>
+                        <article class="metric-card">
+                            <span class="metric-card__marker">RSK</span>
+                            <p class="metric-card__label">风险事件</p>
+                            <h2 class="metric-card__value skeleton-line">--</h2>
+                        </article>
+                    </div>
+
+                    <div class="intel-block">
+                        <div class="intel-block__header">
+                            <strong>国家风险分布</strong>
+                            <span id="epietl-summary-text">等待快照</span>
+                        </div>
+                        <div class="intel-risk-list" id="epietl-country-risks"></div>
+                    </div>
+
+                    <div class="intel-block">
+                        <div class="intel-block__header">
+                            <strong>重点事件</strong>
+                            <span id="epietl-events-meta">等待快照</span>
+                        </div>
+                        <div class="intel-event-list" id="epietl-events"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel panel--map" aria-labelledby="map-title">
+                <div class="panel-heading">
+                    <div>
+                        <p class="panel-heading__eyebrow">地图视图</p>
+                        <h2 id="map-title">事件地理分布</h2>
+                    </div>
+                </div>
+                <div class="map-toolbar">
+                    <div class="panel-heading__meta" id="map-meta">正在准备点位数据</div>
+                    <div class="map-legend" aria-label="聚合强度图例">
+                        <span class="map-legend__label">聚合强度</span>
+                        <span class="map-legend__item"><span class="map-legend__swatch map-legend__swatch--small"></span>1-2</span>
+                        <span class="map-legend__item"><span class="map-legend__swatch map-legend__swatch--medium"></span>3-5</span>
+                        <span class="map-legend__item"><span class="map-legend__swatch map-legend__swatch--elevated"></span>6-11</span>
+                        <span class="map-legend__item"><span class="map-legend__swatch map-legend__swatch--high"></span>12-24</span>
+                        <span class="map-legend__item"><span class="map-legend__swatch map-legend__swatch--critical"></span>25+</span>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <div id="map" aria-label="疫情点位地图"></div>
+                    <div class="panel-empty panel-empty--overlay hidden" id="map-empty">
+                        当前筛选条件下没有可展示的地图点位。
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel panel--table" id="table-panel" aria-labelledby="table-title">
+                <div class="panel-heading">
+                    <div>
+                        <p class="panel-heading__eyebrow">明细表格</p>
+                        <h2 id="table-title">事件明细</h2>
+                    </div>
+                    <div class="panel-heading__meta" id="table-meta">滚动到此区域后自动加载</div>
+                </div>
+
+                <div class="table-placeholder" id="table-placeholder">
+                    <div class="table-placeholder__line"></div>
+                    <div class="table-placeholder__line"></div>
+                    <div class="table-placeholder__line"></div>
+                    <p>当前只加载摘要和地图。进入本区后，系统会请求分页明细。</p>
+                </div>
+
+                <div class="table-shell hidden" id="table-shell">
+                    <div class="table-status-row">
+                        <span id="table-count">0 条记录</span>
+                        <span id="table-page-status">第 1 页</span>
+                    </div>
+
+                    <div class="table-scroll">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>日期</th>
+                                    <th>暴发地点</th>
+                                    <th>传染病</th>
+                                    <th>情况介绍</th>
+                                    <th>症状</th>
+                                    <th>扑灭措施</th>
+                                    <th>传播方式</th>
+                                    <th>来源机构</th>
+                                    <th>来源</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="pagination" id="pagination"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        window.EPIC_DASHBOARD_CONFIG = {
+            "siteMode": "static",
+            "generatedAt": "2026-05-02T03:47:21Z",
+            "staticDataUrl": "./data/records.json",
+            "staticEpietlUrl": "./data/epietl_public.json"
+};
+    </script>
+    <script src="./assets/epic/js/leaflet.js"></script>
+    <script src="./assets/epic/js/leaflet.markercluster.js"></script>
+    <script src="./assets/epic/js/dashboard.js?v=1777573534"></script>
+</body>
+</html>
