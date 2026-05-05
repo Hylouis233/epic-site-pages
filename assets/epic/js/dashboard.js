@@ -111,6 +111,77 @@
         return `<span class="severity-pill severity-pill--${escapeHtml(normalized || "unknown")}">${escapeHtml(label)}</span>`;
     }
 
+    function clampNumber(value, min, max) {
+        const number = Number(value);
+        if (!Number.isFinite(number)) {
+            return min;
+        }
+        return Math.min(Math.max(number, min), max);
+    }
+
+    function getGeoPoint(record) {
+        if (!hasValidCoordinates(record)) {
+            return null;
+        }
+
+        const x = typeof record.geo_x === "number"
+            ? record.geo_x
+            : ((record.longitude + 180) / 360) * 100;
+        const y = typeof record.geo_y === "number"
+            ? record.geo_y
+            : ((90 - record.latitude) / 180) * 100;
+        return {
+            x: clampNumber(x, 0, 100),
+            y: clampNumber(y, 0, 100),
+        };
+    }
+
+    function renderAbstractGeoPlot(record, modifier) {
+        const point = getGeoPoint(record || {});
+        const className = ["geo-plot", modifier ? `geo-plot--${modifier}` : ""].filter(Boolean).join(" ");
+        if (!point) {
+            return `
+                <div class="${className} geo-plot--empty" role="img" aria-label="定位待核验">
+                    <svg viewBox="0 0 100 56" focusable="false" aria-hidden="true">
+                        <rect x="1" y="1" width="98" height="54" rx="8"></rect>
+                    </svg>
+                </div>
+            `;
+        }
+
+        return `
+            <div class="${className}" role="img" aria-label="无边界定位图，点位为 ${escapeHtml(record.geo_coordinates || "")}">
+                <svg viewBox="0 0 100 56" focusable="false" aria-hidden="true">
+                    <rect x="1" y="1" width="98" height="54" rx="8"></rect>
+                    <circle class="geo-plot__halo" cx="${point.x}" cy="${point.y}" r="7"></circle>
+                    <circle class="geo-plot__point" cx="${point.x}" cy="${point.y}" r="3.2"></circle>
+                </svg>
+            </div>
+        `;
+    }
+
+    function renderGeoSummary(record, modifier) {
+        const status = record.geo_status_label || (hasValidCoordinates(record) ? "已生成定位" : "定位待核验");
+        const precision = record.geo_precision || (hasValidCoordinates(record) ? "候选坐标" : "未定位");
+        const coordinates = record.geo_coordinates || (
+            hasValidCoordinates(record) ? `${record.latitude.toFixed(4)}, ${record.longitude.toFixed(4)}` : "无可用坐标"
+        );
+        const note = record.geo_note || "抽象无边界定位图，仅作态势索引。";
+        return `
+            <div class="geo-summary ${modifier ? `geo-summary--${modifier}` : ""}">
+                ${renderAbstractGeoPlot(record, modifier)}
+                <div class="geo-summary__body">
+                    <div class="geo-summary__row">
+                        <span class="geo-summary__status">${escapeHtml(status)}</span>
+                        <span>${escapeHtml(precision)}</span>
+                    </div>
+                    <div class="geo-summary__coordinates">${escapeHtml(coordinates)}</div>
+                    <div class="geo-summary__note">${escapeHtml(note)}</div>
+                </div>
+            </div>
+        `;
+    }
+
     function summarizeFilters() {
         const parts = [];
         if (state.filters.keyword) {
@@ -341,6 +412,14 @@
                 description_cn: record.description_cn,
                 continent: record.continent,
                 source_org: record.source_org,
+                geo_status: record.geo_status,
+                geo_status_label: record.geo_status_label,
+                geo_precision: record.geo_precision,
+                geo_confidence: record.geo_confidence,
+                geo_coordinates: record.geo_coordinates,
+                geo_x: record.geo_x,
+                geo_y: record.geo_y,
+                geo_note: record.geo_note,
             };
         });
     }
@@ -418,10 +497,6 @@
 
         L.control.zoom({ position: "bottomright" }).addTo(state.map);
         state.map.attributionControl.setPrefix("");
-        L.tileLayer("https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}", {
-            subdomains: "1234",
-            attribution: "地图数据 © 高德地图，地图支持 © Leaflet",
-        }).addTo(state.map);
 
         state.markers = L.markerClusterGroup({
             iconCreateFunction: createClusterIcon,
@@ -531,6 +606,7 @@
                     <p><strong>地点：</strong>${escapeHtml(item.location || "未知")}</p>
                     <p><strong>日期：</strong>${escapeHtml(item.original_date || "未知")}</p>
                     <p><strong>来源机构：</strong>${escapeHtml(item.source_org || "未知")}</p>
+                    ${renderGeoSummary(item, "popup")}
                     <p>${escapeHtml(item.description_cn || "暂无更多描述。")}</p>
                 </div>
             `, { maxWidth: 320 });
@@ -660,6 +736,13 @@
                     link.className = "table-cell__link";
                     link.textContent = "查看来源";
                     cell.appendChild(link);
+                } else if (column.key === "description_cn") {
+                    cell.innerHTML = `
+                        <div class="event-description">
+                            <p>${escapeHtml(item.description_cn || "—")}</p>
+                            ${renderGeoSummary(item, "table")}
+                        </div>
+                    `;
                 } else {
                     cell.textContent = item[column.key] || "—";
                 }

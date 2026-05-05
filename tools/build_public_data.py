@@ -9,12 +9,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
+from xml.etree import ElementTree as ET
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 INDEX_PATH = ROOT / "index.html"
 TIMEOUT_SECONDS = 60
+PUBLIC_SITE_URL = "https://hylouis233.github.io/epic-site-pages/"
+MAX_TABLE_PAGE_SIZE = 200
 
 FIELD_ORIGINAL_DATE = "原始日期"
 FIELD_START_DATE = "开始日期"
@@ -369,8 +372,49 @@ def fetch_bytes(base_url, path, accept):
         return response.read()
 
 
+def fetch_text(base_url, path, accept="text/plain"):
+    return fetch_bytes(base_url, path, accept).decode("utf-8")
+
+
 def fetch_json(base_url, path):
     return json.loads(fetch_bytes(base_url, path, "application/json").decode("utf-8"))
+
+
+def fetch_table_records(base_url):
+    records = []
+    page = 1
+    total = None
+    while True:
+        payload = fetch_json(base_url, f"/api/data/table/?page={page}&page_size={MAX_TABLE_PAGE_SIZE}")
+        if not isinstance(payload, dict):
+            raise ValueError("table data response must be an object")
+        items = payload.get("items") or []
+        if not isinstance(items, list):
+            raise ValueError("table data items must be a list")
+        records.extend([item for item in items if isinstance(item, dict)])
+        try:
+            total = int(payload.get("total") or len(records))
+        except Exception:
+            total = len(records)
+        if not items or len(records) >= total:
+            break
+        page += 1
+    return records
+
+
+def rewrite_rss_site_url(rss_text, public_site_url):
+    root = ET.fromstring(rss_text)
+    channel = root.find("channel")
+    if channel is not None:
+        link = channel.find("link")
+        if link is None:
+            link = ET.SubElement(channel, "link")
+        link.text = public_site_url
+    try:
+        ET.indent(root, space="  ")
+    except AttributeError:
+        pass
+    return ET.tostring(root, encoding="utf-8", xml_declaration=True).decode("utf-8")
 
 
 def write_json(path, payload):
@@ -391,10 +435,36 @@ def main():
     public_base = clean_text(os.getenv("EPIC_PUBLIC_SOURCE_BASE_URL"))
     if not public_base:
         raise SystemExit("EPIC_PUBLIC_SOURCE_BASE_URL secret is required.")
+    public_site_url = clean_text(os.getenv("EPIC_PUBLIC_SITE_URL")) or PUBLIC_SITE_URL
 
     raw_records = fetch_json(public_base, "/api/data/")
     if not isinstance(raw_records, list):
         raise ValueError("public data response must be a list")
+    compatibility_payload = ensure_compatibility_payload(raw_records)
+
+    try:
+        records = fetch_table_records(public_base)
+    except Exception:
+        records = normalize_records(compatibility_payload)
+
+    try:
+        overview = fetch_json(public_base, "/api/data/overview/")
+        if not isinstance(overview, dict):
+            overview = build_overview_payload(records)
+    except Exception:
+        overview = build_overview_payload(records)
+
+    try:
+        map_payload = fetch_json(public_base, "/api/data/map/")
+        if not isinstance(map_payload, list):
+            map_payload = build_map_payload(records)
+    except Exception:
+        map_payload = build_map_payload(records)
+
+    try:
+        rss_text = rewrite_rss_site_url(fetch_text(public_base, "/rss.xml", "application/rss+xml"), public_site_url)
+    except Exception:
+        rss_text = ""
 
     try:
         epietl_payload = fetch_json(public_base, "/api/data/epietl/")
@@ -412,11 +482,7 @@ def main():
         weekly_embedded = (DATA_DIR / "weekly_merged_latest.csv").exists()
 
     generated_at = current_utc_timestamp()
-    compatibility_payload = ensure_compatibility_payload(raw_records)
-    records = normalize_records(compatibility_payload)
-    overview = build_overview_payload(records)
     overview["last_modified"] = generated_at
-    map_payload = build_map_payload(records)
     build_meta = {
         "generated_at": generated_at,
         "record_count": len(records),
@@ -433,6 +499,8 @@ def main():
     write_json(DATA_DIR / "map.json", map_payload)
     write_json(DATA_DIR / "epietl_public.json", epietl_payload)
     write_json(DATA_DIR / "build_meta.json", build_meta)
+    if rss_text:
+        (ROOT / "rss.xml").write_text(rss_text, encoding="utf-8")
     update_index_timestamp(generated_at)
 
     print(f"Updated public data snapshot: records={len(records)} map_points={len(map_payload)}")

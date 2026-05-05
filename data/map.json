@@ -8,7 +8,15 @@
     "longitude": 71.2475,
     "description_cn": "2026年4月30日，巴基斯坦拉瓦尔品第报告登革热933例（含1例确诊），加强监测和灭蚊。",
     "continent": "亚洲",
-    "source_org": "COM"
+    "source_org": "APP",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "30.3308, 71.2475",
+    "geo_x": 69.79,
+    "geo_y": 33.15,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "c75fe5a8bc6c4410",
@@ -19,7 +27,15 @@
     "longitude": 107.9651,
     "description_cn": "2026年4月河静省VungAng区登革热疫情，累计47例，防控措施进行中",
     "continent": "亚洲",
-    "source_org": "Vietnam"
+    "source_org": "Vietnam",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "15.9267, 107.9651",
+    "geo_x": 79.99,
+    "geo_y": 41.15,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "70112af1ded3d7d1",
@@ -30,7 +46,15 @@
     "longitude": -51.8149,
     "description_cn": "巴拉那州报告登革热病例69,066例，确诊15,501例，死亡12例。",
     "continent": "南美洲",
-    "source_org": "COM"
+    "source_org": "Omaringa",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-24.4842, -51.8149",
+    "geo_x": 35.61,
+    "geo_y": 63.6,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "3e75bbe3c23b3517",
@@ -41,7 +65,15 @@
     "longitude": -100.4459,
     "description_cn": "美国多州暴发沙门氏菌感染，至少34人感染，13例住院，主要因接触后院家禽所致",
     "continent": "北美洲",
-    "source_org": "KVUE"
+    "source_org": "KVUE",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "39.7837, -100.4459",
+    "geo_x": 22.1,
+    "geo_y": 27.9,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "a0f888ed1b4f9ead",
@@ -52,7 +84,15 @@
     "longitude": -51.9253,
     "description_cn": "巴西卫生部建议加强对奥罗普切病毒的垂直传播监测，已累计确诊7044例，涉及16州。",
     "continent": "南美洲",
-    "source_org": "COM"
+    "source_org": "Omaringa",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-14.2350, -51.9253",
+    "geo_x": 35.58,
+    "geo_y": 57.91,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "dc890e04b3bb0e2f",
@@ -63,7 +103,15 @@
     "longitude": 151.0928,
     "description_cn": "2026年4月悉尼发现新麻疹病例，累计45例，公共卫生部门提醒监测症状并接种疫苗。",
     "continent": "大洋洲",
-    "source_org": "7NEWS"
+    "source_org": "7NEWS",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-33.8374, 151.0928",
+    "geo_x": 91.97,
+    "geo_y": 68.8,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "2286b2d214a7a02e",
@@ -74,7 +122,15 @@
     "longitude": -72.3571,
     "description_cn": "海地白喉疫情，469例确诊，7例死亡",
     "continent": "北美洲",
-    "source_org": "世界卫生组织"
+    "source_org": "世界卫生组织",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "19.1400, -72.3571",
+    "geo_x": 29.9,
+    "geo_y": 39.37,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "9407e4e4ba895083",
@@ -85,7 +141,15 @@
     "longitude": 134.755,
     "description_cn": "2026年4月昆州流感激增，Super‑K毒株传播，警告病例或翻四倍，累计8668例，死亡数高。",
     "continent": "大洋洲",
-    "source_org": "Sydneytoday"
+    "source_org": "Sydneytoday",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-24.7761, 134.7550",
+    "geo_x": 87.43,
+    "geo_y": 63.76,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "84d7ebe35d499a20",
@@ -96,7 +160,15 @@
     "longitude": -8.1354,
     "description_cn": "葡萄牙确诊第二例H1N1流感，患者33岁，来自纽约，已隔离治疗。",
     "continent": "欧洲",
-    "source_org": "Portugalresident"
+    "source_org": "Portugalresident",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "39.6622, -8.1354",
+    "geo_x": 47.74,
+    "geo_y": 27.97,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "31749a2578a17337",
@@ -107,7 +179,15 @@
     "longitude": -175.1982,
     "description_cn": "2026年4月29日，汤加报告42例登革热确诊，1例住院，无死亡。",
     "continent": "大洋洲",
-    "source_org": "Substack"
+    "source_org": "Substack",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-21.1395, -175.1982",
+    "geo_x": 1.33,
+    "geo_y": 61.74,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "698ce25833596ce5",
@@ -118,7 +198,15 @@
     "longitude": -74.4042,
     "description_cn": "新泽西和纽约地区蚊季到来，2025年皇后区报告2例西尼罗病毒人类感染病例。",
     "continent": "北美洲",
-    "source_org": "Northjersey"
+    "source_org": "Northjersey",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "40.0757, -74.4042",
+    "geo_x": 29.33,
+    "geo_y": 27.74,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "060f2a49503fdd0d",
@@ -129,7 +217,15 @@
     "longitude": -51.9253,
     "description_cn": "巴西隆德里纳市2026年4月25日发布登革热公报，报告22359例，确诊4647例，死亡9例。",
     "continent": "南美洲",
-    "source_org": "COM"
+    "source_org": "Omaringa",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-14.2350, -51.9253",
+    "geo_x": 35.58,
+    "geo_y": 57.91,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "bfe7871efd5df334",
@@ -140,7 +236,15 @@
     "longitude": 24.0,
     "description_cn": "南非豪登省2026年首季414例疟疾，11人死亡，已超去年全年。",
     "continent": "非洲",
-    "source_org": "CO"
+    "source_org": "Sundaytribune",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-30.0000, 24.0000",
+    "geo_x": 56.67,
+    "geo_y": 66.67,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "4f846dde33e85522",
@@ -151,7 +255,15 @@
     "longitude": -51.9253,
     "description_cn": "巴西2025年SARI病例报告：累计15.9万例，主要病原为RSV、流感及新冠病毒",
     "continent": "南美洲",
-    "source_org": "COM"
+    "source_org": "Omaringa",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-14.2350, -51.9253",
+    "geo_x": 35.58,
+    "geo_y": 57.91,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "e4e30c1d5c417291",
@@ -162,7 +274,15 @@
     "longitude": 113.5463,
     "description_cn": "澳门接获1例输入性登革热病例，患者在柬埔寨旅游后出现发热等症状，已住院治疗。",
     "continent": "亚洲",
-    "source_org": "GOV"
+    "source_org": "GOV",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "22.1969, 113.5463",
+    "geo_x": 81.54,
+    "geo_y": 37.67,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "1a6bca92c4c8e769",
@@ -173,7 +293,15 @@
     "longitude": -51.9253,
     "description_cn": "巴西2025年第34周报告显示新冠引起的SARS病例增加，163,956例SARI病例，涉及20州",
     "continent": "南美洲",
-    "source_org": "COM"
+    "source_org": "Omaringa",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-14.2350, -51.9253",
+    "geo_x": 35.58,
+    "geo_y": 57.91,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "d77382385a650e98",
@@ -184,7 +312,15 @@
     "longitude": 90.2934,
     "description_cn": "孟加拉国持续降雨，专家警告登革热风险上升，已致4人死亡、2449人住院。",
     "continent": "亚洲",
-    "source_org": "Thedailystar"
+    "source_org": "Thedailystar",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "24.4769, 90.2934",
+    "geo_x": 75.08,
+    "geo_y": 36.4,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "e6a02296c5599310",
@@ -195,7 +331,15 @@
     "longitude": 113.5463,
     "description_cn": "澳门报告三起学校流感聚集性感染，共17例轻症患者，提醒居民接种疫苗。",
     "continent": "亚洲",
-    "source_org": "GOV"
+    "source_org": "GOV",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "22.1969, 113.5463",
+    "geo_x": 81.54,
+    "geo_y": 37.67,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "72f3dafb635d4fac",
@@ -206,7 +350,15 @@
     "longitude": 71.2475,
     "description_cn": "2026年4月28日，巴基斯坦南瓦济里斯坦地区报告255例利什曼病，卫生部门提供治疗并呼吁防蚊。",
     "continent": "亚洲",
-    "source_org": "Pakistan Today"
+    "source_org": "Pakistan Today",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "30.3308, 71.2475",
+    "geo_x": 69.79,
+    "geo_y": 33.15,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "8d9bb5d36462fd9b",
@@ -217,7 +369,15 @@
     "longitude": 121.774,
     "description_cn": "菲律宾卡皮斯省2026年1月至4月累计216例登革热病例，死亡1例，罗哈斯市最多。",
     "continent": "亚洲",
-    "source_org": "COM"
+    "source_org": "Dailyguardian",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "12.8797, 121.7740",
+    "geo_x": 83.83,
+    "geo_y": 42.84,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "87edce775ffdc3fa",
@@ -228,7 +388,15 @@
     "longitude": 106.2947,
     "description_cn": "2026年初，越南永隆省手足口病和登革热病例激增，累计登革热逾1940例，手足口病逾1000例。",
     "continent": "亚洲",
-    "source_org": "Laodong"
+    "source_org": "Laodong",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "10.0468, 106.2947",
+    "geo_x": 79.53,
+    "geo_y": 44.42,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "d5bb4e06a9c7d891",
@@ -239,7 +407,15 @@
     "longitude": -175.1982,
     "description_cn": "2026年4月27日，汤加报告累计39例登革热确诊病例，其中3例住院，无死亡。",
     "continent": "大洋洲",
-    "source_org": "Reliefweb"
+    "source_org": "Reliefweb",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-21.1395, -175.1982",
+    "geo_x": 1.33,
+    "geo_y": 61.74,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "14449b860ce9580e",
@@ -250,7 +426,15 @@
     "longitude": -81.932,
     "description_cn": "南卡罗来纳州麻疹疫情累计997例，21人住院，疫情已结束。",
     "continent": "北美洲",
-    "source_org": "Aspen Public Radio"
+    "source_org": "Aspen Public Radio",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "34.9496, -81.9320",
+    "geo_x": 27.24,
+    "geo_y": 30.58,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "b4b552d8ed846289",
@@ -261,7 +445,15 @@
     "longitude": -81.932,
     "description_cn": "2025年9月至2026年4月，美国南卡罗来纳州麻疹暴发，累计997例，为美国35年来最大规模。",
     "continent": "北美洲",
-    "source_org": "WBTV"
+    "source_org": "WBTV",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "34.9496, -81.9320",
+    "geo_x": 27.24,
+    "geo_y": 30.58,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "3638311c05f8a06b",
@@ -272,7 +464,15 @@
     "longitude": -100.4459,
     "description_cn": "2025年10月至2026年3月，南卡上州麻疹累计997例，美国35年来最大规模。",
     "continent": "北美洲",
-    "source_org": "WLTX"
+    "source_org": "WLTX",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "39.7837, -100.4459",
+    "geo_x": 22.1,
+    "geo_y": 27.9,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "a154d9471dc20afd",
@@ -283,7 +483,15 @@
     "longitude": 113.5,
     "description_cn": "2026年第16周广东省流感活动上升，登革热累计69例，基孔肯雅热3例",
     "continent": "亚洲",
-    "source_org": "广东省疾病预防控制中心"
+    "source_org": "广东省疾病预防控制中心",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "23.5000, 113.5000",
+    "geo_x": 81.53,
+    "geo_y": 36.94,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "4c57b91a91676b1a",
@@ -294,7 +502,15 @@
     "longitude": -81.932,
     "description_cn": "美国南卡罗来纳州斯巴坦堡县2025年10月至2026年4月麻疹暴发，累计997例，33所学校受影响。",
     "continent": "北美洲",
-    "source_org": "Healthbeat"
+    "source_org": "Healthbeat",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "34.9496, -81.9320",
+    "geo_x": 27.24,
+    "geo_y": 30.58,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "381a9c68a4d65ece",
@@ -305,7 +521,15 @@
     "longitude": -100.4459,
     "description_cn": "美国南卡罗来纳州2025年10月起麻疹暴发，累计997例，21人住院，疫情已结束。",
     "continent": "北美洲",
-    "source_org": "WUSF"
+    "source_org": "WUSF",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "39.7837, -100.4459",
+    "geo_x": 22.1,
+    "geo_y": 27.9,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "2ddc0a22cb10054c",
@@ -316,7 +540,15 @@
     "longitude": -81.932,
     "description_cn": "南卡罗来纳州麻疹疫情结束，累计997例感染，21人住院，耗资210万美元。",
     "continent": "北美洲",
-    "source_org": "WRAL"
+    "source_org": "WRAL",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "34.9496, -81.9320",
+    "geo_x": 27.24,
+    "geo_y": 30.58,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "fdb763245053ea86",
@@ -327,7 +559,15 @@
     "longitude": -1.5209,
     "description_cn": "加纳阿散蒂地区2025年疟疾入院病例79,229例，较2023年下降，但预防措施仍存缺口。",
     "continent": "非洲",
-    "source_org": "Modernghana"
+    "source_org": "Modernghana",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "6.7470, -1.5209",
+    "geo_x": 49.58,
+    "geo_y": 46.25,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "3f8a043fc450823b",
@@ -338,7 +578,15 @@
     "longitude": -81.932,
     "description_cn": "南卡罗来纳州宣布结束麻疹疫情，累计确诊997例，90%以上病例在斯帕坦堡县，932例未接种疫苗。",
     "continent": "北美洲",
-    "source_org": "Yahoo News"
+    "source_org": "Yahoo News",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "34.9496, -81.9320",
+    "geo_x": 27.24,
+    "geo_y": 30.58,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "94885f1d331f3534",
@@ -349,7 +597,15 @@
     "longitude": 114.1694,
     "description_cn": "香港发现2026年首例本地登革热病例，患者21岁，已住院，工地停工。",
     "continent": "亚洲",
-    "source_org": "COM"
+    "source_org": "Bjnews",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "22.3193, 114.1694",
+    "geo_x": 81.71,
+    "geo_y": 37.6,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "83fb80884c6dd2af",
@@ -360,7 +616,15 @@
     "longitude": 113.5463,
     "description_cn": "澳门报告4宗流感群聚，累计约38例患者，13例乙流阳性",
     "continent": "亚洲",
-    "source_org": "GOV"
+    "source_org": "GOV",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "22.1969, 113.5463",
+    "geo_x": 81.54,
+    "geo_y": 37.67,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "fa7b1c40c6a3187d",
@@ -371,7 +635,15 @@
     "longitude": 127.6961,
     "description_cn": "2026第17周韩国流感6.9例/千门诊，入院58例；新冠入院55例；急性呼吸道感染入院1593例",
     "continent": "亚洲",
-    "source_org": "GO"
+    "source_org": "KDCA",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "36.6384, 127.6961",
+    "geo_x": 85.47,
+    "geo_y": 29.65,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "b28a21282a837de7",
@@ -382,7 +654,15 @@
     "longitude": 138.2529,
     "description_cn": "日本2026年第16周COVID-19报告，2,556例，0.68/哨点，较去年下降。",
     "continent": "亚洲",
-    "source_org": "日本厚生劳动省"
+    "source_org": "日本厚生劳动省",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "36.2048, 138.2529",
+    "geo_x": 88.4,
+    "geo_y": 29.89,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "544e0d2f90cf9bc1",
@@ -393,7 +673,15 @@
     "longitude": 113.5,
     "description_cn": "广东省报告登革热7例，累计69例，另有基孔肯雅热3例。",
     "continent": "亚洲",
-    "source_org": "广东省疾病预防控制中心"
+    "source_org": "广东省疾病预防控制中心",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "地点级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "23.5000, 113.5000",
+    "geo_x": 81.53,
+    "geo_y": 36.94,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "7d41e9f6cb7dc730",
@@ -404,7 +692,15 @@
     "longitude": 24.0,
     "description_cn": "南非2026年第16周流感检出15例，RSV累计205例，阳性率约10%",
     "continent": "非洲",
-    "source_org": "南非国家传染病研究所（NICD）"
+    "source_org": "南非国家传染病研究所（NICD）",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "-30.0000, 24.0000",
+    "geo_x": 56.67,
+    "geo_y": 66.67,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "c24489ae44172e39",
@@ -415,7 +711,15 @@
     "longitude": 138.2529,
     "description_cn": "日本2026年第16周流感3457例，COVID-19 2556例",
     "continent": "亚洲",
-    "source_org": "GO"
+    "source_org": "JIHS",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "36.2048, 138.2529",
+    "geo_x": 88.4,
+    "geo_y": 29.89,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "2453a0a92e20e85e",
@@ -426,7 +730,15 @@
     "longitude": -106.3468,
     "description_cn": "加拿大第15周流感阳性率6.2%，检测1703例，住院率0.6/10万，疫情稳定。",
     "continent": "北美洲",
-    "source_org": "Canada"
+    "source_org": "Canada",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "56.1304, -106.3468",
+    "geo_x": 20.46,
+    "geo_y": 18.82,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "aa5316ef69d5553d",
@@ -437,7 +749,15 @@
     "longitude": 114.1694,
     "description_cn": "2026年04月18日 香港发生季节性流感相关疫情，严重流感5例，学校流感暴发8宗，院舍流感暴发2宗",
     "continent": "亚洲",
-    "source_org": "GOV"
+    "source_org": "CHP",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "22.3193, 114.1694",
+    "geo_x": 81.71,
+    "geo_y": 37.6,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "01e02ad9f40c9e53",
@@ -448,7 +768,15 @@
     "longitude": 114.1694,
     "description_cn": "2026年04月18日 香港发生COVID-19相关疫情，确诊病例11例，重症1例",
     "continent": "亚洲",
-    "source_org": "GOV"
+    "source_org": "CHP",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "22.3193, 114.1694",
+    "geo_x": 81.71,
+    "geo_y": 37.6,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   },
   {
     "id": "90504446b81ed81d",
@@ -459,6 +787,14 @@
     "longitude": -89.3354,
     "description_cn": "2026年3月15日WHO报告：28天内全球新增COVID-19病例38,516例，涉及80个国家。",
     "continent": "北美洲",
-    "source_org": "WHO"
+    "source_org": "WHO",
+    "geo_status": "located",
+    "geo_status_label": "已生成定位",
+    "geo_precision": "区域级候选坐标",
+    "geo_confidence": "medium",
+    "geo_coordinates": "43.2258, -89.3354",
+    "geo_x": 25.18,
+    "geo_y": 25.99,
+    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
   }
 ]

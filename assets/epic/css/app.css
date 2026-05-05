@@ -21,10 +21,9 @@
     --skeleton: rgba(0, 0, 0, 0.08);
     --skeleton-glint: rgba(255, 255, 255, 0.72);
     --map-bg: #e5e5e5;
+    --map-grid: rgba(17, 17, 17, 0.045);
     --table-head: #eeeeee;
     --row-hover: #f7f7f7;
-    --tile-filter: grayscale(1) saturate(0) contrast(0.92) brightness(1.03);
-    --tile-opacity: 0.92;
     --cluster-ring: rgba(255, 255, 255, 0.94);
     --cluster-small: #979797;
     --cluster-medium: #727272;
@@ -58,10 +57,9 @@
     --skeleton: rgba(255, 255, 255, 0.1);
     --skeleton-glint: rgba(255, 255, 255, 0.18);
     --map-bg: #171717;
+    --map-grid: rgba(255, 255, 255, 0.055);
     --table-head: #1f1f1f;
     --row-hover: #191919;
-    --tile-filter: grayscale(1) saturate(0) invert(1) contrast(1.02) brightness(0.72);
-    --tile-opacity: 0.88;
     --cluster-ring: rgba(255, 255, 255, 0.86);
     --cluster-small: #8f8f8f;
     --cluster-medium: #737373;
@@ -521,17 +519,20 @@ a {
 #map {
     width: 100%;
     height: 560px;
+    background:
+        linear-gradient(var(--map-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--map-grid) 1px, transparent 1px),
+        var(--map-bg);
+    background-size: 80px 80px;
 }
 
 .leaflet-container {
-    background: var(--map-bg);
+    background:
+        linear-gradient(var(--map-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--map-grid) 1px, transparent 1px),
+        var(--map-bg);
+    background-size: 80px 80px;
     font-family: var(--font-ui);
-}
-
-.leaflet-tile {
-    filter: var(--tile-filter);
-    opacity: var(--tile-opacity);
-    transition: filter 140ms ease, opacity 140ms ease;
 }
 
 .map-legend {
@@ -675,6 +676,100 @@ a {
 .popup-card p {
     margin: 0 0 6px;
     line-height: 1.5;
+}
+
+.event-description {
+    display: grid;
+    gap: 10px;
+}
+
+.event-description p {
+    margin: 0;
+}
+
+.geo-summary {
+    display: grid;
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 10px;
+    align-items: center;
+    max-width: 100%;
+    padding: 8px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface-muted);
+}
+
+.geo-summary--popup {
+    grid-template-columns: 74px minmax(0, 1fr);
+    margin: 8px 0;
+    padding: 7px;
+}
+
+.geo-summary__body {
+    min-width: 0;
+}
+
+.geo-summary__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    color: var(--muted);
+    font-size: 0.75rem;
+    line-height: 1.25;
+}
+
+.geo-summary__status {
+    color: var(--text);
+    font-weight: 800;
+}
+
+.geo-summary__coordinates {
+    margin-top: 3px;
+    color: var(--text);
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.geo-summary__note {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.25;
+}
+
+.geo-plot {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: calc(var(--radius) - 2px);
+    background: var(--surface);
+}
+
+.geo-plot svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.geo-plot rect {
+    fill: var(--surface);
+    stroke: var(--line-strong);
+    stroke-width: 1.4;
+}
+
+.geo-plot__halo {
+    fill: var(--accent);
+    opacity: 0.18;
+}
+
+.geo-plot__point {
+    fill: var(--accent);
+}
+
+.geo-plot--empty rect {
+    stroke-dasharray: 4 4;
+    opacity: 0.72;
 }
 
 .table-placeholder {
