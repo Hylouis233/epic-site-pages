@@ -118,67 +118,125 @@
         return Math.min(Math.max(number, min), max);
     }
 
+    function wrapTileIndex(value, tileCount) {
+        return ((value % tileCount) + tileCount) % tileCount;
+    }
+
+    function getAmapTileUrl(x, y, zoom) {
+        const hostIndex = wrapTileIndex(x + y, 4) + 1;
+        return `https://webrd0${hostIndex}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x=${x}&y=${y}&z=${zoom}`;
+    }
+
+    function lonLatToWorldPoint(longitude, latitude) {
+        const safeLongitude = clampNumber(longitude, -180, 180);
+        const safeLatitude = clampNumber(latitude, -85.05112878, 85.05112878);
+        const sine = Math.sin((safeLatitude * Math.PI) / 180);
+        return {
+            x: ((safeLongitude + 180) / 360) * 100,
+            y: (0.5 - Math.log((1 + sine) / (1 - sine)) / (4 * Math.PI)) * 100,
+        };
+    }
+
     function getGeoPoint(record) {
         if (!hasValidCoordinates(record)) {
             return null;
         }
 
-        const x = typeof record.geo_x === "number"
-            ? record.geo_x
-            : ((record.longitude + 180) / 360) * 100;
-        const y = typeof record.geo_y === "number"
-            ? record.geo_y
-            : ((90 - record.latitude) / 180) * 100;
+        const point = lonLatToWorldPoint(record.longitude, record.latitude);
         return {
-            x: clampNumber(x, 0, 100),
-            y: clampNumber(y, 0, 100),
+            x: clampNumber(point.x, 0, 100),
+            y: clampNumber(point.y, 0, 100),
         };
     }
 
-    function renderAbstractGeoPlot(record, modifier) {
-        const point = getGeoPoint(record || {});
-        const className = ["geo-plot", modifier ? `geo-plot--${modifier}` : ""].filter(Boolean).join(" ");
-        if (!point) {
-            return `
-                <div class="${className} geo-plot--empty" role="img" aria-label="定位待核验">
-                    <svg viewBox="0 0 100 56" focusable="false" aria-hidden="true">
-                        <rect x="1" y="1" width="98" height="54" rx="8"></rect>
-                    </svg>
-                </div>
-            `;
+    function getAmapTileCenter(record, zoom) {
+        if (!hasValidCoordinates(record)) {
+            return null;
         }
 
+        const tileCount = 2 ** zoom;
+        const point = lonLatToWorldPoint(record.longitude, record.latitude);
+        const tileX = (point.x / 100) * tileCount;
+        const tileY = (point.y / 100) * tileCount;
+        return {
+            tileCount,
+            tileX,
+            tileY,
+            baseX: Math.floor(tileX),
+            baseY: Math.floor(tileY),
+            fracX: tileX - Math.floor(tileX),
+            fracY: tileY - Math.floor(tileY),
+        };
+    }
+
+    function renderAmapTileMosaic(record, zoom, tileSize, radius) {
+        const center = getAmapTileCenter(record, zoom);
+        if (!center) {
+            return "";
+        }
+
+        const tiles = [];
+        for (let yOffset = -radius; yOffset <= radius; yOffset += 1) {
+            const rawY = center.baseY + yOffset;
+            if (rawY < 0 || rawY >= center.tileCount) {
+                continue;
+            }
+            for (let xOffset = -radius; xOffset <= radius; xOffset += 1) {
+                const rawX = center.baseX + xOffset;
+                const x = wrapTileIndex(rawX, center.tileCount);
+                const left = ((xOffset - center.fracX) * tileSize).toFixed(2);
+                const top = ((yOffset - center.fracY) * tileSize).toFixed(2);
+                tiles.push(`
+                    <img
+                        class="amap-tile"
+                        src="${getAmapTileUrl(x, rawY, zoom)}"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        style="--tile-left: ${left}px; --tile-top: ${top}px; --tile-size: ${tileSize}px;"
+                    >
+                `);
+            }
+        }
+
+        return tiles.join("");
+    }
+
+    function renderLocationMiniMap(record, modifier) {
+        if (!hasValidCoordinates(record || {})) {
+            return "";
+        }
+
+        const locationLabel = record.location || record.continent || "事件地点";
+        const className = ["location-mini-map", modifier ? `location-mini-map--${modifier}` : ""].filter(Boolean).join(" ");
         return `
-            <div class="${className}" role="img" aria-label="无边界定位图，点位为 ${escapeHtml(record.geo_coordinates || "")}">
-                <svg viewBox="0 0 100 56" focusable="false" aria-hidden="true">
-                    <rect x="1" y="1" width="98" height="54" rx="8"></rect>
-                    <circle class="geo-plot__halo" cx="${point.x}" cy="${point.y}" r="7"></circle>
-                    <circle class="geo-plot__point" cx="${point.x}" cy="${point.y}" r="3.2"></circle>
-                </svg>
+            <div class="${className}" role="img" aria-label="${escapeHtml(locationLabel)} 微缩地图">
+                <div class="location-mini-map__tiles" aria-hidden="true">
+                    ${renderAmapTileMosaic(record, 5, 86, 1)}
+                    <span class="location-mini-map__marker"></span>
+                </div>
             </div>
         `;
     }
 
-    function renderGeoSummary(record, modifier) {
-        const status = record.geo_status_label || (hasValidCoordinates(record) ? "已生成定位" : "定位待核验");
-        const precision = record.geo_precision || (hasValidCoordinates(record) ? "候选坐标" : "未定位");
-        const coordinates = record.geo_coordinates || (
-            hasValidCoordinates(record) ? `${record.latitude.toFixed(4)}, ${record.longitude.toFixed(4)}` : "无可用坐标"
-        );
-        const note = record.geo_note || "抽象无边界定位图，仅作态势索引。";
-        return `
-            <div class="geo-summary ${modifier ? `geo-summary--${modifier}` : ""}">
-                ${renderAbstractGeoPlot(record, modifier)}
-                <div class="geo-summary__body">
-                    <div class="geo-summary__row">
-                        <span class="geo-summary__status">${escapeHtml(status)}</span>
-                        <span>${escapeHtml(precision)}</span>
-                    </div>
-                    <div class="geo-summary__coordinates">${escapeHtml(coordinates)}</div>
-                    <div class="geo-summary__note">${escapeHtml(note)}</div>
-                </div>
-            </div>
-        `;
+    function renderAmapWorldLayer() {
+        const zoom = 2;
+        const tileCount = 2 ** zoom;
+        const tiles = [];
+        for (let y = 0; y < tileCount; y += 1) {
+            for (let x = 0; x < tileCount; x += 1) {
+                tiles.push(`
+                    <img
+                        class="amap-world-layer__tile"
+                        src="${getAmapTileUrl(x, y, zoom)}"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                    >
+                `);
+            }
+        }
+        return `<div class="amap-world-layer" aria-hidden="true">${tiles.join("")}</div>`;
     }
 
     function summarizeFilters() {
@@ -647,7 +705,7 @@
         const safeItems = Array.isArray(items) ? items : [];
         const clusters = aggregateMapItems(safeItems);
         elements.mapMeta.textContent = `当前地图点位 ${formatCount(safeItems.length)} 个`;
-        elements.map.innerHTML = "";
+        elements.map.innerHTML = renderAmapWorldLayer();
 
         if (!clusters.length) {
             elements.mapEmpty.classList.remove("hidden");
@@ -655,7 +713,7 @@
         }
 
         elements.mapEmpty.classList.add("hidden");
-        elements.map.innerHTML = clusters.map(function (cluster, index) {
+        elements.map.insertAdjacentHTML("beforeend", clusters.map(function (cluster, index) {
             return `
                 <button
                     class="abstract-map__point"
@@ -669,7 +727,7 @@
                     </span>
                 </button>
             `;
-        }).join("");
+        }).join(""));
         bindMapClusterEvents(clusters);
     }
 
@@ -786,7 +844,7 @@
                     cell.innerHTML = `
                         <div class="event-description">
                             <p>${escapeHtml(item.description_cn || "—")}</p>
-                            ${renderGeoSummary(item, "table")}
+                            ${renderLocationMiniMap(item, "table")}
                         </div>
                     `;
                 } else {

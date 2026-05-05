@@ -250,23 +250,35 @@ a {
 }
 
 .intel-grid {
+    --intel-panel-height: clamp(320px, 34vh, 380px);
     display: grid;
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.9fr) minmax(0, 1.2fr);
     gap: 14px;
+    align-items: stretch;
+    max-height: var(--intel-panel-height);
 }
 
 .intel-metrics {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
+    min-height: 0;
+    max-height: var(--intel-panel-height);
+    overflow-y: auto;
+    padding-right: 2px;
 }
 
 .intel-block {
+    display: flex;
+    flex-direction: column;
     min-width: 0;
+    min-height: 0;
+    max-height: var(--intel-panel-height);
     padding: 16px;
     border: 1px solid var(--line);
     border-radius: var(--radius);
     background: var(--surface-muted);
+    overflow: hidden;
 }
 
 .intel-block__header {
@@ -288,6 +300,9 @@ a {
 .intel-event-list {
     display: grid;
     gap: 10px;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 4px;
 }
 
 .intel-item {
@@ -521,11 +536,40 @@ a {
     width: 100%;
     height: 560px;
     min-height: 420px;
+    background: var(--map-bg);
+}
+
+.amap-world-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+    opacity: 0.78;
+}
+
+.amap-world-layer::after {
+    position: absolute;
+    inset: 0;
+    content: "";
     background:
         linear-gradient(var(--map-grid) 1px, transparent 1px),
-        linear-gradient(90deg, var(--map-grid) 1px, transparent 1px),
-        var(--map-bg);
+        linear-gradient(90deg, var(--map-grid) 1px, transparent 1px);
     background-size: 80px 80px;
+    pointer-events: none;
+}
+
+.amap-world-layer__tile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.06) brightness(1.02);
+}
+
+:root[data-theme="dark"] .amap-world-layer__tile,
+:root[data-theme="dark"] .amap-tile {
+    filter: grayscale(1) invert(1) brightness(0.78) contrast(0.96);
 }
 
 .map-legend {
@@ -610,6 +654,7 @@ a {
 
 .abstract-map__point {
     position: absolute;
+    z-index: 2;
     left: var(--x);
     top: var(--y);
     width: var(--size);
@@ -634,7 +679,7 @@ a {
 
 .abstract-map__popup {
     position: absolute;
-    z-index: 4;
+    z-index: 5;
     left: clamp(18%, var(--x), 82%);
     top: clamp(20%, var(--y), 80%);
     width: min(360px, calc(100% - 28px));
@@ -747,83 +792,48 @@ a {
     margin: 0;
 }
 
-.geo-summary {
-    display: grid;
-    grid-template-columns: 82px minmax(0, 1fr);
-    gap: 10px;
-    align-items: center;
-    max-width: 100%;
-    padding: 8px;
+.location-mini-map {
+    position: relative;
+    width: min(240px, 100%);
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    background: var(--surface-muted);
+    background: var(--map-bg);
 }
 
-.geo-summary__body {
-    min-width: 0;
+.location-mini-map--table {
+    width: min(220px, 100%);
 }
 
-.geo-summary__row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    align-items: center;
-    color: var(--muted);
-    font-size: 0.75rem;
-    line-height: 1.25;
-}
-
-.geo-summary__status {
-    color: var(--text);
-    font-weight: 800;
-}
-
-.geo-summary__coordinates {
-    margin-top: 3px;
-    color: var(--text);
-    font-size: 0.78rem;
-    font-weight: 700;
-    line-height: 1.25;
-}
-
-.geo-summary__note {
-    margin-top: 3px;
-    color: var(--muted);
-    font-size: 0.72rem;
-    line-height: 1.25;
-}
-
-.geo-plot {
-    min-width: 0;
+.location-mini-map__tiles {
+    position: absolute;
+    inset: 0;
     overflow: hidden;
-    border-radius: calc(var(--radius) - 2px);
-    background: var(--surface);
 }
 
-.geo-plot svg {
-    display: block;
-    width: 100%;
-    height: auto;
+.amap-tile {
+    position: absolute;
+    left: calc(50% + var(--tile-left));
+    top: calc(50% + var(--tile-top));
+    width: var(--tile-size);
+    height: var(--tile-size);
+    max-width: none;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.04) brightness(1.02);
 }
 
-.geo-plot rect {
-    fill: var(--surface);
-    stroke: var(--line-strong);
-    stroke-width: 1.4;
-}
-
-.geo-plot__halo {
-    fill: var(--accent);
-    opacity: 0.18;
-}
-
-.geo-plot__point {
-    fill: var(--accent);
-}
-
-.geo-plot--empty rect {
-    stroke-dasharray: 4 4;
-    opacity: 0.72;
+.location-mini-map__marker {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 13px;
+    height: 13px;
+    border: 2px solid var(--surface);
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 16%, transparent), 0 4px 10px rgba(0, 0, 0, 0.22);
+    transform: translate(-50%, -50%);
 }
 
 .table-placeholder {
@@ -977,6 +987,40 @@ a {
 
 .panel--support {
     scroll-margin-top: 16px;
+}
+
+.floating-sponsor {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 20;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    max-width: calc(100vw - 36px);
+    min-height: 46px;
+    padding: 0 16px;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    background: var(--surface-strong);
+    color: var(--on-accent);
+    box-shadow: var(--shadow);
+    text-decoration: none;
+}
+
+.floating-sponsor strong,
+.floating-sponsor span {
+    white-space: nowrap;
+}
+
+.floating-sponsor strong {
+    font-size: 0.9rem;
+}
+
+.floating-sponsor span {
+    color: color-mix(in srgb, var(--on-accent) 78%, transparent);
+    font-size: 0.82rem;
+    font-weight: 700;
 }
 
 .support-preview-grid,
@@ -1206,6 +1250,12 @@ a {
 
     .intel-grid {
         grid-template-columns: 1fr;
+        max-height: none;
+    }
+
+    .intel-metrics,
+    .intel-block {
+        max-height: 360px;
     }
 
     .hero-actions {
@@ -1273,5 +1323,16 @@ a {
     .table-status-row {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .floating-sponsor {
+        right: 12px;
+        bottom: 12px;
+        min-height: 42px;
+        padding: 0 12px;
+    }
+
+    .floating-sponsor span {
+        display: none;
     }
 }

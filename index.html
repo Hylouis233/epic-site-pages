@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>全球传染病监测仪表盘</title>
-    <link rel="stylesheet" href="./assets/epic/css/app.css?v=1777993190">
+    <link rel="stylesheet" href="./assets/epic/css/app.css?v=1778004139">
     <script>
         (function () {
             try {
@@ -119,57 +119,6 @@
                 </div>
             </section>
 
-            <section class="panel panel--intel" aria-labelledby="epietl-title">
-                <div class="panel-heading">
-                    <div>
-                        <p class="panel-heading__eyebrow">外部情报</p>
-                        <h2 id="epietl-title">EpiETL 公共风险摘要</h2>
-                    </div>
-                    <div class="panel-heading__meta" id="epietl-meta">正在同步公开情报快照</div>
-                </div>
-
-                <div class="intel-grid">
-                    <div class="intel-metrics" id="epietl-metrics">
-                        <article class="metric-card">
-                            <span class="metric-card__marker">CHN</span>
-                            <p class="metric-card__label">监测通道</p>
-                            <h2 class="metric-card__value skeleton-line">--</h2>
-                        </article>
-                        <article class="metric-card">
-                            <span class="metric-card__marker">RPT</span>
-                            <p class="metric-card__label">累计报告</p>
-                            <h2 class="metric-card__value skeleton-line">--</h2>
-                        </article>
-                        <article class="metric-card">
-                            <span class="metric-card__marker">PDG</span>
-                            <p class="metric-card__label">待处理</p>
-                            <h2 class="metric-card__value skeleton-line">--</h2>
-                        </article>
-                        <article class="metric-card">
-                            <span class="metric-card__marker">RSK</span>
-                            <p class="metric-card__label">风险事件</p>
-                            <h2 class="metric-card__value skeleton-line">--</h2>
-                        </article>
-                    </div>
-
-                    <div class="intel-block">
-                        <div class="intel-block__header">
-                            <strong>国家风险分布</strong>
-                            <span id="epietl-summary-text">等待快照</span>
-                        </div>
-                        <div class="intel-risk-list" id="epietl-country-risks"></div>
-                    </div>
-
-                    <div class="intel-block">
-                        <div class="intel-block__header">
-                            <strong>重点事件</strong>
-                            <span id="epietl-events-meta">等待快照</span>
-                        </div>
-                        <div class="intel-event-list" id="epietl-events"></div>
-                    </div>
-                </div>
-            </section>
-
             <section class="panel panel--map" aria-labelledby="map-title">
                 <div class="panel-heading">
                     <div>
@@ -189,7 +138,7 @@
                     </div>
                 </div>
                 <div class="map-wrapper">
-                    <div id="map" aria-label="疫情点位抽象分布图"></div>
+                    <div id="map" aria-label="高德地图源事件地理分布图"></div>
                     <div class="panel-empty panel-empty--overlay hidden" id="map-empty">
                         当前筛选条件下没有可展示的地图点位。
                     </div>
@@ -241,6 +190,57 @@
                 </div>
             </section>
 
+            <section class="panel panel--intel" aria-labelledby="epietl-title">
+                <div class="panel-heading">
+                    <div>
+                        <p class="panel-heading__eyebrow">外部情报</p>
+                        <h2 id="epietl-title">EpiETL 公共风险摘要</h2>
+                    </div>
+                    <div class="panel-heading__meta" id="epietl-meta">正在同步公开情报快照</div>
+                </div>
+
+                <div class="intel-grid">
+                    <div class="intel-metrics" id="epietl-metrics">
+                        <article class="metric-card">
+                            <span class="metric-card__marker">CHN</span>
+                            <p class="metric-card__label">监测通道</p>
+                            <h2 class="metric-card__value skeleton-line">--</h2>
+                        </article>
+                        <article class="metric-card">
+                            <span class="metric-card__marker">RPT</span>
+                            <p class="metric-card__label">累计报告</p>
+                            <h2 class="metric-card__value skeleton-line">--</h2>
+                        </article>
+                        <article class="metric-card">
+                            <span class="metric-card__marker">PDG</span>
+                            <p class="metric-card__label">待处理</p>
+                            <h2 class="metric-card__value skeleton-line">--</h2>
+                        </article>
+                        <article class="metric-card">
+                            <span class="metric-card__marker">RSK</span>
+                            <p class="metric-card__label">风险事件</p>
+                            <h2 class="metric-card__value skeleton-line">--</h2>
+                        </article>
+                    </div>
+
+                    <div class="intel-block">
+                        <div class="intel-block__header">
+                            <strong>国家风险分布</strong>
+                            <span id="epietl-summary-text">等待快照</span>
+                        </div>
+                        <div class="intel-risk-list" id="epietl-country-risks"></div>
+                    </div>
+
+                    <div class="intel-block">
+                        <div class="intel-block__header">
+                            <strong>重点事件</strong>
+                            <span id="epietl-events-meta">等待快照</span>
+                        </div>
+                        <div class="intel-event-list" id="epietl-events"></div>
+                    </div>
+                </div>
+            </section>
+
             <section class="panel panel--support" aria-labelledby="support-title">
                 <div class="panel-heading">
                     <div>
@@ -271,14 +271,19 @@
         </main>
     </div>
 
+    <a class="floating-sponsor" href="./support/" aria-label="求赞助与广告位招租">
+        <strong>求赞助</strong>
+        <span>广告位招租</span>
+    </a>
+
     <script>
         window.EPIC_DASHBOARD_CONFIG = {
             "siteMode": "static",
-            "generatedAt": "2026-05-05T15:25:27Z",
+            "generatedAt": "2026-05-05T18:09:25Z",
             "staticDataUrl": "./data/records.json",
             "staticEpietlUrl": "./data/epietl_public.json"
 };
     </script>
-    <script src="./assets/epic/js/dashboard.js?v=1777993190"></script>
+    <script src="./assets/epic/js/dashboard.js?v=1778004139"></script>
 </body>
 </html>
