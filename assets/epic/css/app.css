@@ -517,22 +517,15 @@ a {
 }
 
 #map {
+    position: relative;
     width: 100%;
     height: 560px;
+    min-height: 420px;
     background:
         linear-gradient(var(--map-grid) 1px, transparent 1px),
         linear-gradient(90deg, var(--map-grid) 1px, transparent 1px),
         var(--map-bg);
     background-size: 80px 80px;
-}
-
-.leaflet-container {
-    background:
-        linear-gradient(var(--map-grid) 1px, transparent 1px),
-        linear-gradient(90deg, var(--map-grid) 1px, transparent 1px),
-        var(--map-bg);
-    background-size: 80px 80px;
-    font-family: var(--font-ui);
 }
 
 .map-legend {
@@ -587,28 +580,6 @@ a {
     background: var(--cluster-critical);
 }
 
-.leaflet-bar a,
-.leaflet-bar a:hover {
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    border-color: var(--line);
-    background: var(--surface);
-    color: var(--text);
-}
-
-.leaflet-popup-content-wrapper,
-.leaflet-popup-tip {
-    background: var(--surface);
-    color: var(--text);
-    box-shadow: var(--shadow);
-}
-
-.leaflet-control-attribution {
-    background: color-mix(in srgb, var(--surface) 88%, transparent);
-    color: var(--muted);
-}
-
 .panel-empty {
     display: grid;
     place-items: center;
@@ -637,6 +608,111 @@ a {
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
 }
 
+.abstract-map__point {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.abstract-map__point:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 3px;
+}
+
+.abstract-map__point:hover .cluster-badge,
+.abstract-map__point:focus-visible .cluster-badge {
+    transform: scale(1.08);
+}
+
+.abstract-map__popup {
+    position: absolute;
+    z-index: 4;
+    left: clamp(18%, var(--x), 82%);
+    top: clamp(20%, var(--y), 80%);
+    width: min(360px, calc(100% - 28px));
+    max-height: calc(100% - 28px);
+    overflow: auto;
+    padding: 14px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--surface) 96%, transparent);
+    box-shadow: var(--shadow);
+    transform: translate(-50%, -50%);
+}
+
+.abstract-map__popup-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.abstract-map__popup-title {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.35;
+}
+
+.abstract-map__popup-close {
+    display: inline-grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: var(--surface-muted);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.abstract-map__event-list {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.abstract-map__event {
+    display: grid;
+    gap: 4px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+}
+
+.abstract-map__event:first-child {
+    padding-top: 0;
+    border-top: 0;
+}
+
+.abstract-map__event-title {
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.abstract-map__event-meta {
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.4;
+}
+
+.abstract-map__event-summary {
+    color: var(--text);
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
 .cluster-badge--small {
     background: var(--cluster-small);
 }
@@ -662,22 +738,6 @@ a {
     font-size: 0.86rem;
 }
 
-.popup-card {
-    min-width: 220px;
-    color: var(--text);
-    font-family: var(--font-ui);
-}
-
-.popup-card h3 {
-    margin: 0 0 8px;
-    font-size: 1rem;
-}
-
-.popup-card p {
-    margin: 0 0 6px;
-    line-height: 1.5;
-}
-
 .event-description {
     display: grid;
     gap: 10px;
@@ -697,12 +757,6 @@ a {
     border: 1px solid var(--line);
     border-radius: var(--radius);
     background: var(--surface-muted);
-}
-
-.geo-summary--popup {
-    grid-template-columns: 74px minmax(0, 1fr);
-    margin: 8px 0;
-    padding: 7px;
 }
 
 .geo-summary__body {

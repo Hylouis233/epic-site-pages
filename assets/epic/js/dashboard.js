@@ -15,8 +15,6 @@
         epietlController: null,
         mapController: null,
         tableController: null,
-        map: null,
-        markers: null,
         staticRecords: null,
         staticRecordsPromise: null,
         staticEpietlPayload: null,
@@ -40,6 +38,7 @@
         epietlCountryRisks: document.getElementById("epietl-country-risks"),
         epietlEventsMeta: document.getElementById("epietl-events-meta"),
         epietlEvents: document.getElementById("epietl-events"),
+        map: document.getElementById("map"),
         mapMeta: document.getElementById("map-meta"),
         mapEmpty: document.getElementById("map-empty"),
         tablePanel: document.getElementById("table-panel"),
@@ -470,42 +469,6 @@
         return 42;
     }
 
-    function isCompactViewport() {
-        return window.matchMedia("(max-width: 760px)").matches;
-    }
-
-    function createClusterIcon(cluster) {
-        const count = cluster.getChildCount();
-        const tone = getClusterTone(count);
-        const size = getClusterSize(count);
-
-        return L.divIcon({
-            html: `<div class="cluster-badge cluster-badge--${tone}" title="${count} 个事件">${count}</div>`,
-            className: "",
-            iconSize: [size, size],
-        });
-    }
-
-    function initMap() {
-        state.map = L.map("map", {
-            center: [24.5, 108],
-            zoom: 3,
-            minZoom: 1,
-            maxZoom: 9,
-            zoomControl: false,
-        });
-
-        L.control.zoom({ position: "bottomright" }).addTo(state.map);
-        state.map.attributionControl.setPrefix("");
-
-        state.markers = L.markerClusterGroup({
-            iconCreateFunction: createClusterIcon,
-            showCoverageOnHover: false,
-            maxClusterRadius: 70,
-        });
-        state.map.addLayer(state.markers);
-    }
-
     async function fetchJsonUrl(requestUrl, controllerName) {
         if (state[controllerName]) {
             state[controllerName].abort();
@@ -585,46 +548,129 @@
         setHeroStatus(`当前筛选命中 ${formatCount(payload.total_records)} 条记录`, "status--good");
     }
 
-    function renderMap(items) {
-        elements.mapMeta.textContent = `当前地图点位 ${formatCount(items.length)} 个`;
-        state.markers.clearLayers();
+    function aggregateMapItems(items) {
+        const clusters = new Map();
+        const cellSize = 7;
 
-        if (!items.length) {
+        (Array.isArray(items) ? items : []).forEach(function (item) {
+            const point = getGeoPoint(item);
+            if (!point) {
+                return;
+            }
+
+            const key = `${Math.round(point.x / cellSize)}:${Math.round(point.y / cellSize)}`;
+            if (!clusters.has(key)) {
+                clusters.set(key, {
+                    x: 0,
+                    y: 0,
+                    count: 0,
+                    items: [],
+                });
+            }
+
+            const cluster = clusters.get(key);
+            cluster.x += point.x;
+            cluster.y += point.y;
+            cluster.count += 1;
+            cluster.items.push(item);
+        });
+
+        return Array.from(clusters.values()).map(function (cluster) {
+            cluster.x = clampNumber(cluster.x / cluster.count, 2, 98);
+            cluster.y = clampNumber(cluster.y / cluster.count, 4, 96);
+            cluster.tone = getClusterTone(cluster.count);
+            cluster.size = getClusterSize(cluster.count);
+            return cluster;
+        }).sort(function (a, b) {
+            return a.count - b.count;
+        });
+    }
+
+    function renderMapPopup(cluster) {
+        const previewItems = cluster.items.slice(0, 4);
+        const moreCount = Math.max(cluster.count - previewItems.length, 0);
+        return `
+            <div class="abstract-map__popup" style="--x: ${cluster.x}%; --y: ${cluster.y}%;" data-map-popup>
+                <div class="abstract-map__popup-head">
+                    <h3 class="abstract-map__popup-title">${formatCount(cluster.count)} 个事件</h3>
+                    <button class="abstract-map__popup-close" type="button" data-map-popup-close aria-label="关闭">×</button>
+                </div>
+                <ul class="abstract-map__event-list">
+                    ${previewItems.map(function (item) {
+                        return `
+                            <li class="abstract-map__event">
+                                <div class="abstract-map__event-title">
+                                    ${escapeHtml(item.disease || "未标注疾病")} · ${escapeHtml(item.location || "未知地点")}
+                                </div>
+                                <div class="abstract-map__event-meta">
+                                    ${escapeHtml(item.original_date || "未知日期")} / ${escapeHtml(item.source_org || "未知来源")}
+                                </div>
+                                <div class="abstract-map__event-summary">${escapeHtml(item.description_cn || "暂无摘要")}</div>
+                            </li>
+                        `;
+                    }).join("")}
+                </ul>
+                ${moreCount ? `<div class="abstract-map__event-meta">另有 ${formatCount(moreCount)} 个事件。</div>` : ""}
+            </div>
+        `;
+    }
+
+    function bindMapClusterEvents(clusters) {
+        elements.map.querySelectorAll("[data-map-cluster]").forEach(function (button) {
+            button.addEventListener("click", function () {
+                const index = Number(button.getAttribute("data-map-cluster"));
+                const cluster = clusters[index];
+                if (!cluster) {
+                    return;
+                }
+
+                const oldPopup = elements.map.querySelector("[data-map-popup]");
+                if (oldPopup) {
+                    oldPopup.remove();
+                }
+                elements.map.insertAdjacentHTML("beforeend", renderMapPopup(cluster));
+
+                const closeButton = elements.map.querySelector("[data-map-popup-close]");
+                if (closeButton) {
+                    closeButton.addEventListener("click", function () {
+                        const popup = elements.map.querySelector("[data-map-popup]");
+                        if (popup) {
+                            popup.remove();
+                        }
+                    });
+                }
+            });
+        });
+    }
+
+    function renderMap(items) {
+        const safeItems = Array.isArray(items) ? items : [];
+        const clusters = aggregateMapItems(safeItems);
+        elements.mapMeta.textContent = `当前地图点位 ${formatCount(safeItems.length)} 个`;
+        elements.map.innerHTML = "";
+
+        if (!clusters.length) {
             elements.mapEmpty.classList.remove("hidden");
-            state.map.setView([24.5, 108], 3);
             return;
         }
 
         elements.mapEmpty.classList.add("hidden");
-        const points = [];
-
-        items.forEach(function (item) {
-            const marker = L.marker([item.latitude, item.longitude], { riseOnHover: true });
-            marker.bindPopup(`
-                <div class="popup-card">
-                    <h3>${escapeHtml(item.disease || "未标注疾病")}</h3>
-                    <p><strong>地点：</strong>${escapeHtml(item.location || "未知")}</p>
-                    <p><strong>日期：</strong>${escapeHtml(item.original_date || "未知")}</p>
-                    <p><strong>来源机构：</strong>${escapeHtml(item.source_org || "未知")}</p>
-                    ${renderGeoSummary(item, "popup")}
-                    <p>${escapeHtml(item.description_cn || "暂无更多描述。")}</p>
-                </div>
-            `, { maxWidth: 320 });
-            state.markers.addLayer(marker);
-            points.push([item.latitude, item.longitude]);
-        });
-
-        const bounds = L.latLngBounds(points);
-        if (bounds.isValid()) {
-            if (isCompactViewport() && Math.abs(bounds.getEast() - bounds.getWest()) > 180) {
-                state.map.setView([12, 8], 1, { animate: true });
-                return;
-            }
-            state.map.fitBounds(bounds.pad(0.22), {
-                animate: true,
-                padding: [36, 36],
-            });
-        }
+        elements.map.innerHTML = clusters.map(function (cluster, index) {
+            return `
+                <button
+                    class="abstract-map__point"
+                    type="button"
+                    style="--x: ${cluster.x}%; --y: ${cluster.y}%; --size: ${cluster.size}px;"
+                    data-map-cluster="${index}"
+                    aria-label="${formatCount(cluster.count)} 个事件"
+                >
+                    <span class="cluster-badge cluster-badge--${cluster.tone}" title="${formatCount(cluster.count)} 个事件">
+                        ${formatCount(cluster.count)}
+                    </span>
+                </button>
+            `;
+        }).join("");
+        bindMapClusterEvents(clusters);
     }
 
     function renderEpietl(payload) {
@@ -986,7 +1032,6 @@
 
         updateFilterSummary();
         setupThemeToggle();
-        initMap();
         setupFilterEvents();
         setupLazyTableLoad();
         loadOverview();

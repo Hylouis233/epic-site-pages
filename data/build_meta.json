@@ -1,9 +1,14 @@
 {
-  "generated_at": "2026-05-05T05:58:41Z",
+  "generated_at": "2026-05-05T08:35:09Z",
   "record_count": 42,
   "map_point_count": 42,
   "disease_count": 20,
   "continent_count": 6,
   "epietl_channel_count": 40,
-  "download_week_embedded": true
+  "download_week_embedded": true,
+  "rss_generated_at": "2026-05-05T08:35:09Z",
+  "rss_timezone": "Asia/Shanghai",
+  "rss_window_start": "2026-05-05T00:00:00+08:00",
+  "rss_window_end": "2026-05-05T23:59:59+08:00",
+  "rss_item_count": 42
 }
