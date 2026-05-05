@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>全球传染病监测仪表盘</title>
-    <link rel="stylesheet" href="./assets/epic/css/app.css?v=1777965579">
+    <link rel="stylesheet" href="./assets/epic/css/app.css?v=1777993190">
     <script>
         (function () {
             try {
@@ -32,6 +32,7 @@
                 </div>
                 <div class="hero-actions">
                     <button class="button button--ghost button--theme-toggle" id="theme-toggle" type="button" aria-pressed="false">深色</button>
+                    <a class="button button--secondary" href="./support/">支持本站</a>
                     <a class="button button--primary" href="./data/weekly_merged_latest.csv">下载周报 CSV</a>
                     <a class="button button--secondary" href="#table-panel">查看明细表</a>
                 </div>
@@ -239,17 +240,45 @@
                     <div class="pagination" id="pagination"></div>
                 </div>
             </section>
+
+            <section class="panel panel--support" aria-labelledby="support-title">
+                <div class="panel-heading">
+                    <div>
+                        <p class="panel-heading__eyebrow">SUPPORT & SPONSORSHIP</p>
+                        <h2 id="support-title">支持本站与赞助列表</h2>
+                    </div>
+                    <a class="button button--primary" href="./support/">查看支持方式</a>
+                </div>
+
+                <div class="support-preview-grid">
+                    <article class="support-preview-card">
+                        <span class="support-preview-card__marker">PAY</span>
+                        <h3>支持方式</h3>
+                        <p>微信、支付宝、Stripe、BTCPay 与数字货币公开地址集中展示在支持页。</p>
+                    </article>
+                    <article class="support-preview-card">
+                        <span class="support-preview-card__marker">SPN</span>
+                        <h3>赞助列表</h3>
+                        <p>首批赞助者招募中。确认合作后会公开列出名称、链接和支持类型。</p>
+                    </article>
+                    <article class="support-preview-card">
+                        <span class="support-preview-card__marker">ADS</span>
+                        <h3>广告位招租</h3>
+                        <p>顶部、侧栏和底部广告位当前待租，不加载第三方广告脚本。</p>
+                    </article>
+                </div>
+            </section>
         </main>
     </div>
 
     <script>
         window.EPIC_DASHBOARD_CONFIG = {
             "siteMode": "static",
-            "generatedAt": "2026-05-05T08:35:09Z",
+            "generatedAt": "2026-05-05T15:12:35Z",
             "staticDataUrl": "./data/records.json",
             "staticEpietlUrl": "./data/epietl_public.json"
 };
     </script>
-    <script src="./assets/epic/js/dashboard.js?v=1777965579"></script>
+    <script src="./assets/epic/js/dashboard.js?v=1777993190"></script>
 </body>
 </html>

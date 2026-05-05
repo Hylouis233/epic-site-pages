@@ -5,6 +5,7 @@ This repository publishes a static infectious-disease monitoring dashboard and p
 ## What Is Included
 
 - `index.html`: static dashboard shell for GitHub Pages
+- `support/`: voluntary support, sponsor list, and ad-slot rental page
 - `assets/epic/`: browser assets used by the dashboard
 - `data/records.json`: normalized public event records
 - `data/map.json`: map-ready public event records
@@ -18,6 +19,8 @@ This repository publishes a static infectious-disease monitoring dashboard and p
 Records are public-health monitoring summaries derived from open sources. Each record may include disease, location, dates, source link, source organization, coordinates, symptoms, response measures, and a short Chinese summary.
 
 The repository intentionally contains only public static assets and public data snapshots. Operational configuration, credentials, network settings, and internal logs are not part of this repository.
+
+The support page may include public payment links, QR codes, and wallet addresses that are intended to be shown to visitors. It does not contain payment secrets or backend callbacks.
 
 ## Refresh
 
