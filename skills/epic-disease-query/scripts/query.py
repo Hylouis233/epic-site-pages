@@ -4,7 +4,7 @@ import json
 from urllib.request import Request, urlopen
 
 
-DEFAULT_RECORDS_URL = "https://hylouis233.github.io/epic-site-pages/data/records.json"
+DEFAULT_RECORDS_URL = "https://epicdemic.hylouis.top/data/records.json"
 
 
 def fetch_records(url):

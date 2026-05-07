@@ -2,11 +2,11 @@
 <rss version="2.0">
   <channel>
     <title>EPIC 传染病监测日报</title>
-    <link>https://hylouis233.github.io/epic-site-pages/</link>
+    <link>https://epicdemic.hylouis.top/</link>
     <description>EPIC public epidemic intelligence updates for the current build day.</description>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 07 May 2026 13:43:37 +0800</lastBuildDate>
-    <generator>EPIC GitHub Pages Builder</generator>
+    <generator>EPIC Static Builder</generator>
     <ttl>1440</ttl>
     <item>
       <title>汉他病毒｜佛得角外海（MV Hondius 邮轮）｜7例（含2例确诊、5例疑似），其中3例死亡、1例重症、3例轻微</title>

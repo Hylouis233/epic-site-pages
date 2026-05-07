@@ -1,6 +1,6 @@
 ---
 name: epic-disease-query
-description: Query public EPIC infectious-disease dashboard snapshots from GitHub Pages.
+description: Query public EPIC infectious-disease dashboard snapshots.
 ---
 
 # EPIC Disease Query
@@ -9,9 +9,9 @@ Use this skill when a user asks to search recent public infectious-disease monit
 
 ## Data Sources
 
-- Public records: `https://hylouis233.github.io/epic-site-pages/data/records.json`
-- Public overview: `https://hylouis233.github.io/epic-site-pages/data/overview.json`
-- Public map points: `https://hylouis233.github.io/epic-site-pages/data/map.json`
+- Public records: `https://epicdemic.hylouis.top/data/records.json`
+- Public overview: `https://epicdemic.hylouis.top/data/overview.json`
+- Public map points: `https://epicdemic.hylouis.top/data/map.json`
 
 ## Query Workflow
 

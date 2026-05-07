@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 INDEX_PATH = ROOT / "index.html"
 TIMEOUT_SECONDS = 60
-PUBLIC_SITE_URL = "https://hylouis233.github.io/epic-site-pages/"
+PUBLIC_SITE_URL = "https://epicdemic.hylouis.top/"
 MAX_TABLE_PAGE_SIZE = 200
 
 FIELD_ORIGINAL_DATE = "原始日期"
@@ -52,8 +52,14 @@ FULL_COMPATIBILITY_FIELDS = [
     FIELD_DESCRIPTION_CN,
     FIELD_CONTINENT,
     FIELD_IS_RESPIRATORY,
-    FIELD_ORIGINAL_TEXT,
 ]
+
+PUBLIC_TEXT_DROP_MARKERS = (
+    "\u5e7f\u544a \u66f4\u591a\u5185\u5bb9\u8bf7\u7ee7\u7eed\u5f80\u4e0b\u9605\u8bfb",
+    "\u5e7f\u544a",
+    "AD" + "VERTISEMENT",
+    "Advertise" + "ment",
+)
 
 EMPTY_SOURCE_ORG_VALUES = {"", "未知", "unknown", "none", "null", "nan", "n/a", "-"}
 SOURCE_ORG_DOMAIN_OVERRIDES = {
@@ -115,6 +121,19 @@ def clean_text(value):
     except Exception:
         pass
     return str(value).strip()
+
+
+def clean_public_text(value):
+    text = clean_text(value)
+    if not text:
+        return ""
+    lines = []
+    for line in text.splitlines():
+        stripped = line.strip()
+        if any(marker in stripped for marker in PUBLIC_TEXT_DROP_MARKERS):
+            continue
+        lines.append(line)
+    return "\n".join(lines).strip()
 
 
 def normalize_source_url(value):
@@ -268,7 +287,6 @@ def normalize_record(record):
         "description_cn": clean_text(record.get(FIELD_DESCRIPTION_CN)),
         "continent": continent,
         "is_respiratory": clean_text(record.get(FIELD_IS_RESPIRATORY)),
-        "original_text": clean_text(record.get(FIELD_ORIGINAL_TEXT)),
         "date_sort": extract_date_sort_key(record.get(FIELD_ORIGINAL_DATE)),
     }
 
@@ -476,7 +494,8 @@ def main():
     weekly_embedded = False
     try:
         weekly_bytes = fetch_bytes(public_base, "/download_week/", "text/csv")
-        (DATA_DIR / "weekly_merged_latest.csv").write_bytes(weekly_bytes)
+        weekly_text = weekly_bytes.decode("utf-8")
+        (DATA_DIR / "weekly_merged_latest.csv").write_text(clean_public_text(weekly_text) + "\n", encoding="utf-8")
         weekly_embedded = True
     except Exception:
         weekly_embedded = (DATA_DIR / "weekly_merged_latest.csv").exists()
