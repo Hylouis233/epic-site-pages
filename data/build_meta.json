@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-07T05:43:39Z",
-  "record_count": 22,
-  "map_point_count": 22,
-  "disease_count": 16,
-  "continent_count": 6,
+  "generated_at": "2026-05-08T05:13:37Z",
+  "record_count": 21,
+  "map_point_count": 20,
+  "disease_count": 13,
+  "continent_count": 5,
   "epietl_channel_count": 40,
   "download_week_embedded": true
 }
