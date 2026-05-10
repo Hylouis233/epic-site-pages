@@ -5,6 +5,7 @@ This repository publishes a static infectious-disease monitoring dashboard and p
 ## What Is Included
 
 - `index.html`: static dashboard shell for web deployment
+- `BACKUP/`: daily text archives generated from the same public snapshot
 - `assets/epic/`: browser assets used by the dashboard
 - `data/records.json`: normalized public event records
 - `data/map.json`: map-ready public event records
