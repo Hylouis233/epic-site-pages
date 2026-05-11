@@ -4,8 +4,8 @@
     "original_date": "2026/05/10",
     "disease": "麻疹",
     "location": "东京都",
-    "latitude": 35.6762,
-    "longitude": 139.6503,
+    "latitude": 35.7,
+    "longitude": 139.7,
     "description_cn": "日本麻疹今年累计436例,东京占比近半,疫情持续上升,疾管署提升警示。",
     "continent": "亚洲",
     "source_org": "LINE Today",
@@ -22,18 +22,18 @@
     "country_code": "",
     "geo_audit_status": "legacy_unverified",
     "geo_audit_label": "历史待核验",
-    "geo_coordinates": "35.6762, 139.6503",
-    "geo_x": 88.79,
-    "geo_y": 30.18,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_coordinates": "",
+    "geo_x": 88.81,
+    "geo_y": 30.17,
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "217f68a0876b6256",
     "original_date": "2026/05/09",
     "disease": "登革热",
     "location": "印度德里",
-    "latitude": 28.7041,
-    "longitude": 77.1025,
+    "latitude": 28.7,
+    "longitude": 77.1,
     "description_cn": "德里4月登革热病例激增,4月新增52例,全年累计107例,气候异常导致蚊媒密度上升。",
     "continent": "亚洲",
     "source_org": "《周日卫报》",
@@ -50,10 +50,10 @@
     "country_code": "IN",
     "geo_audit_status": "vetted",
     "geo_audit_label": "已校验",
-    "geo_coordinates": "28.7041, 77.1025",
+    "geo_coordinates": "",
     "geo_x": 71.42,
-    "geo_y": 34.05,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_y": 34.06,
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "e90e9f5147b7130d",
@@ -78,18 +78,18 @@
     "country_code": "JP",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "36.0000, 138.0000",
+    "geo_coordinates": "",
     "geo_x": 88.33,
     "geo_y": 30.0,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "776acb991ceafa8d",
     "original_date": "2026-05-09 20:35:22",
     "disease": "登革热",
     "location": "印度果阿",
-    "latitude": 28.0881,
-    "longitude": 93.3835,
+    "latitude": 28.1,
+    "longitude": 93.4,
     "description_cn": "2026年4月印度果阿登革热仅1例,1-4月累计11例,防控措施见成效",
     "continent": "亚洲",
     "source_org": "Thegoan",
@@ -106,18 +106,18 @@
     "country_code": "IN",
     "geo_audit_status": "geocoder_verified",
     "geo_audit_label": "地理服务校验",
-    "geo_coordinates": "28.0881, 93.3835",
+    "geo_coordinates": "",
     "geo_x": 75.94,
-    "geo_y": 34.4,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_y": 34.39,
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "efab59957bf8ab02",
     "original_date": "2026-05-09 19:11:07",
     "disease": "H7N7新型A型流感",
     "location": "中国台湾",
-    "latitude": 23.6978,
-    "longitude": 120.9605,
+    "latitude": 23.7,
+    "longitude": 121.0,
     "description_cn": "台湾出现首例本土H7N7人类感染,1例确诊,33名接触者无续发,疫情评估为低风险",
     "continent": "亚洲",
     "source_org": "Yahoo",
@@ -134,18 +134,18 @@
     "country_code": "CN",
     "geo_audit_status": "vetted",
     "geo_audit_label": "已校验",
-    "geo_coordinates": "23.6978, 120.9605",
-    "geo_x": 83.6,
+    "geo_coordinates": "",
+    "geo_x": 83.61,
     "geo_y": 36.83,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "aa2a12381f78a024",
     "original_date": "2026-05-09 08:28:04",
     "disease": "麻疹、登革热",
     "location": "也门",
-    "latitude": 16.3471,
-    "longitude": 47.8915,
+    "latitude": 16.3,
+    "longitude": 47.9,
     "description_cn": "2026年1月至5月5日,也门哈德拉毛省报告麻疹和登革热247例确诊,2586例疑似,4例死亡",
     "continent": "亚洲",
     "source_org": "Yemenonline",
@@ -162,10 +162,10 @@
     "country_code": "YE",
     "geo_audit_status": "geocoder_verified",
     "geo_audit_label": "地理服务校验",
-    "geo_coordinates": "16.3471, 47.8915",
-    "geo_x": 63.3,
-    "geo_y": 40.92,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_coordinates": "",
+    "geo_x": 63.31,
+    "geo_y": 40.94,
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "ffb06afb0c0d85ed",
@@ -190,10 +190,10 @@
     "country_code": "ZA",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "-29.0000, 24.0000",
+    "geo_coordinates": "",
     "geo_x": 56.67,
     "geo_y": 66.11,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "3a35dcdf048242be",
@@ -218,10 +218,10 @@
     "country_code": "GB",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "54.0000, -2.0000",
+    "geo_coordinates": "",
     "geo_x": 49.44,
     "geo_y": 20.0,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "682ff182987cdd73",
@@ -246,10 +246,10 @@
     "country_code": "AR",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "-34.0000, -64.0000",
+    "geo_coordinates": "",
     "geo_x": 32.22,
     "geo_y": 68.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "432bca553eb6eaf0",
@@ -274,18 +274,18 @@
     "country_code": "AR",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "-34.0000, -64.0000",
+    "geo_coordinates": "",
     "geo_x": 32.22,
     "geo_y": 68.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "67609b9b80cab409",
     "original_date": "2026-05-09",
     "disease": "流感",
     "location": "中国澳门",
-    "latitude": 22.1969,
-    "longitude": 113.5463,
+    "latitude": 22.2,
+    "longitude": 113.5,
     "description_cn": "澳门一托儿所出现3例流感样疾病聚集,均为轻症,已采取措施。",
     "continent": "亚洲",
     "source_org": "GOV",
@@ -302,10 +302,10 @@
     "country_code": "CN",
     "geo_audit_status": "vetted",
     "geo_audit_label": "已校验",
-    "geo_coordinates": "22.1969, 113.5463",
-    "geo_x": 81.54,
+    "geo_coordinates": "",
+    "geo_x": 81.53,
     "geo_y": 37.67,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "384dbf98e2da3add",
@@ -330,10 +330,10 @@
     "country_code": "AR",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "-34.0000, -64.0000",
+    "geo_coordinates": "",
     "geo_x": 32.22,
     "geo_y": 68.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "2f64bdd56eafe1cc",
@@ -358,18 +358,18 @@
     "country_code": "NG",
     "geo_audit_status": "geocoder_verified",
     "geo_audit_label": "地理服务校验",
-    "geo_coordinates": "9.6000, 8.0000",
+    "geo_coordinates": "",
     "geo_x": 52.22,
     "geo_y": 44.67,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "1f74ccd8b48aa07e",
     "original_date": "2026-05-08 23:54:34",
     "disease": "汉塔病毒",
     "location": "MV Hondius邮轮",
-    "latitude": 35.5939,
-    "longitude": 139.4987,
+    "latitude": 35.6,
+    "longitude": 139.5,
     "description_cn": "邮轮爆发汉塔病毒疫情,6例确诊3例死亡,致死率38%,世卫证实安地斯病毒人传人。",
     "continent": "亚洲",
     "source_org": "4GTV",
@@ -386,18 +386,18 @@
     "country_code": "JP",
     "geo_audit_status": "geocoder_verified",
     "geo_audit_label": "地理服务校验",
-    "geo_coordinates": "35.5939, 139.4987",
+    "geo_coordinates": "",
     "geo_x": 88.75,
-    "geo_y": 30.23,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_y": 30.22,
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "a5736df312ed61d3",
     "original_date": "2026-05-08 18:31:09",
     "disease": "麻疹",
     "location": "达卡",
-    "latitude": 23.8103,
-    "longitude": 90.4125,
+    "latitude": 23.8,
+    "longitude": 90.4,
     "description_cn": "孟加拉国麻疹疫情严重,已致336名儿童死亡,确诊病例超5万",
     "continent": "亚洲",
     "source_org": "Newsofbahrain",
@@ -414,10 +414,10 @@
     "country_code": "",
     "geo_audit_status": "legacy_unverified",
     "geo_audit_label": "历史待核验",
-    "geo_coordinates": "23.8103, 90.4125",
+    "geo_coordinates": "",
     "geo_x": 75.11,
-    "geo_y": 36.77,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_y": 36.78,
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "5cd05f20eb00cc56",
@@ -442,10 +442,10 @@
     "country_code": "IN",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "20.0000, 77.0000",
+    "geo_coordinates": "",
     "geo_x": 71.39,
     "geo_y": 38.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "f5726218a0d51dda",
@@ -470,18 +470,18 @@
     "country_code": "CA",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "60.0000, -95.0000",
+    "geo_coordinates": "",
     "geo_x": 23.61,
     "geo_y": 16.67,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "bcef9b280fd40073",
     "original_date": "2026-05-08",
     "disease": "乙型流感",
     "location": "中国澳门",
-    "latitude": 22.1969,
-    "longitude": 113.5463,
+    "latitude": 22.2,
+    "longitude": 113.5,
     "description_cn": "澳门一中学出现乙型流感聚集,11名学生感染,3例确诊,病情轻",
     "continent": "亚洲",
     "source_org": "GOV",
@@ -498,10 +498,10 @@
     "country_code": "CN",
     "geo_audit_status": "vetted",
     "geo_audit_label": "已校验",
-    "geo_coordinates": "22.1969, 113.5463",
-    "geo_x": 81.54,
+    "geo_coordinates": "",
+    "geo_x": 81.53,
     "geo_y": 37.67,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "9c7bfa425956e7e8",
@@ -526,10 +526,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "-34.0000, -64.0000",
+    "geo_coordinates": "",
     "geo_x": 32.22,
     "geo_y": 68.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "329905b66ae68b6a",
@@ -554,10 +554,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "-34.0000, -64.0000",
+    "geo_coordinates": "",
     "geo_x": 32.22,
     "geo_y": 68.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "bf082441b5bc69a1",
@@ -582,10 +582,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "-34.0000, -64.0000",
+    "geo_coordinates": "",
     "geo_x": 32.22,
     "geo_y": 68.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "c11f89d836d12bd8",
@@ -610,18 +610,18 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "-29.0000, 24.0000",
+    "geo_coordinates": "",
     "geo_x": 56.67,
     "geo_y": 66.11,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "6dae41efc22a224d",
     "original_date": "2026-05-07 00:22:56",
     "disease": "登革热、疟疾",
     "location": "德里",
-    "latitude": 28.6139,
-    "longitude": 77.209,
+    "latitude": 28.6,
+    "longitude": 77.2,
     "description_cn": "2026年4月德里登革热病例52例,为五年最高;疟疾29例,卫生部门加强灭蚊措施。",
     "continent": "亚洲",
     "source_org": "Hindustantimes",
@@ -638,10 +638,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "28.6139, 77.2090",
-    "geo_x": 71.45,
-    "geo_y": 34.1,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_coordinates": "",
+    "geo_x": 71.44,
+    "geo_y": 34.11,
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "08644bf292e9df7a",
@@ -666,10 +666,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "54.0000, -2.0000",
+    "geo_coordinates": "",
     "geo_x": 49.44,
     "geo_y": 20.0,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "0583ddd57d07df4e",
@@ -694,10 +694,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "-34.0000, -64.0000",
+    "geo_coordinates": "",
     "geo_x": 32.22,
     "geo_y": 68.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "e2c9f00cc71919b6",
@@ -722,10 +722,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "-34.0000, -64.0000",
+    "geo_coordinates": "",
     "geo_x": 32.22,
     "geo_y": 68.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "db434df77f8aca5e",
@@ -750,10 +750,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "-34.0000, -64.0000",
+    "geo_coordinates": "",
     "geo_x": 32.22,
     "geo_y": 68.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "cfd6db783504244a",
@@ -778,10 +778,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "-29.0000, 24.0000",
+    "geo_coordinates": "",
     "geo_x": 56.67,
     "geo_y": 66.11,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "d0f54471c2cb2a99",
@@ -806,10 +806,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "40.0000, -4.0000",
+    "geo_coordinates": "",
     "geo_x": 48.89,
     "geo_y": 27.78,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "2195344bf5efb270",
@@ -834,18 +834,18 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "-34.0000, -64.0000",
+    "geo_coordinates": "",
     "geo_x": 32.22,
     "geo_y": 68.89,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "18864f5d0cd46718",
     "original_date": "2026-05-06",
     "disease": "乙型流感",
     "location": "中国澳门",
-    "latitude": 22.1969,
-    "longitude": 113.5463,
+    "latitude": 22.2,
+    "longitude": 113.5,
     "description_cn": "澳门报告2起流感群集性感染,6名学生出现发热咳嗽,2人乙流阳性。",
     "continent": "亚洲",
     "source_org": "GOV",
@@ -862,18 +862,18 @@
     "country_code": "CN",
     "geo_audit_status": "vetted",
     "geo_audit_label": "已校验",
-    "geo_coordinates": "22.1969, 113.5463",
-    "geo_x": 81.54,
+    "geo_coordinates": "",
+    "geo_x": 81.53,
     "geo_y": 37.67,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "474a290d4440ec98",
     "original_date": "2026-05-05 22:52:41",
     "disease": "汉塔病毒",
     "location": "中国台湾",
-    "latitude": 16.5388,
-    "longitude": -23.0418,
+    "latitude": 16.5,
+    "longitude": -23.0,
     "description_cn": "MV Hondius 邮轮在佛得角外海监控汉塔病毒聚集,累计7例、3例死亡;WHO提示密切接触者间可能存在人传人。",
     "continent": "非洲",
     "source_org": "FTNN（镜周刊）",
@@ -890,10 +890,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "16.5388, -23.0418",
-    "geo_x": 43.6,
-    "geo_y": 40.81,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_coordinates": "",
+    "geo_x": 43.61,
+    "geo_y": 40.83,
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "407f24ced4774f41",
@@ -918,18 +918,18 @@
     "country_code": "ZA",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "-29.0000, 24.0000",
+    "geo_coordinates": "",
     "geo_x": 56.67,
     "geo_y": 66.11,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "6b69714431a1c524",
     "original_date": "2026/05/02",
     "disease": "季节性流感",
     "location": "中国香港",
-    "latitude": 22.3193,
-    "longitude": 114.1694,
+    "latitude": 22.3,
+    "longitude": 114.2,
     "description_cn": "2026年第18周香港季节性流感监测,严重病例4例,学校暴发25宗,阳性率2.48%",
     "continent": "亚洲",
     "source_org": "香港卫生防护中心",
@@ -946,10 +946,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "22.3193, 114.1694",
-    "geo_x": 81.71,
-    "geo_y": 37.6,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_coordinates": "",
+    "geo_x": 81.72,
+    "geo_y": 37.61,
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "eeeb7ab56a098793",
@@ -974,10 +974,10 @@
     "country_code": "CA",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "60.0000, -95.0000",
+    "geo_coordinates": "",
     "geo_x": 23.61,
     "geo_y": 16.67,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "976f433c02bc63e5",
@@ -1002,10 +1002,10 @@
     "country_code": "JP",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "36.0000, 138.0000",
+    "geo_coordinates": "",
     "geo_x": 88.33,
     "geo_y": 30.0,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "dd8e4a4e501e600e",
@@ -1030,17 +1030,17 @@
     "country_code": "JP",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "36.0000, 138.0000",
+    "geo_coordinates": "",
     "geo_x": 88.33,
     "geo_y": 30.0,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "4c654414fd3821da",
     "original_date": "2026-04-26 00:00:00",
     "disease": "急性上呼吸道",
     "location": "新加坡",
-    "latitude": 1.3667,
+    "latitude": 1.4,
     "longitude": 103.8,
     "description_cn": "新加坡第17周急性上呼吸道感染2667例,流感阳性率7%,COVID-19阳性率14%",
     "continent": "亚洲",
@@ -1058,10 +1058,10 @@
     "country_code": "SG",
     "geo_audit_status": "approximate_country",
     "geo_audit_label": "国家级近似",
-    "geo_coordinates": "1.3667, 103.8000",
+    "geo_coordinates": "",
     "geo_x": 78.83,
-    "geo_y": 49.24,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_y": 49.22,
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "1ae7856dd11e2c90",
@@ -1086,10 +1086,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "60.0000, -95.0000",
+    "geo_coordinates": "",
     "geo_x": 23.61,
     "geo_y": 16.67,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "020272c785dcf82d",
@@ -1114,10 +1114,10 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "36.0000, 138.0000",
+    "geo_coordinates": "",
     "geo_x": 88.33,
     "geo_y": 30.0,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   },
   {
     "id": "bb1dc88aa7beeb80",
@@ -1142,9 +1142,9 @@
     "country_code": "",
     "geo_audit_status": "needs_review",
     "geo_audit_label": "待核验",
-    "geo_coordinates": "36.0000, 138.0000",
+    "geo_coordinates": "",
     "geo_x": 88.33,
     "geo_y": 30.0,
-    "geo_note": "抽象无边界定位图，仅作态势索引，不代表行政或主权边界。"
+    "geo_note": "网页仅展示地区定位概览，不公开精确坐标。"
   }
 ]
