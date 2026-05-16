@@ -1,14 +1,15 @@
 {
-  "total_records": 56,
-  "disease_count": 30,
-  "continent_count": 5,
-  "latest_date": "2026-05-14 17:31:46.788037",
+  "total_records": 65,
+  "disease_count": 31,
+  "continent_count": 6,
+  "latest_date": "2026-05-15 17:31:39.923556",
   "filter_options": {
     "diseases": [
       "COVID-19",
       "H5N6禽流感",
       "H7N7新型A型流感",
       "乙型流感",
+      "埃博拉病毒病",
       "基孔肯雅热",
       "基孔肯雅热, 钩端螺旋体病, 支气管炎, 猴痘, 甲型肝炎, 伤寒",
       "基孔肯雅热、登革热",
@@ -40,9 +41,10 @@
       "亚洲",
       "北美洲",
       "南美洲",
+      "大洋洲",
       "欧洲",
       "非洲"
     ]
   },
-  "last_modified": "2026-05-15T06:06:44Z"
+  "last_modified": "2026-05-16T05:37:49Z"
 }
