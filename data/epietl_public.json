@@ -1,15 +1,15 @@
 {
   "meta": {
-    "fetched_at": "2026-05-15T17:56:48.111386+08:00",
+    "fetched_at": "2026-05-17T07:08:51.549096+08:00",
     "base_url": "https://epietl.com",
     "dashboard_days": 60,
-    "channel_count": 42,
-    "total_reports": 1305,
-    "complete_reports": 1305,
+    "channel_count": 43,
+    "total_reports": 1331,
+    "complete_reports": 1331,
     "pending_reports": 0,
     "failed_reports": 0,
-    "reports_analyzed": 154,
-    "risk_generated_at": "2026-05-15T12:21:37",
+    "reports_analyzed": 164,
+    "risk_generated_at": "2026-05-17T01:11:41",
     "health": {
       "status": "ok",
       "agent_ready": true,
@@ -20,7 +20,7 @@
     "source_types": [
       {
         "label": "report_collection",
-        "count": 30
+        "count": 31
       },
       {
         "label": "dashboard",
@@ -34,7 +34,7 @@
     "languages": [
       {
         "label": "en",
-        "count": 27
+        "count": 28
       },
       {
         "label": "zh",
@@ -64,7 +64,7 @@
     "regions": [
       {
         "label": "Global",
-        "count": 8
+        "count": 9
       },
       {
         "label": "United States",
@@ -108,16 +108,22 @@
     "global_summary": "",
     "country_risks": [
       {
-        "country": "Democratic Republic of the Congo",
-        "score": 59,
+        "country": "Iowa",
+        "score": 55,
         "level": "medium",
-        "top_pathogen": "Monkeypox virus"
+        "top_pathogen": "SARS-CoV-2"
       },
       {
-        "country": "Bangladesh",
+        "country": "Connecticut",
         "score": 52,
         "level": "medium",
-        "top_pathogen": "Measles morbillivirus"
+        "top_pathogen": "SARS-CoV-2"
+      },
+      {
+        "country": "Nebraska",
+        "score": 52,
+        "level": "medium",
+        "top_pathogen": "SARS-CoV-2"
       },
       {
         "country": "Sierra Leone",
@@ -126,58 +132,52 @@
         "top_pathogen": "Monkeypox virus"
       },
       {
-        "country": "Dem. Rep. Congo",
+        "country": "Vermont",
+        "score": 52,
+        "level": "medium",
+        "top_pathogen": "SARS-CoV-2"
+      },
+      {
+        "country": "Democratic Republic of the Congo",
         "score": 50,
-        "level": "medium",
-        "top_pathogen": "Vibrio cholerae"
-      },
-      {
-        "country": "Mexico",
-        "score": 50,
-        "level": "medium",
-        "top_pathogen": "Measles morbillivirus"
-      },
-      {
-        "country": "Vietnam",
-        "score": 49,
-        "level": "medium",
-        "top_pathogen": "Dengue virus"
-      },
-      {
-        "country": "Madagascar",
-        "score": 46,
         "level": "medium",
         "top_pathogen": "Monkeypox virus"
       },
       {
-        "country": "Afghanistan",
-        "score": 45,
+        "country": "Caribbean",
+        "score": 49,
         "level": "medium",
-        "top_pathogen": "Rift Valley fever virus"
+        "top_pathogen": "Influenza virus"
       },
       {
-        "country": "Malawi",
-        "score": 44,
+        "country": "Central America",
+        "score": 49,
         "level": "medium",
-        "top_pathogen": "Vibrio cholerae"
+        "top_pathogen": "Influenza virus"
       },
       {
-        "country": "Cambodia",
-        "score": 43,
+        "country": "Cayman Islands",
+        "score": 48,
         "level": "medium",
-        "top_pathogen": "Avian influenza virus"
+        "top_pathogen": "Influenza A virus"
       },
       {
         "country": "Ethiopia",
-        "score": 43,
+        "score": 48,
         "level": "medium",
-        "top_pathogen": "Respiratory syncytial virus"
+        "top_pathogen": "Marburg virus"
       },
       {
-        "country": "Mozambique",
-        "score": 43,
+        "country": "Louisiana",
+        "score": 48,
         "level": "medium",
-        "top_pathogen": "Vibrio cholerae"
+        "top_pathogen": "SARS-CoV-2"
+      },
+      {
+        "country": "Maldives",
+        "score": 48,
+        "level": "medium",
+        "top_pathogen": "Dengue virus"
       }
     ]
   },
@@ -221,6 +221,19 @@
       ],
       "source_org": "WHO",
       "source_url": "https://www.who.int/emergencies/disease-outbreak-news/item/2019-DON113"
+    },
+    {
+      "title": "Healthcare-associated Mpox outbreak in Pakistan with high CFR",
+      "severity": "critical",
+      "category": "other",
+      "pathogen": "Monkeypox virus",
+      "summary": "Healthcare-associated Clade Ib Mpox outbreak in Pakistan NICUs affecting infants with 28% CFR.",
+      "epi_week": "2026-W20",
+      "regions": [
+        "Pakistan"
+      ],
+      "source_org": "WHO",
+      "source_url": "https://cdn.who.int/media/docs/default-source/_sage-2026/multi-country-outbreak-of-mpox--external-situation-report_65.pdf?sfvrsn=ebdacfe2_4&download=true"
     },
     {
       "title": "Multi-country Cholera Surge with High Mortality",
@@ -303,19 +316,6 @@
       ],
       "source_org": "Ministry of Health and Family Welfare",
       "source_url": ""
-    },
-    {
-      "title": "Mpox Clade 1 Cases in Kerala",
-      "severity": "high",
-      "category": "other",
-      "pathogen": "Monkeypox virus",
-      "summary": "Two imported Mpox Clade 1 cases detected in Kerala with international travel history.",
-      "epi_week": "2026-W20",
-      "regions": [
-        "Kerala"
-      ],
-      "source_org": "IDSP India",
-      "source_url": ""
     }
   ],
   "channels": [
@@ -332,7 +332,7 @@
       "complete_reports": 158,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:35"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "cncdc_flu_weekly",
@@ -347,7 +347,7 @@
       "complete_reports": 123,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "us_pmc_covid",
@@ -362,7 +362,7 @@
       "complete_reports": 99,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:35"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "tw_cdc_covid",
@@ -377,7 +377,7 @@
       "complete_reports": 90,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:34"
+      "last_sync": "2026-05-17T01:11:40"
     },
     {
       "id": "pk_nih_idsrs",
@@ -392,7 +392,7 @@
       "complete_reports": 75,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:34"
+      "last_sync": "2026-05-17T01:11:40"
     },
     {
       "id": "cncdc_arism",
@@ -407,7 +407,7 @@
       "complete_reports": 71,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "africa_cdc_ebs",
@@ -422,7 +422,7 @@
       "complete_reports": 68,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "za_nicd_respiratory",
@@ -437,7 +437,7 @@
       "complete_reports": 66,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:35"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "au_nsw_respiratory",
@@ -452,7 +452,7 @@
       "complete_reports": 57,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "cncdc_covid19",
@@ -467,7 +467,7 @@
       "complete_reports": 56,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "in_idsp",
@@ -482,7 +482,7 @@
       "complete_reports": 50,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "who_don",
@@ -493,11 +493,11 @@
       "language": "en",
       "base_url": "https://www.who.int/emergencies/disease-outbreak-news",
       "status": "active",
-      "total_reports": 43,
-      "complete_reports": 43,
+      "total_reports": 44,
+      "complete_reports": 44,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T12:21:36"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "br_svsa_respiratory",
@@ -512,7 +512,7 @@
       "complete_reports": 40,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "uk_ukhsa_flu",
@@ -527,7 +527,7 @@
       "complete_reports": 34,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:34"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "jp_jihs_idwr",
@@ -542,7 +542,7 @@
       "complete_reports": 33,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "cncdc_global_risk",
@@ -553,11 +553,11 @@
       "language": "zh",
       "base_url": "https://www.chinacdc.cn/jksj/jksj03/",
       "status": "active",
-      "total_reports": 28,
-      "complete_reports": 28,
+      "total_reports": 29,
+      "complete_reports": 29,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "de_rki_grippeweb",
@@ -572,7 +572,7 @@
       "complete_reports": 27,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "sg_moh_flu",
@@ -587,7 +587,22 @@
       "complete_reports": 26,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:34"
+      "last_sync": "2026-05-17T01:11:40"
+    },
+    {
+      "id": "who_emergency_sitrep",
+      "name": "WHO – Emergency Situation Updates",
+      "organization": "World Health Organization",
+      "country_or_region": "Global",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.who.int/publications/m?meetingreporttypes=ce6cf3c6-43fc-49bf-9c4c-71bd965ee047",
+      "status": "active",
+      "total_reports": 23,
+      "complete_reports": 23,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "who_flu_weekly",
@@ -602,7 +617,7 @@
       "complete_reports": 21,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:35"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "ar_ben",
@@ -617,7 +632,7 @@
       "complete_reports": 19,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "hk_cedd_flu",
@@ -632,7 +647,7 @@
       "complete_reports": 19,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "uk_outbreaks_under_monitoring",
@@ -647,7 +662,22 @@
       "complete_reports": 17,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T12:21:37"
+      "last_sync": "2026-05-17T01:11:41"
+    },
+    {
+      "id": "kr_kdca_weekly",
+      "name": "Korea KDCA – Weekly Infectious Disease Occurrence Trends",
+      "organization": "Korea Disease Control and Prevention Agency (KDCA)",
+      "country_or_region": "South Korea",
+      "source_type": "report_collection",
+      "language": "ko",
+      "base_url": "https://dportal.kdca.go.kr/pot/bbs/BD_selectBbsList.do?q_bbsSn=1009",
+      "status": "active",
+      "total_reports": 17,
+      "complete_reports": 17,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "jp_mhlw_covid",
@@ -662,22 +692,7 @@
       "complete_reports": 16,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
-    },
-    {
-      "id": "kr_kdca_weekly",
-      "name": "Korea KDCA – Weekly Infectious Disease Occurrence Trends",
-      "organization": "Korea Disease Control and Prevention Agency (KDCA)",
-      "country_or_region": "South Korea",
-      "source_type": "report_collection",
-      "language": "ko",
-      "base_url": "https://dportal.kdca.go.kr/pot/bbs/BD_selectBbsList.do?q_bbsSn=1009",
-      "status": "active",
-      "total_reports": 16,
-      "complete_reports": 16,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "woah_hpai",
@@ -692,7 +707,7 @@
       "complete_reports": 12,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:35"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "woah_asf",
@@ -707,7 +722,7 @@
       "complete_reports": 11,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:35"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "il_moh_respiratory",
@@ -737,7 +752,7 @@
       "complete_reports": 5,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "who_covid_variants",
@@ -767,7 +782,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "ca_phac_flu",
@@ -782,7 +797,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "ca_phac_rsv",
@@ -797,7 +812,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "ca_phac_snapshot",
@@ -812,7 +827,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "ca_phac_wastewater",
@@ -827,7 +842,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:33"
+      "last_sync": "2026-05-17T01:11:39"
     },
     {
       "id": "who_covid_dashboard",
@@ -842,7 +857,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:35"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "us_cdc_fluview",
@@ -857,7 +872,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:34"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "us_cdc_nwss_covid",
@@ -872,7 +887,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:34"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "us_cdc_nwss_variants",
@@ -887,7 +902,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:34"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "us_cdc_respiratory",
@@ -902,7 +917,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-05-15T10:12:34"
+      "last_sync": "2026-05-17T01:11:41"
     },
     {
       "id": "hk_cdc_covid_data",
