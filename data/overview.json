@@ -1,11 +1,12 @@
 {
-  "total_records": 31,
-  "disease_count": 20,
-  "continent_count": 5,
-  "latest_date": "2026-05-19 04:51:16",
+  "total_records": 41,
+  "disease_count": 23,
+  "continent_count": 6,
+  "latest_date": "2026/05/20",
   "filter_options": {
     "diseases": [
       "COVID-19",
+      "乙型流感",
       "埃博拉",
       "基孔肯雅热",
       "基孔肯雅热, 钩端螺旋体病, 支气管炎, 猴痘, 甲型肝炎, 伤寒",
@@ -24,15 +25,18 @@
       "疟疾、基孔肯雅热、钩端螺旋体病、猴痘",
       "登革热",
       "登革热、基孔肯雅热",
+      "白喉",
+      "西尼罗病毒",
       "诺如病毒"
     ],
     "continents": [
       "亚洲",
       "北美洲",
       "南美洲",
+      "大洋洲",
       "欧洲",
       "非洲"
     ]
   },
-  "last_modified": "2026-05-20T06:30:07Z"
+  "last_modified": "2026-05-21T06:31:19Z"
 }
