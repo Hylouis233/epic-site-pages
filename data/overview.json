@@ -1,32 +1,36 @@
 {
-  "total_records": 24,
-  "disease_count": 13,
-  "continent_count": 6,
-  "latest_date": "2026/05/20",
+  "total_records": 29,
+  "disease_count": 19,
+  "continent_count": 4,
+  "latest_date": "2026/05/22",
   "filter_options": {
     "diseases": [
       "COVID-19",
+      "Myocarditis",
       "M痘",
       "乙型流感",
       "埃博拉",
+      "基孔肯雅热",
       "季节性流感",
       "季节性流感(甲型/乙型)",
       "急性呼吸道",
+      "新冠肺炎",
       "汉塔病毒",
-      "疟疾、基孔肯雅热、钩端螺旋体病、猴痘",
+      "流感",
+      "甲型流感",
       "登革热",
-      "登革热、基孔肯雅热",
+      "登革热、猴痘、疑似霍乱",
       "白喉",
-      "西尼罗病毒"
+      "西尼罗病毒",
+      "霍乱样急性水样腹泻(疑似霍乱)",
+      "麻疹"
     ],
     "continents": [
       "亚洲",
       "北美洲",
-      "南美洲",
       "大洋洲",
-      "欧洲",
       "非洲"
     ]
   },
-  "last_modified": "2026-05-22T06:29:19Z"
+  "last_modified": "2026-05-23T05:49:16Z"
 }
