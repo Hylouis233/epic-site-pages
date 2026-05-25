@@ -1,8 +1,8 @@
 {
-  "total_records": 28,
-  "disease_count": 18,
-  "continent_count": 4,
-  "latest_date": "2026-05-23 08:28:40",
+  "total_records": 30,
+  "disease_count": 19,
+  "continent_count": 5,
+  "latest_date": "2026/05/24",
   "filter_options": {
     "diseases": [
       "COVID-19",
@@ -22,14 +22,16 @@
       "登革热、猴痘、疑似霍乱",
       "白喉",
       "西尼罗病毒",
-      "霍乱样急性水样腹泻(疑似霍乱)"
+      "霍乱样急性水样腹泻(疑似霍乱)",
+      "麻疹"
     ],
     "continents": [
       "亚洲",
       "北美洲",
       "大洋洲",
+      "欧洲",
       "非洲"
     ]
   },
-  "last_modified": "2026-05-24T06:13:04Z"
+  "last_modified": "2026-05-25T06:49:03Z"
 }
