@@ -1,8 +1,8 @@
 {
-  "total_records": 30,
-  "disease_count": 19,
+  "total_records": 33,
+  "disease_count": 17,
   "continent_count": 5,
-  "latest_date": "2026/05/24",
+  "latest_date": "2026/05/25",
   "filter_options": {
     "diseases": [
       "COVID-19",
@@ -11,9 +11,7 @@
       "乙型流感",
       "埃博拉",
       "基孔肯雅热",
-      "季节性流感",
       "季节性流感(甲型/乙型)",
-      "急性呼吸道",
       "新冠肺炎",
       "汉塔病毒",
       "流感",
@@ -33,5 +31,5 @@
       "非洲"
     ]
   },
-  "last_modified": "2026-05-25T06:49:03Z"
+  "last_modified": "2026-05-26T06:28:57Z"
 }
