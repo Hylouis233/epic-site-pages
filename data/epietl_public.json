@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-05-27T09:17:15.373325+08:00",
+    "fetched_at": "2026-05-27T18:25:24.172059+08:00",
     "base_url": "https://epietl.com",
     "dashboard_days": 60,
     "channel_count": 69,
@@ -8,7 +8,7 @@
     "complete_reports": 2177,
     "pending_reports": 0,
     "failed_reports": 0,
-    "reports_analyzed": 150,
+    "reports_analyzed": 151,
     "risk_generated_at": "2026-05-27T01:02:52",
     "health": {
       "status": "ok",
@@ -125,7 +125,7 @@
       },
       {
         "country": "Bangladesh",
-        "score": 52,
+        "score": 59,
         "level": "medium",
         "top_pathogen": "Measles morbillivirus"
       },
@@ -146,6 +146,12 @@
         "score": 50,
         "level": "medium",
         "top_pathogen": "Vibrio cholerae"
+      },
+      {
+        "country": "Suriname",
+        "score": 50,
+        "level": "medium",
+        "top_pathogen": "Chikungunya virus"
       },
       {
         "country": "Mexico",
@@ -176,12 +182,6 @@
         "score": 46,
         "level": "medium",
         "top_pathogen": "Hantavirus"
-      },
-      {
-        "country": "Cameroon",
-        "score": 46,
-        "level": "medium",
-        "top_pathogen": "Monkeypox virus"
       }
     ]
   },
@@ -268,6 +268,19 @@
       "source_url": "https://dportal.kdca.go.kr/pot/component/file/ND_fileDownload.do?q_fileSn=4355555&q_fileId=f4ff4ba5-970a-401d-8f10-6388f1e9d177"
     },
     {
+      "title": "Suriname Chikungunya Outbreak Surge",
+      "severity": "high",
+      "category": "vector_borne",
+      "pathogen": "Chikungunya virus",
+      "summary": "IFRC (19 Mar 2026): Suriname confirms 1,357 Chikungunya cases and 1 death since late January outbreak declaration.",
+      "epi_week": "2026-W53",
+      "regions": [
+        "Suriname"
+      ],
+      "source_org": "IFRC",
+      "source_url": "https://reliefweb.int/disaster/ep-2026-000037-sur"
+    },
+    {
       "title": "First Mpox Clade 1b case detected in Taiwan",
       "severity": "high",
       "category": "other",
@@ -311,19 +324,6 @@
       ],
       "source_org": "UKHSA",
       "source_url": "https://www.gov.uk/government/publications/outbreaks-under-monitoring-in-2026/outbreaks-under-monitoring-week-20-week-ending-17-may-2026"
-    },
-    {
-      "title": "Indonesia reports multiple emerging infectious diseases including Ebola and Mpox",
-      "severity": "high",
-      "category": "other",
-      "pathogen": "Monkeypox virus",
-      "summary": "MoH Indonesia (16 May 2026): Reports active situations for Mpox, Ebola, Yellow Fever, Hantavirus, and CCHF in weekly update.",
-      "epi_week": "2026-W20",
-      "regions": [
-        "Indonesia"
-      ],
-      "source_org": "Ministry of Health Indonesia",
-      "source_url": "https://infeksiemerging.kemkes.go.id/weekly-update/perkembangan-situasi-penyakit-infeksi-emerging-minggu-epidemiologi-ke-20-tahun-2026"
     }
   ],
   "channels": [

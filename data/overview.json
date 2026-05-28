@@ -1,8 +1,8 @@
 {
-  "total_records": 31,
-  "disease_count": 16,
+  "total_records": 25,
+  "disease_count": 15,
   "continent_count": 5,
-  "latest_date": "2026/05/26",
+  "latest_date": "2026-05-26 03:04:03",
   "filter_options": {
     "diseases": [
       "COVID-19",
@@ -14,7 +14,6 @@
       "汉塔病毒",
       "流感",
       "流感、RSV、2019冠状病毒肺炎、结核、梅毒、百日咳、侵袭性肺炎链球菌感染、肠出血性大肠杆菌",
-      "流行性脑脊髓膜炎",
       "甲型流感",
       "登革热",
       "登革热、猴痘、疑似霍乱",
@@ -30,5 +29,5 @@
       "非洲"
     ]
   },
-  "last_modified": "2026-05-27T06:42:20Z"
+  "last_modified": "2026-05-28T06:34:47Z"
 }
