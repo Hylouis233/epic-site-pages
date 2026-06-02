@@ -1,8 +1,8 @@
 {
-  "total_records": 29,
-  "disease_count": 18,
-  "continent_count": 6,
-  "latest_date": "2026-05-31 00:21:44",
+  "total_records": 25,
+  "disease_count": 17,
+  "continent_count": 5,
+  "latest_date": "2026-06-01 04:39:29",
   "filter_options": {
     "diseases": [
       "COVID-19",
@@ -21,17 +21,15 @@
       "甲型/乙型流感",
       "疟疾",
       "病毒性胃肠炎",
-      "登革热",
-      "西尼罗病毒"
+      "登革热"
     ],
     "continents": [
       "亚洲",
       "北美洲",
       "南美洲",
       "大洋洲",
-      "欧洲",
       "非洲"
     ]
   },
-  "last_modified": "2026-06-01T07:25:30Z"
+  "last_modified": "2026-06-02T07:00:34Z"
 }
