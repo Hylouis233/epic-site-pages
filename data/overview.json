@@ -1,8 +1,8 @@
 {
   "total_records": 31,
-  "disease_count": 22,
+  "disease_count": 23,
   "continent_count": 5,
-  "latest_date": "2026-06-02 09:05:32",
+  "latest_date": "2026-06-02 20:37:10",
   "filter_options": {
     "diseases": [
       "COVID-19",
@@ -20,6 +20,7 @@
       "流感(甲型/乙型)",
       "流感、COVID-19、呼吸道合胞病毒",
       "流感、RSV、2019冠状病毒肺炎、结核、梅毒、百日咳、侵袭性肺炎链球菌感染、肠出血性大肠杆菌",
+      "流感及新冠",
       "甲型/乙型流感",
       "疟疾",
       "病毒性胃肠炎",
@@ -36,5 +37,5 @@
       "非洲"
     ]
   },
-  "last_modified": "2026-06-03T07:18:28Z"
+  "last_modified": "2026-06-04T06:58:31Z"
 }
