@@ -1,16 +1,16 @@
 {
-  "total_records": 37,
-  "disease_count": 20,
-  "continent_count": 5,
-  "latest_date": "2026/06/07",
+  "total_records": 38,
+  "disease_count": 21,
+  "continent_count": 4,
+  "latest_date": "2026-06-08 12:20:22",
   "filter_options": {
     "diseases": [
       "COVID-19",
       "Mpox(猴痘)",
+      "中东呼吸综合征(MERS)",
       "埃博拉",
       "埃博拉病毒",
       "季节性流感",
-      "季节性流感、COVID-19、急性呼吸道",
       "恙虫病",
       "新冠肺炎",
       "汉塔病毒",
@@ -24,15 +24,15 @@
       "登革热、基孔肯雅热、寨卡病毒",
       "肠病毒",
       "肠病毒(克沙奇A6、A4、D68等)",
+      "霍乱",
       "麻疹"
     ],
     "continents": [
       "亚洲",
       "北美洲",
-      "南美洲",
       "欧洲",
       "非洲"
     ]
   },
-  "last_modified": "2026-06-08T07:09:58Z"
+  "last_modified": "2026-06-09T06:29:54Z"
 }
