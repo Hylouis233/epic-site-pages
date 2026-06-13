@@ -1,25 +1,27 @@
 {
-  "total_records": 39,
-  "disease_count": 20,
+  "total_records": 44,
+  "disease_count": 22,
   "continent_count": 5,
-  "latest_date": "2026/06/11",
+  "latest_date": "2026/06/12",
   "filter_options": {
     "diseases": [
       "COVID-19",
       "中东呼吸综合征(MERS)",
       "乙型流感",
+      "军团菌病",
       "副伤寒",
       "埃博拉",
       "埃博拉病毒",
       "季节性流感",
+      "志贺菌病",
       "恙虫病",
+      "新冠病毒",
       "新冠肺炎",
       "日本脑炎",
       "汉塔病毒",
       "流感",
       "流感、COVID-19、呼吸道合胞病毒",
       "甲型流感",
-      "疟疾",
       "登革热",
       "登革热、疟疾、基孔肯雅热",
       "肠病毒",
@@ -34,5 +36,5 @@
       "非洲"
     ]
   },
-  "last_modified": "2026-06-12T06:58:01Z"
+  "last_modified": "2026-06-13T06:34:30Z"
 }
