@@ -1,14 +1,13 @@
 {
-  "total_records": 49,
-  "disease_count": 27,
+  "total_records": 47,
+  "disease_count": 25,
   "continent_count": 5,
-  "latest_date": "2026/06/14",
+  "latest_date": "2026/06/15",
   "filter_options": {
     "diseases": [
       "COVID-19",
       "H5N1禽流感",
       "HIV",
-      "中东呼吸综合征(MERS)",
       "乙型流感",
       "人类免疫缺陷病毒(HIV)",
       "军团菌病",
@@ -30,7 +29,6 @@
       "登革热、疟疾、基孔肯雅热",
       "登革热、麻疹",
       "肠病毒",
-      "霍乱",
       "麻疹"
     ],
     "continents": [
@@ -41,5 +39,5 @@
       "非洲"
     ]
   },
-  "last_modified": "2026-06-15T07:41:56Z"
+  "last_modified": "2026-06-16T07:46:26Z"
 }
