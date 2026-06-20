@@ -1,8 +1,8 @@
 {
-  "total_records": 57,
-  "disease_count": 29,
+  "total_records": 54,
+  "disease_count": 26,
   "continent_count": 5,
-  "latest_date": "2026/06/18",
+  "latest_date": "2026/06/19",
   "filter_options": {
     "diseases": [
       "COVID-19",
@@ -10,12 +10,9 @@
       "H9N2亚型禽流感",
       "HIV",
       "人类免疫缺陷病毒(HIV)",
-      "军团菌病",
       "埃博拉",
       "季节性流感",
-      "志贺菌病",
       "急性呼吸道传染病",
-      "新冠病毒",
       "新型冠状病毒肺炎",
       "日本脑炎",
       "流感",
@@ -43,5 +40,5 @@
       "非洲"
     ]
   },
-  "last_modified": "2026-06-19T07:33:12Z"
+  "last_modified": "2026-06-20T06:43:42Z"
 }
