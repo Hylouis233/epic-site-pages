@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-20T06:43:42Z",
+  "generated_at": "2026-06-21T07:13:28Z",
   "record_count": 54,
   "map_point_count": 54,
-  "disease_count": 26,
+  "disease_count": 27,
   "continent_count": 5,
-  "epietl_channel_count": 66,
+  "epietl_channel_count": 67,
   "download_week_embedded": true,
-  "daily_archive_path": "BACKUP/2026-06-20.md",
+  "daily_archive_path": "BACKUP/2026-06-21.md",
   "daily_archive_item_count": 0,
   "warnings": [],
-  "rss_generated_at": "2026-06-20T06:43:42Z",
+  "rss_generated_at": "2026-06-21T07:13:28Z",
   "rss_timezone": "Asia/Shanghai",
-  "rss_window_start": "2026-06-20T00:00:00+08:00",
-  "rss_window_end": "2026-06-20T23:59:59+08:00",
+  "rss_window_start": "2026-06-21T00:00:00+08:00",
+  "rss_window_end": "2026-06-21T23:59:59+08:00",
   "rss_item_count": 0,
   "rss_source_record_count": 54,
   "rss_dated_record_count": 53,
-  "rss_target_date": "2026-06-20"
+  "rss_target_date": "2026-06-21"
 }
