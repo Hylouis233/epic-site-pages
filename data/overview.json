@@ -1,8 +1,8 @@
 {
-  "total_records": 54,
-  "disease_count": 27,
+  "total_records": 52,
+  "disease_count": 26,
   "continent_count": 5,
-  "latest_date": "2026/06/20",
+  "latest_date": "2026/06/21",
   "filter_options": {
     "diseases": [
       "COVID-19",
@@ -22,7 +22,6 @@
       "流感,COVID-19,急性呼吸道",
       "流感、COVID-19、呼吸道合胞病毒",
       "狂犬病",
-      "甲型H9流感",
       "甲型流感",
       "甲流",
       "疟疾",
@@ -41,5 +40,5 @@
       "非洲"
     ]
   },
-  "last_modified": "2026-06-21T07:13:28Z"
+  "last_modified": "2026-06-22T07:44:35Z"
 }
