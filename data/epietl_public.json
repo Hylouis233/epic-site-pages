@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-06-22T17:49:11.942567+08:00",
+    "fetched_at": "2026-06-23T17:54:25.772756+08:00",
     "base_url": "https://epietl.com",
     "dashboard_days": 60,
     "channel_count": 67,
@@ -8,7 +8,7 @@
     "complete_reports": 3186,
     "pending_reports": 0,
     "failed_reports": 0,
-    "reports_analyzed": 84,
+    "reports_analyzed": 77,
     "risk_generated_at": "2026-06-22T02:05:42",
     "health": {
       "status": "ok",
@@ -117,75 +117,75 @@
     "country_risks": [
       {
         "country": "Dem. Rep. Congo",
-        "score": 80,
-        "level": "critical",
+        "score": 76,
+        "level": "high",
         "top_pathogen": "Ebola virus"
       },
       {
-        "country": "Mexico",
-        "score": 76,
-        "level": "high",
-        "top_pathogen": "Measles morbillivirus"
-      },
-      {
         "country": "Bangladesh",
-        "score": 75,
+        "score": 64,
         "level": "high",
         "top_pathogen": "Measles morbillivirus"
       },
       {
         "country": "Guatemala",
-        "score": 71,
+        "score": 64,
         "level": "high",
         "top_pathogen": "Measles morbillivirus"
-      },
-      {
-        "country": "Indonesia",
-        "score": 69,
-        "level": "high",
-        "top_pathogen": "Poliovirus"
       },
       {
         "country": "Uganda",
-        "score": 65,
-        "level": "high",
+        "score": 56,
+        "level": "medium",
         "top_pathogen": "Ebola virus"
       },
       {
-        "country": "Democratic Republic of the Congo",
-        "score": 56,
-        "level": "medium",
-        "top_pathogen": "Vibrio cholerae"
-      },
-      {
         "country": "United States of America",
-        "score": 52,
+        "score": 49,
         "level": "medium",
         "top_pathogen": "Amanita species"
-      },
-      {
-        "country": "Brazil",
-        "score": 51,
-        "level": "medium",
-        "top_pathogen": "Respiratory syncytial virus"
-      },
-      {
-        "country": "Bolivia",
-        "score": 49,
-        "level": "medium",
-        "top_pathogen": "Influenza A virus"
-      },
-      {
-        "country": "Canada",
-        "score": 49,
-        "level": "medium",
-        "top_pathogen": "Measles morbillivirus"
       },
       {
         "country": "Argentina",
         "score": 48,
         "level": "medium",
         "top_pathogen": "Chikungunya virus"
+      },
+      {
+        "country": "Bolivia",
+        "score": 48,
+        "level": "medium",
+        "top_pathogen": "Influenza A virus"
+      },
+      {
+        "country": "Brazil",
+        "score": 48,
+        "level": "medium",
+        "top_pathogen": "Respiratory syncytial virus"
+      },
+      {
+        "country": "Afghanistan",
+        "score": 47,
+        "level": "medium",
+        "top_pathogen": "Crimean-Congo hemorrhagic fever virus"
+      },
+      {
+        "country": "Mexico",
+        "score": 46,
+        "level": "medium",
+        "top_pathogen": "Measles morbillivirus"
+      },
+      {
+        "country": "Canada",
+        "score": 44,
+        "level": "medium",
+        "top_pathogen": "Measles morbillivirus"
+      },
+      {
+        "country": "India",
+        "score": 44,
+        "level": "medium",
+        "top_pathogen": "Nipah virus"
       }
     ]
   },
@@ -306,19 +306,6 @@
       "source_url": "https://cdn.who.int/media/docs/default-source/documents/emergencies/situation-reports/20260529_multi-country_outbreak-of-cholera_epidemiological_update_37.pdf?sfvrsn=ecc0dbc9_3&download=true"
     },
     {
-      "title": "Measles resurgence in Mexico",
-      "severity": "critical",
-      "category": "respiratory",
-      "pathogen": "Measles morbillivirus",
-      "summary": "KDCA (May 2026): KDCA W19/2026 (10 May 2026): Mexico reports 11,111 cases in 2026, significantly exceeding 2025 totals.",
-      "epi_week": "2026-W19",
-      "regions": [
-        "Mexico"
-      ],
-      "source_org": "KDCA",
-      "source_url": "https://dportal.kdca.go.kr/pot/component/file/ND_fileDownload.do?q_fileSn=4446114&q_fileId=278af017-e7f8-49fd-984f-9f8a2e48c9b3"
-    },
-    {
       "title": "SARS-CoV-2 Variant NB.1.8.1 Increase",
       "severity": "critical",
       "category": "respiratory",
@@ -343,6 +330,21 @@
       ],
       "source_org": "IFRC",
       "source_url": "https://reliefweb.int/disaster/ep-2026-000037-sur"
+    },
+    {
+      "title": "Andes virus cluster on cruise ship",
+      "severity": "high",
+      "category": "vector_borne",
+      "pathogen": "Hantavirus",
+      "summary": "UKHSA (18 Jun 2026): 13 cases, 3 deaths linked to cruise ship from Argentina; multi-country exposure.",
+      "epi_week": "2026-W24",
+      "regions": [
+        "Argentina",
+        "Chile",
+        "Uruguay"
+      ],
+      "source_org": "UKHSA",
+      "source_url": "https://www.gov.uk/government/publications/outbreaks-under-monitoring-in-2026/outbreaks-under-monitoring-week-24-week-ending-14-june-2026"
     }
   ],
   "channels": [
@@ -1304,7 +1306,7 @@
       "complete_reports": 0,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": ""
+      "last_sync": "2026-06-22T20:48:30"
     },
     {
       "id": "hk_cdc_flu_data",
@@ -1319,7 +1321,7 @@
       "complete_reports": 0,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": ""
+      "last_sync": "2026-06-22T20:48:32"
     },
     {
       "id": "it_iss_respivirnet",
