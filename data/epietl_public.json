@@ -1,15 +1,15 @@
 {
   "meta": {
-    "fetched_at": "2026-06-24T17:59:00.517047+08:00",
+    "fetched_at": "2026-06-25T17:53:34.824359+08:00",
     "base_url": "https://epietl.com",
     "dashboard_days": 60,
     "channel_count": 69,
-    "total_reports": 3270,
-    "complete_reports": 3270,
+    "total_reports": 3280,
+    "complete_reports": 3280,
     "pending_reports": 0,
     "failed_reports": 0,
-    "reports_analyzed": 76,
-    "risk_generated_at": "2026-06-24T01:40:31",
+    "reports_analyzed": 75,
+    "risk_generated_at": "2026-06-25T01:46:19",
     "health": {
       "status": "ok",
       "agent_ready": true,
@@ -358,11 +358,11 @@
       "language": "en",
       "base_url": "https://www.ecdc.europa.eu/en/publications-data/communicable-disease-threats-report",
       "status": "active",
-      "total_reports": 395,
-      "complete_reports": 395,
+      "total_reports": 403,
+      "complete_reports": 403,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:35"
+      "last_sync": "2026-06-25T01:22:55"
     },
     {
       "id": "who_emro_respiratory",
@@ -377,7 +377,7 @@
       "complete_reports": 293,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:44"
+      "last_sync": "2026-06-25T01:23:03"
     },
     {
       "id": "lk_epid_weekly",
@@ -392,7 +392,7 @@
       "complete_reports": 207,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:38"
+      "last_sync": "2026-06-25T01:22:57"
     },
     {
       "id": "tw_cdc_flu",
@@ -407,7 +407,7 @@
       "complete_reports": 200,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:00"
     },
     {
       "id": "pk_nih_idsrs",
@@ -422,7 +422,7 @@
       "complete_reports": 187,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:00"
     },
     {
       "id": "es_isciii_flu",
@@ -437,7 +437,7 @@
       "complete_reports": 179,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:36"
+      "last_sync": "2026-06-25T01:22:56"
     },
     {
       "id": "who_don",
@@ -452,7 +452,7 @@
       "complete_reports": 138,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:42"
+      "last_sync": "2026-06-25T01:23:02"
     },
     {
       "id": "cncdc_flu_weekly",
@@ -467,7 +467,7 @@
       "complete_reports": 128,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "who_emergency_sitrep",
@@ -482,7 +482,7 @@
       "complete_reports": 118,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:43"
+      "last_sync": "2026-06-25T01:23:03"
     },
     {
       "id": "au_nsw_respiratory",
@@ -497,7 +497,7 @@
       "complete_reports": 116,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "us_pmc_covid",
@@ -512,7 +512,7 @@
       "complete_reports": 113,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:42"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "tw_cdc_covid",
@@ -527,7 +527,7 @@
       "complete_reports": 90,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:00"
     },
     {
       "id": "cncdc_arism",
@@ -542,7 +542,7 @@
       "complete_reports": 76,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "za_nicd_respiratory",
@@ -557,7 +557,7 @@
       "complete_reports": 73,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:44"
+      "last_sync": "2026-06-25T01:23:04"
     },
     {
       "id": "paho_alerts",
@@ -568,11 +568,11 @@
       "language": "en",
       "base_url": "https://www.paho.org/en/epidemiological-alerts-and-updates",
       "status": "active",
-      "total_reports": 70,
-      "complete_reports": 70,
+      "total_reports": 71,
+      "complete_reports": 71,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:38"
+      "last_sync": "2026-06-25T01:22:57"
     },
     {
       "id": "who_searo_bulletin",
@@ -587,7 +587,7 @@
       "complete_reports": 63,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:44"
+      "last_sync": "2026-06-25T01:23:03"
     },
     {
       "id": "cncdc_covid19",
@@ -602,7 +602,7 @@
       "complete_reports": 57,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "in_idsp",
@@ -617,7 +617,7 @@
       "complete_reports": 55,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:37"
+      "last_sync": "2026-06-25T01:22:56"
     },
     {
       "id": "us_cdc_mmwr",
@@ -632,7 +632,7 @@
       "complete_reports": 54,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "id_kemkes_infem",
@@ -647,7 +647,7 @@
       "complete_reports": 51,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:37"
+      "last_sync": "2026-06-25T01:22:56"
     },
     {
       "id": "br_svsa_respiratory",
@@ -662,7 +662,7 @@
       "complete_reports": 50,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "cncdc_global_risk",
@@ -677,7 +677,7 @@
       "complete_reports": 41,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "us_cdc_travel_notices",
@@ -692,7 +692,7 @@
       "complete_reports": 40,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "uk_ukhsa_flu",
@@ -707,7 +707,7 @@
       "complete_reports": 37,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "sg_moh_flu",
@@ -722,7 +722,7 @@
       "complete_reports": 36,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:00"
     },
     {
       "id": "jp_jihs_idwr",
@@ -737,7 +737,7 @@
       "complete_reports": 34,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:37"
+      "last_sync": "2026-06-25T01:22:56"
     },
     {
       "id": "de_rki_grippeweb",
@@ -752,7 +752,7 @@
       "complete_reports": 31,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:53"
     },
     {
       "id": "wpro_dengue_weekly",
@@ -767,7 +767,7 @@
       "complete_reports": 31,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:44"
+      "last_sync": "2026-06-25T01:23:03"
     },
     {
       "id": "ar_ben",
@@ -778,11 +778,11 @@
       "language": "es",
       "base_url": "https://www.argentina.gob.ar/salud/boletin-epidemiologico-nacional/boletines-2026",
       "status": "active",
-      "total_reports": 28,
-      "complete_reports": 28,
+      "total_reports": 29,
+      "complete_reports": 29,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "who_flu_weekly",
@@ -797,7 +797,7 @@
       "complete_reports": 27,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:44"
+      "last_sync": "2026-06-25T01:23:03"
     },
     {
       "id": "hk_cedd_flu",
@@ -812,7 +812,7 @@
       "complete_reports": 24,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:37"
+      "last_sync": "2026-06-25T01:22:56"
     },
     {
       "id": "jp_mhlw_covid",
@@ -827,7 +827,7 @@
       "complete_reports": 24,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:37"
+      "last_sync": "2026-06-25T01:22:56"
     },
     {
       "id": "uk_outbreaks_under_monitoring",
@@ -842,7 +842,7 @@
       "complete_reports": 22,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "kr_kdca_weekly",
@@ -857,7 +857,7 @@
       "complete_reports": 22,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:37"
+      "last_sync": "2026-06-25T01:22:56"
     },
     {
       "id": "reliefweb_disasters",
@@ -872,7 +872,7 @@
       "complete_reports": 20,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:00"
     },
     {
       "id": "jp_jihs_measles",
@@ -887,7 +887,7 @@
       "complete_reports": 16,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:37"
+      "last_sync": "2026-06-25T01:22:56"
     },
     {
       "id": "paho_yellow_fever",
@@ -902,7 +902,7 @@
       "complete_reports": 15,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:38"
+      "last_sync": "2026-06-25T01:22:58"
     },
     {
       "id": "us_cdc_outbreaks",
@@ -917,7 +917,7 @@
       "complete_reports": 15,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "us_cdc_han",
@@ -932,7 +932,7 @@
       "complete_reports": 13,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "woah_hpai",
@@ -947,7 +947,7 @@
       "complete_reports": 12,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:44"
+      "last_sync": "2026-06-25T01:23:03"
     },
     {
       "id": "woah_asf",
@@ -962,7 +962,7 @@
       "complete_reports": 11,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:44"
+      "last_sync": "2026-06-25T01:23:03"
     },
     {
       "id": "co_ins_boletin",
@@ -977,7 +977,7 @@
       "complete_reports": 10,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:53"
     },
     {
       "id": "il_moh_respiratory",
@@ -1007,7 +1007,7 @@
       "complete_reports": 9,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:44"
+      "last_sync": "2026-06-25T01:23:03"
     },
     {
       "id": "who_covid_variants",
@@ -1037,7 +1037,7 @@
       "complete_reports": 3,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:37"
+      "last_sync": "2026-06-25T01:22:56"
     },
     {
       "id": "who_wer",
@@ -1052,7 +1052,7 @@
       "complete_reports": 3,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:44"
+      "last_sync": "2026-06-25T01:23:03"
     },
     {
       "id": "ng_ncdc_weekly",
@@ -1067,7 +1067,7 @@
       "complete_reports": 2,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:38"
+      "last_sync": "2026-06-25T01:22:57"
     },
     {
       "id": "ca_phac_covid",
@@ -1082,7 +1082,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "ca_phac_flu",
@@ -1097,7 +1097,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "ca_phac_rsv",
@@ -1112,7 +1112,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "ca_phac_snapshot",
@@ -1127,7 +1127,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "ca_phac_wastewater",
@@ -1142,7 +1142,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:33"
+      "last_sync": "2026-06-25T01:22:52"
     },
     {
       "id": "ecdc_erviss",
@@ -1157,7 +1157,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:35"
+      "last_sync": "2026-06-25T01:22:55"
     },
     {
       "id": "ecdc_dengue_monthly",
@@ -1172,7 +1172,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:35"
+      "last_sync": "2026-06-25T01:22:55"
     },
     {
       "id": "web_news",
@@ -1187,7 +1187,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:40:31"
+      "last_sync": "2026-06-25T01:46:19"
     },
     {
       "id": "who_covid_dashboard",
@@ -1202,7 +1202,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:42"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "nl_rivm_weekly",
@@ -1217,7 +1217,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:38"
+      "last_sync": "2026-06-25T01:22:57"
     },
     {
       "id": "no_fhi_respiratory",
@@ -1232,7 +1232,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:38"
+      "last_sync": "2026-06-25T01:22:57"
     },
     {
       "id": "us_cdc_fluview",
@@ -1247,7 +1247,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "us_cdc_measles",
@@ -1262,7 +1262,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "us_cdc_nwss_covid",
@@ -1277,7 +1277,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "us_cdc_nwss_variants",
@@ -1292,7 +1292,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "us_cdc_respiratory",
@@ -1307,7 +1307,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-24T01:13:41"
+      "last_sync": "2026-06-25T01:23:01"
     },
     {
       "id": "au_cdc_publications",
@@ -1337,7 +1337,7 @@
       "complete_reports": 0,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-23T16:41:26"
+      "last_sync": "2026-06-24T16:43:54"
     },
     {
       "id": "hk_cdc_flu_data",
@@ -1352,7 +1352,7 @@
       "complete_reports": 0,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-23T16:41:28"
+      "last_sync": "2026-06-24T16:43:56"
     },
     {
       "id": "it_iss_respivirnet",
