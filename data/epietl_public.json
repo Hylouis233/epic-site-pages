@@ -1,15 +1,15 @@
 {
   "meta": {
-    "fetched_at": "2026-06-26T17:50:09.516638+08:00",
+    "fetched_at": "2026-06-27T18:04:54.388363+08:00",
     "base_url": "https://epietl.com",
     "dashboard_days": 60,
     "channel_count": 75,
-    "total_reports": 3318,
-    "complete_reports": 3318,
+    "total_reports": 3352,
+    "complete_reports": 3352,
     "pending_reports": 0,
     "failed_reports": 0,
-    "reports_analyzed": 63,
-    "risk_generated_at": "2026-06-26T01:39:31",
+    "reports_analyzed": 67,
+    "risk_generated_at": "2026-06-27T02:02:00",
     "health": {
       "status": "ok",
       "agent_ready": true,
@@ -57,11 +57,11 @@
         "count": 2
       },
       {
-        "label": "id",
+        "label": "pt",
         "count": 1
       },
       {
-        "label": "pt",
+        "label": "id",
         "count": 1
       },
       {
@@ -268,6 +268,32 @@
       "source_url": "https://reliefweb.int/disaster/ep-2026-000037-sur"
     },
     {
+      "title": "Sri Lanka Dengue Outbreak Surge",
+      "severity": "high",
+      "category": "vector_borne",
+      "pathogen": "Dengue virus",
+      "summary": "NDCU (24 Jun 2026): Cases surged to ~37,000 with 30% YoY increase driven by monsoon rains.",
+      "epi_week": "2026-W26",
+      "regions": [
+        "Sri Lanka"
+      ],
+      "source_org": "National Dengue Control Unit",
+      "source_url": "https://reliefweb.int/disaster/ep-2026-000085-lka"
+    },
+    {
+      "title": "Diphtheria outbreak in Haiti",
+      "severity": "high",
+      "category": "respiratory",
+      "pathogen": "Corynebacterium diphtheriae",
+      "summary": "CDC (25 Jun 2026): Reports active diphtheria outbreak in Haiti with high fatality risk; Level 2 travel notice issued.",
+      "epi_week": "2026-W26",
+      "regions": [
+        "Haiti"
+      ],
+      "source_org": "CDC",
+      "source_url": "https://wwwnc.cdc.gov/travel/notices/level1/diphtheria-haiti"
+    },
+    {
       "title": "Yellow Fever Outbreaks in Africa and Americas",
       "severity": "high",
       "category": "vector_borne",
@@ -326,34 +352,6 @@
       ],
       "source_org": "Centre for Health Protection",
       "source_url": "https://www.chp.gov.hk/files/pdf/covid_flux_week25_25_6_2026_chi.pdf"
-    },
-    {
-      "title": "Nipah virus case confirmed in Kerala, India",
-      "severity": "high",
-      "category": "other",
-      "pathogen": "Nipah virus",
-      "summary": "WHO DON (25 Jun 2026): One lab-confirmed Nipah case in Kozhikode, Kerala; 104 contacts monitored, no secondary cases yet.",
-      "epi_week": "2026-W25",
-      "regions": [
-        "India"
-      ],
-      "source_org": "World Health Organization",
-      "source_url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON609"
-    },
-    {
-      "title": "Andes virus cluster on cruise ship",
-      "severity": "high",
-      "category": "vector_borne",
-      "pathogen": "Hantavirus",
-      "summary": "UKHSA (18 Jun 2026): 13 cases, 3 deaths linked to cruise ship from Argentina; multi-country exposure.",
-      "epi_week": "2026-W24",
-      "regions": [
-        "Argentina",
-        "Chile",
-        "Uruguay"
-      ],
-      "source_org": "UKHSA",
-      "source_url": "https://www.gov.uk/government/publications/outbreaks-under-monitoring-in-2026/outbreaks-under-monitoring-week-24-week-ending-14-june-2026"
     }
   ],
   "channels": [
@@ -366,11 +364,11 @@
       "language": "en",
       "base_url": "https://www.ecdc.europa.eu/en/publications-data/communicable-disease-threats-report",
       "status": "active",
-      "total_reports": 411,
-      "complete_reports": 411,
+      "total_reports": 419,
+      "complete_reports": 419,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:30"
+      "last_sync": "2026-06-27T02:00:06"
     },
     {
       "id": "who_emro_respiratory",
@@ -385,7 +383,7 @@
       "complete_reports": 293,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:39"
+      "last_sync": "2026-06-27T02:00:14"
     },
     {
       "id": "lk_epid_weekly",
@@ -400,7 +398,7 @@
       "complete_reports": 208,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:33"
+      "last_sync": "2026-06-27T02:00:08"
     },
     {
       "id": "tw_cdc_flu",
@@ -415,7 +413,7 @@
       "complete_reports": 200,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:11"
     },
     {
       "id": "pk_nih_idsrs",
@@ -430,7 +428,7 @@
       "complete_reports": 187,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:35"
+      "last_sync": "2026-06-27T02:00:11"
     },
     {
       "id": "es_isciii_flu",
@@ -445,7 +443,7 @@
       "complete_reports": 179,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:31"
+      "last_sync": "2026-06-27T02:00:07"
     },
     {
       "id": "who_don",
@@ -460,7 +458,7 @@
       "complete_reports": 140,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:37"
+      "last_sync": "2026-06-27T02:00:13"
     },
     {
       "id": "cncdc_flu_weekly",
@@ -475,7 +473,7 @@
       "complete_reports": 129,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "who_emergency_sitrep",
@@ -486,11 +484,11 @@
       "language": "en",
       "base_url": "https://www.who.int/publications/m?meetingreporttypes=ce6cf3c6-43fc-49bf-9c4c-71bd965ee047",
       "status": "active",
-      "total_reports": 118,
-      "complete_reports": 118,
+      "total_reports": 119,
+      "complete_reports": 119,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:38"
+      "last_sync": "2026-06-27T02:00:14"
     },
     {
       "id": "au_nsw_respiratory",
@@ -505,7 +503,7 @@
       "complete_reports": 117,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:27"
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "us_pmc_covid",
@@ -520,7 +518,7 @@
       "complete_reports": 113,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:37"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "tw_cdc_covid",
@@ -535,7 +533,7 @@
       "complete_reports": 90,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:11"
     },
     {
       "id": "cncdc_arism",
@@ -550,7 +548,22 @@
       "complete_reports": 77,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:03"
+    },
+    {
+      "id": "paho_alerts",
+      "name": "PAHO – Epidemiological Alerts & Updates (all pathogens)",
+      "organization": "Pan American Health Organization (PAHO/WHO)",
+      "country_or_region": "Americas",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.paho.org/en/epidemiological-alerts-and-updates",
+      "status": "active",
+      "total_reports": 75,
+      "complete_reports": 75,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-06-27T02:00:08"
     },
     {
       "id": "za_nicd_respiratory",
@@ -565,22 +578,7 @@
       "complete_reports": 74,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:39"
-    },
-    {
-      "id": "paho_alerts",
-      "name": "PAHO – Epidemiological Alerts & Updates (all pathogens)",
-      "organization": "Pan American Health Organization (PAHO/WHO)",
-      "country_or_region": "Americas",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.paho.org/en/epidemiological-alerts-and-updates",
-      "status": "active",
-      "total_reports": 73,
-      "complete_reports": 73,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:33"
+      "last_sync": "2026-06-27T02:00:15"
     },
     {
       "id": "who_searo_bulletin",
@@ -595,7 +593,7 @@
       "complete_reports": 63,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:39"
+      "last_sync": "2026-06-27T02:00:15"
     },
     {
       "id": "cncdc_covid19",
@@ -610,7 +608,7 @@
       "complete_reports": 57,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "us_cdc_mmwr",
@@ -625,7 +623,7 @@
       "complete_reports": 56,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "in_idsp",
@@ -640,7 +638,22 @@
       "complete_reports": 55,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:32"
+      "last_sync": "2026-06-27T02:00:07"
+    },
+    {
+      "id": "br_svsa_respiratory",
+      "name": "Brazil SVSA – Vigilância das Síndromes Gripais",
+      "organization": "Ministério da Saúde / SVSA",
+      "country_or_region": "Brazil",
+      "source_type": "report_collection",
+      "language": "pt",
+      "base_url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/covid-19/publicacoes-tecnicas/informes",
+      "status": "active",
+      "total_reports": 51,
+      "complete_reports": 51,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "id_kemkes_infem",
@@ -655,22 +668,7 @@
       "complete_reports": 51,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:31"
-    },
-    {
-      "id": "br_svsa_respiratory",
-      "name": "Brazil SVSA – Vigilância das Síndromes Gripais",
-      "organization": "Ministério da Saúde / SVSA",
-      "country_or_region": "Brazil",
-      "source_type": "report_collection",
-      "language": "pt",
-      "base_url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/covid-19/publicacoes-tecnicas/informes",
-      "status": "active",
-      "total_reports": 50,
-      "complete_reports": 50,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:07"
     },
     {
       "id": "cncdc_global_risk",
@@ -685,7 +683,7 @@
       "complete_reports": 41,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "us_cdc_travel_notices",
@@ -696,11 +694,26 @@
       "language": "en",
       "base_url": "https://wwwnc.cdc.gov/travel/notices",
       "status": "active",
-      "total_reports": 40,
-      "complete_reports": 40,
+      "total_reports": 41,
+      "complete_reports": 41,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
+    },
+    {
+      "id": "sg_moh_flu",
+      "name": "Singapore CDA – Weekly Infectious Disease Bulletin",
+      "organization": "Communicable Diseases Agency (CDA), Singapore",
+      "country_or_region": "Singapore",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.cda.gov.sg/resources/weekly-infectious-diseases-bulletin-2026/",
+      "status": "active",
+      "total_reports": 37,
+      "complete_reports": 37,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-06-27T02:00:11"
     },
     {
       "id": "uk_ukhsa_flu",
@@ -715,22 +728,7 @@
       "complete_reports": 37,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
-    },
-    {
-      "id": "sg_moh_flu",
-      "name": "Singapore CDA – Weekly Infectious Disease Bulletin",
-      "organization": "Communicable Diseases Agency (CDA), Singapore",
-      "country_or_region": "Singapore",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.cda.gov.sg/resources/weekly-infectious-diseases-bulletin-2026/",
-      "status": "active",
-      "total_reports": 36,
-      "complete_reports": 36,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "jp_jihs_idwr",
@@ -745,7 +743,22 @@
       "complete_reports": 34,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:32"
+      "last_sync": "2026-06-27T02:00:07"
+    },
+    {
+      "id": "wpro_dengue_weekly",
+      "name": "WHO WPRO – Dengue Situation Update",
+      "organization": "WHO Regional Office for the Western Pacific",
+      "country_or_region": "Western Pacific",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.who.int/westernpacific/publications/m",
+      "status": "active",
+      "total_reports": 32,
+      "complete_reports": 32,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-06-27T02:00:15"
     },
     {
       "id": "de_rki_grippeweb",
@@ -760,22 +773,7 @@
       "complete_reports": 31,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
-    },
-    {
-      "id": "wpro_dengue_weekly",
-      "name": "WHO WPRO – Dengue Situation Update",
-      "organization": "WHO Regional Office for the Western Pacific",
-      "country_or_region": "Western Pacific",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.who.int/westernpacific/publications/m",
-      "status": "active",
-      "total_reports": 31,
-      "complete_reports": 31,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:39"
+      "last_sync": "2026-06-27T02:00:04"
     },
     {
       "id": "ar_ben",
@@ -790,7 +788,7 @@
       "complete_reports": 29,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:27"
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "who_flu_weekly",
@@ -805,7 +803,7 @@
       "complete_reports": 28,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:39"
+      "last_sync": "2026-06-27T02:00:14"
     },
     {
       "id": "hk_cedd_flu",
@@ -820,7 +818,7 @@
       "complete_reports": 25,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:31"
+      "last_sync": "2026-06-27T02:00:07"
     },
     {
       "id": "jp_mhlw_covid",
@@ -831,11 +829,11 @@
       "language": "ja",
       "base_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00485.html",
       "status": "active",
-      "total_reports": 24,
-      "complete_reports": 24,
+      "total_reports": 25,
+      "complete_reports": 25,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:32"
+      "last_sync": "2026-06-27T02:00:07"
     },
     {
       "id": "uk_outbreaks_under_monitoring",
@@ -850,7 +848,7 @@
       "complete_reports": 23,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "kr_kdca_weekly",
@@ -861,11 +859,11 @@
       "language": "ko",
       "base_url": "https://dportal.kdca.go.kr/pot/bbs/BD_selectBbsList.do?q_bbsSn=1009",
       "status": "active",
-      "total_reports": 22,
-      "complete_reports": 22,
+      "total_reports": 23,
+      "complete_reports": 23,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:32"
+      "last_sync": "2026-06-27T02:00:07"
     },
     {
       "id": "reliefweb_disasters",
@@ -876,11 +874,11 @@
       "language": "en",
       "base_url": "https://reliefweb.int/disasters?advanced-search=(TY4642)",
       "status": "active",
-      "total_reports": 20,
-      "complete_reports": 20,
+      "total_reports": 21,
+      "complete_reports": 21,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:11"
     },
     {
       "id": "jp_jihs_measles",
@@ -895,7 +893,7 @@
       "complete_reports": 16,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:32"
+      "last_sync": "2026-06-27T02:00:07"
     },
     {
       "id": "paho_yellow_fever",
@@ -910,7 +908,7 @@
       "complete_reports": 15,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:33"
+      "last_sync": "2026-06-27T02:00:09"
     },
     {
       "id": "us_cdc_outbreaks",
@@ -925,7 +923,22 @@
       "complete_reports": 15,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
+    },
+    {
+      "id": "woah_hpai",
+      "name": "WOAH – High Pathogenicity Avian Influenza Situation Reports",
+      "organization": "World Organisation for Animal Health (WOAH)",
+      "country_or_region": "Global",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.woah.org/en/disease/avian-influenza/#ui-id-2",
+      "status": "active",
+      "total_reports": 13,
+      "complete_reports": 13,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-06-27T02:00:15"
     },
     {
       "id": "us_cdc_han",
@@ -940,22 +953,37 @@
       "complete_reports": 13,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
-      "id": "woah_hpai",
-      "name": "WOAH – High Pathogenicity Avian Influenza Situation Reports",
-      "organization": "World Organisation for Animal Health (WOAH)",
-      "country_or_region": "Global",
+      "id": "tw_cdc_surveillance_express",
+      "name": "Taiwan CDC – Epidemic Surveillance Express (疫情監測速訊)",
+      "organization": "Taiwan Centers for Disease Control",
+      "country_or_region": "China (Taiwan)",
       "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.woah.org/en/disease/avian-influenza/#ui-id-2",
+      "language": "zh",
+      "base_url": "https://www.cdc.gov.tw/Category/MPage/94JVbJ2BFjR_3MTi-9s9Cg",
       "status": "active",
       "total_reports": 12,
       "complete_reports": 12,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:39"
+      "last_sync": "2026-06-27T02:00:12"
+    },
+    {
+      "id": "tw_cdc_flu_express_zh",
+      "name": "Taiwan CDC – Influenza Express (流感速訊, zh-TW)",
+      "organization": "Taiwan Centers for Disease Control",
+      "country_or_region": "China (Taiwan)",
+      "source_type": "report_collection",
+      "language": "zh",
+      "base_url": "https://www.cdc.gov.tw/Category/MPage/7cc1CTepnQ7B7yBAdq6z7A",
+      "status": "active",
+      "total_reports": 12,
+      "complete_reports": 12,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-06-27T02:00:11"
     },
     {
       "id": "woah_asf",
@@ -966,11 +994,11 @@
       "language": "en",
       "base_url": "https://www.woah.org/en/disease/african-swine-fever/#ui-id-2",
       "status": "active",
-      "total_reports": 11,
-      "complete_reports": 11,
+      "total_reports": 12,
+      "complete_reports": 12,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:39"
+      "last_sync": "2026-06-27T02:00:15"
     },
     {
       "id": "co_ins_boletin",
@@ -981,11 +1009,11 @@
       "language": "es",
       "base_url": "https://www.ins.gov.co/buscador-eventos/Paginas/Vista-Boletin-Epidemilogico.aspx",
       "status": "active",
-      "total_reports": 10,
-      "complete_reports": 10,
+      "total_reports": 11,
+      "complete_reports": 11,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:04"
     },
     {
       "id": "il_moh_respiratory",
@@ -1015,37 +1043,7 @@
       "complete_reports": 9,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:39"
-    },
-    {
-      "id": "tw_cdc_surveillance_express",
-      "name": "Taiwan CDC – Epidemic Surveillance Express (疫情監測速訊)",
-      "organization": "Taiwan Centers for Disease Control",
-      "country_or_region": "China (Taiwan)",
-      "source_type": "report_collection",
-      "language": "zh",
-      "base_url": "https://www.cdc.gov.tw/Category/MPage/94JVbJ2BFjR_3MTi-9s9Cg",
-      "status": "active",
-      "total_reports": 6,
-      "complete_reports": 6,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
-    },
-    {
-      "id": "tw_cdc_flu_express_zh",
-      "name": "Taiwan CDC – Influenza Express (流感速訊, zh-TW)",
-      "organization": "Taiwan Centers for Disease Control",
-      "country_or_region": "China (Taiwan)",
-      "source_type": "report_collection",
-      "language": "zh",
-      "base_url": "https://www.cdc.gov.tw/Category/MPage/7cc1CTepnQ7B7yBAdq6z7A",
-      "status": "active",
-      "total_reports": 6,
-      "complete_reports": 6,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:15"
     },
     {
       "id": "who_covid_variants",
@@ -1063,6 +1061,21 @@
       "last_sync": "2026-03-25T19:02:39"
     },
     {
+      "id": "who_wer",
+      "name": "WHO – Weekly Epidemiological Record (WER)",
+      "organization": "World Health Organization",
+      "country_or_region": "Global",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.who.int/WER",
+      "status": "active",
+      "total_reports": 4,
+      "complete_reports": 4,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-06-27T02:00:15"
+    },
+    {
       "id": "et_ephi_bulletin",
       "name": "Ethiopia EPHI – Multi-Sectoral Health Security Bulletin",
       "organization": "Ethiopian Public Health Institute (EPHI)",
@@ -1075,22 +1088,7 @@
       "complete_reports": 3,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:31"
-    },
-    {
-      "id": "who_wer",
-      "name": "WHO – Weekly Epidemiological Record (WER)",
-      "organization": "World Health Organization",
-      "country_or_region": "Global",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.who.int/WER",
-      "status": "active",
-      "total_reports": 3,
-      "complete_reports": 3,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:39"
+      "last_sync": "2026-06-27T02:00:07"
     },
     {
       "id": "ng_ncdc_weekly",
@@ -1105,7 +1103,7 @@
       "complete_reports": 2,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:33"
+      "last_sync": "2026-06-27T02:00:08"
     },
     {
       "id": "ca_phac_covid",
@@ -1120,7 +1118,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "ca_phac_flu",
@@ -1135,7 +1133,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "ca_phac_rsv",
@@ -1150,7 +1148,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "ca_phac_snapshot",
@@ -1165,7 +1163,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "ca_phac_wastewater",
@@ -1180,7 +1178,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:28"
+      "last_sync": "2026-06-27T02:00:03"
     },
     {
       "id": "tw_nidss_covid",
@@ -1195,7 +1193,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "tw_nidss_dengue",
@@ -1210,7 +1208,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "tw_nidss_enterovirus",
@@ -1225,7 +1223,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "tw_nidss_flu",
@@ -1240,7 +1238,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "ecdc_erviss",
@@ -1255,7 +1253,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:30"
+      "last_sync": "2026-06-27T02:00:06"
     },
     {
       "id": "ecdc_dengue_monthly",
@@ -1270,7 +1268,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:30"
+      "last_sync": "2026-06-27T02:00:06"
     },
     {
       "id": "web_news",
@@ -1285,7 +1283,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:39:31"
+      "last_sync": "2026-06-27T02:02:00"
     },
     {
       "id": "who_covid_dashboard",
@@ -1300,7 +1298,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:37"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "nl_rivm_weekly",
@@ -1315,7 +1313,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:33"
+      "last_sync": "2026-06-27T02:00:08"
     },
     {
       "id": "no_fhi_respiratory",
@@ -1330,7 +1328,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:33"
+      "last_sync": "2026-06-27T02:00:08"
     },
     {
       "id": "us_cdc_fluview",
@@ -1345,7 +1343,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "us_cdc_measles",
@@ -1360,7 +1358,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "us_cdc_nwss_covid",
@@ -1375,7 +1373,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "us_cdc_nwss_variants",
@@ -1390,7 +1388,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "us_cdc_respiratory",
@@ -1405,7 +1403,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-26T01:35:36"
+      "last_sync": "2026-06-27T02:00:12"
     },
     {
       "id": "au_cdc_publications",
@@ -1435,7 +1433,7 @@
       "complete_reports": 0,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-25T16:44:05"
+      "last_sync": "2026-06-26T16:56:52"
     },
     {
       "id": "hk_cdc_flu_data",
@@ -1450,7 +1448,7 @@
       "complete_reports": 0,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-06-25T16:44:12"
+      "last_sync": "2026-06-26T16:56:55"
     },
     {
       "id": "it_iss_respivirnet",
