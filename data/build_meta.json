@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-06-28T06:39:24Z",
+  "generated_at": "2026-06-29T07:10:06Z",
   "record_count": 51,
   "map_point_count": 50,
-  "disease_count": 29,
+  "disease_count": 32,
   "continent_count": 4,
   "epietl_channel_count": 75,
   "download_week_embedded": true,
-  "daily_archive_path": "BACKUP/2026-06-28.md",
+  "daily_archive_path": "BACKUP/2026-06-29.md",
   "daily_archive_item_count": 0,
   "warnings": [
     "api data fetch failed, fell back to table endpoint: HTTP Error 500: Internal Server Error",
     "table fallback loaded 51 records"
   ],
-  "rss_generated_at": "2026-06-28T06:39:24Z",
+  "rss_generated_at": "2026-06-29T07:10:06Z",
   "rss_timezone": "Asia/Shanghai",
-  "rss_window_start": "2026-06-28T00:00:00+08:00",
-  "rss_window_end": "2026-06-28T23:59:59+08:00",
+  "rss_window_start": "2026-06-29T00:00:00+08:00",
+  "rss_window_end": "2026-06-29T23:59:59+08:00",
   "rss_item_count": 0,
   "rss_source_record_count": 51,
   "rss_dated_record_count": 51,
-  "rss_target_date": "2026-06-28"
+  "rss_target_date": "2026-06-29"
 }
