@@ -1,12 +1,11 @@
 {
-  "total_records": 52,
-  "disease_count": 26,
+  "total_records": 49,
+  "disease_count": 23,
   "continent_count": 4,
   "latest_date": "2026-12-29",
   "filter_options": {
     "diseases": [
       "COVID-19",
-      "Powassan病毒病",
       "埃博拉",
       "急性上呼吸道",
       "恙虫病",
@@ -19,18 +18,16 @@
       "猪流感",
       "环孢子虫",
       "环孢子虫病",
-      "甲型流感病毒",
-      "疟疾",
       "登革热",
       "绦虫病",
       "肠病毒",
       "脑疟",
+      "腹泻",
       "艾滋病",
       "西尼罗病毒",
       "诺如病毒",
       "霍乱",
-      "马尔堡病毒病",
-      "麻疹"
+      "马尔堡病毒病"
     ],
     "continents": [
       "亚洲",
@@ -39,5 +36,5 @@
       "非洲"
     ]
   },
-  "last_modified": "2026-07-05T06:16:18Z"
+  "last_modified": "2026-07-06T06:49:22Z"
 }
