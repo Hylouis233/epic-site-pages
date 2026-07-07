@@ -1,19 +1,16 @@
 {
-  "total_records": 49,
-  "disease_count": 23,
+  "total_records": 44,
+  "disease_count": 21,
   "continent_count": 4,
   "latest_date": "2026-12-29",
   "filter_options": {
     "diseases": [
-      "COVID-19",
-      "埃博拉",
       "急性上呼吸道",
       "恙虫病",
       "新冠",
       "新冠病毒",
       "新型冠状病毒感染症(COVID-19)",
       "流感",
-      "流感、COVID-19",
       "热带疟疾",
       "猪流感",
       "环孢子虫",
@@ -26,6 +23,7 @@
       "艾滋病",
       "西尼罗病毒",
       "诺如病毒",
+      "链球菌肺炎",
       "霍乱",
       "马尔堡病毒病"
     ],
@@ -36,5 +34,5 @@
       "非洲"
     ]
   },
-  "last_modified": "2026-07-06T06:49:22Z"
+  "last_modified": "2026-07-07T06:26:49Z"
 }
