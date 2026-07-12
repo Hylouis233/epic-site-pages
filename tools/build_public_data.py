@@ -672,15 +672,15 @@ def retain_existing_snapshot_if_upstream_empty(compatibility_payload, records, w
     if records and not compatibility_payload:
         compatibility_payload = [table_record_to_compatibility_record(record) for record in records]
         warnings.append(f"rebuilt compatibility payload from {len(records)} table records")
-        return compatibility_payload, records
+        return compatibility_payload, records, False
 
     if compatibility_payload and not records:
         records = normalize_records(compatibility_payload)
         warnings.append(f"normalized {len(records)} records from the compatibility payload")
-        return compatibility_payload, records
+        return compatibility_payload, records, False
 
     if compatibility_payload or records:
-        return compatibility_payload, records
+        return compatibility_payload, records, False
 
     existing_compatibility = read_json(DATA_DIR / "data.json", list)
     existing_records = read_json(DATA_DIR / "records.json", list)
@@ -689,10 +689,10 @@ def retain_existing_snapshot_if_upstream_empty(compatibility_payload, records, w
             "upstream returned no records; retained the existing public snapshot "
             f"with {len(existing_records)} records"
         )
-        return existing_compatibility, existing_records
+        return existing_compatibility, existing_records, True
 
     warnings.append("upstream returned no records and no existing public snapshot was available")
-    return compatibility_payload, records
+    return compatibility_payload, records, False
 
 
 def complete_overview_payload(payload, records, warnings):
@@ -752,31 +752,46 @@ def main():
         except Exception as exc:
             warnings.append(f"table data fetch failed, normalized compatibility payload instead: {exc}")
             table_records = normalize_records(compatibility_payload)
-    compatibility_payload, table_records = retain_existing_snapshot_if_upstream_empty(
-        compatibility_payload, table_records, warnings
-    )
+    (
+        compatibility_payload,
+        table_records,
+        retained_existing_snapshot,
+    ) = retain_existing_snapshot_if_upstream_empty(compatibility_payload, table_records, warnings)
     records = table_records
 
-    try:
-        overview = fetch_json(public_base, "/api/data/overview/")
-    except Exception as exc:
-        warnings.append(f"overview fetch failed; rebuilt it from public records: {exc}")
-        overview = build_overview_payload(records)
+    if retained_existing_snapshot:
+        overview = read_json(DATA_DIR / "overview.json", dict)
+    else:
+        try:
+            overview = fetch_json(public_base, "/api/data/overview/")
+        except Exception as exc:
+            warnings.append(f"overview fetch failed; rebuilt it from public records: {exc}")
+            overview = build_overview_payload(records)
     overview = complete_overview_payload(overview, records, warnings)
 
-    try:
-        map_payload = fetch_json(public_base, "/api/data/map/")
-        if not isinstance(map_payload, list) or (records and not map_payload):
+    if retained_existing_snapshot:
+        map_payload = read_json(DATA_DIR / "map.json", list)
+        if not map_payload:
             map_payload = build_map_payload(records)
-    except Exception:
-        map_payload = build_map_payload(records)
+    else:
+        try:
+            map_payload = fetch_json(public_base, "/api/data/map/")
+            if not isinstance(map_payload, list) or (records and not map_payload):
+                map_payload = build_map_payload(records)
+        except Exception:
+            map_payload = build_map_payload(records)
 
-    try:
-        epietl_payload = fetch_json(public_base, "/api/data/epietl/")
-        if not isinstance(epietl_payload, dict):
+    if retained_existing_snapshot:
+        epietl_payload = read_json(DATA_DIR / "epietl_public.json", dict)
+        if not epietl_payload:
             epietl_payload = empty_epietl_payload()
-    except Exception:
-        epietl_payload = empty_epietl_payload()
+    else:
+        try:
+            epietl_payload = fetch_json(public_base, "/api/data/epietl/")
+            if not isinstance(epietl_payload, dict):
+                epietl_payload = empty_epietl_payload()
+        except Exception:
+            epietl_payload = empty_epietl_payload()
 
     weekly_embedded = False
     try:
