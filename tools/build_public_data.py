@@ -660,6 +660,64 @@ def write_json(path, payload):
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def read_json(path, expected_type):
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return expected_type()
+    return payload if isinstance(payload, expected_type) else expected_type()
+
+
+def retain_existing_snapshot_if_upstream_empty(compatibility_payload, records, warnings):
+    if records and not compatibility_payload:
+        compatibility_payload = [table_record_to_compatibility_record(record) for record in records]
+        warnings.append(f"rebuilt compatibility payload from {len(records)} table records")
+        return compatibility_payload, records
+
+    if compatibility_payload and not records:
+        records = normalize_records(compatibility_payload)
+        warnings.append(f"normalized {len(records)} records from the compatibility payload")
+        return compatibility_payload, records
+
+    if compatibility_payload or records:
+        return compatibility_payload, records
+
+    existing_compatibility = read_json(DATA_DIR / "data.json", list)
+    existing_records = read_json(DATA_DIR / "records.json", list)
+    if existing_compatibility and existing_records:
+        warnings.append(
+            "upstream returned no records; retained the existing public snapshot "
+            f"with {len(existing_records)} records"
+        )
+        return existing_compatibility, existing_records
+
+    warnings.append("upstream returned no records and no existing public snapshot was available")
+    return compatibility_payload, records
+
+
+def complete_overview_payload(payload, records, warnings):
+    fallback = build_overview_payload(records)
+    required_fields = (
+        "total_records",
+        "disease_count",
+        "continent_count",
+        "latest_date",
+        "filter_options",
+    )
+    if not isinstance(payload, dict):
+        warnings.append("overview response was not an object; rebuilt it from public records")
+        return fallback
+
+    missing_fields = [field for field in required_fields if field not in payload]
+    if not missing_fields:
+        return payload
+
+    warnings.append(
+        f"overview response missing {', '.join(missing_fields)}; rebuilt those fields from public records"
+    )
+    return {**fallback, **payload}
+
+
 def update_index_timestamp(generated_at):
     if not INDEX_PATH.exists():
         return
@@ -694,18 +752,21 @@ def main():
         except Exception as exc:
             warnings.append(f"table data fetch failed, normalized compatibility payload instead: {exc}")
             table_records = normalize_records(compatibility_payload)
+    compatibility_payload, table_records = retain_existing_snapshot_if_upstream_empty(
+        compatibility_payload, table_records, warnings
+    )
     records = table_records
 
     try:
         overview = fetch_json(public_base, "/api/data/overview/")
-        if not isinstance(overview, dict):
-            overview = build_overview_payload(records)
-    except Exception:
+    except Exception as exc:
+        warnings.append(f"overview fetch failed; rebuilt it from public records: {exc}")
         overview = build_overview_payload(records)
+    overview = complete_overview_payload(overview, records, warnings)
 
     try:
         map_payload = fetch_json(public_base, "/api/data/map/")
-        if not isinstance(map_payload, list):
+        if not isinstance(map_payload, list) or (records and not map_payload):
             map_payload = build_map_payload(records)
     except Exception:
         map_payload = build_map_payload(records)
