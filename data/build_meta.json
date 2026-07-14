@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-13T05:50:16Z",
+  "generated_at": "2026-07-14T05:11:09Z",
   "record_count": 58,
   "map_point_count": 57,
   "disease_count": 32,
   "continent_count": 4,
   "epietl_channel_count": 76,
   "download_week_embedded": true,
-  "daily_archive_path": "BACKUP/2026-07-13.md",
+  "daily_archive_path": "BACKUP/2026-07-14.md",
   "daily_archive_item_count": 0,
   "warnings": [
     "upstream returned no records; retained the existing public snapshot with 58 records"
   ],
-  "rss_generated_at": "2026-07-13T05:50:16Z",
+  "rss_generated_at": "2026-07-14T05:11:09Z",
   "rss_timezone": "Asia/Shanghai",
-  "rss_window_start": "2026-07-13T00:00:00+08:00",
-  "rss_window_end": "2026-07-13T23:59:59+08:00",
+  "rss_window_start": "2026-07-14T00:00:00+08:00",
+  "rss_window_end": "2026-07-14T23:59:59+08:00",
   "rss_item_count": 0,
   "rss_source_record_count": 58,
   "rss_dated_record_count": 58,
-  "rss_target_date": "2026-07-13"
+  "rss_target_date": "2026-07-14"
 }
