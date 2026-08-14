@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://epicdemic.hylouis.top/data/v1/schema.json",
+  "$id": "https://hylouis233.github.io/epic-site-pages/data/v1/schema.json",
   "title": "EPIC infectious-disease event record",
   "description": "Versioned public contract for event-level public-source monitoring summaries.",
   "type": "array",

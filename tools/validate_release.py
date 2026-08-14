@@ -14,6 +14,8 @@ from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 V1 = ROOT / "data" / "v1"
+PUBLIC_SITE_URL = "https://hylouis233.github.io/epic-site-pages/"
+RETIRED_SITE_URL = "https://epicdemic.hylouis.top/"
 
 
 class LinkParser(HTMLParser):
@@ -105,6 +107,25 @@ def validate_english_surface():
         fail("README poster must appear before the project title")
     if "assets/epic/preview.png" in readme_text:
         fail("README still references the retired browser screenshot")
+
+    public_url_artifacts = [
+        *required_pages,
+        *event_pages,
+        ROOT / "README.md",
+        ROOT / "robots.txt",
+        ROOT / "rss.xml",
+        ROOT / "sitemap.xml",
+        V1 / "schema.json",
+        ROOT / ".github" / "workflows" / "update-public-data.yml",
+        ROOT / "skills" / "epic-disease-query" / "SKILL.md",
+        ROOT / "skills" / "epic-disease-query" / "scripts" / "query.py",
+    ]
+    for artifact in public_url_artifacts:
+        text = artifact.read_text(encoding="utf-8")
+        if RETIRED_SITE_URL in text:
+            fail(f"active public artifact still links to the retired host: {artifact.relative_to(ROOT)}")
+    if PUBLIC_SITE_URL not in index_text or PUBLIC_SITE_URL not in rss_text:
+        fail("public artifacts do not use the deployed GitHub Pages base URL")
 
 
 def validate_fresh_ingest(manifest):

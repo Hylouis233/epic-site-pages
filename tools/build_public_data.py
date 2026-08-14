@@ -22,7 +22,7 @@ V1_DATA_DIR = DATA_DIR / "v1"
 EVENTS_DIR = ROOT / "events"
 INDEX_PATH = ROOT / "index.html"
 TIMEOUT_SECONDS = 60
-PUBLIC_SITE_URL = "https://epicdemic.hylouis.top/"
+PUBLIC_SITE_URL = "https://hylouis233.github.io/epic-site-pages/"
 MAX_TABLE_PAGE_SIZE = 200
 RSS_TIMEZONE = timezone(timedelta(hours=8), name="Asia/Shanghai")
 BACKUP_DIR = ROOT / "BACKUP"

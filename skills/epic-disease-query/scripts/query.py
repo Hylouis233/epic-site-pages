@@ -8,7 +8,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
-DEFAULT_BASE_URL = "https://epicdemic.hylouis.top/"
+DEFAULT_BASE_URL = "https://hylouis233.github.io/epic-site-pages/"
 DEFAULT_RECORDS_URL = DEFAULT_BASE_URL + "data/v1/records.json"
 DEFAULT_MANIFEST_URL = DEFAULT_BASE_URL + "data/v1/manifest.json"
 DEFAULT_FIELDS = (

@@ -6,7 +6,7 @@
 
 **Turn scattered outbreak signals into traceable, machine-readable event data.**
 
-[Live dashboard](https://epicdemic.hylouis.top/) · [Versioned data](https://epicdemic.hylouis.top/data/v1/records.json) · [RSS](https://epicdemic.hylouis.top/rss.xml) · [Methodology](METHODOLOGY.md) · [Limitations](LIMITATIONS.md)
+[Live dashboard](https://hylouis233.github.io/epic-site-pages/) · [Versioned data](https://hylouis233.github.io/epic-site-pages/data/v1/records.json) · [RSS](https://hylouis233.github.io/epic-site-pages/rss.xml) · [Methodology](METHODOLOGY.md) · [Limitations](LIMITATIONS.md)
 
 </div>
 
@@ -42,7 +42,7 @@ Build time is never presented as data time. An empty, unavailable, or anomalousl
 ### Shell
 
 ```bash
-curl -s https://epicdemic.hylouis.top/data/v1/records.json \
+curl -s https://hylouis233.github.io/epic-site-pages/data/v1/records.json \
   | jq '.[] | select(.disease_id == "dengue") | {
       event_id, location, event_start_date, cases, source
     }'
@@ -54,7 +54,7 @@ curl -s https://epicdemic.hylouis.top/data/v1/records.json \
 import requests
 
 events = requests.get(
-    "https://epicdemic.hylouis.top/data/v1/records.json",
+    "https://hylouis233.github.io/epic-site-pages/data/v1/records.json",
     timeout=30,
 ).json()
 

@@ -7,6 +7,7 @@
 - Replaced the browser screenshot with a reproducible 2400 × 1260 repository poster and poster-derived social card.
 - Added poster regeneration to the scheduled public-data refresh workflow.
 - Added release checks that prevent regressions in the English-first surface, language switch, and poster-first README format.
+- Aligned active canonical, RSS, sitemap, data, skill, and README links with the deployed GitHub Pages URL.
 
 ## 1.0.0 — 2026-08-13
 

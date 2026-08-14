@@ -48,7 +48,7 @@ Useful options:
 - Keep nulls distinct from zero. “No parsed case count” does not mean zero cases.
 - Do not sum values across different `period_type` values without explaining the incompatibility.
 - Prefer `disease_id` for filtering; display `disease_name_zh` and retain `disease_raw` when alias context matters.
-- Link to `https://epicdemic.hylouis.top/events/{event_id}/` for EPIC context and to `source` for source verification.
+- Link to `https://hylouis233.github.io/epic-site-pages/events/{event_id}/` for EPIC context and to `source` for source verification.
 - If the schema version is not compatible with major version 1, stop with a clear schema error instead of guessing.
 - On timeout, invalid JSON or unavailable files, return a nonzero exit code and an actionable error on stderr.
 

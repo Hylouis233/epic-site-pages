@@ -39,7 +39,7 @@ jobs:
       - name: Refresh public snapshot
         env:
           EPIC_PUBLIC_SOURCE_BASE_URL: ${{ secrets.EPIC_PUBLIC_SOURCE_BASE_URL }}
-          EPIC_PUBLIC_SITE_URL: https://epicdemic.hylouis.top/
+          EPIC_PUBLIC_SITE_URL: https://hylouis233.github.io/epic-site-pages/
         run: python tools/build_public_data.py
 
       - name: Render repository poster
