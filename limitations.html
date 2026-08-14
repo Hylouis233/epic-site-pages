@@ -1,2 +1,38 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>已知局限 | EPIC</title><meta name="description" content="EPIC 的覆盖、时效、抽取、地理定位、来源权利和风险解释局限。"><link rel="canonical" href="https://epicdemic.hylouis.top/limitations.html"><link rel="icon" href="./favicon.svg"><link rel="stylesheet" href="./assets/epic/css/app.css"></head><body class="detail-page"><div class="detail-shell"><nav class="detail-nav"><a href="./">EPIC</a><span>/</span><span>已知局限</span></nav><main><header class="detail-hero"><p class="detail-hero__signal">LIMITATIONS / READ BEFORE USE</p><h1>这里没有“完整全球真相”。</h1><p class="detail-hero__summary">EPIC 是不完整、可能出错、需要回到原始来源核验的公开来源监测预览。记录数不等于疾病负担，缺少记录不等于没有事件。</p><div class="detail-actions"><a class="button button--primary" href="./data/v1/manifest.json">查看当前数据状态</a><a class="button button--paper" href="./LIMITATIONS.md">查看 Markdown 原文</a></div></header><section class="detail-grid"><article class="detail-card"><p class="panel-heading__eyebrow">COVERAGE</p><h2>覆盖并不完整</h2><p>来源选择会遗漏国家、语言、机构和地方渠道，并可能带有地理和媒体偏差。</p></article><article class="detail-card"><p class="panel-heading__eyebrow">TIMELINESS</p><h2>快照可能陈旧</h2><p>始终检查 manifest。历史记录若没有可靠 first_seen_at 会返回 null，而不是被回填为伪造时间。</p></article><article class="detail-card"><p class="panel-heading__eyebrow">EXTRACTION</p><h2>自动抽取会错</h2><p>日期、疾病、病例数、地点、摘要与去重都可能错误，质量分只反映完整性和抽取信心。</p></article><article class="detail-card"><p class="panel-heading__eyebrow">GEOGRAPHY</p><h2>点位不是现场坐标</h2><p>坐标可能是国家或行政区质心，只用于概览，不应指导现场行动。</p></article><article class="detail-card"><p class="panel-heading__eyebrow">RIGHTS</p><h2>公开不等于可复用</h2><p>本仓库不是开源项目；第三方来源也受各自条款约束。使用前阅读许可证和来源权利提示。</p></article><article class="detail-card"><p class="panel-heading__eyebrow">DECISIONS</p><h2>不可替代专业判断</h2><p>EpiETL 分值不是官方风险等级。EPIC 不提供诊断、治疗、临床或应急响应建议。</p></article></section></main></div></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Known limitations | EPIC</title>
+  <meta name="description" content="Coverage, timeliness, extraction, geocoding, source-rights, and interpretation limits for EPIC public event data.">
+  <link rel="canonical" href="https://epicdemic.hylouis.top/limitations.html">
+  <link rel="icon" href="./favicon.svg">
+  <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260814">
+  <script>(function(){try{var l=localStorage.getItem("epic-lang")==="zh-CN"?"zh-CN":"en";document.documentElement.lang=l;document.documentElement.dataset.language=l;var s=localStorage.getItem("epic-theme");document.documentElement.dataset.theme=s||"light";}catch(e){document.documentElement.dataset.theme="light";}})();</script>
+</head>
+<body class="detail-page">
+  <div class="detail-shell">
+    <nav class="detail-nav" aria-label="Breadcrumb">
+      <div class="detail-nav__trail"><a href="./">EPIC</a><span>/</span><span data-zh="已知局限">Known limitations</span></div>
+      <div class="detail-nav__controls"><button class="language-toggle" id="language-toggle" type="button">中文</button><a href="./" data-zh="返回首页">Back to dashboard</a></div>
+    </nav>
+    <main>
+      <header class="detail-hero">
+        <p class="detail-hero__signal">LIMITATIONS / READ BEFORE USE</p>
+        <h1 data-zh="这里没有“完整全球真相”。">There is no complete global truth here.</h1>
+        <p class="detail-hero__summary" data-zh="EPIC 是不完整、可能出错、需要回到原始来源核验的公开来源监测预览。记录数不等于疾病负担，缺少记录不等于没有事件。">EPIC is an incomplete, fallible public-source monitoring preview. Record counts are not disease burden, and missing records do not prove that no event occurred.</p>
+        <div class="detail-actions"><a class="button button--primary" href="./data/v1/manifest.json" data-zh="查看当前数据状态">View current data status</a><a class="button button--paper" href="./LIMITATIONS.md" data-zh="查看 Markdown 原文">Read the Markdown source</a></div>
+      </header>
+      <section class="detail-grid">
+        <article class="detail-card"><p class="panel-heading__eyebrow">COVERAGE</p><h2 data-zh="覆盖并不完整">Coverage is incomplete</h2><p data-zh="来源选择会遗漏国家、语言、机构和地方渠道，并可能带有地理和媒体偏差。">Source selection misses countries, languages, institutions, and local channels, and may reflect geographic and media bias.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">TIMELINESS</p><h2 data-zh="快照可能陈旧">Snapshots can go stale</h2><p data-zh="始终检查 manifest。历史记录若没有可靠 first_seen_at 会返回 null，而不是被回填为伪造时间。">Always inspect the manifest. Historical records without a reliable first_seen_at return null rather than an invented timestamp.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">EXTRACTION</p><h2 data-zh="自动抽取会出错">Automated extraction can be wrong</h2><p data-zh="日期、疾病、病例数、地点、摘要与去重都可能错误；质量分只反映完整性和抽取信心。">Dates, diseases, counts, places, summaries, and deduplication can all be wrong. Quality scores reflect completeness and extraction confidence—not truth.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">GEOGRAPHY</p><h2 data-zh="点位不是现场坐标">Map points are not field coordinates</h2><p data-zh="坐标可能是国家或行政区质心，只用于概览，不应指导现场行动。">Coordinates may be country or administrative centroids. They are for overview only and must not guide field action.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">RIGHTS</p><h2 data-zh="公开不等于可复用">Public does not mean reusable</h2><p data-zh="本仓库不是开源项目；第三方来源也受各自条款约束。使用前请阅读许可证和来源权利提示。">This repository is not open source, and third-party sources retain their own terms. Read the license and source-rights notes before reuse.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">DECISIONS</p><h2 data-zh="不能替代专业判断">Not a substitute for professional judgment</h2><p data-zh="EpiETL 分值不是官方风险等级。EPIC 不提供诊断、治疗、临床或应急响应建议。">EpiETL scores are not official risk levels. EPIC does not provide diagnosis, treatment, clinical, or emergency-response advice.</p></article>
+      </section>
+    </main>
+  </div>
+  <script src="./assets/epic/js/i18n.js?v=20260814"></script>
+</body>
+</html>

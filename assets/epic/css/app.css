@@ -175,7 +175,7 @@ a {
     z-index: 15;
     top: 0;
     display: grid;
-    grid-template-columns: 250px 1fr 110px;
+    grid-template-columns: 250px 1fr auto;
     align-items: center;
     width: min(calc(100% - 48px), var(--max));
     min-height: 78px;
@@ -266,7 +266,15 @@ a {
     transform: scaleX(1);
 }
 
-.theme-toggle {
+.header-controls {
+    display: flex;
+    gap: 8px;
+    justify-self: end;
+    align-items: center;
+}
+
+.theme-toggle,
+.language-toggle {
     display: inline-flex;
     gap: 8px;
     justify-self: end;
@@ -281,7 +289,17 @@ a {
     font-size: 0.68rem;
 }
 
-.theme-toggle:hover {
+.language-toggle {
+    min-width: 52px;
+    color: var(--paper);
+    border-color: var(--teal);
+    background: var(--teal);
+    font-weight: 800;
+    letter-spacing: .04em;
+}
+
+.theme-toggle:hover,
+.language-toggle:hover {
     border-color: var(--orange);
 }
 
@@ -1398,8 +1416,10 @@ main > section,
 /* Event detail pages */
 .detail-page { background: var(--paper); }
 .detail-shell { width: min(calc(100% - 48px), 1120px); margin: 0 auto; padding: 30px 0 100px; }
-.detail-nav { display: flex; gap: 10px; align-items: center; padding: 12px 0 28px; border-bottom: 1px solid var(--line-strong); color: var(--muted); font-family: var(--mono); font-size: .62rem; }
+.detail-nav { display: flex; gap: 24px; align-items: center; justify-content: space-between; padding: 12px 0 28px; border-bottom: 1px solid var(--line-strong); color: var(--muted); font-family: var(--mono); font-size: .62rem; }
 .detail-nav a { color: var(--ink); }
+.detail-nav__trail,.detail-nav__controls { display: flex; gap: 10px; align-items: center; }
+.detail-nav__controls .language-toggle { min-height: 32px; padding: 0 10px; }
 .detail-hero { position: relative; padding: 90px 0 70px; }
 .detail-hero::after { position: absolute; right: 2%; bottom: 35px; width: 130px; height: 130px; border: 1px solid var(--line-strong); border-radius: 50%; content: ""; }
 .detail-hero__signal,.detail-hero__eyebrow { color: var(--orange); font-family: var(--mono); font-size: .64rem; letter-spacing: .1em; }
@@ -1430,7 +1450,7 @@ main > section,
 .detail-card--citation h2,.detail-card--citation p { color: var(--paper); }
 
 @media (max-width: 1100px) {
-    .site-header { grid-template-columns: 190px 1fr 90px; }
+    .site-header { grid-template-columns: 190px 1fr auto; }
     .site-nav { gap: 18px; }
     .site-nav a:nth-child(4) { display: none; }
     .hero-section { grid-template-columns: 1fr .62fr; gap: 46px; }

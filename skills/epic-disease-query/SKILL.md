@@ -23,7 +23,7 @@ Run `scripts/query.py` from this skill directory or pass an explicit path.
 ```bash
 python scripts/query.py \
   --disease dengue \
-  --continent 亚洲 \
+  --continent Asia \
   --from-date 2026-06-01 \
   --sort cases:desc \
   --format markdown \

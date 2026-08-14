@@ -31,11 +31,19 @@ jobs:
       - name: Install validation dependencies
         run: python -m pip install --require-hashes -r requirements-ci.txt
 
+      - name: Install poster dependencies
+        run: |
+          python -m pip install --require-hashes -r requirements-poster.txt
+          python -m playwright install --with-deps chromium
+
       - name: Refresh public snapshot
         env:
           EPIC_PUBLIC_SOURCE_BASE_URL: ${{ secrets.EPIC_PUBLIC_SOURCE_BASE_URL }}
           EPIC_PUBLIC_SITE_URL: https://epicdemic.hylouis.top/
         run: python tools/build_public_data.py
+
+      - name: Render repository poster
+        run: python tools/render_poster.py
 
       - name: Test normalizers and status semantics
         run: python -m unittest discover -s tests -v
@@ -73,6 +81,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data BACKUP events index.html rss.xml sitemap.xml
+          git add data BACKUP events index.html rss.xml sitemap.xml assets/epic/poster.jpg og-image.png
           git commit -m "Refresh public data snapshot"
           git push

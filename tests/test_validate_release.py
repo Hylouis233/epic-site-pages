@@ -42,5 +42,10 @@ class FreshIngestValidationTests(unittest.TestCase):
             )
 
 
+class PublicSurfaceValidationTests(unittest.TestCase):
+    def test_repository_is_english_first_with_chinese_switch(self):
+        validator.validate_english_surface()
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,7 +1,7 @@
 {
   "name": "EPIC Infectious-disease Event Intelligence",
   "short_name": "EPIC",
-  "description": "开放来源传染病事件情报基础设施",
+  "description": "Traceable public-source infectious-disease event intelligence",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f2eee4",

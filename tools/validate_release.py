@@ -71,6 +71,42 @@ def validate_internal_links():
                 fail(f"broken internal link in {html_file.relative_to(ROOT)}: {target}")
 
 
+def validate_english_surface():
+    required_pages = [
+        ROOT / "index.html",
+        ROOT / "404.html",
+        ROOT / "methodology.html",
+        ROOT / "limitations.html",
+    ]
+    event_pages = sorted((ROOT / "events").glob("*/index.html"))
+    for html_file in [*required_pages, *event_pages]:
+        text = html_file.read_text(encoding="utf-8")
+        if '<html lang="en">' not in text:
+            fail(f"public page is not English-first: {html_file.relative_to(ROOT)}")
+        if 'id="language-toggle"' not in text or "i18n.js" not in text:
+            fail(f"public page is missing the Chinese language switch: {html_file.relative_to(ROOT)}")
+
+    index_text = (ROOT / "index.html").read_text(encoding="utf-8")
+    if "Turn scattered outbreak signals into" not in index_text:
+        fail("homepage English hero copy is missing")
+
+    rss_text = (ROOT / "rss.xml").read_text(encoding="utf-8")
+    if "<language>en-US</language>" not in rss_text:
+        fail("RSS feed is not English-first")
+
+    poster_path = ROOT / "assets" / "epic" / "poster.jpg"
+    if not poster_path.exists() or poster_path.stat().st_size < 100_000:
+        fail("README poster is missing or unexpectedly small")
+    readme_text = (ROOT / "README.md").read_text(encoding="utf-8")
+    poster_reference = "![EPIC public event intelligence poster](assets/epic/poster.jpg)"
+    if poster_reference not in readme_text:
+        fail("README does not reference the generated poster")
+    if readme_text.index(poster_reference) > readme_text.index("# EPIC"):
+        fail("README poster must appear before the project title")
+    if "assets/epic/preview.png" in readme_text:
+        fail("README still references the retired browser screenshot")
+
+
 def validate_fresh_ingest(manifest):
     quality_gate = manifest.get("quality_gate") or {}
     if manifest.get("source_status") != "healthy":
@@ -153,6 +189,7 @@ def main(argv=None):
     ET.parse(ROOT / "rss.xml")
     ET.parse(ROOT / "sitemap.xml")
     validate_internal_links()
+    validate_english_surface()
     with (ROOT / "data" / "weekly_merged_latest.csv").open(encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         headers = {header.lower() for header in (reader.fieldnames or [])}

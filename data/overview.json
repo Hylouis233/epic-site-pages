@@ -32,13 +32,15 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-13T16:13:56Z",
+  "build_generated_at": "2026-08-14T04:00:00Z",
   "data_as_of": "2026-07-10",
   "last_successful_ingest_at": "2026-07-11T05:23:39Z",
   "source_status": "degraded",
   "source_status_label": "降级",
+  "source_status_label_en": "Degraded",
   "status_message_zh": "上游采集未通过质量闸门，继续提供最近一次成功快照。",
-  "staleness_hours": 802.8,
+  "status_message_en": "Upstream ingest did not pass the quality gate; the latest successful snapshot remains available.",
+  "staleness_hours": 814.6,
   "stale_after_hours": 72,
   "warnings": [
     "rebuilt public artifacts from the retained local snapshot",

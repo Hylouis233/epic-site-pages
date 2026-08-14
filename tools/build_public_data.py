@@ -964,19 +964,38 @@ def html_escape(value):
     return html.escape(clean_text(value), quote=True)
 
 
+def build_english_event_summary(record):
+    disease = clean_text(record.get("disease_name_en")) or "infectious-disease"
+    parts = [f"EPIC recorded a public-source {disease.lower()} signal in this event snapshot."]
+    counts = []
+    if record.get("cases") is not None:
+        counts.append(f"{record.get('cases'):,} cases")
+    if record.get("deaths") is not None:
+        counts.append(f"{record.get('deaths'):,} deaths")
+    if record.get("hospitalizations") is not None:
+        counts.append(f"{record.get('hospitalizations'):,} hospitalizations")
+    if counts:
+        parts.append(f"Structured fields report {', '.join(counts)}.")
+    parts.append("Use the linked original source to verify context, definitions, and current status.")
+    return " ".join(parts)
+
+
 def render_event_page(record, status, public_site_url):
-    title = f"{record.get('disease_name_zh') or record.get('disease')} · {record.get('location') or '地点未注明'}"
-    description = trim_public_summary(record.get("description_cn")) or "EPIC 公开来源传染病事件监测记录。"
+    disease_name_en = clean_text(record.get("disease_name_en")) or "Infectious-disease"
+    title = f"{disease_name_en} event record"
+    chinese_title = f"{record.get('disease_name_zh') or record.get('disease')} · {record.get('location') or '地点未注明'}"
+    description = build_english_event_summary(record)
+    chinese_description = trim_public_summary(record.get("description_cn")) or "EPIC 公开来源传染病事件监测记录。"
     detail_url = event_url(record, public_site_url)
     source_link = record.get("source") if is_public_http_url(record.get("source")) else ""
     source_html = (
-        f'<a class="button button--primary" href="{html_escape(source_link)}" target="_blank" rel="noopener noreferrer">查看原始来源 ↗</a>'
+        f'<a class="button button--primary" href="{html_escape(source_link)}" target="_blank" rel="noopener noreferrer" data-zh="查看原始来源 ↗">Original source ↗</a>'
         if source_link
-        else '<span class="button button--disabled">原始来源不可用</span>'
+        else '<span class="button button--disabled" data-zh="原始来源不可用">Original source unavailable</span>'
     )
     warning_html = "".join(
         f"<li>{html_escape(flag)}</li>" for flag in (record.get("quality_flags") or [])
-    ) or "<li>未触发自动质量警告</li>"
+    ) or '<li data-zh="未触发自动质量警告">No automated quality warnings were triggered.</li>'
     json_ld = {
         "@context": "https://schema.org",
         "@type": "Dataset",
@@ -993,28 +1012,28 @@ def render_event_page(record, status, public_site_url):
     json_ld = {key: value for key, value in json_ld.items() if value not in (None, "")}
     json_ld_text = json.dumps(json_ld, ensure_ascii=False).replace("</", "<" + "\\/")
     facts = (
-        ("事件开始", record.get("event_start_date") or "未注明"),
-        ("事件结束", record.get("event_end_date") or "未注明"),
-        ("发布日期", record.get("published_at") or "未注明"),
-        ("首次发现", record.get("first_seen_at") or "历史快照，时间未记录"),
-        ("来源机构", record.get("source_org") or "未注明"),
-        ("来源类型", record.get("source_type") or "未分类"),
-        ("病例", record.get("cases") if record.get("cases") is not None else "未结构化"),
-        ("死亡", record.get("deaths") if record.get("deaths") is not None else "未结构化"),
+        ("Event start", "事件开始", record.get("event_start_date") or "Not reported"),
+        ("Event end", "事件结束", record.get("event_end_date") or "Not reported"),
+        ("Published", "发布日期", record.get("published_at") or "Not reported"),
+        ("First observed", "首次发现", record.get("first_seen_at") or "Unavailable for historical snapshot"),
+        ("Source organization", "来源机构", record.get("source_org") or "Not reported"),
+        ("Source type", "来源类型", record.get("source_type") or "Unclassified"),
+        ("Cases", "病例", record.get("cases") if record.get("cases") is not None else "Not structured"),
+        ("Deaths", "死亡", record.get("deaths") if record.get("deaths") is not None else "Not structured"),
     )
     facts_html = "".join(
-        f'<div class="detail-fact"><span>{html_escape(label)}</span><strong>{html_escape(value)}</strong></div>'
-        for label, value in facts
+        f'<div class="detail-fact"><span data-zh="{html_escape(chinese_label)}">{html_escape(label)}</span><strong>{html_escape(value)}</strong></div>'
+        for label, chinese_label, value in facts
     )
     return f"""<!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html_escape(title)} | EPIC</title>
   <meta name="description" content="{html_escape(description)}">
   <link rel="canonical" href="{html_escape(detail_url)}">
-  <link rel="alternate" type="application/rss+xml" title="EPIC 每日更新" href="{html_escape(urljoin(public_site_url, 'rss.xml'))}">
+  <link rel="alternate" type="application/rss+xml" title="EPIC daily updates" href="{html_escape(urljoin(public_site_url, 'rss.xml'))}">
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="article">
   <meta property="og:title" content="{html_escape(title)}">
@@ -1022,55 +1041,59 @@ def render_event_page(record, status, public_site_url):
   <meta property="og:url" content="{html_escape(detail_url)}">
   <meta property="og:image" content="{html_escape(urljoin(public_site_url, 'og-image.svg'))}">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="../../assets/epic/css/app.css">
+  <link rel="stylesheet" href="../../assets/epic/css/app.css?v=20260814">
+  <script>(function(){{try{{var l=localStorage.getItem("epic-lang")==="zh-CN"?"zh-CN":"en";document.documentElement.lang=l;document.documentElement.dataset.language=l;var s=localStorage.getItem("epic-theme");document.documentElement.dataset.theme=s||"light";}}catch(e){{document.documentElement.dataset.theme="light";}}}})();</script>
   <script type="application/ld+json">{json_ld_text}</script>
 </head>
 <body class="detail-page">
   <div class="detail-shell">
-    <nav class="detail-nav" aria-label="面包屑">
-      <a href="../../">EPIC</a><span>/</span><a href="../../#events">事件</a><span>/</span><span>{html_escape(record.get('event_id'))}</span>
+    <nav class="detail-nav" aria-label="Breadcrumb">
+      <div class="detail-nav__trail"><a href="../../">EPIC</a><span>/</span><a href="../../#events" data-zh="事件">Events</a><span>/</span><span>{html_escape(record.get('event_id'))}</span></div>
+      <div class="detail-nav__controls"><button class="language-toggle" id="language-toggle" type="button">中文</button><a href="../../" data-zh="返回首页">Back to dashboard</a></div>
     </nav>
     <main>
       <header class="detail-hero">
-        <div class="detail-hero__signal">PUBLIC-SOURCE SIGNAL · {html_escape(record.get('source_status') or status.get('source_status_label'))}</div>
+        <div class="detail-hero__signal">PUBLIC-SOURCE SIGNAL · {html_escape((status.get('source_status') or 'unknown').upper())}</div>
         <p class="detail-hero__eyebrow">{html_escape(record.get('disease_name_en') or 'Infectious-disease event')}</p>
-        <h1>{html_escape(title)}</h1>
-        <p class="detail-hero__summary">{html_escape(description)}</p>
-        <div class="detail-actions">{source_html}<a class="button button--secondary" href="../../#data-access">使用数据接口</a></div>
+        <h1 data-zh="{html_escape(chinese_title)}">{html_escape(title)}</h1>
+        <p class="detail-hero__summary" data-language-content="en">{html_escape(description)}</p>
+        <p class="detail-hero__summary" data-language-content="zh-CN" hidden>{html_escape(chinese_description)}</p>
+        <div class="detail-actions">{source_html}<a class="button button--secondary" href="../../#data-access" data-zh="使用数据接口">Use the data</a></div>
       </header>
       <section class="detail-status status-banner status-banner--{html_escape(status.get('source_status'))}">
-        <strong>数据状态：{html_escape(status.get('source_status_label'))}</strong>
-        <span>{html_escape(status.get('status_message_zh'))}</span>
+        <strong data-zh="数据状态：{html_escape(status.get('source_status_label'))}">DATA STATUS: {html_escape(status.get('source_status_label_en') or status.get('source_status', 'unknown').upper())}</strong>
+        <span data-zh="{html_escape(status.get('status_message_zh'))}">{html_escape(status.get('status_message_en') or 'Data status is unavailable.')}</span>
       </section>
       <section class="detail-grid">
         <article class="detail-card detail-card--facts">
-          <p class="panel-heading__eyebrow">EVENT FACTS</p><h2>事件字段</h2>
+          <p class="panel-heading__eyebrow">EVENT FACTS</p><h2 data-zh="事件字段">Structured fields</h2>
           <div class="detail-facts">{facts_html}</div>
         </article>
         <article class="detail-card">
-          <p class="panel-heading__eyebrow">PROVENANCE</p><h2>来源与可追溯性</h2>
-          <p>本页是公开来源信号的结构化摘要，不替代原始公告，也不构成正式公共卫生预警或医疗建议。</p>
+          <p class="panel-heading__eyebrow">PROVENANCE</p><h2 data-zh="来源与可追溯性">Source &amp; traceability</h2>
+          <p data-zh="本页是公开来源信号的结构化摘要，不替代原始公告，也不构成正式公共卫生预警或医疗建议。">This page is a structured summary of a public-source signal. It does not replace the original notice and is not an official public-health alert or medical advice.</p>
           <dl class="detail-provenance">
             <dt>Signal ID</dt><dd>{html_escape(record.get('signal_id'))}</dd>
             <dt>Cluster ID</dt><dd>{html_escape(record.get('cluster_id'))}</dd>
-            <dt>修订</dt><dd>v{html_escape(record.get('revision'))}</dd>
-            <dt>来源权利</dt><dd>{html_escape(record.get('source_rights'))}</dd>
+            <dt data-zh="修订">Revision</dt><dd>v{html_escape(record.get('revision'))}</dd>
+            <dt data-zh="来源权利">Source rights</dt><dd>{html_escape(record.get('source_rights'))}</dd>
           </dl>
         </article>
         <article class="detail-card">
-          <p class="panel-heading__eyebrow">QUALITY</p><h2>数据质量</h2>
+          <p class="panel-heading__eyebrow">QUALITY</p><h2 data-zh="数据质量">Data quality</h2>
           <div class="quality-score"><strong>{html_escape(record.get('data_quality_score'))}</strong><span>/ 100</span></div>
-          <p>抽取置信度 {html_escape(record.get('extraction_confidence'))} · 复核状态 {html_escape(record.get('review_status'))}</p>
+          <p data-zh="抽取置信度 {html_escape(record.get('extraction_confidence'))} · 复核状态 {html_escape(record.get('review_status'))}">Extraction confidence {html_escape(record.get('extraction_confidence'))} · Review status {html_escape(record.get('review_status'))}</p>
           <ul class="quality-flags">{warning_html}</ul>
-          <a class="text-link" href="../../methodology.html">阅读方法与质量控制 →</a>
+          <a class="text-link" href="../../methodology.html" data-zh="阅读方法与质量控制 →">Read methodology &amp; quality control →</a>
         </article>
         <article class="detail-card detail-card--citation">
-          <p class="panel-heading__eyebrow">CITE THIS RECORD</p><h2>推荐引用</h2>
+          <p class="panel-heading__eyebrow">CITE THIS RECORD</p><h2 data-zh="推荐引用">Suggested citation</h2>
           <p>EPIC. “{html_escape(title)}.” EPIC infectious-disease event record, revision {html_escape(record.get('revision'))}. {html_escape(detail_url)}</p>
         </article>
       </section>
     </main>
   </div>
+  <script src="../../assets/epic/js/i18n.js?v=20260814"></script>
 </body>
 </html>
 """
@@ -1123,27 +1146,22 @@ def build_sitemap(records, public_site_url, status):
 
 
 def build_rss_item_title(record):
-    disease = clean_rss_text(record.get("disease"), "未知传染病")
-    location = clean_rss_text(record.get("location"), "地点未注明")
-    scale = clean_rss_text(record.get("scale"), "")
-    return "｜".join([part for part in (disease, location, scale) if part])
+    disease = clean_rss_text(record.get("disease_name_en"), "Infectious-disease")
+    return f"{disease} event record"
 
 
 def build_rss_description(record):
-    summary = clean_rss_text(record.get("description_cn"), "暂无摘要")
+    summary = build_english_event_summary(record)
     fields = [
-        ("传染病", record.get("disease")),
-        ("地点", record.get("location")),
-        ("事件日期", record.get("event_start_date")),
-        ("发布日期", record.get("published_at")),
-        ("规模", record.get("scale")),
-        ("症状", record.get("symptoms")),
-        ("扑灭措施", record.get("measures")),
-        ("传播方式", record.get("transmission")),
-        ("来源机构", record.get("source_org")),
-        ("数据质量", f"{record.get('data_quality_score', '—')}/100"),
+        ("Disease", record.get("disease_name_en")),
+        ("Location (source language)", record.get("location")),
+        ("Event date", record.get("event_start_date")),
+        ("Publication date", record.get("published_at")),
+        ("Scale (source language)", record.get("scale")),
+        ("Source organization", record.get("source_org")),
+        ("Data quality", f"{record.get('data_quality_score', '—')}/100"),
     ]
-    details = "".join(f"<li><strong>{label}：</strong>{clean_rss_text(value)}</li>" for label, value in fields)
+    details = "".join(f"<li><strong>{label}: </strong>{clean_rss_text(value)}</li>" for label, value in fields)
     return f"<p>{summary}</p><ul>{details}</ul>"
 
 
@@ -1154,10 +1172,10 @@ def build_rss_xml(records, build_utc, public_site_url):
 
     root = ET.Element("rss", {"version": "2.0"})
     channel = ET.SubElement(root, "channel")
-    ET.SubElement(channel, "title").text = "EPIC 传染病监测日报"
+    ET.SubElement(channel, "title").text = "EPIC Daily Infectious-disease Event Monitor"
     ET.SubElement(channel, "link").text = public_site_url
-    ET.SubElement(channel, "description").text = "EPIC 当日新发现或更新的公开来源传染病事件监测记录。"
-    ET.SubElement(channel, "language").text = "zh-CN"
+    ET.SubElement(channel, "description").text = "Public-source infectious-disease event records first observed or updated in the current daily window."
+    ET.SubElement(channel, "language").text = "en-US"
     ET.SubElement(channel, "lastBuildDate").text = pub_date.strftime("%a, %d %b %Y %H:%M:%S %z")
     ET.SubElement(channel, "generator").text = "EPIC Public Pages Builder"
     ET.SubElement(channel, "ttl").text = "1440"
@@ -1174,7 +1192,7 @@ def build_rss_xml(records, build_utc, public_site_url):
         activity_at = parse_utc_timestamp(record.get("updated_at") or record.get("first_seen_at"))
         ET.SubElement(item, "pubDate").text = format_datetime(activity_at or pub_date)
         ET.SubElement(item, "description").text = build_rss_description(record)
-        ET.SubElement(item, "category").text = clean_rss_text(record.get("disease"), "未知传染病")
+        ET.SubElement(item, "category").text = clean_rss_text(record.get("disease_name_en"), "Infectious disease")
         source = ET.SubElement(item, "source")
         if is_public_http_url(source_url):
             source.set("url", source_url)
@@ -1199,17 +1217,17 @@ def build_daily_archive_markdown(records, build_utc, public_site_url):
     daily_records, meta = select_daily_records(records, build_utc)
     target_date = meta["rss_target_date"]
     lines = [
-        f"# EPIC 传染病监测日报 {target_date}",
+        f"# EPIC Daily Infectious-disease Event Monitor — {target_date}",
         "",
-        f"- 生成时间：{format_utc_timestamp(build_utc)}",
-        f"- 时区窗口：{target_date} 00:00-23:59 Asia/Shanghai",
-        f"- 当日条目：{len(daily_records)}",
+        f"- Generated at: {format_utc_timestamp(build_utc)}",
+        f"- Daily window: {target_date} 00:00-23:59 Asia/Shanghai",
+        f"- Records in window: {len(daily_records)}",
         "",
-        f"网页入口：{public_site_url}",
+        f"Dashboard: {public_site_url}",
         "",
     ]
     if not daily_records:
-        lines.extend(["今日公开快照暂无 24 小时窗口内的新条目。", ""])
+        lines.extend(["No newly observed or updated public records fall within this 24-hour window.", ""])
         return "\n".join(lines)
 
     for index, record in enumerate(daily_records, start=1):
@@ -1217,18 +1235,15 @@ def build_daily_archive_markdown(records, build_utc, public_site_url):
             [
                 f"## {index}. {build_rss_item_title(record)}",
                 "",
-                clean_rss_text(record.get("description_cn"), "暂无摘要"),
+                build_english_event_summary(record),
                 "",
-                f"- 发生地：{clean_rss_text(record.get('location'))}",
-                f"- 事件日期：{clean_rss_text(record.get('event_start_date'))}",
-                f"- 发布日期：{clean_rss_text(record.get('published_at'))}",
-                f"- 规模：{clean_rss_text(record.get('scale'))}",
-                f"- 症状：{clean_rss_text(record.get('symptoms'))}",
-                f"- 扑灭措施：{clean_rss_text(record.get('measures'))}",
-                f"- 传播方式：{clean_rss_text(record.get('transmission'))}",
-                f"- 来源机构：{clean_rss_text(record.get('source_org'))}",
-                f"- EPIC 详情页：{event_url(record, public_site_url)}",
-                f"- 来源链接：{clean_rss_text(record.get('source'))}",
+                f"- Location (source language): {clean_rss_text(record.get('location'))}",
+                f"- Event date: {clean_rss_text(record.get('event_start_date'))}",
+                f"- Publication date: {clean_rss_text(record.get('published_at'))}",
+                f"- Scale (source language): {clean_rss_text(record.get('scale'))}",
+                f"- Source organization: {clean_rss_text(record.get('source_org'))}",
+                f"- EPIC detail page: {event_url(record, public_site_url)}",
+                f"- Original source: {clean_rss_text(record.get('source'))}",
                 "",
             ]
         )
@@ -1472,17 +1487,22 @@ def build_status_payload(
     if not records:
         source_status = "failed"
         status_message_zh = "没有可用的公开快照。"
+        status_message_en = "No public snapshot is available."
     elif retained_existing_snapshot or not quality_report.get("gate_passed", False):
         source_status = "degraded"
         status_message_zh = "上游采集未通过质量闸门，继续提供最近一次成功快照。"
+        status_message_en = "Upstream ingest did not pass the quality gate; the latest successful snapshot remains available."
     elif staleness_hours is None or staleness_hours > STALE_AFTER_HOURS:
         source_status = "stale"
         status_message_zh = "数据快照已超过新鲜度阈值，请谨慎使用。"
+        status_message_en = "The data snapshot exceeds the freshness threshold; use with caution."
     else:
         source_status = "healthy"
         status_message_zh = "上游采集与公开数据质量检查通过。"
+        status_message_en = "Upstream ingest and public-data quality checks passed."
 
     labels = {"healthy": "正常", "degraded": "降级", "stale": "陈旧", "failed": "失败"}
+    labels_en = {"healthy": "Healthy", "degraded": "Degraded", "stale": "Stale", "failed": "Failed"}
     return {
         "schema_version": SCHEMA_VERSION,
         "build_generated_at": build_generated_at,
@@ -1490,7 +1510,9 @@ def build_status_payload(
         "last_successful_ingest_at": last_successful_ingest_at,
         "source_status": source_status,
         "source_status_label": labels[source_status],
+        "source_status_label_en": labels_en[source_status],
         "status_message_zh": status_message_zh,
+        "status_message_en": status_message_en,
         "staleness_hours": staleness_hours,
         "stale_after_hours": STALE_AFTER_HOURS,
         "warnings": list(dict.fromkeys(clean_text(item) for item in warnings if clean_text(item))),

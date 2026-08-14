@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EPIC public event intelligence poster</title>
+  <style>
+    :root { --paper:#f3ecdc; --ink:#0f302e; --muted:#65766f; --orange:#f05e35; --cyan:#198da0; --line:rgba(15,48,46,.24); }
+    * { box-sizing:border-box; }
+    html,body { width:100%; height:100%; margin:0; overflow:hidden; background:var(--paper); }
+    body { color:var(--ink); font-family:'Arial Narrow','Aptos Narrow','Helvetica Neue',sans-serif; }
+    .poster { position:relative; width:100vw; height:52.5vw; min-height:100vh; isolation:isolate; overflow:hidden; background:var(--paper); }
+    .atlas { position:absolute; inset:0; z-index:-4; background:url('../assets/epic/poster-atlas.webp') center/cover no-repeat; }
+    .wash { position:absolute; inset:0; z-index:-3; background:linear-gradient(90deg,rgba(243,236,220,.98) 0%,rgba(243,236,220,.93) 39%,rgba(243,236,220,.18) 70%,rgba(243,236,220,.34) 100%); }
+    .grid { position:absolute; inset:0; z-index:-2; opacity:.44; background:repeating-linear-gradient(90deg,transparent 0 calc(8.333% - 1px),rgba(15,48,46,.1) calc(8.333% - 1px) 8.333%),repeating-linear-gradient(0deg,transparent 0 calc(16.666% - 1px),rgba(15,48,46,.07) calc(16.666% - 1px) 16.666%); }
+    .edge { position:absolute; inset:2.9vw; border:1px solid var(--line); pointer-events:none; }
+    .edge::after { position:absolute; right:-1px; top:8%; width:1px; height:42%; background:var(--orange); content:''; }
+    header { position:absolute; left:4.4vw; right:4.4vw; top:3.25vw; display:flex; justify-content:space-between; align-items:center; }
+    .brand { display:flex; align-items:center; gap:.8vw; }
+    .mark { display:grid; grid-template-columns:repeat(3,.28vw); gap:.2vw; align-items:end; width:2.5vw; height:2.5vw; padding:.48vw; border:1px solid var(--ink); background:rgba(243,236,220,.55); }
+    .mark i { display:block; background:var(--orange); }
+    .mark i:nth-child(1) { height:.48vw; }.mark i:nth-child(2) { height:1.1vw; }.mark i:nth-child(3) { height:.76vw; }
+    .brand > span:last-child { display:flex; flex-direction:column; }
+    .brand b { font:800 1.05vw/1 Georgia,serif; letter-spacing:.16em; }
+    .brand small,.meta { margin-top:.27vw; color:var(--muted); font:.55vw/1.2 'Cascadia Mono',Consolas,monospace; letter-spacing:.15em; }
+    .meta { margin:0; color:#435d57; }
+    .copy { position:absolute; left:4.4vw; top:11.35vw; width:54vw; }
+    .eyebrow { margin:0 0 1.65vw; color:#435d57; font:700 .68vw/1 'Cascadia Mono',Consolas,monospace; letter-spacing:.18em; text-transform:uppercase; }
+    .eyebrow::before { content:'●'; margin-right:.7vw; color:var(--orange); text-shadow:0 0 1vw rgba(240,94,53,.45); }
+    h1 { margin:0; max-width:53vw; font:600 5.8vw/.88 Georgia,serif; letter-spacing:-.065em; }
+    h1 em { color:var(--orange); font-weight:500; }
+    .dek { width:42vw; margin:2vw 0 0; color:#38514c; font-size:1.03vw; line-height:1.48; }
+    .command { margin-top:2.15vw; display:inline-flex; align-items:center; gap:.78vw; padding:.85vw 1.08vw; color:var(--paper); background:rgba(15,48,46,.94); border:1px solid rgba(15,48,46,.92); font:.66vw/1 'Cascadia Mono',Consolas,monospace; box-shadow:.45vw .45vw 0 rgba(240,94,53,.18); }
+    .command b { color:#ff956e; }
+    .sheet { position:absolute; right:5.1vw; top:14.25vw; width:24vw; background:rgba(246,240,226,.93); border:1px solid rgba(15,48,46,.62); box-shadow:1.25vw 1.25vw 0 rgba(15,48,46,.12); backdrop-filter:blur(5px); }
+    .sheet header { position:static; padding:1vw 1.2vw; border-bottom:1px solid var(--line); color:var(--muted); font:.58vw/1 'Cascadia Mono',Consolas,monospace; letter-spacing:.12em; }
+    .sheet header strong { color:var(--orange); }
+    .score { display:flex; align-items:flex-end; gap:1.05vw; padding:1.45vw 1.35vw; }
+    .score b { font:600 5.35vw/.72 Georgia,serif; }
+    .score span { color:var(--muted); font:.6vw/1.3 'Cascadia Mono',Consolas,monospace; text-transform:uppercase; }
+    dl { margin:0; padding:0 1.35vw 1.1vw; }
+    dl div { display:flex; justify-content:space-between; padding:.6vw 0; border-top:1px solid var(--line); }
+    dt,dd { font:.59vw/1 'Cascadia Mono',Consolas,monospace; }
+    dt { color:var(--muted); } dd { margin:0; color:var(--ink); font-weight:800; text-transform:uppercase; }
+    .spark { height:5.05vw; padding:.78vw 1.35vw 0; display:flex; align-items:end; gap:.36vw; border-top:1px solid var(--line); }
+    .spark i { flex:1; height:var(--h); background:var(--teal,var(--cyan)); opacity:.78; }
+    .spark i:nth-child(3n+1) { background:var(--orange); }
+    .legend { position:absolute; left:4.4vw; right:4.4vw; bottom:3.75vw; display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--line); }
+    .legend div { padding:1.05vw 1vw 0 0; font:.57vw/1.3 'Cascadia Mono',Consolas,monospace; color:var(--muted); letter-spacing:.08em; text-transform:uppercase; }
+    .legend b { display:block; margin-bottom:.36vw; color:var(--ink); font-size:.66vw; }
+    .legend div::before { content:''; display:inline-block; width:.52vw; height:.52vw; margin-right:.52vw; border-radius:50%; background:var(--cyan); }
+    .legend div:nth-child(2)::before { background:var(--orange); }.legend div:nth-child(3)::before { background:#e6a326; }.legend div:nth-child(4)::before { background:var(--ink); }
+  </style>
+</head>
+<body>
+  <main class="poster" aria-label="EPIC infectious-disease event intelligence poster">
+    <div class="atlas"></div><div class="wash"></div><div class="grid"></div><div class="edge"></div>
+    <header>
+      <div class="brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span><b>EPIC</b><small>PUBLIC DATA / SCHEMA V1</small></span></div>
+      <p class="meta">TRACEABLE OUTBREAK SIGNALS · OPEN DATA PREVIEW</p>
+    </header>
+    <section class="copy">
+      <p class="eyebrow">Public-source event intelligence</p>
+      <h1>Trace the signal.<br><em>Verify the source.</em></h1>
+      <p class="dek">Turn scattered health-agency notices, ProMED reports, RSS feeds, and open reporting into event data built for inspection—not blind trust.</p>
+      <div class="command"><b>$</b> curl epicdemic.hylouis.top/data/v1/records.json</div>
+    </section>
+    <aside class="sheet">
+      <header><span>SNAPSHOT / SCHEMA V1</span><strong id="poster-status">DEGRADED</strong></header>
+      <div class="score"><b id="poster-records">58</b><span>public event<br>records</span></div>
+      <dl><div><dt>mapped records</dt><dd id="poster-mapped">57</dd></div><div><dt>disease categories</dt><dd id="poster-diseases">18</dd></div><div><dt>continents</dt><dd id="poster-continents">4</dd></div><div><dt>data as of</dt><dd id="poster-date">2026-07-10</dd></div></dl>
+      <div class="spark"><i style="--h:24%"></i><i style="--h:33%"></i><i style="--h:29%"></i><i style="--h:47%"></i><i style="--h:43%"></i><i style="--h:61%"></i><i style="--h:69%"></i><i style="--h:82%"></i><i style="--h:93%"></i></div>
+    </aside>
+    <footer class="legend"><div><b>SOURCE</b>original links retained</div><div><b>TRACE</b>stable event + signal IDs</div><div><b>QUALITY</b>gated before refresh</div><div><b>ACCESS</b>JSON · CSV · GEOJSON · RSS</div></footer>
+  </main>
+  <script>
+    Promise.all([
+      fetch('../data/v1/manifest.json').then(function (response) { return response.json(); }),
+      fetch('../data/build_meta.json').then(function (response) { return response.json(); })
+    ]).then(function (payloads) {
+      var manifest = payloads[0] || {};
+      var meta = payloads[1] || {};
+      document.getElementById('poster-status').textContent = String(manifest.source_status || 'unknown').toUpperCase();
+      document.getElementById('poster-records').textContent = manifest.record_count || 0;
+      document.getElementById('poster-mapped').textContent = meta.map_point_count || 0;
+      document.getElementById('poster-diseases').textContent = manifest.disease_count || 0;
+      document.getElementById('poster-continents').textContent = manifest.continent_count || 0;
+      document.getElementById('poster-date').textContent = manifest.data_as_of || 'UNKNOWN';
+    }).catch(function () { /* Fallback values are intentionally embedded for offline rendering. */ });
+  </script>
+</body>
+</html>

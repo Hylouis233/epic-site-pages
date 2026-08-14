@@ -2,7 +2,7 @@
 
 ## Scope
 
-EPIC turns publicly accessible infectious-disease signals into event-level monitoring summaries for research and exploratory analysis. It does not claim complete global coverage and is not an official public-health alerting system.
+EPIC transforms publicly accessible infectious-disease signals into event-level monitoring summaries for research and exploratory analysis. It does not claim complete global coverage and is not an official public-health alerting system.
 
 ## Time Semantics
 
@@ -24,7 +24,7 @@ Dates later than the build date plus a one-day tolerance are never used for sort
 
 ## Disease Normalization
 
-Raw disease labels are mapped to stable `disease_id`, Chinese and English display names, optional subtype and pathogen. Multi-disease statistical bulletins remain aggregates (`disease_is_aggregate: true`) and are not misrepresented as one disease event.
+Raw disease labels are mapped to a stable `disease_id`, Chinese and English display names, and, where available, a subtype and pathogen. Multi-disease statistical bulletins remain aggregates (`disease_is_aggregate: true`) and are never represented as a single-disease event.
 
 The raw label remains in `disease_raw` for auditability. Alias rules are deterministic and tested.
 
@@ -43,7 +43,7 @@ Natural-language scale values are preserved in `scale_raw` and, when possible, s
 
 ## Source Provenance
 
-Each record includes the original link, source organization, source type, and a coarse source tier. Tiering is an aid to research workflows, not a truth score. Public records contain only a short EPIC summary and structured facts; third-party full text is excluded.
+Each record includes the original link, source organization, source type, and a coarse source tier. Tiering supports research workflows; it is not a truth score. Public records contain only a short EPIC summary and structured facts, and exclude third-party full text.
 
 ## Quality Gates
 
@@ -67,4 +67,4 @@ EpiETL content is displayed as a research-oriented ranking. Its scores must not 
 
 ## Verification
 
-`tools/validate_release.py` validates Schema conformance, unique IDs, no future sort dates, source URLs, public-text minimization, event pages, checksums, RSS XML and sitemap XML. Unit tests cover date semantics, disease aliases, scale parsing, stable identity, RSS selection and snapshot status separation.
+`tools/validate_release.py` validates schema conformance, unique IDs, the absence of future sort dates, source URLs, public-text minimization, event pages, checksums, RSS XML, and sitemap XML. Unit tests cover date semantics, disease aliases, scale parsing, stable identity, RSS selection, and snapshot-status separation.

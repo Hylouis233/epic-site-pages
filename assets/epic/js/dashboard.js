@@ -1,5 +1,16 @@
 (function () {
     const config = window.EPIC_DASHBOARD_CONFIG || {};
+
+    function t(english, chinese) {
+        const i18n = window.EPIC_I18N;
+        return i18n && typeof i18n.t === "function" ? i18n.t(english, chinese) : english;
+    }
+
+    function currentLocale() {
+        const i18n = window.EPIC_I18N;
+        return i18n && typeof i18n.isChinese === "function" && i18n.isChinese() ? "zh-CN" : "en-US";
+    }
+
     const state = {
         filters: {
             keyword: "",
@@ -93,7 +104,7 @@
 
     function formatDateTime(value) {
         if (!value) {
-            return "未知";
+            return t("Unknown", "未知");
         }
 
         const date = new Date(value);
@@ -101,7 +112,7 @@
             return value;
         }
 
-        return date.toLocaleString("zh-CN", {
+        return date.toLocaleString(currentLocale(), {
             year: "numeric",
             month: "2-digit",
             day: "2-digit",
@@ -114,39 +125,42 @@
 
     function formatDate(value) {
         if (!value) {
-            return "未知";
+            return t("Unknown", "未知");
         }
         const date = new Date(`${String(value).slice(0, 10)}T00:00:00`);
         if (Number.isNaN(date.getTime())) {
             return String(value);
         }
-        return date.toLocaleDateString("zh-CN", { year: "numeric", month: "2-digit", day: "2-digit" });
+        return date.toLocaleDateString(currentLocale(), { year: "numeric", month: "2-digit", day: "2-digit" });
     }
 
     function formatHours(value) {
         const hours = Number(value);
         if (!Number.isFinite(hours)) {
-            return "未知";
+            return t("Unknown", "未知");
         }
         if (hours >= 48) {
-            return `${Math.floor(hours / 24)} 天 ${Math.round(hours % 24)} 小时`;
+            return t(
+                `${Math.floor(hours / 24)}d ${Math.round(hours % 24)}h`,
+                `${Math.floor(hours / 24)} 天 ${Math.round(hours % 24)} 小时`,
+            );
         }
-        return `${Math.round(hours)} 小时`;
+        return t(`${Math.round(hours)}h`, `${Math.round(hours)} 小时`);
     }
 
     function formatCount(value) {
-        return new Intl.NumberFormat("zh-CN").format(value || 0);
+        return new Intl.NumberFormat(currentLocale()).format(value || 0);
     }
 
     function renderSeverityPill(severity) {
         const normalized = String(severity || "").toLowerCase();
         const labelMap = {
-            critical: "严重",
-            high: "高",
-            medium: "中",
-            low: "低",
+            critical: t("Critical", "严重"),
+            high: t("High", "高"),
+            medium: t("Medium", "中"),
+            low: t("Low", "低"),
         };
-        const label = labelMap[normalized] || "未分级";
+        const label = labelMap[normalized] || t("Unrated", "未分级");
         return `<span class="severity-pill severity-pill--${escapeHtml(normalized || "unknown")}">${escapeHtml(label)}</span>`;
     }
 
@@ -185,10 +199,10 @@
             return "";
         }
 
-        const locationLabel = record.location || record.continent || "事件地点";
+        const locationLabel = record.location || record.continent || t("Event location", "事件地点");
         const className = ["location-mini-map", modifier ? `location-mini-map--${modifier}` : ""].filter(Boolean).join(" ");
         return `
-            <div class="${className}" role="img" aria-label="${escapeHtml(locationLabel)} 微缩地图">
+            <div class="${className}" role="img" aria-label="${escapeHtml(t(`${locationLabel} mini map`, `${locationLabel} 微缩地图`))}">
                 <span class="location-mini-map__grid" aria-hidden="true"></span>
                 <span class="location-mini-map__marker" style="--x:${getGeoPoint(record).x}%; --y:${getGeoPoint(record).y}%;"></span>
             </div>
@@ -221,21 +235,21 @@
     function summarizeFilters() {
         const parts = [];
         if (state.filters.keyword) {
-            parts.push(`关键词“${state.filters.keyword}”`);
+            parts.push(t(`Keyword “${state.filters.keyword}”`, `关键词“${state.filters.keyword}”`));
         }
         if (state.filters.disease) {
-            parts.push(`疾病 ${state.filters.disease}`);
+            parts.push(t(`Disease ${state.filters.disease}`, `疾病 ${state.filters.disease}`));
         }
         if (state.filters.continent) {
-            parts.push(`洲别 ${state.filters.continent}`);
+            parts.push(t(`Continent ${state.filters.continent}`, `洲别 ${state.filters.continent}`));
         }
         if (state.filters.date_from) {
-            parts.push(`起始 ${state.filters.date_from}`);
+            parts.push(t(`From ${state.filters.date_from}`, `起始 ${state.filters.date_from}`));
         }
         if (state.filters.date_to) {
-            parts.push(`截止 ${state.filters.date_to}`);
+            parts.push(t(`Through ${state.filters.date_to}`, `截止 ${state.filters.date_to}`));
         }
-        return parts.length ? parts.join(" / ") : "未应用筛选。";
+        return parts.length ? parts.join(" / ") : t("No filters applied.", "未应用筛选。");
     }
 
     function updateFilterSummary() {
@@ -334,7 +348,7 @@
             const isDark = normalizedTheme === "dark";
             const label = elements.themeToggle.querySelector(".theme-toggle__label");
             if (label) {
-                label.textContent = isDark ? "浅色" : "深色";
+                label.textContent = isDark ? t("Light", "浅色") : t("Dark", "深色");
             }
             elements.themeToggle.setAttribute("aria-pressed", String(isDark));
         }
@@ -618,8 +632,23 @@
 
     function renderManifest(manifest) {
         const status = manifest.source_status || "failed";
-        const label = manifest.source_status_label || "未知";
-        const message = manifest.status_message_zh || "数据状态不可用。";
+        const englishLabels = {
+            healthy: "Healthy",
+            degraded: "Degraded",
+            stale: "Stale",
+            failed: "Failed",
+        };
+        const englishMessages = {
+            healthy: "Upstream ingestion and public-data quality checks passed.",
+            degraded: "Upstream ingestion did not pass the quality gate; the latest successful snapshot remains available.",
+            stale: "The data snapshot is older than the freshness threshold. Use it with caution.",
+            failed: "No public data snapshot is available.",
+        };
+        const label = t(englishLabels[status] || "Unknown", manifest.source_status_label || "未知");
+        const message = t(
+            manifest.status_message_en || englishMessages[status] || "Data status is unavailable.",
+            manifest.status_message_zh || "数据状态不可用。",
+        );
         if (elements.siteStatus) {
             elements.siteStatus.dataset.status = status;
         }
@@ -627,13 +656,16 @@
             elements.statusBanner.dataset.status = status;
         }
         if (elements.statusLabel) {
-            elements.statusLabel.textContent = `数据状态：${label}`;
+            elements.statusLabel.textContent = t(`Data status: ${label}`, `数据状态：${label}`);
         }
         if (elements.statusMessage) {
             elements.statusMessage.textContent = message;
         }
         if (elements.statusDetail) {
-            elements.statusDetail.textContent = `数据截至 ${formatDate(manifest.data_as_of)}；最近成功采集 ${formatDateTime(manifest.last_successful_ingest_at)}；快照年龄 ${formatHours(manifest.staleness_hours)}。`;
+            elements.statusDetail.textContent = t(
+                `Data as of ${formatDate(manifest.data_as_of)}; last successful ingest ${formatDateTime(manifest.last_successful_ingest_at)}; snapshot age ${formatHours(manifest.staleness_hours)}.`,
+                `数据截至 ${formatDate(manifest.data_as_of)}；最近成功采集 ${formatDateTime(manifest.last_successful_ingest_at)}；快照年龄 ${formatHours(manifest.staleness_hours)}。`,
+            );
         }
         if (elements.briefStatus) {
             elements.briefStatus.textContent = status.toUpperCase();
@@ -654,7 +686,10 @@
             elements.schemaVersion.textContent = `v${manifest.schema_version || "—"}`;
         }
         if (elements.buildGenerated) {
-            elements.buildGenerated.textContent = `页面构建 ${formatDateTime(manifest.build_generated_at)}`;
+            elements.buildGenerated.textContent = t(
+                `Page built ${formatDateTime(manifest.build_generated_at)}`,
+                `页面构建 ${formatDateTime(manifest.build_generated_at)}`,
+            );
         }
         if (elements.dataRecordCount) {
             elements.dataRecordCount.textContent = formatCount(manifest.record_count);
@@ -663,7 +698,7 @@
             elements.dataSourceCount.textContent = formatCount(manifest.source_count);
         }
         const tone = status === "healthy" ? "status--good" : status === "failed" ? "status--danger" : "status--warning";
-        setHeroStatus(`数据状态：${label}`, tone);
+        setHeroStatus(t(`Data status: ${label}`, `数据状态：${label}`), tone);
     }
 
     async function loadManifest() {
@@ -676,16 +711,21 @@
             if (error.name === "AbortError") {
                 return;
             }
-            renderManifest({ source_status: "failed", source_status_label: "不可用", status_message_zh: "无法读取数据状态清单。" });
+            renderManifest({
+                source_status: "failed",
+                source_status_label: t("Unavailable", "不可用"),
+                status_message_en: "Unable to read the data-status manifest.",
+                status_message_zh: t("Unable to read the data-status manifest.", "无法读取数据状态清单。"),
+            });
         }
     }
 
     function renderOverview(payload) {
         const cards = [
-            { marker: "REC", label: "记录总数", value: formatCount(payload.total_records) },
-            { marker: "DIS", label: "疾病类型", value: formatCount(payload.disease_count) },
-            { marker: "CON", label: "洲别覆盖", value: formatCount(payload.continent_count) },
-            { marker: "UPD", label: "最新日期", value: payload.latest_date || "暂无" },
+            { marker: "REC", label: t("Total records", "记录总数"), value: formatCount(payload.total_records) },
+            { marker: "DIS", label: t("Disease types", "疾病类型"), value: formatCount(payload.disease_count) },
+            { marker: "CON", label: t("Continents", "洲别覆盖"), value: formatCount(payload.continent_count) },
+            { marker: "UPD", label: t("Latest date", "最新日期"), value: payload.latest_date || t("None", "暂无") },
         ];
 
         elements.overviewGrid.innerHTML = cards.map(function (card) {
@@ -698,10 +738,13 @@
             `;
         }).join("");
 
-        syncSelectOptions(elements.diseaseSelect, payload.filter_options && payload.filter_options.diseases, "全部疾病");
-        syncSelectOptions(elements.continentSelect, payload.filter_options && payload.filter_options.continents, "全部洲别");
+        syncSelectOptions(elements.diseaseSelect, payload.filter_options && payload.filter_options.diseases, t("All diseases", "全部疾病"));
+        syncSelectOptions(elements.continentSelect, payload.filter_options && payload.filter_options.continents, t("All continents", "全部洲别"));
         if (elements.filterResult) {
-            elements.filterResult.textContent = `命中 ${formatCount(payload.total_records)} 条`;
+            elements.filterResult.textContent = t(
+                `${formatCount(payload.total_records)} matches`,
+                `命中 ${formatCount(payload.total_records)} 条`,
+            );
         }
     }
 
@@ -749,8 +792,8 @@
         return `
             <div class="abstract-map__popup" style="--x: ${cluster.x}%; --y: ${cluster.y}%;" data-map-popup>
                 <div class="abstract-map__popup-head">
-                    <h3 class="abstract-map__popup-title">${formatCount(cluster.count)} 个事件</h3>
-                    <button class="abstract-map__popup-close" type="button" data-map-popup-close aria-label="关闭">×</button>
+                    <h3 class="abstract-map__popup-title">${t(`${formatCount(cluster.count)} events`, `${formatCount(cluster.count)} 个事件`)}</h3>
+                    <button class="abstract-map__popup-close" type="button" data-map-popup-close aria-label="${t("Close", "关闭")}">×</button>
                 </div>
                 <ul class="abstract-map__event-list">
                     ${previewItems.map(function (item) {
@@ -758,17 +801,17 @@
                         return `
                             <li class="abstract-map__event">
                                 <div class="abstract-map__event-title">
-                                    <a href="${detailUrl}">${escapeHtml(item.disease || "未标注疾病")} · ${escapeHtml(item.location || "未知地点")}</a>
+                                    <a href="${detailUrl}">${escapeHtml(item.disease || t("Unspecified disease", "未标注疾病"))} · ${escapeHtml(item.location || t("Unknown location", "未知地点"))}</a>
                                 </div>
                                 <div class="abstract-map__event-meta">
-                                    ${escapeHtml(item.original_date || "未知日期")} / ${escapeHtml(item.source_org || "未知来源")}
+                                    ${escapeHtml(item.original_date || t("Unknown date", "未知日期"))} / ${escapeHtml(item.source_org || t("Unknown source", "未知来源"))}
                                 </div>
-                                <div class="abstract-map__event-summary">${escapeHtml(item.description_cn || "暂无摘要")}</div>
+                                <div class="abstract-map__event-summary">${escapeHtml(item.description_cn || t("No summary available", "暂无摘要"))}</div>
                             </li>
                         `;
                     }).join("")}
                 </ul>
-                ${moreCount ? `<div class="abstract-map__event-meta">另有 ${formatCount(moreCount)} 个事件。</div>` : ""}
+                ${moreCount ? `<div class="abstract-map__event-meta">${t(`${formatCount(moreCount)} more events.`, `另有 ${formatCount(moreCount)} 个事件。`)}</div>` : ""}
             </div>
         `;
     }
@@ -804,7 +847,10 @@
     function renderMap(items) {
         const safeItems = Array.isArray(items) ? items : [];
         const clusters = aggregateMapItems(safeItems);
-        elements.mapMeta.textContent = `当前地图点位 ${formatCount(safeItems.length)} 个`;
+        elements.mapMeta.textContent = t(
+            `${formatCount(safeItems.length)} map points shown`,
+            `当前地图点位 ${formatCount(safeItems.length)} 个`,
+        );
         elements.map.innerHTML = renderWorldLayer();
 
         if (!clusters.length) {
@@ -820,9 +866,9 @@
                     type="button"
                     style="--x: ${cluster.x}%; --y: ${cluster.y}%; --size: ${cluster.size}px;"
                     data-map-cluster="${index}"
-                    aria-label="${formatCount(cluster.count)} 个事件"
+                    aria-label="${t(`${formatCount(cluster.count)} events`, `${formatCount(cluster.count)} 个事件`)}"
                 >
-                    <span class="cluster-badge cluster-badge--${cluster.tone}" title="${formatCount(cluster.count)} 个事件">
+                    <span class="cluster-badge cluster-badge--${cluster.tone}" title="${t(`${formatCount(cluster.count)} events`, `${formatCount(cluster.count)} 个事件`)}">
                         ${formatCount(cluster.count)}
                     </span>
                 </button>
@@ -838,10 +884,10 @@
         const countryRisks = Array.isArray(riskSummary.country_risks) ? riskSummary.country_risks : [];
 
         const metrics = [
-            { marker: "CHN", label: "监测通道", value: formatCount(meta.channel_count) },
-            { marker: "RPT", label: "累计报告", value: formatCount(meta.total_reports) },
-            { marker: "PDG", label: "待处理", value: formatCount(meta.pending_reports) },
-            { marker: "RSK", label: "风险事件", value: formatCount(events.length) },
+            { marker: "CHN", label: t("Monitoring channels", "监测通道"), value: formatCount(meta.channel_count) },
+            { marker: "RPT", label: t("Total reports", "累计报告"), value: formatCount(meta.total_reports) },
+            { marker: "PDG", label: t("Pending", "待处理"), value: formatCount(meta.pending_reports) },
+            { marker: "RSK", label: t("Risk events", "风险事件"), value: formatCount(events.length) },
         ];
 
         elements.epietlMetrics.innerHTML = metrics.map(function (card) {
@@ -855,60 +901,71 @@
         }).join("");
 
         elements.epietlMeta.textContent = meta.fetched_at
-            ? `公开快照 ${formatDateTime(meta.fetched_at)} · 风险窗口 ${formatCount(meta.dashboard_days)} 天`
-            : "未同步 EpiETL 公共快照";
+            ? t(
+                `Public snapshot ${formatDateTime(meta.fetched_at)} · ${formatCount(meta.dashboard_days)}-day risk window`,
+                `公开快照 ${formatDateTime(meta.fetched_at)} · 风险窗口 ${formatCount(meta.dashboard_days)} 天`,
+            )
+            : t("No EpiETL public snapshot synced", "未同步 EpiETL 公共快照");
 
         elements.epietlSummaryText.textContent = meta.reports_analyzed
-            ? `分析报告 ${formatCount(meta.reports_analyzed)} 份`
-            : "暂无分析报告摘要";
+            ? t(
+                `${formatCount(meta.reports_analyzed)} reports analyzed`,
+                `分析报告 ${formatCount(meta.reports_analyzed)} 份`,
+            )
+            : t("No analysis summary available", "暂无分析报告摘要");
 
         if (countryRisks.length) {
             elements.epietlCountryRisks.innerHTML = countryRisks.map(function (item) {
                 return `
                     <article class="intel-item">
                         <div class="intel-item__row">
-                            <strong>${escapeHtml(item.country || "未知地区")}</strong>
+                            <strong>${escapeHtml(item.country || t("Unknown region", "未知地区"))}</strong>
                             <span class="intel-item__score">${formatCount(item.score)}</span>
                         </div>
                         <div class="intel-item__row intel-item__row--meta">
                             ${renderSeverityPill(item.level)}
-                            <span>${escapeHtml(item.top_pathogen || "未标注病原体")}</span>
+                            <span>${escapeHtml(item.top_pathogen || t("Unspecified pathogen", "未标注病原体"))}</span>
                         </div>
                     </article>
                 `;
             }).join("");
         } else {
-            elements.epietlCountryRisks.innerHTML = '<div class="intel-empty">当前没有可展示的国家风险评分。</div>';
+            elements.epietlCountryRisks.innerHTML = `<div class="intel-empty">${t("No country risk scores are currently available.", "当前没有可展示的国家风险评分。")}</div>`;
         }
 
         elements.epietlEventsMeta.textContent = events.length
-            ? `展示前 ${formatCount(events.length)} 条公开事件`
-            : "暂无事件快照";
+            ? t(
+                `Showing ${formatCount(events.length)} public events`,
+                `展示前 ${formatCount(events.length)} 条公开事件`,
+            )
+            : t("No event snapshot available", "暂无事件快照");
 
         if (events.length) {
             elements.epietlEvents.innerHTML = events.map(function (item) {
-                const regionText = Array.isArray(item.regions) && item.regions.length ? item.regions.join(" / ") : "未标注地区";
+                const regionText = Array.isArray(item.regions) && item.regions.length
+                    ? item.regions.join(" / ")
+                    : t("Unspecified region", "未标注地区");
                 const sourceLink = item.source_url
-                    ? `<a href="${escapeHtml(item.source_url)}" target="_blank" rel="noopener noreferrer" class="table-cell__link">查看来源</a>`
-                    : "无来源链接";
+                    ? `<a href="${escapeHtml(item.source_url)}" target="_blank" rel="noopener noreferrer" class="table-cell__link">${t("View source", "查看来源")}</a>`
+                    : t("No source link", "无来源链接");
                 return `
                     <article class="intel-item">
                         <div class="intel-item__row">
-                            <strong>${escapeHtml(item.title || "未命名事件")}</strong>
+                            <strong>${escapeHtml(item.title || t("Untitled event", "未命名事件"))}</strong>
                             ${renderSeverityPill(item.severity)}
                         </div>
-                        <p class="intel-item__summary">${escapeHtml(item.summary || "暂无摘要。")}</p>
+                        <p class="intel-item__summary">${escapeHtml(item.summary || t("No summary available.", "暂无摘要。"))}</p>
                         <div class="intel-item__row intel-item__row--meta">
-                            <span>${escapeHtml(item.pathogen || "未标注病原体")}</span>
+                            <span>${escapeHtml(item.pathogen || t("Unspecified pathogen", "未标注病原体"))}</span>
                             <span>${escapeHtml(regionText)}</span>
-                            <span>${escapeHtml(item.source_org || "未知机构")}</span>
+                            <span>${escapeHtml(item.source_org || t("Unknown organization", "未知机构"))}</span>
                             <span>${sourceLink}</span>
                         </div>
                     </article>
                 `;
             }).join("");
         } else {
-            elements.epietlEvents.innerHTML = '<div class="intel-empty">当前没有可展示的公开风险事件。</div>';
+            elements.epietlEvents.innerHTML = `<div class="intel-empty">${t("No public risk events are currently available.", "当前没有可展示的公开风险事件。")}</div>`;
         }
     }
 
@@ -918,7 +975,7 @@
             const row = document.createElement("tr");
             const cell = document.createElement("td");
             cell.colSpan = tableColumns.length;
-            cell.textContent = "当前筛选条件下没有明细记录。";
+            cell.textContent = t("No detailed records match the current filters.", "当前筛选条件下没有明细记录。");
             row.appendChild(cell);
             elements.tableBody.appendChild(row);
             return;
@@ -936,13 +993,13 @@
                     const wrapper = document.createElement("div");
                     wrapper.className = "source-cell";
                     const organization = document.createElement("strong");
-                    organization.textContent = item.source_org || "来源未注明";
+                    organization.textContent = item.source_org || t("Source not specified", "来源未注明");
                     const link = document.createElement("a");
                     link.href = item.source;
                     link.target = "_blank";
                     link.rel = "noopener noreferrer";
                     link.className = "table-cell__link";
-                    link.textContent = "原始来源 ↗";
+                    link.textContent = t("Original source ↗", "原始来源 ↗");
                     wrapper.appendChild(organization);
                     wrapper.appendChild(link);
                     cell.appendChild(wrapper);
@@ -956,14 +1013,15 @@
                 } else if (column.key === "metrics") {
                     const cases = item.cases === null || item.cases === undefined ? "—" : formatCount(item.cases);
                     const deaths = item.deaths === null || item.deaths === undefined ? "—" : formatCount(item.deaths);
-                    cell.innerHTML = `<span class="metric-pair"><strong>${cases}</strong><small>病例</small></span><span class="metric-pair"><strong>${deaths}</strong><small>死亡</small></span>`;
+                    cell.innerHTML = `<span class="metric-pair"><strong>${cases}</strong><small>${t("Cases", "病例")}</small></span><span class="metric-pair"><strong>${deaths}</strong><small>${t("Deaths", "死亡")}</small></span>`;
                 } else if (column.key === "quality") {
                     const score = Number.isFinite(Number(item.data_quality_score)) ? Number(item.data_quality_score) : "—";
                     const tone = Number(score) >= 90 ? "good" : Number(score) >= 70 ? "warning" : "danger";
                     cell.innerHTML = `<span class="quality-badge quality-badge--${tone}"><strong>${escapeHtml(score)}</strong><small>/100</small></span>`;
                 } else if (column.key === "event") {
                     const detailUrl = item.event_id ? `./events/${encodeURIComponent(item.event_id)}/` : "#";
-                    cell.innerHTML = `<a class="event-link" href="${detailUrl}" aria-label="查看 ${escapeHtml(item.disease || "事件")} 详情">详情 →</a>`;
+                    const eventLabel = item.disease || t("event", "事件");
+                    cell.innerHTML = `<a class="event-link" href="${detailUrl}" aria-label="${escapeHtml(t(`View details for ${eventLabel}`, `查看 ${eventLabel} 详情`))}">${t("Details →", "详情 →")}</a>`;
                 } else {
                     cell.textContent = item[column.key] || "—";
                 }
@@ -976,7 +1034,10 @@
     function buildPagination(total, page, pageSize) {
         const totalPages = Math.max(Math.ceil(total / pageSize), 1);
         const info = document.createElement("div");
-        info.textContent = `共 ${formatCount(total)} 条，当前第 ${page} / ${totalPages} 页`;
+        info.textContent = t(
+            `${formatCount(total)} total · page ${page} of ${totalPages}`,
+            `共 ${formatCount(total)} 条，当前第 ${page} / ${totalPages} 页`,
+        );
 
         const buttons = document.createElement("div");
         buttons.className = "pagination__buttons";
@@ -993,7 +1054,7 @@
             buttons.appendChild(button);
         }
 
-        appendButton("上一页", page <= 1, function () {
+        appendButton(t("Previous", "上一页"), page <= 1, function () {
             loadTable(page - 1);
         });
 
@@ -1005,7 +1066,7 @@
             }, current === page);
         }
 
-        appendButton("下一页", page >= totalPages, function () {
+        appendButton(t("Next", "下一页"), page >= totalPages, function () {
             loadTable(page + 1);
         });
 
@@ -1024,7 +1085,7 @@
                 if (error.name === "AbortError") {
                     return;
                 }
-                setHeroStatus("摘要数据加载失败", "status--danger");
+                setHeroStatus(t("Summary data failed to load", "摘要数据加载失败"), "status--danger");
             }
             return;
         }
@@ -1036,12 +1097,12 @@
             if (error.name === "AbortError") {
                 return;
             }
-            setHeroStatus("摘要数据加载失败", "status--danger");
+            setHeroStatus(t("Summary data failed to load", "摘要数据加载失败"), "status--danger");
         }
     }
 
     async function loadMap() {
-        elements.mapMeta.textContent = "正在刷新地图点位";
+        elements.mapMeta.textContent = t("Refreshing map points", "正在刷新地图点位");
 
         if (isStaticMode()) {
             try {
@@ -1052,7 +1113,7 @@
                 if (error.name === "AbortError") {
                     return;
                 }
-                elements.mapMeta.textContent = "地图加载失败";
+                elements.mapMeta.textContent = t("Map failed to load", "地图加载失败");
                 elements.mapEmpty.classList.remove("hidden");
             }
             return;
@@ -1065,7 +1126,7 @@
             if (error.name === "AbortError") {
                 return;
             }
-            elements.mapMeta.textContent = "地图加载失败";
+            elements.mapMeta.textContent = t("Map failed to load", "地图加载失败");
             elements.mapEmpty.classList.remove("hidden");
         }
     }
@@ -1084,21 +1145,21 @@
             if (error.name === "AbortError") {
                 return;
             }
-            elements.epietlMeta.textContent = "EpiETL 情报加载失败";
-            elements.epietlSummaryText.textContent = "公开情报接口不可用";
-            elements.epietlCountryRisks.innerHTML = '<div class="intel-empty">EpiETL 情报接口加载失败。</div>';
-            elements.epietlEventsMeta.textContent = "加载失败";
-            elements.epietlEvents.innerHTML = '<div class="intel-empty">请稍后重试。</div>';
+            elements.epietlMeta.textContent = t("EpiETL intelligence failed to load", "EpiETL 情报加载失败");
+            elements.epietlSummaryText.textContent = t("The public intelligence API is unavailable", "公开情报接口不可用");
+            elements.epietlCountryRisks.innerHTML = `<div class="intel-empty">${t("The EpiETL intelligence API failed to load.", "EpiETL 情报接口加载失败。")}</div>`;
+            elements.epietlEventsMeta.textContent = t("Failed to load", "加载失败");
+            elements.epietlEvents.innerHTML = `<div class="intel-empty">${t("Please try again later.", "请稍后重试。")}</div>`;
         }
     }
 
     async function loadTable(page) {
         state.page = page || 1;
         state.tableLoaded = true;
-        elements.tableMeta.textContent = "正在加载分页明细";
+        elements.tableMeta.textContent = t("Loading paginated records", "正在加载分页明细");
         elements.tablePlaceholder.classList.add("hidden");
         elements.tableShell.classList.remove("hidden");
-        elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">正在加载明细，请稍候…</td></tr>`;
+        elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">${t("Loading records, please wait…", "正在加载明细，请稍候…")}</td></tr>`;
 
         if (isStaticMode()) {
             try {
@@ -1106,16 +1167,25 @@
                 const filteredRecords = applyClientFilters(records, state.filters);
                 const payload = buildClientTablePayload(filteredRecords, state.page, state.pageSize);
                 renderTableRows(payload.items || []);
-                elements.tableCount.textContent = `${formatCount(payload.total)} 条记录`;
-                elements.tablePageStatus.textContent = `第 ${payload.page} 页 / 每页 ${payload.page_size} 条`;
-                elements.tableMeta.textContent = `已加载 ${formatCount(payload.total)} 条可追溯记录`;
+                elements.tableCount.textContent = t(
+                    `${formatCount(payload.total)} records`,
+                    `${formatCount(payload.total)} 条记录`,
+                );
+                elements.tablePageStatus.textContent = t(
+                    `Page ${payload.page} / ${payload.page_size} per page`,
+                    `第 ${payload.page} 页 / 每页 ${payload.page_size} 条`,
+                );
+                elements.tableMeta.textContent = t(
+                    `${formatCount(payload.total)} traceable records loaded`,
+                    `已加载 ${formatCount(payload.total)} 条可追溯记录`,
+                );
                 buildPagination(payload.total || 0, payload.page || 1, payload.page_size || state.pageSize);
             } catch (error) {
                 if (error.name === "AbortError") {
                     return;
                 }
-                elements.tableMeta.textContent = "表格加载失败";
-                elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">明细接口加载失败，请稍后重试。</td></tr>`;
+                elements.tableMeta.textContent = t("Table failed to load", "表格加载失败");
+                elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">${t("The record API failed to load. Please try again later.", "明细接口加载失败，请稍后重试。")}</td></tr>`;
                 elements.pagination.innerHTML = "";
             }
             return;
@@ -1127,16 +1197,25 @@
                 page_size: state.pageSize,
             }));
             renderTableRows(payload.items || []);
-            elements.tableCount.textContent = `${formatCount(payload.total)} 条记录`;
-            elements.tablePageStatus.textContent = `第 ${payload.page} 页 / 每页 ${payload.page_size} 条`;
-            elements.tableMeta.textContent = `明细已加载，更新时间 ${formatDateTime(payload.last_modified)}`;
+            elements.tableCount.textContent = t(
+                `${formatCount(payload.total)} records`,
+                `${formatCount(payload.total)} 条记录`,
+            );
+            elements.tablePageStatus.textContent = t(
+                `Page ${payload.page} / ${payload.page_size} per page`,
+                `第 ${payload.page} 页 / 每页 ${payload.page_size} 条`,
+            );
+            elements.tableMeta.textContent = t(
+                `Records loaded · updated ${formatDateTime(payload.last_modified)}`,
+                `明细已加载，更新时间 ${formatDateTime(payload.last_modified)}`,
+            );
             buildPagination(payload.total || 0, payload.page || 1, payload.page_size || state.pageSize);
         } catch (error) {
             if (error.name === "AbortError") {
                 return;
             }
-            elements.tableMeta.textContent = "表格加载失败";
-            elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">明细接口加载失败，请稍后重试。</td></tr>`;
+            elements.tableMeta.textContent = t("Table failed to load", "表格加载失败");
+            elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">${t("The record API failed to load. Please try again later.", "明细接口加载失败，请稍后重试。")}</td></tr>`;
             elements.pagination.innerHTML = "";
         }
     }
@@ -1149,7 +1228,7 @@
         if (state.tableLoaded) {
             loadTable(1);
         } else {
-            elements.tableMeta.textContent = "滚动到此区域后自动加载";
+            elements.tableMeta.textContent = t("Scroll here to load automatically", "滚动到此区域后自动加载");
         }
     }
 
@@ -1190,12 +1269,12 @@
                 syncFiltersToUrl();
                 try {
                     await navigator.clipboard.writeText(window.location.href);
-                    elements.copyFilterLink.textContent = "链接已复制";
+                    elements.copyFilterLink.textContent = t("Link copied", "链接已复制");
                 } catch (error) {
-                    elements.copyFilterLink.textContent = "请复制地址栏链接";
+                    elements.copyFilterLink.textContent = t("Copy the link from the address bar", "请复制地址栏链接");
                 }
                 window.setTimeout(function () {
-                    elements.copyFilterLink.textContent = "复制筛选链接";
+                    elements.copyFilterLink.textContent = t("Copy filter link", "复制筛选链接");
                 }, 1800);
             });
         }
@@ -1210,12 +1289,12 @@
                 }
                 try {
                     await navigator.clipboard.writeText(target.textContent.trim());
-                    button.textContent = "已复制";
+                    button.textContent = t("Copied", "已复制");
                 } catch (error) {
-                    button.textContent = "复制失败";
+                    button.textContent = t("Copy failed", "复制失败");
                 }
                 window.setTimeout(function () {
-                    button.textContent = "复制";
+                    button.textContent = t("Copy", "复制");
                 }, 1600);
             });
         });
@@ -1228,7 +1307,7 @@
         try {
             const records = await loadStaticDataset();
             const matches = records.filter(function (record) {
-                return record.disease_id === "dengue" && record.continent === "亚洲";
+                return record.disease_id === "dengue" && ["Asia", "亚洲"].includes(record.continent);
             });
             elements.agentMatchCount.textContent = formatCount(matches.length);
         } catch (error) {
@@ -1249,7 +1328,7 @@
 
     function bootstrap() {
         if (!isStaticMode() && (!config.overviewUrl || !config.mapUrl || !config.tableUrl)) {
-            setHeroStatus("页面配置缺失，无法加载数据。", "status--danger");
+            setHeroStatus(t("Page configuration is missing; data cannot be loaded.", "页面配置缺失，无法加载数据。"), "status--danger");
             return;
         }
 

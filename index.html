@@ -1,38 +1,50 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EPIC — 传染病事件情报基础设施</title>
-    <meta name="description" content="EPIC 将卫生机构公告、ProMED、RSS 与公开报道中的传染病信号，转化为可查询、可追溯、机器可读的事件级监测数据。">
+    <title>EPIC — Traceable infectious-disease event intelligence</title>
+    <meta name="description" content="EPIC turns public outbreak signals from health agencies, ProMED, RSS feeds, and open reporting into queryable, traceable, machine-readable event data.">
     <meta name="theme-color" content="#102c2b">
     <meta name="color-scheme" content="light dark">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://epicdemic.hylouis.top/">
-    <link rel="alternate" hreflang="zh-CN" href="https://epicdemic.hylouis.top/">
-    <link rel="alternate" type="application/rss+xml" title="EPIC 每日事件更新" href="./rss.xml">
+    <link rel="alternate" hreflang="en" href="https://epicdemic.hylouis.top/">
+    <link rel="alternate" hreflang="zh-CN" href="https://epicdemic.hylouis.top/?lang=zh-CN">
+    <link rel="alternate" hreflang="x-default" href="https://epicdemic.hylouis.top/">
+    <link rel="alternate" type="application/rss+xml" title="EPIC daily event updates" href="./rss.xml">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="./manifest.webmanifest">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="EPIC">
-    <meta property="og:locale" content="zh_CN">
-    <meta property="og:title" content="EPIC — 传染病事件情报基础设施">
-    <meta property="og:description" content="把分散的疫情公开信号，转化为可查询、可追溯、机器可读的事件数据。">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:title" content="EPIC — Traceable infectious-disease event intelligence">
+    <meta property="og:description" content="Turn scattered public outbreak signals into queryable, traceable, machine-readable event data.">
     <meta property="og:url" content="https://epicdemic.hylouis.top/">
     <meta property="og:image" content="https://epicdemic.hylouis.top/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="EPIC 传染病事件情报基础设施">
+    <meta property="og:image:alt" content="EPIC infectious-disease event intelligence poster">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="EPIC — 传染病事件情报基础设施">
-    <meta name="twitter:description" content="面向公共卫生监测与早期预警研究的开放来源事件情报基础设施。">
+    <meta name="twitter:title" content="EPIC — Traceable infectious-disease event intelligence">
+    <meta name="twitter:description" content="Open-source-signal event intelligence for public-health monitoring and early-warning research.">
     <meta name="twitter:image" content="https://epicdemic.hylouis.top/og-image.png">
 
-    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260813">
+    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260814">
     <script>
         (function () {
             try {
+                const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+                const savedLanguage = window.localStorage.getItem("epic-lang");
+                const language = requestedLanguage === "zh-CN" || requestedLanguage === "zh"
+                    ? "zh-CN"
+                    : requestedLanguage === "en"
+                        ? "en"
+                        : savedLanguage === "zh-CN" ? "zh-CN" : "en";
+                document.documentElement.dataset.language = language;
+                document.documentElement.lang = language;
                 const savedTheme = window.localStorage.getItem("epic-theme");
                 const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
                 document.documentElement.dataset.theme = savedTheme || systemTheme;
@@ -47,7 +59,7 @@
         "@type": "Dataset",
         "name": "EPIC Infectious-disease Event Intelligence",
         "alternateName": "EPIC 传染病事件情报",
-        "description": "面向公共卫生监测与早期预警研究的开放来源传染病事件级监测数据预览。",
+        "description": "An open-source-signal, event-level infectious-disease monitoring dataset for public-health and early-warning research.",
         "url": "https://epicdemic.hylouis.top/",
         "creator": {"@type": "Person", "name": "Hong Liu"},
         "isAccessibleForFree": true,
@@ -62,32 +74,35 @@
     </script>
 </head>
 <body>
-    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <div class="site-status" id="site-status" role="status" aria-live="polite">
         <div class="site-status__inner">
             <span class="status-orb" aria-hidden="true"></span>
-            <strong id="status-label">正在核验数据状态</strong>
-            <span id="status-message">正在读取版本化数据清单…</span>
-            <a href="./methodology.html">查看状态说明</a>
+            <strong id="status-label">Verifying data status</strong>
+            <span id="status-message">Reading the versioned manifest…</span>
+            <a href="./methodology.html">How status works</a>
         </div>
     </div>
 
     <header class="site-header">
-        <a class="brand" href="./" aria-label="EPIC 首页">
+        <a class="brand" href="./" aria-label="EPIC home">
             <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span>
             <span class="brand__type"><strong>EPIC</strong><small>Event intelligence</small></span>
         </a>
-        <nav class="site-nav" aria-label="主要导航">
-            <a href="#events">事件</a>
-            <a href="#map-panel">地图</a>
-            <a href="#data-access">数据接口</a>
-            <a href="./methodology.html">方法与局限</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#events">Events</a>
+            <a href="#map-panel">Map</a>
+            <a href="#data-access">Data</a>
+            <a href="./methodology.html">Method &amp; limits</a>
             <a href="https://github.com/Hylouis233/epic-site-pages" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </nav>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
-            <span aria-hidden="true">◐</span><span class="theme-toggle__label">深色</span>
-        </button>
+        <div class="header-controls">
+            <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to Chinese">中文</button>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+                <span aria-hidden="true">◐</span><span class="theme-toggle__label">Dark</span>
+            </button>
+        </div>
     </header>
 
     <main id="main-content">
@@ -95,150 +110,150 @@
             <div class="hero-grid" aria-hidden="true"></div>
             <div class="hero-copy">
                 <p class="section-index"><span>01</span> PUBLIC-SOURCE EVENT INTELLIGENCE</p>
-                <h1 id="hero-title">把分散的疫情公开信号，<em>转化为可追溯的事件数据。</em></h1>
+                <h1 id="hero-title">Turn scattered outbreak signals into <em>traceable event data.</em></h1>
                 <p class="hero-copy__lead">
-                    EPIC 面向公共卫生监测与早期预警研究，聚合卫生机构公告、ProMED、RSS 与公开报道，提供来源溯源、地图检索、版本化数据接口和 Agent 查询能力。
+                    EPIC brings together health-agency notices, ProMED, RSS feeds, and open reporting for public-health monitoring and early-warning research—with source provenance, map search, versioned data, and agent-ready access.
                 </p>
                 <div class="hero-actions">
-                    <a class="button button--primary" href="#events">浏览最新事件 <span>↓</span></a>
-                    <a class="button button--paper" href="#data-access">使用数据接口</a>
-                    <a class="button button--text" href="./rss.xml">订阅每日更新 ↗</a>
+                    <a class="button button--primary" href="#events">Explore latest events <span>↓</span></a>
+                    <a class="button button--paper" href="#data-access">Use the data</a>
+                    <a class="button button--text" href="./rss.xml">Subscribe to updates ↗</a>
                 </div>
-                <p class="hero-caveat">事件型公开来源监测 · 非完整全球覆盖 · 非正式公共卫生预警 · 不构成医疗建议</p>
+                <p class="hero-caveat">EVENT-BASED OPEN-SOURCE MONITORING · INCOMPLETE COVERAGE · NOT AN OFFICIAL ALERT · NOT MEDICAL ADVICE</p>
             </div>
 
-            <aside class="briefing-card" aria-label="当前数据简报">
+            <aside class="briefing-card" aria-label="Current data brief">
                 <div class="briefing-card__topline">
                     <span>DATA BRIEF / 001</span>
                     <span id="brief-status">VERIFYING</span>
                 </div>
                 <div class="briefing-card__stamp" aria-hidden="true">EPIC<br><small>TRACEABLE</small></div>
                 <div class="briefing-card__metric">
-                    <span>公开事件记录</span>
+                    <span>PUBLIC EVENT RECORDS</span>
                     <strong id="hero-record-count">—</strong>
                 </div>
                 <dl class="briefing-card__facts">
-                    <div><dt>数据截至</dt><dd id="data-as-of">读取中</dd></div>
-                    <div><dt>最近成功采集</dt><dd id="last-successful-ingest">读取中</dd></div>
-                    <div><dt>快照年龄</dt><dd id="staleness-hours">读取中</dd></div>
+                    <div><dt>DATA AS OF</dt><dd id="data-as-of">LOADING</dd></div>
+                    <div><dt>LAST GOOD INGEST</dt><dd id="last-successful-ingest">LOADING</dd></div>
+                    <div><dt>SNAPSHOT AGE</dt><dd id="staleness-hours">LOADING</dd></div>
                     <div><dt>Schema</dt><dd id="schema-version">v—</dd></div>
                 </dl>
                 <div class="briefing-card__foot">
                     <span class="pulse-line" aria-hidden="true"></span>
-                    <span id="build-generated">构建时间读取中</span>
+                    <span id="build-generated">READING BUILD TIME</span>
                 </div>
             </aside>
         </section>
 
-        <section class="trust-strip" aria-label="产品能力">
+        <section class="trust-strip" aria-label="Product capabilities">
             <article>
                 <span class="trust-strip__number">01</span>
-                <div><strong>可追溯</strong><p>每条记录保留稳定 ID、来源链接与修订信息。</p></div>
+                <div><strong>TRACEABLE</strong><p>Every record keeps a stable ID, source link, and revision history.</p></div>
             </article>
             <article>
                 <span class="trust-strip__number">02</span>
-                <div><strong>机器可读</strong><p>JSON、NDJSON、CSV、GeoJSON 与 Parquet。</p></div>
+                <div><strong>MACHINE-READABLE</strong><p>JSON, NDJSON, CSV, GeoJSON, and Parquet.</p></div>
             </article>
             <article>
                 <span class="trust-strip__number">03</span>
-                <div><strong>Agent 友好</strong><p>按疾病、地区、日期、来源与质量字段查询。</p></div>
+                <div><strong>AGENT-READY</strong><p>Query by disease, place, date, source, and quality.</p></div>
             </article>
         </section>
 
         <section class="audience-section" aria-labelledby="audience-title">
             <header class="section-heading section-heading--split">
-                <div><p class="section-index"><span>02</span> WHO IT SERVES</p><h2 id="audience-title">一套数据，三种使用入口。</h2></div>
-                <p>EPIC 的核心不是另一张疫情地图，而是把人类浏览、机器调用与 Agent 查询放进同一条可审计链路。</p>
+                <div><p class="section-index"><span>02</span> WHO IT SERVES</p><h2 id="audience-title">One dataset. Three ways in.</h2></div>
+                <p>EPIC is not just another outbreak map. It puts human exploration, machine access, and agent queries on the same auditable data trail.</p>
             </header>
             <div class="audience-grid">
                 <article class="audience-card audience-card--research">
-                    <span class="audience-card__tag">RESEARCH / 研究</span>
-                    <h3>复现事件型监测分析</h3>
-                    <p>下载结构化记录，区分事件发生、报道发布与系统发现时间，保留来源与质量字段。</p>
-                    <a href="#data-access">查看数据合同 →</a>
+                    <span class="audience-card__tag">RESEARCH</span>
+                    <h3>Reproduce event-based analyses</h3>
+                    <p>Download structured records with separate event, publication, and observation times—plus provenance and quality fields.</p>
+                    <a href="#data-access">Inspect the data contract →</a>
                 </article>
                 <article class="audience-card audience-card--practice">
-                    <span class="audience-card__tag">PRACTICE / 实务</span>
-                    <h3>快速浏览公开疫情信号</h3>
-                    <p>按疾病、地点、洲别、时间和来源检索近期信号，并回到原始公告核验。</p>
-                    <a href="#events">开始检索 →</a>
+                    <span class="audience-card__tag">PRACTICE</span>
+                    <h3>Scan public outbreak signals</h3>
+                    <p>Search recent signals by disease, place, continent, time, and source—then return to the original notice to verify.</p>
+                    <a href="#events">Start exploring →</a>
                 </article>
                 <article class="audience-card audience-card--agent">
-                    <span class="audience-card__tag">BUILD / 开发</span>
-                    <h3>接入数据与 Agent</h3>
-                    <p>使用版本化端点、Schema、校验和及 EPIC 查询 Skill 构建下游原型。</p>
-                    <a href="#agent-query">查看 Agent 示例 →</a>
+                    <span class="audience-card__tag">BUILD</span>
+                    <h3>Connect data and agents</h3>
+                    <p>Build downstream prototypes with versioned endpoints, a schema, checksums, and the EPIC query skill.</p>
+                    <a href="#agent-query">See the agent example →</a>
                 </article>
             </div>
         </section>
 
         <section class="monitor-section" id="events" aria-labelledby="monitor-title">
             <header class="section-heading section-heading--split">
-                <div><p class="section-index"><span>03</span> EVENT MONITOR</p><h2 id="monitor-title">公开来源事件监测台</h2></div>
-                <p>筛选条件会同步到 URL，可复制、收藏和引用。数量代表当前公开快照中的事件记录，不代表全球疾病负担。</p>
+                <div><p class="section-index"><span>03</span> EVENT MONITOR</p><h2 id="monitor-title">Public-source event register</h2></div>
+                <p>Filters are reflected in the URL for sharing and citation. Counts describe this public snapshot—not global disease burden.</p>
             </header>
 
             <div class="status-banner" id="status-banner">
                 <div class="status-banner__icon" aria-hidden="true">!</div>
-                <div><strong id="hero-status">正在读取来源状态</strong><p id="status-detail">数据状态完成核验后显示。</p></div>
-                <a href="./data/v1/quality-report.json">质量报告 ↗</a>
+                <div><strong id="hero-status">Reading source status</strong><p id="status-detail">Freshness and ingest status will appear after verification.</p></div>
+                <a href="./data/v1/quality-report.json">Quality report ↗</a>
             </div>
 
-            <section class="overview-grid" id="overview-grid" aria-label="监测摘要">
-                <article class="metric-card"><span class="metric-card__marker">REC</span><p class="metric-card__label">记录总数</p><h3 class="metric-card__value skeleton-line">—</h3></article>
-                <article class="metric-card"><span class="metric-card__marker">DIS</span><p class="metric-card__label">规范疾病类目</p><h3 class="metric-card__value skeleton-line">—</h3></article>
-                <article class="metric-card"><span class="metric-card__marker">CON</span><p class="metric-card__label">洲别覆盖</p><h3 class="metric-card__value skeleton-line">—</h3></article>
-                <article class="metric-card"><span class="metric-card__marker">DAT</span><p class="metric-card__label">筛选内最新日期</p><h3 class="metric-card__value skeleton-line">—</h3></article>
+            <section class="overview-grid" id="overview-grid" aria-label="Monitoring summary">
+                <article class="metric-card"><span class="metric-card__marker">REC</span><p class="metric-card__label">TOTAL RECORDS</p><h3 class="metric-card__value skeleton-line">—</h3></article>
+                <article class="metric-card"><span class="metric-card__marker">DIS</span><p class="metric-card__label">DISEASE CATEGORIES</p><h3 class="metric-card__value skeleton-line">—</h3></article>
+                <article class="metric-card"><span class="metric-card__marker">CON</span><p class="metric-card__label">CONTINENTS</p><h3 class="metric-card__value skeleton-line">—</h3></article>
+                <article class="metric-card"><span class="metric-card__marker">DAT</span><p class="metric-card__label">LATEST FILTERED DATE</p><h3 class="metric-card__value skeleton-line">—</h3></article>
             </section>
 
             <section class="control-panel" aria-labelledby="filters-title">
                 <div class="control-panel__head">
-                    <div><p class="panel-label">FILTER / 事件检索</p><h3 id="filters-title">缩小信号范围</h3></div>
+                    <div><p class="panel-label">FILTER / EVENT SEARCH</p><h3 id="filters-title">Narrow the signal set</h3></div>
                     <div class="control-panel__actions">
-                        <button class="text-button" id="copy-filter-link" type="button">复制筛选链接</button>
-                        <button class="text-button" id="reset-filters" type="button">清空条件</button>
+                        <button class="text-button" id="copy-filter-link" type="button">Copy filter link</button>
+                        <button class="text-button" id="reset-filters" type="button">Clear filters</button>
                     </div>
                 </div>
                 <form class="filters-grid" id="filters-form">
-                    <label class="field field--search"><span class="field__label">关键词</span><input id="keyword-input" name="keyword" type="search" placeholder="疾病、地点、来源机构、摘要"></label>
-                    <label class="field"><span class="field__label">疾病类型</span><select id="disease-select" name="disease"><option value="">全部疾病</option></select></label>
-                    <label class="field"><span class="field__label">洲别</span><select id="continent-select" name="continent"><option value="">全部洲别</option></select></label>
-                    <label class="field"><span class="field__label">开始日期</span><input id="date-from-input" name="date_from" type="date"></label>
-                    <label class="field"><span class="field__label">结束日期</span><input id="date-to-input" name="date_to" type="date"></label>
+                    <label class="field field--search"><span class="field__label">KEYWORD</span><input id="keyword-input" name="keyword" type="search" placeholder="Disease, place, source, or summary"></label>
+                    <label class="field"><span class="field__label">DISEASE</span><select id="disease-select" name="disease"><option value="">All diseases</option></select></label>
+                    <label class="field"><span class="field__label">CONTINENT</span><select id="continent-select" name="continent"><option value="">All continents</option></select></label>
+                    <label class="field"><span class="field__label">FROM</span><input id="date-from-input" name="date_from" type="date"></label>
+                    <label class="field"><span class="field__label">TO</span><input id="date-to-input" name="date_to" type="date"></label>
                 </form>
-                <div class="filter-summary"><span>当前条件</span><strong id="filter-summary-text">未应用筛选。</strong><em id="filter-result">准备检索</em></div>
+                <div class="filter-summary"><span>CURRENT FILTER</span><strong id="filter-summary-text">No filters applied.</strong><em id="filter-result">Ready</em></div>
             </section>
 
             <section class="panel panel--map" id="map-panel" aria-labelledby="map-title">
                 <div class="panel-heading">
-                    <div><p class="panel-label">ATLAS / 事件图谱</p><h3 id="map-title">公开信号地理分布</h3></div>
-                    <div class="panel-heading__meta" id="map-meta">正在准备点位数据</div>
+                    <div><p class="panel-label">ATLAS / EVENT MAP</p><h3 id="map-title">Geographic distribution of public signals</h3></div>
+                    <div class="panel-heading__meta" id="map-meta">Preparing mapped records</div>
                 </div>
                 <div class="map-toolbar">
-                    <p>点位采用低精度公开定位，仅用于概览；部分地点为国家或行政区质心。</p>
-                    <div class="map-legend" aria-label="聚合强度图例">
+                    <p>Locations are low-precision public geocodes for overview only; some points are country or administrative centroids.</p>
+                    <div class="map-legend" aria-label="Cluster-size legend">
                         <span><i class="map-dot map-dot--small"></i>1–2</span>
                         <span><i class="map-dot map-dot--medium"></i>3–5</span>
                         <span><i class="map-dot map-dot--high"></i>6+</span>
                     </div>
                 </div>
                 <div class="map-wrapper">
-                    <div id="map" aria-label="事件地理分布抽象地图"></div>
-                    <div class="panel-empty panel-empty--overlay hidden" id="map-empty">当前筛选条件下没有可展示的地图点位。</div>
+                    <div id="map" aria-label="Abstract geographic distribution of events"></div>
+                    <div class="panel-empty panel-empty--overlay hidden" id="map-empty">No mapped records match the current filters.</div>
                 </div>
             </section>
 
             <section class="panel panel--table" id="table-panel" aria-labelledby="table-title">
                 <div class="panel-heading">
-                    <div><p class="panel-label">REGISTER / 事件登记册</p><h3 id="table-title">可追溯事件明细</h3></div>
-                    <div class="panel-heading__meta" id="table-meta">滚动到此区域后加载</div>
+                    <div><p class="panel-label">REGISTER / EVENT RECORDS</p><h3 id="table-title">Traceable event details</h3></div>
+                    <div class="panel-heading__meta" id="table-meta">Loads when this section enters view</div>
                 </div>
-                <div class="table-placeholder" id="table-placeholder"><span></span><span></span><span></span><p>进入本区后加载分页明细，首页不会预取完整正文。</p></div>
+                <div class="table-placeholder" id="table-placeholder"><span></span><span></span><span></span><p>Paginated details load on entry; the homepage does not prefetch full records.</p></div>
                 <div class="table-shell hidden" id="table-shell">
-                    <div class="table-status-row"><span id="table-count">0 条记录</span><span id="table-page-status">第 1 页</span></div>
+                    <div class="table-status-row"><span id="table-count">0 records</span><span id="table-page-status">Page 1</span></div>
                     <div class="table-scroll">
                         <table class="data-table">
-                            <thead><tr><th>发布日期</th><th>地点</th><th>疾病</th><th>事件摘要</th><th>病例 / 死亡</th><th>来源</th><th>质量</th><th>详情</th></tr></thead>
+                            <thead><tr><th>PUBLISHED</th><th>LOCATION</th><th>DISEASE</th><th>EVENT SUMMARY</th><th>CASES / DEATHS</th><th>SOURCE</th><th>QUALITY</th><th>DETAIL</th></tr></thead>
                             <tbody id="table-body"></tbody>
                         </table>
                     </div>
@@ -249,91 +264,91 @@
 
         <section class="data-section" id="data-access" aria-labelledby="data-title">
             <header class="section-heading section-heading--split section-heading--light">
-                <div><p class="section-index"><span>04</span> MACHINE-READABLE</p><h2 id="data-title">从“文件”到版本化数据合同。</h2></div>
-                <p>Schema v1 提供明确时间语义、稳定标识、来源权利提示、质量字段与 SHA-256 校验和。</p>
+                <div><p class="section-index"><span>04</span> MACHINE-READABLE</p><h2 id="data-title">From files to a versioned data contract.</h2></div>
+                <p>Schema v1 defines time semantics, stable identifiers, source-rights notes, quality fields, and SHA-256 checksums.</p>
             </header>
             <div class="data-layout">
                 <div class="format-grid">
-                    <a class="format-card" href="./data/v1/records.json"><span>JSON</span><strong>完整事件记录</strong><small>应用与脚本</small></a>
-                    <a class="format-card" href="./data/v1/events.csv"><span>CSV</span><strong>扁平分析表</strong><small>Excel / R / Python</small></a>
-                    <a class="format-card" href="./data/v1/events.parquet"><span>PARQUET</span><strong>列式数据</strong><small>DuckDB / Arrow</small></a>
-                    <a class="format-card" href="./data/v1/events.geojson"><span>GEOJSON</span><strong>空间要素</strong><small>GIS / MapLibre</small></a>
-                    <a class="format-card" href="./data/v1/events.ndjson"><span>NDJSON</span><strong>流式记录</strong><small>CLI / Agent</small></a>
-                    <a class="format-card" href="./data/v1/schema.json"><span>SCHEMA</span><strong>数据约束</strong><small>JSON Schema 2020-12</small></a>
+                    <a class="format-card" href="./data/v1/records.json"><span>JSON</span><strong>Complete event records</strong><small>Apps &amp; scripts</small></a>
+                    <a class="format-card" href="./data/v1/events.csv"><span>CSV</span><strong>Flat analysis table</strong><small>Excel / R / Python</small></a>
+                    <a class="format-card" href="./data/v1/events.parquet"><span>PARQUET</span><strong>Columnar data</strong><small>DuckDB / Arrow</small></a>
+                    <a class="format-card" href="./data/v1/events.geojson"><span>GEOJSON</span><strong>Spatial features</strong><small>GIS / MapLibre</small></a>
+                    <a class="format-card" href="./data/v1/events.ndjson"><span>NDJSON</span><strong>Streaming records</strong><small>CLI / Agent</small></a>
+                    <a class="format-card" href="./data/v1/schema.json"><span>SCHEMA</span><strong>Data constraints</strong><small>JSON Schema 2020-12</small></a>
                 </div>
                 <div class="code-card">
-                    <div class="code-card__head"><span>TRY IT / 30 秒</span><button type="button" data-copy-target="curl-example">复制</button></div>
+                    <div class="code-card__head"><span>TRY IT / 30 SECONDS</span><button type="button" data-copy-target="curl-example">COPY</button></div>
                     <pre id="curl-example"><code>curl -s https://epicdemic.hylouis.top/data/v1/records.json \
   | jq '.[] | select(.disease_id == "dengue") | {
       event_id, location, event_start_date, cases, source
     }'</code></pre>
                     <div class="code-card__meta">
-                        <span>记录 <strong id="data-record-count">—</strong></span>
-                        <span>来源 <strong id="data-source-count">—</strong></span>
-                        <span>格式 <strong>7</strong></span>
+                        <span>RECORDS <strong id="data-record-count">—</strong></span>
+                        <span>SOURCES <strong id="data-source-count">—</strong></span>
+                        <span>FORMATS <strong>7</strong></span>
                     </div>
                 </div>
             </div>
             <div class="license-note">
-                <strong>许可提醒</strong>
-                <p>本仓库是公开可访问的演示与数据预览，源码可供查看但不是开源项目；当前未授予复制、修改、再分发或二次开发许可。第三方来源仍受各自条款约束。</p>
-                <a href="./LICENSE">阅读许可证 →</a>
+                <strong>LICENSE NOTICE</strong>
+                <p>This repository is a publicly accessible demonstration and data preview. Its source can be inspected, but it is not open source; no permission is granted to copy, modify, redistribute, or build derivatives. Third-party sources remain subject to their own terms.</p>
+                <a href="./LICENSE">Read the license →</a>
             </div>
         </section>
 
         <section class="agent-section" id="agent-query" aria-labelledby="agent-title">
             <div class="agent-copy">
                 <p class="section-index"><span>05</span> AI-NATIVE ACCESS</p>
-                <h2 id="agent-title">不只给人看，也让 Agent 能正确提问。</h2>
-                <p>EPIC 查询 Skill 支持按关键词、疾病、洲别与日期过滤，并可输出 JSON 或 Markdown。返回结果始终附带来源和数据状态。</p>
+                <h2 id="agent-title">Built for people—and for agents that ask precisely.</h2>
+                <p>The EPIC query skill filters by keyword, disease, continent, and date, then returns JSON or Markdown with source provenance and data status attached.</p>
                 <div class="agent-actions">
-                    <a class="button button--primary" href="./skills/epic-disease-query/SKILL.md">查看 Agent Skill</a>
-                    <a class="button button--paper" href="./data/v1/manifest.json">读取 Manifest</a>
+                    <a class="button button--primary" href="./skills/epic-disease-query/SKILL.md">View the agent skill</a>
+                    <a class="button button--paper" href="./data/v1/manifest.json">Read the manifest</a>
                 </div>
             </div>
-            <div class="agent-demo" aria-label="Agent 查询示例">
+            <div class="agent-demo" aria-label="Agent query example">
                 <div class="agent-demo__bar"><span>EPIC / QUERY</span><span class="agent-demo__lights"><i></i><i></i><i></i></span></div>
-                <div class="agent-message agent-message--user"><small>USER</small><p>查找亚洲的登革热事件，按病例规模排序，保留来源并说明数据置信度。</p></div>
-                <div class="agent-message agent-message--epic"><small>EPIC AGENT</small><p>已读取 Schema v1 与数据状态：当前来源状态为降级。以下结果来自最近成功快照，共匹配 <strong id="agent-match-count">—</strong> 条记录…</p></div>
+                <div class="agent-message agent-message--user"><small>USER</small><p>Find dengue events in Asia, sort by case count, retain sources, and explain data confidence.</p></div>
+                <div class="agent-message agent-message--epic"><small>EPIC AGENT</small><p>Schema v1 and source status loaded. The source is currently degraded, so results come from the latest successful snapshot. Matched <strong id="agent-match-count">—</strong> records…</p></div>
                 <div class="agent-demo__foot">SOURCE-AWARE · STATUS-AWARE · SCHEMA-VALIDATED</div>
             </div>
         </section>
 
         <section class="method-section" id="methodology" aria-labelledby="method-title">
             <header class="section-heading section-heading--split">
-                <div><p class="section-index"><span>06</span> METHOD &amp; LIMITS</p><h2 id="method-title">把不确定性写进产品。</h2></div>
-                <p>EPIC 是研究性开放来源监测基础设施，不是经过效能评估的正式预警系统。每个用户都应该能看见数据来自哪里、陈旧多久、经过哪些检查。</p>
+                <div><p class="section-index"><span>06</span> METHOD &amp; LIMITS</p><h2 id="method-title">Make uncertainty part of the product.</h2></div>
+                <p>EPIC is research infrastructure for open-source monitoring—not a validated official warning system. Every user should be able to see where data came from, how old it is, and which checks it passed.</p>
             </header>
             <div class="method-grid">
-                <article><span>INGEST</span><h3>采集状态分离</h3><p>页面构建时间、数据截止时间与最近成功采集时间分别记录。上游返回 0 条时保留 last-known-good，不更新数据时间。</p></article>
-                <article><span>NORMALIZE</span><h3>事件字段规范化</h3><p>日期拆分为事件、报告期与发布日期；疾病别名归一；规模拆分为病例、死亡与住院。</p></article>
-                <article><span>VALIDATE</span><h3>质量闸门</h3><p>检查未来日期、记录骤降、来源链接、坐标、重复信号和 Schema；异常记录隔离或降级发布。</p></article>
-                <article><span>LIMIT</span><h3>已知边界</h3><p>来源覆盖不完整，自动抽取可能错误，定位可能只到国家级，风险排序未经正式公共卫生效能验证。</p></article>
+                <article><span>INGEST</span><h3>Separate freshness clocks</h3><p>Build time, data-as-of time, and last successful ingest are tracked separately. A zero-record upstream response keeps the last-known-good snapshot without advancing data time.</p></article>
+                <article><span>NORMALIZE</span><h3>Normalize event fields</h3><p>Dates are separated into event, reporting-period, and publication semantics; disease aliases are canonicalized; scale is split into cases, deaths, and hospitalizations.</p></article>
+                <article><span>VALIDATE</span><h3>Apply quality gates</h3><p>Future dates, sudden record drops, source URLs, coordinates, duplicate signals, and schema validity are checked before publication.</p></article>
+                <article><span>LIMIT</span><h3>State the boundaries</h3><p>Coverage is incomplete, extraction can be wrong, geocoding may stop at country level, and risk ranking has not been validated for official public-health use.</p></article>
             </div>
             <div class="method-links">
-                <a href="./methodology.html">方法说明</a>
-                <a href="./limitations.html">已知局限</a>
-                <a href="./DATA_DICTIONARY.md">数据字典</a>
-                <a href="./data/v1/quality-report.json">本次质量报告</a>
-                <a href="./CITATION.cff">引用信息</a>
+                <a href="./methodology.html">Methodology</a>
+                <a href="./limitations.html">Known limitations</a>
+                <a href="./DATA_DICTIONARY.md">Data dictionary</a>
+                <a href="./data/v1/quality-report.json">Current quality report</a>
+                <a href="./CITATION.cff">How to cite</a>
             </div>
         </section>
 
         <section class="panel panel--intel" aria-labelledby="epietl-title">
             <div class="panel-heading">
-                <div><p class="panel-label">RESEARCH RANKING / 研究性排序</p><h3 id="epietl-title">EpiETL 公共风险摘要</h3></div>
-                <div class="panel-heading__meta" id="epietl-meta">正在同步公开情报快照</div>
+                <div><p class="panel-label">RESEARCH RANKING</p><h3 id="epietl-title">EpiETL public risk summary</h3></div>
+                <div class="panel-heading__meta" id="epietl-meta">Synchronizing public intelligence snapshot</div>
             </div>
-            <p class="intel-disclaimer">风险分值用于研究性事件排序，不代表官方风险等级；使用前请核验原始来源、方法版本和不确定性。</p>
+            <p class="intel-disclaimer">Risk scores support research ranking only; they are not official risk levels. Verify original sources, method version, and uncertainty before use.</p>
             <div class="intel-grid">
                 <div class="intel-metrics" id="epietl-metrics">
-                    <article class="metric-card"><span class="metric-card__marker">CHN</span><p class="metric-card__label">监测通道</p><h3 class="metric-card__value skeleton-line">—</h3></article>
-                    <article class="metric-card"><span class="metric-card__marker">RPT</span><p class="metric-card__label">累计报告</p><h3 class="metric-card__value skeleton-line">—</h3></article>
-                    <article class="metric-card"><span class="metric-card__marker">PDG</span><p class="metric-card__label">待处理</p><h3 class="metric-card__value skeleton-line">—</h3></article>
-                    <article class="metric-card"><span class="metric-card__marker">RSK</span><p class="metric-card__label">风险事件</p><h3 class="metric-card__value skeleton-line">—</h3></article>
+                    <article class="metric-card"><span class="metric-card__marker">CHN</span><p class="metric-card__label">CHANNELS</p><h3 class="metric-card__value skeleton-line">—</h3></article>
+                    <article class="metric-card"><span class="metric-card__marker">RPT</span><p class="metric-card__label">TOTAL REPORTS</p><h3 class="metric-card__value skeleton-line">—</h3></article>
+                    <article class="metric-card"><span class="metric-card__marker">PDG</span><p class="metric-card__label">PENDING</p><h3 class="metric-card__value skeleton-line">—</h3></article>
+                    <article class="metric-card"><span class="metric-card__marker">RSK</span><p class="metric-card__label">RISK EVENTS</p><h3 class="metric-card__value skeleton-line">—</h3></article>
                 </div>
-                <div class="intel-block"><div class="intel-block__header"><strong>国家风险分布</strong><span id="epietl-summary-text">等待快照</span></div><div class="intel-risk-list" id="epietl-country-risks"></div></div>
-                <div class="intel-block"><div class="intel-block__header"><strong>重点事件</strong><span id="epietl-events-meta">等待快照</span></div><div class="intel-event-list" id="epietl-events"></div></div>
+                <div class="intel-block"><div class="intel-block__header"><strong>COUNTRY RISK DISTRIBUTION</strong><span id="epietl-summary-text">Waiting for snapshot</span></div><div class="intel-risk-list" id="epietl-country-risks"></div></div>
+                <div class="intel-block"><div class="intel-block__header"><strong>PRIORITY EVENTS</strong><span id="epietl-events-meta">Waiting for snapshot</span></div><div class="intel-event-list" id="epietl-events"></div></div>
             </div>
         </section>
     </main>
@@ -353,6 +368,7 @@
             staticEpietlUrl: "./data/epietl_public.json"
         };
     </script>
-    <script src="./assets/epic/js/dashboard.js?v=20260813"></script>
+    <script src="./assets/epic/js/i18n.js?v=20260814"></script>
+    <script src="./assets/epic/js/dashboard.js?v=20260814"></script>
 </body>
 </html>

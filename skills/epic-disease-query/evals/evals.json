@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "查找 2026-06-01 以来亚洲的登革热事件，按病例数降序，给出来源、质量分和 EPIC 详情页。",
+      "prompt": "Find dengue events in Asia since 2026-06-01, sort them by case count descending, and include the source, quality score, and EPIC detail page.",
       "expected_output": "A status-aware Markdown table filtered by disease, continent and date, sorted by cases descending.",
       "files": [],
       "expectations": [
@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "prompt": "把 EPIC 里的流感记录用 JSON 返回，只要 event_id、event_start_date、disease_id、location、cases、source 字段，最多 3 条。",
+      "prompt": "Return influenza records from EPIC as JSON. Include only event_id, event_start_date, disease_id, location, cases, and source; return at most three records.",
       "expected_output": "Valid JSON with status metadata and no record fields outside the requested selection.",
       "files": [],
       "expectations": [
@@ -27,7 +27,7 @@
     },
     {
       "id": 3,
-      "prompt": "用一个不存在的 EPIC records URL 查询登革热，超时 0.1 秒，不重试；要明确失败，不能伪造结果。",
+      "prompt": "Query dengue using a nonexistent EPIC records URL with a 0.1-second timeout and no retries. Fail clearly and do not fabricate results.",
       "expected_output": "A nonzero exit with an actionable stderr error and no fabricated event records.",
       "files": [],
       "expectations": [
