@@ -1,22 +1,38 @@
 {
-  "generated_at": "2026-08-13T04:22:42Z",
+  "schema_version": "1.0.0",
+  "build_generated_at": "2026-08-13T16:13:56Z",
+  "data_as_of": "2026-07-10",
+  "last_successful_ingest_at": "2026-07-11T05:23:39Z",
+  "source_status": "degraded",
+  "source_status_label": "降级",
+  "status_message_zh": "上游采集未通过质量闸门，继续提供最近一次成功快照。",
+  "staleness_hours": 802.8,
+  "stale_after_hours": 72,
+  "warnings": [
+    "rebuilt public artifacts from the retained local snapshot",
+    "upstream was not contacted during local rebuild"
+  ],
+  "generated_at": "2026-08-13T16:13:56Z",
   "record_count": 58,
   "map_point_count": 57,
-  "disease_count": 32,
+  "disease_count": 18,
   "continent_count": 4,
   "epietl_channel_count": 76,
   "download_week_embedded": true,
-  "daily_archive_path": "BACKUP/2026-08-13.md",
+  "daily_archive_path": "BACKUP/2026-08-14.md",
   "daily_archive_item_count": 0,
-  "warnings": [
-    "upstream returned no records; retained the existing public snapshot with 58 records"
-  ],
-  "rss_generated_at": "2026-08-13T04:22:42Z",
+  "quality_gate": {
+    "passed": true,
+    "ingest_accepted": false,
+    "accepted_record_count": 58,
+    "quarantined_record_count": 0
+  },
+  "rss_generated_at": "2026-08-13T16:13:56Z",
   "rss_timezone": "Asia/Shanghai",
-  "rss_window_start": "2026-08-13T00:00:00+08:00",
-  "rss_window_end": "2026-08-13T23:59:59+08:00",
+  "rss_window_start": "2026-08-14T00:00:00+08:00",
+  "rss_window_end": "2026-08-14T23:59:59+08:00",
   "rss_item_count": 0,
   "rss_source_record_count": 58,
-  "rss_dated_record_count": 58,
-  "rss_target_date": "2026-08-13"
+  "rss_dated_record_count": 0,
+  "rss_target_date": "2026-08-14"
 }

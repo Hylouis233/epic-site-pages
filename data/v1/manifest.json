@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "build_generated_at": "2026-08-13T16:13:56Z",
+  "data_as_of": "2026-07-10",
+  "last_successful_ingest_at": "2026-07-11T05:23:39Z",
+  "source_status": "degraded",
+  "source_status_label": "降级",
+  "status_message_zh": "上游采集未通过质量闸门，继续提供最近一次成功快照。",
+  "staleness_hours": 802.8,
+  "stale_after_hours": 72,
+  "warnings": [
+    "rebuilt public artifacts from the retained local snapshot",
+    "upstream was not contacted during local rebuild"
+  ],
+  "record_count": 58,
+  "event_count": 58,
+  "signal_count": 58,
+  "source_count": 58,
+  "disease_count": 18,
+  "continent_count": 4,
+  "formats": {
+    "json": "records.json",
+    "ndjson": "events.ndjson",
+    "csv": "events.csv",
+    "geojson": "events.geojson",
+    "schema": "schema.json",
+    "quality_report": "quality-report.json",
+    "parquet": "events.parquet"
+  },
+  "checksums_sha256": {
+    "records.json": "3bd31ecf77bf3f95451b9eaecdcddefaaa58130039abf4751302a0abb21bc169",
+    "events.ndjson": "8b4212d0ac8af48aeab2a88caa893ea098df80d73f647ac9b8e2589b52a96049",
+    "events.csv": "270325c0b7b78732f68f317e2f1004ee3426984cdfc7e3b1698e93a9078e8cc7",
+    "events.geojson": "f6b309005577fae5c5c92c9f18ba36a6bfc5059d39fb4f20fb65ebe05eef91e8",
+    "schema.json": "6bffbca64b9644096be33af851f13120ccc2e3ad78facca8f6bdee9ec82b6ec4",
+    "quality-report.json": "22bdf13164b5e4778e5563c94e0c09f273d82fdbf83446deb8cf6d3388e57803",
+    "events.parquet": "c3ec0d9df64f4e13c4e0eb136f1f1777032e33f1dd8025f1869f5187428d332f"
+  },
+  "license": {
+    "repository": "proprietary-source-available",
+    "structured_data": "no public reuse license asserted",
+    "third_party_sources": "follow each linked source's terms"
+  },
+  "quality_gate": {
+    "passed": true,
+    "ingest_accepted": false,
+    "accepted_record_count": 58,
+    "quarantined_record_count": 0
+  }
+}

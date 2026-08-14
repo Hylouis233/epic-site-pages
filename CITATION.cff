@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you reference EPIC, please cite this repository and the underlying original sources."
+title: "EPIC: Infectious-disease event intelligence infrastructure for public-health monitoring and early-warning research"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Hong
+version: 1.0.0
+date-released: 2026-08-13
+url: "https://epicdemic.hylouis.top/"
+repository-code: "https://github.com/Hylouis233/epic-site-pages"
+keywords:
+  - public health
+  - infectious disease
+  - event-based surveillance
+  - epidemic intelligence
+  - geospatial data

@@ -1,0 +1,51 @@
+{
+  "gate_passed": true,
+  "checks": [
+    {
+      "id": "upstream_nonzero",
+      "status": "pass",
+      "value": 58,
+      "threshold": "> 0"
+    },
+    {
+      "id": "record_count_change",
+      "status": "pass",
+      "value": 1.0,
+      "threshold": ">= 0.5"
+    },
+    {
+      "id": "valid_dates",
+      "status": "pass",
+      "value": 1.0,
+      "threshold": "1.0 preferred"
+    },
+    {
+      "id": "future_dates",
+      "status": "warning",
+      "value": 1,
+      "threshold": "0 raw future dates"
+    },
+    {
+      "id": "source_urls",
+      "status": "pass",
+      "value": 1.0,
+      "threshold": "1.0 preferred"
+    },
+    {
+      "id": "coordinates",
+      "status": "pass",
+      "value": 0.983,
+      "threshold": ">= 0.9 preferred"
+    },
+    {
+      "id": "duplicate_signals",
+      "status": "pass",
+      "value": 0,
+      "threshold": "0 after normalization"
+    }
+  ],
+  "upstream_record_count": 58,
+  "accepted_record_count": 58,
+  "quarantined_record_count": 0,
+  "quarantined": []
+}

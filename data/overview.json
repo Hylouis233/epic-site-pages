@@ -1,42 +1,28 @@
 {
   "total_records": 58,
-  "disease_count": 32,
+  "disease_count": 18,
   "continent_count": 4,
-  "latest_date": "2026-12-29",
+  "latest_date": "2026-07-10",
   "filter_options": {
     "diseases": [
-      "COVID-19",
-      "H1N1流感",
-      "H3N2流感",
-      "H5N1 avian influenza",
-      "H7N9禽流感",
-      "M痘",
       "乙类传染病",
-      "军团病",
       "军团菌病",
-      "多种法定传染病(病毒性肝炎、新型冠状病毒感染、肺结核、梅毒、淋病、流行性感冒、手足口病等)",
-      "急性上呼吸道",
+      "多种法定传染病",
+      "急性上呼吸道感染",
+      "急性腹泻病",
       "恙虫病",
-      "新冠",
-      "新冠病毒",
-      "新冠肺炎(COVID-19)",
-      "新型冠状病毒感染症(COVID-19)",
-      "流感",
-      "流行性感冒(甲型流感)",
+      "新型冠状病毒感染",
+      "流行性感冒",
       "猴痘",
       "环孢子虫病",
-      "甲型H1N1流感",
-      "甲型流感",
       "疟疾",
-      "病毒性肝炎、新型冠状病毒感染、肺结核、梅毒、淋病、流行性感冒、手足口病、其他感染性腹泻病、水痘、肝吸虫病等法定及重点监测传染病",
-      "病毒性肝炎、肺结核、新型冠状病毒感染、流行性感冒、手足口病、其他感染性腹泻病",
       "登革热",
+      "禽流感",
       "绦虫病",
-      "肠病毒",
-      "肠病毒D68型",
-      "腹泻",
-      "诺如病毒",
-      "链球菌肺炎"
+      "肠病毒 D68 型感染",
+      "肠病毒感染",
+      "肺炎链球菌病",
+      "诺如病毒感染"
     ],
     "continents": [
       "亚洲",
@@ -45,5 +31,18 @@
       "非洲"
     ]
   },
-  "last_modified": "2026-08-13T04:22:42Z"
+  "schema_version": "1.0.0",
+  "build_generated_at": "2026-08-13T16:13:56Z",
+  "data_as_of": "2026-07-10",
+  "last_successful_ingest_at": "2026-07-11T05:23:39Z",
+  "source_status": "degraded",
+  "source_status_label": "降级",
+  "status_message_zh": "上游采集未通过质量闸门，继续提供最近一次成功快照。",
+  "staleness_hours": 802.8,
+  "stale_after_hours": 72,
+  "warnings": [
+    "rebuilt public artifacts from the retained local snapshot",
+    "upstream was not contacted during local rebuild"
+  ],
+  "last_modified": "2026-07-10"
 }

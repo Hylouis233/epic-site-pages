@@ -3,9 +3,9 @@
   <channel>
     <title>EPIC 传染病监测日报</title>
     <link>https://epicdemic.hylouis.top/</link>
-    <description>EPIC public epidemic intelligence updates for the current build day.</description>
+    <description>EPIC 当日新发现或更新的公开来源传染病事件监测记录。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 13 Aug 2026 12:22:42 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 00:13:56 +0800</lastBuildDate>
     <generator>EPIC Public Pages Builder</generator>
     <ttl>1440</ttl>
   </channel>

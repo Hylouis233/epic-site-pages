@@ -12,11 +12,14 @@
         pageSize: 50,
         tableLoaded: false,
         overviewController: null,
+        manifestController: null,
         epietlController: null,
         mapController: null,
         tableController: null,
         staticRecords: null,
         staticRecordsPromise: null,
+        staticManifestPayload: null,
+        staticManifestPromise: null,
         staticEpietlPayload: null,
         staticEpietlPromise: null,
     };
@@ -30,8 +33,23 @@
         dateToInput: document.getElementById("date-to-input"),
         resetButton: document.getElementById("reset-filters"),
         filterSummary: document.getElementById("filter-summary-text"),
-        lastUpdated: document.getElementById("last-updated"),
+        filterResult: document.getElementById("filter-result"),
         heroStatus: document.getElementById("hero-status"),
+        siteStatus: document.getElementById("site-status"),
+        statusLabel: document.getElementById("status-label"),
+        statusMessage: document.getElementById("status-message"),
+        statusBanner: document.getElementById("status-banner"),
+        statusDetail: document.getElementById("status-detail"),
+        briefStatus: document.getElementById("brief-status"),
+        heroRecordCount: document.getElementById("hero-record-count"),
+        dataAsOf: document.getElementById("data-as-of"),
+        lastSuccessfulIngest: document.getElementById("last-successful-ingest"),
+        stalenessHours: document.getElementById("staleness-hours"),
+        schemaVersion: document.getElementById("schema-version"),
+        buildGenerated: document.getElementById("build-generated"),
+        dataRecordCount: document.getElementById("data-record-count"),
+        dataSourceCount: document.getElementById("data-source-count"),
+        agentMatchCount: document.getElementById("agent-match-count"),
         epietlMeta: document.getElementById("epietl-meta"),
         epietlMetrics: document.getElementById("epietl-metrics"),
         epietlSummaryText: document.getElementById("epietl-summary-text"),
@@ -50,6 +68,7 @@
         tablePageStatus: document.getElementById("table-page-status"),
         pagination: document.getElementById("pagination"),
         themeToggle: document.getElementById("theme-toggle"),
+        copyFilterLink: document.getElementById("copy-filter-link"),
     };
 
     const tableColumns = [
@@ -57,11 +76,10 @@
         { key: "location", className: "table-cell--compact" },
         { key: "disease", className: "table-cell--compact" },
         { key: "description_cn", className: "table-cell--wide" },
-        { key: "symptoms", className: "table-cell--wide" },
-        { key: "measures", className: "table-cell--wide" },
-        { key: "transmission", className: "table-cell--compact" },
-        { key: "source_org", className: "table-cell--compact" },
-        { key: "source", className: "table-cell--wide" },
+        { key: "metrics", className: "table-cell--metric" },
+        { key: "source", className: "table-cell--source" },
+        { key: "quality", className: "table-cell--quality" },
+        { key: "event", className: "table-cell--action" },
     ];
 
     function escapeHtml(value) {
@@ -94,6 +112,28 @@
         });
     }
 
+    function formatDate(value) {
+        if (!value) {
+            return "未知";
+        }
+        const date = new Date(`${String(value).slice(0, 10)}T00:00:00`);
+        if (Number.isNaN(date.getTime())) {
+            return String(value);
+        }
+        return date.toLocaleDateString("zh-CN", { year: "numeric", month: "2-digit", day: "2-digit" });
+    }
+
+    function formatHours(value) {
+        const hours = Number(value);
+        if (!Number.isFinite(hours)) {
+            return "未知";
+        }
+        if (hours >= 48) {
+            return `${Math.floor(hours / 24)} 天 ${Math.round(hours % 24)} 小时`;
+        }
+        return `${Math.round(hours)} 小时`;
+    }
+
     function formatCount(value) {
         return new Intl.NumberFormat("zh-CN").format(value || 0);
     }
@@ -118,15 +158,6 @@
         return Math.min(Math.max(number, min), max);
     }
 
-    function wrapTileIndex(value, tileCount) {
-        return ((value % tileCount) + tileCount) % tileCount;
-    }
-
-    function getAmapTileUrl(x, y, zoom) {
-        const hostIndex = wrapTileIndex(x + y, 4) + 1;
-        return `https://webrd0${hostIndex}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x=${x}&y=${y}&z=${zoom}`;
-    }
-
     function lonLatToWorldPoint(longitude, latitude) {
         const safeLongitude = clampNumber(longitude, -180, 180);
         const safeLatitude = clampNumber(latitude, -85.05112878, 85.05112878);
@@ -149,59 +180,6 @@
         };
     }
 
-    function getAmapTileCenter(record, zoom) {
-        if (!hasValidCoordinates(record)) {
-            return null;
-        }
-
-        const tileCount = 2 ** zoom;
-        const point = lonLatToWorldPoint(record.longitude, record.latitude);
-        const tileX = (point.x / 100) * tileCount;
-        const tileY = (point.y / 100) * tileCount;
-        return {
-            tileCount,
-            tileX,
-            tileY,
-            baseX: Math.floor(tileX),
-            baseY: Math.floor(tileY),
-            fracX: tileX - Math.floor(tileX),
-            fracY: tileY - Math.floor(tileY),
-        };
-    }
-
-    function renderAmapTileMosaic(record, zoom, tileSize, radius) {
-        const center = getAmapTileCenter(record, zoom);
-        if (!center) {
-            return "";
-        }
-
-        const tiles = [];
-        for (let yOffset = -radius; yOffset <= radius; yOffset += 1) {
-            const rawY = center.baseY + yOffset;
-            if (rawY < 0 || rawY >= center.tileCount) {
-                continue;
-            }
-            for (let xOffset = -radius; xOffset <= radius; xOffset += 1) {
-                const rawX = center.baseX + xOffset;
-                const x = wrapTileIndex(rawX, center.tileCount);
-                const left = ((xOffset - center.fracX) * tileSize).toFixed(2);
-                const top = ((yOffset - center.fracY) * tileSize).toFixed(2);
-                tiles.push(`
-                    <img
-                        class="amap-tile"
-                        src="${getAmapTileUrl(x, rawY, zoom)}"
-                        alt=""
-                        loading="lazy"
-                        decoding="async"
-                        style="--tile-left: ${left}px; --tile-top: ${top}px; --tile-size: ${tileSize}px;"
-                    >
-                `);
-            }
-        }
-
-        return tiles.join("");
-    }
-
     function renderLocationMiniMap(record, modifier) {
         if (!hasValidCoordinates(record || {})) {
             return "";
@@ -211,32 +189,33 @@
         const className = ["location-mini-map", modifier ? `location-mini-map--${modifier}` : ""].filter(Boolean).join(" ");
         return `
             <div class="${className}" role="img" aria-label="${escapeHtml(locationLabel)} 微缩地图">
-                <div class="location-mini-map__tiles" aria-hidden="true">
-                    ${renderAmapTileMosaic(record, 5, 86, 1)}
-                    <span class="location-mini-map__marker"></span>
-                </div>
+                <span class="location-mini-map__grid" aria-hidden="true"></span>
+                <span class="location-mini-map__marker" style="--x:${getGeoPoint(record).x}%; --y:${getGeoPoint(record).y}%;"></span>
             </div>
         `;
     }
 
-    function renderAmapWorldLayer() {
-        const zoom = 2;
-        const tileCount = 2 ** zoom;
-        const tiles = [];
-        for (let y = 0; y < tileCount; y += 1) {
-            for (let x = 0; x < tileCount; x += 1) {
-                tiles.push(`
-                    <img
-                        class="amap-world-layer__tile"
-                        src="${getAmapTileUrl(x, y, zoom)}"
-                        alt=""
-                        loading="lazy"
-                        decoding="async"
-                    >
-                `);
-            }
-        }
-        return `<div class="amap-world-layer" aria-hidden="true">${tiles.join("")}</div>`;
+    function renderWorldLayer() {
+        return `
+            <div class="abstract-world" aria-hidden="true">
+                <svg viewBox="0 0 1000 500" preserveAspectRatio="none">
+                    <g class="abstract-world__grid">
+                        <path d="M0 100H1000M0 200H1000M0 300H1000M0 400H1000" />
+                        <path d="M125 0V500M250 0V500M375 0V500M500 0V500M625 0V500M750 0V500M875 0V500" />
+                    </g>
+                    <g class="abstract-world__land">
+                        <path d="M62 128L111 78l83-29 77 18 55 47-17 44-47 20-22 58-55 16-61-44-42-13z" />
+                        <path d="M238 260l48 27 28 82-14 77-34 39-22-73-39-61 7-58z" />
+                        <path d="M435 119l52-43 74 9 29 32 49-11 70 24 112 14 70 62-40 56-88-8-45 38-76-29-52 21-79-36-20-70-49-20z" />
+                        <path d="M475 252l92 6 40 55-18 91-61 59-45-80-39-66z" />
+                        <path d="M809 356l64-34 61 23-5 52-69 26-51-24z" />
+                    </g>
+                    <path class="abstract-world__route" d="M146 168C308 61 524 388 848 231" />
+                </svg>
+                <span class="abstract-world__label abstract-world__label--one">PUBLIC-SOURCE SIGNALS</span>
+                <span class="abstract-world__label abstract-world__label--two">LOW-PRECISION OVERVIEW</span>
+            </div>
+        `;
     }
 
     function summarizeFilters() {
@@ -261,6 +240,31 @@
 
     function updateFilterSummary() {
         elements.filterSummary.textContent = summarizeFilters();
+    }
+
+    function syncFiltersToUrl() {
+        const query = buildQuery();
+        const nextUrl = `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash || "#events"}`;
+        window.history.replaceState({}, "", nextUrl);
+    }
+
+    function hydrateFiltersFromUrl() {
+        const searchParams = new URLSearchParams(window.location.search);
+        const fields = {
+            keyword: elements.keywordInput,
+            disease: elements.diseaseSelect,
+            continent: elements.continentSelect,
+            date_from: elements.dateFromInput,
+            date_to: elements.dateToInput,
+        };
+        Object.keys(fields).forEach(function (key) {
+            const value = searchParams.get(key) || "";
+            state.filters[key] = value;
+            if (fields[key]) {
+                fields[key].value = value;
+            }
+        });
+        updateFilterSummary();
     }
 
     function readFiltersFromDom() {
@@ -328,7 +332,10 @@
         document.documentElement.dataset.theme = normalizedTheme;
         if (elements.themeToggle) {
             const isDark = normalizedTheme === "dark";
-            elements.themeToggle.textContent = isDark ? "浅色" : "深色";
+            const label = elements.themeToggle.querySelector(".theme-toggle__label");
+            if (label) {
+                label.textContent = isDark ? "浅色" : "深色";
+            }
             elements.themeToggle.setAttribute("aria-pressed", String(isDark));
         }
     }
@@ -350,15 +357,23 @@
     }
 
     function setHeroStatus(text, tone) {
+        if (!elements.heroStatus) {
+            return;
+        }
         elements.heroStatus.textContent = text;
-        elements.heroStatus.classList.remove("status--good", "status--danger");
+        elements.heroStatus.classList.remove("status--good", "status--danger", "status--warning");
         if (tone) {
             elements.heroStatus.classList.add(tone);
         }
     }
 
     function syncSelectOptions(selectElement, options, placeholder) {
-        const currentValue = selectElement.value;
+        const stateValue = selectElement === elements.diseaseSelect
+            ? state.filters.disease
+            : selectElement === elements.continentSelect
+                ? state.filters.continent
+                : "";
+        const currentValue = selectElement.value || stateValue;
         selectElement.innerHTML = "";
 
         const defaultOption = document.createElement("option");
@@ -461,6 +476,7 @@
         return (Array.isArray(filteredRecords) ? filteredRecords : []).filter(hasValidCoordinates).map(function (record) {
             return {
                 id: record.id,
+                event_id: record.event_id || record.id,
                 original_date: record.original_date,
                 disease: record.disease,
                 location: record.location,
@@ -582,6 +598,88 @@
         return state.staticEpietlPromise;
     }
 
+    async function loadStaticManifest() {
+        if (state.staticManifestPayload) {
+            return state.staticManifestPayload;
+        }
+        if (state.staticManifestPromise) {
+            return state.staticManifestPromise;
+        }
+        state.staticManifestPromise = fetchJsonUrl(config.staticManifestUrl, "manifestController")
+            .then(function (payload) {
+                state.staticManifestPayload = payload || {};
+                return state.staticManifestPayload;
+            })
+            .finally(function () {
+                state.staticManifestPromise = null;
+            });
+        return state.staticManifestPromise;
+    }
+
+    function renderManifest(manifest) {
+        const status = manifest.source_status || "failed";
+        const label = manifest.source_status_label || "未知";
+        const message = manifest.status_message_zh || "数据状态不可用。";
+        if (elements.siteStatus) {
+            elements.siteStatus.dataset.status = status;
+        }
+        if (elements.statusBanner) {
+            elements.statusBanner.dataset.status = status;
+        }
+        if (elements.statusLabel) {
+            elements.statusLabel.textContent = `数据状态：${label}`;
+        }
+        if (elements.statusMessage) {
+            elements.statusMessage.textContent = message;
+        }
+        if (elements.statusDetail) {
+            elements.statusDetail.textContent = `数据截至 ${formatDate(manifest.data_as_of)}；最近成功采集 ${formatDateTime(manifest.last_successful_ingest_at)}；快照年龄 ${formatHours(manifest.staleness_hours)}。`;
+        }
+        if (elements.briefStatus) {
+            elements.briefStatus.textContent = status.toUpperCase();
+        }
+        if (elements.heroRecordCount) {
+            elements.heroRecordCount.textContent = formatCount(manifest.record_count);
+        }
+        if (elements.dataAsOf) {
+            elements.dataAsOf.textContent = formatDate(manifest.data_as_of);
+        }
+        if (elements.lastSuccessfulIngest) {
+            elements.lastSuccessfulIngest.textContent = formatDateTime(manifest.last_successful_ingest_at);
+        }
+        if (elements.stalenessHours) {
+            elements.stalenessHours.textContent = formatHours(manifest.staleness_hours);
+        }
+        if (elements.schemaVersion) {
+            elements.schemaVersion.textContent = `v${manifest.schema_version || "—"}`;
+        }
+        if (elements.buildGenerated) {
+            elements.buildGenerated.textContent = `页面构建 ${formatDateTime(manifest.build_generated_at)}`;
+        }
+        if (elements.dataRecordCount) {
+            elements.dataRecordCount.textContent = formatCount(manifest.record_count);
+        }
+        if (elements.dataSourceCount) {
+            elements.dataSourceCount.textContent = formatCount(manifest.source_count);
+        }
+        const tone = status === "healthy" ? "status--good" : status === "failed" ? "status--danger" : "status--warning";
+        setHeroStatus(`数据状态：${label}`, tone);
+    }
+
+    async function loadManifest() {
+        if (!config.staticManifestUrl) {
+            return;
+        }
+        try {
+            renderManifest(await loadStaticManifest());
+        } catch (error) {
+            if (error.name === "AbortError") {
+                return;
+            }
+            renderManifest({ source_status: "failed", source_status_label: "不可用", status_message_zh: "无法读取数据状态清单。" });
+        }
+    }
+
     function renderOverview(payload) {
         const cards = [
             { marker: "REC", label: "记录总数", value: formatCount(payload.total_records) },
@@ -602,8 +700,9 @@
 
         syncSelectOptions(elements.diseaseSelect, payload.filter_options && payload.filter_options.diseases, "全部疾病");
         syncSelectOptions(elements.continentSelect, payload.filter_options && payload.filter_options.continents, "全部洲别");
-        elements.lastUpdated.textContent = formatDateTime(payload.last_modified);
-        setHeroStatus(`当前筛选命中 ${formatCount(payload.total_records)} 条记录`, "status--good");
+        if (elements.filterResult) {
+            elements.filterResult.textContent = `命中 ${formatCount(payload.total_records)} 条`;
+        }
     }
 
     function aggregateMapItems(items) {
@@ -655,10 +754,11 @@
                 </div>
                 <ul class="abstract-map__event-list">
                     ${previewItems.map(function (item) {
+                        const detailUrl = item.event_id ? `./events/${encodeURIComponent(item.event_id)}/` : "#table-panel";
                         return `
                             <li class="abstract-map__event">
                                 <div class="abstract-map__event-title">
-                                    ${escapeHtml(item.disease || "未标注疾病")} · ${escapeHtml(item.location || "未知地点")}
+                                    <a href="${detailUrl}">${escapeHtml(item.disease || "未标注疾病")} · ${escapeHtml(item.location || "未知地点")}</a>
                                 </div>
                                 <div class="abstract-map__event-meta">
                                     ${escapeHtml(item.original_date || "未知日期")} / ${escapeHtml(item.source_org || "未知来源")}
@@ -705,7 +805,7 @@
         const safeItems = Array.isArray(items) ? items : [];
         const clusters = aggregateMapItems(safeItems);
         elements.mapMeta.textContent = `当前地图点位 ${formatCount(safeItems.length)} 个`;
-        elements.map.innerHTML = renderAmapWorldLayer();
+        elements.map.innerHTML = renderWorldLayer();
 
         if (!clusters.length) {
             elements.mapEmpty.classList.remove("hidden");
@@ -833,13 +933,19 @@
                 }
 
                 if (column.key === "source" && item.source) {
+                    const wrapper = document.createElement("div");
+                    wrapper.className = "source-cell";
+                    const organization = document.createElement("strong");
+                    organization.textContent = item.source_org || "来源未注明";
                     const link = document.createElement("a");
                     link.href = item.source;
                     link.target = "_blank";
                     link.rel = "noopener noreferrer";
                     link.className = "table-cell__link";
-                    link.textContent = "查看来源";
-                    cell.appendChild(link);
+                    link.textContent = "原始来源 ↗";
+                    wrapper.appendChild(organization);
+                    wrapper.appendChild(link);
+                    cell.appendChild(wrapper);
                 } else if (column.key === "description_cn") {
                     cell.innerHTML = `
                         <div class="event-description">
@@ -847,6 +953,17 @@
                             ${renderLocationMiniMap(item, "table")}
                         </div>
                     `;
+                } else if (column.key === "metrics") {
+                    const cases = item.cases === null || item.cases === undefined ? "—" : formatCount(item.cases);
+                    const deaths = item.deaths === null || item.deaths === undefined ? "—" : formatCount(item.deaths);
+                    cell.innerHTML = `<span class="metric-pair"><strong>${cases}</strong><small>病例</small></span><span class="metric-pair"><strong>${deaths}</strong><small>死亡</small></span>`;
+                } else if (column.key === "quality") {
+                    const score = Number.isFinite(Number(item.data_quality_score)) ? Number(item.data_quality_score) : "—";
+                    const tone = Number(score) >= 90 ? "good" : Number(score) >= 70 ? "warning" : "danger";
+                    cell.innerHTML = `<span class="quality-badge quality-badge--${tone}"><strong>${escapeHtml(score)}</strong><small>/100</small></span>`;
+                } else if (column.key === "event") {
+                    const detailUrl = item.event_id ? `./events/${encodeURIComponent(item.event_id)}/` : "#";
+                    cell.innerHTML = `<a class="event-link" href="${detailUrl}" aria-label="查看 ${escapeHtml(item.disease || "事件")} 详情">详情 →</a>`;
                 } else {
                     cell.textContent = item[column.key] || "—";
                 }
@@ -908,7 +1025,6 @@
                     return;
                 }
                 setHeroStatus("摘要数据加载失败", "status--danger");
-                elements.lastUpdated.textContent = "加载失败";
             }
             return;
         }
@@ -921,7 +1037,6 @@
                 return;
             }
             setHeroStatus("摘要数据加载失败", "status--danger");
-            elements.lastUpdated.textContent = "加载失败";
         }
     }
 
@@ -983,7 +1098,7 @@
         elements.tableMeta.textContent = "正在加载分页明细";
         elements.tablePlaceholder.classList.add("hidden");
         elements.tableShell.classList.remove("hidden");
-        elements.tableBody.innerHTML = "<tr><td colspan=\"9\">正在加载明细，请稍候…</td></tr>";
+        elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">正在加载明细，请稍候…</td></tr>`;
 
         if (isStaticMode()) {
             try {
@@ -993,14 +1108,14 @@
                 renderTableRows(payload.items || []);
                 elements.tableCount.textContent = `${formatCount(payload.total)} 条记录`;
                 elements.tablePageStatus.textContent = `第 ${payload.page} 页 / 每页 ${payload.page_size} 条`;
-                elements.tableMeta.textContent = `静态快照已加载，更新时间 ${formatDateTime(payload.last_modified)}`;
+                elements.tableMeta.textContent = `已加载 ${formatCount(payload.total)} 条可追溯记录`;
                 buildPagination(payload.total || 0, payload.page || 1, payload.page_size || state.pageSize);
             } catch (error) {
                 if (error.name === "AbortError") {
                     return;
                 }
                 elements.tableMeta.textContent = "表格加载失败";
-                elements.tableBody.innerHTML = "<tr><td colspan=\"9\">明细接口加载失败，请稍后重试。</td></tr>";
+                elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">明细接口加载失败，请稍后重试。</td></tr>`;
                 elements.pagination.innerHTML = "";
             }
             return;
@@ -1021,13 +1136,14 @@
                 return;
             }
             elements.tableMeta.textContent = "表格加载失败";
-            elements.tableBody.innerHTML = "<tr><td colspan=\"9\">明细接口加载失败，请稍后重试。</td></tr>";
+            elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">明细接口加载失败，请稍后重试。</td></tr>`;
             elements.pagination.innerHTML = "";
         }
     }
 
     function refreshDataAfterFilters() {
         state.page = 1;
+        syncFiltersToUrl();
         loadOverview();
         loadMap();
         if (state.tableLoaded) {
@@ -1069,6 +1185,55 @@
             readFiltersFromDom();
             refreshDataAfterFilters();
         });
+        if (elements.copyFilterLink) {
+            elements.copyFilterLink.addEventListener("click", async function () {
+                syncFiltersToUrl();
+                try {
+                    await navigator.clipboard.writeText(window.location.href);
+                    elements.copyFilterLink.textContent = "链接已复制";
+                } catch (error) {
+                    elements.copyFilterLink.textContent = "请复制地址栏链接";
+                }
+                window.setTimeout(function () {
+                    elements.copyFilterLink.textContent = "复制筛选链接";
+                }, 1800);
+            });
+        }
+    }
+
+    function setupCopyButtons() {
+        document.querySelectorAll("[data-copy-target]").forEach(function (button) {
+            button.addEventListener("click", async function () {
+                const target = document.getElementById(button.dataset.copyTarget);
+                if (!target) {
+                    return;
+                }
+                try {
+                    await navigator.clipboard.writeText(target.textContent.trim());
+                    button.textContent = "已复制";
+                } catch (error) {
+                    button.textContent = "复制失败";
+                }
+                window.setTimeout(function () {
+                    button.textContent = "复制";
+                }, 1600);
+            });
+        });
+    }
+
+    async function loadAgentExampleCount() {
+        if (!elements.agentMatchCount) {
+            return;
+        }
+        try {
+            const records = await loadStaticDataset();
+            const matches = records.filter(function (record) {
+                return record.disease_id === "dengue" && record.continent === "亚洲";
+            });
+            elements.agentMatchCount.textContent = formatCount(matches.length);
+        } catch (error) {
+            elements.agentMatchCount.textContent = "—";
+        }
     }
 
     function setupLazyTableLoad() {
@@ -1088,13 +1253,16 @@
             return;
         }
 
-        updateFilterSummary();
+        hydrateFiltersFromUrl();
         setupThemeToggle();
         setupFilterEvents();
+        setupCopyButtons();
         setupLazyTableLoad();
+        loadManifest();
         loadOverview();
         loadEpietl();
         loadMap();
+        loadAgentExampleCount();
     }
 
     document.addEventListener("DOMContentLoaded", bootstrap);

@@ -8,38 +8,71 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: epic-public-data-refresh
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.11"
+          cache: pip
+
+      - name: Install validation dependencies
+        run: python -m pip install --require-hashes -r requirements-ci.txt
 
       - name: Refresh public snapshot
         env:
           EPIC_PUBLIC_SOURCE_BASE_URL: ${{ secrets.EPIC_PUBLIC_SOURCE_BASE_URL }}
+          EPIC_PUBLIC_SITE_URL: https://epicdemic.hylouis.top/
         run: python tools/build_public_data.py
 
+      - name: Test normalizers and status semantics
+        run: python -m unittest discover -s tests -v
+
+      - name: Validate release artifacts
+        run: python tools/validate_release.py --require-fresh-ingest
+
       - name: Scan public artifacts for sensitive markers
+        shell: bash
         run: |
-          if grep -RIE '(token=|MIHOMO=|/root/|/home/|lavm-)' README.md rss.xml BACKUP data/build_meta.json index.html; then
+          if grep -RIE '(token=|MIHOMO=|/root/|/home/|lavm-|BEGIN (RSA|OPENSSH|EC) PRIVATE KEY)' \
+            README.md rss.xml BACKUP data index.html events; then
             echo "Sensitive marker found in public artifacts."
             exit 1
           fi
 
+      - name: Upload diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: epic-public-build-diagnostics
+          path: |
+            data/build_meta.json
+            data/v1/manifest.json
+            data/v1/quality-report.json
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Commit refreshed snapshot
+        shell: bash
         run: |
-          if git diff --quiet; then
+          if git diff --quiet && [[ -z "$(git status --porcelain)" ]]; then
             echo "No public data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data BACKUP index.html rss.xml
+          git add data BACKUP events index.html rss.xml sitemap.xml
           git commit -m "Refresh public data snapshot"
           git push

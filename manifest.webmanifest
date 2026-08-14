@@ -1,0 +1,12 @@
+{
+  "name": "EPIC Infectious-disease Event Intelligence",
+  "short_name": "EPIC",
+  "description": "开放来源传染病事件情报基础设施",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2eee4",
+  "theme_color": "#102c2b",
+  "icons": [
+    {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
+}

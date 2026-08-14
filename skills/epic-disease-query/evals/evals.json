@@ -1,0 +1,40 @@
+{
+  "skill_name": "epic-disease-query",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "查找 2026-06-01 以来亚洲的登革热事件，按病例数降序，给出来源、质量分和 EPIC 详情页。",
+      "expected_output": "A status-aware Markdown table filtered by disease, continent and date, sorted by cases descending.",
+      "files": [],
+      "expectations": [
+        "Output warns that the current data source status is degraded before the results.",
+        "Every returned record is dengue in Asia and on or after 2026-06-01.",
+        "Non-null case counts are sorted descending and nulls appear last.",
+        "Results include original source, data quality score and stable EPIC event URL."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "把 EPIC 里的流感记录用 JSON 返回，只要 event_id、event_start_date、disease_id、location、cases、source 字段，最多 3 条。",
+      "expected_output": "Valid JSON with status metadata and no record fields outside the requested selection.",
+      "files": [],
+      "expectations": [
+        "Output is valid JSON with data_status, matched, returned and records keys.",
+        "Each record contains exactly the six requested fields.",
+        "At most three records are returned and all use disease_id influenza.",
+        "Status metadata distinguishes data_as_of from source status."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "用一个不存在的 EPIC records URL 查询登革热，超时 0.1 秒，不重试；要明确失败，不能伪造结果。",
+      "expected_output": "A nonzero exit with an actionable stderr error and no fabricated event records.",
+      "files": [],
+      "expectations": [
+        "Process exits nonzero.",
+        "Stderr starts with EPIC query error and names the failed URL.",
+        "No event records or success summary are emitted."
+      ]
+    }
+  ]
+}
