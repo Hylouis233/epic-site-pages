@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0 — 2026-08-15
+
+- Rebuilt the homepage as a compact monitoring console: status chips, quick data actions, and first-screen metrics above the fold.
+- Restored a real interactive map using self-hosted Leaflet and a border-free, label-free Natural Earth land silhouette with clustered event bubbles.
+- Added a linked regional index sidebar, aggregation-intensity legend, and a sovereignty-neutral basemap footnote.
+- Restored symptoms, response measures, transmission, source organisation, cases, and deaths columns with compact/comfortable density switching.
+- Added deterministic English rendering for the restored Chinese detail fields without leaking source text into the English surface.
+- Enriched mobile event cards and the EpiETL priority-event list with severity, source, and epidemiological-week context.
+- Added a browser regression gate that fails on any non-same-origin runtime request, missing land layer, missing clusters, or Chinese leakage in English detail cells.
+
 ## 1.1.0 — 2026-08-14
 
 - Made the dashboard, detail pages, metadata, RSS feed, documentation, and agent examples English-first.

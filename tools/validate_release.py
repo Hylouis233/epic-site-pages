@@ -89,12 +89,15 @@ def validate_english_surface():
             fail(f"public page is missing the Chinese language switch: {html_file.relative_to(ROOT)}")
 
     index_text = (ROOT / "index.html").read_text(encoding="utf-8")
-    if "Turn scattered outbreak signals into" not in index_text:
+    if "Global infectious-disease" not in index_text:
         fail("homepage English hero copy is missing")
 
     required_surface_markers = {
         'id="event-cards"': "responsive event cards",
-        "ATLAS / REGIONAL INDEX": "data-derived regional index",
+        "ATLAS / EVENT DISTRIBUTION": "interactive event map",
+        "land-110m.geojson": "self-hosted land basemap",
+        "Basemap shows land outline only": "map sovereignty footnote",
+        'id="density-compact"': "table density switch",
         'type="text" inputmode="numeric"': "locale-neutral date inputs",
         'placeholder="YYYY-MM-DD"': "ISO date guidance",
     }
@@ -112,6 +115,10 @@ def validate_english_surface():
         "SOURCE_ORG_LABELS_EN",
         "isValidIsoDate",
         "aggregateRegions",
+        "aggregateMapItems",
+        "displaySymptoms",
+        "displayMeasures",
+        "displayTransmission",
         "renderEventCards",
     ):
         if marker not in dashboard_text:

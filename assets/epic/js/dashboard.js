@@ -100,6 +100,313 @@
         "ETtoday新闻云": "ETtoday News",
     });
 
+    const DETAIL_PHRASES_EN = Object.freeze({
+        "发热": "fever",
+        "发烧": "fever",
+        "高热": "high fever",
+        "高烧": "high fever",
+        "剧烈腹泻": "severe diarrhoea",
+        "腹泻": "diarrhoea",
+        "频繁排便": "frequent stools",
+        "腹痛": "abdominal pain",
+        "恶心": "nausea",
+        "呕吐": "vomiting",
+        "干呕": "retching",
+        "咳嗽": "cough",
+        "干咳": "dry cough",
+        "流鼻水": "runny nose",
+        "流涕": "runny nose",
+        "鼻塞": "nasal congestion",
+        "喉咙痛": "sore throat",
+        "咽痛": "sore throat",
+        "乏力": "fatigue",
+        "疲倦": "fatigue",
+        "全身倦怠": "malaise",
+        "肌肉酸痛": "muscle aches",
+        "肌肉酸症": "muscle aches",
+        "肌肉疼痛": "muscle pain",
+        "肌肉关节痛": "muscle and joint pain",
+        "肌肉和关节疼痛": "muscle and joint pain",
+        "关节肌肉疼痛": "joint and muscle pain",
+        "关节痛": "joint pain",
+        "头痛": "headache",
+        "剧烈头痛": "severe headache",
+        "严重头痛": "severe headache",
+        "眼后痛": "pain behind the eyes",
+        "眼后疼痛": "pain behind the eyes",
+        "眼窝后疼痛": "pain behind the eyes",
+        "眼眶后疼痛": "pain behind the eyes",
+        "皮疹": "rash",
+        "出疹": "rash",
+        "红疹": "rash",
+        "斑疹": "macular rash",
+        "斑丘疹": "maculopapular rash",
+        "丘疹": "papular rash",
+        "水泡": "vesicles",
+        "水疱": "vesicles",
+        "脓疱": "pustules",
+        "畏寒": "chills",
+        "寒颤": "rigors",
+        "寒战": "rigors",
+        "出汗": "sweating",
+        "呼吸困难": "difficulty breathing",
+        "呼吸急促": "rapid breathing",
+        "气促": "shortness of breath",
+        "胸痛": "chest pain",
+        "肺炎": "pneumonia",
+        "脑炎": "encephalitis",
+        "脑膜脑炎": "meningoencephalitis",
+        "肢体麻痹": "limb paralysis",
+        "麻痹": "paralysis",
+        "意识不清": "altered consciousness",
+        "意识障碍": "impaired consciousness",
+        "意识改变": "altered consciousness",
+        "嗜睡": "drowsiness",
+        "肌抽跃": "myoclonus",
+        "抽搐": "convulsions",
+        "低血压": "hypotension",
+        "休克": "shock",
+        "感染性休克": "septic shock",
+        "出血倾向": "bleeding tendency",
+        "出血": "bleeding",
+        "血浆渗漏": "plasma leakage",
+        "黄疸": "jaundice",
+        "淋巴结肿大": "lymphadenopathy",
+        "淋巴腺肿大": "swollen lymph nodes",
+        "淋巴结肿胀": "swollen lymph nodes",
+        "焦痂": "eschar",
+        "红色斑状丘疹": "erythematous maculopapular rash",
+        "咽喉痛": "sore throat",
+        "上呼吸道症状": "upper-respiratory symptoms",
+        "上呼吸道感染症状": "upper-respiratory infection symptoms",
+        "流感样症状": "influenza-like symptoms",
+        "胃肠道症状": "gastrointestinal symptoms",
+        "嗅味觉减退": "reduced smell or taste",
+        "嗅觉或味觉减退": "reduced smell or taste",
+        "缺氧": "hypoxia",
+        "血痰": "bloody sputum",
+        "持续性高烧": "persistent high fever",
+        "登革出血热": "dengue haemorrhagic fever",
+        "登革休克综合征": "dengue shock syndrome",
+        "贫血": "anaemia",
+        "脑型疟疾": "cerebral malaria",
+        "生殖器": "genital",
+        "躯干": "trunk",
+        "主要经": "mainly through",
+        "主要通过": "mainly through",
+        "通过": "through",
+        "经": "via",
+        "由": "via",
+        "呼吸道飞沫": "respiratory droplets",
+        "飞沫": "droplet",
+        "气溶胶": "aerosols",
+        "密切接触": "close contact",
+        "接触传播": "contact transmission",
+        "接触": "contact",
+        "空气传播": "airborne transmission",
+        "空气": "airborne",
+        "伊蚊": "Aedes mosquitoes",
+        "埃及伊蚊": "Aedes aegypti",
+        "白纹伊蚊": "Aedes albopictus",
+        "按蚊": "Anopheles mosquitoes",
+        "蚊虫": "mosquitoes",
+        "蚊媒": "mosquito-borne",
+        "蚊虫叮咬": "mosquito bites",
+        "蚊虫传播": "mosquito-borne transmission",
+        "叮咬传播": "bite transmission",
+        "叮咬": "bites",
+        "恙虫": "chigger",
+        "恙螨": "chigger mites",
+        "恙虫病立克次体": "Orientia tsutsugamushi",
+        "食物": "food",
+        "水源": "water",
+        "受污染的": "contaminated",
+        "受污染": "contaminated",
+        "污染": "contaminated",
+        "粪口传播": "faecal-oral transmission",
+        "肠道传播": "enteric transmission",
+        "输血": "blood transfusion",
+        "器官移植": "organ transplant",
+        "母婴传播": "mother-to-child transmission",
+        "母婴垂直传播": "vertical mother-to-child transmission",
+        "性接触": "sexual contact",
+        "性行为": "sexual contact",
+        "血液传播": "blood-borne transmission",
+        "人际传播": "person-to-person transmission",
+        "人传人": "person-to-person transmission",
+        "人与人之间不传播": "no person-to-person transmission",
+        "不人与人传播": "no person-to-person transmission",
+        "有限人传人风险": "limited person-to-person risk",
+        "人与人之间": "between people",
+        "病媒蚊": "vector mosquitoes",
+        "病媒": "vectors",
+        "冷却塔": "cooling towers",
+        "含菌气溶胶": "bacteria-laden aerosols",
+        "含军团菌气溶胶": "Legionella-laden aerosols",
+        "供水系统": "water-supply systems",
+        "水雾": "water mist",
+        "链球菌": "Streptococcus",
+        "排泄物": "excretions",
+        "体液": "body fluids",
+        "病变皮肤": "skin lesions",
+        "受污染物件": "contaminated objects",
+        "污染表面": "contaminated surfaces",
+        "物体表面": "surfaces",
+        "进口浆果": "imported berries",
+        "香草": "herbs",
+        "绿叶蔬菜": "leafy greens",
+        "新鲜蔬菜": "fresh produce",
+        "活禽": "live poultry",
+        "禽肉": "poultry meat",
+        "密切": "close",
+        "加强监测": "enhanced surveillance",
+        "加强病例监测": "enhanced case surveillance",
+        "加强检测": "expanded testing",
+        "加强": "strengthened",
+        "监测": "monitoring",
+        "检测": "testing",
+        "筛查": "screening",
+        "隔离": "isolation",
+        "隔离治疗": "isolation and treatment",
+        "隔离措施": "isolation measures",
+        "感染者": "infected people",
+        "患者隔离": "patient isolation",
+        "佩戴口罩": "mask wearing",
+        "戴口罩": "mask wearing",
+        "口罩": "masks",
+        "疫苗": "vaccine",
+        "疫苗接种": "vaccination",
+        "接种疫苗": "vaccination",
+        "保持通风": "maintain ventilation",
+        "保持室内空气流通": "maintain indoor air circulation",
+        "空气流通": "air circulation",
+        "通风": "ventilation",
+        "手部卫生": "hand hygiene",
+        "勤洗手": "frequent handwashing",
+        "洗手": "handwashing",
+        "清洁消毒": "cleaning and disinfection",
+        "消毒": "disinfection",
+        "清洁": "cleaning",
+        "减少接触": "reducing contact",
+        "减少聚集": "reducing gatherings",
+        "社交距离": "social distancing",
+        "及时就医": "seek care promptly",
+        "就医": "seek medical care",
+        "医疗救治": "medical treatment",
+        "对症治疗": "symptomatic treatment",
+        "抗病毒药物": "antiviral drugs",
+        "抗生素": "antibiotics",
+        "抗疟药物": "antimalarial drugs",
+        "驱蚊剂": "mosquito repellent",
+        "防蚊": "mosquito protection",
+        "蚊帐": "bed nets",
+        "杀虫剂": "insecticide",
+        "灭蚊": "mosquito control",
+        "蚊虫防治": "mosquito control",
+        "清除积水": "removing standing water",
+        "积水": "standing water",
+        "孳生地": "breeding sites",
+        "滋生地": "breeding sites",
+        "幼虫": "larvae",
+        "杀幼虫剂": "larvicides",
+        "公众教育": "public education",
+        "宣传教育": "public education",
+        "社区宣教": "community education",
+        "社区": "community",
+        "宣传教育活动": "education campaigns",
+        "病例管理": "case management",
+        "接触者追踪": "contact tracing",
+        "流行病学调查": "epidemiological investigation",
+        "旅行史": "travel history",
+        "检疫": "quarantine",
+        "主动告知": "proactively report",
+        "报告": "reporting",
+        "健康提醒": "health alerts",
+        "公众健康提醒": "public-health alerts",
+        "饮水安全": "drinking-water safety",
+        "食品安全": "food safety",
+        "饮食安全": "food safety",
+        "彻底清洗": "thorough washing",
+        "生鲜蔬果": "fresh produce",
+        "蔬果": "produce",
+        "洗手": "handwashing",
+        "卫生": "hygiene",
+        "环境卫生": "environmental hygiene",
+        "个人卫生": "personal hygiene",
+        "个人防护": "personal protection",
+        "防护服": "protective clothing",
+        "长袖": "long-sleeved",
+        "长裤": "trousers",
+        "手套": "gloves",
+        "长靴": "boots",
+        "远程门诊": "remote clinics",
+        "外展医疗": "outreach medical care",
+        "住院治疗": "hospital treatment",
+        "重症监护": "critical care",
+        "高风险人群": "high-risk groups",
+        "重症高风险人群": "people at high risk of severe disease",
+        "远程": "remote",
+        "线上教学": "online teaching",
+        "停课": "class suspension",
+        "不上班课": "staying home from work and school",
+        "生病在家休息": "resting at home when ill",
+        "家中休息": "resting at home",
+        "居家": "at home",
+        "旅游咨询": "travel-medicine advice",
+        "旅行医学咨询": "travel-medicine consultation",
+        "预防性": "prophylactic",
+        "早期诊断": "early diagnosis",
+        "规范": "standardised",
+        "治疗": "treatment",
+        "疑似症状": "suspected symptoms",
+        "病征": "symptoms",
+        "求诊": "seek care",
+        "就诊": "seek care",
+        "卫生中心": "health centre",
+        "免费诊疗": "free consultation and treatment",
+        "药物": "medication",
+        "可出现": "may develop",
+        "可引起": "may cause",
+        "可伴": "may be accompanied by",
+        "部分": "some",
+        "患者": "patients",
+        "感染者": "infected people",
+        "人群": "populations",
+        "等": "",
+        "症状": "symptoms",
+        "表现为": "manifesting as",
+        "包括": "including",
+        "如": "such as",
+        "常见": "common",
+        "所有病例": "all cases",
+        "均为": "were",
+        "非复杂性": "uncomplicated",
+        "恶性疟": "falciparum malaria",
+        "重症前兆": "warning signs",
+        "危及生命": "life-threatening",
+        "并发症": "complications",
+        "偶可": "occasionally",
+        "亦可": "may also",
+        "也可": "may also",
+        "不直接传播": "not directly transmitted",
+        "不传播": "not transmitted",
+        "不存在": "does not occur",
+        "风险较高": "higher risk",
+        "风险": "risk",
+        "本地": "local",
+        "入境": "entry",
+        "口岸": "ports of entry",
+        "全国": "national",
+        "定期": "regular",
+        "周报": "weekly reports",
+        "样本": "specimens",
+        "哨点": "sentinel",
+        "门诊": "outpatient",
+        "住院病例": "inpatient cases",
+        "病原学": "aetiological",
+        "变异": "variant",
+    });
+
     const state = {
         filters: {
             keyword: "",
@@ -122,6 +429,12 @@
         staticManifestPromise: null,
         staticEpietlPayload: null,
         staticEpietlPromise: null,
+        staticLandPayload: null,
+        staticLandPromise: null,
+        leafletMap: null,
+        leafletClusterLayer: null,
+        leafletLandLayer: null,
+        lastMapItems: null,
     };
 
     const elements = {
@@ -159,6 +472,7 @@
         map: document.getElementById("map"),
         mapMeta: document.getElementById("map-meta"),
         mapEmpty: document.getElementById("map-empty"),
+        regionSidebar: document.getElementById("region-sidebar"),
         tablePanel: document.getElementById("table-panel"),
         tableMeta: document.getElementById("table-meta"),
         tablePlaceholder: document.getElementById("table-placeholder"),
@@ -177,11 +491,17 @@
         { key: "location", className: "table-cell--compact" },
         { key: "disease", className: "table-cell--compact" },
         { key: "description_cn", className: "table-cell--wide" },
-        { key: "metrics", className: "table-cell--metric" },
+        { key: "symptoms", className: "table-cell--detail" },
+        { key: "measures", className: "table-cell--detail" },
+        { key: "transmission", className: "table-cell--detail" },
+        { key: "cases", className: "table-cell--metric" },
+        { key: "deaths", className: "table-cell--metric" },
+        { key: "source_org", className: "table-cell--compact" },
         { key: "source", className: "table-cell--source" },
         { key: "quality", className: "table-cell--quality" },
         { key: "event", className: "table-cell--action" },
     ];
+    const DENSITY_STORAGE_KEY = "epic-density";
 
     function escapeHtml(value) {
         return String(value || "")
@@ -250,6 +570,91 @@
         }
         const country = englishCountryName(record && record.country_code);
         return country ? `Public-health source, ${country}` : "Source organization not specified";
+    }
+
+    const DETAIL_PUNCTUATION = Object.freeze({
+        "、": ", ",
+        "，": ", ",
+        "。": ".",
+        "；": "; ",
+        "：": ": ",
+        "（": " (",
+        "）": ")",
+        "(": " (",
+        ")": ")",
+    });
+    const DETAIL_KEYS_BY_LENGTH = Object.keys(DETAIL_PHRASES_EN)
+        .sort(function (a, b) { return b.length - a.length; });
+
+    function translateDetailText(value, fallback) {
+        if (isChinese()) {
+            return value || fallback;
+        }
+        const raw = String(value || "").trim();
+        if (!raw) {
+            return fallback;
+        }
+        if (!containsHan(raw)) {
+            return raw;
+        }
+
+        let chineseCharacters = 0;
+        for (const character of raw) {
+            if (/[\u3400-\u9fff]/.test(character)) {
+                chineseCharacters += 1;
+            }
+        }
+
+        let output = "";
+        let index = 0;
+        let translatedCharacters = 0;
+        while (index < raw.length) {
+            const character = raw[index];
+            if (DETAIL_PUNCTUATION[character]) {
+                output += DETAIL_PUNCTUATION[character];
+                index += 1;
+                continue;
+            }
+            let matched = false;
+            for (const phrase of DETAIL_KEYS_BY_LENGTH) {
+                if (raw.startsWith(phrase, index)) {
+                    output += DETAIL_PHRASES_EN[phrase];
+                    translatedCharacters += phrase.length;
+                    index += phrase.length;
+                    matched = true;
+                    break;
+                }
+            }
+            if (matched) {
+                continue;
+            }
+            if (!/[\u3400-\u9fff]/.test(character)) {
+                output += character;
+            }
+            index += 1;
+        }
+
+        const coverage = chineseCharacters ? translatedCharacters / chineseCharacters : 1;
+        if (coverage < 0.6) {
+            return fallback;
+        }
+        return output
+            .replace(/\s+/g, " ")
+            .replace(/\s+([,.;:)])/g, "$1")
+            .replace(/([([])\s+/g, "$1")
+            .trim();
+    }
+
+    function displaySymptoms(record) {
+        return translateDetailText(record && record.symptoms, "See source for clinical details");
+    }
+
+    function displayMeasures(record) {
+        return translateDetailText(record && record.measures, "See source for response measures");
+    }
+
+    function displayTransmission(record) {
+        return translateDetailText(record && record.transmission, "See source for transmission details");
     }
 
     function buildEnglishSummary(record) {
@@ -941,7 +1346,7 @@
     }
 
     function bindRegionFilters() {
-        elements.map.querySelectorAll("[data-region-filter]").forEach(function (button) {
+        document.querySelectorAll("[data-region-filter]").forEach(function (button) {
             button.addEventListener("click", function () {
                 const region = button.getAttribute("data-region-filter") || "";
                 elements.continentSelect.value = region;
@@ -952,6 +1357,212 @@
         });
     }
 
+    function getClusterTone(count) {
+        if (count >= 25) return "critical";
+        if (count >= 12) return "high";
+        if (count >= 6) return "elevated";
+        if (count >= 3) return "medium";
+        return "small";
+    }
+
+    function getClusterSize(count) {
+        if (count >= 25) return 58;
+        if (count >= 12) return 54;
+        if (count >= 6) return 50;
+        if (count >= 3) return 46;
+        return 42;
+    }
+
+    function aggregateMapItems(items, zoom) {
+        const safeZoom = Math.max(Number(zoom) || 2, 1);
+        const gridSize = 42 / Math.pow(2, Math.max(safeZoom - 2, 0));
+        const clusters = new Map();
+        (Array.isArray(items) ? items : []).forEach(function (item) {
+            if (!hasValidCoordinates(item)) return;
+            const key = `${Math.round(item.latitude / gridSize)}:${Math.round(item.longitude / (gridSize * 1.4))}`;
+            if (!clusters.has(key)) {
+                clusters.set(key, { latitude: 0, longitude: 0, count: 0, items: [] });
+            }
+            const cluster = clusters.get(key);
+            cluster.latitude += item.latitude;
+            cluster.longitude += item.longitude;
+            cluster.count += 1;
+            cluster.items.push(item);
+        });
+        return Array.from(clusters.values()).map(function (cluster) {
+            cluster.latitude /= cluster.count;
+            cluster.longitude /= cluster.count;
+            cluster.tone = getClusterTone(cluster.count);
+            cluster.size = getClusterSize(cluster.count);
+            return cluster;
+        });
+    }
+
+    async function loadStaticLandPayload() {
+        if (state.staticLandPayload) return state.staticLandPayload;
+        if (state.staticLandPromise) return state.staticLandPromise;
+        if (!config.staticLandUrl) return null;
+        state.staticLandPromise = fetchJsonUrl(config.staticLandUrl, "mapController")
+            .then(function (payload) {
+                state.staticLandPayload = payload;
+                return payload;
+            })
+            .catch(function () {
+                return null;
+            });
+        return state.staticLandPromise;
+    }
+
+    function ensureLeafletMap() {
+        if (!elements.map || !window.L) return false;
+        if (state.leafletMap) return true;
+
+        state.leafletMap = window.L.map(elements.map, {
+            center: [20, 10],
+            zoom: 2,
+            minZoom: 2,
+            maxZoom: 6,
+            zoomControl: true,
+            scrollWheelZoom: false,
+            touchZoom: true,
+            worldCopyJump: true,
+            attributionControl: false,
+        });
+
+        loadStaticLandPayload().then(function (payload) {
+            if (!payload || !state.leafletMap) return;
+            state.leafletLandLayer = window.L.geoJSON(payload, {
+                interactive: false,
+                style: { className: "land-shape", stroke: false, fill: true },
+            });
+            state.leafletLandLayer.addTo(state.leafletMap);
+            state.leafletLandLayer.bringToBack();
+        });
+
+        state.leafletMap.on("zoomend", function () {
+            if (state.lastMapItems) {
+                renderLeafletClusters(aggregateMapItems(state.lastMapItems, state.leafletMap.getZoom()));
+            }
+        });
+        return true;
+    }
+
+    function renderLeafletPopup(cluster) {
+        const previewItems = cluster.items.slice(0, 4);
+        const moreCount = Math.max(cluster.count - previewItems.length, 0);
+        const topDiseases = topEntries(previewItems.reduce(function (map, item) {
+            const disease = displayDisease(item);
+            map.set(disease, (map.get(disease) || 0) + 1);
+            return map;
+        }, new Map()), 2).map(function (entry) { return entry[0]; });
+        const latestDate = previewItems.reduce(function (latest, item) {
+            return (item.original_date || "") > latest ? item.original_date : latest;
+        }, "");
+        const locationLabel = displayLocation(cluster.items[0] || {});
+        const countryLevel = (cluster.items[0] && String(cluster.items[0].geo_precision || "").indexOf("country") !== -1)
+            ? `<div class="leaflet-popup__precision">${t("Country-level location", "定位精度：国家级")}</div>`
+            : "";
+        return `
+            <div class="epic-map-popup">
+                <strong class="epic-map-popup__title">${escapeHtml(locationLabel)}</strong>
+                <div class="epic-map-popup__meta">
+                    ${t(`${formatCount(cluster.count)} events`, `${formatCount(cluster.count)} 条事件`)} ·
+                    ${escapeHtml(topDiseases.join(" / ") || t("No disease label", "无疾病标签"))}
+                </div>
+                <div class="epic-map-popup__meta">${latestDate ? t(`Latest ${latestDate}`, `最新 ${latestDate}`) : t("Date unavailable", "日期不可用")}</div>
+                ${countryLevel}
+                <ul class="epic-map-popup__list">
+                    ${previewItems.map(function (item) {
+                        return `<li><strong>${escapeHtml(displayDisease(item))}</strong><span>${escapeHtml(item.original_date || "")}</span></li>`;
+                    }).join("")}
+                </ul>
+                ${moreCount ? `<div class="epic-map-popup__meta">${t(`+ ${formatCount(moreCount)} more`, `另有 ${formatCount(moreCount)} 条`)}</div>` : ""}
+                <a class="epic-map-popup__action" href="#table-panel">${t("Filter the register →", "筛选事件明细 →")}</a>
+            </div>
+        `;
+    }
+
+    function renderLeafletClusters(clusters) {
+        if (!state.leafletMap) return;
+        if (state.leafletClusterLayer) state.leafletClusterLayer.remove();
+        state.leafletClusterLayer = window.L.layerGroup();
+        clusters.forEach(function (cluster) {
+            const iconSize = cluster.size;
+            const marker = window.L.marker([cluster.latitude, cluster.longitude], {
+                keyboard: true,
+                title: t(`${formatCount(cluster.count)} events`, `${formatCount(cluster.count)} 条事件`),
+                icon: window.L.divIcon({
+                    className: "epic-map-cluster-marker",
+                    html: `<span class="cluster-badge cluster-badge--${cluster.tone}">${formatCount(cluster.count)}</span>`,
+                    iconSize: [iconSize, iconSize],
+                    iconAnchor: [iconSize / 2, iconSize / 2],
+                    popupAnchor: [0, -(iconSize / 2)],
+                }),
+            });
+            marker.bindPopup(renderLeafletPopup(cluster), {
+                className: "epic-map-popup-shell",
+                maxWidth: 320,
+                minWidth: 240,
+            });
+            marker.on("click", function () {
+                if (cluster.count > 1 && state.leafletMap.getZoom() < state.leafletMap.getMaxZoom()) {
+                    const bounds = window.L.latLngBounds(cluster.items.map(function (item) {
+                        return [item.latitude, item.longitude];
+                    }));
+                    if (bounds.isValid()) {
+                        state.leafletMap.fitBounds(bounds.pad(0.4), { maxZoom: state.leafletMap.getMaxZoom() });
+                    }
+                }
+            });
+            marker.on("popupopen", function (event) {
+                const action = event.popup.getElement().querySelector(".epic-map-popup__action");
+                if (!action) return;
+                action.addEventListener("click", function (clickEvent) {
+                    clickEvent.preventDefault();
+                    const locationKeyword = (cluster.items[0] && cluster.items[0].location) || "";
+                    elements.keywordInput.value = locationKeyword;
+                    if (readFiltersFromDom()) {
+                        refreshDataAfterFilters();
+                    }
+                    elements.tablePanel.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+            marker.addTo(state.leafletClusterLayer);
+        });
+        state.leafletClusterLayer.addTo(state.leafletMap);
+    }
+
+    function renderRegionSidebar(regions, total) {
+        if (!elements.regionSidebar) return;
+        elements.regionSidebar.innerHTML = `
+            <div class="region-sidebar__head">
+                ${t("REGIONAL INDEX", "区域索引")}
+                <span>${t(`${formatCount(total)} records`, `${formatCount(total)} 条记录`)}</span>
+            </div>
+            ${regions.map(function (region, index) {
+                const share = Math.max(4, Math.round((region.items.length / Math.max(total, 1)) * 100));
+                const locations = topEntries(region.locations, 3);
+                const diseases = topEntries(region.diseases, 2).map(function (entry) { return entry[0]; });
+                const regionLabel = displayContinent(region.key);
+                return `
+                    <button class="region-sidebar__item" type="button" data-region-filter="${escapeHtml(region.key)}" aria-label="${escapeHtml(t(`Filter events to ${regionLabel}`, `筛选${regionLabel}事件`))}">
+                        <span class="region-sidebar__row">
+                            <strong>${escapeHtml(regionLabel)}</strong>
+                            <b>${formatCount(region.items.length)}</b>
+                        </span>
+                        <span class="region-sidebar__bar" aria-hidden="true"><i style="--share:${share}%"></i></span>
+                        <span class="region-sidebar__meta">${escapeHtml(diseases.join(" · ") || t("No disease label", "无疾病标签"))}</span>
+                        <span class="region-sidebar__locations">${locations.map(function (entry) {
+                            return `<span>${escapeHtml(entry[0])}<b>${formatCount(entry[1])}</b></span>`;
+                        }).join("")}</span>
+                        <span class="region-sidebar__action">${t("Filter →", "筛选 →")}</span>
+                    </button>
+                `;
+            }).join("")}
+        `;
+        bindRegionFilters();
+    }
+
     function renderMap(items) {
         const safeItems = Array.isArray(items) ? items : [];
         const regions = aggregateRegions(safeItems);
@@ -959,35 +1570,26 @@
             `${formatCount(safeItems.length)} located records across ${formatCount(regions.length)} regions`,
             `${formatCount(safeItems.length)} 条定位记录 · ${formatCount(regions.length)} 个区域`,
         );
-        elements.map.innerHTML = "";
 
         if (!regions.length) {
+            if (state.leafletClusterLayer) {
+                state.leafletClusterLayer.remove();
+                state.leafletClusterLayer = null;
+            }
             elements.mapEmpty.classList.remove("hidden");
+            renderRegionSidebar([], safeItems.length);
             return;
         }
 
         elements.mapEmpty.classList.add("hidden");
-        const total = Math.max(safeItems.length, 1);
-        elements.map.innerHTML = `<div class="region-index">${regions.map(function (region, index) {
-            const share = Math.max(4, Math.round((region.items.length / total) * 100));
-            const locations = topEntries(region.locations, 4);
-            const diseases = topEntries(region.diseases, 2).map(function (entry) { return entry[0]; });
-            const regionLabel = displayContinent(region.key);
-            return `
-                <button class="region-card" type="button" data-region-filter="${escapeHtml(region.key)}" aria-label="${escapeHtml(t(`Filter events to ${regionLabel}`, `筛选${regionLabel}事件`))}">
-                    <span class="region-card__index">${String(index + 1).padStart(2, "0")} / ${escapeHtml(regionLabel.toUpperCase())}</span>
-                    <span class="region-card__count">${formatCount(region.items.length)}</span>
-                    <span class="region-card__label">${t("public event records", "公开事件记录")}</span>
-                    <span class="region-card__bar" aria-hidden="true"><i style="--share:${share}%"></i></span>
-                    <span class="region-card__meta">${escapeHtml(diseases.join(" · ") || t("No disease label", "无疾病标签"))}</span>
-                    <span class="region-card__locations">${locations.map(function (entry) {
-                        return `<span>${escapeHtml(entry[0])}<b>${formatCount(entry[1])}</b></span>`;
-                    }).join("")}</span>
-                    <span class="region-card__action">${t("Filter this region →", "筛选此区域 →")}</span>
-                </button>
-            `;
-        }).join("")}</div>`;
-        bindRegionFilters();
+        state.lastMapItems = safeItems;
+        renderRegionSidebar(regions, safeItems.length);
+        if (ensureLeafletMap()) {
+            renderLeafletClusters(aggregateMapItems(safeItems, state.leafletMap.getZoom()));
+            window.requestAnimationFrame(function () {
+                if (state.leafletMap) state.leafletMap.invalidateSize();
+            });
+        }
     }
 
     function renderEpietl(payload) {
@@ -1071,6 +1673,7 @@
                         <div class="intel-item__row intel-item__row--meta">
                             <span>${escapeHtml(item.pathogen || t("Unspecified pathogen", "未标注病原体"))}</span>
                             <span>${escapeHtml(regionText)}</span>
+                            ${item.epi_week ? `<span>${escapeHtml(item.epi_week)}</span>` : ""}
                             <span>${escapeHtml(item.source_org || t("Unknown organization", "未知机构"))}</span>
                             <span>${sourceLink}</span>
                         </div>
@@ -1108,6 +1711,12 @@
                     <p class="event-card__place">${escapeHtml(displayLocation(item))}</p>
                     <h4>${escapeHtml(displayDisease(item))}</h4>
                     <p class="event-card__summary">${escapeHtml(displaySummary(item))}</p>
+                    <dl class="event-card__details">
+                        <div><dt>${t("Symptoms", "症状")}</dt><dd>${escapeHtml(displaySymptoms(item))}</dd></div>
+                        <div><dt>${t("Measures", "措施")}</dt><dd>${escapeHtml(displayMeasures(item))}</dd></div>
+                        <div><dt>${t("Transmission", "传播方式")}</dt><dd>${escapeHtml(displayTransmission(item))}</dd></div>
+                        <div><dt>${t("Source org", "来源机构")}</dt><dd>${escapeHtml(displaySourceOrg(item))}</dd></div>
+                    </dl>
                     <div class="event-card__metrics">
                         <span><b>${cases}</b><small>${t("Cases", "病例")}</small></span>
                         <span><b>${deaths}</b><small>${t("Deaths", "死亡")}</small></span>
@@ -1162,6 +1771,19 @@
                             <p>${escapeHtml(displaySummary(item))}</p>
                         </div>
                     `;
+                } else if (column.key === "cases" || column.key === "deaths") {
+                    const value = item[column.key] === null || item[column.key] === undefined ? "—" : formatCount(item[column.key]);
+                    cell.innerHTML = `<span class="metric-pair metric-pair--single"><strong>${value}</strong><small>${column.key === "cases" ? t("Cases", "病例") : t("Deaths", "死亡")}</small></span>`;
+                } else if (column.key === "symptoms" || column.key === "measures" || column.key === "transmission") {
+                    const value = column.key === "symptoms"
+                        ? displaySymptoms(item)
+                        : column.key === "measures"
+                            ? displayMeasures(item)
+                            : displayTransmission(item);
+                    cell.title = value;
+                    cell.innerHTML = `<div class="event-clamp">${escapeHtml(value)}</div>`;
+                } else if (column.key === "source_org") {
+                    cell.textContent = displaySourceOrg(item);
                 } else if (column.key === "metrics") {
                     const cases = item.cases === null || item.cases === undefined ? "—" : formatCount(item.cases);
                     const deaths = item.deaths === null || item.deaths === undefined ? "—" : formatCount(item.deaths);
@@ -1341,6 +1963,7 @@
                 if (error.name === "AbortError") {
                     return;
                 }
+                console.error(error);
                 elements.tableMeta.textContent = t("Table failed to load", "表格加载失败");
                 elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">${t("The record API failed to load. Please try again later.", "明细接口加载失败，请稍后重试。")}</td></tr>`;
                 elements.pagination.innerHTML = "";
@@ -1371,6 +1994,7 @@
             if (error.name === "AbortError") {
                 return;
             }
+            console.error(error);
             elements.tableMeta.textContent = t("Table failed to load", "表格加载失败");
             elements.tableBody.innerHTML = `<tr><td colspan="${tableColumns.length}">${t("The record API failed to load. Please try again later.", "明细接口加载失败，请稍后重试。")}</td></tr>`;
             elements.pagination.innerHTML = "";
@@ -1487,6 +2111,39 @@
         observer.observe(elements.tablePanel);
     }
 
+    function setTableDensity(mode) {
+        const density = mode === "comfortable" ? "comfortable" : "compact";
+        document.body.dataset.density = density;
+        try {
+            window.localStorage.setItem(DENSITY_STORAGE_KEY, density);
+        } catch (error) {
+            // Density is a preference only; ignore storage failures.
+        }
+        const compactButton = document.getElementById("density-compact");
+        const comfortableButton = document.getElementById("density-comfortable");
+        if (compactButton && comfortableButton) {
+            compactButton.classList.toggle("is-active", density === "compact");
+            comfortableButton.classList.toggle("is-active", density === "comfortable");
+            compactButton.setAttribute("aria-pressed", String(density === "compact"));
+            comfortableButton.setAttribute("aria-pressed", String(density === "comfortable"));
+        }
+    }
+
+    function setupDensityToggle() {
+        const compactButton = document.getElementById("density-compact");
+        const comfortableButton = document.getElementById("density-comfortable");
+        if (!compactButton || !comfortableButton) return;
+        let saved = "compact";
+        try {
+            saved = window.localStorage.getItem(DENSITY_STORAGE_KEY) || "compact";
+        } catch (error) {
+            saved = "compact";
+        }
+        setTableDensity(saved);
+        compactButton.addEventListener("click", function () { setTableDensity("compact"); });
+        comfortableButton.addEventListener("click", function () { setTableDensity("comfortable"); });
+    }
+
     function bootstrap() {
         if (!isStaticMode() && (!config.overviewUrl || !config.mapUrl || !config.tableUrl)) {
             setHeroStatus(t("Page configuration is missing; data cannot be loaded.", "页面配置缺失，无法加载数据。"), "status--danger");
@@ -1497,6 +2154,7 @@
         setupThemeToggle();
         setupFilterEvents();
         setupCopyButtons();
+        setupDensityToggle();
         setupLazyTableLoad();
         loadManifest();
         loadOverview();
