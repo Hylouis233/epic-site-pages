@@ -46,7 +46,7 @@ class FrontendRebuildBrowserTests(unittest.TestCase):
             page.wait_for_timeout(1200)
 
             self.assertEqual(page.locator("html").get_attribute("lang"), "en")
-            self.assertEqual(page.locator("html").get_attribute("data-theme"), "light")
+            self.assertEqual(page.locator("html").get_attribute("data-theme"), "dark")
 
             # First-screen density: metrics and filters must sit above the fold.
             self.assertLessEqual(page.locator("#overview-grid").bounding_box()["y"], 1000)

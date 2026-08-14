@@ -2,6 +2,11 @@
 
 ## 1.2.0 — 2026-08-15
 
+- Replaced the warm editorial poster design with a precision-instrument console: cool neutral surfaces, hairline borders, monospace tabular numerals, and a single semantic blue accent.
+- Made dark the default monitoring theme while preserving the light theme toggle.
+- Removed all decorative CSS art (grid overlays, stamp motifs, serif display type, drop shadows, and gradients).
+- Normalised metric cards, filter fields, table rows, and map markers to instrument-grade density.
+- Fixed a CSS Grid minimum-size overflow on mobile caused by intrinsic code-block width.
 - Rebuilt the homepage as a compact monitoring console: status chips, quick data actions, and first-screen metrics above the fold.
 - Restored a real interactive map using self-hosted Leaflet and a border-free, label-free Natural Earth land silhouette with clustered event bubbles.
 - Added a linked regional index sidebar, aggregation-intensity legend, and a sovereignty-neutral basemap footnote.

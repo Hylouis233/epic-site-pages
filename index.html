@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EPIC — Traceable infectious-disease event intelligence</title>
     <meta name="description" content="EPIC turns public outbreak signals from health agencies, ProMED, RSS feeds, and open reporting into queryable, traceable, machine-readable event data.">
-    <meta name="theme-color" content="#102c2b">
+    <meta name="theme-color" content="#0d0f12">
     <meta name="color-scheme" content="light dark">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://hylouis233.github.io/epic-site-pages/">
@@ -32,7 +32,7 @@
     <meta name="twitter:description" content="Open-source-signal event intelligence for public-health monitoring and early-warning research.">
     <meta name="twitter:image" content="https://hylouis233.github.io/epic-site-pages/og-image.png">
 
-    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260814-visual">
+    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260815-console">
     <script>
         (function () {
             try {
@@ -46,10 +46,10 @@
                 document.documentElement.dataset.language = language;
                 document.documentElement.lang = language;
                 const savedTheme = window.localStorage.getItem("epic-theme");
-                document.documentElement.dataset.theme = savedTheme || "light";
-            } catch (error) {
-                document.documentElement.dataset.theme = "light";
-            }
+            document.documentElement.dataset.theme = savedTheme || "dark";
+        } catch (error) {
+            document.documentElement.dataset.theme = "dark";
+        }
         })();
     </script>
     <script type="application/ld+json">
@@ -336,7 +336,7 @@
     </script>
     <link rel="stylesheet" href="./assets/epic/vendor/leaflet/leaflet.css?v=20260815-rebuild">
     <script src="./assets/epic/vendor/leaflet/leaflet.js?v=20260815-rebuild"></script>
-    <script src="./assets/epic/js/i18n.js?v=20260814-visual"></script>
-    <script src="./assets/epic/js/dashboard.js?v=20260814-visual"></script>
+    <script src="./assets/epic/js/i18n.js?v=20260815-console"></script>
+    <script src="./assets/epic/js/dashboard.js?v=20260815-console"></script>
 </body>
 </html>
