@@ -32,7 +32,7 @@
     <meta name="twitter:description" content="Open-source-signal event intelligence for public-health monitoring and early-warning research.">
     <meta name="twitter:image" content="https://hylouis233.github.io/epic-site-pages/og-image.png">
 
-    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260814">
+    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260814-visual">
     <script>
         (function () {
             try {
@@ -46,8 +46,7 @@
                 document.documentElement.dataset.language = language;
                 document.documentElement.lang = language;
                 const savedTheme = window.localStorage.getItem("epic-theme");
-                const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-                document.documentElement.dataset.theme = savedTheme || systemTheme;
+                document.documentElement.dataset.theme = savedTheme || "light";
             } catch (error) {
                 document.documentElement.dataset.theme = "light";
             }
@@ -92,7 +91,7 @@
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
             <a href="#events">Events</a>
-            <a href="#map-panel">Map</a>
+            <a href="#map-panel" data-zh="区域">Regions</a>
             <a href="#data-access">Data</a>
             <a href="./methodology.html">Method &amp; limits</a>
             <a href="https://github.com/Hylouis233/epic-site-pages" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
@@ -218,27 +217,23 @@
                     <label class="field field--search"><span class="field__label">KEYWORD</span><input id="keyword-input" name="keyword" type="search" placeholder="Disease, place, source, or summary"></label>
                     <label class="field"><span class="field__label">DISEASE</span><select id="disease-select" name="disease"><option value="">All diseases</option></select></label>
                     <label class="field"><span class="field__label">CONTINENT</span><select id="continent-select" name="continent"><option value="">All continents</option></select></label>
-                    <label class="field"><span class="field__label">FROM</span><input id="date-from-input" name="date_from" type="date"></label>
-                    <label class="field"><span class="field__label">TO</span><input id="date-to-input" name="date_to" type="date"></label>
+                    <label class="field"><span class="field__label">FROM</span><input id="date-from-input" name="date_from" type="text" inputmode="numeric" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" data-zh-placeholder="YYYY-MM-DD" aria-label="Start date in YYYY-MM-DD format" data-zh-aria-label="开始日期，格式为 YYYY-MM-DD"></label>
+                    <label class="field"><span class="field__label">TO</span><input id="date-to-input" name="date_to" type="text" inputmode="numeric" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" data-zh-placeholder="YYYY-MM-DD" aria-label="End date in YYYY-MM-DD format" data-zh-aria-label="结束日期，格式为 YYYY-MM-DD"></label>
                 </form>
                 <div class="filter-summary"><span>CURRENT FILTER</span><strong id="filter-summary-text">No filters applied.</strong><em id="filter-result">Ready</em></div>
             </section>
 
             <section class="panel panel--map" id="map-panel" aria-labelledby="map-title">
                 <div class="panel-heading">
-                    <div><p class="panel-label">ATLAS / EVENT MAP</p><h3 id="map-title">Geographic distribution of public signals</h3></div>
+                    <div><p class="panel-label" data-zh="ATLAS / 区域索引">ATLAS / REGIONAL INDEX</p><h3 id="map-title" data-zh="公开信号的区域分布">Geographic distribution by region</h3></div>
                     <div class="panel-heading__meta" id="map-meta">Preparing mapped records</div>
                 </div>
                 <div class="map-toolbar">
-                    <p>Locations are low-precision public geocodes for overview only; some points are country or administrative centroids.</p>
-                    <div class="map-legend" aria-label="Cluster-size legend">
-                        <span><i class="map-dot map-dot--small"></i>1–2</span>
-                        <span><i class="map-dot map-dot--medium"></i>3–5</span>
-                        <span><i class="map-dot map-dot--high"></i>6+</span>
-                    </div>
+                    <p data-zh="按区域汇总公开事件。选择区域卡片即可筛选监测台；数量表示当前快照记录，不代表疾病负担。">Compare event volume, leading diseases, and reported locations. Select a region to filter the register.</p>
+                    <div class="map-legend" aria-label="Regional index notes"><span><i class="map-dot map-dot--small"></i>FILTERABLE</span><span><i class="map-dot map-dot--medium"></i>TRACEABLE</span></div>
                 </div>
                 <div class="map-wrapper">
-                    <div id="map" aria-label="Abstract geographic distribution of events"></div>
+                    <div id="map" aria-label="Regional distribution of public event records"></div>
                     <div class="panel-empty panel-empty--overlay hidden" id="map-empty">No mapped records match the current filters.</div>
                 </div>
             </section>
@@ -257,6 +252,7 @@
                             <tbody id="table-body"></tbody>
                         </table>
                     </div>
+                    <div class="event-cards" id="event-cards" aria-label="Event records"></div>
                     <div class="pagination" id="pagination"></div>
                 </div>
             </section>
@@ -368,7 +364,7 @@
             staticEpietlUrl: "./data/epietl_public.json"
         };
     </script>
-    <script src="./assets/epic/js/i18n.js?v=20260814"></script>
-    <script src="./assets/epic/js/dashboard.js?v=20260814"></script>
+    <script src="./assets/epic/js/i18n.js?v=20260814-visual"></script>
+    <script src="./assets/epic/js/dashboard.js?v=20260814-visual"></script>
 </body>
 </html>

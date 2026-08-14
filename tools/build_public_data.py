@@ -1041,7 +1041,7 @@ def render_event_page(record, status, public_site_url):
   <meta property="og:url" content="{html_escape(detail_url)}">
   <meta property="og:image" content="{html_escape(urljoin(public_site_url, 'og-image.svg'))}">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="../../assets/epic/css/app.css?v=20260814">
+  <link rel="stylesheet" href="../../assets/epic/css/app.css?v=20260814-visual">
   <script>(function(){{try{{var l=localStorage.getItem("epic-lang")==="zh-CN"?"zh-CN":"en";document.documentElement.lang=l;document.documentElement.dataset.language=l;var s=localStorage.getItem("epic-theme");document.documentElement.dataset.theme=s||"light";}}catch(e){{document.documentElement.dataset.theme="light";}}}})();</script>
   <script type="application/ld+json">{json_ld_text}</script>
 </head>
@@ -1093,7 +1093,7 @@ def render_event_page(record, status, public_site_url):
       </section>
     </main>
   </div>
-  <script src="../../assets/epic/js/i18n.js?v=20260814"></script>
+  <script src="../../assets/epic/js/i18n.js?v=20260814-visual"></script>
 </body>
 </html>
 """

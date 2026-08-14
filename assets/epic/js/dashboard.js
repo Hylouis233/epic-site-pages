@@ -11,6 +11,95 @@
         return i18n && typeof i18n.isChinese === "function" && i18n.isChinese() ? "zh-CN" : "en-US";
     }
 
+    function isChinese() {
+        const i18n = window.EPIC_I18N;
+        return Boolean(i18n && typeof i18n.isChinese === "function" && i18n.isChinese());
+    }
+
+    const DISEASE_LABELS_EN = Object.freeze({
+        "乙类传染病": "Notifiable diseases group",
+        "军团菌病": "Legionellosis",
+        "多种法定传染病": "Multiple notifiable diseases",
+        "急性上呼吸道感染": "Acute upper respiratory infection",
+        "急性腹泻病": "Acute diarrheal disease",
+        "恙虫病": "Scrub typhus",
+        "新型冠状病毒感染": "COVID-19",
+        "流行性感冒": "Influenza",
+        "猴痘": "Mpox",
+        "环孢子虫病": "Cyclosporiasis",
+        "疟疾": "Malaria",
+        "登革热": "Dengue",
+        "禽流感": "Avian influenza",
+        "绦虫病": "Taeniasis",
+        "肠病毒 D68 型感染": "Enterovirus D68 infection",
+        "肠病毒感染": "Enterovirus infection",
+        "肺炎链球菌病": "Pneumococcal disease",
+        "诺如病毒感染": "Norovirus infection",
+    });
+
+    const CONTINENT_LABELS_EN = Object.freeze({
+        "亚洲": "Asia",
+        "北美洲": "North America",
+        "南美洲": "South America",
+        "中及南美洲": "Central and South America",
+        "欧洲": "Europe",
+        "非洲": "Africa",
+        "大洋洲": "Oceania",
+    });
+
+    const LOCATION_LABELS_EN = Object.freeze({
+        "北京市": "Beijing, China",
+        "不含港澳台": "Mainland China (excluding Hong Kong, Macao, and Taiwan)",
+        "菲律宾奎松市": "Quezon City, Philippines",
+        "韩国": "South Korea",
+        "黑龙江省": "Heilongjiang, China",
+        "几内亚比绍": "Guinea-Bissau",
+        "加拿大": "Canada",
+        "柬埔寨金达尔省考索姆区": "Kaoh Thum district, Kandal province, Cambodia",
+        "金门": "Kinmen",
+        "科伦坡": "Colombo",
+        "美国": "United States",
+        "美国德克萨斯州圣安东尼奥-拉克兰联合基地": "Joint Base San Antonio–Lackland, Texas, USA",
+        "美国纽约市曼哈顿上东区": "Upper East Side, Manhattan, New York City, USA",
+        "美国纽约市上东侧": "Upper East Side, New York City, USA",
+        "美国纽约市上东区": "Upper East Side, New York City, USA",
+        "孟加拉国": "Bangladesh",
+        "南部省": "Southern Province, Sri Lanka",
+        "南非": "South Africa",
+        "南非开普敦": "Cape Town, South Africa",
+        "尼泊尔": "Nepal",
+        "日本": "Japan",
+        "斯里兰卡": "Sri Lanka",
+        "新加坡": "Singapore",
+        "中国": "China",
+        "中国澳门": "Macao, China",
+        "中国台湾": "Taiwan",
+        "中国香港": "Hong Kong",
+        "{'country', 'Central and South America', 'region', '中及南'}": "Central and South America",
+    });
+
+    const SOURCE_ORG_LABELS_EN = Object.freeze({
+        "澳门特别行政区卫生局": "Macao Health Bureau",
+        "澳门卫生局": "Macao Health Bureau",
+        "菲律宾星报": "The Philippine Star",
+        "国家登革热控制单位": "National Dengue Control Unit",
+        "黑龙江省疾病预防控制局": "Heilongjiang Provincial Disease Control Bureau",
+        "疾病管制署": "Taiwan Centers for Disease Control",
+        "加拿大公共卫生局 (PHAC)": "Public Health Agency of Canada (PHAC)",
+        "柬埔寨卫生部": "Ministry of Health, Cambodia",
+        "柬埔寨Kiripost": "Kiripost Cambodia",
+        "南非国家传染病研究所（NICD）": "National Institute for Communicable Diseases (NICD)",
+        "台湾疾病管制署": "Taiwan Centers for Disease Control",
+        "台湾疾病控制署": "Taiwan Centers for Disease Control",
+        "香港公共卫生局": "Hong Kong public-health authority",
+        "新加坡传染病局（CDA）": "Communicable Diseases Agency, Singapore",
+        "新加坡国家环境局（NEA）": "National Environment Agency, Singapore",
+        "中国观察": "China Observer",
+        "ETtoday健康": "ETtoday Health",
+        "ETtoday健康云": "ETtoday Health",
+        "ETtoday新闻云": "ETtoday News",
+    });
+
     const state = {
         filters: {
             keyword: "",
@@ -20,7 +109,7 @@
             date_to: "",
         },
         page: 1,
-        pageSize: 50,
+        pageSize: window.matchMedia("(max-width: 820px)").matches ? 8 : 20,
         tableLoaded: false,
         overviewController: null,
         manifestController: null,
@@ -75,6 +164,7 @@
         tablePlaceholder: document.getElementById("table-placeholder"),
         tableShell: document.getElementById("table-shell"),
         tableBody: document.getElementById("table-body"),
+        eventCards: document.getElementById("event-cards"),
         tableCount: document.getElementById("table-count"),
         tablePageStatus: document.getElementById("table-page-status"),
         pagination: document.getElementById("pagination"),
@@ -100,6 +190,90 @@
             .replace(/>/g, "&gt;")
             .replace(/"/g, "&quot;")
             .replace(/'/g, "&#39;");
+    }
+
+    function containsHan(value) {
+        return /[\u3400-\u9fff]/.test(String(value || ""));
+    }
+
+    function displayDisease(value) {
+        if (value && typeof value === "object") {
+            const chinese = value.disease_name_zh || value.disease || t("Unspecified disease", "未标注疾病");
+            const english = value.disease_name_en || DISEASE_LABELS_EN[chinese] || value.disease_id || "Unspecified disease";
+            return isChinese() ? chinese : english;
+        }
+        const raw = String(value || "");
+        return isChinese() ? raw : (DISEASE_LABELS_EN[raw] || raw || "Unspecified disease");
+    }
+
+    function displayContinent(value) {
+        const raw = String(value || "");
+        return isChinese() ? raw : (CONTINENT_LABELS_EN[raw] || raw || "Unspecified region");
+    }
+
+    function englishCountryName(countryCode) {
+        const code = String(countryCode || "").trim().toUpperCase();
+        if (!code) {
+            return "";
+        }
+        try {
+            return new Intl.DisplayNames(["en"], { type: "region" }).of(code) || "";
+        } catch (error) {
+            return "";
+        }
+    }
+
+    function displayLocation(record) {
+        const raw = String((record && record.location) || record || "").trim();
+        if (isChinese()) {
+            return raw || "地点未注明";
+        }
+        if (LOCATION_LABELS_EN[raw]) {
+            return LOCATION_LABELS_EN[raw];
+        }
+        if (raw && !containsHan(raw)) {
+            return raw;
+        }
+        return englishCountryName(record && record.country_code) || "Source-reported location";
+    }
+
+    function displaySourceOrg(record) {
+        const raw = String((record && record.source_org) || record || "").trim();
+        if (isChinese()) {
+            return raw || "来源未注明";
+        }
+        if (SOURCE_ORG_LABELS_EN[raw]) {
+            return SOURCE_ORG_LABELS_EN[raw];
+        }
+        if (raw && !containsHan(raw)) {
+            return raw;
+        }
+        const country = englishCountryName(record && record.country_code);
+        return country ? `Public-health source, ${country}` : "Source organization not specified";
+    }
+
+    function buildEnglishSummary(record) {
+        const disease = displayDisease(record);
+        const location = displayLocation(record);
+        const metrics = [];
+        if (record.cases !== null && record.cases !== undefined) {
+            metrics.push(`${formatCount(record.cases)} cases`);
+        }
+        if (record.deaths !== null && record.deaths !== undefined) {
+            metrics.push(`${formatCount(record.deaths)} deaths`);
+        }
+        if (record.hospitalizations !== null && record.hospitalizations !== undefined) {
+            metrics.push(`${formatCount(record.hospitalizations)} hospitalizations`);
+        }
+        const metricSentence = metrics.length ? ` Structured fields report ${metrics.join(", ")}.` : "";
+        return `${disease} signal reported in ${location}.${metricSentence}`;
+    }
+
+    function displaySummary(record) {
+        if (isChinese()) {
+            return record.description_cn || "暂无摘要";
+        }
+        return record.description_en || buildEnglishSummary(record);
     }
 
     function formatDateTime(value) {
@@ -164,84 +338,16 @@
         return `<span class="severity-pill severity-pill--${escapeHtml(normalized || "unknown")}">${escapeHtml(label)}</span>`;
     }
 
-    function clampNumber(value, min, max) {
-        const number = Number(value);
-        if (!Number.isFinite(number)) {
-            return min;
-        }
-        return Math.min(Math.max(number, min), max);
-    }
-
-    function lonLatToWorldPoint(longitude, latitude) {
-        const safeLongitude = clampNumber(longitude, -180, 180);
-        const safeLatitude = clampNumber(latitude, -85.05112878, 85.05112878);
-        const sine = Math.sin((safeLatitude * Math.PI) / 180);
-        return {
-            x: ((safeLongitude + 180) / 360) * 100,
-            y: (0.5 - Math.log((1 + sine) / (1 - sine)) / (4 * Math.PI)) * 100,
-        };
-    }
-
-    function getGeoPoint(record) {
-        if (!hasValidCoordinates(record)) {
-            return null;
-        }
-
-        const point = lonLatToWorldPoint(record.longitude, record.latitude);
-        return {
-            x: clampNumber(point.x, 0, 100),
-            y: clampNumber(point.y, 0, 100),
-        };
-    }
-
-    function renderLocationMiniMap(record, modifier) {
-        if (!hasValidCoordinates(record || {})) {
-            return "";
-        }
-
-        const locationLabel = record.location || record.continent || t("Event location", "事件地点");
-        const className = ["location-mini-map", modifier ? `location-mini-map--${modifier}` : ""].filter(Boolean).join(" ");
-        return `
-            <div class="${className}" role="img" aria-label="${escapeHtml(t(`${locationLabel} mini map`, `${locationLabel} 微缩地图`))}">
-                <span class="location-mini-map__grid" aria-hidden="true"></span>
-                <span class="location-mini-map__marker" style="--x:${getGeoPoint(record).x}%; --y:${getGeoPoint(record).y}%;"></span>
-            </div>
-        `;
-    }
-
-    function renderWorldLayer() {
-        return `
-            <div class="abstract-world" aria-hidden="true">
-                <svg viewBox="0 0 1000 500" preserveAspectRatio="none">
-                    <g class="abstract-world__grid">
-                        <path d="M0 100H1000M0 200H1000M0 300H1000M0 400H1000" />
-                        <path d="M125 0V500M250 0V500M375 0V500M500 0V500M625 0V500M750 0V500M875 0V500" />
-                    </g>
-                    <g class="abstract-world__land">
-                        <path d="M62 128L111 78l83-29 77 18 55 47-17 44-47 20-22 58-55 16-61-44-42-13z" />
-                        <path d="M238 260l48 27 28 82-14 77-34 39-22-73-39-61 7-58z" />
-                        <path d="M435 119l52-43 74 9 29 32 49-11 70 24 112 14 70 62-40 56-88-8-45 38-76-29-52 21-79-36-20-70-49-20z" />
-                        <path d="M475 252l92 6 40 55-18 91-61 59-45-80-39-66z" />
-                        <path d="M809 356l64-34 61 23-5 52-69 26-51-24z" />
-                    </g>
-                    <path class="abstract-world__route" d="M146 168C308 61 524 388 848 231" />
-                </svg>
-                <span class="abstract-world__label abstract-world__label--one">PUBLIC-SOURCE SIGNALS</span>
-                <span class="abstract-world__label abstract-world__label--two">LOW-PRECISION OVERVIEW</span>
-            </div>
-        `;
-    }
-
     function summarizeFilters() {
         const parts = [];
         if (state.filters.keyword) {
             parts.push(t(`Keyword “${state.filters.keyword}”`, `关键词“${state.filters.keyword}”`));
         }
         if (state.filters.disease) {
-            parts.push(t(`Disease ${state.filters.disease}`, `疾病 ${state.filters.disease}`));
+            parts.push(t(`Disease ${displayDisease(state.filters.disease)}`, `疾病 ${state.filters.disease}`));
         }
         if (state.filters.continent) {
-            parts.push(t(`Continent ${state.filters.continent}`, `洲别 ${state.filters.continent}`));
+            parts.push(t(`Region ${displayContinent(state.filters.continent)}`, `洲别 ${state.filters.continent}`));
         }
         if (state.filters.date_from) {
             parts.push(t(`From ${state.filters.date_from}`, `起始 ${state.filters.date_from}`));
@@ -273,21 +379,63 @@
         };
         Object.keys(fields).forEach(function (key) {
             const value = searchParams.get(key) || "";
-            state.filters[key] = value;
             if (fields[key]) {
                 fields[key].value = value;
             }
         });
-        updateFilterSummary();
+        if (!readFiltersFromDom()) {
+            elements.dateFromInput.value = "";
+            elements.dateToInput.value = "";
+            readFiltersFromDom();
+            syncFiltersToUrl();
+        }
+    }
+
+    function isValidIsoDate(value) {
+        const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value || ""));
+        if (!match) {
+            return false;
+        }
+        const year = Number(match[1]);
+        const month = Number(match[2]);
+        const day = Number(match[3]);
+        const parsed = new Date(Date.UTC(year, month - 1, day));
+        return parsed.getUTCFullYear() === year
+            && parsed.getUTCMonth() === month - 1
+            && parsed.getUTCDate() === day;
+    }
+
+    function setDateValidity(input, message) {
+        input.setCustomValidity(message || "");
+        if (message) {
+            input.setAttribute("aria-invalid", "true");
+        } else {
+            input.removeAttribute("aria-invalid");
+        }
     }
 
     function readFiltersFromDom() {
+        const dateFrom = elements.dateFromInput.value.trim();
+        const dateTo = elements.dateToInput.value.trim();
+        const formatMessage = t("Enter a real date as YYYY-MM-DD.", "请输入有效日期，格式为 YYYY-MM-DD。");
+        const rangeMessage = t("The end date must be on or after the start date.", "结束日期不能早于开始日期。");
+        const invalidFrom = Boolean(dateFrom) && !isValidIsoDate(dateFrom);
+        const invalidTo = Boolean(dateTo) && !isValidIsoDate(dateTo);
+        const invalidRange = !invalidFrom && !invalidTo && Boolean(dateFrom && dateTo) && dateFrom > dateTo;
+
+        setDateValidity(elements.dateFromInput, invalidFrom ? formatMessage : "");
+        setDateValidity(elements.dateToInput, invalidTo ? formatMessage : invalidRange ? rangeMessage : "");
+        if (invalidFrom || invalidTo || invalidRange) {
+            return false;
+        }
+
         state.filters.keyword = elements.keywordInput.value.trim();
         state.filters.disease = elements.diseaseSelect.value.trim();
         state.filters.continent = elements.continentSelect.value.trim();
-        state.filters.date_from = elements.dateFromInput.value.trim();
-        state.filters.date_to = elements.dateToInput.value.trim();
+        state.filters.date_from = dateFrom;
+        state.filters.date_to = dateTo;
         updateFilterSummary();
+        return true;
     }
 
     function buildQuery(extraParams) {
@@ -398,7 +546,11 @@
         (Array.isArray(options) ? options : []).forEach((item) => {
             const option = document.createElement("option");
             option.value = item;
-            option.textContent = item;
+            option.textContent = selectElement === elements.diseaseSelect
+                ? displayDisease(item)
+                : selectElement === elements.continentSelect
+                    ? displayContinent(item)
+                    : item;
             selectElement.appendChild(option);
         });
 
@@ -416,9 +568,14 @@
         const searchableParts = [
             record.original_date,
             record.location,
+            displayLocation(record),
             record.disease,
+            record.disease_name_en,
+            displayDisease(record),
             record.description_cn,
+            displaySummary(record),
             record.source_org,
+            displaySourceOrg(record),
             record.source,
         ];
         return searchableParts.join(" ").toLowerCase().includes(keywordLower);
@@ -493,12 +650,19 @@
                 event_id: record.event_id || record.id,
                 original_date: record.original_date,
                 disease: record.disease,
+                disease_id: record.disease_id,
+                disease_name_en: record.disease_name_en,
+                disease_name_zh: record.disease_name_zh,
                 location: record.location,
+                country_code: record.country_code,
                 latitude: record.latitude,
                 longitude: record.longitude,
                 description_cn: record.description_cn,
                 continent: record.continent,
                 source_org: record.source_org,
+                cases: record.cases,
+                deaths: record.deaths,
+                hospitalizations: record.hospitalizations,
                 geo_status: record.geo_status,
                 geo_status_label: record.geo_status_label,
                 geo_precision: record.geo_precision,
@@ -748,97 +912,41 @@
         }
     }
 
-    function aggregateMapItems(items) {
-        const clusters = new Map();
-        const cellSize = 7;
-
+    function aggregateRegions(items) {
+        const regions = new Map();
         (Array.isArray(items) ? items : []).forEach(function (item) {
-            const point = getGeoPoint(item);
-            if (!point) {
-                return;
+            const key = item.continent || "Unspecified region";
+            if (!regions.has(key)) {
+                regions.set(key, { key, items: [], locations: new Map(), diseases: new Map(), latest: "" });
             }
-
-            const key = `${Math.round(point.x / cellSize)}:${Math.round(point.y / cellSize)}`;
-            if (!clusters.has(key)) {
-                clusters.set(key, {
-                    x: 0,
-                    y: 0,
-                    count: 0,
-                    items: [],
-                });
+            const region = regions.get(key);
+            region.items.push(item);
+            const location = displayLocation(item);
+            region.locations.set(location, (region.locations.get(location) || 0) + 1);
+            const disease = displayDisease(item);
+            region.diseases.set(disease, (region.diseases.get(disease) || 0) + 1);
+            if ((item.original_date || "") > region.latest) {
+                region.latest = item.original_date;
             }
-
-            const cluster = clusters.get(key);
-            cluster.x += point.x;
-            cluster.y += point.y;
-            cluster.count += 1;
-            cluster.items.push(item);
         });
-
-        return Array.from(clusters.values()).map(function (cluster) {
-            cluster.x = clampNumber(cluster.x / cluster.count, 2, 98);
-            cluster.y = clampNumber(cluster.y / cluster.count, 4, 96);
-            cluster.tone = getClusterTone(cluster.count);
-            cluster.size = getClusterSize(cluster.count);
-            return cluster;
-        }).sort(function (a, b) {
-            return a.count - b.count;
+        return Array.from(regions.values()).sort(function (a, b) {
+            return b.items.length - a.items.length;
         });
     }
 
-    function renderMapPopup(cluster) {
-        const previewItems = cluster.items.slice(0, 4);
-        const moreCount = Math.max(cluster.count - previewItems.length, 0);
-        return `
-            <div class="abstract-map__popup" style="--x: ${cluster.x}%; --y: ${cluster.y}%;" data-map-popup>
-                <div class="abstract-map__popup-head">
-                    <h3 class="abstract-map__popup-title">${t(`${formatCount(cluster.count)} events`, `${formatCount(cluster.count)} 个事件`)}</h3>
-                    <button class="abstract-map__popup-close" type="button" data-map-popup-close aria-label="${t("Close", "关闭")}">×</button>
-                </div>
-                <ul class="abstract-map__event-list">
-                    ${previewItems.map(function (item) {
-                        const detailUrl = item.event_id ? `./events/${encodeURIComponent(item.event_id)}/` : "#table-panel";
-                        return `
-                            <li class="abstract-map__event">
-                                <div class="abstract-map__event-title">
-                                    <a href="${detailUrl}">${escapeHtml(item.disease || t("Unspecified disease", "未标注疾病"))} · ${escapeHtml(item.location || t("Unknown location", "未知地点"))}</a>
-                                </div>
-                                <div class="abstract-map__event-meta">
-                                    ${escapeHtml(item.original_date || t("Unknown date", "未知日期"))} / ${escapeHtml(item.source_org || t("Unknown source", "未知来源"))}
-                                </div>
-                                <div class="abstract-map__event-summary">${escapeHtml(item.description_cn || t("No summary available", "暂无摘要"))}</div>
-                            </li>
-                        `;
-                    }).join("")}
-                </ul>
-                ${moreCount ? `<div class="abstract-map__event-meta">${t(`${formatCount(moreCount)} more events.`, `另有 ${formatCount(moreCount)} 个事件。`)}</div>` : ""}
-            </div>
-        `;
+    function topEntries(map, limit) {
+        return Array.from(map.entries()).sort(function (a, b) {
+            return b[1] - a[1] || String(a[0]).localeCompare(String(b[0]));
+        }).slice(0, limit);
     }
 
-    function bindMapClusterEvents(clusters) {
-        elements.map.querySelectorAll("[data-map-cluster]").forEach(function (button) {
+    function bindRegionFilters() {
+        elements.map.querySelectorAll("[data-region-filter]").forEach(function (button) {
             button.addEventListener("click", function () {
-                const index = Number(button.getAttribute("data-map-cluster"));
-                const cluster = clusters[index];
-                if (!cluster) {
-                    return;
-                }
-
-                const oldPopup = elements.map.querySelector("[data-map-popup]");
-                if (oldPopup) {
-                    oldPopup.remove();
-                }
-                elements.map.insertAdjacentHTML("beforeend", renderMapPopup(cluster));
-
-                const closeButton = elements.map.querySelector("[data-map-popup-close]");
-                if (closeButton) {
-                    closeButton.addEventListener("click", function () {
-                        const popup = elements.map.querySelector("[data-map-popup]");
-                        if (popup) {
-                            popup.remove();
-                        }
-                    });
+                const region = button.getAttribute("data-region-filter") || "";
+                elements.continentSelect.value = region;
+                if (readFiltersFromDom()) {
+                    refreshDataAfterFilters();
                 }
             });
         });
@@ -846,35 +954,40 @@
 
     function renderMap(items) {
         const safeItems = Array.isArray(items) ? items : [];
-        const clusters = aggregateMapItems(safeItems);
+        const regions = aggregateRegions(safeItems);
         elements.mapMeta.textContent = t(
-            `${formatCount(safeItems.length)} map points shown`,
-            `当前地图点位 ${formatCount(safeItems.length)} 个`,
+            `${formatCount(safeItems.length)} located records across ${formatCount(regions.length)} regions`,
+            `${formatCount(safeItems.length)} 条定位记录 · ${formatCount(regions.length)} 个区域`,
         );
-        elements.map.innerHTML = renderWorldLayer();
+        elements.map.innerHTML = "";
 
-        if (!clusters.length) {
+        if (!regions.length) {
             elements.mapEmpty.classList.remove("hidden");
             return;
         }
 
         elements.mapEmpty.classList.add("hidden");
-        elements.map.insertAdjacentHTML("beforeend", clusters.map(function (cluster, index) {
+        const total = Math.max(safeItems.length, 1);
+        elements.map.innerHTML = `<div class="region-index">${regions.map(function (region, index) {
+            const share = Math.max(4, Math.round((region.items.length / total) * 100));
+            const locations = topEntries(region.locations, 4);
+            const diseases = topEntries(region.diseases, 2).map(function (entry) { return entry[0]; });
+            const regionLabel = displayContinent(region.key);
             return `
-                <button
-                    class="abstract-map__point"
-                    type="button"
-                    style="--x: ${cluster.x}%; --y: ${cluster.y}%; --size: ${cluster.size}px;"
-                    data-map-cluster="${index}"
-                    aria-label="${t(`${formatCount(cluster.count)} events`, `${formatCount(cluster.count)} 个事件`)}"
-                >
-                    <span class="cluster-badge cluster-badge--${cluster.tone}" title="${t(`${formatCount(cluster.count)} events`, `${formatCount(cluster.count)} 个事件`)}">
-                        ${formatCount(cluster.count)}
-                    </span>
+                <button class="region-card" type="button" data-region-filter="${escapeHtml(region.key)}" aria-label="${escapeHtml(t(`Filter events to ${regionLabel}`, `筛选${regionLabel}事件`))}">
+                    <span class="region-card__index">${String(index + 1).padStart(2, "0")} / ${escapeHtml(regionLabel.toUpperCase())}</span>
+                    <span class="region-card__count">${formatCount(region.items.length)}</span>
+                    <span class="region-card__label">${t("public event records", "公开事件记录")}</span>
+                    <span class="region-card__bar" aria-hidden="true"><i style="--share:${share}%"></i></span>
+                    <span class="region-card__meta">${escapeHtml(diseases.join(" · ") || t("No disease label", "无疾病标签"))}</span>
+                    <span class="region-card__locations">${locations.map(function (entry) {
+                        return `<span>${escapeHtml(entry[0])}<b>${formatCount(entry[1])}</b></span>`;
+                    }).join("")}</span>
+                    <span class="region-card__action">${t("Filter this region →", "筛选此区域 →")}</span>
                 </button>
             `;
-        }).join(""));
-        bindMapClusterEvents(clusters);
+        }).join("")}</div>`;
+        bindRegionFilters();
     }
 
     function renderEpietl(payload) {
@@ -969,6 +1082,45 @@
         }
     }
 
+    function renderEventCards(items) {
+        if (!elements.eventCards) {
+            return;
+        }
+        if (!items.length) {
+            elements.eventCards.innerHTML = `<p class="event-cards__empty">${t("No detailed records match the current filters.", "当前筛选条件下没有明细记录。")}</p>`;
+            return;
+        }
+        elements.eventCards.innerHTML = items.map(function (item) {
+            const detailUrl = item.event_id ? `./events/${encodeURIComponent(item.event_id)}/` : "#";
+            const cases = item.cases === null || item.cases === undefined ? "—" : formatCount(item.cases);
+            const deaths = item.deaths === null || item.deaths === undefined ? "—" : formatCount(item.deaths);
+            const score = Number.isFinite(Number(item.data_quality_score)) ? Number(item.data_quality_score) : "—";
+            const tone = Number(score) >= 90 ? "good" : Number(score) >= 70 ? "warning" : "danger";
+            const sourceLink = item.source
+                ? `<a class="event-card__source" href="${escapeHtml(item.source)}" target="_blank" rel="noopener noreferrer">${escapeHtml(displaySourceOrg(item))} ↗</a>`
+                : `<span class="event-card__source">${t("Source unavailable", "来源不可用")}</span>`;
+            return `
+                <article class="event-card">
+                    <div class="event-card__topline">
+                        <time datetime="${escapeHtml(item.original_date || "")}">${escapeHtml(item.original_date || t("Date unavailable", "日期不可用"))}</time>
+                        <span class="quality-badge quality-badge--${tone}"><strong>${escapeHtml(score)}</strong><small>/100</small></span>
+                    </div>
+                    <p class="event-card__place">${escapeHtml(displayLocation(item))}</p>
+                    <h4>${escapeHtml(displayDisease(item))}</h4>
+                    <p class="event-card__summary">${escapeHtml(displaySummary(item))}</p>
+                    <div class="event-card__metrics">
+                        <span><b>${cases}</b><small>${t("Cases", "病例")}</small></span>
+                        <span><b>${deaths}</b><small>${t("Deaths", "死亡")}</small></span>
+                    </div>
+                    <div class="event-card__actions">
+                        ${sourceLink}
+                        <a class="event-card__detail" href="${detailUrl}">${t("Open record →", "打开记录 →")}</a>
+                    </div>
+                </article>
+            `;
+        }).join("");
+    }
+
     function renderTableRows(items) {
         elements.tableBody.innerHTML = "";
         if (!items.length) {
@@ -978,6 +1130,7 @@
             cell.textContent = t("No detailed records match the current filters.", "当前筛选条件下没有明细记录。");
             row.appendChild(cell);
             elements.tableBody.appendChild(row);
+            renderEventCards(items);
             return;
         }
 
@@ -993,7 +1146,7 @@
                     const wrapper = document.createElement("div");
                     wrapper.className = "source-cell";
                     const organization = document.createElement("strong");
-                    organization.textContent = item.source_org || t("Source not specified", "来源未注明");
+                    organization.textContent = displaySourceOrg(item);
                     const link = document.createElement("a");
                     link.href = item.source;
                     link.target = "_blank";
@@ -1006,8 +1159,7 @@
                 } else if (column.key === "description_cn") {
                     cell.innerHTML = `
                         <div class="event-description">
-                            <p>${escapeHtml(item.description_cn || "—")}</p>
-                            ${renderLocationMiniMap(item, "table")}
+                            <p>${escapeHtml(displaySummary(item))}</p>
                         </div>
                     `;
                 } else if (column.key === "metrics") {
@@ -1020,8 +1172,12 @@
                     cell.innerHTML = `<span class="quality-badge quality-badge--${tone}"><strong>${escapeHtml(score)}</strong><small>/100</small></span>`;
                 } else if (column.key === "event") {
                     const detailUrl = item.event_id ? `./events/${encodeURIComponent(item.event_id)}/` : "#";
-                    const eventLabel = item.disease || t("event", "事件");
+                    const eventLabel = displayDisease(item);
                     cell.innerHTML = `<a class="event-link" href="${detailUrl}" aria-label="${escapeHtml(t(`View details for ${eventLabel}`, `查看 ${eventLabel} 详情`))}">${t("Details →", "详情 →")}</a>`;
+                } else if (column.key === "location") {
+                    cell.textContent = displayLocation(item);
+                } else if (column.key === "disease") {
+                    cell.textContent = displayDisease(item);
                 } else {
                     cell.textContent = item[column.key] || "—";
                 }
@@ -1029,6 +1185,7 @@
             });
             elements.tableBody.appendChild(row);
         });
+        renderEventCards(items);
     }
 
     function buildPagination(total, page, pageSize) {
@@ -1233,27 +1390,32 @@
     }
 
     function setupFilterEvents() {
-        const debouncedKeywordHandler = debounce(function () {
-            readFiltersFromDom();
+        function applyFilterChange(validationTarget) {
+            if (!readFiltersFromDom()) {
+                if (validationTarget && typeof validationTarget.reportValidity === "function") {
+                    validationTarget.reportValidity();
+                }
+                return;
+            }
             refreshDataAfterFilters();
+        }
+
+        const debouncedKeywordHandler = debounce(function () {
+            applyFilterChange();
         }, 300);
 
         elements.keywordInput.addEventListener("input", debouncedKeywordHandler);
         elements.diseaseSelect.addEventListener("change", function () {
-            readFiltersFromDom();
-            refreshDataAfterFilters();
+            applyFilterChange();
         });
         elements.continentSelect.addEventListener("change", function () {
-            readFiltersFromDom();
-            refreshDataAfterFilters();
+            applyFilterChange();
         });
-        elements.dateFromInput.addEventListener("change", function () {
-            readFiltersFromDom();
-            refreshDataAfterFilters();
+        elements.dateFromInput.addEventListener("change", function (event) {
+            applyFilterChange(event.currentTarget);
         });
-        elements.dateToInput.addEventListener("change", function () {
-            readFiltersFromDom();
-            refreshDataAfterFilters();
+        elements.dateToInput.addEventListener("change", function (event) {
+            applyFilterChange(event.currentTarget);
         });
         elements.resetButton.addEventListener("click", function () {
             elements.keywordInput.value = "";
@@ -1261,8 +1423,7 @@
             elements.continentSelect.value = "";
             elements.dateFromInput.value = "";
             elements.dateToInput.value = "";
-            readFiltersFromDom();
-            refreshDataAfterFilters();
+            applyFilterChange();
         });
         if (elements.copyFilterLink) {
             elements.copyFilterLink.addEventListener("click", async function () {

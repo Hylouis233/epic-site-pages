@@ -92,6 +92,42 @@ def validate_english_surface():
     if "Turn scattered outbreak signals into" not in index_text:
         fail("homepage English hero copy is missing")
 
+    required_surface_markers = {
+        'id="event-cards"': "responsive event cards",
+        "ATLAS / REGIONAL INDEX": "data-derived regional index",
+        'type="text" inputmode="numeric"': "locale-neutral date inputs",
+        'placeholder="YYYY-MM-DD"': "ISO date guidance",
+    }
+    for marker, feature in required_surface_markers.items():
+        if marker not in index_text:
+            fail(f"homepage is missing {feature}")
+    if 'type="date"' in index_text:
+        fail("homepage still uses locale-dependent native date inputs")
+
+    dashboard_text = (ROOT / "assets" / "epic" / "js" / "dashboard.js").read_text(encoding="utf-8")
+    for marker in (
+        "DISEASE_LABELS_EN",
+        "CONTINENT_LABELS_EN",
+        "LOCATION_LABELS_EN",
+        "SOURCE_ORG_LABELS_EN",
+        "isValidIsoDate",
+        "aggregateRegions",
+        "renderEventCards",
+    ):
+        if marker not in dashboard_text:
+            fail(f"dashboard regression: missing {marker}")
+    for retired_marker in ("abstract-world", "location-mini-map"):
+        if retired_marker in dashboard_text:
+            fail(f"dashboard still contains retired simulated map UI: {retired_marker}")
+
+    i18n_text = (ROOT / "assets" / "epic" / "js" / "i18n.js").read_text(encoding="utf-8")
+    if 'url.searchParams.set("lang", nextLanguage)' not in i18n_text:
+        fail("language toggle does not force a navigable locale change")
+
+    css_text = (ROOT / "assets" / "epic" / "css" / "app.css").read_text(encoding="utf-8")
+    if ".detail-hero::after" in css_text:
+        fail("event detail page still contains the decorative CSS-art circle")
+
     rss_text = (ROOT / "rss.xml").read_text(encoding="utf-8")
     if "<language>en-US</language>" not in rss_text:
         fail("RSS feed is not English-first")

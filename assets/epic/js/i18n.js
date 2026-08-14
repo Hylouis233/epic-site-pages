@@ -9,6 +9,7 @@
         "How status works": "查看状态说明",
         "Events": "事件",
         "Map": "地图",
+        "Regions": "区域",
         "Data": "数据接口",
         "Method & limits": "方法与局限",
         "Dark": "深色",
@@ -270,7 +271,7 @@
                 // The query parameter fallback still works when storage is unavailable.
             }
             const url = new URL(window.location.href);
-            url.searchParams.delete("lang");
+            url.searchParams.set("lang", nextLanguage);
             window.location.assign(url.toString());
         });
     }
