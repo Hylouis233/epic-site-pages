@@ -27,6 +27,9 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
+          cache-dependency-path: |
+            requirements-ci.txt
+            requirements-poster.txt
 
       - name: Install validation dependencies
         run: python -m pip install --require-hashes -r requirements-ci.txt
