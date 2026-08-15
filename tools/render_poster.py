@@ -39,9 +39,13 @@ def render_poster():
             page.screenshot(path=str(POSTER_PATH), type="jpeg", quality=94)
 
             page.goto(f"{base_url}/", wait_until="networkidle")
+            # The site defaults to the dark monitoring console; the social-card
+            # capture intentionally renders the light variant.
+            page.evaluate("localStorage.setItem('epic-theme', 'light'); location.reload();")
+            page.wait_for_load_state("networkidle")
             assert page.locator("html").get_attribute("lang") == "en"
             assert page.locator("html").get_attribute("data-theme") == "light"
-            assert "Turn scattered outbreak signals into" in page.locator("#hero-title").inner_text()
+            assert "Global infectious-disease" in page.locator("#hero-title").inner_text()
             assert page.locator("#language-toggle").inner_text() == "中文"
             assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
             page.locator("#language-toggle").focus()
@@ -72,8 +76,9 @@ def render_poster():
             assert page.locator("#date-from-input").get_attribute("aria-invalid") is None
 
             page.locator("#map-panel").scroll_into_view_if_needed()
-            page.wait_for_selector(".region-card")
-            assert page.locator(".region-card").count() > 0
+            page.wait_for_selector(".land-shape")
+            page.wait_for_selector(".cluster-badge")
+            assert page.locator(".region-sidebar__item").count() > 0
             assert page.locator(".abstract-world").count() == 0
 
             page.locator("#table-panel").scroll_into_view_if_needed()
@@ -96,7 +101,7 @@ def render_poster():
             with page.expect_navigation(wait_until="networkidle"):
                 page.locator("#language-toggle").click()
             assert page.locator("html").get_attribute("lang") == "zh-CN"
-            assert "把分散的疫情公开信号" in page.locator("#hero-title").inner_text()
+            assert "全球传染病" in page.locator("#hero-title").inner_text()
             assert page.locator("#language-toggle").inner_text() == "EN"
 
             page.evaluate("window.localStorage.removeItem('epic-lang')")
