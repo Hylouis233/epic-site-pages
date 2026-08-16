@@ -46,6 +46,17 @@ class PublicSurfaceValidationTests(unittest.TestCase):
     def test_repository_is_english_first_with_chinese_switch(self):
         validator.validate_english_surface()
 
+    def test_scheduled_refresh_uses_the_vps_public_endpoint(self):
+        workflow = (ROOT / ".github" / "workflows" / "update-public-data.yml").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn(
+            "EPIC_PUBLIC_SOURCE_BASE_URL: https://epicdemic.hylouis.top/",
+            workflow,
+        )
+        self.assertNotIn("secrets.EPIC_PUBLIC_SOURCE_BASE_URL", workflow)
+
 
 if __name__ == "__main__":
     unittest.main()

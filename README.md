@@ -142,7 +142,7 @@ python -m unittest discover -s tests -v
 python tools/validate_release.py
 ```
 
-The scheduled workflow requires the repository secret `EPIC_PUBLIC_SOURCE_BASE_URL`. It refreshes once daily and may also be triggered manually. A scheduled refresh additionally runs:
+The scheduled workflow pulls the public snapshot from `https://epicdemic.hylouis.top/`, the VPS endpoint backed by the private EPIC pipeline, and refreshes once daily. It may also be triggered manually. A scheduled refresh additionally runs:
 
 ```bash
 python tools/validate_release.py --require-fresh-ingest
