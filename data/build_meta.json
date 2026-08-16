@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-16T03:30:08Z",
+  "build_generated_at": "2026-08-16T03:54:32Z",
   "data_as_of": "2026-08-15",
-  "last_successful_ingest_at": "2026-08-16T03:30:08Z",
+  "last_successful_ingest_at": "2026-08-16T03:54:32Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -11,7 +11,7 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "generated_at": "2026-08-16T03:30:08Z",
+  "generated_at": "2026-08-16T03:54:32Z",
   "record_count": 49,
   "map_point_count": 48,
   "disease_count": 13,
@@ -26,7 +26,7 @@
     "accepted_record_count": 49,
     "quarantined_record_count": 0
   },
-  "rss_generated_at": "2026-08-16T03:30:08Z",
+  "rss_generated_at": "2026-08-16T03:54:32Z",
   "rss_timezone": "Asia/Shanghai",
   "rss_window_start": "2026-08-16T00:00:00+08:00",
   "rss_window_end": "2026-08-16T23:59:59+08:00",
