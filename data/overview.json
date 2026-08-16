@@ -27,9 +27,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-16T03:22:02Z",
+  "build_generated_at": "2026-08-16T03:30:08Z",
   "data_as_of": "2026-08-15",
-  "last_successful_ingest_at": "2026-08-16T03:22:02Z",
+  "last_successful_ingest_at": "2026-08-16T03:30:08Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",

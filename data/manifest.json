@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-16T03:22:02Z",
+  "build_generated_at": "2026-08-16T03:30:08Z",
   "data_as_of": "2026-08-15",
-  "last_successful_ingest_at": "2026-08-16T03:22:02Z",
+  "last_successful_ingest_at": "2026-08-16T03:30:08Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -27,13 +27,13 @@
     "parquet": "events.parquet"
   },
   "checksums_sha256": {
-    "records.json": "2e93f75e97b364eedfc629c8c8c6c9ab250f3a4b92a2bd47bed09fa919c311da",
-    "events.ndjson": "48d0c868d4767e148f166a08cee9061d9dcc1129fef9605eede8475fd63e8af5",
-    "events.csv": "04f81cd1f5dbef6024d3e59234fb9e1c24f8d3cf75cfad2c1f9a9edbba0f0a4c",
-    "events.geojson": "80adfd577bd978df493b0db27c2d40892821204a60f9e4bd7080ae0b5c80ead2",
-    "schema.json": "22442219dc435821bc9e54bc65619ed6f017b71a26a09ebdf7b6ba90dff100ed",
-    "quality-report.json": "a0157e8cd7e526ee831350fa87c3a0181fd2c9f289076728f14e4f140a823cc4",
-    "events.parquet": "fb4ddfd4c5861373bf16971f2d1f428670917e0ef15d8d230c6ce823f58558cc"
+    "records.json": "292aabfd418b52e235bb25ad72b494bb32999c5124a2e5a28d08fd8652808302",
+    "events.ndjson": "a3a9e1bca7cd37ce9f8bfbf63dc32d91469ddffb3897e985c219f913090d1574",
+    "events.csv": "40c4248dba57a70e536b5c050ca0b419f35b3b60e64cb306df95cbe8f406189f",
+    "events.geojson": "10a3afa25fb4fb979754297d344c3ac946a44d292111b702497e0db42164d0d2",
+    "schema.json": "07670fe85c758949d7bdc8dcb29942d1243485be3add880ce68ac16cc1c96aa6",
+    "quality-report.json": "d12fb8cad5d4b88b20cf41319b49f2301ef96135b745fc5a95f2881743268ecb",
+    "events.parquet": "236bac275dd5feb5e9e6a85ac6a701b2683c94dbd9a3fc4eca1c69bb829e215d"
   },
   "license": {
     "repository": "proprietary-source-available",
