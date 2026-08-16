@@ -54,6 +54,23 @@ class DiseaseAndScaleTests(unittest.TestCase):
         self.assertEqual(item["disease_id"], "multiple-notifiable-diseases")
         self.assertTrue(item["disease_is_aggregate"])
 
+    def test_current_upstream_labels_have_stable_english_names(self):
+        expected = {
+            "儿童急性呼吸道": ("pediatric-acute-respiratory-illness", "Pediatric acute respiratory illness"),
+            "创伤弧菌": ("vibrio-vulnificus-infection", "Vibrio vulnificus infection"),
+            "埃博拉": ("ebola-virus-disease", "Ebola virus disease"),
+            "李斯特菌": ("listeriosis", "Listeriosis"),
+            "麻疹": ("measles", "Measles"),
+            "沙门氏菌": ("salmonellosis", "Salmonellosis"),
+            "钩端螺旋体病": ("leptospirosis", "Leptospirosis"),
+        }
+
+        for raw_label, (disease_id, english_name) in expected.items():
+            with self.subTest(raw_label=raw_label):
+                item = builder.canonicalize_disease(raw_label)
+                self.assertEqual(item["disease_id"], disease_id)
+                self.assertEqual(item["disease_name_en"], english_name)
+
     def test_chinese_scale_extracts_cases_and_deaths(self):
         scale = builder.parse_scale("累计报告56,422例登革热病例,死亡35例")
         self.assertEqual(scale["cases"], 56422)

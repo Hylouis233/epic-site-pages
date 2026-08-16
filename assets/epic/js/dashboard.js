@@ -20,17 +20,24 @@
         "乙类传染病": "Notifiable diseases group",
         "军团菌病": "Legionellosis",
         "多种法定传染病": "Multiple notifiable diseases",
+        "儿童急性呼吸道疾病": "Pediatric acute respiratory illness",
+        "创伤弧菌感染": "Vibrio vulnificus infection",
+        "埃博拉": "Ebola virus disease",
         "急性上呼吸道感染": "Acute upper respiratory infection",
         "急性腹泻病": "Acute diarrheal disease",
         "恙虫病": "Scrub typhus",
         "新型冠状病毒感染": "COVID-19",
         "流行性感冒": "Influenza",
         "猴痘": "Mpox",
+        "李斯特菌病": "Listeriosis",
+        "麻疹": "Measles",
+        "沙门氏菌病": "Salmonellosis",
         "环孢子虫病": "Cyclosporiasis",
         "疟疾": "Malaria",
         "登革热": "Dengue",
         "禽流感": "Avian influenza",
         "绦虫病": "Taeniasis",
+        "钩端螺旋体病": "Leptospirosis",
         "肠病毒 D68 型感染": "Enterovirus D68 infection",
         "肠病毒感染": "Enterovirus infection",
         "肺炎链球菌病": "Pneumococcal disease",
@@ -516,6 +523,24 @@
         return /[\u3400-\u9fff]/.test(String(value || ""));
     }
 
+    function staticDiseaseLabel(raw) {
+        const records = Array.isArray(state.staticRecords) ? state.staticRecords : [];
+        const record = records.find(function (item) {
+            return item && item.disease === raw;
+        });
+        if (!record) {
+            return "";
+        }
+        const label = String(record.disease_name_en || "").trim();
+        if (!label || containsHan(label)) {
+            return "";
+        }
+        if (label === "Unclassified" && String(record.disease_id || "").startsWith("unclassified-")) {
+            return `Unclassified · ${String(record.disease_id).slice(-8)}`;
+        }
+        return label;
+    }
+
     function displayDisease(value) {
         if (value && typeof value === "object") {
             const chinese = value.disease_name_zh || value.disease || t("Unspecified disease", "未标注疾病");
@@ -523,7 +548,13 @@
             return isChinese() ? chinese : english;
         }
         const raw = String(value || "");
-        return isChinese() ? raw : (DISEASE_LABELS_EN[raw] || raw || "Unspecified disease");
+        if (isChinese()) {
+            return raw;
+        }
+        return DISEASE_LABELS_EN[raw]
+            || staticDiseaseLabel(raw)
+            || (containsHan(raw) ? "Unclassified disease" : raw)
+            || "Unspecified disease";
     }
 
     function displayContinent(value) {
