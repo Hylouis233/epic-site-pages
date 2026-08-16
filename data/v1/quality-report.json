@@ -4,13 +4,13 @@
     {
       "id": "upstream_nonzero",
       "status": "pass",
-      "value": 58,
+      "value": 49,
       "threshold": "> 0"
     },
     {
       "id": "record_count_change",
       "status": "pass",
-      "value": 1.0,
+      "value": 0.845,
       "threshold": ">= 0.5"
     },
     {
@@ -21,8 +21,8 @@
     },
     {
       "id": "future_dates",
-      "status": "warning",
-      "value": 1,
+      "status": "pass",
+      "value": 0,
       "threshold": "0 raw future dates"
     },
     {
@@ -34,7 +34,7 @@
     {
       "id": "coordinates",
       "status": "pass",
-      "value": 0.983,
+      "value": 0.98,
       "threshold": ">= 0.9 preferred"
     },
     {
@@ -44,8 +44,8 @@
       "threshold": "0 after normalization"
     }
   ],
-  "upstream_record_count": 58,
-  "accepted_record_count": 58,
+  "upstream_record_count": 49,
+  "accepted_record_count": 49,
   "quarantined_record_count": 0,
   "quarantined": []
 }

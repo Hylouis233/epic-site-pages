@@ -1,24 +1,21 @@
 {
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-14T04:00:00Z",
-  "data_as_of": "2026-07-10",
-  "last_successful_ingest_at": "2026-07-11T05:23:39Z",
-  "source_status": "degraded",
-  "source_status_label": "降级",
-  "source_status_label_en": "Degraded",
-  "status_message_zh": "上游采集未通过质量闸门，继续提供最近一次成功快照。",
-  "status_message_en": "Upstream ingest did not pass the quality gate; the latest successful snapshot remains available.",
-  "staleness_hours": 814.6,
+  "build_generated_at": "2026-08-16T03:22:02Z",
+  "data_as_of": "2026-08-15",
+  "last_successful_ingest_at": "2026-08-16T03:22:02Z",
+  "source_status": "healthy",
+  "source_status_label": "正常",
+  "source_status_label_en": "Healthy",
+  "status_message_zh": "上游采集与公开数据质量检查通过。",
+  "status_message_en": "Upstream ingest and public-data quality checks passed.",
+  "staleness_hours": 0,
   "stale_after_hours": 72,
-  "warnings": [
-    "rebuilt public artifacts from the retained local snapshot",
-    "upstream was not contacted during local rebuild"
-  ],
-  "record_count": 58,
-  "event_count": 58,
-  "signal_count": 58,
-  "source_count": 58,
-  "disease_count": 18,
+  "warnings": [],
+  "record_count": 49,
+  "event_count": 49,
+  "signal_count": 49,
+  "source_count": 49,
+  "disease_count": 13,
   "continent_count": 4,
   "formats": {
     "json": "records.json",
@@ -30,13 +27,13 @@
     "parquet": "events.parquet"
   },
   "checksums_sha256": {
-    "records.json": "3bd31ecf77bf3f95451b9eaecdcddefaaa58130039abf4751302a0abb21bc169",
-    "events.ndjson": "8b4212d0ac8af48aeab2a88caa893ea098df80d73f647ac9b8e2589b52a96049",
-    "events.csv": "270325c0b7b78732f68f317e2f1004ee3426984cdfc7e3b1698e93a9078e8cc7",
-    "events.geojson": "f6b309005577fae5c5c92c9f18ba36a6bfc5059d39fb4f20fb65ebe05eef91e8",
+    "records.json": "2e93f75e97b364eedfc629c8c8c6c9ab250f3a4b92a2bd47bed09fa919c311da",
+    "events.ndjson": "48d0c868d4767e148f166a08cee9061d9dcc1129fef9605eede8475fd63e8af5",
+    "events.csv": "04f81cd1f5dbef6024d3e59234fb9e1c24f8d3cf75cfad2c1f9a9edbba0f0a4c",
+    "events.geojson": "80adfd577bd978df493b0db27c2d40892821204a60f9e4bd7080ae0b5c80ead2",
     "schema.json": "22442219dc435821bc9e54bc65619ed6f017b71a26a09ebdf7b6ba90dff100ed",
-    "quality-report.json": "22bdf13164b5e4778e5563c94e0c09f273d82fdbf83446deb8cf6d3388e57803",
-    "events.parquet": "c3ec0d9df64f4e13c4e0eb136f1f1777032e33f1dd8025f1869f5187428d332f"
+    "quality-report.json": "a0157e8cd7e526ee831350fa87c3a0181fd2c9f289076728f14e4f140a823cc4",
+    "events.parquet": "fb4ddfd4c5861373bf16971f2d1f428670917e0ef15d8d230c6ce823f58558cc"
   },
   "license": {
     "repository": "proprietary-source-available",
@@ -45,8 +42,8 @@
   },
   "quality_gate": {
     "passed": true,
-    "ingest_accepted": false,
-    "accepted_record_count": 58,
+    "ingest_accepted": true,
+    "accepted_record_count": 49,
     "quarantined_record_count": 0
   }
 }

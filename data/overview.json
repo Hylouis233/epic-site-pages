@@ -1,50 +1,42 @@
 {
-  "total_records": 58,
-  "disease_count": 18,
+  "total_records": 49,
+  "disease_count": 13,
   "continent_count": 4,
-  "latest_date": "2026-07-10",
+  "latest_date": "2026-08-15",
   "filter_options": {
     "diseases": [
-      "乙类传染病",
-      "军团菌病",
-      "多种法定传染病",
-      "急性上呼吸道感染",
-      "急性腹泻病",
-      "恙虫病",
+      "儿童急性呼吸道疾病",
+      "创伤弧菌感染",
+      "埃博拉",
       "新型冠状病毒感染",
+      "李斯特菌病",
+      "沙门氏菌病",
       "流行性感冒",
       "猴痘",
       "环孢子虫病",
       "疟疾",
       "登革热",
-      "禽流感",
-      "绦虫病",
-      "肠病毒 D68 型感染",
-      "肠病毒感染",
-      "肺炎链球菌病",
-      "诺如病毒感染"
+      "钩端螺旋体病",
+      "麻疹"
     ],
     "continents": [
       "亚洲",
       "北美洲",
-      "大洋洲",
+      "南美洲",
       "非洲"
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-14T04:00:00Z",
-  "data_as_of": "2026-07-10",
-  "last_successful_ingest_at": "2026-07-11T05:23:39Z",
-  "source_status": "degraded",
-  "source_status_label": "降级",
-  "source_status_label_en": "Degraded",
-  "status_message_zh": "上游采集未通过质量闸门，继续提供最近一次成功快照。",
-  "status_message_en": "Upstream ingest did not pass the quality gate; the latest successful snapshot remains available.",
-  "staleness_hours": 814.6,
+  "build_generated_at": "2026-08-16T03:22:02Z",
+  "data_as_of": "2026-08-15",
+  "last_successful_ingest_at": "2026-08-16T03:22:02Z",
+  "source_status": "healthy",
+  "source_status_label": "正常",
+  "source_status_label_en": "Healthy",
+  "status_message_zh": "上游采集与公开数据质量检查通过。",
+  "status_message_en": "Upstream ingest and public-data quality checks passed.",
+  "staleness_hours": 0,
   "stale_after_hours": 72,
-  "warnings": [
-    "rebuilt public artifacts from the retained local snapshot",
-    "upstream was not contacted during local rebuild"
-  ],
-  "last_modified": "2026-07-10"
+  "warnings": [],
+  "last_modified": "2026-08-15"
 }
