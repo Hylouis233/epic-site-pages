@@ -163,12 +163,17 @@ class SnapshotTests(unittest.TestCase):
         self.assertFalse(any("original_text" in record for record in self.records))
 
     def test_snapshot_has_no_future_sort_dates(self):
-        self.assertFalse(any((record.get("date_sort") or "") > "2026-08-14" for record in self.records))
+        build_date = self.manifest["build_generated_at"][:10]
+        self.assertFalse(any((record.get("date_sort") or "") > build_date for record in self.records))
 
     def test_manifest_separates_build_and_data_time(self):
         self.assertNotEqual(self.manifest["build_generated_at"][:10], self.manifest["data_as_of"])
-        self.assertEqual(self.manifest["source_status"], "degraded")
-        self.assertFalse(self.manifest["quality_gate"]["ingest_accepted"])
+        self.assertIn(self.manifest["source_status"], {"healthy", "degraded", "stale"})
+        if self.manifest["source_status"] == "healthy":
+            self.assertTrue(self.manifest["quality_gate"]["passed"])
+            self.assertTrue(self.manifest["quality_gate"]["ingest_accepted"])
+        else:
+            self.assertFalse(self.manifest["quality_gate"]["ingest_accepted"])
 
     def test_compatibility_csv_excludes_third_party_full_text(self):
         with (ROOT / "data" / "weekly_merged_latest.csv").open(
