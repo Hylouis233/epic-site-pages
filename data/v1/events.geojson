@@ -3,6 +3,78 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_4e6c12b8237f9a7da042",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.9,
+          6.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_4e6c12b8237f9a7da042",
+        "published_at": "2026-08-16",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "科伦坡",
+        "continent": "亚洲",
+        "source_org": "Adaderana",
+        "source_type": "other_open_source",
+        "source": "https://adaderana.lk/news/cmsvehh1u0009356qtjep3vej",
+        "description_cn": "斯里兰卡2026年登革热累计超9.2万例,死亡68例,西部省最重",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_9a58e6139dc242653ca1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.4,
+          36.8
+        ]
+      },
+      "properties": {
+        "event_id": "evt_9a58e6139dc242653ca1",
+        "published_at": "2026-08-16",
+        "disease_id": "salmonellosis",
+        "disease_name_zh": "沙门氏菌病",
+        "location": "美国加利福尼亚州圣地亚哥县",
+        "continent": "北美洲",
+        "source_org": "Sandiegouniontribune",
+        "source_type": "other_open_source",
+        "source": "https://www.sandiegouniontribune.com/2026/08/15/seven-hospitalized-in-salmonella-outbreak",
+        "description_cn": "加州圣地亚哥县沙门氏菌疫情,累计21例8人住院,涉事生鸡蛋制蛋黄酱",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_7f23273d2ca2b0b505aa",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1,
+          28.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_7f23273d2ca2b0b505aa",
+        "published_at": "2026-08-15",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "印度德里",
+        "continent": "亚洲",
+        "source_org": "Newskarnataka",
+        "source_type": "news_media",
+        "source": "https://newskarnataka.com/health/delhi-h1n1-cases-surge-six-fold-among-children/15082026",
+        "description_cn": "印度德里2026年H1N1病例激增至1449例,是去年同期的6倍多,儿童感染明显增多",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_b32a8c744d743d6fa6d9",
       "geometry": {
         "type": "Point",
@@ -771,30 +843,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_3f27915a4e14b33eeb77",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          73.1,
-          33.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_3f27915a4e14b33eeb77",
-        "published_at": "2026-08-09",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "伊斯兰堡",
-        "continent": "亚洲",
-        "source_org": "杜尼亚新闻",
-        "source_type": "news_media",
-        "source": "https://dunyanews.tv/en/Health/966998-islamabad-reports-only-three-dengue-cases-this-year-despite-thousands-",
-        "description_cn": "伊斯兰堡今年截至8月6日仅报告3例登革热病例,当局加强灭蚊和防疫措施",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_e0c19c205b6f7bf88795",
       "geometry": {
         "type": "Point",
@@ -838,78 +886,6 @@
         "source_type": "other_open_source",
         "source": "https://timesofindia.indiatimes.com/city/hyderabad/leptospirosis-cases-surge-nearly-125-fold-in-telangana-in-two-years/articleshow/133074185.cms",
         "description_cn": "印度特伦甘纳邦钩端螺旋体病病例两年增约125倍,2025年已确诊101例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_86c13054caf06cd81703",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.4,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_86c13054caf06cd81703",
-        "published_at": "2026-08-09",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "达卡市",
-        "continent": "亚洲",
-        "source_org": "Bd Pratidin",
-        "source_type": "other_open_source",
-        "source": "https://en.bd-pratidin.com/national/2026/08/09/67726",
-        "description_cn": "孟加拉国登革热疫情加剧,达卡地区病例最多,全年已报告18673例感染,59例死亡",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_38715b74a9b907644769",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.0,
-          38.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_38715b74a9b907644769",
-        "published_at": "2026-08-09",
-        "disease_id": "salmonellosis",
-        "disease_name_zh": "沙门氏菌病",
-        "location": "美国",
-        "continent": "北美洲",
-        "source_org": "Abcnews",
-        "source_type": "news_media",
-        "source": "https://abcnews.com/video/135488300",
-        "description_cn": "美国沙门氏菌疫情涉及27个州,超345例,与jalapeños有关。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_95356bd281f13d192539",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          73.1,
-          33.6
-        ]
-      },
-      "properties": {
-        "event_id": "evt_95356bd281f13d192539",
-        "published_at": "2026-08-09",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "巴基斯坦/拉瓦尔品第",
-        "continent": "亚洲",
-        "source_org": "Tribune",
-        "source_type": "other_open_source",
-        "source": "https://tribune.com.pk/story/2622876/dengue-threat-escalates-after-monsoon-rains",
-        "description_cn": "巴基斯坦拉瓦尔品第报告24例登革热病例,其中6例住院,蚊媒传播。",
         "data_quality_score": 92
       }
     },
@@ -1078,30 +1054,6 @@
         "source_type": "other_open_source",
         "source": "https://health-infobase.canada.ca/respiratory-virus-surveillance",
         "description_cn": "加拿大2026年第29周流感73例、新冠169例、RSV 32例,住院率0.1/10万人",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_efa9c6ce6bde2e068cfe",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.0,
-          36.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_efa9c6ce6bde2e068cfe",
-        "published_at": "2026-07-26",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "日本",
-        "continent": "亚洲",
-        "source_org": "JIHS",
-        "source_type": "other_open_source",
-        "source": "https://id-info.jihs.go.jp/en/surveillance/idwr/rapid/2026/30/index.html",
-        "description_cn": "日本2026年第30周(7/20-7/26)监测数据显示COVID-19新增5706例",
         "data_quality_score": 92
       }
     },
