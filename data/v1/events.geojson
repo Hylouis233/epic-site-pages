@@ -3,6 +3,174 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_8d4062b40a4288e84406",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9,
+          21.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_8d4062b40a4288e84406",
+        "published_at": "2026-08-19",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "河内",
+        "continent": "亚洲",
+        "source_org": "Dantri",
+        "source_type": "news_media",
+        "source": "https://dtinews.dantri.com.vn/vietnam-today/hanoi-dengue-cases-surge-as-peak-season-hits-20260819094413975.htm",
+        "description_cn": "2026年8月19日报道,越南河内市疾病控制中心(CDC)通报,8月7日至14日期间河内在74个郡/社新增316例登革热",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_922c72b37a87b78b7390",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8,
+          7.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_922c72b37a87b78b7390",
+        "published_at": "2026-08-19",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "斯里兰卡",
+        "continent": "亚洲",
+        "source_org": "Adaderana",
+        "source_type": "other_open_source",
+        "source": "https://adaderana.lk/news/cmszmflbu0000356pu5i0w3x3",
+        "description_cn": "2026年斯里兰卡登革热累计92,854例,死亡69例,甘帕哈、科伦坡、康提等地区高发",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_ad908498f3f808d86a95",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -155.6,
+          19.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_ad908498f3f808d86a95",
+        "published_at": "2026-08-19",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "美国夏威夷州瓦胡岛",
+        "continent": "北美洲",
+        "source_org": "Mauinow",
+        "source_type": "other_open_source",
+        "source": "https://mauinow.com/2026/08/18/doh-reports-another-travel-related-dengue-virus-case",
+        "description_cn": "夏威夷州瓦胡岛新增1例输入性登革热,2026年累计7例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_fc03c12c542af596b01b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_fc03c12c542af596b01b",
+        "published_at": "2026-08-19",
+        "disease_id": "mpox",
+        "disease_name_zh": "猴痘",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "LINE",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/x2EwaK8",
+        "description_cn": "疾管署提醒七夕性健康,2026年至7月梅毒6116例、艾滋537例、淋病3092例、M痘27例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_3a23a0871a9436cdde4d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_3a23a0871a9436cdde4d",
+        "published_at": "2026-08-19",
+        "disease_id": "unclassified-ad00f809",
+        "disease_name_zh": "梅毒、艾滋病",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "Pchome",
+        "source_type": "news_media",
+        "source": "https://news.pchome.com.tw/living/nownews/20260819/index-78709040012115207009.html",
+        "description_cn": "疾管署报告上半年梅毒、艾滋病病例上升,推广匿名告知平台与安全性行为",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_dbb95f5c8b7f0bec8e56",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_dbb95f5c8b7f0bec8e56",
+        "published_at": "2026-08-19",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "Businesstoday",
+        "source_type": "news_media",
+        "source": "https://thebetteraging.businesstoday.com.tw/article/detail/202608190021",
+        "description_cn": "台湾北部一名5岁女童7月底出现发烧、咳嗽等症状,确诊流感后并发脑炎、脑病变及急性肾衰竭、败血性休克,住院约2周后不幸死亡",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_0d106084462079abd380",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -155.6,
+          19.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_0d106084462079abd380",
+        "published_at": "2026-08-19",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "夏威夷州",
+        "continent": "北美洲",
+        "source_org": "Staradvertiser",
+        "source_type": "other_open_source",
+        "source": "https://www.staradvertiser.com/2026/08/18/breaking-news/hawaiis-7th-case-of-travel-related-dengue-confirmed-on-oahu",
+        "description_cn": "夏威夷欧胡岛确诊第7例旅行相关登革热病例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_be17ab3fe67216d2cc56",
       "geometry": {
         "type": "Point",
@@ -47,6 +215,30 @@
         "source": "https://www.cdc.gov.tw/Bulletin/Detail/63i4Okm5fOHntmVdz0gb1Q?typeId=9",
         "description_cn": "疾管署提醒七夕性安全,2026年1-7月梅毒6,116例、淋病3,092例、HIV 537例、M痘27例",
         "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_1c59fd1a91fa2acb41e9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0,
+          20.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_1c59fd1a91fa2acb41e9",
+        "published_at": "2026-08-18",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "印度",
+        "continent": "亚洲",
+        "source_org": "Thehindu",
+        "source_type": "other_open_source",
+        "source": "https://www.thehindu.com/news/cities/bangalore/500-students-of-clarence-high-school-in-bengaluru-fall-sick-management-blames-street-vendors/article71359325.ece",
+        "description_cn": "班加罗尔一中学500余学生出现流感样症状,2名教职员工确诊H1N1",
+        "data_quality_score": 92
       }
     },
     {
@@ -239,6 +431,30 @@
         "source": "https://www.cureus.com/articles/432522-atypical-presentation-of-chikungunya-in-a-64-year-old-man-a-case-report-from-the-uae",
         "description_cn": "阿联酋报告一例64岁男性基孔肯雅热不典型表现的临床病例报告",
         "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_67878809927d062c7a38",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.0,
+          33.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_67878809927d062c7a38",
+        "published_at": "2026-08-18",
+        "disease_id": "multiple-notifiable-diseases",
+        "disease_name_zh": "多种法定传染病",
+        "location": "江苏省",
+        "continent": "亚洲",
+        "source_org": "Jiangsu",
+        "source_type": "official_health_authority",
+        "source": "https://wjw.jiangsu.gov.cn/art/2026/8/14/art_49513_11816413.html",
+        "description_cn": "2026年08月18日 江苏省发生多种法定传染病(霍乱、新型冠状病毒感染、梅毒、病毒性肝炎、肺结核、淋病、艾滋病、流行性",
+        "data_quality_score": 100
       }
     },
     {
@@ -963,30 +1179,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_1b6c91d6677672a463fb",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.0,
-          20.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_1b6c91d6677672a463fb",
-        "published_at": "2026-08-12",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "South Goa District Hospital, Goa, India",
-        "continent": "亚洲",
-        "source_org": "Prudent Media",
-        "source_type": "other_open_source",
-        "source": "https://www.prudentmedia.in/politics/dengue-cases-surge-at-south-goa-district-hospital-71-test-positive-in-august-so-far/37702.html",
-        "description_cn": "2026年5-8月,南果亚地区医院登革热病例激增,7月住院79人,阳性91例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_2280e37288ee72067558",
       "geometry": {
         "type": "Point",
@@ -1006,78 +1198,6 @@
         "source_type": "news_media",
         "source": "https://today.line.me/tw/v3/article/9mG0o5E",
         "description_cn": "上周新冠就诊增逾27%,新增72例重症14例死亡,3.7万剂疫苗13日配送",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_61ee86a3a27d7b99b726",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -42.4,
-          -22.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_61ee86a3a27d7b99b726",
-        "published_at": "2026-08-12",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "巴西里约热内卢州",
-        "continent": "南美洲",
-        "source_org": "52hrtt",
-        "source_type": "other_open_source",
-        "source": "https://www.52hrtt.com/br/n/w/info/A1785825188915",
-        "description_cn": "2026年8月,巴西圣保罗州和里约热内卢州累计报告麻疹确诊病例24例,政府加强疫苗接种",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_a05a1801c9282992f5ee",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_a05a1801c9282992f5ee",
-        "published_at": "2026-08-11",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国佛罗里达州皮内拉斯县",
-        "continent": "北美洲",
-        "source_org": "WFLA",
-        "source_type": "other_open_source",
-        "source": "https://www.wfla.com/news/2-locally-acquired-dengue-fever-cases-in-pinellas-county-to-boost-mosquito-control-efforts/amp",
-        "description_cn": "美国佛罗里达州皮内拉斯县报告2例本地登革热病例,卫生部门加强灭蚊。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_c7dea164266c47e3190a",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_c7dea164266c47e3190a",
-        "published_at": "2026-08-11",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "LINE",
-        "source_type": "news_media",
-        "source": "https://today.line.me/tw/v3/article/5y1z6JK",
-        "description_cn": "上周国内新增72例新冠重症,14例死亡,含1名南部先天疾病女婴及1名癌症长者,均未接种疫苗。",
         "data_quality_score": 92
       }
     },
@@ -1155,30 +1275,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_483a9f074638df620561",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.5,
-          37.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_483a9f074638df620561",
-        "published_at": "2026-08-02",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "韩国",
-        "continent": "亚洲",
-        "source_org": "KDCA",
-        "source_type": "other_open_source",
-        "source": "https://dportal.kdca.go.kr/pot/bbs/BD_selectBbs.do?q_bbsDocNo=20260806162120709&q_bbsSn=1010&q_clsfNo=2",
-        "description_cn": "韩国2026年第31周流感与新冠住院人数上升,急性呼吸道感染住院1,076例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_3a651698981c088545de",
       "geometry": {
         "type": "Point",
@@ -1227,21 +1323,21 @@
     },
     {
       "type": "Feature",
-      "id": "evt_f2fd6a29966c776d3dbd",
+      "id": "evt_bf09a40aea7494034600",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          109.5,
-          18.8
+          18.7,
+          62.9
         ]
       },
       "properties": {
-        "event_id": "evt_f2fd6a29966c776d3dbd",
+        "event_id": "evt_bf09a40aea7494034600",
         "published_at": "2026-07-12",
         "disease_id": "covid-19",
         "disease_name_zh": "新型冠状病毒感染",
-        "location": "南热带",
-        "continent": "亚洲",
+        "location": "北欧",
+        "continent": "欧洲",
         "source_org": "世界卫生组织",
         "source_type": "international_organization",
         "source": "https://data.who.int/dashboards/covid19/summary?n=c",
