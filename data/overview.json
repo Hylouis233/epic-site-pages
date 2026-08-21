@@ -1,8 +1,8 @@
 {
   "total_records": 58,
-  "disease_count": 12,
+  "disease_count": 13,
   "continent_count": 5,
-  "latest_date": "2026-08-19",
+  "latest_date": "2026-08-20",
   "filter_options": {
     "diseases": [
       "儿童急性呼吸道疾病",
@@ -16,6 +16,7 @@
       "猴痘",
       "环孢子虫病",
       "登革热",
+      "西尼罗病毒",
       "麻疹"
     ],
     "continents": [
@@ -27,9 +28,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-20T03:14:25Z",
-  "data_as_of": "2026-08-19",
-  "last_successful_ingest_at": "2026-08-20T03:14:25Z",
+  "build_generated_at": "2026-08-21T03:26:03Z",
+  "data_as_of": "2026-08-20",
+  "last_successful_ingest_at": "2026-08-21T03:26:03Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -38,5 +39,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-08-19"
+  "last_modified": "2026-08-20"
 }

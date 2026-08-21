@@ -1,5 +1,50 @@
 [
   {
+    "id": "evt_b7fd13725e22beb89f2e",
+    "event_id": "evt_b7fd13725e22beb89f2e",
+    "original_date": "2026-08-20",
+    "disease": "新型冠状病毒感染",
+    "disease_id": "covid-19",
+    "location": "中国台湾",
+    "latitude": 23.7,
+    "longitude": 121.0,
+    "description_cn": "台湾近期新冠重症及死亡病例上升,单周新增84例重症,12例死亡,累计重症421例,死亡54例",
+    "continent": "亚洲",
+    "source_org": "LIFE",
+    "quality_status": "validated",
+    "data_quality_score": 92
+  },
+  {
+    "id": "evt_7191b95e4dae5126d126",
+    "event_id": "evt_7191b95e4dae5126d126",
+    "original_date": "2026-08-20",
+    "disease": "登革热",
+    "disease_id": "dengue",
+    "location": "河内",
+    "latitude": 21.0,
+    "longitude": 105.9,
+    "description_cn": "越南河内市登革热病例快速增加,市疾控中心启动强化防控行动。8月7日至14日一周内全市74个公社/坊报告316例登革热病例",
+    "continent": "亚洲",
+    "source_org": "Vietnamplus",
+    "quality_status": "validated",
+    "data_quality_score": 92
+  },
+  {
+    "id": "evt_8ac5aa66bc40d4b7ac0e",
+    "event_id": "evt_8ac5aa66bc40d4b7ac0e",
+    "original_date": "2026-08-19",
+    "disease": "西尼罗病毒",
+    "disease_id": "unclassified-63fe91f7",
+    "location": "美国加利福尼亚州",
+    "latitude": 36.8,
+    "longitude": -119.4,
+    "description_cn": "美国西尼罗病毒2026年已致8人死亡,累计超180例,亚利桑那州疫情严重",
+    "continent": "北美洲",
+    "source_org": "Patch",
+    "quality_status": "warning",
+    "data_quality_score": 80
+  },
+  {
     "id": "evt_8d4062b40a4288e84406",
     "event_id": "evt_8d4062b40a4288e84406",
     "original_date": "2026-08-19",
@@ -405,6 +450,21 @@
     "data_quality_score": 92
   },
   {
+    "id": "evt_d293621eaaa4a1e1cc57",
+    "event_id": "evt_d293621eaaa4a1e1cc57",
+    "original_date": "2026-08-16",
+    "disease": "新型冠状病毒感染",
+    "disease_id": "covid-19",
+    "location": "韩国",
+    "latitude": 37.0,
+    "longitude": 127.5,
+    "description_cn": "韩国第33周流感门诊7.5/千人,COVID-19住院56例",
+    "continent": "亚洲",
+    "source_org": "韩国疾病管理厅",
+    "quality_status": "validated",
+    "data_quality_score": 92
+  },
+  {
     "id": "evt_4e6c12b8237f9a7da042",
     "event_id": "evt_4e6c12b8237f9a7da042",
     "original_date": "2026-08-16",
@@ -690,36 +750,6 @@
     "data_quality_score": 92
   },
   {
-    "id": "evt_47a1dc4136f3a6b0c5da",
-    "event_id": "evt_47a1dc4136f3a6b0c5da",
-    "original_date": "2026-08-13",
-    "disease": "新型冠状病毒感染",
-    "disease_id": "covid-19",
-    "location": "中国台湾",
-    "latitude": 23.7,
-    "longitude": 121.0,
-    "description_cn": "上周台湾新增72例新冠重症、14例死亡,疫情预计8月中下旬达高峰",
-    "continent": "亚洲",
-    "source_org": "LIFE",
-    "quality_status": "validated",
-    "data_quality_score": 92
-  },
-  {
-    "id": "evt_e10f0b891ae6d20ddb40",
-    "event_id": "evt_e10f0b891ae6d20ddb40",
-    "original_date": "2026-08-13",
-    "disease": "环孢子虫病",
-    "disease_id": "cyclosporiasis",
-    "location": "美国",
-    "latitude": 38.0,
-    "longitude": -97.0,
-    "description_cn": "美国2026年环孢子虫病累计2.8万例,688人住院,2人死亡",
-    "continent": "北美洲",
-    "source_org": "Foodsafetynews",
-    "quality_status": "validated",
-    "data_quality_score": 92
-  },
-  {
     "id": "evt_ab32862af1364b5e3806",
     "event_id": "evt_ab32862af1364b5e3806",
     "original_date": "2026-08-13",
@@ -733,21 +763,6 @@
     "source_org": "Chinacdc",
     "quality_status": "validated",
     "data_quality_score": 100
-  },
-  {
-    "id": "evt_2280e37288ee72067558",
-    "event_id": "evt_2280e37288ee72067558",
-    "original_date": "2026-08-12",
-    "disease": "新型冠状病毒感染",
-    "disease_id": "covid-19",
-    "location": "中国台湾",
-    "latitude": 23.7,
-    "longitude": 121.0,
-    "description_cn": "上周新冠就诊增逾27%,新增72例重症14例死亡,3.7万剂疫苗13日配送",
-    "continent": "亚洲",
-    "source_org": "LINE",
-    "quality_status": "validated",
-    "data_quality_score": 92
   },
   {
     "id": "evt_83c1cce823bd6669f449",
@@ -791,21 +806,6 @@
     "description_cn": "2026年08月08日 香港发生COVID-19相关疫情,2026年第32周(08-02至08-08)新增核酸检测阳性4",
     "continent": "亚洲",
     "source_org": "CHP",
-    "quality_status": "validated",
-    "data_quality_score": 92
-  },
-  {
-    "id": "evt_3a651698981c088545de",
-    "event_id": "evt_3a651698981c088545de",
-    "original_date": "2026-08-02",
-    "disease": "新型冠状病毒感染",
-    "disease_id": "covid-19",
-    "location": "日本",
-    "latitude": 36.0,
-    "longitude": 138.0,
-    "description_cn": "日本2026年第31周COVID-19报告6332例",
-    "continent": "亚洲",
-    "source_org": "MHLW",
     "quality_status": "validated",
     "data_quality_score": 92
   },

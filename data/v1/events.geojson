@@ -3,6 +3,78 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_b7fd13725e22beb89f2e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_b7fd13725e22beb89f2e",
+        "published_at": "2026-08-20",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "LIFE",
+        "source_type": "other_open_source",
+        "source": "https://life.tw/article/9%E6%9C%88%E9%96%8B%E5%AD%B8%E9%98%B2%E6%96%B0%E5%86%A0-%E7%96%BE%E7%AE%A1%E7%BD%B2%E6%8F%90%E9%86%92-%E5%87%BA%E7%8F%BE-%E9%80%99%E4%BA%9B%E7%97%87%E7%8B%80-%E5%BB%BA%E8%AD%B0%E5%9C%A8%E5%AE%B6%E4%BC%91%E6%81%AF-3124310",
+        "description_cn": "台湾近期新冠重症及死亡病例上升,单周新增84例重症,12例死亡,累计重症421例,死亡54例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_7191b95e4dae5126d126",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9,
+          21.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_7191b95e4dae5126d126",
+        "published_at": "2026-08-20",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "河内",
+        "continent": "亚洲",
+        "source_org": "Vietnamplus",
+        "source_type": "other_open_source",
+        "source": "https://en.vietnamplus.vn/hanoi-steps-up-dengue-prevention-as-cases-rise-post350367.vnp",
+        "description_cn": "越南河内市登革热病例快速增加,市疾控中心启动强化防控行动。8月7日至14日一周内全市74个公社/坊报告316例登革热病例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_8ac5aa66bc40d4b7ac0e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.4,
+          36.8
+        ]
+      },
+      "properties": {
+        "event_id": "evt_8ac5aa66bc40d4b7ac0e",
+        "published_at": "2026-08-19",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "美国加利福尼亚州",
+        "continent": "北美洲",
+        "source_org": "Patch",
+        "source_type": "other_open_source",
+        "source": "https://patch.com/california/across-ca/brain-swelling-disease-blamed-recent-deaths-ca-cases-surge-nationwide",
+        "description_cn": "美国西尼罗病毒2026年已致8人死亡,累计超180例,亚利桑那州疫情严重",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_8d4062b40a4288e84406",
       "geometry": {
         "type": "Point",
@@ -651,6 +723,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_d293621eaaa4a1e1cc57",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.5,
+          37.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_d293621eaaa4a1e1cc57",
+        "published_at": "2026-08-16",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "韩国",
+        "continent": "亚洲",
+        "source_org": "韩国疾病管理厅",
+        "source_type": "other_open_source",
+        "source": "https://dportal.kdca.go.kr/pot/bbs/BD_selectBbs.do?q_bbsDocNo=20260820160907873&q_bbsSn=1010&q_clsfNo=2",
+        "description_cn": "韩国第33周流感门诊7.5/千人,COVID-19住院56例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_4e6c12b8237f9a7da042",
       "geometry": {
         "type": "Point",
@@ -1107,54 +1203,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_47a1dc4136f3a6b0c5da",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_47a1dc4136f3a6b0c5da",
-        "published_at": "2026-08-13",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "LIFE",
-        "source_type": "other_open_source",
-        "source": "https://life.tw/article/%E6%96%B0%E5%86%A0%E5%96%AE%E5%91%A8%E5%B0%B1%E8%A8%BA24%E8%90%AC%E4%BA%BA%E6%AC%A1-%E7%96%BE%E7%AE%A1%E7%BD%B2%E4%BC%B08%E6%9C%88%E4%B8%AD%E4%B8%8B%E6%97%AC%E9%81%94%E9%AB%98%E5%B3%B0-%E7%B1%B2%E9%AB%98%E5%8D%B1%E7%BE%A4%E7%95%B6-3117794",
-        "description_cn": "上周台湾新增72例新冠重症、14例死亡,疫情预计8月中下旬达高峰",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_e10f0b891ae6d20ddb40",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.0,
-          38.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_e10f0b891ae6d20ddb40",
-        "published_at": "2026-08-13",
-        "disease_id": "cyclosporiasis",
-        "disease_name_zh": "环孢子虫病",
-        "location": "美国",
-        "continent": "北美洲",
-        "source_org": "Foodsafetynews",
-        "source_type": "news_media",
-        "source": "https://www.foodsafetynews.com/2026/08/more-cyclospora-infections-confirmed",
-        "description_cn": "美国2026年环孢子虫病累计2.8万例,688人住院,2人死亡",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_ab32862af1364b5e3806",
       "geometry": {
         "type": "Point",
@@ -1175,30 +1223,6 @@
         "source": "https://www.chinacdc.cn/jksj/xgbdyq/202608/t20260813_1838941.html",
         "description_cn": "2026年08月13日 中国发生新型冠状病毒感染相关疫情,新增确诊病例52.2万例,重症487例,死亡1例",
         "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_2280e37288ee72067558",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_2280e37288ee72067558",
-        "published_at": "2026-08-12",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "LINE",
-        "source_type": "news_media",
-        "source": "https://today.line.me/tw/v3/article/9mG0o5E",
-        "description_cn": "上周新冠就诊增逾27%,新增72例重症14例死亡,3.7万剂疫苗13日配送",
-        "data_quality_score": 92
       }
     },
     {
@@ -1270,30 +1294,6 @@
         "source_type": "other_open_source",
         "source": "https://www.chp.gov.hk/files/xls/covidx_data.xlsx",
         "description_cn": "2026年08月08日 香港发生COVID-19相关疫情,2026年第32周(08-02至08-08)新增核酸检测阳性4",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_3a651698981c088545de",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.0,
-          36.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_3a651698981c088545de",
-        "published_at": "2026-08-02",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "日本",
-        "continent": "亚洲",
-        "source_org": "MHLW",
-        "source_type": "other_open_source",
-        "source": "https://www.mhlw.go.jp/content/001734742.pdf",
-        "description_cn": "日本2026年第31周COVID-19报告6332例",
         "data_quality_score": 92
       }
     },

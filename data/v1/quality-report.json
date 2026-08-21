@@ -10,7 +10,7 @@
     {
       "id": "record_count_change",
       "status": "pass",
-      "value": 1.074,
+      "value": 1.0,
       "threshold": ">= 0.5"
     },
     {
