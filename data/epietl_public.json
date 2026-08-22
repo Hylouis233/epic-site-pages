@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-20T17:51:58.043391+08:00",
+    "fetched_at": "2026-08-21T17:49:19.763654+08:00",
     "base_url": "https://epietl.com",
     "dashboard_days": 60,
     "channel_count": 91,
@@ -8,7 +8,7 @@
     "complete_reports": 4758,
     "pending_reports": 0,
     "failed_reports": 0,
-    "reports_analyzed": 52,
+    "reports_analyzed": 47,
     "risk_generated_at": "2026-08-18T02:09:12",
     "health": {
       "status": "ok",

@@ -1,11 +1,12 @@
 {
-  "total_records": 58,
-  "disease_count": 13,
+  "total_records": 65,
+  "disease_count": 15,
   "continent_count": 5,
-  "latest_date": "2026-08-20",
+  "latest_date": "2026-08-21",
   "filter_options": {
     "diseases": [
       "儿童急性呼吸道疾病",
+      "创伤弧菌感染",
       "埃博拉",
       "基孔肯雅热",
       "多种法定传染病",
@@ -16,6 +17,7 @@
       "猴痘",
       "环孢子虫病",
       "登革热",
+      "综合传染病",
       "西尼罗病毒",
       "麻疹"
     ],
@@ -28,9 +30,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-21T03:26:03Z",
-  "data_as_of": "2026-08-20",
-  "last_successful_ingest_at": "2026-08-21T03:26:03Z",
+  "build_generated_at": "2026-08-22T03:11:21Z",
+  "data_as_of": "2026-08-21",
+  "last_successful_ingest_at": "2026-08-22T03:11:21Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -39,5 +41,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-08-20"
+  "last_modified": "2026-08-21"
 }

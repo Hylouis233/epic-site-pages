@@ -3,6 +3,294 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_0d7be0c634324930bc53",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.5,
+          2.5
+        ]
+      },
+      "properties": {
+        "event_id": "evt_0d7be0c634324930bc53",
+        "published_at": "2026-08-21",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "马来西亚",
+        "continent": "亚洲",
+        "source_org": "星报/亚洲新闻网络",
+        "source_type": "other_open_source",
+        "source": "https://www.straitstimes.com/asia/se-asia/dengue-cases-spike-in-malaysia-with-55-deaths-so-far-in-2026",
+        "description_cn": "2026年马来西亚登革热疫情加剧,8月15日前累计58,079例感染,55例死亡。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_435921bbe3897e4c22a1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.5,
+          2.5
+        ]
+      },
+      "properties": {
+        "event_id": "evt_435921bbe3897e4c22a1",
+        "published_at": "2026-08-21",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "马来西亚",
+        "continent": "亚洲",
+        "source_org": "星报",
+        "source_type": "other_open_source",
+        "source": "https://www.thestar.com.my/news/nation/2026/08/21/dengue-cases-surge-562-nationwide-55-deaths-recorded",
+        "description_cn": "2026年截至8月15日,马来西亚报告登革热病例58,079例,死亡55例,疫情在多州蔓延",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_a89fd6c445964cec3528",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.7,
+          3.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_a89fd6c445964cec3528",
+        "published_at": "2026-08-21",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "Kuala Lumpur",
+        "continent": "亚洲",
+        "source_org": "NST",
+        "source_type": "other_open_source",
+        "source": "https://www.nst.com.my/amp/news/nation/2026/08/1515859/dengue-cases-rise-562-cent-55-deaths-recorded",
+        "description_cn": "马来西亚登革热累计58079例,死亡55例,集中在Klang Valley",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_e2abb4d7faf0bfaf33a0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.1,
+          6.8
+        ]
+      },
+      "properties": {
+        "event_id": "evt_e2abb4d7faf0bfaf33a0",
+        "published_at": "2026-08-21",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "马来西亚巴生谷",
+        "continent": "亚洲",
+        "source_org": "Asiaone",
+        "source_type": "other_open_source",
+        "source": "https://www.asiaone.com/malaysia/dengue-cases-surge-malaysias-klang-valley-says-health-ministry",
+        "description_cn": "2026年8月21日,马来西亚卫生部通报首都吉隆坡及周边巴生谷地区登革热病例激增,警告存在高传播风险。自8月初以来,全国",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_b5a8a76449695b49be61",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.5,
+          3.1
+        ]
+      },
+      "properties": {
+        "event_id": "evt_b5a8a76449695b49be61",
+        "published_at": "2026-08-21",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "雪兰莪",
+        "continent": "亚洲",
+        "source_org": "Thesun",
+        "source_type": "other_open_source",
+        "source": "https://thesun.my/news/malaysia-news/people-issues/dengue-cases-up-56-2-pct-55-deaths-reported-moh",
+        "description_cn": "马来西亚卫生部通报,2026年截至第32流行病学周,全国登革热病例较去年同期增长56.2%,累计达58079例,报告死亡",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_45a3dba90924a28a5b74",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.5,
+          27.8
+        ]
+      },
+      "properties": {
+        "event_id": "evt_45a3dba90924a28a5b74",
+        "published_at": "2026-08-20",
+        "disease_id": "unclassified-1818db71",
+        "disease_name_zh": "综合传染病",
+        "location": "江西省",
+        "continent": "亚洲",
+        "source_org": "江西省卫生健康委",
+        "source_type": "official_health_authority",
+        "source": "https://www.jxcdc.cn/f/newsDetail?id=3ae1d32b19fa41fba232bbe7c55746e4",
+        "description_cn": "2026年7月江西省报告法定传染病70044例,死亡52人。",
+        "data_quality_score": 88
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_ad2aeab138d9168509e3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.774,
+          12.8797
+        ]
+      },
+      "properties": {
+        "event_id": "evt_ad2aeab138d9168509e3",
+        "published_at": "2026-08-20",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "菲律宾卡维特省伊穆斯市",
+        "continent": "亚洲",
+        "source_org": "Inquirer",
+        "source_type": "news_media",
+        "source": "https://newsinfo.inquirer.net/2289378/imus-logs-291-dengue-cases-residents-urged-to-join-anti-mosquito-drive",
+        "description_cn": "2026年8月19日,伊穆斯市报告登革热291例,确诊192例,病例上升",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_310fa81749a39428404e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5,
+          27.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_310fa81749a39428404e",
+        "published_at": "2026-08-20",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "Florida, 美国",
+        "continent": "北美洲",
+        "source_org": "Substack",
+        "source_type": "news_media",
+        "source": "https://outbreaknewstoday.substack.com/p/florida-reports-16-additional-locally",
+        "description_cn": "佛罗里达州卫生官员报告,过去一周新增16例本地感染的登革热病例,疫情呈现显著上升趋势。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_42bdbb703b1ba13e93bc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0,
+          20.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_42bdbb703b1ba13e93bc",
+        "published_at": "2026-08-20",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "印度",
+        "continent": "亚洲",
+        "source_org": "Aninews",
+        "source_type": "news_media",
+        "source": "https://www.aninews.in/news/national/general-news/spike-in-swine-flu-cases-reported-amid-humid-variable-weather-conditions20260821031910",
+        "description_cn": "印度德里、班加罗尔等地出现H1N1流感病例上升,每日约5-6例就诊,2-3例住院。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_71f350bc944809d5d0a0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.0,
+          42.4
+        ]
+      },
+      "properties": {
+        "event_id": "evt_71f350bc944809d5d0a0",
+        "published_at": "2026-08-20",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "美国马萨诸塞州",
+        "continent": "北美洲",
+        "source_org": "Boston25news",
+        "source_type": "news_media",
+        "source": "https://www.boston25news.com/news/local/massachusetts-department-public-health-announces-first-human-case-west-nile-virus/BE7XYD3UUNCCRKWH5VALKX3L7E?outputType=amp",
+        "description_cn": "马萨诸塞州报告首例人类西尼罗病毒病例",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_0e228b90badcb6330dc2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5,
+          27.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_0e228b90badcb6330dc2",
+        "published_at": "2026-08-20",
+        "disease_id": "vibrio-vulnificus-infection",
+        "disease_name_zh": "创伤弧菌感染",
+        "location": "佛罗里达州",
+        "continent": "北美洲",
+        "source_org": "Substack",
+        "source_type": "news_media",
+        "source": "https://outbreaknewstoday.substack.com/p/florida-reports-3rd-vibrio-vulnificus",
+        "description_cn": "美国佛罗里达州卫生部报告,过去一周新增2例创伤弧菌感染病例和1例死亡病例,使2026年累计病例数达到17例、死亡3例。病",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_42bd5623d3b5b6b2c78f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0,
+          28.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_42bd5623d3b5b6b2c78f",
+        "published_at": "2026-08-20",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "尼泊尔",
+        "continent": "亚洲",
+        "source_org": "Daijiworld",
+        "source_type": "other_open_source",
+        "source": "https://www.daijiworld.com/index.php/news/newsDisplay?newsID=1323300",
+        "description_cn": "2026年1-8月尼泊尔报告2844例登革热病例,死亡2例,疫情分布于74个地区。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_b7fd13725e22beb89f2e",
       "geometry": {
         "type": "Point",
@@ -795,6 +1083,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_990103b6cb1e1f9bf9f1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0,
+          -29.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_990103b6cb1e1f9bf9f1",
+        "published_at": "2026-08-16",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "南非",
+        "continent": "非洲",
+        "source_org": "NICD",
+        "source_type": "official_health_authority",
+        "source": "https://www.nicd.ac.za/wp-content/uploads/2026/08/Resp_Path_Report_2026_33-Final.pdf",
+        "description_cn": "南非2026年第33周呼吸道病原体监测报告,流感检出8例,累计957例",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_7f23273d2ca2b0b505aa",
       "geometry": {
         "type": "Point",
@@ -939,78 +1251,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_468199cf8ce22517767d",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.0,
-          35.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_468199cf8ce22517767d",
-        "published_at": "2026-08-14",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国",
-        "continent": "亚洲",
-        "source_org": "界面新闻",
-        "source_type": "other_open_source",
-        "source": "https://c.m.163.com/news/a/L49J76T40534A4SC.html?spss=backflow-index-hotlist",
-        "description_cn": "2026年7月全国新增新冠确诊病例52.2万例,重症487例,死亡1例,疫情呈波动上升",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_506e18e1ef6a90675087",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_506e18e1ef6a90675087",
-        "published_at": "2026-08-14",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "健康新闻",
-        "source_type": "news_media",
-        "source": "https://www.healthnews.com.tw/article/69414",
-        "description_cn": "2025-2026流感季19至64岁累计72例重症5人死亡,提醒儿童及早就医,48小时内使用抗病毒药。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_842876c9b883d0c3759c",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          84.4,
-          27.5
-        ]
-      },
-      "properties": {
-        "event_id": "evt_842876c9b883d0c3759c",
-        "published_at": "2026-08-14",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "尼泊尔奇特旺",
-        "continent": "亚洲",
-        "source_org": "尼泊尔新闻",
-        "source_type": "news_media",
-        "source": "https://english.nepalnews.com/s/health/chitwan-records-two-dengue-and-six-scrub-typhus-cases",
-        "description_cn": "尼泊尔奇特旺县报告登革热4例、恙虫病34例,无死亡",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_a2808015fc978ad58a3d",
       "geometry": {
         "type": "Point",
@@ -1083,54 +1323,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_b1495c6ae7b53bb79eef",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.0,
-          38.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_b1495c6ae7b53bb79eef",
-        "published_at": "2026-08-14",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国肯塔基州克里斯蒂安县",
-        "continent": "北美洲",
-        "source_org": "Wpsdlocal6",
-        "source_type": "other_open_source",
-        "source": "https://www.wpsdlocal6.com/health/measles-case-confirmed-in-christian-county-health-officials-suspect-wider-outbreak-urge-immunizations/article_19ad3aae-dc73-4305-8d21-45cb12789d2b.html",
-        "description_cn": "2026年08月14日 美国肯塔基州克里斯蒂安县发生麻疹相关疫情,1例确诊病例,疑似更广疫情",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_ff57bce6d3c03db5dcc5",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          84.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_ff57bce6d3c03db5dcc5",
-        "published_at": "2026-08-14",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "Kalika Municipality",
-        "continent": "亚洲",
-        "source_org": "Ratopati",
-        "source_type": "other_open_source",
-        "source": "https://english.ratopati.com/story/74482/two-people-infected-with-dengue-six-with-scrub-typhus-in-chitwan",
-        "description_cn": "2026年7月,尼泊尔奇特旺地区报告两例登革热确诊病例和六例立克次体病(scrub typhus)确诊病例。公共卫生办公",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_51c29141c0a3a385e44d",
       "geometry": {
         "type": "Point",
@@ -1175,54 +1367,6 @@
         "source": "https://www.gov.mo/zh-hant/news/1259295",
         "description_cn": "澳门卫生局发布2026年7月传染病强制申报监测数据,共记录2,936例个案。病例数最多的前三类疾病为流行性感冒(2,45",
         "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_b9eea982f91367de4cc6",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_b9eea982f91367de4cc6",
-        "published_at": "2026-08-13",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国佛罗里达州皮内拉斯县",
-        "continent": "北美洲",
-        "source_org": "Stpetecatalyst",
-        "source_type": "other_open_source",
-        "source": "https://stpetecatalyst.com/zaps/county-mosquito-control-increases-efforts-in-palm-harbor",
-        "description_cn": "美国佛罗里达州皮内拉斯县报告2例本地感染登革热病例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_ab32862af1364b5e3806",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.0,
-          35.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_ab32862af1364b5e3806",
-        "published_at": "2026-08-13",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国",
-        "continent": "亚洲",
-        "source_org": "Chinacdc",
-        "source_type": "official_health_authority",
-        "source": "https://www.chinacdc.cn/jksj/xgbdyq/202608/t20260813_1838941.html",
-        "description_cn": "2026年08月13日 中国发生新型冠状病毒感染相关疫情,新增确诊病例52.2万例,重症487例,死亡1例",
-        "data_quality_score": 100
       }
     },
     {
