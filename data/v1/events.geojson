@@ -3,6 +3,222 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_c53bd32d940c9de28294",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1,
+          28.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_c53bd32d940c9de28294",
+        "published_at": "2026-08-24",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "德里",
+        "continent": "亚洲",
+        "source_org": "千禧邮报",
+        "source_type": "other_open_source",
+        "source": "https://www.millenniumpost.in/amp/delhi/delhi-health-minister-calls-high-level-meeting-as-h1n1-cases-rise-673377",
+        "description_cn": "德里卫生部长召开高级别会议应对H1N1流感上升,8月20日新增159例,累计1,777例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_cd1dd779fe63e1df0c8a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0,
+          20.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_cd1dd779fe63e1df0c8a",
+        "published_at": "2026-08-24",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "Asia",
+        "continent": "亚洲",
+        "source_org": "Indiatoday",
+        "source_type": "news_media",
+        "source": "https://www.indiatoday.in/health/story/karnataka-influenza-cases-2026-bengaluru-accounts-for-over-90-percent-2978429-2026-08-24",
+        "description_cn": "据印度综合卫生信息平台(IHIP)监测数据,截至2026年8月22日,印度卡纳塔克邦今年共报告4,212例实验室确诊流感",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_91dc236e35f741c576e5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1,
+          28.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_91dc236e35f741c576e5",
+        "published_at": "2026-08-24",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "印度德里",
+        "continent": "亚洲",
+        "source_org": "NDTV",
+        "source_type": "other_open_source",
+        "source": "https://www.ndtv.com/health/delhi-records-1-777-h1n1-cases-this-year-icmr-says-no-new-strain-no-cause-for-panic-11947989",
+        "description_cn": "印度德里2026年报告1777例H1N1流感病例,ICMR称无新毒株",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_eca8c3503affbe9eaa9b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.0,
+          7.1
+        ]
+      },
+      "properties": {
+        "event_id": "evt_eca8c3503affbe9eaa9b",
+        "published_at": "2026-08-24",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "加姆珀哈",
+        "continent": "亚洲",
+        "source_org": "Newswire",
+        "source_type": "news_media",
+        "source": "https://www.newswire.lk/2026/08/24/dengue-cases-in-sri-lanka-top-94000-71-deaths-reported",
+        "description_cn": "2026年斯里兰卡登革热累计94037例,死亡71例,西部省病例最多",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_9993abaa32b4a3494028",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.0,
+          30.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_9993abaa32b4a3494028",
+        "published_at": "2026-08-24",
+        "disease_id": "unclassified-153f8af1",
+        "disease_name_zh": "福氏内格里阿米巴原虫",
+        "location": "美国路易斯安那州",
+        "continent": "北美洲",
+        "source_org": "Wenxuecity",
+        "source_type": "other_open_source",
+        "source": "https://www.wenxuecity.com/news/2026/08/23/socialnews-268737.html",
+        "description_cn": "美国路易斯安那州8岁女童在克莱朋湖游泳后感染福氏内格里阿米巴原虫不治身亡。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_918c3b6466b905ba4871",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6,
+          16.4
+        ]
+      },
+      "properties": {
+        "event_id": "evt_918c3b6466b905ba4871",
+        "published_at": "2026-08-24",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "Baguio City",
+        "continent": "亚洲",
+        "source_org": "Northluzonmonitor",
+        "source_type": "other_open_source",
+        "source": "https://northluzonmonitor.com/baguio-dengue-cases-reach-543-peak-expected-in-late-august",
+        "description_cn": "2026年8月24日报道:菲律宾碧瑶市自2026年1月以来已累计记录543例登革热病例,卫生官员预计病例数将在8月最后一",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_c6d89679979d51b562af",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0,
+          20.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_c6d89679979d51b562af",
+        "published_at": "2026-08-24",
+        "disease_id": "unclassified-2b4038da",
+        "disease_name_zh": "基孔肯雅热",
+        "location": "/",
+        "continent": "亚洲",
+        "source_org": "Newindianexpress",
+        "source_type": "other_open_source",
+        "source": "https://www.newindianexpress.com/cities/thiruvananthapuram/2026/Aug/24/28-and-rising-thiruvananthapurams-vattiyoorkavu-grapples-with-chikungunya",
+        "description_cn": "印度喀拉拉邦Thiruvananthapuram district的Vattiyoorkavu地区本月报告28例基孔肯雅",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_7d6f16ef4d9a096e7209",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.0,
+          35.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_7d6f16ef4d9a096e7209",
+        "published_at": "2026-08-24",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "中国",
+        "continent": "亚洲",
+        "source_org": "Chosun",
+        "source_type": "news_media",
+        "source": "http://cnnews.chosun.com/client/news/viw.asp?cate=C01&mcate=M1003&nNewsNumb=20260865270&nidx=65271",
+        "description_cn": "中国7月报告约52.2万例新冠新增确诊病例,较6月增长超6倍,主流毒株为奥密克戎变异株NB.1.8.1;同期韩国新冠检出",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_8bb0dce8db65507a93fb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0,
+          20.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_8bb0dce8db65507a93fb",
+        "published_at": "2026-08-24",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "Uttarakhand 北阿坎德邦 邦",
+        "continent": "亚洲",
+        "source_org": "Ratopati",
+        "source_type": "other_open_source",
+        "source": "https://english.ratopati.com/story/76044/swine-flu-spreads-to-6-states-including-the-indian-capital-delhi-infections-in-delhi-increase-eightfold",
+        "description_cn": "印度至少6个邦(包括首都德里)出现猪流感(H1N1)疫情上升。德里今年迄今累计发现2392例甲流感染,其中1777例确诊",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_46a9b07c056ced62bad6",
       "geometry": {
         "type": "Point",
@@ -46,6 +262,30 @@
         "source_type": "other_open_source",
         "source": "https://www.mypanhandle.com/news/pets-rescued-from-fire-recovering-from-smoke-inhalation",
         "description_cn": "美国佛罗里达州确诊一例登革热",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_e8e45c9c4980c0b10e8b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_e8e45c9c4980c0b10e8b",
+        "published_at": "2026-08-23",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "孟加拉国",
+        "continent": "亚洲",
+        "source_org": "Jagonews24",
+        "source_type": "news_media",
+        "source": "https://www.jagonews24.com/en/national/news/95418",
+        "description_cn": "孟加拉国近期麻疹疫情持续,累计报告约15万例疑似病例,死亡834人。",
         "data_quality_score": 92
       }
     },
@@ -166,6 +406,30 @@
         "source_type": "other_open_source",
         "source": "https://www.dawn.com/news/2024639/health-department-steps-in-as-dengue-cases-rise-in-kohat",
         "description_cn": "2026年8月23日报道,巴基斯坦开伯尔-普什图省卫生部门要求科哈特地区行政机构平整近期被拆除的阿富汗难民营地面,以消除",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_eff569c95cf1a24f1659",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9,
+          1.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_eff569c95cf1a24f1659",
+        "published_at": "2026-08-23",
+        "disease_id": "ebola-virus-disease",
+        "disease_name_zh": "埃博拉",
+        "location": "刚果民主共和国伊图里省",
+        "continent": "非洲",
+        "source_org": "Chinadailyasia",
+        "source_type": "other_open_source",
+        "source": "https://www.chinadailyasia.com/article/638342",
+        "description_cn": "刚果民主共和国卫生部公布的最新数据显示,截至2026年8月,该国埃博拉疫情已扩散至六个省份,累计确诊5375例,死亡25",
         "data_quality_score": 92
       }
     },
@@ -1390,78 +1654,6 @@
         "source_type": "news_media",
         "source": "https://www.indiatoday.in/health/story/500-students-and-21-staff-fall-ill-in-bengaluru-school-h1n1-cases-confirmed-2973287-2026-08-17",
         "description_cn": "印度班加罗尔一所学校超500名学生和21名工作人员出现流感样症状,2例H1N1确诊,学校停课2天",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_b09bbf03c7af9dfcc883",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          70.0,
-          30.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_b09bbf03c7af9dfcc883",
-        "published_at": "2026-08-17",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "巴基斯坦",
-        "continent": "亚洲",
-        "source_org": "Nation",
-        "source_type": "other_open_source",
-        "source": "https://www.nation.com.pk/17-Aug-2026/1-670-firs-registered-440-premises-sealed-dengue-sop-violations",
-        "description_cn": "巴基斯坦某地区卫生官员Dr Jawad Ahmed表示,该地区今年迄今已报告6例确诊登革热病例,而去年同期为68例。当局",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_c6db319ef19ab457eb8d",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          29.9,
-          1.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_c6db319ef19ab457eb8d",
-        "published_at": "2026-08-17",
-        "disease_id": "ebola-virus-disease",
-        "disease_name_zh": "埃博拉",
-        "location": "刚果民主共和国伊图里省",
-        "continent": "非洲",
-        "source_org": "CDC",
-        "source_type": "official_health_authority",
-        "source": "https://www.cdc.gov.tw/TravelEpidemic/Detail/G3PSay_dafdAwjsYNm3CCA?epidemicId=Ci0xRhuKWrHmsgxORGlJfw",
-        "description_cn": "2026年08月17日 刚果民主共和国伊图里省发生埃博拉相关疫情,截至8/12累计4,665例确定病例(2,184例死亡",
-        "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_a5bd16acaf700854cc60",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.0,
-          37.6
-        ]
-      },
-      "properties": {
-        "event_id": "evt_a5bd16acaf700854cc60",
-        "published_at": "2026-08-17",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "韩国首尔",
-        "continent": "亚洲",
-        "source_org": "Asiae",
-        "source_type": "other_open_source",
-        "source": "https://www.asiae.co.kr/en/article/social-general/2026081711261610182",
-        "description_cn": "首尔报告今年83例输入性传染病,梅毒39例、疟疾11例、登革热8例",
         "data_quality_score": 92
       }
     },

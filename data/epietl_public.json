@@ -1,15 +1,15 @@
 {
   "meta": {
-    "fetched_at": "2026-08-21T17:49:19.763654+08:00",
+    "fetched_at": "2026-08-24T17:49:11.402137+08:00",
     "base_url": "https://epietl.com",
     "dashboard_days": 60,
-    "channel_count": 91,
-    "total_reports": 4758,
-    "complete_reports": 4758,
+    "channel_count": 129,
+    "total_reports": 5822,
+    "complete_reports": 5822,
     "pending_reports": 0,
     "failed_reports": 0,
     "reports_analyzed": 47,
-    "risk_generated_at": "2026-08-18T02:09:12",
+    "risk_generated_at": "2026-08-24T12:40:08",
     "health": {
       "status": "ok",
       "agent_ready": true,
@@ -20,7 +20,7 @@
     "source_types": [
       {
         "label": "report_collection",
-        "count": 69
+        "count": 107
       },
       {
         "label": "dashboard",
@@ -38,15 +38,27 @@
     "languages": [
       {
         "label": "en",
-        "count": 59
+        "count": 73
+      },
+      {
+        "label": "es",
+        "count": 22
       },
       {
         "label": "zh",
         "count": 14
       },
       {
-        "label": "es",
-        "count": 9
+        "label": "pt",
+        "count": 3
+      },
+      {
+        "label": "it",
+        "count": 3
+      },
+      {
+        "label": "id",
+        "count": 2
       },
       {
         "label": "ko",
@@ -55,18 +67,6 @@
       {
         "label": "ja",
         "count": 2
-      },
-      {
-        "label": "pt",
-        "count": 1
-      },
-      {
-        "label": "id",
-        "count": 1
-      },
-      {
-        "label": "de",
-        "count": 1
       }
     ],
     "regions": [
@@ -83,11 +83,23 @@
         "count": 8
       },
       {
+        "label": "Americas",
+        "count": 5
+      },
+      {
         "label": "Canada",
         "count": 5
       },
       {
-        "label": "Americas",
+        "label": "Peru",
+        "count": 4
+      },
+      {
+        "label": "Guatemala",
+        "count": 4
+      },
+      {
+        "label": "Africa",
         "count": 3
       },
       {
@@ -97,18 +109,6 @@
       {
         "label": "Australia",
         "count": 3
-      },
-      {
-        "label": "Japan",
-        "count": 3
-      },
-      {
-        "label": "China (Hong Kong)",
-        "count": 3
-      },
-      {
-        "label": "Europe",
-        "count": 2
       }
     ]
   },
@@ -347,11 +347,11 @@
       "language": "en",
       "base_url": "https://www.ecdc.europa.eu/en/publications-data/communicable-disease-threats-report",
       "status": "active",
-      "total_reports": 691,
-      "complete_reports": 691,
+      "total_reports": 695,
+      "complete_reports": 695,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:24"
+      "last_sync": "2026-08-24T12:39:21"
     },
     {
       "id": "paho_alerts",
@@ -366,7 +366,7 @@
       "complete_reports": 354,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:28"
+      "last_sync": "2026-08-24T12:39:30"
     },
     {
       "id": "who_emro_respiratory",
@@ -381,7 +381,37 @@
       "complete_reports": 316,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:36"
+      "last_sync": "2026-08-24T12:40:07"
+    },
+    {
+      "id": "uk_ukhsa_noids",
+      "name": "UK UKHSA – NOIDs causative agents weekly",
+      "organization": "UK Health Security Agency",
+      "country_or_region": "United Kingdom",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.gov.uk/government/publications/notifiable-diseases-causative-agents-reports-for-2026",
+      "status": "active",
+      "total_reports": 237,
+      "complete_reports": 237,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:03"
+    },
+    {
+      "id": "uk_ukhsa_flu",
+      "name": "UK UKHSA – Weekly Flu and COVID-19 Surveillance Report",
+      "organization": "UK Health Security Agency",
+      "country_or_region": "United Kingdom",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.gov.uk/government/statistics/national-flu-and-covid-19-surveillance-reports-2025-to-2026-season",
+      "status": "active",
+      "total_reports": 233,
+      "complete_reports": 233,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:03"
     },
     {
       "id": "pk_nih_idsrs",
@@ -396,7 +426,7 @@
       "complete_reports": 215,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:31"
+      "last_sync": "2026-08-24T12:39:35"
     },
     {
       "id": "lk_epid_weekly",
@@ -411,7 +441,22 @@
       "complete_reports": 213,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:26"
+      "last_sync": "2026-08-24T12:39:26"
+    },
+    {
+      "id": "africa_cdc_ebs",
+      "name": "Africa CDC – Epidemic Intelligence Weekly Report",
+      "organization": "Africa Centres for Disease Control and Prevention",
+      "country_or_region": "Africa",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://africacdc.org/resources/?wpv_aux_current_post_id=217&wpv_view_count=549&wpv-resource-type=ebs-weekly-reports",
+      "status": "active",
+      "total_reports": 208,
+      "complete_reports": 208,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:11"
     },
     {
       "id": "tw_cdc_surveillance_express",
@@ -422,11 +467,26 @@
       "language": "zh",
       "base_url": "https://www.cdc.gov.tw/Category/MPage/94JVbJ2BFjR_3MTi-9s9Cg",
       "status": "active",
-      "total_reports": 206,
-      "complete_reports": 206,
+      "total_reports": 207,
+      "complete_reports": 207,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:00"
+    },
+    {
+      "id": "who_don",
+      "name": "WHO – Disease Outbreak News (DON)",
+      "organization": "World Health Organization",
+      "country_or_region": "Global",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.who.int/emergencies/disease-outbreak-news",
+      "status": "active",
+      "total_reports": 205,
+      "complete_reports": 205,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:05"
     },
     {
       "id": "tw_cdc_flu_express_zh",
@@ -441,7 +501,7 @@
       "complete_reports": 200,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:00"
     },
     {
       "id": "tw_cdc_flu",
@@ -456,22 +516,7 @@
       "complete_reports": 200,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:31"
-    },
-    {
-      "id": "who_don",
-      "name": "WHO – Disease Outbreak News (DON)",
-      "organization": "World Health Organization",
-      "country_or_region": "Global",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.who.int/emergencies/disease-outbreak-news",
-      "status": "active",
-      "total_reports": 195,
-      "complete_reports": 195,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:34"
+      "last_sync": "2026-08-24T12:39:59"
     },
     {
       "id": "es_isciii_flu",
@@ -486,7 +531,7 @@
       "complete_reports": 179,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:25"
+      "last_sync": "2026-08-24T12:39:22"
     },
     {
       "id": "who_emergency_sitrep",
@@ -501,7 +546,7 @@
       "complete_reports": 138,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:35"
+      "last_sync": "2026-08-24T12:40:07"
     },
     {
       "id": "cncdc_flu_weekly",
@@ -512,11 +557,41 @@
       "language": "zh",
       "base_url": "https://www.chinacdc.cn/jksj/jksj04_14249/",
       "status": "active",
-      "total_reports": 135,
-      "complete_reports": 135,
+      "total_reports": 136,
+      "complete_reports": 136,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:19"
+      "last_sync": "2026-08-24T12:39:12"
+    },
+    {
+      "id": "br_svsa_respiratory",
+      "name": "Brazil SVSA – Vigilância das Síndromes Gripais",
+      "organization": "Ministério da Saúde / SVSA",
+      "country_or_region": "Brazil",
+      "source_type": "report_collection",
+      "language": "pt",
+      "base_url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/covid-19/publicacoes-tecnicas/informes",
+      "status": "active",
+      "total_reports": 133,
+      "complete_reports": 133,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:12"
+    },
+    {
+      "id": "au_nsw_respiratory",
+      "name": "Australia NSW Health – Respiratory Surveillance Report",
+      "organization": "NSW Health",
+      "country_or_region": "Australia",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.health.nsw.gov.au/Infectious/covid-19/Pages/weekly-reports-archive.aspx",
+      "status": "active",
+      "total_reports": 125,
+      "complete_reports": 125,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:12"
     },
     {
       "id": "us_pmc_covid",
@@ -531,37 +606,7 @@
       "complete_reports": 125,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:33"
-    },
-    {
-      "id": "au_nsw_respiratory",
-      "name": "Australia NSW Health – Respiratory Surveillance Report",
-      "organization": "NSW Health",
-      "country_or_region": "Australia",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.health.nsw.gov.au/Infectious/covid-19/Pages/weekly-reports-archive.aspx",
-      "status": "active",
-      "total_reports": 124,
-      "complete_reports": 124,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:18"
-    },
-    {
-      "id": "br_svsa_respiratory",
-      "name": "Brazil SVSA – Vigilância das Síndromes Gripais",
-      "organization": "Ministério da Saúde / SVSA",
-      "country_or_region": "Brazil",
-      "source_type": "report_collection",
-      "language": "pt",
-      "base_url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/covid-19/publicacoes-tecnicas/informes",
-      "status": "active",
-      "total_reports": 121,
-      "complete_reports": 121,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:18"
+      "last_sync": "2026-08-24T12:40:04"
     },
     {
       "id": "tw_cdc_covid",
@@ -572,11 +617,11 @@
       "language": "zh",
       "base_url": "https://www.cdc.gov.tw/Category/MPage/iclxC6BjjFmtM1oT54EVuw",
       "status": "active",
-      "total_reports": 95,
-      "complete_reports": 95,
+      "total_reports": 96,
+      "complete_reports": 96,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:31"
+      "last_sync": "2026-08-24T12:39:58"
     },
     {
       "id": "cncdc_arism",
@@ -587,11 +632,11 @@
       "language": "zh",
       "base_url": "https://www.chinacdc.cn/jksj/jksj04_14275/",
       "status": "active",
-      "total_reports": 84,
-      "complete_reports": 84,
+      "total_reports": 85,
+      "complete_reports": 85,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:19"
+      "last_sync": "2026-08-24T12:39:12"
     },
     {
       "id": "za_nicd_respiratory",
@@ -602,11 +647,26 @@
       "language": "en",
       "base_url": "https://www.nicd.ac.za/diseases-a-z-index/disease-index-covid-19/surveillance-reports/weekly-respiratory-pathogens-surveillance-report-week/",
       "status": "active",
-      "total_reports": 81,
-      "complete_reports": 81,
+      "total_reports": 82,
+      "complete_reports": 82,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:36"
+      "last_sync": "2026-08-24T12:40:08"
+    },
+    {
+      "id": "us_cdc_mmwr",
+      "name": "US CDC – Morbidity and Mortality Weekly Report (MMWR)",
+      "organization": "US Centers for Disease Control and Prevention",
+      "country_or_region": "United States",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.cdc.gov/mmwr/index2026.html",
+      "status": "active",
+      "total_reports": 76,
+      "complete_reports": 76,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:04"
     },
     {
       "id": "sg_moh_flu",
@@ -617,11 +677,11 @@
       "language": "en",
       "base_url": "https://www.cda.gov.sg/resources/weekly-infectious-diseases-bulletin-2026/",
       "status": "active",
-      "total_reports": 67,
-      "complete_reports": 67,
+      "total_reports": 68,
+      "complete_reports": 68,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:31"
+      "last_sync": "2026-08-24T12:39:58"
     },
     {
       "id": "who_searo_bulletin",
@@ -636,7 +696,7 @@
       "complete_reports": 67,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:36"
+      "last_sync": "2026-08-24T12:40:08"
     },
     {
       "id": "id_kemkes_infem",
@@ -647,11 +707,11 @@
       "language": "id",
       "base_url": "https://infeksiemerging.kemkes.go.id/",
       "status": "active",
-      "total_reports": 60,
-      "complete_reports": 60,
+      "total_reports": 61,
+      "complete_reports": 61,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:25"
+      "last_sync": "2026-08-24T12:39:22"
     },
     {
       "id": "cncdc_covid19",
@@ -666,22 +726,7 @@
       "complete_reports": 59,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:19"
-    },
-    {
-      "id": "us_cdc_mmwr",
-      "name": "US CDC – Morbidity and Mortality Weekly Report (MMWR)",
-      "organization": "US Centers for Disease Control and Prevention",
-      "country_or_region": "United States",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.cdc.gov/mmwr/index2026.html",
-      "status": "active",
-      "total_reports": 59,
-      "complete_reports": 59,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:39:12"
     },
     {
       "id": "in_idsp",
@@ -696,7 +741,22 @@
       "complete_reports": 55,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:25"
+      "last_sync": "2026-08-24T12:39:23"
+    },
+    {
+      "id": "uk_outbreaks_under_monitoring",
+      "name": "UK UKHSA – Outbreaks Under Monitoring (Weekly)",
+      "organization": "UK Health Security Agency",
+      "country_or_region": "Global",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.gov.uk/government/publications/outbreaks-under-monitoring-in-2026",
+      "status": "active",
+      "total_reports": 50,
+      "complete_reports": 50,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:00"
     },
     {
       "id": "us_cdc_travel_notices",
@@ -711,7 +771,7 @@
       "complete_reports": 48,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:33"
+      "last_sync": "2026-08-24T12:40:04"
     },
     {
       "id": "cncdc_global_risk",
@@ -726,22 +786,7 @@
       "complete_reports": 47,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:19"
-    },
-    {
-      "id": "uk_ukhsa_flu",
-      "name": "UK UKHSA – Weekly Flu and COVID-19 Surveillance Report",
-      "organization": "UK Health Security Agency",
-      "country_or_region": "United Kingdom",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.gov.uk/government/statistics/national-flu-and-covid-19-surveillance-reports-2025-to-2026-season",
-      "status": "active",
-      "total_reports": 41,
-      "complete_reports": 41,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:39:13"
     },
     {
       "id": "kr_kdca_weekly",
@@ -752,41 +797,11 @@
       "language": "ko",
       "base_url": "https://dportal.kdca.go.kr/pot/bbs/BD_selectBbsList.do?q_bbsSn=1009",
       "status": "active",
-      "total_reports": 40,
-      "complete_reports": 40,
+      "total_reports": 41,
+      "complete_reports": 41,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:26"
-    },
-    {
-      "id": "ar_ben",
-      "name": "Argentina – Boletín Epidemiológico Nacional (BEN)",
-      "organization": "Ministerio de Salud de Argentina",
-      "country_or_region": "Argentina",
-      "source_type": "report_collection",
-      "language": "es",
-      "base_url": "https://www.argentina.gob.ar/salud/boletin-epidemiologico-nacional/boletines-2026",
-      "status": "active",
-      "total_reports": 36,
-      "complete_reports": 36,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:18"
-    },
-    {
-      "id": "wpro_dengue_weekly",
-      "name": "WHO WPRO – Dengue Situation Update",
-      "organization": "WHO Regional Office for the Western Pacific",
-      "country_or_region": "Western Pacific",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.who.int/westernpacific/publications/m",
-      "status": "active",
-      "total_reports": 36,
-      "complete_reports": 36,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:36"
+      "last_sync": "2026-08-24T12:39:24"
     },
     {
       "id": "who_flu_weekly",
@@ -797,11 +812,41 @@
       "language": "en",
       "base_url": "https://www.who.int/teams/global-influenza-programme/surveillance-and-monitoring/respiratory-viruses/influenza-updates-archive",
       "status": "active",
-      "total_reports": 34,
-      "complete_reports": 34,
+      "total_reports": 38,
+      "complete_reports": 38,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:36"
+      "last_sync": "2026-08-24T12:40:08"
+    },
+    {
+      "id": "ar_ben",
+      "name": "Argentina – Boletín Epidemiológico Nacional (BEN)",
+      "organization": "Ministerio de Salud de Argentina",
+      "country_or_region": "Argentina",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://www.argentina.gob.ar/salud/boletin-epidemiologico-nacional/boletines-2026",
+      "status": "active",
+      "total_reports": 37,
+      "complete_reports": 37,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:11"
+    },
+    {
+      "id": "wpro_dengue_weekly",
+      "name": "WHO WPRO – Dengue Situation Update",
+      "organization": "WHO Regional Office for the Western Pacific",
+      "country_or_region": "Western Pacific",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.who.int/westernpacific/publications/m",
+      "status": "active",
+      "total_reports": 37,
+      "complete_reports": 37,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:08"
     },
     {
       "id": "jp_jihs_idwr",
@@ -816,7 +861,22 @@
       "complete_reports": 34,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:25"
+      "last_sync": "2026-08-24T12:39:23"
+    },
+    {
+      "id": "hk_cedd_flu",
+      "name": "Hong Kong CHP – COVID-19 and Influenza Express",
+      "organization": "Centre for Health Protection, Hong Kong",
+      "country_or_region": "China (Hong Kong)",
+      "source_type": "report_collection",
+      "language": "zh",
+      "base_url": "https://www.chp.gov.hk/sc/resources/29/100148.html",
+      "status": "active",
+      "total_reports": 33,
+      "complete_reports": 33,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:22"
     },
     {
       "id": "de_rki_grippeweb",
@@ -831,22 +891,7 @@
       "complete_reports": 33,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:19"
-    },
-    {
-      "id": "hk_cedd_flu",
-      "name": "Hong Kong CHP – COVID-19 and Influenza Express",
-      "organization": "Centre for Health Protection, Hong Kong",
-      "country_or_region": "China (Hong Kong)",
-      "source_type": "report_collection",
-      "language": "zh",
-      "base_url": "https://www.chp.gov.hk/sc/resources/29/100148.html",
-      "status": "active",
-      "total_reports": 32,
-      "complete_reports": 32,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:25"
+      "last_sync": "2026-08-24T12:39:14"
     },
     {
       "id": "jp_mhlw_covid",
@@ -857,26 +902,11 @@
       "language": "ja",
       "base_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00485.html",
       "status": "active",
-      "total_reports": 32,
-      "complete_reports": 32,
+      "total_reports": 33,
+      "complete_reports": 33,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:26"
-    },
-    {
-      "id": "uk_outbreaks_under_monitoring",
-      "name": "UK UKHSA – Outbreaks Under Monitoring (Weekly)",
-      "organization": "UK Health Security Agency",
-      "country_or_region": "Global",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.gov.uk/government/publications/outbreaks-under-monitoring-in-2026",
-      "status": "active",
-      "total_reports": 30,
-      "complete_reports": 30,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:39:24"
     },
     {
       "id": "reliefweb_disasters",
@@ -891,7 +921,37 @@
       "complete_reports": 23,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:31"
+      "last_sync": "2026-08-24T12:39:57"
+    },
+    {
+      "id": "ke_who_sitrep",
+      "name": "Kenya – WHO weekly health emergency SitRep",
+      "organization": "WHO Kenya / Ministry of Health Kenya",
+      "country_or_region": "Kenya",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.afro.who.int/countries/kenya/publication/kenya-weekly-situation-report-2026",
+      "status": "active",
+      "total_reports": 20,
+      "complete_reports": 20,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:24"
+    },
+    {
+      "id": "ec_gob_ec_vectoriales",
+      "name": "Ecuador MSP – Gacetas Vectoriales semanales",
+      "organization": "Ministerio de Salud Pública (MSP), Ecuador",
+      "country_or_region": "Ecuador",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://www.salud.gob.ec/gacetas-vectoriales-2026/",
+      "status": "active",
+      "total_reports": 19,
+      "complete_reports": 19,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:15"
     },
     {
       "id": "co_ins_boletin",
@@ -906,7 +966,67 @@
       "complete_reports": 17,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:19"
+      "last_sync": "2026-08-24T12:39:13"
+    },
+    {
+      "id": "au_nndss_fortnightly",
+      "name": "Australia CDC – NNDSS fortnightly reports",
+      "organization": "Australian Centre for Disease Control",
+      "country_or_region": "Australia",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.cdc.gov.au/resources/collections/nndss-fortnightly-reports",
+      "status": "active",
+      "total_reports": 16,
+      "complete_reports": 16,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:11"
+    },
+    {
+      "id": "ec_gob_ec_brotes",
+      "name": "Ecuador MSP – Gaceta Epidemiológica de Brotes",
+      "organization": "Ministerio de Salud Pública (MSP), Ecuador",
+      "country_or_region": "Ecuador",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://www.salud.gob.ec/gaceta-epidemiologica-brotes-2026/",
+      "status": "active",
+      "total_reports": 16,
+      "complete_reports": 16,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:14"
+    },
+    {
+      "id": "fr_spf_arboviroses",
+      "name": "France SpF – bulletin national arboviroses (chikungunya, dengue, Zika, West Nile)",
+      "organization": "Santé publique France",
+      "country_or_region": "France",
+      "source_type": "report_collection",
+      "language": "fr",
+      "base_url": "https://www.santepubliquefrance.fr/maladies-a-transmission-vectorielle/chikungunya/bulletin-national",
+      "status": "active",
+      "total_reports": 16,
+      "complete_reports": 16,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:22"
+    },
+    {
+      "id": "id_kemkes_surveilans_infem",
+      "name": "Indonesia Kemkes Surveilans – weekly INFEM situational PDF",
+      "organization": "Kementerian Kesehatan RI – Direktorat Surveilans dan Karantina Kesehatan",
+      "country_or_region": "Indonesia",
+      "source_type": "report_collection",
+      "language": "id",
+      "base_url": "https://surveilans.kemkes.go.id/publikasi",
+      "status": "active",
+      "total_reports": 16,
+      "complete_reports": 16,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:23"
     },
     {
       "id": "jp_jihs_measles",
@@ -921,7 +1041,22 @@
       "complete_reports": 16,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:25"
+      "last_sync": "2026-08-24T12:39:23"
+    },
+    {
+      "id": "za_nicd_diphtheria",
+      "name": "South Africa NICD – weekly diphtheria situational report",
+      "organization": "National Institute for Communicable Diseases (NICD)",
+      "country_or_region": "South Africa",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.nicd.ac.za/?s=diphtheria+situational+report+week+2026",
+      "status": "active",
+      "total_reports": 16,
+      "complete_reports": 16,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:08"
     },
     {
       "id": "us_cdc_outbreaks",
@@ -936,7 +1071,22 @@
       "complete_reports": 16,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:04"
+    },
+    {
+      "id": "paho_influenza_weekly",
+      "name": "PAHO – Regional Update Influenza and Other Respiratory Viruses (weekly)",
+      "organization": "Pan American Health Organization (PAHO/WHO)",
+      "country_or_region": "Americas",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.paho.org/en/documents/topics/influenza-sars-cov-2-rsv-and-other-respiratory-viruses",
+      "status": "active",
+      "total_reports": 15,
+      "complete_reports": 15,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:30"
     },
     {
       "id": "paho_yellow_fever",
@@ -951,7 +1101,22 @@
       "complete_reports": 15,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:28"
+      "last_sync": "2026-08-24T12:39:30"
+    },
+    {
+      "id": "do_dige_pi_boletin",
+      "name": "Dominican Republic DIGEPI – Boletín Epidemiológico Semanal",
+      "organization": "Dirección General de Epidemiología, Ministerio de Salud Pública",
+      "country_or_region": "Dominican Republic",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://epidemiologia.gob.do/documentos-epidemiologicos/boletines-semanales/",
+      "status": "active",
+      "total_reports": 15,
+      "complete_reports": 15,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:14"
     },
     {
       "id": "woah_hpai",
@@ -966,7 +1131,37 @@
       "complete_reports": 15,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:36"
+      "last_sync": "2026-08-24T12:40:08"
+    },
+    {
+      "id": "jm_moh_weekly",
+      "name": "Jamaica MoH – Weekly Epidemiology Bulletin",
+      "organization": "Ministry of Health & Wellness, Jamaica, National Surveillance Unit",
+      "country_or_region": "Jamaica",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.moh.gov.jm/bulletin/",
+      "status": "active",
+      "total_reports": 15,
+      "complete_reports": 15,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:23"
+    },
+    {
+      "id": "nz_phf_virology",
+      "name": "New Zealand PHF Science – Laboratory-based virology weekly report",
+      "organization": "New Zealand Institute for Public Health and Forensic Science (PHF Science)",
+      "country_or_region": "New Zealand",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.phfscience.nz/digital-library/",
+      "status": "active",
+      "total_reports": 15,
+      "complete_reports": 15,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:27"
     },
     {
       "id": "woah_asf",
@@ -981,7 +1176,7 @@
       "complete_reports": 14,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:36"
+      "last_sync": "2026-08-24T12:40:08"
     },
     {
       "id": "us_cdc_han",
@@ -996,7 +1191,67 @@
       "complete_reports": 13,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:03"
+    },
+    {
+      "id": "paho_measles_biweekly",
+      "name": "PAHO – Measles/Rubella bi-weekly bulletin (Americas)",
+      "organization": "Pan American Health Organization (PAHO/WHO) – Comprehensive Immunization Program",
+      "country_or_region": "Americas",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.paho.org/en/measles-rubella-weekly-bulletin",
+      "status": "active",
+      "total_reports": 12,
+      "complete_reports": 12,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:30"
+    },
+    {
+      "id": "br_ms_dengue",
+      "name": "Brazil Mato Grosso do Sul SES – weekly dengue bulletin",
+      "organization": "Secretaria de Estado de Saúde de Mato Grosso do Sul (SES-MS)",
+      "country_or_region": "Brazil (Mato Grosso do Sul)",
+      "source_type": "report_collection",
+      "language": "pt",
+      "base_url": "https://www.saude.ms.gov.br/informativos/boletins/",
+      "status": "active",
+      "total_reports": 12,
+      "complete_reports": 12,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:12"
+    },
+    {
+      "id": "kh_cdc_flu",
+      "name": "Cambodia CDC – weekly influenza / SARI-ILI surveillance",
+      "organization": "Communicable Disease Control Department (CDC), Ministry of Health, Cambodia",
+      "country_or_region": "Cambodia",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "http://www.cdcmoh.gov.kh/surveillance/influenza-surveillance",
+      "status": "active",
+      "total_reports": 12,
+      "complete_reports": 12,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:24"
+    },
+    {
+      "id": "de_rki_epidbull",
+      "name": "Germany RKI – Epidemiologisches Bulletin",
+      "organization": "Robert Koch-Institut",
+      "country_or_region": "Germany",
+      "source_type": "report_collection",
+      "language": "de",
+      "base_url": "https://www.rki.de/DE/Aktuelles/Publikationen/Epidemiologisches-Bulletin/2026/EB-2026-node.html",
+      "status": "active",
+      "total_reports": 12,
+      "complete_reports": 12,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:14"
     },
     {
       "id": "who_wer",
@@ -1011,22 +1266,82 @@
       "complete_reports": 12,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:36"
+      "last_sync": "2026-08-24T12:40:08"
     },
     {
-      "id": "ke_who_sitrep",
-      "name": "Kenya – WHO weekly health emergency SitRep",
-      "organization": "WHO Kenya / Ministry of Health Kenya",
-      "country_or_region": "Kenya",
+      "id": "pa_minsa_boletin",
+      "name": "Panama MINSA – Boletín Epidemiológico Semanal",
+      "organization": "Departamento Nacional de Epidemiología, Ministerio de Salud, Panamá",
+      "country_or_region": "Panama",
       "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.afro.who.int/countries/kenya/publication/kenya-weekly-situation-report-2026",
+      "language": "es",
+      "base_url": "https://www.minsa.gob.pa/informacion-salud/boletin-epidemiologico-semanal-3",
       "status": "active",
       "total_reports": 12,
       "complete_reports": 12,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:26"
+      "last_sync": "2026-08-24T12:39:27"
+    },
+    {
+      "id": "pl_nizp_epimeld",
+      "name": "Poland NIZP-PZH – fortnightly notifiable-disease meldunki",
+      "organization": "Narodowy Instytut Zdrowia Publicznego PZH – PIB",
+      "country_or_region": "Poland",
+      "source_type": "report_collection",
+      "language": "pl",
+      "base_url": "https://wwwold.pzh.gov.pl/oldpage/epimeld/2026/index_mp.html",
+      "status": "active",
+      "total_reports": 12,
+      "complete_reports": 12,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:35"
+    },
+    {
+      "id": "uy_msp_boletin",
+      "name": "Uruguay MSP – Boletín epidemiológico semanal",
+      "organization": "Ministerio de Salud Pública, Uruguay",
+      "country_or_region": "Uruguay",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://www.gub.uy/ministerio-salud-publica/comunicacion/publicaciones/boletin-epidemiologico-2026",
+      "status": "active",
+      "total_reports": 12,
+      "complete_reports": 12,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:04"
+    },
+    {
+      "id": "ie_hpsc_irv_weekly",
+      "name": "Ireland HPSC – Integrated Respiratory Virus (IRV) bulletin (weekly)",
+      "organization": "Health Protection Surveillance Centre (HPSC), Ireland",
+      "country_or_region": "Ireland",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.hpsc.ie/a-z/respiratory/acuterespiratoryinfection/surveillance/integratedreports/",
+      "status": "active",
+      "total_reports": 11,
+      "complete_reports": 11,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:23"
+    },
+    {
+      "id": "it_iss_covid",
+      "name": "Italy ISS – integrated COVID-19 surveillance weekly bulletin",
+      "organization": "Istituto Superiore di Sanità (ISS)",
+      "country_or_region": "Italy",
+      "source_type": "report_collection",
+      "language": "it",
+      "base_url": "https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati-archivio",
+      "status": "active",
+      "total_reports": 11,
+      "complete_reports": 11,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:23"
     },
     {
       "id": "il_moh_respiratory",
@@ -1044,6 +1359,21 @@
       "last_sync": "2026-03-25T19:02:39"
     },
     {
+      "id": "mx_dge_boletin",
+      "name": "Mexico DGE – Boletín Epidemiológico Semanal (SINAVE/SUAVE)",
+      "organization": "Dirección General de Epidemiología, Secretaría de Salud (Mexico)",
+      "country_or_region": "Mexico",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://www.gob.mx/salud/documentos/boletinepidemiologico-sistema-nacional-de-vigilancia-epidemiologica-sistema-unico-de-informacion-417103",
+      "status": "active",
+      "total_reports": 10,
+      "complete_reports": 10,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:26"
+    },
+    {
       "id": "who_wpro_psss",
       "name": "WHO WPRO – Pacific Syndromic Surveillance System (PSSS) Weekly Bulletin",
       "organization": "WHO Regional Office for the Western Pacific",
@@ -1056,82 +1386,67 @@
       "complete_reports": 10,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:36"
+      "last_sync": "2026-08-24T12:40:08"
     },
     {
-      "id": "paho_influenza_weekly",
-      "name": "PAHO – Regional Update Influenza and Other Respiratory Viruses (weekly)",
-      "organization": "Pan American Health Organization (PAHO/WHO)",
-      "country_or_region": "Americas",
+      "id": "pt_dgs_sazonal",
+      "name": "Portugal DGS – Relatório de Resposta Sazonal em Saúde (weekly)",
+      "organization": "Direção-Geral da Saúde (DGS), Ministério da Saúde, Portugal",
+      "country_or_region": "Portugal",
       "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.paho.org/en/documents/topics/influenza-sars-cov-2-rsv-and-other-respiratory-viruses",
+      "language": "pt",
+      "base_url": "https://www.dgs.pt/publicacoes/relatorio-de-resposta-sazonal-em-saude.aspx",
       "status": "active",
-      "total_reports": 8,
-      "complete_reports": 8,
+      "total_reports": 10,
+      "complete_reports": 10,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:28"
+      "last_sync": "2026-08-24T12:39:42"
     },
     {
-      "id": "au_nndss_fortnightly",
-      "name": "Australia CDC – NNDSS fortnightly reports",
-      "organization": "Australian Centre for Disease Control",
-      "country_or_region": "Australia",
-      "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.cdc.gov.au/resources/collections/nndss-fortnightly-reports",
-      "status": "active",
-      "total_reports": 8,
-      "complete_reports": 8,
-      "pending_reports": 0,
-      "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:18"
-    },
-    {
-      "id": "do_dige_pi_boletin",
-      "name": "Dominican Republic DIGEPI – Boletín Epidemiológico Semanal",
-      "organization": "Dirección General de Epidemiología, Ministerio de Salud Pública",
-      "country_or_region": "Dominican Republic",
+      "id": "py_dgvs_boletin",
+      "name": "Paraguay DGVS – Boletín Epidemiológico Semanal",
+      "organization": "Dirección General de Vigilancia de la Salud, Ministerio de Salud Pública y Bienestar Social",
+      "country_or_region": "Paraguay",
       "source_type": "report_collection",
       "language": "es",
-      "base_url": "https://epidemiologia.gob.do/documentos-epidemiologicos/boletines-semanales/",
+      "base_url": "https://dgvs.mspbs.gov.py/boletin-epidemiologico-semanal/",
       "status": "active",
-      "total_reports": 8,
-      "complete_reports": 8,
+      "total_reports": 9,
+      "complete_reports": 9,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:20"
+      "last_sync": "2026-08-24T12:39:54"
     },
     {
-      "id": "nz_phf_virology",
-      "name": "New Zealand PHF Science – Laboratory-based virology weekly report",
-      "organization": "New Zealand Institute for Public Health and Forensic Science (PHF Science)",
-      "country_or_region": "New Zealand",
+      "id": "uk_phs_respiratory",
+      "name": "Scotland PHS – Viral respiratory diseases surveillance report",
+      "organization": "Public Health Scotland (PHS)",
+      "country_or_region": "United Kingdom (Scotland)",
       "source_type": "report_collection",
       "language": "en",
-      "base_url": "https://www.phfscience.nz/digital-library/",
+      "base_url": "https://publichealthscotland.scot/publications/?q=viral+respiratory+diseases+in+scotland+surveillance+report",
       "status": "active",
-      "total_reports": 8,
-      "complete_reports": 8,
+      "total_reports": 9,
+      "complete_reports": 9,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:26"
+      "last_sync": "2026-08-24T12:40:00"
     },
     {
-      "id": "uy_msp_boletin",
-      "name": "Uruguay MSP – Boletín epidemiológico semanal",
-      "organization": "Ministerio de Salud Pública, Uruguay",
-      "country_or_region": "Uruguay",
+      "id": "bo_minsalud_epidemiologico_weekly",
+      "name": "Bolivia Minsalud – Boletín Epidemiológico Semanal (SE)",
+      "organization": "Ministerio de Salud y Deportes, Bolivia (Dirección General de Epidemiología)",
+      "country_or_region": "Bolivia",
       "source_type": "report_collection",
       "language": "es",
-      "base_url": "https://www.gub.uy/ministerio-salud-publica/comunicacion/publicaciones/boletin-epidemiologico-2026",
+      "base_url": "https://minsalud.gob.bo/9104-boletines-epidemiologicos-2026",
       "status": "active",
       "total_reports": 8,
       "complete_reports": 8,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:33"
+      "last_sync": "2026-08-24T12:39:12"
     },
     {
       "id": "cd_bvd_sitrep",
@@ -1142,26 +1457,71 @@
       "language": "en",
       "base_url": "https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-4",
       "status": "active",
-      "total_reports": 7,
-      "complete_reports": 7,
+      "total_reports": 8,
+      "complete_reports": 8,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:18"
+      "last_sync": "2026-08-24T12:39:12"
     },
     {
-      "id": "jm_moh_weekly",
-      "name": "Jamaica MoH – Weekly Epidemiology Bulletin",
-      "organization": "Ministry of Health & Wellness, Jamaica, National Surveillance Unit",
-      "country_or_region": "Jamaica",
+      "id": "ec_gob_ec_etas",
+      "name": "Ecuador MSP – Gacetas Epidemiológicas ETAS",
+      "organization": "Ministerio de Salud Pública (MSP), Ecuador",
+      "country_or_region": "Ecuador",
       "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://www.moh.gov.jm/bulletin/",
+      "language": "es",
+      "base_url": "https://www.salud.gob.ec/gacetas-epidemiologicas-etas-2026/",
+      "status": "active",
+      "total_reports": 8,
+      "complete_reports": 8,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:14"
+    },
+    {
+      "id": "pe_cdc_sala",
+      "name": "Peru CDC – Dengue sala situacional weekly",
+      "organization": "Centro Nacional de Epidemiología, Prevención y Control de Enfermedades (CDC Perú / DGE)",
+      "country_or_region": "Peru",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://www.dge.gob.pe/portalnuevo/sala-de-situacion/",
       "status": "active",
       "total_reports": 7,
       "complete_reports": 7,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:25"
+      "last_sync": "2026-08-24T12:39:31"
+    },
+    {
+      "id": "ro_insp_respiratorii",
+      "name": "Romania INSP/CNSCBT – weekly respiratory infections briefing",
+      "organization": "Institutul Național de Sănătate Publică (INSP) – CNSCBT",
+      "country_or_region": "Romania",
+      "source_type": "report_collection",
+      "language": "ro",
+      "base_url": "https://insp.gov.ro/?s=Informare+infectii+respiratorii+2026",
+      "status": "active",
+      "total_reports": 7,
+      "complete_reports": 7,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:58"
+    },
+    {
+      "id": "ss_who_idsr",
+      "name": "South Sudan – WHO weekly IDSR bulletin",
+      "organization": "WHO South Sudan / Ministry of Health South Sudan",
+      "country_or_region": "South Sudan",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.afro.who.int/countries/south-sudan/publication/south-sudan-weekly-integrated-disease-surveillance-and-response-bulletin-2026",
+      "status": "active",
+      "total_reports": 7,
+      "complete_reports": 7,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:58"
     },
     {
       "id": "who_covid_variants",
@@ -1176,22 +1536,97 @@
       "complete_reports": 6,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:33"
+      "last_sync": "2026-08-24T12:40:05"
     },
     {
-      "id": "py_dgvs_boletin",
-      "name": "Paraguay DGVS – Boletín Epidemiológico Semanal",
-      "organization": "Dirección General de Vigilancia de la Salud, Ministerio de Salud Pública y Bienestar Social",
-      "country_or_region": "Paraguay",
+      "id": "pe_cdc_iras",
+      "name": "Peru CDC – IRA sala situacional weekly",
+      "organization": "Centro Nacional de Epidemiología, Prevención y Control de Enfermedades (CDC Perú / DGE)",
+      "country_or_region": "Peru",
       "source_type": "report_collection",
       "language": "es",
-      "base_url": "https://dgvs.mspbs.gov.py/boletin-epidemiologico-semanal/",
+      "base_url": "https://www.dge.gob.pe/portalnuevo/sala-de-situacion/",
       "status": "active",
-      "total_reports": 6,
-      "complete_reports": 6,
+      "total_reports": 5,
+      "complete_reports": 5,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:31"
+      "last_sync": "2026-08-24T12:39:31"
+    },
+    {
+      "id": "pe_cdc_malaria",
+      "name": "Peru CDC – Malaria sala situacional weekly",
+      "organization": "Centro Nacional de Epidemiología, Prevención y Control de Enfermedades (CDC Perú / DGE)",
+      "country_or_region": "Peru",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://www.dge.gob.pe/portalnuevo/sala-de-situacion/",
+      "status": "active",
+      "total_reports": 5,
+      "complete_reports": 5,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:31"
+    },
+    {
+      "id": "pe_cdc_zika",
+      "name": "Peru CDC – Zika sala situacional weekly",
+      "organization": "Centro Nacional de Epidemiología, Prevención y Control de Enfermedades (CDC Perú / DGE)",
+      "country_or_region": "Peru",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://www.dge.gob.pe/portalnuevo/sala-de-situacion/",
+      "status": "active",
+      "total_reports": 5,
+      "complete_reports": 5,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:31"
+    },
+    {
+      "id": "za_nicd_measles",
+      "name": "South Africa NICD – weekly measles and rubella sitrep",
+      "organization": "National Institute for Communicable Diseases (NICD)",
+      "country_or_region": "South Africa",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.nicd.ac.za/?s=weekly+measles+and+rubella+situation+report",
+      "status": "active",
+      "total_reports": 5,
+      "complete_reports": 5,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:08"
+    },
+    {
+      "id": "th_ddc_flu",
+      "name": "Thailand DDC – Weekly influenza surveillance report",
+      "organization": "Department of Disease Control (DDC), Ministry of Public Health, Thailand",
+      "country_or_region": "Thailand",
+      "source_type": "report_collection",
+      "language": "th",
+      "base_url": "https://ddc.moph.go.th/doe/pagecontent.php?page=828&dept=doe",
+      "status": "active",
+      "total_reports": 5,
+      "complete_reports": 5,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:58"
+    },
+    {
+      "id": "who_wpro_respiratory",
+      "name": "WHO WPRO – Respiratory Viruses Surveillance Bulletin",
+      "organization": "WHO Regional Office for the Western Pacific",
+      "country_or_region": "Western Pacific",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.who.int/westernpacific/wpro-emergencies/surveillance/respiratory-viruses",
+      "status": "active",
+      "total_reports": 5,
+      "complete_reports": 5,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:08"
     },
     {
       "id": "cr_minsa_boletin",
@@ -1202,11 +1637,41 @@
       "language": "es",
       "base_url": "https://ministeriodesalud.go.cr/index.php/biblioteca-de-archivos-left/documentos-ministerio-de-salud/material-informativo/material-publicado/boletines/boletines-vigilancia-vs-enfermedades-de-transmision-vectorial/boletines-epidemiologicos-2026",
       "status": "active",
+      "total_reports": 4,
+      "complete_reports": 4,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:14"
+    },
+    {
+      "id": "np_edcd_weekly",
+      "name": "Nepal EDCD – Weekly Surveillance Bulletin",
+      "organization": "Epidemiology and Disease Control Division, Ministry of Health and Food Safety, Nepal",
+      "country_or_region": "Nepal",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://edcd.gov.np/",
+      "status": "active",
+      "total_reports": 4,
+      "complete_reports": 4,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:27"
+    },
+    {
+      "id": "dk_ssi_epinews",
+      "name": "Denmark SSI – EPI-NEWS weekly infectious disease newsletter",
+      "organization": "Statens Serum Institut (SSI), Denmark",
+      "country_or_region": "Denmark",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://en.ssi.dk/news/epi-news",
+      "status": "active",
       "total_reports": 3,
       "complete_reports": 3,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:19"
+      "last_sync": "2026-08-24T12:39:14"
     },
     {
       "id": "et_ephi_bulletin",
@@ -1221,7 +1686,37 @@
       "complete_reports": 3,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:25"
+      "last_sync": "2026-08-24T12:39:22"
+    },
+    {
+      "id": "gr_eody_wnv",
+      "name": "Greece EODY – West Nile virus weekly epidemiological report",
+      "organization": "National Public Health Organization (EODY)",
+      "country_or_region": "Greece",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://eody.gov.gr/el/nosimata/metadotika/nosimata-kai-themata-ygeias/ios-dytikou-neilou.html",
+      "status": "active",
+      "total_reports": 3,
+      "complete_reports": 3,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:22"
+    },
+    {
+      "id": "gt_mspas_vectorial",
+      "name": "Guatemala MSPAS – Vector-borne / parasitic weekly (sala situacional)",
+      "organization": "Dirección de Epidemiología y Gestión del Riesgo, MSPAS Guatemala",
+      "country_or_region": "Guatemala",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://epidemiologia.mspas.gob.gt/informacion/vigilancia-epidemiologica/salas-situacionales/6-vectoriales-parasitarias",
+      "status": "active",
+      "total_reports": 3,
+      "complete_reports": 3,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:22"
     },
     {
       "id": "gt_mspas_zoonotic",
@@ -1236,7 +1731,22 @@
       "complete_reports": 3,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:25"
+      "last_sync": "2026-08-24T12:39:22"
+    },
+    {
+      "id": "it_iss_wnv",
+      "name": "Italy ISS – West Nile / Usutu weekly bulletin",
+      "organization": "Istituto Superiore di Sanità (ISS)",
+      "country_or_region": "Italy",
+      "source_type": "report_collection",
+      "language": "it",
+      "base_url": "https://www.epicentro.iss.it/westnile/bollettino",
+      "status": "active",
+      "total_reports": 3,
+      "complete_reports": 3,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:23"
     },
     {
       "id": "ng_ncdc_weekly",
@@ -1251,7 +1761,7 @@
       "complete_reports": 3,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:26"
+      "last_sync": "2026-08-24T12:39:27"
     },
     {
       "id": "who_afro_outbreaks",
@@ -1266,22 +1776,22 @@
       "complete_reports": 2,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:33"
+      "last_sync": "2026-08-24T12:40:05"
     },
     {
-      "id": "np_edcd_weekly",
-      "name": "Nepal EDCD – Weekly Surveillance Bulletin",
-      "organization": "Epidemiology and Disease Control Division, Ministry of Health and Food Safety, Nepal",
-      "country_or_region": "Nepal",
+      "id": "hr_hzjz_gripa",
+      "name": "Croatia HZJZ – weekly influenza (gripa) surveillance",
+      "organization": "Hrvatski zavod za javno zdravstvo (HZJZ)",
+      "country_or_region": "Croatia",
       "source_type": "report_collection",
-      "language": "en",
-      "base_url": "https://edcd.gov.np/",
+      "language": "hr",
+      "base_url": "https://www.hzjz.hr/sluzba-epidemiologija-zarazne-bolesti/gripa/",
       "status": "active",
       "total_reports": 2,
       "complete_reports": 2,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:26"
+      "last_sync": "2026-08-24T12:39:22"
     },
     {
       "id": "who_afro_respiratory",
@@ -1296,7 +1806,22 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:33"
+      "last_sync": "2026-08-24T12:40:05"
+    },
+    {
+      "id": "paho_dengue_weekly",
+      "name": "PAHO – Dengue epidemiological situation (Americas weekly)",
+      "organization": "Pan American Health Organization (PAHO/WHO)",
+      "country_or_region": "Americas",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://www.paho.org/en/topics/dengue",
+      "status": "active",
+      "total_reports": 1,
+      "complete_reports": 1,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:30"
     },
     {
       "id": "ca_phac_covid",
@@ -1311,7 +1836,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:18"
+      "last_sync": "2026-08-24T12:39:12"
     },
     {
       "id": "ca_phac_flu",
@@ -1326,7 +1851,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:18"
+      "last_sync": "2026-08-24T12:39:12"
     },
     {
       "id": "ca_phac_rsv",
@@ -1341,7 +1866,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:18"
+      "last_sync": "2026-08-24T12:39:12"
     },
     {
       "id": "ca_phac_snapshot",
@@ -1356,7 +1881,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:18"
+      "last_sync": "2026-08-24T12:39:12"
     },
     {
       "id": "ca_phac_wastewater",
@@ -1371,7 +1896,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:18"
+      "last_sync": "2026-08-24T12:39:12"
     },
     {
       "id": "tw_nidss_covid",
@@ -1386,7 +1911,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:00"
     },
     {
       "id": "tw_nidss_dengue",
@@ -1401,7 +1926,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:00"
     },
     {
       "id": "tw_nidss_enterovirus",
@@ -1416,7 +1941,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:00"
     },
     {
       "id": "tw_nidss_flu",
@@ -1431,7 +1956,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:00"
     },
     {
       "id": "ecdc_erviss",
@@ -1446,7 +1971,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:24"
+      "last_sync": "2026-08-24T12:39:21"
     },
     {
       "id": "ecdc_dengue_monthly",
@@ -1461,7 +1986,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:24"
+      "last_sync": "2026-08-24T12:39:21"
     },
     {
       "id": "web_news",
@@ -1476,7 +2001,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:09:12"
+      "last_sync": "2026-08-24T12:40:05"
     },
     {
       "id": "who_covid_dashboard",
@@ -1491,7 +2016,37 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:33"
+      "last_sync": "2026-08-24T12:40:05"
+    },
+    {
+      "id": "gt_mspas_arbovirus",
+      "name": "Guatemala MSPAS – Arbovirosis weekly (sala situacional)",
+      "organization": "Dirección de Epidemiología y Gestión del Riesgo, MSPAS Guatemala",
+      "country_or_region": "Guatemala",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://epidemiologia.mspas.gob.gt/informacion/vigilancia-epidemiologica/salas-situacionales/5-arbovirosis",
+      "status": "active",
+      "total_reports": 1,
+      "complete_reports": 1,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:22"
+    },
+    {
+      "id": "gt_mspas_etas",
+      "name": "Guatemala MSPAS – ETAs weekly (sala situacional)",
+      "organization": "Dirección de Epidemiología y Gestión del Riesgo, MSPAS Guatemala",
+      "country_or_region": "Guatemala",
+      "source_type": "report_collection",
+      "language": "es",
+      "base_url": "https://epidemiologia.mspas.gob.gt/informacion/vigilancia-epidemiologica/salas-situacionales/10-etas",
+      "status": "active",
+      "total_reports": 1,
+      "complete_reports": 1,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:39:22"
     },
     {
       "id": "nl_rivm_weekly",
@@ -1506,7 +2061,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:26"
+      "last_sync": "2026-08-24T12:39:27"
     },
     {
       "id": "no_fhi_respiratory",
@@ -1521,7 +2076,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:26"
+      "last_sync": "2026-08-24T12:39:27"
     },
     {
       "id": "us_cdc_fluview",
@@ -1536,7 +2091,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:03"
     },
     {
       "id": "us_cdc_measles",
@@ -1551,7 +2106,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:03"
     },
     {
       "id": "us_cdc_nwss_covid",
@@ -1566,7 +2121,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:04"
     },
     {
       "id": "us_cdc_nwss_variants",
@@ -1581,7 +2136,7 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:04"
     },
     {
       "id": "us_cdc_respiratory",
@@ -1596,7 +2151,22 @@
       "complete_reports": 1,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-18T02:03:32"
+      "last_sync": "2026-08-24T12:40:04"
+    },
+    {
+      "id": "us_hi_doh_flu",
+      "name": "Hawaii DOH – weekly influenza / respiratory surveillance",
+      "organization": "Hawaii State Department of Health (Disease Outbreak Control Division)",
+      "country_or_region": "United States (Hawaii)",
+      "source_type": "report_collection",
+      "language": "en",
+      "base_url": "https://health.hawaii.gov/docd/resources/reports/influenza-reports/",
+      "status": "active",
+      "total_reports": 1,
+      "complete_reports": 1,
+      "pending_reports": 0,
+      "failed_reports": 0,
+      "last_sync": "2026-08-24T12:40:04"
     },
     {
       "id": "au_cdc_publications",
@@ -1641,7 +2211,7 @@
       "complete_reports": 0,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-17T16:54:16"
+      "last_sync": "2026-08-24T02:49:08"
     },
     {
       "id": "hk_cdc_flu_data",
@@ -1656,7 +2226,7 @@
       "complete_reports": 0,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-17T16:54:18"
+      "last_sync": "2026-08-24T02:49:10"
     },
     {
       "id": "ecdc_erviss_positivity",
@@ -1671,7 +2241,7 @@
       "complete_reports": 0,
       "pending_reports": 0,
       "failed_reports": 0,
-      "last_sync": "2026-08-17T16:53:07"
+      "last_sync": "2026-08-24T02:43:16"
     },
     {
       "id": "it_iss_respivirnet",
