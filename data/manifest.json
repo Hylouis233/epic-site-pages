@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-25T03:16:00Z",
-  "data_as_of": "2026-08-24",
-  "last_successful_ingest_at": "2026-08-25T03:16:00Z",
+  "build_generated_at": "2026-08-26T03:29:02Z",
+  "data_as_of": "2026-08-25",
+  "last_successful_ingest_at": "2026-08-26T03:29:02Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -11,12 +11,12 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "record_count": 80,
-  "event_count": 80,
-  "signal_count": 80,
-  "source_count": 80,
-  "disease_count": 16,
-  "continent_count": 5,
+  "record_count": 76,
+  "event_count": 76,
+  "signal_count": 76,
+  "source_count": 76,
+  "disease_count": 18,
+  "continent_count": 4,
   "formats": {
     "json": "records.json",
     "ndjson": "events.ndjson",
@@ -27,13 +27,13 @@
     "parquet": "events.parquet"
   },
   "checksums_sha256": {
-    "records.json": "16c7591c4f7856ecf74367e97c4b56d545d642d6d7ce558aecf92490a65f6361",
-    "events.ndjson": "aab8354c135a31416116add29cf9acce10f5588ed2f72ad44c67c9973e3558bc",
-    "events.csv": "a430af98f67084c71b0618132ad6b60b66e937cdd6e697fa13956cbd00285b1b",
-    "events.geojson": "50a7cac91bd5040b7705a2de857ecd5023f47824eac291676861754f8b72621f",
+    "records.json": "3e7a9d36a1f45332e71c5a03f6e2ff99de8ef689fcc547ca0a7736585c4461be",
+    "events.ndjson": "87318d4758b15e89304c87f14450293e747056833180c88b52eff9ffd652cc85",
+    "events.csv": "a118b246c1cad318577888174e68dbba19139f6105ba0ba600bf1402122170a3",
+    "events.geojson": "e683465046e62549615fc665d218ab7b6454bc8dc58c5de6ce786639583497dd",
     "schema.json": "07670fe85c758949d7bdc8dcb29942d1243485be3add880ce68ac16cc1c96aa6",
-    "quality-report.json": "e5a62651bc9ff44bcc7a3b08322234f825ff33eff259491a18cc7a6630a897da",
-    "events.parquet": "0a81925f08b04901f16f2e09d083bf8e8ecc5a515bb0f97314a91a16547b5b96"
+    "quality-report.json": "c7bfcebc00051e0fb867e718aa60c07a4be7b7779f271542ff88e81ef80cdf41",
+    "events.parquet": "1804674e5f91a418d8f292747382a69f6ab58e7c42159e4e8c595e9b09c119c1"
   },
   "license": {
     "repository": "proprietary-source-available",
@@ -43,7 +43,7 @@
   "quality_gate": {
     "passed": true,
     "ingest_accepted": true,
-    "accepted_record_count": 80,
+    "accepted_record_count": 76,
     "quarantined_record_count": 0
   }
 }

@@ -1,8 +1,8 @@
 {
-  "total_records": 80,
-  "disease_count": 16,
-  "continent_count": 5,
-  "latest_date": "2026-08-24",
+  "total_records": 76,
+  "disease_count": 18,
+  "continent_count": 4,
+  "latest_date": "2026-08-25",
   "filter_options": {
     "diseases": [
       "军团菌病",
@@ -15,25 +15,26 @@
       "沙门氏菌病",
       "流行性感冒",
       "猴痘",
+      "疟疾",
       "登革热",
       "福氏内格里阿米巴原虫",
       "福氏耐格里阿米巴虫",
       "综合传染病",
+      "菜花(尖锐湿疣,HPV感染)",
       "西尼罗病毒",
       "麻疹"
     ],
     "continents": [
       "亚洲",
       "北美洲",
-      "大洋洲",
       "欧洲",
       "非洲"
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-25T03:16:00Z",
-  "data_as_of": "2026-08-24",
-  "last_successful_ingest_at": "2026-08-25T03:16:00Z",
+  "build_generated_at": "2026-08-26T03:29:02Z",
+  "data_as_of": "2026-08-25",
+  "last_successful_ingest_at": "2026-08-26T03:29:02Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -42,5 +43,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-08-24"
+  "last_modified": "2026-08-25"
 }
