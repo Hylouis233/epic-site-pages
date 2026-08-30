@@ -3,6 +3,102 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_7e8280195bbaf79f714d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4,
+          33.8
+        ]
+      },
+      "properties": {
+        "event_id": "evt_7e8280195bbaf79f714d",
+        "published_at": "2026-08-29",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "Metro Atlanta, Georgia, USA",
+        "continent": "北美洲",
+        "source_org": "WTVM",
+        "source_type": "other_open_source",
+        "source": "https://www.wtvm.com/2026/08/28/measles-outbreak-confirmed-metro-atlanta-daycare",
+        "description_cn": "佐治亚州公共卫生部门确认亚特兰大都会区新增4例麻疹确诊病例,均为上周确诊患者的密切接触者。本次暴发与一家托幼机构有关,感",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_ba7100e395a6374f4c1b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_ba7100e395a6374f4c1b",
+        "published_at": "2026-08-29",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "美国宾夕法尼亚州贝德福德县",
+        "continent": "北美洲",
+        "source_org": "Altoonamirror",
+        "source_type": "other_open_source",
+        "source": "https://www.altoonamirror.com/news/local-news/2026/08/measles-outbreak-entering-region",
+        "description_cn": "宾夕法尼亚州多县出现麻疹疫情,累计确诊31例,死亡2例,卫生部门呼吁接种疫苗。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_5e70f87c6390a5097153",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9,
+          40.8
+        ]
+      },
+      "properties": {
+        "event_id": "evt_5e70f87c6390a5097153",
+        "published_at": "2026-08-29",
+        "disease_id": "legionellosis",
+        "disease_name_zh": "军团菌病",
+        "location": "纽约市曼哈顿上东区",
+        "continent": "北美洲",
+        "source_org": "Nbcnewyork",
+        "source_type": "other_open_source",
+        "source": "https://www.nbcnewyork.com/news/health/eleven-deaths-linked-legionnaires-outbreak-upper-east-side/6541699",
+        "description_cn": "美国纽约市卫生官员宣布,曼哈顿上东区军团病聚集性疫情累计已造成94例感染和11例死亡。最后一例诊断出现在6周多之前,最后",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_0b5bbc141ee5322ef81e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6,
+          24.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_0b5bbc141ee5322ef81e",
+        "published_at": "2026-08-29",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "花莲县",
+        "continent": "亚洲",
+        "source_org": "886",
+        "source_type": "news_media",
+        "source": "https://886.news/archives/357832",
+        "description_cn": "台湾正值流感与新冠疫情流行期,上周新增59例本土新冠重症病例及19例死亡病例,8月流感就诊人次创近10年同期新高。中小学",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_fdb4ecca1a31ff79b59f",
       "geometry": {
         "type": "Point",
@@ -22,6 +118,78 @@
         "source_type": "news_media",
         "source": "https://newsinfo.inquirer.net/2294147/bohol-declares-province-wide-dengue-outbreak",
         "description_cn": "菲律宾保和省暴发登革热,2026年1月至今累计1883例确诊、21例死亡",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_e8ae362f5bd576244768",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.7,
+          43.6
+        ]
+      },
+      "properties": {
+        "event_id": "evt_e8ae362f5bd576244768",
+        "published_at": "2026-08-28",
+        "disease_id": "cyclosporiasis",
+        "disease_name_zh": "环孢子虫病",
+        "location": "密歇根州",
+        "continent": "北美洲",
+        "source_org": "Press Herald",
+        "source_type": "other_open_source",
+        "source": "https://www.pressherald.com/2026/08/28/as-maine-reports-more-cyclosporiasis-cases-health-officials-say-outbreak-may-be-slowing",
+        "description_cn": "美国缅因州报告环孢子虫病例增加,全国累计11458例,495人住院,2人死亡",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_c34845fccf67cd6ebef7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.5,
+          -0.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_c34845fccf67cd6ebef7",
+        "published_at": "2026-08-28",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "厄瓜多尔",
+        "continent": "南美洲",
+        "source_org": "Substack",
+        "source_type": "news_media",
+        "source": "https://outbreaknewstoday.substack.com/p/ecuador-dengue-environmental-conditions",
+        "description_cn": "厄瓜多尔2026年累计报告登革热确诊病例28652例,环境条件和蚊虫抗药性影响蚊媒繁殖。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_077dd2f56c62b743df17",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_077dd2f56c62b743df17",
+        "published_at": "2026-08-28",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "LIFE",
+        "source_type": "other_open_source",
+        "source": "https://life.tw/article/%E8%8F%B2%E5%BE%8B%E8%B3%93%E9%81%8A%E5%AD%B8%E5%9C%98%E7%88%864%E4%BE%8B%E7%99%BB%E9%9D%A9%E7%86%B1-%E7%96%BE%E7%AE%A1%E7%BD%B2-%E5%90%8C%E5%9C%98%E6%9C%89%E7%99%BE%E4%BA%BA-%E5%88%86%E5%B8%8317%E7%B8%A3%E5%B8%82-3132778",
+        "description_cn": "彰化县18名学生及家长参加菲律宾宿务游学团,7月31日出国预计停留1个月,部分成员返台后陆续出现症状,筛检5人中4人确诊",
         "data_quality_score": 92
       }
     },
@@ -1491,6 +1659,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_238b991918031099fa07",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0,
+          36.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_238b991918031099fa07",
+        "published_at": "2026-08-23",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "日本",
+        "continent": "亚洲",
+        "source_org": "MHLW",
+        "source_type": "other_open_source",
+        "source": "https://www.mhlw.go.jp/content/001743134.pdf",
+        "description_cn": "日本厚生劳动省发布的新冠病毒感染症(COVID-19)周报,涵盖2026年第34周(8月17日至8月23日)全国哨点医院",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_e29153351072a5fb28ef",
       "geometry": {
         "type": "Point",
@@ -1510,102 +1702,6 @@
         "source_type": "news_media",
         "source": "https://www.yahoo.com/news/videos/citrus-county-confirms-first-case-221743866.html",
         "description_cn": "佛罗里达州柑橘县发现首例本地登革热病例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_63437c19c0f45c204363",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          112.5,
-          2.5
-        ]
-      },
-      "properties": {
-        "event_id": "evt_63437c19c0f45c204363",
-        "published_at": "2026-08-22",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "马来西亚",
-        "continent": "亚洲",
-        "source_org": "SCMP",
-        "source_type": "other_open_source",
-        "source": "https://www.scmp.com/news/asia/southeast-asia/article/3364899/dozens-die-dengue-surges-malaysia-while-vaccine-uptake-stalls",
-        "description_cn": "据《南华早报》报道,马来西亚登革热疫情持续恶化,至少已有55人死亡,感染病例大幅激增。医疗专家警告称,疫苗接种率低迷主要",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_02d8d50002bd06b79c21",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          38.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_02d8d50002bd06b79c21",
-        "published_at": "2026-08-22",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "肯尼亚",
-        "continent": "非洲",
-        "source_org": "Vellum",
-        "source_type": "other_open_source",
-        "source": "https://vellum.co.ke/dengue-fever-and-ebola-in-kenya-what-you-need-to-know",
-        "description_cn": "世卫组织报告肯尼亚三县登革热病例达1,679例,疫区从沿海向东北部干旱地区扩展",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_885a812d12590ccc2ec8",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.4,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_885a812d12590ccc2ec8",
-        "published_at": "2026-08-22",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "孟加拉国",
-        "continent": "亚洲",
-        "source_org": "Bssnews",
-        "source_type": "news_media",
-        "source": "https://www.bssnews.net/others/416762",
-        "description_cn": "孟加拉国近期麻疹疫情,累计确诊18,208例,死亡99例,住院128,825例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_fca76a7e1ecaaec0b15f",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.4,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_fca76a7e1ecaaec0b15f",
-        "published_at": "2026-08-22",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "孟加拉国",
-        "continent": "亚洲",
-        "source_org": "Thedailystar",
-        "source_type": "other_open_source",
-        "source": "https://www.thedailystar.net/news/bangladesh/news/dengue-shows-no-signs-slowing-4253701",
-        "description_cn": "据孟加拉国卫生服务总局(DGHS)数据,截至2026年8月21日,8月已报告11712例登革热病例,比7月全月的9206",
         "data_quality_score": 92
       }
     },
@@ -1654,126 +1750,6 @@
         "source_type": "other_open_source",
         "source": "https://www.gov.mo/zh-hant/news/1260537",
         "description_cn": "澳门1例军团菌病病例,患者82岁男性,已住院,卫生部门开展环境调查",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_4f80809c558269c96f5d",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          112.5,
-          2.5
-        ]
-      },
-      "properties": {
-        "event_id": "evt_4f80809c558269c96f5d",
-        "published_at": "2026-08-21",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "马来西亚",
-        "continent": "亚洲",
-        "source_org": "Thestar",
-        "source_type": "other_open_source",
-        "source": "https://www.thestar.com.my/news/nation/2026/08/22/dengue-surges-vaccines-lag",
-        "description_cn": "2026年马来西亚登革热疫情显著上升,全国累计报告58079例病例和55例死亡,同比增长56.2%。疫情最初集中在巴生谷",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_5989aa9e9256105819c8",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -89.7,
-          44.4
-        ]
-      },
-      "properties": {
-        "event_id": "evt_5989aa9e9256105819c8",
-        "published_at": "2026-08-21",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "Wisconsin",
-        "continent": "北美洲",
-        "source_org": "WBAY",
-        "source_type": "other_open_source",
-        "source": "https://www.wbay.com/2026/08/21/wisconsin-department-health-services-provides-update-measles-outbreak-southwest-wisconsin",
-        "description_cn": "威斯康星州卫生部更新了西南部地区麻疹疫情进展,目前已确认41例确诊病例和7例疑似病例,其中Lafayette Count",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_97d4368f624acba83046",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.0,
-          46.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_97d4368f624acba83046",
-        "published_at": "2026-08-21",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "法国多尔多涅省",
-        "continent": "欧洲",
-        "source_org": "Thelocal",
-        "source_type": "other_open_source",
-        "source": "https://www.thelocal.fr/20260821/chikungunya-and-dengue-fever-reported-in-south-west-france",
-        "description_cn": "法国西南部出现基孔肯雅热和登革热本地传播,吉伦特省3例,多尔多涅省1例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_6f35bff9041bcc0d467f",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          33.4,
-          35.2
-        ]
-      },
-      "properties": {
-        "event_id": "evt_6f35bff9041bcc0d467f",
-        "published_at": "2026-08-21",
-        "disease_id": "unclassified-63fe91f7",
-        "disease_name_zh": "西尼罗病毒",
-        "location": "尼科西亚",
-        "continent": "亚洲",
-        "source_org": "Cyprus Mail",
-        "source_type": "other_open_source",
-        "source": "https://cyprus-mail.com/2026/08/21/paphos-steps-up-mosquito-prevention-after-west-nile-case",
-        "description_cn": "塞浦路斯尼科西亚确诊一例西尼罗病毒感染病例,患者为74岁男性,无近期出境史,在尼科西亚综合医院重症监护室治疗,随后发展为",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_bf677f2adbd305e76b51",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.1,
-          28.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_bf677f2adbd305e76b51",
-        "published_at": "2026-08-21",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "印度德里",
-        "continent": "亚洲",
-        "source_org": "Abplive",
-        "source_type": "news_media",
-        "source": "https://news.abplive.com/cities/delhi-swine-flu-cases-surge-aap-flags-alarming-h1n1-spread-govt-reviews-situation-1863235",
-        "description_cn": "印度德里H1N1病例激增,政府加强监测和医疗准备",
         "data_quality_score": 92
       }
     },
@@ -1899,21 +1875,21 @@
     },
     {
       "type": "Feature",
-      "id": "evt_bf09a40aea7494034600",
+      "id": "evt_453a179066af9ea45da4",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.7,
-          62.9
+          -43.2,
+          -22.9
         ]
       },
       "properties": {
-        "event_id": "evt_bf09a40aea7494034600",
+        "event_id": "evt_453a179066af9ea45da4",
         "published_at": "2026-07-26",
         "disease_id": "covid-19",
         "disease_name_zh": "新型冠状病毒感染",
-        "location": "北欧",
-        "continent": "欧洲",
+        "location": "热带南",
+        "continent": "南美洲",
         "source_org": "WHO",
         "source_type": "international_organization",
         "source": "https://data.who.int/dashboards/covid19/summary?n=c",

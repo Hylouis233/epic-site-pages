@@ -1,8 +1,8 @@
 {
-  "total_records": 86,
+  "total_records": 85,
   "disease_count": 16,
-  "continent_count": 5,
-  "latest_date": "2026-08-28",
+  "continent_count": 6,
+  "latest_date": "2026-08-29",
   "filter_options": {
     "diseases": [
       "Q热合并布鲁氏菌病",
@@ -14,26 +14,27 @@
       "法定传染病",
       "流行性感冒",
       "猴痘",
+      "环孢子虫病",
       "疟疾",
       "登革热",
       "福氏内格里阿米巴原虫",
       "福氏耐格里阿米巴虫",
       "菜花(尖锐湿疣,HPV感染)",
-      "西尼罗病毒",
       "麻疹"
     ],
     "continents": [
       "亚洲",
       "北美洲",
+      "南美洲",
       "大洋洲",
       "欧洲",
       "非洲"
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-29T09:10:35Z",
-  "data_as_of": "2026-08-28",
-  "last_successful_ingest_at": "2026-08-29T09:10:35Z",
+  "build_generated_at": "2026-08-30T08:24:07Z",
+  "data_as_of": "2026-08-29",
+  "last_successful_ingest_at": "2026-08-30T08:24:07Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -42,5 +43,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-08-28"
+  "last_modified": "2026-08-29"
 }
