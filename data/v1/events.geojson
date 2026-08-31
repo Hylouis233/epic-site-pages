@@ -3,6 +3,174 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_a42694a1c13970a15795",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.9,
+          6.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_a42694a1c13970a15795",
+        "published_at": "2026-08-30",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "西部省",
+        "continent": "亚洲",
+        "source_org": "The Morning",
+        "source_type": "other_open_source",
+        "source": "https://www.themorning.lk/articles/M328bflF5SbFtTTL6bV5",
+        "description_cn": "斯里兰卡2026年已报告约9.5万例登革热确诊,72例死亡,西部省加姆珀哈区疫情最重",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_6fafed1e0b72dc5d2be5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.3,
+          1.4
+        ]
+      },
+      "properties": {
+        "event_id": "evt_6fafed1e0b72dc5d2be5",
+        "published_at": "2026-08-30",
+        "disease_id": "malaria",
+        "disease_name_zh": "疟疾",
+        "location": "乌干达卢韦罗区",
+        "continent": "非洲",
+        "source_org": "Observer",
+        "source_type": "other_open_source",
+        "source": "https://observer.ug/news/malaria-kills-33-in-luwero-as-diabetes-claims-43",
+        "description_cn": "2025/26财年乌干达卢韦罗区疟疾死亡33例,儿童占一半以上,确诊189,881例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_186814ec419ad74bbc8c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.0,
+          15.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_186814ec419ad74bbc8c",
+        "published_at": "2026-08-30",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "泰国",
+        "continent": "亚洲",
+        "source_org": "Thaipbs",
+        "source_type": "other_open_source",
+        "source": "https://world.thaipbs.or.th/detail/thailand-records-over-95000-covid-19-cases-14-deaths-this-year/62562",
+        "description_cn": "泰国2026年报告超过9.5万例新冠确诊病例,14例死亡",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_ae22f73c7a372c703e36",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_ae22f73c7a372c703e36",
+        "published_at": "2026-08-30",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "孟加拉国",
+        "continent": "亚洲",
+        "source_org": "Bd Pratidin",
+        "source_type": "other_open_source",
+        "source": "https://en.bd-pratidin.com/national/2026/08/30/68982",
+        "description_cn": "孟加拉国2026年累计报告登革热33,586例,女性死亡占比高",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_73c015a98e21442575b4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.3,
+          35.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_73c015a98e21442575b4",
+        "published_at": "2026-08-30",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "巴基斯坦开伯尔-普什图省",
+        "continent": "亚洲",
+        "source_org": "DAWN",
+        "source_type": "other_open_source",
+        "source": "https://www.dawn.com/news/2026000/amid-rising-dengue-cases-health-dept-focuses-on-public-awareness",
+        "description_cn": "巴基斯坦开伯尔-普什图省登革热疫情加剧,本周新增86例,累计478例,卫生部门加强防蚊灭蚊和公众宣传",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_2ced1f5b7bcef4e28922",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9,
+          30.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_2ced1f5b7bcef4e28922",
+        "published_at": "2026-08-30",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "Ludhiana district",
+        "continent": "亚洲",
+        "source_org": "Tribuneindia",
+        "source_type": "other_open_source",
+        "source": "https://www.tribuneindia.com/news/ludhiana/blood-banks-grapple-with-shortage-amid-rising-demand",
+        "description_cn": "卢迪亚纳县今年已报告23例登革热病例。炎热潮湿天气导致献血活动减少,当地血库面临严重短缺,公立医院血库和红十字会血库仅余",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_96d6be612e569b993dd2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_96d6be612e569b993dd2",
+        "published_at": "2026-08-29",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "Nownews",
+        "source_type": "news_media",
+        "source": "https://www.nownews.com/news/6870394",
+        "description_cn": "卫福部统计单周流感及肺炎死亡517人,重症死亡14例,疫情严峻",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_7e8280195bbaf79f714d",
       "geometry": {
         "type": "Point",
@@ -723,6 +891,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_ad92133de021302cdb77",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7,
+          -2.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_ad92133de021302cdb77",
+        "published_at": "2026-08-26",
+        "disease_id": "ebola-virus-disease",
+        "disease_name_zh": "埃博拉",
+        "location": "刚果民主共和国",
+        "continent": "非洲",
+        "source_org": "UNN",
+        "source_type": "other_open_source",
+        "source": "https://unn.ua/en/news/at-frankfurt-airport-two-workers-have-died-of-malaria-and-five-more-have-fallen-ill",
+        "description_cn": "德国法兰克福机场两名员工死于疟疾,另有五名员工感染住院。法兰克福当局表示,感染可能是通过搭乘飞机从疟疾流行地区抵达德国的",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_ba1ed5eb0b636e379cc2",
       "geometry": {
         "type": "Point",
@@ -1347,30 +1539,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_46a9b07c056ced62bad6",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          80.8,
-          7.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_46a9b07c056ced62bad6",
-        "published_at": "2026-08-23",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "斯里兰卡",
-        "continent": "亚洲",
-        "source_org": "斯里兰卡《星期日时报》",
-        "source_type": "other_open_source",
-        "source": "https://www.sundaytimes.lk/260823/news/71-dengue-deaths-for-this-year-with-reported-cases-93381-islandwide-653210.html",
-        "description_cn": "斯里兰卡2026年登革热累计93,381例,死亡71例,主要集中在西部省",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_5101c594bae8e057d37c",
       "geometry": {
         "type": "Point",
@@ -1419,30 +1587,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_be5d9e441435c1952169",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_be5d9e441435c1952169",
-        "published_at": "2026-08-23",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国佛罗里达州",
-        "continent": "北美洲",
-        "source_org": "MyPanhandle",
-        "source_type": "other_open_source",
-        "source": "https://www.mypanhandle.com/news/pets-rescued-from-fire-recovering-from-smoke-inhalation",
-        "description_cn": "美国佛罗里达州确诊一例登革热",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_e8e45c9c4980c0b10e8b",
       "geometry": {
         "type": "Point",
@@ -1462,198 +1606,6 @@
         "source_type": "news_media",
         "source": "https://www.jagonews24.com/en/national/news/95418",
         "description_cn": "孟加拉国近期麻疹疫情持续,累计报告约15万例疑似病例,死亡834人。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_6ec9dd80be8a06e4a4c2",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          79.9,
-          6.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_6ec9dd80be8a06e4a4c2",
-        "published_at": "2026-08-23",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "科伦坡",
-        "continent": "亚洲",
-        "source_org": "Newsfirst",
-        "source_type": "news_media",
-        "source": "https://www.newsfirst.lk/2026/08/22/dengue-cases-in-sri-lanka-surpass-93-000",
-        "description_cn": "斯里兰卡国家登革热控制单元通报,今年以来全国登革热病例数已升至93635例,累计死亡71例,仅本月前22天就报告8297",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_bae3e87539f8e66ec79f",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.0,
-          20.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_bae3e87539f8e66ec79f",
-        "published_at": "2026-08-23",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "古尔冈",
-        "continent": "亚洲",
-        "source_org": "Hindustantimes",
-        "source_type": "other_open_source",
-        "source": "https://www.hindustantimes.com/cities/gurugram-news/gurugram-reports-three-fresh-dengue-cases-season-tally-reaches-29-101787461036724.html",
-        "description_cn": "印度哈里亚纳邦古尔冈市卫生部门报告,8月23日新增3例登革热病例,本季度累计病例数升至29例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_647e5baa17bbf1302c1b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          72.3,
-          35.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_647e5baa17bbf1302c1b",
-        "published_at": "2026-08-23",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "Khyber Pakhtunkhwa",
-        "continent": "亚洲",
-        "source_org": "DAWN",
-        "source_type": "other_open_source",
-        "source": "https://www.dawn.com/news/2024639",
-        "description_cn": "巴基斯坦开伯尔-普什图省卫生部门近期向科哈特县行政部门发出请求,要求平整近期被拆除的阿富汗难民营地,以消除积水并防止蚊虫",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_8e8bb24e53e96b969d48",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_8e8bb24e53e96b969d48",
-        "published_at": "2026-08-23",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "Arch Web",
-        "source_type": "other_open_source",
-        "source": "https://www.arch-web.com.tw/%E7%BB%BC%E5%90%88%E6%96%B0%E9%97%BB/%E4%BB%96%E4%BB%AC%E8%AF%81%E5%AE%9E%EF%BC%8C%E6%96%B0%E7%9A%84%E8%B6%85%E7%BA%A7%E6%B5%81%E6%84%9F%E5%9C%A8%E9%98%BF%E6%A0%B9%E5%BB%B7%E5%88%9B%E4%B8%8B%E4%BA%86%E7%BA%AA%E5%BD%95/676861",
-        "description_cn": "2026年,阿根廷甲型H3N2流感K亚型持续流行,前30周已报告超过79万例流感病例,96%的测序样本为新的K亚分支A(",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_1e63faff27ff304b94b1",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          71.6,
-          34.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_1e63faff27ff304b94b1",
-        "published_at": "2026-08-23",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "白沙瓦",
-        "continent": "亚洲",
-        "source_org": "DAWN",
-        "source_type": "other_open_source",
-        "source": "https://www.dawn.com/news/2024639/health-department-steps-in-as-dengue-cases-rise-in-kohat",
-        "description_cn": "2026年8月23日报道,巴基斯坦开伯尔-普什图省卫生部门要求科哈特地区行政机构平整近期被拆除的阿富汗难民营地面,以消除",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_eff569c95cf1a24f1659",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          29.9,
-          1.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_eff569c95cf1a24f1659",
-        "published_at": "2026-08-23",
-        "disease_id": "ebola-virus-disease",
-        "disease_name_zh": "埃博拉",
-        "location": "刚果民主共和国伊图里省",
-        "continent": "非洲",
-        "source_org": "Chinadailyasia",
-        "source_type": "other_open_source",
-        "source": "https://www.chinadailyasia.com/article/638342",
-        "description_cn": "刚果民主共和国卫生部公布的最新数据显示,截至2026年8月,该国埃博拉疫情已扩散至六个省份,累计确诊5375例,死亡25",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_e56e88ae8ddfdf7b8a9d",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.1,
-          28.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_e56e88ae8ddfdf7b8a9d",
-        "published_at": "2026-08-23",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "Delhi",
-        "continent": "亚洲",
-        "source_org": "Etvbharat",
-        "source_type": "other_open_source",
-        "source": "https://www.etvbharat.com/en/state/delhi-health-dept-issues-advisory-as-swine-flu-cases-rise-enn26082206785",
-        "description_cn": "印度德里卫生部门因H1N1(猪流感)病例上升发布健康公告。截至周五,德里今年已报告2,602例流感病例,其中2,392例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_c251922ea124f2be5175",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.1,
-          28.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_c251922ea124f2be5175",
-        "published_at": "2026-08-23",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "印度德里",
-        "continent": "亚洲",
-        "source_org": "Republicworld",
-        "source_type": "other_open_source",
-        "source": "http://www.republicworld.com/india/jp-nadda-chairs-review-on-delhi-s-preparedness-for-influenza-dengue-and-malaria-as-surveillance-stepped-up-2026-08-23-135353",
-        "description_cn": "印度德里召开会议,通报H1N1流感为主,登革热病例246例。",
         "data_quality_score": 92
       }
     },
@@ -1683,30 +1635,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_e29153351072a5fb28ef",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_e29153351072a5fb28ef",
-        "published_at": "2026-08-22",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国佛罗里达州柑橘县",
-        "continent": "北美洲",
-        "source_org": "Yahoo News",
-        "source_type": "news_media",
-        "source": "https://www.yahoo.com/news/videos/citrus-county-confirms-first-case-221743866.html",
-        "description_cn": "佛罗里达州柑橘县发现首例本地登革热病例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_70a77a55ec23d4bc1058",
       "geometry": {
         "type": "Point",
@@ -1726,30 +1654,6 @@
         "source_type": "other_open_source",
         "source": "https://www.chp.gov.hk/files/xls/flux_data.xlsx",
         "description_cn": "2026年08月22日 香港发生季节性流感相关疫情,严重流感个案55例(0‐17岁2例,18‐49岁2例,50‐64岁6",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_b4ab0fb3836aa8e1b628",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.5,
-          22.2
-        ]
-      },
-      "properties": {
-        "event_id": "evt_b4ab0fb3836aa8e1b628",
-        "published_at": "2026-08-22",
-        "disease_id": "legionellosis",
-        "disease_name_zh": "军团菌病",
-        "location": "中国澳门",
-        "continent": "亚洲",
-        "source_org": "GOV",
-        "source_type": "other_open_source",
-        "source": "https://www.gov.mo/zh-hant/news/1260537",
-        "description_cn": "澳门1例军团菌病病例,患者82岁男性,已住院,卫生部门开展环境调查",
         "data_quality_score": 92
       }
     },
