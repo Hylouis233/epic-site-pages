@@ -3,6 +3,150 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_f60402e85eecf839887a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1,
+          28.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_f60402e85eecf839887a",
+        "published_at": "2026-08-31",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "印度德里",
+        "continent": "亚洲",
+        "source_org": "NewsBytes",
+        "source_type": "news_media",
+        "source": "https://www.newsbytesapp.com/news/india/delhi-sees-199-case-h1n1-spike-total-now-over-3000/tldr",
+        "description_cn": "印度德里甲型流感病例达3843例,医生提醒出现高热、呼吸困难等症状应及时就医。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_6b3c081b1c9e2c3e3875",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1,
+          28.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_6b3c081b1c9e2c3e3875",
+        "published_at": "2026-08-31",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "印度德里",
+        "continent": "亚洲",
+        "source_org": "News18",
+        "source_type": "news_media",
+        "source": "https://www.news18.com/cities/new-delhi-news/delhis-h1n1-outbreak-refuses-to-slow-199-cases-seasons-second-highest-tally-crosses-3006-10301289.html",
+        "description_cn": "2026年8月31日,印度德里报告H1N1流感24小时新增199例,累计3006例,疫情未放缓。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_58f497cc43d57257a845",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1,
+          28.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_58f497cc43d57257a845",
+        "published_at": "2026-08-31",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "印度/德里",
+        "continent": "亚洲",
+        "source_org": "Oneworldnews",
+        "source_type": "news_media",
+        "source": "https://www.oneworldnews.com/desh-ki-baat/delhi-swine-flu",
+        "description_cn": "2026年8月31日,印度德里报告199例甲型H1N1流感病例,为本季第二高",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_ed8d499a4a2d42f034fd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_ed8d499a4a2d42f034fd",
+        "published_at": "2026-08-31",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "LINE",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/60LQ8YB",
+        "description_cn": "台湾开学季新冠疫情处高原期,病例及死亡数上升",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_634d6541c87481014d77",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0,
+          20.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_634d6541c87481014d77",
+        "published_at": "2026-08-31",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "印度喜马偕尔邦",
+        "continent": "亚洲",
+        "source_org": "NDTV",
+        "source_type": "other_open_source",
+        "source": "https://www.ndtv.com/health/h1n1-death-in-himachal-64-year-old-dies-as-flu-cases-continue-to-rise-in-india-11980347",
+        "description_cn": "印度NDTV报道,喜马偕尔邦一名64岁男子因感染H1N1流感死亡,印度全国流感病例持续上升。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_b1dcbbe4202386539955",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_b1dcbbe4202386539955",
+        "published_at": "2026-08-31",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "Mirrordaily",
+        "source_type": "news_media",
+        "source": "https://www.mirrordaily.news/story/82826",
+        "description_cn": "台中一家6口感染A型流感,高中生症状严重。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_a42694a1c13970a15795",
       "geometry": {
         "type": "Point",
@@ -23,6 +167,54 @@
         "source": "https://www.themorning.lk/articles/M328bflF5SbFtTTL6bV5",
         "description_cn": "斯里兰卡2026年已报告约9.5万例登革热确诊,72例死亡,西部省加姆珀哈区疫情最重",
         "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_14f093983eccc745885e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4,
+          40.1
+        ]
+      },
+      "properties": {
+        "event_id": "evt_14f093983eccc745885e",
+        "published_at": "2026-08-30",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "美国伊利诺伊州",
+        "continent": "北美洲",
+        "source_org": "Dailyherald",
+        "source_type": "other_open_source",
+        "source": "https://www.dailyherald.com/20260830/news/illinois-high-vaccination-rate-has-stemmed-measles-tide-amid-nationwide-spike",
+        "description_cn": "美国伊利诺伊州报告5例麻疹病例,尽管全美范围内麻疹疫情有所上升,但该州较高的疫苗接种率有效遏制了疫情扩散,病例主要来自未",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_6a763c20b1eedc562643",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_6a763c20b1eedc562643",
+        "published_at": "2026-08-30",
+        "disease_id": "unclassified-06711a2d",
+        "disease_name_zh": "百日咳",
+        "location": "坎特伯雷",
+        "continent": "大洋洲",
+        "source_org": "Substack",
+        "source_type": "news_media",
+        "source": "https://outbreaknewstoday.substack.com/p/new-zealand-national-pertussis-epidemic",
+        "description_cn": "新西兰卫生部宣布始于2024年11月的全国百日咳疫情已结束。2026年1月至8月21日共报告1254例病例,其中1例死亡",
+        "data_quality_score": 80
       }
     },
     {
@@ -1323,222 +1515,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_c53bd32d940c9de28294",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.1,
-          28.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_c53bd32d940c9de28294",
-        "published_at": "2026-08-24",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "德里",
-        "continent": "亚洲",
-        "source_org": "千禧邮报",
-        "source_type": "other_open_source",
-        "source": "https://www.millenniumpost.in/amp/delhi/delhi-health-minister-calls-high-level-meeting-as-h1n1-cases-rise-673377",
-        "description_cn": "德里卫生部长召开高级别会议应对H1N1流感上升,8月20日新增159例,累计1,777例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_cd1dd779fe63e1df0c8a",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.0,
-          20.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_cd1dd779fe63e1df0c8a",
-        "published_at": "2026-08-24",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "Asia",
-        "continent": "亚洲",
-        "source_org": "Indiatoday",
-        "source_type": "news_media",
-        "source": "https://www.indiatoday.in/health/story/karnataka-influenza-cases-2026-bengaluru-accounts-for-over-90-percent-2978429-2026-08-24",
-        "description_cn": "据印度综合卫生信息平台(IHIP)监测数据,截至2026年8月22日,印度卡纳塔克邦今年共报告4,212例实验室确诊流感",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_91dc236e35f741c576e5",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.1,
-          28.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_91dc236e35f741c576e5",
-        "published_at": "2026-08-24",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "印度德里",
-        "continent": "亚洲",
-        "source_org": "NDTV",
-        "source_type": "other_open_source",
-        "source": "https://www.ndtv.com/health/delhi-records-1-777-h1n1-cases-this-year-icmr-says-no-new-strain-no-cause-for-panic-11947989",
-        "description_cn": "印度德里2026年报告1777例H1N1流感病例,ICMR称无新毒株",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_eca8c3503affbe9eaa9b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          80.0,
-          7.1
-        ]
-      },
-      "properties": {
-        "event_id": "evt_eca8c3503affbe9eaa9b",
-        "published_at": "2026-08-24",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "加姆珀哈",
-        "continent": "亚洲",
-        "source_org": "Newswire",
-        "source_type": "news_media",
-        "source": "https://www.newswire.lk/2026/08/24/dengue-cases-in-sri-lanka-top-94000-71-deaths-reported",
-        "description_cn": "2026年斯里兰卡登革热累计94037例,死亡71例,西部省病例最多",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_9993abaa32b4a3494028",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -92.0,
-          30.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_9993abaa32b4a3494028",
-        "published_at": "2026-08-24",
-        "disease_id": "unclassified-153f8af1",
-        "disease_name_zh": "福氏内格里阿米巴原虫",
-        "location": "美国路易斯安那州",
-        "continent": "北美洲",
-        "source_org": "Wenxuecity",
-        "source_type": "other_open_source",
-        "source": "https://www.wenxuecity.com/news/2026/08/23/socialnews-268737.html",
-        "description_cn": "美国路易斯安那州8岁女童在克莱朋湖游泳后感染福氏内格里阿米巴原虫不治身亡。",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_918c3b6466b905ba4871",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.6,
-          16.4
-        ]
-      },
-      "properties": {
-        "event_id": "evt_918c3b6466b905ba4871",
-        "published_at": "2026-08-24",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "Baguio City",
-        "continent": "亚洲",
-        "source_org": "Northluzonmonitor",
-        "source_type": "other_open_source",
-        "source": "https://northluzonmonitor.com/baguio-dengue-cases-reach-543-peak-expected-in-late-august",
-        "description_cn": "2026年8月24日报道:菲律宾碧瑶市自2026年1月以来已累计记录543例登革热病例,卫生官员预计病例数将在8月最后一",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_c6d89679979d51b562af",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.0,
-          20.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_c6d89679979d51b562af",
-        "published_at": "2026-08-24",
-        "disease_id": "unclassified-2b4038da",
-        "disease_name_zh": "基孔肯雅热",
-        "location": "/",
-        "continent": "亚洲",
-        "source_org": "Newindianexpress",
-        "source_type": "other_open_source",
-        "source": "https://www.newindianexpress.com/cities/thiruvananthapuram/2026/Aug/24/28-and-rising-thiruvananthapurams-vattiyoorkavu-grapples-with-chikungunya",
-        "description_cn": "印度喀拉拉邦Thiruvananthapuram district的Vattiyoorkavu地区本月报告28例基孔肯雅",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_7d6f16ef4d9a096e7209",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.0,
-          35.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_7d6f16ef4d9a096e7209",
-        "published_at": "2026-08-24",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国",
-        "continent": "亚洲",
-        "source_org": "Chosun",
-        "source_type": "news_media",
-        "source": "http://cnnews.chosun.com/client/news/viw.asp?cate=C01&mcate=M1003&nNewsNumb=20260865270&nidx=65271",
-        "description_cn": "中国7月报告约52.2万例新冠新增确诊病例,较6月增长超6倍,主流毒株为奥密克戎变异株NB.1.8.1;同期韩国新冠检出",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_8bb0dce8db65507a93fb",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.0,
-          20.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_8bb0dce8db65507a93fb",
-        "published_at": "2026-08-24",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "Uttarakhand 北阿坎德邦 邦",
-        "continent": "亚洲",
-        "source_org": "Ratopati",
-        "source_type": "other_open_source",
-        "source": "https://english.ratopati.com/story/76044/swine-flu-spreads-to-6-states-including-the-indian-capital-delhi-infections-in-delhi-increase-eightfold",
-        "description_cn": "印度至少6个邦(包括首都德里)出现猪流感(H1N1)疫情上升。德里今年迄今累计发现2392例甲流感染,其中1777例确诊",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_5101c594bae8e057d37c",
       "geometry": {
         "type": "Point",
@@ -1583,30 +1559,6 @@
         "source": "https://www.nicd.ac.za/wp-content/uploads/2026/08/Resp_Path_Report_2026_34-_Final.pdf",
         "description_cn": "南非2026年第34周呼吸道病原体监测报告显示流感病例7例,累计964例",
         "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_e8e45c9c4980c0b10e8b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.4,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_e8e45c9c4980c0b10e8b",
-        "published_at": "2026-08-23",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "孟加拉国",
-        "continent": "亚洲",
-        "source_org": "Jagonews24",
-        "source_type": "news_media",
-        "source": "https://www.jagonews24.com/en/national/news/95418",
-        "description_cn": "孟加拉国近期麻疹疫情持续,累计报告约15万例疑似病例,死亡834人。",
-        "data_quality_score": 92
       }
     },
     {
@@ -1659,30 +1611,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_d293621eaaa4a1e1cc57",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.5,
-          37.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_d293621eaaa4a1e1cc57",
-        "published_at": "2026-08-16",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "韩国",
-        "continent": "亚洲",
-        "source_org": "韩国疾病管理厅",
-        "source_type": "other_open_source",
-        "source": "https://dportal.kdca.go.kr/pot/bbs/BD_selectBbs.do?q_bbsDocNo=20260820160907873&q_bbsSn=1010&q_clsfNo=2",
-        "description_cn": "韩国第33周流感门诊7.5/千人,COVID-19住院56例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_5eef824bb48c5a7f6825",
       "geometry": {
         "type": "Point",
@@ -1727,30 +1655,6 @@
         "source": "https://www.nicd.ac.za/wp-content/uploads/2026/08/Resp_Path_Report_2026_33-Final.pdf",
         "description_cn": "南非2026年第33周呼吸道病原体监测报告,流感检出8例,累计957例",
         "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_554f20abfe3748c79847",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.2,
-          22.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_554f20abfe3748c79847",
-        "published_at": "2026-08-15",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国香港",
-        "continent": "亚洲",
-        "source_org": "CHP",
-        "source_type": "other_open_source",
-        "source": "https://www.chp.gov.hk/files/xls/covidx_data.xlsx",
-        "description_cn": "2026年08月15日 香港发生COVID-19相关疫情,本周新增核酸检测阳性268例,重症8例,死亡4例",
-        "data_quality_score": 92
       }
     },
     {

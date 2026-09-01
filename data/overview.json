@@ -1,14 +1,13 @@
 {
-  "total_records": 81,
-  "disease_count": 16,
+  "total_records": 78,
+  "disease_count": 15,
   "continent_count": 6,
-  "latest_date": "2026-08-30",
+  "latest_date": "2026-08-31",
   "filter_options": {
     "diseases": [
       "Q热合并布鲁氏菌病",
       "军团菌病",
       "埃博拉",
-      "基孔肯雅热",
       "恶性疟",
       "新型冠状病毒感染",
       "法定传染病",
@@ -17,8 +16,8 @@
       "环孢子虫病",
       "疟疾",
       "登革热",
+      "百日咳",
       "福氏内格里阿米巴原虫",
-      "福氏耐格里阿米巴虫",
       "菜花(尖锐湿疣,HPV感染)",
       "麻疹"
     ],
@@ -32,9 +31,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-08-31T08:44:25Z",
-  "data_as_of": "2026-08-30",
-  "last_successful_ingest_at": "2026-08-31T08:44:25Z",
+  "build_generated_at": "2026-09-01T07:53:07Z",
+  "data_as_of": "2026-08-31",
+  "last_successful_ingest_at": "2026-09-01T07:53:07Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -43,5 +42,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-08-30"
+  "last_modified": "2026-08-31"
 }
