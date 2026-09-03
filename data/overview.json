@@ -1,13 +1,13 @@
 {
-  "total_records": 79,
+  "total_records": 81,
   "disease_count": 15,
   "continent_count": 6,
-  "latest_date": "2026-09-01",
+  "latest_date": "2026-09-02",
   "filter_options": {
     "diseases": [
-      "Q热合并布鲁氏菌病",
       "军团菌病",
       "埃博拉",
+      "急性病毒性丙型肝炎",
       "恶性疟",
       "新型冠状病毒感染",
       "法定传染病",
@@ -31,9 +31,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-09-02T07:11:05Z",
-  "data_as_of": "2026-09-01",
-  "last_successful_ingest_at": "2026-09-02T07:11:05Z",
+  "build_generated_at": "2026-09-03T07:15:40Z",
+  "data_as_of": "2026-09-02",
+  "last_successful_ingest_at": "2026-09-03T07:15:40Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -42,5 +42,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-09-01"
+  "last_modified": "2026-09-02"
 }
