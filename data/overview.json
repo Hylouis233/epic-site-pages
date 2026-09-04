@@ -1,23 +1,24 @@
 {
-  "total_records": 81,
-  "disease_count": 15,
+  "total_records": 82,
+  "disease_count": 16,
   "continent_count": 6,
-  "latest_date": "2026-09-02",
+  "latest_date": "2026-09-03",
   "filter_options": {
     "diseases": [
+      "2019冠状病毒病",
+      "丙型肝炎",
       "军团菌病",
       "埃博拉",
       "急性病毒性丙型肝炎",
-      "恶性疟",
       "新型冠状病毒感染",
-      "法定传染病",
+      "沙门氏菌病",
       "流行性感冒",
-      "猴痘",
       "环孢子虫病",
       "疟疾",
       "登革热",
       "百日咳",
       "肠病毒 D68 型感染",
+      "肠病毒感染",
       "钩端螺旋体病",
       "麻疹"
     ],
@@ -31,9 +32,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-09-03T07:15:40Z",
-  "data_as_of": "2026-09-02",
-  "last_successful_ingest_at": "2026-09-03T07:15:40Z",
+  "build_generated_at": "2026-09-04T07:18:08Z",
+  "data_as_of": "2026-09-03",
+  "last_successful_ingest_at": "2026-09-04T07:18:08Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -42,5 +43,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-09-02"
+  "last_modified": "2026-09-03"
 }

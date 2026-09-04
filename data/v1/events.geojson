@@ -3,6 +3,150 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_bfaf06b3431cfb0b20c8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5,
+          27.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_bfaf06b3431cfb0b20c8",
+        "published_at": "2026-09-03",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "美国佛罗里达州橙县",
+        "continent": "北美洲",
+        "source_org": "Fox 35 Orlando",
+        "source_type": "other_open_source",
+        "source": "https://www.fox35orlando.com/video/fmc-2itw0tjsskvbd804",
+        "description_cn": "美国佛罗里达州橙县发现本地感染登革热病例,已加强灭蚊喷洒。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_f99dd116aa856dc305a2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3,
+          52.5
+        ]
+      },
+      "properties": {
+        "event_id": "evt_f99dd116aa856dc305a2",
+        "published_at": "2026-09-03",
+        "disease_id": "salmonellosis",
+        "disease_name_zh": "沙门氏菌病",
+        "location": "英格兰",
+        "continent": "欧洲",
+        "source_org": "GOV",
+        "source_type": "other_open_source",
+        "source": "https://www.gov.uk/government/news/salmonella-outbreak-update",
+        "description_cn": "英国卫生安全局(UKHSA)与食品标准局(FSA)等公共卫生伙伴正在调查英国三起与进口鸡蛋有关的肠炎沙门氏菌(Salmo",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_35c2d5927f0d9f7c3861",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8,
+          22.4
+        ]
+      },
+      "properties": {
+        "event_id": "evt_35c2d5927f0d9f7c3861",
+        "published_at": "2026-09-03",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "Chattogram",
+        "continent": "亚洲",
+        "source_org": "Viewsbangladesh",
+        "source_type": "other_open_source",
+        "source": "https://viewsbangladesh.com/chattogram-records-over-1200-dengue-cases-in-august-alone",
+        "description_cn": "孟加拉国Chattogram district登革热疫情持续上升,仅8月一个月就报告了1202例病例,占该地区今年累计2",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_785746f7bc34c6948838",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.3,
+          22.6
+        ]
+      },
+      "properties": {
+        "event_id": "evt_785746f7bc34c6948838",
+        "published_at": "2026-09-03",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "Paikgachha",
+        "continent": "亚洲",
+        "source_org": "Businesstimes Bd",
+        "source_type": "other_open_source",
+        "source": "https://www.businesstimes-bd.com/bangladesh/10868",
+        "description_cn": "孟加拉国Paikgachha出现登革热与麻疹疫情,33天内报告83例病例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_e21cd3a17314f3835e4e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6,
+          50.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_e21cd3a17314f3835e4e",
+        "published_at": "2026-09-03",
+        "disease_id": "malaria",
+        "disease_name_zh": "疟疾",
+        "location": "德国法兰克福机场",
+        "continent": "欧洲",
+        "source_org": "Guardian",
+        "source_type": "other_open_source",
+        "source": "https://guardian.ng/features/health/experts-seek-tighter-surveillance-as-airport-malaria-raises-global-concerns",
+        "description_cn": "德国法兰克福机场出现机场疟疾聚集,6名员工感染,2人死亡,专家呼吁加强机场蚊虫监测与防控",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_e0868756e20474c7214a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4,
+          39.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_e0868756e20474c7214a",
+        "published_at": "2026-09-03",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "北京市",
+        "continent": "亚洲",
+        "source_org": "Substack",
+        "source_type": "news_media",
+        "source": "https://outbreaknewstoday.substack.com/p/china-reports-two-additional-h9n2",
+        "description_cn": "世卫组织报告2026年8月最后两周中国安徽和北京各新增1例人感染甲型禽流感H9N2病毒病例。安徽病例为5岁以下男童,8月",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_780fa2dd68235df00eb3",
       "geometry": {
         "type": "Point",
@@ -47,6 +191,102 @@
         "source": "https://www.thehindu.com/news/national/andhra-pradesh/drug-given-to-prevent-malaria-sends-52-andhra-villagers-to-hospital-girl-7-dead-23-more-children-moved-to-telangana/article71417996.ece",
         "description_cn": "印度安得拉邦为防疟疾给村民服药,致52人住院,一名7岁女孩死亡,23名儿童转院。",
         "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_7e0bf1efb414eff36b7b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.4,
+          30.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_7e0bf1efb414eff36b7b",
+        "published_at": "2026-09-02",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "Washington County",
+        "continent": "北美洲",
+        "source_org": "Lex18",
+        "source_type": "other_open_source",
+        "source": "https://www.lex18.com/news/covering-kentucky/kentucky-measles-outbreak-grows-to-38-cases-health-officials-say",
+        "description_cn": "肯塔基州正在持续的麻疹疫情已扩大至今年38例确诊病例,所有感染者均无麻疹疫苗接种记录。肯塔基州公共卫生局本周确认了最新数",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_2ba0c1801bf9c62faff2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0,
+          36.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_2ba0c1801bf9c62faff2",
+        "published_at": "2026-09-02",
+        "disease_id": "enterovirus-infection",
+        "disease_name_zh": "肠病毒感染",
+        "location": "桃园市",
+        "continent": "亚洲",
+        "source_org": "YAM",
+        "source_type": "other_open_source",
+        "source": "https://n.yam.com/Article/20260902233724",
+        "description_cn": "桃园市政府卫生局2日发布肠病毒疫情警示,指出随开学季来临,校园传播风险升温。桃园市第34周肠病毒门急诊就诊755人次,较",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_cbb98d19dd405c211932",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5,
+          25.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_cbb98d19dd405c211932",
+        "published_at": "2026-09-02",
+        "disease_id": "unclassified-b35910ab",
+        "disease_name_zh": "丙型肝炎",
+        "location": "新北市板桥区",
+        "continent": "亚洲",
+        "source_org": "Ettoday",
+        "source_type": "news_media",
+        "source": "https://www.ettoday.net/news/20260902/3230562.htm",
+        "description_cn": "新北市板桥区安泰淞鹤诊所爆发丙型肝炎群聚感染事件。疾管署8月12日接获2例母子急性病毒性丙型肝炎通报,因两人曾多次至该诊",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_08d277bf3de858ca4dba",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_08d277bf3de858ca4dba",
+        "published_at": "2026-09-02",
+        "disease_id": "unclassified-b35910ab",
+        "disease_name_zh": "丙型肝炎",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "Ettoday",
+        "source_type": "news_media",
+        "source": "https://www.ettoday.net/news/20260903/3230583.htm",
+        "description_cn": "新北板桥诊所发生医源性急性丙肝聚集,11人确诊,1118人需检测",
+        "data_quality_score": 80
       }
     },
     {
@@ -310,6 +550,30 @@
         "source_type": "news_media",
         "source": "https://today.line.me/tw/v3/article/QwlBgVp",
         "description_cn": "台湾第34周流感新增85例重症14例死亡;新冠新增69例重症18例死亡,疫情仍在高原期",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_46cef2b2e09c780e45c2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.5,
+          22.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_46cef2b2e09c780e45c2",
+        "published_at": "2026-09-02",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国澳门",
+        "continent": "亚洲",
+        "source_org": "GOV",
+        "source_type": "other_open_source",
+        "source": "https://www.gov.mo/zh-hant/news/1263341",
+        "description_cn": "澳门卫生局2026年9月2日接获1宗流感样疾病群集性感染报告,位于澳门慕拉士大马路澳门工会联合总会望厦老人中心,共4名员",
         "data_quality_score": 92
       }
     },
@@ -1083,6 +1347,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_41de7aca4b9310fc0cba",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2,
+          22.3
+        ]
+      },
+      "properties": {
+        "event_id": "evt_41de7aca4b9310fc0cba",
+        "published_at": "2026-08-29",
+        "disease_id": "unclassified-e269a5af",
+        "disease_name_zh": "2019冠状病毒病",
+        "location": "中国香港",
+        "continent": "亚洲",
+        "source_org": "CHP",
+        "source_type": "other_open_source",
+        "source": "https://www.chp.gov.hk/files/xls/covidx_data.xlsx",
+        "description_cn": "2026年08月29日 香港发生2019冠状病毒病相关疫情,核酸检测阳性91例,重症1例,死亡2例,院舍暴发4宗",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_fdb4ecca1a31ff79b59f",
       "geometry": {
         "type": "Point",
@@ -1391,270 +1679,6 @@
         "source": "https://afternoonnews.in/article/tamil-nadu-sees-rise-in-h1n1-cases",
         "description_cn": "印度泰米尔纳德邦H1N1流感(猪流感)病例在东北季风加剧前已快速上升,今年1月仅19例,目前已增至339例。公立和私立医",
         "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_27c7b8bfde2c1c6b8390",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.6,
-          13.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_27c7b8bfde2c1c6b8390",
-        "published_at": "2026-08-27",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "Lucena City",
-        "continent": "亚洲",
-        "source_org": "Inquirer",
-        "source_type": "news_media",
-        "source": "https://newsinfo.inquirer.net/2293647/quezon-logs-2276-dengue-cases-12-deaths-from-january-to-august",
-        "description_cn": "菲律宾奎松省卫生办公室(QPHO)报告称,2026年1月至8月22日,该省累计记录2,276例登革热病例,12例死亡,较",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_8aa2ff7874c3f5ba434b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -172.3,
-          -13.6
-        ]
-      },
-      "properties": {
-        "event_id": "evt_8aa2ff7874c3f5ba434b",
-        "published_at": "2026-08-27",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "萨摩亚",
-        "continent": "大洋洲",
-        "source_org": "Samoaobserver",
-        "source_type": "other_open_source",
-        "source": "https://www.samoaobserver.ws/category/samoa/121766",
-        "description_cn": "萨摩亚报告9例登革热死亡,8月3日至9日新增22例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_7f731bab7629834a2c7a",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_7f731bab7629834a2c7a",
-        "published_at": "2026-08-27",
-        "disease_id": "mpox",
-        "disease_name_zh": "猴痘",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "YAM",
-        "source_type": "other_open_source",
-        "source": "https://n.yam.com/Article/20260827342497",
-        "description_cn": "台湾首现2例M痘Ib型本土病例均为30多岁男性,出现发烧、红疹等症状,疾管署呼吁接种疫苗",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_d08d5b60ca3b665b34f2",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_d08d5b60ca3b665b34f2",
-        "published_at": "2026-08-27",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "SETN",
-        "source_type": "other_open_source",
-        "source": "https://www.setn.com/news/469058",
-        "description_cn": "台湾流感季已累计99例重症、11例死亡,含1名88岁男性死亡案例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_03eb332bae87ccc2c4f2",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.6,
-          50.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_03eb332bae87ccc2c4f2",
-        "published_at": "2026-08-27",
-        "disease_id": "malaria",
-        "disease_name_zh": "疟疾",
-        "location": "法兰克福机场",
-        "continent": "欧洲",
-        "source_org": "IOL",
-        "source_type": "other_open_source",
-        "source": "https://iol.co.za/news/world/2026-08-26-two-german-airport-workers-die-of-malaria-from-mosquito-on-plane",
-        "description_cn": "德国法兰克福机场两名工作人员在工作中被疑似随飞机抵达的按蚊叮咬后感染疟疾并死亡。机场方面此前曾报告1名员工死亡、6名员工",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_79f6135d90a0697ce27d",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_79f6135d90a0697ce27d",
-        "published_at": "2026-08-27",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国佛罗里达州帕斯科县",
-        "continent": "北美洲",
-        "source_org": "WTSP",
-        "source_type": "other_open_source",
-        "source": "https://www.wtsp.com/video/news/local/pascocounty/florida-health-officials-confirms-third-dengue-fever-case-in-pasco-county/67-1a32f59f-8070-42d2-b8f7-a539c95fb409",
-        "description_cn": "佛罗里达州帕斯科县确诊第三例登革热病例,卫生部门进行蚊虫防控。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_5c380ea5aff593742106",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.6,
-          50.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_5c380ea5aff593742106",
-        "published_at": "2026-08-26",
-        "disease_id": "malaria",
-        "disease_name_zh": "疟疾",
-        "location": "法兰克福机场",
-        "continent": "欧洲",
-        "source_org": "德国之声",
-        "source_type": "other_open_source",
-        "source": "https://www.dw.com/en/frankfurt-airport-workers-die-after-malaria-infection/a-78512056",
-        "description_cn": "法兰克福机场6名员工感染疟疾,2人死亡,4人康复,蚊虫随航班传入。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_90706db9bec83e1ef2cd",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.0,
-          12.6
-        ]
-      },
-      "properties": {
-        "event_id": "evt_90706db9bec83e1ef2cd",
-        "published_at": "2026-08-26",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "柬埔寨",
-        "continent": "亚洲",
-        "source_org": "Thestar",
-        "source_type": "other_open_source",
-        "source": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/27/dengue-hfmd-raise-alert-across-mekong",
-        "description_cn": "湄公河地区登革热和手足口病病例激增,越南、老挝、柬埔寨报告大量病例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_567b077b87439bde4ff0",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.6,
-          50.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_567b077b87439bde4ff0",
-        "published_at": "2026-08-26",
-        "disease_id": "unclassified-d225bb56",
-        "disease_name_zh": "恶性疟",
-        "location": "法兰克福机场",
-        "continent": "欧洲",
-        "source_org": "Yahoo News",
-        "source_type": "news_media",
-        "source": "https://www.yahoo.com/news/world/articles/two-die-malaria-frankfurt-airport-161832459.html",
-        "description_cn": "德国法兰克福机场发生机场疟疾暴发事件。6名机场工作人员在工作中感染恶性疟(疟疾最危险类型),其中2人分别于2026年7月",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_ba1ed5eb0b636e379cc2",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.6,
-          50.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_ba1ed5eb0b636e379cc2",
-        "published_at": "2026-08-26",
-        "disease_id": "malaria",
-        "disease_name_zh": "疟疾",
-        "location": "法兰克福机场",
-        "continent": "欧洲",
-        "source_org": "Thedailybeast",
-        "source_type": "other_open_source",
-        "source": "https://www.thedailybeast.com/airport-worker-dies-after-inbound-flight-triggers-scary-outbreak",
-        "description_cn": "德国法兰克福机场一名工作人员因疟疾死亡。机场运营方Fraport证实,共有六名员工因怀疑随进港航班抵达的受感染蚊虫叮咬而",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_06cb379abf4288556c4d",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          107.9,
-          30.1
-        ]
-      },
-      "properties": {
-        "event_id": "evt_06cb379abf4288556c4d",
-        "published_at": "2026-08-26",
-        "disease_id": "notifiable-diseases-group",
-        "disease_name_zh": "法定传染病",
-        "location": "重庆市",
-        "continent": "亚洲",
-        "source_org": "Cqcdc",
-        "source_type": "official_health_authority",
-        "source": "https://www.cqcdc.org/index.php?a=shows&catid=209&id=4138",
-        "description_cn": "2026年08月26日 重庆市发生法定传染病相关疫情,56956例",
-        "data_quality_score": 100
       }
     },
     {
