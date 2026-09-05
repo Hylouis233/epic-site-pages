@@ -1,8 +1,8 @@
 {
-  "total_records": 82,
-  "disease_count": 16,
+  "total_records": 80,
+  "disease_count": 18,
   "continent_count": 6,
-  "latest_date": "2026-09-03",
+  "latest_date": "2026-09-04",
   "filter_options": {
     "diseases": [
       "2019冠状病毒病",
@@ -19,6 +19,8 @@
       "百日咳",
       "肠病毒 D68 型感染",
       "肠病毒感染",
+      "艾滋病毒",
+      "西尼罗病毒",
       "钩端螺旋体病",
       "麻疹"
     ],
@@ -32,9 +34,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-09-04T07:18:08Z",
-  "data_as_of": "2026-09-03",
-  "last_successful_ingest_at": "2026-09-04T07:18:08Z",
+  "build_generated_at": "2026-09-05T06:59:25Z",
+  "data_as_of": "2026-09-04",
+  "last_successful_ingest_at": "2026-09-05T06:59:25Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -43,5 +45,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-09-03"
+  "last_modified": "2026-09-04"
 }

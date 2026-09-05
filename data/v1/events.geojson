@@ -3,6 +3,150 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_468d60bd110ace5e54dd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.774,
+          12.8797
+        ]
+      },
+      "properties": {
+        "event_id": "evt_468d60bd110ace5e54dd",
+        "published_at": "2026-09-04",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "菲律宾朗布隆省",
+        "continent": "亚洲",
+        "source_org": "PIA",
+        "source_type": "other_open_source",
+        "source": "https://pia.gov.ph/news/romblon-pho-warns-public-as-dengue-cases-reach-402",
+        "description_cn": "菲律宾朗布隆省报告402例登革热病例,卫生部门提醒居民注意防蚊和及时就医。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_818b19cefd115f304308",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8,
+          43.1
+        ]
+      },
+      "properties": {
+        "event_id": "evt_818b19cefd115f304308",
+        "published_at": "2026-09-04",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "Sanary-sur-Mer",
+        "continent": "欧洲",
+        "source_org": "Rivieraradio",
+        "source_type": "news_media",
+        "source": "https://www.rivieraradio.mc/article/dengue-case-reported-in-sanary-sur-mer-as-mosquito-checks-get-under-way-5HjdgxY_2",
+        "description_cn": "法国南部滨海萨纳里(Sanary-sur-Mer)报告1例登革热病例,当地随即启动蚊媒检查与防控措施。虎蚊(白纹伊蚊)可",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_1996c7ee6a90d6892257",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.4,
+          33.6
+        ]
+      },
+      "properties": {
+        "event_id": "evt_1996c7ee6a90d6892257",
+        "published_at": "2026-09-04",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "科哈特",
+        "continent": "亚洲",
+        "source_org": "UA",
+        "source_type": "news_media",
+        "source": "https://ua.news/cn/world/u-pakistanskii-khaiber-pakhtunkhvi-za-tizhden-viiavili-98-vipadkiv-denge",
+        "description_cn": "巴基斯坦开伯尔-普什图省一周内新增98例登革热,累计确诊581例,暂无死亡",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_b4c2f9d4af297797b990",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_b4c2f9d4af297797b990",
+        "published_at": "2026-09-04",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "奥兰治县",
+        "continent": "北美洲",
+        "source_org": "Fox35orlando",
+        "source_type": "other_open_source",
+        "source": "https://www.fox35orlando.com/video/fmc-j5dyoilgr4m2c2b9",
+        "description_cn": "美国佛罗里达州奥兰治县报告1例本土感染的登革热病例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_f4dc68dd7e8583b2ac9a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_f4dc68dd7e8583b2ac9a",
+        "published_at": "2026-09-04",
+        "disease_id": "unclassified-8efa7f45",
+        "disease_name_zh": "艾滋病毒",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "CDC",
+        "source_type": "official_health_authority",
+        "source": "https://www.cdc.gov.tw/Bulletin/Detail/pV1lMPPtP6_G0CP4qTqMIA?typeId=9",
+        "description_cn": "2026年09月04日 台湾 全国发生艾滋病毒感染(HIV/AIDS)相关疫情,2026年截至7月底新增HIV确诊通报5",
+        "data_quality_score": 88
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_9b3a0922690535182b26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6,
+          52.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_9b3a0922690535182b26",
+        "published_at": "2026-09-04",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "荷兰",
+        "continent": "欧洲",
+        "source_org": "4GTV",
+        "source_type": "other_open_source",
+        "source": "https://www.4gtv.tv/article/2026090308000014",
+        "description_cn": "荷兰近期累计9例西尼罗病毒确诊,1例死亡,欧洲累计约900例。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_bfaf06b3431cfb0b20c8",
       "geometry": {
         "type": "Point",
@@ -23,6 +167,78 @@
         "source": "https://www.fox35orlando.com/video/fmc-2itw0tjsskvbd804",
         "description_cn": "美国佛罗里达州橙县发现本地感染登革热病例,已加强灭蚊喷洒。",
         "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_74e22ac825000a47252c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5,
+          27.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_74e22ac825000a47252c",
+        "published_at": "2026-09-03",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "Hillsborough County, Florida",
+        "continent": "北美洲",
+        "source_org": "Yahoo News",
+        "source_type": "news_media",
+        "source": "https://www.yahoo.com/news/weather-news/articles/hillsborough-county-ramps-response-dengue-222714514.html",
+        "description_cn": "美国佛罗里达州登革热病例持续上升,其中希尔斯伯勒县(Hillsborough County)出现最显著增长。佛罗里达州卫",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_15eb397e509534ddeee7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_15eb397e509534ddeee7",
+        "published_at": "2026-09-03",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "美国",
+        "continent": "北美洲",
+        "source_org": "Fox35orlando",
+        "source_type": "other_open_source",
+        "source": "https://www.fox35orlando.com/video/fmc-033noaj49p85n3d3",
+        "description_cn": "奥兰治县报告本地感染登革热病例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_3c9b56c1dcfc8a5db289",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5,
+          25.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_3c9b56c1dcfc8a5db289",
+        "published_at": "2026-09-03",
+        "disease_id": "unclassified-e02a036c",
+        "disease_name_zh": "急性病毒性丙型肝炎",
+        "location": "新北市板桥区",
+        "continent": "亚洲",
+        "source_org": "LINE",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/zN88xWJ",
+        "description_cn": "新北市板桥区安泰淞鹤诊所爆发急性病毒性丙型肝炎群聚感染事件,累计11人确诊,疾管署扩大回溯1118名曾到该诊所注射针剂的",
+        "data_quality_score": 80
       }
     },
     {
@@ -1371,30 +1587,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_fdb4ecca1a31ff79b59f",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          122.0,
-          13.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_fdb4ecca1a31ff79b59f",
-        "published_at": "2026-08-28",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "塔格比拉兰市",
-        "continent": "亚洲",
-        "source_org": "菲律宾Inquirer",
-        "source_type": "news_media",
-        "source": "https://newsinfo.inquirer.net/2294147/bohol-declares-province-wide-dengue-outbreak",
-        "description_cn": "菲律宾保和省暴发登革热,2026年1月至今累计1883例确诊、21例死亡",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_e8ae362f5bd576244768",
       "geometry": {
         "type": "Point",
@@ -1462,222 +1654,6 @@
         "source_type": "other_open_source",
         "source": "https://life.tw/article/%E8%8F%B2%E5%BE%8B%E8%B3%93%E9%81%8A%E5%AD%B8%E5%9C%98%E7%88%864%E4%BE%8B%E7%99%BB%E9%9D%A9%E7%86%B1-%E7%96%BE%E7%AE%A1%E7%BD%B2-%E5%90%8C%E5%9C%98%E6%9C%89%E7%99%BE%E4%BA%BA-%E5%88%86%E5%B8%8317%E7%B8%A3%E5%B8%82-3132778",
         "description_cn": "彰化县18名学生及家长参加菲律宾宿务游学团,7月31日出国预计停留1个月,部分成员返台后陆续出现症状,筛检5人中4人确诊",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_cd83f0473745b64e5bde",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          178.1,
-          -17.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_cd83f0473745b64e5bde",
-        "published_at": "2026-08-28",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "太平洋",
-        "continent": "大洋洲",
-        "source_org": "Reliefweb",
-        "source_type": "other_open_source",
-        "source": "https://reliefweb.int/report/fiji/dengue-pacific-multicountry-situation-28-august-2026",
-        "description_cn": "据ReliefWeb 2026年8月28日报道,2026年1月1日至7月2日,太平洋地区多国累计报告4612例登革热确诊",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_55f1da8273f593f08729",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          123.3,
-          9.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_55f1da8273f593f08729",
-        "published_at": "2026-08-28",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "Brgy. Handumanan",
-        "continent": "亚洲",
-        "source_org": "Negrosnowdaily",
-        "source_type": "other_open_source",
-        "source": "https://negrosnowdaily.com/bacolod-dengue-cases-down-47-6-one-death-recorded",
-        "description_cn": "菲律宾巴科洛德市卫生局(CHO)报告,截至2026年8月15日,该市共录得389例登革热病例和1例死亡病例,较2025年",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_e7d4b1e22bc4c3a47448",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_e7d4b1e22bc4c3a47448",
-        "published_at": "2026-08-28",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "LIFE",
-        "source_type": "other_open_source",
-        "source": "https://life.tw/article/%E9%96%8B%E5%AD%B8%E5%80%92%E6%95%B8-%E6%96%B0%E5%86%A0-%E6%B5%81%E6%84%9F-%E8%85%B8%E7%97%85%E6%AF%92%E5%A4%BE%E6%93%8A-%E9%80%99%E4%BA%9B%E7%97%87%E7%8B%80-%E6%87%89%E5%84%98%E9%80%9F%E5%B0%B1%E9%86%AB-3132209",
-        "description_cn": "台湾开学季,新冠、流感、登革热、肠病毒并发,病例数上升",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_49bf015e6ebfb3419cd0",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.6,
-          50.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_49bf015e6ebfb3419cd0",
-        "published_at": "2026-08-28",
-        "disease_id": "malaria",
-        "disease_name_zh": "疟疾",
-        "location": "法兰克福机场",
-        "continent": "欧洲",
-        "source_org": "Pulse",
-        "source_type": "other_open_source",
-        "source": "https://www.pulse.ng/story/malaria-outbreak-hits-german-airport-as-2-workers-dies-five-others-infected-by-suspected-imported-mosquito-2026082718242337160",
-        "description_cn": "德国法兰克福机场发生疟疾暴发疫情,运营方Fraport确认1名员工因感染死亡,另有1名工人死亡,5人感染,疑似由输入性蚊",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_285c17f027b9cdd058a9",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          67.7,
-          33.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_285c17f027b9cdd058a9",
-        "published_at": "2026-08-27",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "阿富汗",
-        "continent": "亚洲",
-        "source_org": "世界卫生组织",
-        "source_type": "other_open_source",
-        "source": "https://amu.tv/251099",
-        "description_cn": "WHO报告2026年7月阿富汗登革热、COVID-19等病例激增,肺炎78,082例,死亡198人",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_3b035a5e05a67c82bafe",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          74.2,
-          27.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_3b035a5e05a67c82bafe",
-        "published_at": "2026-08-27",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "印度拉贾斯坦邦",
-        "continent": "亚洲",
-        "source_org": "IANS",
-        "source_type": "news_media",
-        "source": "https://ommcomnews.com/india-news/rajasthan-reports-146-swine-flu-cases-since-jan-health-dept-issues-alert",
-        "description_cn": "印度拉贾斯坦邦2026年1‐8月累计报告甲型H1N1流感146例,卫生部门发布预警",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_1acfd23a1329fc37c61f",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          78.5,
-          17.4
-        ]
-      },
-      "properties": {
-        "event_id": "evt_1acfd23a1329fc37c61f",
-        "published_at": "2026-08-27",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "Hyderabad",
-        "continent": "亚洲",
-        "source_org": "Newsmeter",
-        "source_type": "news_media",
-        "source": "https://newsmeter.in/science-health/hyderabad-sees-rise-in-viral-fevers-flu-cases-doctors-urge-caution-774374",
-        "description_cn": "2026年08月27日 Hyderabad发生influenza, dengue相关疫情,Hyderabad recor",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_d5d3d3018a1233237e64",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          75.8,
-          15.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_d5d3d3018a1233237e64",
-        "published_at": "2026-08-27",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "卡纳塔克邦",
-        "continent": "亚洲",
-        "source_org": "Oneindia",
-        "source_type": "other_open_source",
-        "source": "https://www.oneindia.com/bengaluru/karnataka-h1n1-cases-reported-4-200-infections-but-health-department-says-no-unusual-outbreak-8188791.html",
-        "description_cn": "印度卡纳塔克邦报告4212例H1N1流感感染,卫生部门称无异常暴发",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_0ed8450083430393b472",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          78.6,
-          11.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_0ed8450083430393b472",
-        "published_at": "2026-08-27",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "Tamil Nadu",
-        "continent": "亚洲",
-        "source_org": "Afternoonnews",
-        "source_type": "news_media",
-        "source": "https://afternoonnews.in/article/tamil-nadu-sees-rise-in-h1n1-cases",
-        "description_cn": "印度泰米尔纳德邦H1N1流感(猪流感)病例在东北季风加剧前已快速上升,今年1月仅19例,目前已增至339例。公立和私立医",
         "data_quality_score": 92
       }
     },
@@ -1827,21 +1803,21 @@
     },
     {
       "type": "Feature",
-      "id": "evt_3ac1caef38795eac0e95",
+      "id": "evt_bf09a40aea7494034600",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.8,
-          33.8
+          18.7,
+          62.9
         ]
       },
       "properties": {
-        "event_id": "evt_3ac1caef38795eac0e95",
+        "event_id": "evt_bf09a40aea7494034600",
         "published_at": "2026-07-26",
         "disease_id": "covid-19",
         "disease_name_zh": "新型冠状病毒感染",
-        "location": "中及加勒比",
-        "continent": "亚洲",
+        "location": "北欧",
+        "continent": "欧洲",
         "source_org": "WHO",
         "source_type": "international_organization",
         "source": "https://data.who.int/dashboards/covid19/summary?n=c",
