@@ -1,13 +1,12 @@
 {
-  "total_records": 80,
-  "disease_count": 18,
-  "continent_count": 6,
-  "latest_date": "2026-09-04",
+  "total_records": 79,
+  "disease_count": 17,
+  "continent_count": 5,
+  "latest_date": "2026-09-05",
   "filter_options": {
     "diseases": [
       "2019冠状病毒病",
       "丙型肝炎",
-      "军团菌病",
       "埃博拉",
       "急性病毒性丙型肝炎",
       "新型冠状病毒感染",
@@ -27,16 +26,15 @@
     "continents": [
       "亚洲",
       "北美洲",
-      "南美洲",
       "大洋洲",
       "欧洲",
       "非洲"
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-09-05T06:59:25Z",
-  "data_as_of": "2026-09-04",
-  "last_successful_ingest_at": "2026-09-05T06:59:25Z",
+  "build_generated_at": "2026-09-06T07:11:51Z",
+  "data_as_of": "2026-09-05",
+  "last_successful_ingest_at": "2026-09-06T07:11:51Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -45,5 +43,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-09-04"
+  "last_modified": "2026-09-05"
 }

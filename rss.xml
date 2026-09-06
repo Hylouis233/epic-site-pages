@@ -5,96 +5,87 @@
     <link>https://hylouis233.github.io/epic-site-pages/</link>
     <description>Public-source infectious-disease event records first observed or updated in the current daily window.</description>
     <language>en-US</language>
-    <lastBuildDate>Sat, 05 Sep 2026 14:59:25 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 15:11:51 +0800</lastBuildDate>
     <generator>EPIC Public Pages Builder</generator>
     <ttl>1440</ttl>
     <item>
-      <title>Dengue event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_468d60bd110ace5e54dd/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_468d60bd110ace5e54dd/</guid>
-      <pubDate>Sat, 05 Sep 2026 06:59:25 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Structured fields report 402 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;菲律宾朗布隆省&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;402例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;PIA&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
-      <category>Dengue</category>
-      <source url="https://pia.gov.ph/news/romblon-pho-warns-public-as-dengue-cases-reach-402">PIA</source>
+      <title>COVID-19 event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_5d04153ac5faccb6dfab/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_5d04153ac5faccb6dfab/</guid>
+      <pubDate>Sun, 06 Sep 2026 07:11:51 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source covid-19 signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;COVID-19&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;奥克兰&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-05&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-05&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;31起呼吸道疾病聚集性疫情,其中养老护理机构21起,幼儿教育中心8起,学校2起;每日超100名学生缺勤;多家医院收治大量流感患者,手术被迫延期&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Sydneytoday&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>COVID-19</category>
+      <source url="https://www.sydneytoday.com/content-1026602747858024">Sydneytoday</source>
     </item>
     <item>
-      <title>Dengue event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_818b19cefd115f304308/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_818b19cefd115f304308/</guid>
-      <pubDate>Sat, 05 Sep 2026 06:59:25 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Structured fields report 1 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;Sanary-sur-Mer&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;至少1例确诊病例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Rivieraradio&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
-      <category>Dengue</category>
-      <source url="https://www.rivieraradio.mc/article/dengue-case-reported-in-sanary-sur-mer-as-mosquito-checks-get-under-way-5HjdgxY_2">Rivieraradio</source>
+      <title>Measles event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_49267b777c39b5f48595/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_49267b777c39b5f48595/</guid>
+      <pubDate>Sun, 06 Sep 2026 07:11:51 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source measles signal in this event snapshot. Structured fields report 3 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Measles&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;亚特兰大都会区&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-05&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-05&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;新增3例,累计与该日托中心相关病例8例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;AJC&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Measles</category>
+      <source url="https://www.ajc.com/news/2026/09/3-new-measles-cases-tied-to-metro-atlanta-daycare-georgia-health-officials-say">AJC</source>
     </item>
     <item>
-      <title>Dengue event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_1996c7ee6a90d6892257/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_1996c7ee6a90d6892257/</guid>
-      <pubDate>Sat, 05 Sep 2026 06:59:25 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;科哈特&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;本周新增98例,累计确诊581例,暂无死亡&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;UA&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
-      <category>Dengue</category>
-      <source url="https://ua.news/cn/world/u-pakistanskii-khaiber-pakhtunkhvi-za-tizhden-viiavili-98-vipadkiv-denge">UA</source>
-    </item>
-    <item>
-      <title>Dengue event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_b4c2f9d4af297797b990/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_b4c2f9d4af297797b990/</guid>
-      <pubDate>Sat, 05 Sep 2026 06:59:25 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Structured fields report 1 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;奥兰治县&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例本土感染病例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Fox35orlando&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
-      <category>Dengue</category>
-      <source url="https://www.fox35orlando.com/video/fmc-j5dyoilgr4m2c2b9">Fox35orlando</source>
-    </item>
-    <item>
-      <title>Unclassified event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_f4dc68dd7e8583b2ac9a/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_f4dc68dd7e8583b2ac9a/</guid>
-      <pubDate>Sat, 05 Sep 2026 06:59:25 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;中国台湾&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;2026年截至7月底新增HIV确诊通报537人,较去年同期(512人)上升5%&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;CDC&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;88/100&lt;/li&gt;&lt;/ul&gt;</description>
-      <category>Unclassified</category>
-      <source url="https://www.cdc.gov.tw/Bulletin/Detail/pV1lMPPtP6_G0CP4qTqMIA?typeId=9">CDC</source>
-    </item>
-    <item>
-      <title>Unclassified event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_9b3a0922690535182b26/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_9b3a0922690535182b26/</guid>
-      <pubDate>Sat, 05 Sep 2026 06:59:25 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 9 cases, 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;荷兰&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;荷兰累计9例确诊,1例死亡&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;4GTV&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
-      <category>Unclassified</category>
-      <source url="https://www.4gtv.tv/article/2026090308000014">4GTV</source>
-    </item>
-    <item>
-      <title>Dengue event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_74e22ac825000a47252c/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_74e22ac825000a47252c/</guid>
-      <pubDate>Sat, 05 Sep 2026 06:59:25 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Structured fields report 59 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;Hillsborough County, Florida&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-03&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-03&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;Hillsborough County 报告59例本地感染病例,佛罗里达州全州累计73例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Yahoo News&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
-      <category>Dengue</category>
-      <source url="https://www.yahoo.com/news/weather-news/articles/hillsborough-county-ramps-response-dengue-222714514.html">Yahoo News</source>
-    </item>
-    <item>
-      <title>Dengue event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_15eb397e509534ddeee7/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_15eb397e509534ddeee7/</guid>
-      <pubDate>Sat, 05 Sep 2026 06:59:25 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;美国&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-03&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-03&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Fox35orlando&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
-      <category>Dengue</category>
-      <source url="https://www.fox35orlando.com/video/fmc-033noaj49p85n3d3">Fox35orlando</source>
-    </item>
-    <item>
-      <title>Unclassified event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_3c9b56c1dcfc8a5db289/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_3c9b56c1dcfc8a5db289/</guid>
-      <pubDate>Sat, 05 Sep 2026 06:59:25 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;新北市板桥区&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-03&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-03&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;累计11人确诊,已扩大回溯1118人进行采血检查,预计阳性率5%至10%&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;LINE&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
-      <category>Unclassified</category>
-      <source url="https://today.line.me/tw/v3/article/zN88xWJ">LINE</source>
+      <title>Cyclosporiasis event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_6a07479080513f6a9d94/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_6a07479080513f6a9d94/</guid>
+      <pubDate>Sun, 06 Sep 2026 07:11:51 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source cyclosporiasis signal in this event snapshot. Structured fields report 2 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Cyclosporiasis&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;Washtenaw县&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-06-01&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;累计确诊11000余例,涉及20个州,死亡2例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;海峡时报&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Cyclosporiasis</category>
+      <source url="https://www.straitstimes.com/world/cyclosporiasis-outbreak-exposes-a-weakened-us-public-health-system">海峡时报</source>
     </item>
     <item>
       <title>COVID-19 event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_bf09a40aea7494034600/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_bf09a40aea7494034600/</guid>
-      <pubDate>Sat, 05 Sep 2026 06:59:25 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source covid-19 signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;COVID-19&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;北欧&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-07-26&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-07-26&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;28天新增34,248例,阳性率3.4%&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;WHO&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;100/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_427222ec3bb7f1fd9653/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_427222ec3bb7f1fd9653/</guid>
+      <pubDate>Sun, 06 Sep 2026 07:11:51 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source covid-19 signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;COVID-19&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;加拿大&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-08-29&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;流感165例、RSV 21例、SARS‐CoV‐2 389例;周暴发11起;呼吸道住院率0.3/10万&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;加拿大公共卫生局&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>COVID-19</category>
+      <source url="https://health-infobase.canada.ca/respiratory-virus-surveillance">加拿大公共卫生局</source>
+    </item>
+    <item>
+      <title>Dengue event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_fddde504bd538ff09a1e/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_fddde504bd538ff09a1e/</guid>
+      <pubDate>Sun, 06 Sep 2026 07:11:51 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;美国佛罗里达州奥兰治县&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;WOGX&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Dengue</category>
+      <source url="https://www.wogx.com/video/fmc-bfxnixd6xapp7vo3.amp">WOGX</source>
+    </item>
+    <item>
+      <title>Dengue event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_3d730ebc9418858b7425/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_3d730ebc9418858b7425/</guid>
+      <pubDate>Sun, 06 Sep 2026 07:11:51 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Structured fields report 1 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;Orange County, Florida, USA&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-09-04&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例确诊病例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Fox35orlando&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Dengue</category>
+      <source url="https://www.fox35orlando.com/video/fmc-bfxnixd6xapp7vo3">Fox35orlando</source>
+    </item>
+    <item>
+      <title>COVID-19 event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_15b4453622b2fdf84fb9/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_15b4453622b2fdf84fb9/</guid>
+      <pubDate>Sun, 06 Sep 2026 07:11:51 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source covid-19 signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;COVID-19&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;全国&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-08-30&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-08-30&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;全国定点报告5459例,1.47/定点(去年同期32197例,8.37/定点)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;MHLW&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>COVID-19</category>
+      <source url="https://www.mhlw.go.jp/content/001745266.pdf">MHLW</source>
+    </item>
+    <item>
+      <title>Influenza event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_479c878b72aee66292d9/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_479c878b72aee66292d9/</guid>
+      <pubDate>Sun, 06 Sep 2026 07:11:51 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source influenza signal in this event snapshot. Structured fields report 21 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Influenza&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;加拿大&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-08-29&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-08-29&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;全国阳性率1.1%,本周165例检测,住院率0.1/10万人,死亡21例;季节累计65岁以上49123例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;加拿大公共卫生局&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Influenza</category>
+      <source url="https://health-infobase.canada.ca/respiratory-virus-surveillance/influenza.html">加拿大公共卫生局</source>
+    </item>
+    <item>
+      <title>COVID-19 event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_3ac1caef38795eac0e95/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_3ac1caef38795eac0e95/</guid>
+      <pubDate>Sun, 06 Sep 2026 07:11:51 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source covid-19 signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;COVID-19&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;中及加勒比&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-07-26&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-07-26&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;28天新增34,248例,阳性率3.4%&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;WHO&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;100/100&lt;/li&gt;&lt;/ul&gt;</description>
       <category>COVID-19</category>
       <source url="https://data.who.int/dashboards/covid19/summary?n=c">WHO</source>
     </item>
