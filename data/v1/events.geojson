@@ -3,6 +3,102 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_988142a407f46945925b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_988142a407f46945925b",
+        "published_at": "2026-09-07",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "美国",
+        "continent": "北美洲",
+        "source_org": "新闻1",
+        "source_type": "news_media",
+        "source": "https://www.news1.kr/amp/bio/general/6281579",
+        "description_cn": "美国流感与COVID-19病例激增,门诊率13.3/千,住院162例和109例,CDC启动联合检查",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_d24fe3eabb126eb7fb18",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7,
+          41.6
+        ]
+      },
+      "properties": {
+        "event_id": "evt_d24fe3eabb126eb7fb18",
+        "published_at": "2026-09-07",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "北马其顿",
+        "continent": "欧洲",
+        "source_org": "LINE",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/60LmvQB",
+        "description_cn": "北马其顿累计58例西尼罗病毒确诊、8例死亡,欧盟15国累计逾千例",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_ae7609c27381b415938e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_ae7609c27381b415938e",
+        "published_at": "2026-09-07",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "Ftvnews",
+        "source_type": "news_media",
+        "source": "https://health.ftvnews.com.tw/news/detail/2026907W0026",
+        "description_cn": "北马其顿确认第8例西尼罗病毒死亡,累计58例确诊,疫情波及欧洲多国",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_a721748759aeb303472e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_a721748759aeb303472e",
+        "published_at": "2026-09-07",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "Ctinews",
+        "source_type": "news_media",
+        "source": "https://ctinews.com/news/items/bKxrXK4RW9",
+        "description_cn": "台湾卫生福利部疾病管制署统计显示,8月23日至29日类流感门急诊就诊突破10万人次,流感并发重症新增85例、死亡14例,",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_3526f6893f9159407977",
       "geometry": {
         "type": "Point",
@@ -22,6 +118,30 @@
         "source_type": "other_open_source",
         "source": "https://www.spokesman.com/stories/2026/sep/06/outside-view-at-the-cdc-damage-control-would-be-a-",
         "description_cn": "美国宾夕法尼亚州麻疹病例达35年最高,报告两例死亡。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_f43ffc7d96bb8715f7ae",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2,
+          19.3
+        ]
+      },
+      "properties": {
+        "event_id": "evt_f43ffc7d96bb8715f7ae",
+        "published_at": "2026-09-06",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "墨西哥城",
+        "continent": "北美洲",
+        "source_org": "UDG",
+        "source_type": "other_open_source",
+        "source": "https://www.udg.mx/zh-TW/noticia/importante-reforzar-medidas-sanitarias-para-evitar-contagio-de-coronavirus-doctor-briseno",
+        "description_cn": "墨西哥城报告一例新冠病毒确诊病例",
         "data_quality_score": 92
       }
     },
@@ -1299,54 +1419,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_f60402e85eecf839887a",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.1,
-          28.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_f60402e85eecf839887a",
-        "published_at": "2026-08-31",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "印度德里",
-        "continent": "亚洲",
-        "source_org": "NewsBytes",
-        "source_type": "news_media",
-        "source": "https://www.newsbytesapp.com/news/india/delhi-sees-199-case-h1n1-spike-total-now-over-3000/tldr",
-        "description_cn": "印度德里甲型流感病例达3843例,医生提醒出现高热、呼吸困难等症状应及时就医。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_6b3c081b1c9e2c3e3875",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.1,
-          28.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_6b3c081b1c9e2c3e3875",
-        "published_at": "2026-08-31",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "印度德里",
-        "continent": "亚洲",
-        "source_org": "News18",
-        "source_type": "news_media",
-        "source": "https://www.news18.com/cities/new-delhi-news/delhis-h1n1-outbreak-refuses-to-slow-199-cases-seasons-second-highest-tally-crosses-3006-10301289.html",
-        "description_cn": "2026年8月31日,印度德里报告H1N1流感24小时新增199例,累计3006例,疫情未放缓。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_86962b515967abeaff64",
       "geometry": {
         "type": "Point",
@@ -1367,150 +1439,6 @@
         "source": "https://www.onenews.ph/articles/doh-5-835-leptospirosis-cases-recorded",
         "description_cn": "菲律宾卫生部(DOH)通报,2026年截至目前全国累计报告5,835例钩端螺旋体病病例,死亡358例。病例数较去年同期(",
         "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_58f497cc43d57257a845",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.1,
-          28.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_58f497cc43d57257a845",
-        "published_at": "2026-08-31",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "印度/德里",
-        "continent": "亚洲",
-        "source_org": "Oneworldnews",
-        "source_type": "news_media",
-        "source": "https://www.oneworldnews.com/desh-ki-baat/delhi-swine-flu",
-        "description_cn": "2026年8月31日,印度德里报告199例甲型H1N1流感病例,为本季第二高",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_ed8d499a4a2d42f034fd",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_ed8d499a4a2d42f034fd",
-        "published_at": "2026-08-31",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "LINE",
-        "source_type": "news_media",
-        "source": "https://today.line.me/tw/v3/article/60LQ8YB",
-        "description_cn": "台湾开学季新冠疫情处高原期,病例及死亡数上升",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_634d6541c87481014d77",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.0,
-          20.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_634d6541c87481014d77",
-        "published_at": "2026-08-31",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "印度喜马偕尔邦",
-        "continent": "亚洲",
-        "source_org": "NDTV",
-        "source_type": "other_open_source",
-        "source": "https://www.ndtv.com/health/h1n1-death-in-himachal-64-year-old-dies-as-flu-cases-continue-to-rise-in-india-11980347",
-        "description_cn": "印度NDTV报道,喜马偕尔邦一名64岁男子因感染H1N1流感死亡,印度全国流感病例持续上升。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_b1dcbbe4202386539955",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_b1dcbbe4202386539955",
-        "published_at": "2026-08-31",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "Mirrordaily",
-        "source_type": "news_media",
-        "source": "https://www.mirrordaily.news/story/82826",
-        "description_cn": "台中一家6口感染A型流感,高中生症状严重。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_14f093983eccc745885e",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -89.4,
-          40.1
-        ]
-      },
-      "properties": {
-        "event_id": "evt_14f093983eccc745885e",
-        "published_at": "2026-08-30",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国伊利诺伊州",
-        "continent": "北美洲",
-        "source_org": "Dailyherald",
-        "source_type": "other_open_source",
-        "source": "https://www.dailyherald.com/20260830/news/illinois-high-vaccination-rate-has-stemmed-measles-tide-amid-nationwide-spike",
-        "description_cn": "美国伊利诺伊州报告5例麻疹病例,尽管全美范围内麻疹疫情有所上升,但该州较高的疫苗接种率有效遏制了疫情扩散,病例主要来自未",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_6a763c20b1eedc562643",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          174.0,
-          -41.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_6a763c20b1eedc562643",
-        "published_at": "2026-08-30",
-        "disease_id": "unclassified-06711a2d",
-        "disease_name_zh": "百日咳",
-        "location": "坎特伯雷",
-        "continent": "大洋洲",
-        "source_org": "Substack",
-        "source_type": "news_media",
-        "source": "https://outbreaknewstoday.substack.com/p/new-zealand-national-pertussis-epidemic",
-        "description_cn": "新西兰卫生部宣布始于2024年11月的全国百日咳疫情已结束。2026年1月至8月21日共报告1254例病例,其中1例死亡",
-        "data_quality_score": 80
       }
     },
     {
@@ -1587,30 +1515,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_5101c594bae8e057d37c",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.5,
-          37.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_5101c594bae8e057d37c",
-        "published_at": "2026-08-23",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "韩国",
-        "continent": "亚洲",
-        "source_org": "韩国疾病管理厅（KDCA）",
-        "source_type": "other_open_source",
-        "source": "https://dportal.kdca.go.kr/pot/bbs/BD_selectBbs.do?q_bbsDocNo=20260827165821233&q_bbsSn=1010&q_clsfNo=2",
-        "description_cn": "2026年第34周韩国流感、COVID-19及急性呼吸道感染监测数据",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_25a26ed9437d4fab1b30",
       "geometry": {
         "type": "Point",
@@ -1654,30 +1558,6 @@
         "source_type": "other_open_source",
         "source": "https://www.mhlw.go.jp/content/001743134.pdf",
         "description_cn": "日本厚生劳动省发布的新冠病毒感染症(COVID-19)周报,涵盖2026年第34周(8月17日至8月23日)全国哨点医院",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_70a77a55ec23d4bc1058",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.2,
-          22.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_70a77a55ec23d4bc1058",
-        "published_at": "2026-08-22",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国香港",
-        "continent": "亚洲",
-        "source_org": "CHP",
-        "source_type": "other_open_source",
-        "source": "https://www.chp.gov.hk/files/xls/flux_data.xlsx",
-        "description_cn": "2026年08月22日 香港发生季节性流感相关疫情,严重流感个案55例(0‐17岁2例,18‐49岁2例,50‐64岁6",
         "data_quality_score": 92
       }
     },
