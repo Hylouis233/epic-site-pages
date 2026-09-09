@@ -3,6 +3,294 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_9c6afe45ff2a735519f7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_9c6afe45ff2a735519f7",
+        "published_at": "2026-09-08",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "中央社",
+        "source_type": "news_media",
+        "source": "https://news.pchome.com.tw/living/cna/20260908/index-17888492033138118009.html",
+        "description_cn": "流感进入流行期,本周新增105例重症、19例死亡,疫情持续上升。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_d17b3a9784149c89c8ff",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_d17b3a9784149c89c8ff",
+        "published_at": "2026-09-08",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "CNEWS汇流新闻网",
+        "source_type": "news_media",
+        "source": "https://life.tw/article/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%B0%8F%E6%96%B0%E5%86%A0%E9%87%8D%E7%97%87-20%E5%A4%A9%E6%96%B0%E7%94%9F%E7%94%B7%E5%AC%B0-%E7%99%BC%E7%97%854%E5%A4%A9%E5%B0%B1%E9%80%B2%E5%8A%A0%E8%AD%B7-%E6%90%B6%E6%95%91%E4%B8%AD-3142643",
+        "description_cn": "台湾现最小新冠重症婴儿(出生20天),上周新增73例重症、15例死亡",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_374388039ca3b0242afc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_374388039ca3b0242afc",
+        "published_at": "2026-09-08",
+        "disease_id": "enterovirus-infection",
+        "disease_name_zh": "肠病毒感染",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "疾病管制署",
+        "source_type": "official_health_authority",
+        "source": "https://www.cdc.gov.tw/Bulletin/Detail/DhYHJ_ADrxLmj217Q0dMtw?typeId=9",
+        "description_cn": "2026年国内肠病毒疫情上升,累计7例重症含1例死亡,第35周门急诊就诊8,475人次",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_d7a633bd8e34eee2a7d0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_d7a633bd8e34eee2a7d0",
+        "published_at": "2026-09-08",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "孟加拉国",
+        "continent": "亚洲",
+        "source_org": "The Jerusalem Post",
+        "source_type": "other_open_source",
+        "source": "https://www.jpost.com/international/article-907771",
+        "description_cn": "孟加拉国登革热疫情恶化,确诊病例超4.2万,死亡117人,医院压力加大",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_b4a1b71608c81d7bdb5b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_b4a1b71608c81d7bdb5b",
+        "published_at": "2026-09-08",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "Pchome",
+        "source_type": "news_media",
+        "source": "https://news.pchome.com.tw/living/nownews/20260908/index-78884812416681207009.html",
+        "description_cn": "台湾流感进入流行期,单周11.5万人就诊,105例重症,19例死亡创新高",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_bae3d9ac9da46a5ff9c3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_bae3d9ac9da46a5ff9c3",
+        "published_at": "2026-09-08",
+        "disease_id": "unclassified-b35910ab",
+        "disease_name_zh": "丙型肝炎",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "Nextapple",
+        "source_type": "news_media",
+        "source": "https://news.nextapple.com/life/20260908/1F13B5E1F42319E04406565FF9FF5541",
+        "description_cn": "台湾某诊所发生急性丙型肝炎群聚感染,新增2例确诊住院,1118人需回溯检测",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_f7d290b14447561780bf",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_f7d290b14447561780bf",
+        "published_at": "2026-09-08",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "LINE",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/XYRx7Yk",
+        "description_cn": "台湾流感进入流行期,新增流感重症105例、死亡19例;新冠重症73例、死亡15例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_760493f7fd823aac72ac",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_760493f7fd823aac72ac",
+        "published_at": "2026-09-08",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "CDC",
+        "source_type": "official_health_authority",
+        "source": "https://www.cdc.gov.tw/Bulletin/Detail/5gJTj70wu9L3psY5kQLUuA?typeId=9",
+        "description_cn": "台湾流感进入流行期,上周新增105例重症19例死亡;新冠仍在流行,上周新增73例重症15例死亡。",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_dca29e76c28f8118eb09",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.2,
+          37.6
+        ]
+      },
+      "properties": {
+        "event_id": "evt_dca29e76c28f8118eb09",
+        "published_at": "2026-09-08",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "美国肯塔基州",
+        "continent": "北美洲",
+        "source_org": "Google",
+        "source_type": "news_media",
+        "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV1V6WlBYVmM3cFUtVXBBS05mXzNjWml5VHNEMWpQTUtPUHlLQWl3RDhkcWFVaDhRRUtEZW9mcVZJeTFNUG1MUWJueE84SXo2VVVLZEpxeXV5OUpRZW1aT0E5Sm45SkFtVlRQSXJVMXdXYjhoemJWQll3bG1mZFEzUE94WVB4dEF1T21IZnltUUFOU3pQODJzVlNsc0hFLU9NcjlkbWI2TXM2UUNEemZ5SDVlYy1JOE94UkJ3QVdB",
+        "description_cn": "美国肯塔基州暴发麻疹疫情,已确认35例病例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_f03749186b68f2811082",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_f03749186b68f2811082",
+        "published_at": "2026-09-08",
+        "disease_id": "salmonellosis",
+        "disease_name_zh": "沙门氏菌病",
+        "location": "美国",
+        "continent": "北美洲",
+        "source_org": "Medicaldaily",
+        "source_type": "other_open_source",
+        "source": "https://www.medicaldaily.com/backyard-poultry-salmonella-1061-cases-second-death-cdc-478329",
+        "description_cn": "美国46州及波多黎各沙门氏菌疫情,累计1,061例,234人住院,2人死亡,均因接触后院家禽。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_78e4298425e44ad98b80",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.7,
+          43.6
+        ]
+      },
+      "properties": {
+        "event_id": "evt_78e4298425e44ad98b80",
+        "published_at": "2026-09-08",
+        "disease_id": "cyclosporiasis",
+        "disease_name_zh": "环孢子虫病",
+        "location": "密歇根州",
+        "continent": "北美洲",
+        "source_org": "Jcpost",
+        "source_type": "other_open_source",
+        "source": "https://jcpost.com/posts/a2ea8334-0464-4b56-b108-23a24cb2d317",
+        "description_cn": "美国多州爆发环孢子虫病,已确认超1.7万例,住院922例,死亡2例,源自在墨西哥污染的生菜。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_6dbecb5e1b1bba0a2220",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_6dbecb5e1b1bba0a2220",
+        "published_at": "2026-09-08",
+        "disease_id": "cyclosporiasis",
+        "disease_name_zh": "环孢子虫病",
+        "location": "美国",
+        "continent": "北美洲",
+        "source_org": "Precedenceresearch",
+        "source_type": "other_open_source",
+        "source": "https://www.precedenceresearch.com/insights/what-is-cyclosporiasis-symptoms-causes-treatment",
+        "description_cn": "2026年美国环孢子虫病大爆发,累计确诊超1.8万例,住院率9%,死亡2例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_988142a407f46945925b",
       "geometry": {
         "type": "Point",
@@ -23,6 +311,30 @@
         "source": "https://www.news1.kr/amp/bio/general/6281579",
         "description_cn": "美国流感与COVID-19病例激增,门诊率13.3/千,住院162例和109例,CDC启动联合检查",
         "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_504928809301d919b906",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5,
+          25.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_504928809301d919b906",
+        "published_at": "2026-09-07",
+        "disease_id": "unclassified-b35910ab",
+        "disease_name_zh": "丙型肝炎",
+        "location": "新北市",
+        "continent": "亚洲",
+        "source_org": "Ettoday",
+        "source_type": "news_media",
+        "source": "https://health.ettoday.net/news/3232372",
+        "description_cn": "板桥诊所爆发丙肝群聚,已11人确诊,1118人回溯,阳性率或达5%-10%",
+        "data_quality_score": 80
       }
     },
     {
@@ -99,6 +411,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_67c2f96108818ed926f1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2,
+          22.3
+        ]
+      },
+      "properties": {
+        "event_id": "evt_67c2f96108818ed926f1",
+        "published_at": "2026-09-07",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "小幼部",
+        "continent": "亚洲",
+        "source_org": "GOV",
+        "source_type": "other_open_source",
+        "source": "https://www.gov.mo/zh-hant/news/1264573",
+        "description_cn": "澳门3所学校暴发甲型流感,共18例轻症病例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_3526f6893f9159407977",
       "geometry": {
         "type": "Point",
@@ -166,6 +502,30 @@
         "source_type": "news_media",
         "source": "https://www.bssnews.net/others/421537",
         "description_cn": "2026年9月6日,孟加拉国报告登革热新增1558例,死亡4例,累计死亡117例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_9271b78e281d9818517a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7,
+          -2.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_9271b78e281d9818517a",
+        "published_at": "2026-09-06",
+        "disease_id": "ebola-virus-disease",
+        "disease_name_zh": "埃博拉",
+        "location": "刚果民主共和国",
+        "continent": "非洲",
+        "source_org": "LINE",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/LXyog8z",
+        "description_cn": "美国CDC报告2026年麻疹病例3134例,创35年新高",
         "data_quality_score": 92
       }
     },
@@ -1131,318 +1491,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_15ffa6c52b52b7c79726",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_15ffa6c52b52b7c79726",
-        "published_at": "2026-09-01",
-        "disease_id": "enterovirus-d68",
-        "disease_name_zh": "肠病毒 D68 型感染",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "ETtoday",
-        "source_type": "news_media",
-        "source": "https://health.ettoday.net/news/3229480",
-        "description_cn": "台湾北部一名1岁男童感染肠病毒D68型,出现肺炎及急性无力脊髓炎,今年累计7例重症含1例死亡",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_2901bec58c4ea551eeb8",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.774,
-          12.8797
-        ]
-      },
-      "properties": {
-        "event_id": "evt_2901bec58c4ea551eeb8",
-        "published_at": "2026-09-01",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "菲律宾",
-        "continent": "亚洲",
-        "source_org": "Sunstar",
-        "source_type": "other_open_source",
-        "source": "https://www.sunstar.com.ph/manila/philippines-tallies-nearly-118000-dengue-cases",
-        "description_cn": "2026年1-8月菲律宾报告约11.8万例登革热,较去年下降41%,卫生部门提醒防蚊。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_f04faf78735b0637ff6d",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_f04faf78735b0637ff6d",
-        "published_at": "2026-09-01",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "Ettoday",
-        "source_type": "news_media",
-        "source": "https://health.ettoday.net/news/3229473",
-        "description_cn": "上周流感85例重症、14死;新冠69例重症、18死",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_de598edc09b95b08029d",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_de598edc09b95b08029d",
-        "published_at": "2026-09-01",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "CTS",
-        "source_type": "news_media",
-        "source": "https://news.cts.com.tw/cts/life/202609/202609013073744.html",
-        "description_cn": "台湾疾管署2026年9月1日公布,国内流感疫情持续上升,上周新增85例流感并发重症及14例死亡,类流感门急诊单周就诊突破",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_4ea8de17c2151bf17443",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.3,
-          35.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_4ea8de17c2151bf17443",
-        "published_at": "2026-09-01",
-        "disease_id": "enterovirus-d68",
-        "disease_name_zh": "肠病毒 D68 型感染",
-        "location": "北部",
-        "continent": "亚洲",
-        "source_org": "Ettoday",
-        "source_type": "news_media",
-        "source": "https://health.ettoday.net/amp/3229480",
-        "description_cn": "台湾疾管署公布新增1例肠病毒D68型并发急性无力脊髓炎重症病例,为北部1岁多男童,8月初发病,出现发烧、咳嗽、流鼻水等症",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_3356af3d824c9f4f6983",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_3356af3d824c9f4f6983",
-        "published_at": "2026-09-01",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "CDC",
-        "source_type": "official_health_authority",
-        "source": "https://www.cdc.gov.tw/Bulletin/Detail/GWRkQ03fZuKKWwdv191UyQ?typeId=9",
-        "description_cn": "台湾近期流感新冠升温,流感85例重症14死,新冠69例重症18死,呼吁加强防护与疫苗接种",
-        "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_57e00fb09fc2ac01fa62",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          79.9,
-          6.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_57e00fb09fc2ac01fa62",
-        "published_at": "2026-09-01",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "西部省",
-        "continent": "亚洲",
-        "source_org": "Adaderana",
-        "source_type": "other_open_source",
-        "source": "https://adaderana.lk/news/cmti8dyxi0001356qhxktlur9",
-        "description_cn": "斯里兰卡2026年8月报告登革热95,493例,死亡72例,疫情集中在西部省。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_0d60bff8b73f4686b460",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.4,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_0d60bff8b73f4686b460",
-        "published_at": "2026-09-01",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "孟加拉国",
-        "continent": "亚洲",
-        "source_org": "Thefinancialexpress",
-        "source_type": "other_open_source",
-        "source": "https://thefinancialexpress.com.bd/health/measles-outbreak-out-of-control-as-dengue-cases-surge-in-bangladesh",
-        "description_cn": "孟加拉国麻疹与登革热同时暴发,麻疹累计死亡973例,登革热住院超3.5万例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_faa1daa82efcb0c046ab",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.9,
-          30.8
-        ]
-      },
-      "properties": {
-        "event_id": "evt_faa1daa82efcb0c046ab",
-        "published_at": "2026-09-01",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "以色列",
-        "continent": "亚洲",
-        "source_org": "Ynetnews",
-        "source_type": "news_media",
-        "source": "https://www.ynetnews.com/health_science/article/rj4n1pxuze",
-        "description_cn": "2026年09月01日 以色列发生流感(甲型)相关疫情,47例感染,3例死亡",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_d9a1cd8a2fba96cc8780",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          29.9,
-          1.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_d9a1cd8a2fba96cc8780",
-        "published_at": "2026-09-01",
-        "disease_id": "ebola-virus-disease",
-        "disease_name_zh": "埃博拉",
-        "location": "刚果民主共和国伊图里省",
-        "continent": "非洲",
-        "source_org": "Crisis24",
-        "source_type": "other_open_source",
-        "source": "https://www.crisis24.com/articles/historic-ebola-outbreak-continues-to-outpace-containment-efforts",
-        "description_cn": "2026年8月28日数据:刚果民主共和国暴发的埃博拉疫情已扩散至6个省份的60个卫生区,累计确诊5,945例、死亡2,8",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_67d6228318ac93e4d8cd",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.0,
-          38.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_67d6228318ac93e4d8cd",
-        "published_at": "2026-09-01",
-        "disease_id": "cyclosporiasis",
-        "disease_name_zh": "环孢子虫病",
-        "location": "美国",
-        "continent": "北美洲",
-        "source_org": "Myfoxzone",
-        "source_type": "other_open_source",
-        "source": "https://www.myfoxzone.com/article/news/nation-world/is-lettuce-safe-to-eat-now/507-9c5f2425-4f79-4d62-925d-cb9504361d5d",
-        "description_cn": "美国多地暴发与生菜相关的环孢子虫食源性疫情,已累计报告11,458例寄生虫感染病例,官方仍在持续调查污染源并发布食品安全",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_c5499e20479cc7079762",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -77.7,
-          41.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_c5499e20479cc7079762",
-        "published_at": "2026-08-31",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "宾夕法尼亚州",
-        "continent": "北美洲",
-        "source_org": "Jersey Vindicator",
-        "source_type": "other_open_source",
-        "source": "https://jerseyvindicator.org/2026/08/31/get-vaccinated-nj-health-official-issues-warning-amid-u-s-measles-surge",
-        "description_cn": "美国麻疹蔓延,2026年累计2999例,宾州393例、2例死亡,新泽西未暴发。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_86962b515967abeaff64",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          122.0,
-          13.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_86962b515967abeaff64",
-        "published_at": "2026-08-31",
-        "disease_id": "leptospirosis",
-        "disease_name_zh": "钩端螺旋体病",
-        "location": "全国",
-        "continent": "亚洲",
-        "source_org": "Onenews",
-        "source_type": "news_media",
-        "source": "https://www.onenews.ph/articles/doh-5-835-leptospirosis-cases-recorded",
-        "description_cn": "菲律宾卫生部(DOH)通报,2026年截至目前全国累计报告5,835例钩端螺旋体病病例,死亡358例。病例数较去年同期(",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_15b4453622b2fdf84fb9",
       "geometry": {
         "type": "Point",
@@ -1511,30 +1559,6 @@
         "source": "https://www.chp.gov.hk/files/xls/covidx_data.xlsx",
         "description_cn": "2026年08月29日 香港发生2019冠状病毒病相关疫情,核酸检测阳性91例,重症1例,死亡2例,院舍暴发4宗",
         "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_25a26ed9437d4fab1b30",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          24.0,
-          -29.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_25a26ed9437d4fab1b30",
-        "published_at": "2026-08-23",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "南非",
-        "continent": "非洲",
-        "source_org": "南非国家传染病研究所（NICD）",
-        "source_type": "official_health_authority",
-        "source": "https://www.nicd.ac.za/wp-content/uploads/2026/08/Resp_Path_Report_2026_34-_Final.pdf",
-        "description_cn": "南非2026年第34周呼吸道病原体监测报告显示流感病例7例,累计964例",
-        "data_quality_score": 100
       }
     },
     {
