@@ -390,12 +390,12 @@
     "data_quality_score": 92
   },
   {
-    "id": "evt_3b49ee1de137b64844a0",
-    "event_id": "evt_3b49ee1de137b64844a0",
+    "id": "evt_29f0423673915b33caf6",
+    "event_id": "evt_29f0423673915b33caf6",
     "original_date": "2026-09-03",
     "disease": "登革热",
     "disease_id": "dengue",
-    "location": "孟加拉国 / 吉大港区 / 吉大港县",
+    "location": "孟加拉国 / 吉大港专区 / 吉大港县 / 吉大港市",
     "latitude": 22.4,
     "longitude": 91.8,
     "description_cn": "孟加拉国Chattogram district登革热疫情持续上升,仅8月一个月就报告了1202例病例,占该地区今年累计2",

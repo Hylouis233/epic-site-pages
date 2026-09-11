@@ -627,7 +627,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_3b49ee1de137b64844a0",
+      "id": "evt_29f0423673915b33caf6",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -636,11 +636,11 @@
         ]
       },
       "properties": {
-        "event_id": "evt_3b49ee1de137b64844a0",
+        "event_id": "evt_29f0423673915b33caf6",
         "published_at": "2026-09-03",
         "disease_id": "dengue",
         "disease_name_zh": "登革热",
-        "location": "孟加拉国 / 吉大港区 / 吉大港县",
+        "location": "孟加拉国 / 吉大港专区 / 吉大港县 / 吉大港市",
         "continent": "亚洲",
         "source_org": "Viewsbangladesh",
         "source_type": "other_open_source",

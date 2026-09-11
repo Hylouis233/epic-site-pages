@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-09-10T07:23:46Z",
+  "build_generated_at": "2026-09-11T07:21:23Z",
   "data_as_of": "2026-09-09",
-  "last_successful_ingest_at": "2026-09-10T07:23:46Z",
+  "last_successful_ingest_at": "2026-09-11T07:21:23Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -27,13 +27,13 @@
     "parquet": "events.parquet"
   },
   "checksums_sha256": {
-    "records.json": "ed839a4db25fa60d28423f87cca45210e3487b898c77b5f974e385dd9482f1da",
-    "events.ndjson": "e02ba58b5dd71d5e4526a0e62cb1bc3e60eed696678853cd283733c4ae086da2",
-    "events.csv": "d921f763821d6fca3bb53485bec53a927f3eaa90aa40a8113861d9da5695d1bd",
-    "events.geojson": "70da092214e64380551109e175ad67f61e5035e45ecb3bdf307fb19cc402b797",
+    "records.json": "4c45abffe01380d23de0c544d91a52750e04f83629301566a4b9a5e0356ad53c",
+    "events.ndjson": "cecc894f1cda72f9160ba42fb8b143377f6121e399d12a6c0ceb94789f4a3b8b",
+    "events.csv": "c0073f26d1668c1a264fce0697e1bff943e9ca701fa73aa60eb48376b9303add",
+    "events.geojson": "9d4560f6d04ed59634fa38ba75ca472118cba056f90aeecfba21d394bb9e09a2",
     "schema.json": "07670fe85c758949d7bdc8dcb29942d1243485be3add880ce68ac16cc1c96aa6",
-    "quality-report.json": "18b18ab8ac714900433f56d6ad0b3cc1a1fd8b7da05dceee6251541da56fa416",
-    "events.parquet": "9fb4144130cad5a9fc10a89a7e598b575eb1849b66d1609ef8e9959c002f0917"
+    "quality-report.json": "c17f00d90917b1a2e3d335c3977a10fea85816ef0f2f4792a88ed86a5c7341b4",
+    "events.parquet": "fbe9b9724339555e7de8e1937012dcb1404e64e20e529c2332ed178eb5066250"
   },
   "license": {
     "repository": "proprietary-source-available",
