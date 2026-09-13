@@ -3,6 +3,54 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_7a2f03dfa0c2b0a328ad",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_7a2f03dfa0c2b0a328ad",
+        "published_at": "2026-09-12",
+        "disease_id": "unclassified-e02a036c",
+        "disease_name_zh": "急性病毒性丙型肝炎",
+        "location": "中国 / 台湾 / 新北市 / 板桥区 / 安泰淞鹤诊所",
+        "continent": "亚洲",
+        "source_org": "LINE / Nextapple / Ettoday",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/yz8MwXk",
+        "description_cn": "新北市板桥区诊所爆发急性丙型肝炎群聚,累计13人感染,感染源仍在调查。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_5bb8068ec5339f90d9e8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.8,
+          16.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_5bb8068ec5339f90d9e8",
+        "published_at": "2026-09-12",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "越南 / 多乐省",
+        "continent": "亚洲",
+        "source_org": "Vietnam",
+        "source_type": "other_open_source",
+        "source": "https://www.vietnam.vn/zh-cn/sot-xuat-huyet-tang-manh-tai-dak-lak",
+        "description_cn": "越南多乐省雨季登革热疫情持续,截至9月10日累计报告6112例,新安坊和光富乡共报告死亡4例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_93faa19a19187e93078d",
       "geometry": {
         "type": "Point",
@@ -21,8 +69,32 @@
         "source_org": "WUSF",
         "source_type": "news_media",
         "source": "https://wusf.org/text/health-news-florida/2026-09-10/florida-investigates-possible-hillsborough-death-related-to-dengue-as-cases-hit-95",
-        "description_cn": "佛罗里达州希尔斯伯勒县自2026年7月以来本地感染登革热累计95例(全州同期共111例),一名南坦帕80岁女性疑似死于登革热,相关调查仍在进行中。",
+        "description_cn": "佛罗里达州希尔斯伯勒县出现登革热死亡病例,已累计95例。",
         "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_33472a3e42be434d3645",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9,
+          1.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_33472a3e42be434d3645",
+        "published_at": "2026-09-11",
+        "disease_id": "ebola-virus-disease",
+        "disease_name_zh": "埃博拉",
+        "location": "刚果民主共和国 / 伊图里省",
+        "continent": "非洲",
+        "source_org": "欧洲疾病预防控制中心",
+        "source_type": "official_health_authority",
+        "source": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+        "description_cn": "刚果民主共和国报告布尼亚病毒累计确诊6942例,死亡3349例,住院823例,涉6省151卫生区",
+        "data_quality_score": 100
       }
     },
     {
@@ -45,7 +117,7 @@
         "source_org": "Inquirer / Cbsnews / Medicalxpress / Bloomberg Opinion",
         "source_type": "news_media",
         "source": "https://www.inquirer.com/health/pennsylvania-measles-deaths-details-20260910.html",
-        "description_cn": "宾夕法尼亚州(兰开斯特县)麻疹暴发,已确认2名婴儿麻疹相关死亡(其中1例由麻疹病毒直接致死,另1例死因为创伤性脾破裂、麻疹为并存状况),全州累计逾620例、波及37个县",
+        "description_cn": "宾夕法尼亚州麻疹暴发,已确认2名婴儿死亡,疫情持续蔓延",
         "data_quality_score": 92
       }
     },
@@ -95,6 +167,30 @@
         "source": "https://www.kawartha411.ca/2026/09/10/flu-season-has-officially-begun-and-its-one-month-early",
         "description_cn": "加拿大安大略省彼得伯勒出现今冬首例流感确诊病例,疫情提前一个月开始",
         "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_ce76aed45b6c87ea05ff",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_ce76aed45b6c87ea05ff",
+        "published_at": "2026-09-10",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "法国 / 普罗旺斯-阿尔卑斯-蓝色海岸大区 / 沃克吕兹省",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-10-septembre-2026",
+        "description_cn": "2026年9月,法国PACA地区累计23例西尼罗病毒感染,约12例住院",
+        "data_quality_score": 80
       }
     },
     {
@@ -555,30 +651,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_bae0e9a0fc7a046b53bc",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_bae0e9a0fc7a046b53bc",
-        "published_at": "2026-09-08",
-        "disease_id": "unclassified-e02a036c",
-        "disease_name_zh": "急性病毒性丙型肝炎",
-        "location": "中国 / 台湾 / 新北市 / 板桥区 / 安泰淞鹤诊所",
-        "continent": "亚洲",
-        "source_org": "Nextapple / Ettoday",
-        "source_type": "news_media",
-        "source": "https://news.nextapple.com/life/20260908/1F13B5E1F42319E04406565FF9FF5541",
-        "description_cn": "台湾某诊所发生急性丙型肝炎群聚感染,新增2例确诊住院,1118人需回溯检测",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_94a2d4547b972f25ec2b",
       "geometry": {
         "type": "Point",
@@ -642,7 +714,7 @@
         "disease_name_zh": "环孢子虫病",
         "location": "美国",
         "continent": "北美洲",
-        "source_org": "Jcpost / Precedenceresearch / 海峡时报",
+        "source_org": "Jcpost / Precedenceresearch",
         "source_type": "other_open_source",
         "source": "https://jcpost.com/posts/a2ea8334-0464-4b56-b108-23a24cb2d317",
         "description_cn": "美国多州爆发环孢子虫病,已确认超1.7万例,住院922例,死亡2例,源自在墨西哥污染的生菜。",
@@ -771,6 +843,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_14530d1b402fe6aff555",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0,
+          36.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_14530d1b402fe6aff555",
+        "published_at": "2026-09-06",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "日本",
+        "continent": "亚洲",
+        "source_org": "MHLW",
+        "source_type": "other_open_source",
+        "source": "https://www.mhlw.go.jp/content/001748432.pdf",
+        "description_cn": "日本2026年第36周COVID-19报告,7,777例,较去年同期下降。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_88006ad87db16bd4c2ea",
       "geometry": {
         "type": "Point",
@@ -790,54 +886,6 @@
         "source_type": "news_media",
         "source": "https://today.line.me/tw/v3/article/2Dq9KMe",
         "description_cn": "美国CDC通报今年累计3,134例麻疹确诊,创35年新高,宾州一名婴儿死亡",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_81e714a8631d02a3a022",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          174.0,
-          -41.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_81e714a8631d02a3a022",
-        "published_at": "2026-09-05",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "新西兰 / 奥克兰",
-        "continent": "大洋洲",
-        "source_org": "Sydneytoday",
-        "source_type": "news_media",
-        "source": "https://www.sydneytoday.com/content-1026602747858024",
-        "description_cn": "新西兰流感A型等呼吸道疾病激增,31起聚集性疫情,主要影响养老院和学校,医院收治大量患者,手术延期。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_d8908b04081dbd009261",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.0,
-          38.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_d8908b04081dbd009261",
-        "published_at": "2026-09-05",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国 / 佐治亚州 / 亚特兰大都会区",
-        "continent": "北美洲",
-        "source_org": "AJC",
-        "source_type": "other_open_source",
-        "source": "https://www.ajc.com/news/2026/09/3-new-measles-cases-tied-to-metro-atlanta-daycare-georgia-health-officials-say",
-        "description_cn": "佐治亚州卫生官员称,亚特兰大都会区一日托中心新增3例麻疹病例,使与该日托中心暴发相关的病例总数达8例。",
         "data_quality_score": 92
       }
     },
@@ -891,25 +939,25 @@
     },
     {
       "type": "Feature",
-      "id": "evt_04fe4720b96ef9c801b5",
+      "id": "evt_4d12d06ce55d7c773c4c",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.5,
-          27.7
+          138.0,
+          36.0
         ]
       },
       "properties": {
-        "event_id": "evt_04fe4720b96ef9c801b5",
-        "published_at": "2026-09-04",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国 / 佛罗里达州 / 奥兰治县",
-        "continent": "北美洲",
-        "source_org": "Fox35orlando / WOGX",
+        "event_id": "evt_4d12d06ce55d7c773c4c",
+        "published_at": "2026-08-30",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "日本",
+        "continent": "亚洲",
+        "source_org": "日本国立感染症研究所",
         "source_type": "other_open_source",
-        "source": "https://www.fox35orlando.com/video/fmc-bfxnixd6xapp7vo3",
-        "description_cn": "美国佛罗里达州奥兰治县(Orange County)确诊一例登革热病例后,当地蚊虫控制部门正针对相关蚊虫聚集区域开展消杀",
+        "source": "https://id-info.jihs.go.jp/en/surveillance/idwr/rapid/2026/35/index.html",
+        "description_cn": "日本2026年第35周流感报告6543例,新冠5459例",
         "data_quality_score": 92
       }
     },
