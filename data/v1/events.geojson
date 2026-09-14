@@ -3,7 +3,79 @@
   "features": [
     {
       "type": "Feature",
-      "id": "evt_7a2f03dfa0c2b0a328ad",
+      "id": "evt_5c3a52f770e700b5b86f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7,
+          -2.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_5c3a52f770e700b5b86f",
+        "published_at": "2026-09-13",
+        "disease_id": "ebola-virus-disease",
+        "disease_name_zh": "埃博拉",
+        "location": "刚果民主共和国",
+        "continent": "非洲",
+        "source_org": "Medicalxpress",
+        "source_type": "other_open_source",
+        "source": "https://medicalxpress.com/news/2026-09-dr-congo-worst-ebola-epidemic.html",
+        "description_cn": "刚果民主共和国埃博拉疫情累计超7000例,成为史上最严重疫情。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_ff050ed94a425f012e53",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0,
+          20.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_ff050ed94a425f012e53",
+        "published_at": "2026-09-13",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "印度 / 泰米尔纳德邦 / 科印巴陀",
+        "continent": "亚洲",
+        "source_org": "Newindianexpress",
+        "source_type": "other_open_source",
+        "source": "https://www.newindianexpress.com/cities/coimbatore/2026/Sep/13/dengue-cases-up-by-476-in-coimbatore-district-this-year-849-cases-within-city-limits-alone-2",
+        "description_cn": "印度泰米尔纳德邦科印巴陀区2026年登革热城区累计849例,全district同比增加476例",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_7f5f6e567fc05200ed7c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.3,
+          35.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_7f5f6e567fc05200ed7c",
+        "published_at": "2026-09-13",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "巴基斯坦 / 开伯尔-普什图省 / 科哈特",
+        "continent": "亚洲",
+        "source_org": "DAWN",
+        "source_type": "other_open_source",
+        "source": "https://www.dawn.com/news/2029451/kp-records-weekly-high-of-148-dengue-cases",
+        "description_cn": "巴基斯坦开伯尔-普什图省(KP)登革热病例激增并已进入「地方性流行阶段」,本周新增148例(本季单周最高),本季累计729例;科哈特累计274例为最严重疫区,白沙瓦241例次之,省卫生厅已向科哈特部署快速反应小组。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_93d8b982b1e5384858b5",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -12,7 +84,7 @@
         ]
       },
       "properties": {
-        "event_id": "evt_7a2f03dfa0c2b0a328ad",
+        "event_id": "evt_93d8b982b1e5384858b5",
         "published_at": "2026-09-12",
         "disease_id": "unclassified-e02a036c",
         "disease_name_zh": "急性病毒性丙型肝炎",
@@ -20,8 +92,8 @@
         "continent": "亚洲",
         "source_org": "LINE / Nextapple / Ettoday",
         "source_type": "news_media",
-        "source": "https://today.line.me/tw/v3/article/yz8MwXk",
-        "description_cn": "新北市板桥区诊所爆发急性丙型肝炎群聚,累计13人感染,感染源仍在调查。",
+        "source": "https://today.line.me/tw/v3/article/yz8MwXk?referral=healthnews",
+        "description_cn": "新北市板桥区安泰淞鹤诊所爆发急性丙型肝炎群聚感染,确诊人数由原先11人再增2人,累计13人感染,感染源至今未厘清。卫福部",
         "data_quality_score": 80
       }
     },
@@ -114,7 +186,7 @@
         "disease_name_zh": "麻疹",
         "location": "美国 / 宾夕法尼亚州",
         "continent": "北美洲",
-        "source_org": "Inquirer / Cbsnews / Medicalxpress / Bloomberg Opinion",
+        "source_org": "Inquirer / Cbsnews / Medicalxpress",
         "source_type": "news_media",
         "source": "https://www.inquirer.com/health/pennsylvania-measles-deaths-details-20260910.html",
         "description_cn": "宾夕法尼亚州麻疹暴发,已确认2名婴儿死亡,疫情持续蔓延",
@@ -190,6 +262,30 @@
         "source_type": "other_open_source",
         "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-10-septembre-2026",
         "description_cn": "2026年9月,法国PACA地区累计23例西尼罗病毒感染,约12例住院",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_8ef2b38fbdf1384b70fb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_8ef2b38fbdf1384b70fb",
+        "published_at": "2026-09-10",
+        "disease_id": "unclassified-44fa8076",
+        "disease_name_zh": "基孔肯雅热;西尼罗病毒感染",
+        "location": "法国 / 法兰西岛大区",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/ile-de-france/bulletin-regional/surveillance-sanitaire-en-ile-de-france-bulletin-du-10-septembre-2026",
+        "description_cn": "2026年8-9月,法兰西岛报告本地基孔肯雅热5例和西尼罗病毒12例。",
         "data_quality_score": 80
       }
     },
@@ -618,8 +714,8 @@
         "disease_name_zh": "登革热",
         "location": "孟加拉国",
         "continent": "亚洲",
-        "source_org": "The Jerusalem Post / Bssnews",
-        "source_type": "news_media",
+        "source_org": "The Jerusalem Post",
+        "source_type": "other_open_source",
         "source": "https://www.jpost.com/international/article-907771",
         "description_cn": "孟加拉国登革热疫情恶化,确诊病例超4.2万,死亡117人,医院压力加大",
         "data_quality_score": 92
@@ -819,30 +915,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_da1d03de4d3bbce9bd37",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          72.3,
-          35.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_da1d03de4d3bbce9bd37",
-        "published_at": "2026-09-06",
-        "disease_id": "unclassified-2b4038da",
-        "disease_name_zh": "基孔肯雅热",
-        "location": "巴基斯坦 / 开伯尔-普什图省 / 瑙谢拉县",
-        "continent": "亚洲",
-        "source_org": "UA",
-        "source_type": "news_media",
-        "source": "https://ua.news/cn/health/u-pakistani-v-okruzi-naushera-pidtverdili-shist-vipadkiv-chikungunyi",
-        "description_cn": "巴基斯坦瑙谢拉地区卫生部门确认6例基孔肯雅热病例后启动应对措施,疑似病例共192例,25份样本送检,此前已有45例疑似记",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_14530d1b402fe6aff555",
       "geometry": {
         "type": "Point",
@@ -862,30 +934,6 @@
         "source_type": "other_open_source",
         "source": "https://www.mhlw.go.jp/content/001748432.pdf",
         "description_cn": "日本2026年第36周COVID-19报告,7,777例,较去年同期下降。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_88006ad87db16bd4c2ea",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.0,
-          38.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_88006ad87db16bd4c2ea",
-        "published_at": "2026-09-05",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国",
-        "continent": "北美洲",
-        "source_org": "LINE",
-        "source_type": "news_media",
-        "source": "https://today.line.me/tw/v3/article/2Dq9KMe",
-        "description_cn": "美国CDC通报今年累计3,134例麻疹确诊,创35年新高,宾州一名婴儿死亡",
         "data_quality_score": 92
       }
     },
