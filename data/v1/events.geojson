@@ -3,6 +3,78 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_0d41ad9cb1ec0bdacc2e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_0d41ad9cb1ec0bdacc2e",
+        "published_at": "2026-09-14",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "孟加拉国 / 库尔纳专区 / 库尔纳",
+        "continent": "亚洲",
+        "source_org": "孟加拉国新闻社",
+        "source_type": "news_media",
+        "source": "https://www.bssnews.net/news/424290",
+        "description_cn": "孟加拉国库尔纳24小时内302名登革热患者住院,1例死亡",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_a19e2a998342829c3533",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_a19e2a998342829c3533",
+        "published_at": "2026-09-14",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "孟加拉国",
+        "continent": "亚洲",
+        "source_org": "Fmbharat / Thedailystar / Newkerala",
+        "source_type": "other_open_source",
+        "source": "https://www.fmbharat.com/en/world/bangladesh-dengue-outbreak-worsens-as-52-die-in-just-13-days",
+        "description_cn": "2026年9月,孟加拉国登革热疫情持续恶化,9月前13天内即有52人死亡,创年内单月死亡新高。截至9月14日,全国累计登革热死亡149例、住院51837例,疫情已扩散至全国64个行政区,政府警告9月底至10月初可能进一步恶化。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_9ec9ec4bf65d52f9b7a8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_9ec9ec4bf65d52f9b7a8",
+        "published_at": "2026-09-14",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "美国 / 宾夕法尼亚州 / 杰斐逊县",
+        "continent": "北美洲",
+        "source_org": "NPR / Inquirer / Cbsnews / Medicalxpress",
+        "source_type": "news_media",
+        "source": "https://www.npr.org/2026/09/13/nx-s1-5968093/pennsylvania-says-an-unvaccinated-woman-has-died-from-measles-related-complications",
+        "description_cn": "美国宾夕法尼亚州一名未接种麻疹疫苗的40岁女性死亡,累计该州今年确诊676例,死亡3例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_5c3a52f770e700b5b86f",
       "geometry": {
         "type": "Point",
@@ -45,7 +117,7 @@
         "source_org": "Newindianexpress",
         "source_type": "other_open_source",
         "source": "https://www.newindianexpress.com/cities/coimbatore/2026/Sep/13/dengue-cases-up-by-476-in-coimbatore-district-this-year-849-cases-within-city-limits-alone-2",
-        "description_cn": "印度泰米尔纳德邦科印巴陀区2026年登革热城区累计849例,全district同比增加476例",
+        "description_cn": "印度泰米尔纳德邦科印巴陀区2026年登革热病例增加849例",
         "data_quality_score": 92
       }
     },
@@ -69,7 +141,7 @@
         "source_org": "DAWN",
         "source_type": "other_open_source",
         "source": "https://www.dawn.com/news/2029451/kp-records-weekly-high-of-148-dengue-cases",
-        "description_cn": "巴基斯坦开伯尔-普什图省(KP)登革热病例激增并已进入「地方性流行阶段」,本周新增148例(本季单周最高),本季累计729例;科哈特累计274例为最严重疫区,白沙瓦241例次之,省卫生厅已向科哈特部署快速反应小组。",
+        "description_cn": "巴基斯坦开伯尔-普什图省登革热病例激增,本周新增148例,累计729例",
         "data_quality_score": 92
       }
     },
@@ -167,30 +239,6 @@
         "source": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
         "description_cn": "刚果民主共和国报告布尼亚病毒累计确诊6942例,死亡3349例,住院823例,涉6省151卫生区",
         "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_ca5834fc311d33976200",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.0,
-          38.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_ca5834fc311d33976200",
-        "published_at": "2026-09-11",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国 / 宾夕法尼亚州",
-        "continent": "北美洲",
-        "source_org": "Inquirer / Cbsnews / Medicalxpress",
-        "source_type": "news_media",
-        "source": "https://www.inquirer.com/health/pennsylvania-measles-deaths-details-20260910.html",
-        "description_cn": "宾夕法尼亚州麻疹暴发,已确认2名婴儿死亡,疫情持续蔓延",
-        "data_quality_score": 92
       }
     },
     {
@@ -334,6 +382,30 @@
         "source_type": "other_open_source",
         "source": "https://www.rozanaspokesman.com/amp/news/haryana/100926/swine-flu-alert-hisar-reports-61-cases-2-deaths-in-haryana.html",
         "description_cn": "印度哈里亚纳邦猪流感病例持续增加,卫生部门全面戒备。希萨尔 district 迄今已报告61例病例,其中2例死亡。两名死",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_f2e21c462ec5ed8e03ec",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_f2e21c462ec5ed8e03ec",
+        "published_at": "2026-09-10",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "法国 / 科西嘉",
+        "continent": "欧洲",
+        "source_org": "Santepubliquefrance",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/docs/surveillance-sanitaire-en-corse-bulletin-du-10-septembre-2026",
+        "description_cn": "法国科西嘉报告2例输入性登革热病例",
         "data_quality_score": 92
       }
     },
@@ -819,54 +891,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_988142a407f46945925b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.0,
-          38.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_988142a407f46945925b",
-        "published_at": "2026-09-07",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "美国",
-        "continent": "北美洲",
-        "source_org": "新闻1",
-        "source_type": "news_media",
-        "source": "https://www.news1.kr/amp/bio/general/6281579",
-        "description_cn": "美国流感与COVID-19病例激增,门诊率13.3/千,住院162例和109例,CDC启动联合检查",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_35d4fadc7284d644a67b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_35d4fadc7284d644a67b",
-        "published_at": "2026-09-07",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国 / 台湾",
-        "continent": "亚洲",
-        "source_org": "Ctinews",
-        "source_type": "news_media",
-        "source": "https://ctinews.com/news/items/bKxrXK4RW9",
-        "description_cn": "台湾卫生福利部疾病管制署统计显示,8月23日至29日类流感门急诊就诊突破10万人次,流感并发重症新增85例、死亡14例,",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_88f7f5a22cf3459c193d",
       "geometry": {
         "type": "Point",
@@ -886,30 +910,6 @@
         "source_type": "other_open_source",
         "source": "https://www.gov.mo/zh-hant/news/1264573",
         "description_cn": "澳门3所学校暴发甲型流感,共18例轻症病例",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_3e4c7649c7c98e9256f5",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -102.0,
-          23.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_3e4c7649c7c98e9256f5",
-        "published_at": "2026-09-06",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "墨西哥 / 墨西哥城",
-        "continent": "北美洲",
-        "source_org": "UDG",
-        "source_type": "other_open_source",
-        "source": "https://www.udg.mx/zh-TW/noticia/importante-reforzar-medidas-sanitarias-para-evitar-contagio-de-coronavirus-doctor-briseno",
-        "description_cn": "墨西哥城报告一例新冠病毒确诊病例",
         "data_quality_score": 92
       }
     },
@@ -1030,30 +1030,6 @@
         "source_type": "other_open_source",
         "source": "https://www.mhlw.go.jp/content/001745266.pdf",
         "description_cn": "日本厚生劳动省发布2026年第35周(8月24日至8月30日)COVID-19全国定点监测报告:全国共报告5459例,1",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_6ba0ecb24e616355a890",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.2,
-          22.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_6ba0ecb24e616355a890",
-        "published_at": "2026-08-29",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国 / 香港",
-        "continent": "亚洲",
-        "source_org": "CHP",
-        "source_type": "other_open_source",
-        "source": "https://www.chp.gov.hk/files/xls/covidx_data.xlsx",
-        "description_cn": "2026年08月29日 香港发生2019冠状病毒病相关疫情,核酸检测阳性91例,重症1例,死亡2例,院舍暴发4宗",
         "data_quality_score": 92
       }
     },
