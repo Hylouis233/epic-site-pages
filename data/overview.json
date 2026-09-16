@@ -1,23 +1,24 @@
 {
   "total_records": 45,
-  "disease_count": 14,
+  "disease_count": 15,
   "continent_count": 5,
-  "latest_date": "2026-09-14",
+  "latest_date": "2026-09-15",
   "filter_options": {
     "diseases": [
       "军团菌病",
       "埃博拉",
       "基孔肯雅热",
       "基孔肯雅热;西尼罗病毒感染",
+      "多种传染病",
       "急性病毒性丙型肝炎",
       "手足口病",
       "新型冠状病毒感染",
       "沙门氏菌病",
       "流行性感冒",
-      "环孢子虫病",
       "登革热",
       "肠病毒感染",
       "西尼罗病毒",
+      "诺氏疟",
       "麻疹"
     ],
     "continents": [
@@ -29,9 +30,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-09-15T07:53:05Z",
-  "data_as_of": "2026-09-14",
-  "last_successful_ingest_at": "2026-09-15T07:53:05Z",
+  "build_generated_at": "2026-09-16T07:46:21Z",
+  "data_as_of": "2026-09-15",
+  "last_successful_ingest_at": "2026-09-16T07:46:21Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -40,5 +41,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-09-14"
+  "last_modified": "2026-09-15"
 }

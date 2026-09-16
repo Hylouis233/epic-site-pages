@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-09-15T07:53:05Z",
-  "data_as_of": "2026-09-14",
-  "last_successful_ingest_at": "2026-09-15T07:53:05Z",
+  "build_generated_at": "2026-09-16T07:46:21Z",
+  "data_as_of": "2026-09-15",
+  "last_successful_ingest_at": "2026-09-16T07:46:21Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -15,7 +15,7 @@
   "event_count": 45,
   "signal_count": 45,
   "source_count": 45,
-  "disease_count": 14,
+  "disease_count": 15,
   "continent_count": 5,
   "formats": {
     "json": "records.json",
@@ -27,13 +27,13 @@
     "parquet": "events.parquet"
   },
   "checksums_sha256": {
-    "records.json": "279e5ba08d5b37cd164e3512e3e19ba2e023ea4e6c29f925c1bf819f81ab7b7b",
-    "events.ndjson": "8cb463ded65e07dbac03b0dbceeb3622c5691c96e2b5a0b4343e660972430d06",
-    "events.csv": "4fdc9feead238f9f47f85c65aff0c4ed39711427fa74672bbafcbd3292a319bc",
-    "events.geojson": "7cf7b36e5d618b4c62dc8e62b580a50001ca102e9d8462e8052b8f679dbf4b7e",
+    "records.json": "d23c6eb858c378596089d0a8c1932ae2f9bc4895cb845cbff70c1df5c479e5fd",
+    "events.ndjson": "3ab0f60e8626ef8f1a7096441d9590a69b54123bfdd95af037840c109ae8b0c6",
+    "events.csv": "99fb44ad5c3f494fe53025aed79688b1b12965fd05fa7ed6a566b42b9000ac3e",
+    "events.geojson": "337f779832e4bd76d82b3cd985575b83800b9c0444c4edab09b5b054314ca4e8",
     "schema.json": "07670fe85c758949d7bdc8dcb29942d1243485be3add880ce68ac16cc1c96aa6",
-    "quality-report.json": "3c085eaaffe8bb716d5f4e4d70cc4c93b6f962c7216a7176ff8b64a363d946ed",
-    "events.parquet": "e7dff3f8ed175d3976085bcf0323e2ef4398872d36785026c185d545bb3a7fdc"
+    "quality-report.json": "01514e447b3288dd7ca29b2aff02e8fbed315107c3b578612495673e08be161a",
+    "events.parquet": "4410f2a4396e84aee6fc6bc365757240990eaeae54e2663b68a06191824de9ad"
   },
   "license": {
     "repository": "proprietary-source-available",
