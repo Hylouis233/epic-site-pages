@@ -171,7 +171,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_9ec9ec4bf65d52f9b7a8",
+      "id": "evt_d4bd0ebfdbedbca4a51d",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -180,11 +180,11 @@
         ]
       },
       "properties": {
-        "event_id": "evt_9ec9ec4bf65d52f9b7a8",
+        "event_id": "evt_d4bd0ebfdbedbca4a51d",
         "published_at": "2026-09-14",
         "disease_id": "measles",
         "disease_name_zh": "麻疹",
-        "location": "美国 / 宾夕法尼亚州 / 杰斐逊县",
+        "location": "美国 / 宾夕法尼亚州",
         "continent": "北美洲",
         "source_org": "NPR / Healthandme / Inquirer / Cbsnews / Medicalxpress",
         "source_type": "news_media",
@@ -195,20 +195,20 @@
     },
     {
       "type": "Feature",
-      "id": "evt_5c3a52f770e700b5b86f",
+      "id": "evt_86e9581a93c648783e7a",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.7,
-          -2.9
+          29.9,
+          1.9
         ]
       },
       "properties": {
-        "event_id": "evt_5c3a52f770e700b5b86f",
+        "event_id": "evt_86e9581a93c648783e7a",
         "published_at": "2026-09-13",
         "disease_id": "ebola-virus-disease",
         "disease_name_zh": "埃博拉",
-        "location": "刚果民主共和国",
+        "location": "刚果民主共和国 / 伊图里省",
         "continent": "非洲",
         "source_org": "Medicalxpress",
         "source_type": "other_open_source",
