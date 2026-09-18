@@ -171,7 +171,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_d4bd0ebfdbedbca4a51d",
+      "id": "evt_e2ba1f60e13dc2510144",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -180,11 +180,11 @@
         ]
       },
       "properties": {
-        "event_id": "evt_d4bd0ebfdbedbca4a51d",
+        "event_id": "evt_e2ba1f60e13dc2510144",
         "published_at": "2026-09-14",
         "disease_id": "measles",
         "disease_name_zh": "麻疹",
-        "location": "美国 / 宾夕法尼亚州",
+        "location": "美国 / 宾夕法尼亚州 / 米夫林县",
         "continent": "北美洲",
         "source_org": "NPR / Healthandme / Inquirer / Cbsnews / Medicalxpress",
         "source_type": "news_media",
@@ -435,7 +435,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_8ef2b38fbdf1384b70fb",
+      "id": "evt_f1bf82b2894f3084a0da",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -444,11 +444,11 @@
         ]
       },
       "properties": {
-        "event_id": "evt_8ef2b38fbdf1384b70fb",
+        "event_id": "evt_f1bf82b2894f3084a0da",
         "published_at": "2026-09-10",
-        "disease_id": "unclassified-44fa8076",
-        "disease_name_zh": "基孔肯雅热;西尼罗病毒感染",
-        "location": "法国 / 法兰西岛大区",
+        "disease_id": "unclassified-2b4038da",
+        "disease_name_zh": "基孔肯雅热",
+        "location": "法国 / 法兰西岛大区 / Val-de-Marne / Nogent-sur-Marne",
         "continent": "欧洲",
         "source_org": "法国公共卫生局",
         "source_type": "other_open_source",

@@ -105,12 +105,12 @@
     "data_quality_score": 92
   },
   {
-    "id": "evt_d4bd0ebfdbedbca4a51d",
-    "event_id": "evt_d4bd0ebfdbedbca4a51d",
+    "id": "evt_e2ba1f60e13dc2510144",
+    "event_id": "evt_e2ba1f60e13dc2510144",
     "original_date": "2026-09-14",
     "disease": "麻疹",
     "disease_id": "measles",
-    "location": "美国 / 宾夕法尼亚州",
+    "location": "美国 / 宾夕法尼亚州 / 米夫林县",
     "latitude": 38.0,
     "longitude": -97.0,
     "description_cn": "美国宾夕法尼亚州一名未接种麻疹疫苗的40岁女性死亡,累计该州今年确诊676例,死亡3例。",
@@ -270,12 +270,12 @@
     "data_quality_score": 80
   },
   {
-    "id": "evt_8ef2b38fbdf1384b70fb",
-    "event_id": "evt_8ef2b38fbdf1384b70fb",
+    "id": "evt_f1bf82b2894f3084a0da",
+    "event_id": "evt_f1bf82b2894f3084a0da",
     "original_date": "2026-09-10",
-    "disease": "基孔肯雅热;西尼罗病毒感染",
-    "disease_id": "unclassified-44fa8076",
-    "location": "法国 / 法兰西岛大区",
+    "disease": "基孔肯雅热",
+    "disease_id": "unclassified-2b4038da",
+    "location": "法国 / 法兰西岛大区 / Val-de-Marne / Nogent-sur-Marne",
     "latitude": 46.0,
     "longitude": 2.0,
     "description_cn": "2026年8-9月,法兰西岛报告本地基孔肯雅热5例和西尼罗病毒12例。",
