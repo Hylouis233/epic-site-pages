@@ -195,21 +195,6 @@
     "data_quality_score": 92
   },
   {
-    "id": "evt_93faa19a19187e93078d",
-    "event_id": "evt_93faa19a19187e93078d",
-    "original_date": "2026-09-11",
-    "disease": "登革热",
-    "disease_id": "dengue",
-    "location": "美国 / 佛罗里达州 / 希尔斯伯勒县",
-    "latitude": 27.7,
-    "longitude": -81.5,
-    "description_cn": "佛罗里达州希尔斯伯勒县出现登革热死亡病例,已累计95例。",
-    "continent": "北美洲",
-    "source_org": "WUSF",
-    "quality_status": "validated",
-    "data_quality_score": 92
-  },
-  {
     "id": "evt_33472a3e42be434d3645",
     "event_id": "evt_33472a3e42be434d3645",
     "original_date": "2026-09-11",
@@ -240,6 +225,21 @@
     "data_quality_score": 100
   },
   {
+    "id": "evt_bba165d86df253f87b6d",
+    "event_id": "evt_bba165d86df253f87b6d",
+    "original_date": "2026-09-11",
+    "disease": "登革热",
+    "disease_id": "dengue",
+    "location": "美国 / 佛罗里达州 / 希尔斯伯勒县",
+    "latitude": 27.7,
+    "longitude": -81.5,
+    "description_cn": "2026年9月,佛罗里达州报告111例本地登革热,Hillsborough县为主疫区",
+    "continent": "北美洲",
+    "source_org": "Yahoo News / WUSF / Medicaldaily",
+    "quality_status": "validated",
+    "data_quality_score": 92
+  },
+  {
     "id": "evt_0a09e740d17dc0e9eb69",
     "event_id": "evt_0a09e740d17dc0e9eb69",
     "original_date": "2026-09-11",
@@ -255,12 +255,12 @@
     "data_quality_score": 92
   },
   {
-    "id": "evt_ce76aed45b6c87ea05ff",
-    "event_id": "evt_ce76aed45b6c87ea05ff",
+    "id": "evt_5064bfb7022e5601b6dc",
+    "event_id": "evt_5064bfb7022e5601b6dc",
     "original_date": "2026-09-10",
     "disease": "西尼罗病毒",
     "disease_id": "unclassified-63fe91f7",
-    "location": "法国 / 普罗旺斯-阿尔卑斯-蓝色海岸大区 / 沃克吕兹省",
+    "location": "法国 / 普罗旺斯-阿尔卑斯-蓝色海岸大区",
     "latitude": 46.0,
     "longitude": 2.0,
     "description_cn": "2026年9月,法国PACA地区累计23例西尼罗病毒感染,约12例住院",
@@ -270,19 +270,19 @@
     "data_quality_score": 80
   },
   {
-    "id": "evt_f1bf82b2894f3084a0da",
-    "event_id": "evt_f1bf82b2894f3084a0da",
+    "id": "evt_a6c8f46d9dd450d02956",
+    "event_id": "evt_a6c8f46d9dd450d02956",
     "original_date": "2026-09-10",
-    "disease": "基孔肯雅热",
-    "disease_id": "unclassified-2b4038da",
-    "location": "法国 / 法兰西岛大区 / Val-de-Marne / Nogent-sur-Marne",
+    "disease": "新型冠状病毒感染",
+    "disease_id": "covid-19",
+    "location": "法国 / 法兰西岛大区 / 马恩河谷省 / 诺让苏尔马恩",
     "latitude": 46.0,
     "longitude": 2.0,
     "description_cn": "2026年8-9月,法兰西岛报告本地基孔肯雅热5例和西尼罗病毒12例。",
     "continent": "欧洲",
     "source_org": "法国公共卫生局",
-    "quality_status": "warning",
-    "data_quality_score": 80
+    "quality_status": "validated",
+    "data_quality_score": 92
   },
   {
     "id": "evt_6528ff47452cc6d4c421",
@@ -523,21 +523,6 @@
     "source_org": "NICD",
     "quality_status": "validated",
     "data_quality_score": 100
-  },
-  {
-    "id": "evt_7de94917d78f92eacea2",
-    "event_id": "evt_7de94917d78f92eacea2",
-    "original_date": "2026-09-09",
-    "disease": "登革热",
-    "disease_id": "dengue",
-    "location": "美国 / 佛罗里达州",
-    "latitude": 27.7,
-    "longitude": -81.5,
-    "description_cn": "美国佛罗里达州2026年累计报告73例本地感染登革热病例,集中在坦帕湾地区,其中希尔斯伯勒县59例、皮纳拉斯县5例、帕斯",
-    "continent": "北美洲",
-    "source_org": "Medicaldaily",
-    "quality_status": "validated",
-    "data_quality_score": 92
   },
   {
     "id": "evt_100070811b291f6bf4ae",

@@ -315,30 +315,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_93faa19a19187e93078d",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_93faa19a19187e93078d",
-        "published_at": "2026-09-11",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国 / 佛罗里达州 / 希尔斯伯勒县",
-        "continent": "北美洲",
-        "source_org": "WUSF",
-        "source_type": "news_media",
-        "source": "https://wusf.org/text/health-news-florida/2026-09-10/florida-investigates-possible-hillsborough-death-related-to-dengue-as-cases-hit-95",
-        "description_cn": "佛罗里达州希尔斯伯勒县出现登革热死亡病例,已累计95例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_33472a3e42be434d3645",
       "geometry": {
         "type": "Point",
@@ -387,6 +363,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_bba165d86df253f87b6d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5,
+          27.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_bba165d86df253f87b6d",
+        "published_at": "2026-09-11",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "美国 / 佛罗里达州 / 希尔斯伯勒县",
+        "continent": "北美洲",
+        "source_org": "Yahoo News / WUSF / Medicaldaily",
+        "source_type": "news_media",
+        "source": "https://www.yahoo.com/news/us/articles/nearly-100-locally-acquired-dengue-200820819.html",
+        "description_cn": "2026年9月,佛罗里达州报告111例本地登革热,Hillsborough县为主疫区",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_0a09e740d17dc0e9eb69",
       "geometry": {
         "type": "Point",
@@ -411,7 +411,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_ce76aed45b6c87ea05ff",
+      "id": "evt_5064bfb7022e5601b6dc",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -420,11 +420,11 @@
         ]
       },
       "properties": {
-        "event_id": "evt_ce76aed45b6c87ea05ff",
+        "event_id": "evt_5064bfb7022e5601b6dc",
         "published_at": "2026-09-10",
         "disease_id": "unclassified-63fe91f7",
         "disease_name_zh": "西尼罗病毒",
-        "location": "法国 / 普罗旺斯-阿尔卑斯-蓝色海岸大区 / 沃克吕兹省",
+        "location": "法国 / 普罗旺斯-阿尔卑斯-蓝色海岸大区",
         "continent": "欧洲",
         "source_org": "法国公共卫生局",
         "source_type": "other_open_source",
@@ -435,7 +435,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_f1bf82b2894f3084a0da",
+      "id": "evt_a6c8f46d9dd450d02956",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -444,17 +444,17 @@
         ]
       },
       "properties": {
-        "event_id": "evt_f1bf82b2894f3084a0da",
+        "event_id": "evt_a6c8f46d9dd450d02956",
         "published_at": "2026-09-10",
-        "disease_id": "unclassified-2b4038da",
-        "disease_name_zh": "基孔肯雅热",
-        "location": "法国 / 法兰西岛大区 / Val-de-Marne / Nogent-sur-Marne",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "法国 / 法兰西岛大区 / 马恩河谷省 / 诺让苏尔马恩",
         "continent": "欧洲",
         "source_org": "法国公共卫生局",
         "source_type": "other_open_source",
         "source": "https://www.santepubliquefrance.fr/regions-et-territoires/ile-de-france/bulletin-regional/surveillance-sanitaire-en-ile-de-france-bulletin-du-10-septembre-2026",
         "description_cn": "2026年8-9月,法兰西岛报告本地基孔肯雅热5例和西尼罗病毒12例。",
-        "data_quality_score": 80
+        "data_quality_score": 92
       }
     },
     {
@@ -839,30 +839,6 @@
         "source": "https://www.nicd.ac.za/weekly-measles-and-rubella-situation-report-week-35-of-2026",
         "description_cn": "南非2026年1-35周累计报告4188例麻疹和506例风疹确诊病例,多个省份均有病例分布。",
         "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_7de94917d78f92eacea2",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_7de94917d78f92eacea2",
-        "published_at": "2026-09-09",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国 / 佛罗里达州",
-        "continent": "北美洲",
-        "source_org": "Medicaldaily",
-        "source_type": "other_open_source",
-        "source": "https://www.medicaldaily.com/tampa-bay-dengue-65-cases-week-34-surveillance-478390",
-        "description_cn": "美国佛罗里达州2026年累计报告73例本地感染登革热病例,集中在坦帕湾地区,其中希尔斯伯勒县59例、皮纳拉斯县5例、帕斯",
-        "data_quality_score": 92
       }
     },
     {

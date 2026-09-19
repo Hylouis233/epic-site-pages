@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-09-18T07:28:49Z",
+  "build_generated_at": "2026-09-19T07:24:50Z",
   "data_as_of": "2026-09-15",
-  "last_successful_ingest_at": "2026-09-18T07:28:49Z",
+  "last_successful_ingest_at": "2026-09-19T07:24:50Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -11,10 +11,10 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "record_count": 45,
-  "event_count": 45,
-  "signal_count": 45,
-  "source_count": 45,
+  "record_count": 44,
+  "event_count": 44,
+  "signal_count": 44,
+  "source_count": 44,
   "disease_count": 14,
   "continent_count": 5,
   "formats": {
@@ -27,13 +27,13 @@
     "parquet": "events.parquet"
   },
   "checksums_sha256": {
-    "records.json": "baa0172b2ac1022e9481c6740b84ef791c4dd7edea13ce1b339e8a7c921c9cd2",
-    "events.ndjson": "f4f731864be4d9950e3223713c25b81a50fd6ebbe483472280f052f752fa9a5d",
-    "events.csv": "00159aff3173215de4c59ef773c8ec86cf3ca3b6bb3da40805544bbf6998548b",
-    "events.geojson": "cbcdb10ab6c5e75001161c5511ec9717f0075fda75ca79e2507628d803709901",
+    "records.json": "ec70fa4b21b57981ea541d1b94eaa4c52646f3ad1651059e6a4a56231b92e6b9",
+    "events.ndjson": "25e493dc4d2f5ebb752f5d72a22fafc819b312399a692af67c6e8452531b6518",
+    "events.csv": "67deaccdad083fa38157ac4a815c2184c46af68d83ed4493039a3da184793a65",
+    "events.geojson": "29dcca9fc6b3aefacf0f6132df8732f46cf60a22bfb8cfed1be5b5f07be33ce4",
     "schema.json": "07670fe85c758949d7bdc8dcb29942d1243485be3add880ce68ac16cc1c96aa6",
-    "quality-report.json": "01514e447b3288dd7ca29b2aff02e8fbed315107c3b578612495673e08be161a",
-    "events.parquet": "9cf8e787041e19adc1b1ed9ecc97ffa3446494619294f9e1a938c5e972feb44d"
+    "quality-report.json": "e72e26f51cad9548763794e5c4464c4a73d13c00884f02e5092ac33c323eef18",
+    "events.parquet": "43412dec9095e445e15092a73869ae04af59cdb09d574e25c29142494d9f8ec0"
   },
   "license": {
     "repository": "proprietary-source-available",
@@ -43,7 +43,7 @@
   "quality_gate": {
     "passed": true,
     "ingest_accepted": true,
-    "accepted_record_count": 45,
+    "accepted_record_count": 44,
     "quarantined_record_count": 0
   }
 }
