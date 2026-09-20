@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-09-19T07:24:50Z",
+  "build_generated_at": "2026-09-20T07:48:30Z",
   "data_as_of": "2026-09-15",
-  "last_successful_ingest_at": "2026-09-19T07:24:50Z",
+  "last_successful_ingest_at": "2026-09-20T07:48:30Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -32,7 +32,7 @@
     "events.csv": "67deaccdad083fa38157ac4a815c2184c46af68d83ed4493039a3da184793a65",
     "events.geojson": "29dcca9fc6b3aefacf0f6132df8732f46cf60a22bfb8cfed1be5b5f07be33ce4",
     "schema.json": "07670fe85c758949d7bdc8dcb29942d1243485be3add880ce68ac16cc1c96aa6",
-    "quality-report.json": "e72e26f51cad9548763794e5c4464c4a73d13c00884f02e5092ac33c323eef18",
+    "quality-report.json": "7e2ca92d0c75bcc6f7bede908751755a0e876879e6f39c0a68e2a47594a002de",
     "events.parquet": "43412dec9095e445e15092a73869ae04af59cdb09d574e25c29142494d9f8ec0"
   },
   "license": {
