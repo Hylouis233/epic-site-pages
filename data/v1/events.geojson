@@ -3,6 +3,102 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_488b499eaa940a1b247f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_488b499eaa940a1b247f",
+        "published_at": "2026-09-22",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "美国",
+        "continent": "北美洲",
+        "source_org": "The Post Athens",
+        "source_type": "other_open_source",
+        "source": "https://www.thepostathens.com/article/2026/09/vaccination-measles-ohio-cdc-mmr-kindergarten-health-rfk-jr-autism-trump",
+        "description_cn": "美国2026年麻疹确诊3471例,为1991年以来最高,主要集中在未接种疫苗人群,俄亥俄州多县出现病例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_f93e251f06a6887fb149",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_f93e251f06a6887fb149",
+        "published_at": "2026-09-22",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国 / 台湾",
+        "continent": "亚洲",
+        "source_org": "台湾疾病管制署",
+        "source_type": "official_health_authority",
+        "source": "https://www.cdc.gov.tw/Bulletin/Detail/Tj9G4dJj3yMmEE0URl49CA?typeId=9",
+        "description_cn": "台湾流感与新冠处流行期,流感疫情持续上升,当周新增165例重症30例死亡。",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_02f1d152a28cb0c90067",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_02f1d152a28cb0c90067",
+        "published_at": "2026-09-22",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "孟加拉国",
+        "continent": "亚洲",
+        "source_org": "孟加拉国卫生总局（DGHS）",
+        "source_type": "other_open_source",
+        "source": "https://www.arch-web.com.tw/%E4%B8%96%E7%95%8C%E6%96%B0%E8%81%9E/9-%E6%9C%88%E4%BB%BD%EF%BC%8C%E5%AD%9F%E5%8A%A0%E6%8B%89%E5%9B%BD%E7%99%BB%E9%9D%A9%E7%83%AD%E6%AD%BB%E4%BA%A1%E4%BA%BA%E6%95%B0%E4%B8%8A%E5%8D%87%E8%87%B3-87-%E4%BA%BA%EF%BC%8C%E7%97%85%E4%BE%8B/700492",
+        "description_cn": "孟加拉国9月登革热死亡87例创年内月度新高,全年累计184例死亡,逾6万例确诊。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_db345fd249021f77144d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_db345fd249021f77144d",
+        "published_at": "2026-09-22",
+        "disease_id": "enterovirus-infection",
+        "disease_name_zh": "肠病毒感染",
+        "location": "中国 / 台湾",
+        "continent": "亚洲",
+        "source_org": "台湾卫生福利部疾病管制署",
+        "source_type": "official_health_authority",
+        "source": "https://www.cdc.gov.tw/Bulletin/Detail/ALZLA0KRpqy-ZSTxtiUSlg?typeId=9",
+        "description_cn": "台湾肠病毒疫情持续,第37周(9月13日至9月19日)门急诊就诊10,359人次,2026年累计7例重症含1例死亡,社区以克沙奇A6型为多。",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_59ed1f04e51418d34a2e",
       "geometry": {
         "type": "Point",
@@ -21,32 +117,8 @@
         "source_org": "e-Global / Xinouzhou / 德国之声 / 新华社 / Medical Xpress / UPI / Euronews / ProMED",
         "source_type": "promed",
         "source": "https://ground.news/article/are-mosquitoes-that-arrived-by-plane-the-carriers-third-malaria-death-in-frankfurt",
-        "description_cn": "德国法兰克福机场附近发生罕见的'机场疟疾'(airport malaria)聚集性疫情,今年已致3人死亡,Schwanheim区新增2例本地感染病例;累计感染约8例,其中6例为Fraport机场员工,病原为恶性疟原虫(Plasmodium falciparum)。受害者多未前往疟疾流行区,官方倾向于'飞机携带受感染蚊虫引发本地传播'的假设,目前仍属疑似。",
+        "description_cn": "德国法兰克福机场附近今年已发生3例疟疾死亡,并新增2例本地感染病例,疑似由飞机带来的蚊子传播。",
         "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_4c2e74550f2b0dc08dba",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_4c2e74550f2b0dc08dba",
-        "published_at": "2026-09-21",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国 / 台湾",
-        "continent": "亚洲",
-        "source_org": "台湾卫生福利部疾病管制署 / TVBS新闻 / Ettoday",
-        "source_type": "news_media",
-        "source": "https://news.immigration.gov.tw/NewsSection/Detail/169d2e1e-b416-4e75-a3ab-d4f58b09b701?lang=IN%3B",
-        "description_cn": "台湾流感疫情进入流行期,就诊人次上升,新增92例重症及21例死亡,公费药剂扩大使用延长至10月底。",
-        "data_quality_score": 92
       }
     },
     {
@@ -99,6 +171,54 @@
     },
     {
       "type": "Feature",
+      "id": "evt_d4fa0875654327832325",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.5,
+          22.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_d4fa0875654327832325",
+        "published_at": "2026-09-21",
+        "disease_id": "unclassified-50ad7a6a",
+        "disease_name_zh": "手足口病",
+        "location": "中国 / 澳门 / 马揸度博士大马路 / 妇联学校",
+        "continent": "亚洲",
+        "source_org": "澳门特区政府卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.gov.mo/zh-hant/news/1267824",
+        "description_cn": "澳门妇联学校K1A班发生肠病毒群集性感染,4名女学生发病,病情较轻,无重症。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_4c2e74550f2b0dc08dba",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_4c2e74550f2b0dc08dba",
+        "published_at": "2026-09-21",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国 / 台湾",
+        "continent": "亚洲",
+        "source_org": "台湾卫生福利部疾病管制署 / TVBS新闻",
+        "source_type": "news_media",
+        "source": "https://news.immigration.gov.tw/NewsSection/Detail/169d2e1e-b416-4e75-a3ab-d4f58b09b701?lang=IN%3B",
+        "description_cn": "台湾流感疫情进入流行期,就诊人次上升,新增92例重症及21例死亡,公费药剂扩大使用延长至10月底。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_ad42461ed3f3db6e348b",
       "geometry": {
         "type": "Point",
@@ -118,6 +238,30 @@
         "source_type": "other_open_source",
         "source": "https://www.wtsp.com/article/news/local/hillsboroughcounty/dengue-fever-death-hillsborough-county-experts-say-high-year-local-cases/67-a9318cfa-3864-42d6-8a9b-02331f9687f9",
         "description_cn": "美国佛罗里达州希尔斯伯勒县报告1例登革热死亡病例,专家称今年本地病例数偏高。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_2e307f13777db0d137c5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.5,
+          22.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_2e307f13777db0d137c5",
+        "published_at": "2026-09-21",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国 / 澳门",
+        "continent": "亚洲",
+        "source_org": "GOV",
+        "source_type": "other_open_source",
+        "source": "https://www.gov.mo/zh-hant/news/1267828",
+        "description_cn": "澳门卫生局接获4宗流感样疾病群集性感染报告,涉及圣玛嘉烈中心、浸信中学、菩提长者综合服务中心及陈瑞祺永援中学,46人发病",
         "data_quality_score": 92
       }
     },
@@ -579,30 +723,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_4530422a8e2220b72855",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.5,
-          37.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_4530422a8e2220b72855",
-        "published_at": "2026-09-18",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "韩国",
-        "continent": "亚洲",
-        "source_org": "韩国疾病控制预防局/ Aju Press",
-        "source_type": "other_open_source",
-        "source": "https://www.ajupress.com/view/20260918154039989",
-        "description_cn": "韩国流感季提前,疑似病例较去年同期增长超4倍,儿童发病率最高,卫生部门已提前启动免费疫苗接种。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_299dc197522f7f3a1e7d",
       "geometry": {
         "type": "Point",
@@ -623,6 +743,30 @@
         "source": "https://www.countynewscenter.com/county-confirms-mumps-outbreak-at-san-diego-state-university",
         "description_cn": "美国圣迭戈州立大学发生腮腺炎疫情,5名学生运动员确诊或疑似感染。",
         "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_4530422a8e2220b72855",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.5,
+          37.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_4530422a8e2220b72855",
+        "published_at": "2026-09-18",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "韩国",
+        "continent": "亚洲",
+        "source_org": "韩国疾病控制预防局/ Aju Press",
+        "source_type": "other_open_source",
+        "source": "https://www.ajupress.com/view/20260918154039989",
+        "description_cn": "韩国流感季提前,疑似病例较去年同期增长超4倍,儿童发病率最高,卫生部门已提前启动免费疫苗接种。",
+        "data_quality_score": 92
       }
     },
     {
@@ -1050,7 +1194,7 @@
         "disease_name_zh": "麻疹",
         "location": "美国 / 宾夕法尼亚州 / 米夫林县",
         "continent": "北美洲",
-        "source_org": "PA / Scrippsnews / Usnews / Medical Xpress / 路透社 / Healthandme / Medicalxpress",
+        "source_org": "PA / Scrippsnews / Usnews / Medical Xpress / 路透社",
         "source_type": "official_health_authority",
         "source": "https://www.pa.gov/agencies/health/newsroom/doh-confirms-two-additional-measles-associated-deaths-",
         "description_cn": "美国宾夕法尼亚州新增两例麻疹相关死亡病例,均未接种疫苗,2026年累计确诊693例覆盖38县。",
@@ -1227,78 +1371,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_57c528e911007bb3d5ab",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_57c528e911007bb3d5ab",
-        "published_at": "2026-09-15",
-        "disease_id": "enterovirus-infection",
-        "disease_name_zh": "肠病毒感染",
-        "location": "中国 / 台湾",
-        "continent": "亚洲",
-        "source_org": "Ctinews / CDC / LINE / Ettoday",
-        "source_type": "official_health_authority",
-        "source": "https://ctinews.com/news/items/pRnYgDzJaY",
-        "description_cn": "台湾流感疫情严峻,单周就诊约16万人次,死亡21例;肠病毒已进入流行,单周就诊超1万人次,重症7例,死亡1例。",
-        "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_1e82fb97a708c6d9c178",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_1e82fb97a708c6d9c178",
-        "published_at": "2026-09-15",
-        "disease_id": "unclassified-e32590df",
-        "disease_name_zh": "诺氏疟",
-        "location": "中国 / 台湾",
-        "continent": "亚洲",
-        "source_org": "CDC / 新头壳 / LINE / KNews",
-        "source_type": "official_health_authority",
-        "source": "https://www.cdc.gov.tw/Bulletin/Detail/Hb-AhIWAncyiYLvJ0Lpadg?typeId=9",
-        "description_cn": "国内新增1例境外移入诺氏疟病例,患者7月下旬赴马来西亚旅游,8月下旬出现症状,9月1日确诊。",
-        "data_quality_score": 88
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_a41dab290b5944dd5bf8",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_a41dab290b5944dd5bf8",
-        "published_at": "2026-09-15",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "中国 / 台湾",
-        "continent": "亚洲",
-        "source_org": "LINE / Ettoday",
-        "source_type": "news_media",
-        "source": "https://today.line.me/tw/v3/article/yz8pR7y",
-        "description_cn": "台湾感染症医学会提醒,过去感染新冠不代表再次感染时症状较轻,重症及死亡风险未必降低。据疾管署研究,再次感染新冠者的全因性",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_8bcf5b97be0d532f5b20",
       "geometry": {
         "type": "Point",
@@ -1323,30 +1395,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_da3d64b790bb3499dde6",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          70.0,
-          30.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_da3d64b790bb3499dde6",
-        "published_at": "2026-09-14",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "巴基斯坦 / 信德省 / 卡拉奇",
-        "continent": "亚洲",
-        "source_org": "Thepakistanconnect",
-        "source_type": "other_open_source",
-        "source": "https://thepakistanconnect.com/karachi-influ-enza-co-vid-19",
-        "description_cn": "巴基斯坦卡拉奇近期流感病例增20%,COVID-19每周新增3-4例,病情轻微",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_7c7b0e5421d451c76c06",
       "geometry": {
         "type": "Point",
@@ -1366,78 +1414,6 @@
         "source_type": "other_open_source",
         "source": "https://www.thepaper.cn/newsDetail_forward_34057609",
         "description_cn": "刚果(金)本轮埃博拉疫情累计确诊超7000例,已波及7省,西北部的南乌班吉省首次报告死亡病例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_542fd47695862cbadb41",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.0,
-          46.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_542fd47695862cbadb41",
-        "published_at": "2026-09-09",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "法国 / 法国本土(多区域)",
-        "continent": "欧洲",
-        "source_org": "法国公共卫生署",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/index.php/maladies-a-transmission-vectorielle/chikungunya/bulletin-national/chikungunya-dengue-zika-et-west-nile-en-france-hexagonale-bulletin-de-la-surveillance-renforcee-du-9",
-        "description_cn": "法国本土2026年9月基孔肯雅热57例、登革热6例、西尼罗河56例本地传播",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_f28b7de424853bbfbfbe",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.0,
-          36.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_f28b7de424853bbfbfbe",
-        "published_at": "2026-09-06",
-        "disease_id": "unclassified-80674a33",
-        "disease_name_zh": "多种传染病",
-        "location": "日本",
-        "continent": "亚洲",
-        "source_org": "JIHS",
-        "source_type": "other_open_source",
-        "source": "https://id-info.jihs.go.jp/en/surveillance/idwr/rapid/2026/36/index.html",
-        "description_cn": "日本厚生劳动省健康危机管理研究机构(JIHS)发布的第36周(2026年8月31日至9月6日)传染病周报(IDWR)哨点",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_e38b0cc24713e0c15e6c",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.2,
-          22.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_e38b0cc24713e0c15e6c",
-        "published_at": "2026-09-05",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国 / 香港",
-        "continent": "亚洲",
-        "source_org": "CHP",
-        "source_type": "other_open_source",
-        "source": "https://www.chp.gov.hk/files/xls/flux_data.xlsx",
-        "description_cn": "2026年09月05日 香港发生季节性流感相关疫情,阳性样本1367例,严重流感个案63例,学校暴发19起,院舍暴发27",
         "data_quality_score": 92
       }
     }
