@@ -1017,12 +1017,86 @@
         return searchableParts.join(" ").toLowerCase().includes(keywordLower);
     }
 
+    const DISEASE_GROUPS = [
+        ["梅毒", "syphilis"],
+        ["西尼罗病毒病", "西尼罗病毒", "西尼罗病毒感染", "west nile virus", "west nile", "wnv"],
+        ["流行性感冒", "季节性流感", "流感", "influenza", "seasonal influenza", "flu"],
+        ["甲型流感", "甲型H1N1流感", "influenza a"],
+        ["禽流感", "人感染禽流感A(H9N2)病毒"],
+        ["登革热", "dengue", "dengue fever"],
+        ["基孔肯雅热", "chikungunya"],
+        ["猴痘", "mpox", "monkeypox"],
+        ["寨卡病毒病", "寨卡", "寨卡病毒", "zika"],
+        ["新型冠状病毒感染", "新冠", "COVID-19", "covid-19", "covid19"],
+        ["埃博拉病毒病", "埃博拉", "埃博拉出血热", "埃博拉出血热（邦迪布焦病毒）", "埃博拉出血热(邦迪布焦病毒)", "ebola"],
+        ["疟疾", "恶性疟", "malaria"],
+        ["军团菌病", "退伍军人菌症", "legionella", "legionellosis"],
+        ["麻疹", "measles"],
+        ["肠道病毒感染", "肠病毒感染"],
+        ["沙门氏菌感染", "沙门氏菌病", "肠炎沙门氏菌"],
+        ["手足口病"],
+        ["流行性腮腺炎"],
+        ["病毒性胃肠炎"],
+        ["艾滋病", "hiv", "aids"],
+    ];
+    const DISEASE_PREFIXES = ["东南亚", "北非", "东非", "西非", "中非", "南非", "非洲", "欧洲", "亚洲", "北美", "南美", "全球", "中国", "日本", "美国", "法国", "英国", "印度", "菲律宾"];
+    const DISEASE_INDEX = {};
+    DISEASE_GROUPS.forEach(function (group) {
+        group.forEach(function (alias) {
+            DISEASE_INDEX[normalizeDiseaseKey(alias)] = group[0];
+        });
+    });
+
+    function normalizeDiseaseKey(value) {
+        return String(value || "").normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+    }
+
+    function matchDiseaseToken(text) {
+        const raw = String(text || "").trim();
+        const exact = DISEASE_INDEX[normalizeDiseaseKey(raw)];
+        if (exact) {
+            return exact;
+        }
+        for (let index = 0; index < DISEASE_PREFIXES.length; index += 1) {
+            const prefix = DISEASE_PREFIXES[index];
+            if (raw.startsWith(prefix) && raw.length > prefix.length) {
+                const rest = raw.slice(prefix.length).replace(/^[\s\-的]+/, "");
+                const hit = DISEASE_INDEX[normalizeDiseaseKey(rest)];
+                if (hit) {
+                    return hit;
+                }
+            }
+        }
+        return "";
+    }
+
+    function expandDiseases(text) {
+        const parts = String(text || "").split(/\s*(?:\r?\n+|[、,，;；|/&]|\s+(?:and|or)\s+|[与及和])\s*/i).filter(Boolean);
+        const seen = new Set();
+        const names = [];
+        parts.forEach(function (part) {
+            const name = matchDiseaseToken(part);
+            if (!name || seen.has(name)) {
+                return;
+            }
+            seen.add(name);
+            names.push(name);
+        });
+        if (!names.length) {
+            const raw = String(text || "").trim();
+            if (raw) {
+                names.push(raw);
+            }
+        }
+        return names;
+    }
+
     function applyClientFilters(records, filters) {
         return (Array.isArray(records) ? records : []).filter(function (record) {
             if (!matchesKeyword(record, filters.keyword)) {
                 return false;
             }
-            if (filters.disease && record.disease !== filters.disease) {
+            if (filters.disease && expandDiseases(record.disease).indexOf(filters.disease) < 0) {
                 return false;
             }
             if (filters.continent && record.continent !== filters.continent) {
@@ -1042,8 +1116,8 @@
 
     function buildClientFilterOptions(records) {
         const allRecords = Array.isArray(records) ? records : [];
-        const diseases = Array.from(new Set(allRecords.map(function (record) {
-            return record.disease;
+        const diseases = Array.from(new Set(allRecords.flatMap(function (record) {
+            return expandDiseases(record.disease);
         }).filter(Boolean))).sort();
         const continents = Array.from(new Set(allRecords.map(function (record) {
             return record.continent;
@@ -1055,8 +1129,8 @@
         const visibleRecords = Array.isArray(filteredRecords) ? filteredRecords : [];
         return {
             total_records: visibleRecords.length,
-            disease_count: new Set(visibleRecords.map(function (record) {
-                return record.disease;
+            disease_count: new Set(visibleRecords.flatMap(function (record) {
+                return expandDiseases(record.disease);
             }).filter(Boolean)).size,
             continent_count: new Set(visibleRecords.map(function (record) {
                 return record.continent;
