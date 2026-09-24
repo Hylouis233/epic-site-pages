@@ -1,6 +1,6 @@
 {
-  "total_records": 60,
-  "disease_count": 19,
+  "total_records": 59,
+  "disease_count": 20,
   "continent_count": 5,
   "latest_date": "2026-09-22",
   "filter_options": {
@@ -11,6 +11,7 @@
       "恶性疟",
       "手足口病",
       "新型冠状病毒感染",
+      "水痘",
       "沙门氏菌病",
       "流行性感冒",
       "流行性腮腺炎",
@@ -34,9 +35,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-09-23T07:50:38Z",
+  "build_generated_at": "2026-09-24T07:41:01Z",
   "data_as_of": "2026-09-22",
-  "last_successful_ingest_at": "2026-09-23T07:50:38Z",
+  "last_successful_ingest_at": "2026-09-24T07:41:01Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",

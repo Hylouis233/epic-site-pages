@@ -4,13 +4,13 @@
     {
       "id": "upstream_nonzero",
       "status": "pass",
-      "value": 60,
+      "value": 59,
       "threshold": "> 0"
     },
     {
       "id": "record_count_change",
       "status": "pass",
-      "value": 0.984,
+      "value": 0.983,
       "threshold": ">= 0.5"
     },
     {
@@ -44,8 +44,8 @@
       "threshold": "0 after normalization"
     }
   ],
-  "upstream_record_count": 60,
-  "accepted_record_count": 60,
+  "upstream_record_count": 59,
+  "accepted_record_count": 59,
   "quarantined_record_count": 0,
   "quarantined": []
 }
