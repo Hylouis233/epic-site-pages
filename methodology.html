@@ -7,32 +7,32 @@
   <meta name="description" content="How EPIC models time, normalizes diseases, identifies events, preserves provenance, and applies public-data quality gates.">
   <link rel="canonical" href="https://hylouis233.github.io/epic-site-pages/methodology.html">
   <link rel="icon" href="./favicon.svg">
-  <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260814-visual">
+  <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260924-search">
   <script>(function(){try{var l=localStorage.getItem("epic-lang")==="zh-CN"?"zh-CN":"en";document.documentElement.lang=l;document.documentElement.dataset.language=l;var s=localStorage.getItem("epic-theme");document.documentElement.dataset.theme=s||"light";}catch(e){document.documentElement.dataset.theme="light";}})();</script>
 </head>
 <body class="detail-page">
   <div class="detail-shell">
     <nav class="detail-nav" aria-label="Breadcrumb">
-      <div class="detail-nav__trail"><a href="./">EPIC</a><span>/</span><span data-zh="方法与质量控制">Methodology &amp; quality control</span></div>
+      <div class="detail-nav__trail"><a href="./">CTModelling</a><span>/</span><span data-zh="方法">Method</span></div>
+      <form class="header-search" action="./" method="get" role="search"><input type="search" name="keyword" placeholder="Disease, place, or source" data-zh-placeholder="疾病、地点或来源" aria-label="Search records" data-zh-aria-label="检索记录"></form>
       <div class="detail-nav__controls"><button class="language-toggle" id="language-toggle" type="button">中文</button><a href="./" data-zh="返回首页">Back to dashboard</a></div>
     </nav>
     <main>
       <header class="detail-hero">
-        <p class="detail-hero__signal">METHODOLOGY / SCHEMA V1</p>
-        <h1 data-zh="记录中的时间、来源与质量。">Time, source, and quality in the record.</h1>
-        <p class="detail-hero__summary" data-zh="公开报道按事件记录保存。时间、来源、修订和质量状态与记录一并保存。">Public reports are stored as event records. Time, source, revision, and quality status stay with the record.</p>
+        <p class="detail-hero__signal">METHOD</p>
+        <h1 data-zh="记录如何整理">How records are prepared</h1>
+        <p class="detail-hero__summary" data-zh="时间、来源和质量检查与记录一并保存。">Time, source, and quality checks are stored with each record.</p>
         <div class="detail-actions"><a class="button button--primary" href="./data/v1/quality-report.json" data-zh="本次质量报告">Current quality report</a><a class="button button--paper" href="./METHODOLOGY.md" data-zh="查看 Markdown 原文">Read the Markdown source</a></div>
       </header>
       <section class="detail-grid">
-        <article class="detail-card"><p class="panel-heading__eyebrow">01 / TIME</p><h2 data-zh="分离时间语义">Separate time semantics</h2><p data-zh="事件开始、事件结束、报告期、发布日期、首次发现、数据截止和构建时间分别建模。未来日期不会进入排序或 data_as_of。">Event start, event end, reporting period, publication, first observation, data-as-of, and build time are modeled separately. Future dates never enter sorting or data_as_of.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">02 / ENTITY</p><h2 data-zh="规范疾病与事件">Normalize diseases and events</h2><p data-zh="疾病别名映射到稳定 disease_id；多疾病公报保留 aggregate 标记；event、signal 与 cluster 使用不同的稳定 ID。">Disease aliases map to stable disease_id values. Multi-disease bulletins retain an aggregate marker, while event, signal, and cluster identities remain distinct.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">03 / SCALE</p><h2 data-zh="不混用数量口径">Keep quantities distinct</h2><p data-zh="自然语言规模保留为 scale_raw，并尽可能拆分病例、死亡和住院。单条事件记录不是患者记录，也不等于全球疾病负担。">Natural-language scale is retained as scale_raw and, where possible, separated into cases, deaths, and hospitalizations. An event record is not a patient record or a measure of global burden.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">04 / PROVENANCE</p><h2 data-zh="保留来源链路">Preserve provenance</h2><p data-zh="公开记录保留稳定来源 URL、来源机构、来源类型、权利提示和内容哈希。第三方全文不会重新发布。">Public records retain a stable source URL, organization, type, rights note, and content hash. Full third-party source text is not republished.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">05 / QUALITY</p><h2 data-zh="发布前检查">Check before release</h2><p data-zh="发布前检查未来日期、记录数骤降、来源网址、坐标、重复记录和 Schema。采集异常时保留上一份有效数据。">Future dates, sudden drops in record count, source addresses, coordinates, duplicate records, and schema validity are checked before release. If collection fails, the previous snapshot is kept.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">06 / REPRODUCE</p><h2 data-zh="让状态可复现">Make status reproducible</h2><p data-zh="Manifest 区分 build_generated_at、data_as_of 和 last_successful_ingest_at，并为每个版本化产物提供 SHA-256 校验和。">The manifest separates build_generated_at, data_as_of, and last_successful_ingest_at, and publishes SHA-256 checksums for every versioned artifact.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">TIME</p><h2 data-zh="时间">Time</h2><p data-zh="构建时间、数据截止日期和最近一次成功采集时间分别保存。采集为空时保留上一份数据。">Build time, the data-as-of date, and the time of the last successful collection are stored separately. An empty collection keeps the previous snapshot.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">FIELDS</p><h2 data-zh="字段">Fields</h2><p data-zh="事件日期、报告期和发布日期分开记录。疾病名称归入统一类目。数量分为病例、死亡和住院。">Event date, reporting period, and publication date stay distinct. Disease names are assigned to one category. Counts are split into cases, deaths, and hospitalizations.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">SOURCE</p><h2 data-zh="来源">Source</h2><p data-zh="每条记录保留来源网址、机构和类型。">Each record keeps the source URL, organization, and type.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">CHECK</p><h2 data-zh="检查">Checks</h2><p data-zh="发布前检查未来日期、记录数骤降、来源网址、坐标、重复记录和 Schema。采集异常时保留上一份有效数据。">Future dates, sudden drops in record count, source addresses, coordinates, duplicate records, and schema validity are checked before release. If collection fails, the previous snapshot is kept.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">PLACE</p><h2 data-zh="坐标">Coordinates</h2><p data-zh="部分坐标只到国家。">Some coordinates are given only at country level.</p></article>
       </section>
     </main>
   </div>
-  <script src="./assets/epic/js/i18n.js?v=20260814-visual"></script>
+  <script src="./assets/epic/js/i18n.js?v=20260924-links2"></script>
 </body>
 </html>

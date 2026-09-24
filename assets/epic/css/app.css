@@ -137,7 +137,16 @@ button { font-family: inherit; font-size: inherit; color: inherit; }
 .site-nav { display: flex; gap: 8px; margin-left: 36px; align-items: center; }
 .site-nav a { padding: 8px 10px; border-radius: 0; color: #adbed5; font-size: 15px; transition: color .12s; }
 .site-nav a:hover { background: transparent; color: #fff; text-decoration: none; }
-.header-controls { display: flex; gap: 6px; margin-left: auto; }
+.header-search { margin-left: auto; }
+.header-search input {
+    width: min(240px, 28vw); height: 34px; padding: 0 12px; border-radius: 8px;
+    border: 1px solid rgba(173, 190, 213, .45); background: rgba(255,255,255,.08);
+    color: #fff; font: 14px var(--sans);
+}
+.header-search input::placeholder { color: #adbed5; }
+.detail-page .header-search input { color: var(--text-0); background: var(--bg-2); border-color: var(--line-1); }
+.detail-page .header-search input::placeholder { color: var(--text-3); }
+.header-controls { display: flex; gap: 6px; margin-left: 8px; }
 .site-header .language-toggle,
 .site-header .theme-toggle {
     border-color: rgba(173, 190, 213, .45); color: #e7eef8; background: transparent;

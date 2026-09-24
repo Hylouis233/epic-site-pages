@@ -7,32 +7,31 @@
   <meta name="description" content="Coverage, timeliness, extraction, geocoding, source-rights, and interpretation limits for EPIC public event data.">
   <link rel="canonical" href="https://hylouis233.github.io/epic-site-pages/limitations.html">
   <link rel="icon" href="./favicon.svg">
-  <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260814-visual">
+  <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260924-search">
   <script>(function(){try{var l=localStorage.getItem("epic-lang")==="zh-CN"?"zh-CN":"en";document.documentElement.lang=l;document.documentElement.dataset.language=l;var s=localStorage.getItem("epic-theme");document.documentElement.dataset.theme=s||"light";}catch(e){document.documentElement.dataset.theme="light";}})();</script>
 </head>
 <body class="detail-page">
   <div class="detail-shell">
     <nav class="detail-nav" aria-label="Breadcrumb">
-      <div class="detail-nav__trail"><a href="./">EPIC</a><span>/</span><span data-zh="已知局限">Known limitations</span></div>
+      <div class="detail-nav__trail"><a href="./">CTModelling</a><span>/</span><span data-zh="已知局限">Known limitations</span></div>
+      <form class="header-search" action="./" method="get" role="search"><input type="search" name="keyword" placeholder="Disease, place, or source" data-zh-placeholder="疾病、地点或来源" aria-label="Search records" data-zh-aria-label="检索记录"></form>
       <div class="detail-nav__controls"><button class="language-toggle" id="language-toggle" type="button">中文</button><a href="./" data-zh="返回首页">Back to dashboard</a></div>
     </nav>
     <main>
       <header class="detail-hero">
-        <p class="detail-hero__signal">LIMITATIONS / READ BEFORE USE</p>
-        <h1 data-zh="记录的范围。">Scope of the records.</h1>
-        <p class="detail-hero__summary" data-zh="已纳入的来源不能覆盖所有国家和语言。记录数不是疾病负担。没有记录不能说明未发生事件。">The sources included do not cover every country or language. A record count is not disease burden. Absence of a record does not show that no event occurred.</p>
+        <p class="detail-hero__signal">LIMITS</p>
+        <h1 data-zh="记录范围">Scope of the records</h1>
+        <p class="detail-hero__summary" data-zh="来源见各条记录。部分坐标只到国家。">The source is on each record. Some coordinates are given only at country level.</p>
         <div class="detail-actions"><a class="button button--primary" href="./data/v1/manifest.json" data-zh="查看当前数据状态">View current data status</a><a class="button button--paper" href="./LIMITATIONS.md" data-zh="查看 Markdown 原文">Read the Markdown source</a></div>
       </header>
       <section class="detail-grid">
-        <article class="detail-card"><p class="panel-heading__eyebrow">COVERAGE</p><h2 data-zh="覆盖">Coverage</h2><p data-zh="来源的选择会漏掉部分国家、语言、机构和地方渠道。">The choice of sources leaves out some countries, languages, institutions, and local channels.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">TIMELINESS</p><h2 data-zh="时间">Time</h2><p data-zh="使用前查看数据清单中的截止日期。没有可靠首次发现时间的历史记录记为空，不补写时间。">Check the data-as-of date in the manifest before use. Historical records without a reliable first-seen time are left empty.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">EXTRACTION</p><h2 data-zh="抽取">Extraction</h2><p data-zh="日期、疾病、病例数、地点、摘要和去重都可能有误。质量分表示字段完整程度。">Dates, diseases, counts, places, summaries, and deduplication can be wrong. The quality score measures how complete the fields are.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">GEOGRAPHY</p><h2 data-zh="地理">Geography</h2><p data-zh="坐标可能是国家或行政区中心，用于显示分布。">Coordinates may be country or administrative centroids and are used to show distribution.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">RIGHTS</p><h2 data-zh="使用许可">Terms of use</h2><p data-zh="源码可阅读，未许可再分发。第三方来源另从其规定。">The source may be read. Redistribution is not permitted. Third-party sources follow their own terms.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">USE</p><h2 data-zh="用途">Use</h2><p data-zh="风险分值用于事件排序。本数据不用于诊断或治疗。">Risk scores order events. These data are not used for diagnosis or treatment.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">TIME</p><h2 data-zh="时间">Time</h2><p data-zh="数据截止日期写在数据清单里。没有可靠首次发现时间的记录留空。">The data-as-of date is in the manifest. Records without a reliable first-seen time are left empty.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">FIELDS</p><h2 data-zh="字段">Fields</h2><p data-zh="日期、疾病、病例数、地点和摘要按原文抽取，去重后仍可能有误。">Dates, diseases, case counts, places, and summaries are taken from the source text. Deduplication can still be wrong.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">PLACE</p><h2 data-zh="坐标">Coordinates</h2><p data-zh="部分坐标只到国家。">Some coordinates are given only at country level.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">SOURCE</p><h2 data-zh="来源">Source</h2><p data-zh="每条记录保留来源网址。第三方来源另从其规定。">Each record keeps its source URL. Third-party sources follow their own terms.</p></article>
       </section>
     </main>
   </div>
-  <script src="./assets/epic/js/i18n.js?v=20260814-visual"></script>
+  <script src="./assets/epic/js/i18n.js?v=20260924-links2"></script>
 </body>
 </html>

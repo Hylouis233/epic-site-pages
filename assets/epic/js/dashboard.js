@@ -2380,6 +2380,19 @@
         }
 
         hydrateFiltersFromUrl();
+        const headerKeyword = document.getElementById("header-keyword");
+        if (headerKeyword && elements.keywordInput) {
+            headerKeyword.value = elements.keywordInput.value;
+            headerKeyword.addEventListener("input", function () {
+                elements.keywordInput.value = headerKeyword.value;
+                elements.keywordInput.dispatchEvent(new Event("input"));
+            });
+            elements.keywordInput.addEventListener("input", function () {
+                if (headerKeyword.value !== elements.keywordInput.value) {
+                    headerKeyword.value = elements.keywordInput.value;
+                }
+            });
+        }
         setupThemeToggle();
         setupFilterEvents();
         setupCopyButtons();

@@ -32,7 +32,7 @@
     <meta name="twitter:description" content="Open-source-signal event intelligence for public-health monitoring and early-warning research.">
     <meta name="twitter:image" content="https://hylouis233.github.io/epic-site-pages/og-image.png">
 
-    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260924-links">
+    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260924-search">
     <script>
         (function () {
             try {
@@ -96,6 +96,9 @@
             <a href="./methodology.html">Method &amp; limits</a>
             <a href="https://github.com/Hylouis233/epic-site-pages" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </nav>
+        <form class="header-search" role="search" action="./" method="get">
+            <input id="header-keyword" name="keyword" type="search" placeholder="Disease, place, or source" data-zh-placeholder="疾病、地点或来源" aria-label="Search records" data-zh-aria-label="检索记录">
+        </form>
         <div class="header-controls">
             <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to Chinese">中文</button>
             <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
@@ -161,7 +164,7 @@
                     </div>
                 </div>
                 <form class="filters-grid" id="filters-form">
-                    <label class="field field--search"><span class="field__label">KEYWORD</span><input id="keyword-input" name="keyword" type="search" placeholder="Disease, place, source, or summary"></label>
+                    <label class="field field--search"><span class="field__label">KEYWORD</span><input id="keyword-input" name="keyword" type="search" placeholder="Disease, place, or source" data-zh-placeholder="疾病、地点或来源"></label>
                     <label class="field"><span class="field__label">DISEASE</span><select id="disease-select" name="disease"><option value="">All diseases</option></select></label>
                     <label class="field"><span class="field__label">CONTINENT</span><select id="continent-select" name="continent"><option value="">All continents</option></select></label>
                     <label class="field"><span class="field__label">FROM</span><input id="date-from-input" name="date_from" type="text" inputmode="numeric" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" data-zh-placeholder="YYYY-MM-DD" aria-label="Start date in YYYY-MM-DD format" data-zh-aria-label="开始日期，格式为 YYYY-MM-DD"></label>
@@ -332,6 +335,6 @@
     <link rel="stylesheet" href="./assets/epic/vendor/leaflet/leaflet.css?v=20260815-rebuild">
     <script src="./assets/epic/vendor/leaflet/leaflet.js?v=20260815-rebuild"></script>
     <script src="./assets/epic/js/i18n.js?v=20260924-links2"></script>
-    <script src="./assets/epic/js/dashboard.js?v=20260924-read2"></script>
+    <script src="./assets/epic/js/dashboard.js?v=20260924-search"></script>
 </body>
 </html>
