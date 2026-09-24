@@ -464,8 +464,7 @@ body[data-density="comfortable"] .data-table td { padding-top: 12px; padding-bot
 .code-card__meta { display: flex; gap: 16px; padding: 8px 12px; border-top: 1px solid var(--line-0); color: var(--text-3); font-family: var(--mono); font-size: 10px; }
 .code-card__meta strong { color: var(--text-0); font-weight: 600; }
 .license-note {
-    display: grid; grid-template-columns: auto 1fr auto; gap: 16px; align-items: start;
-    margin-top: 16px; padding: 12px 14px; border: 1px solid var(--line-0); border-radius: var(--radius); background: var(--bg-2);
+    margin-top: 12px;
 }
 .license-note strong { color: var(--text-2); font-family: var(--mono); font-size: 10px; letter-spacing: .06em; }
 .license-note p { margin: 0; color: var(--text-2); font-size: 11px; line-height: 1.5; }
