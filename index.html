@@ -32,7 +32,7 @@
     <meta name="twitter:description" content="Open-source-signal event intelligence for public-health monitoring and early-warning research.">
     <meta name="twitter:image" content="https://hylouis233.github.io/epic-site-pages/og-image.png">
 
-    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260924-wheel2">
+    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260924-read2">
     <script>
         (function () {
             try {
@@ -223,8 +223,8 @@
 
         <section class="data-section" id="data-access" aria-labelledby="data-title">
             <header class="section-heading section-heading--split section-heading--light">
-                <div><p class="section-index"><span>03</span> DATA</p><h2 id="data-title">Data files.</h2></div>
-                <p>Schema v1 specifies time fields, record identifiers, source and quality fields, and SHA-256 checksums.</p>
+                <div><p class="section-index"><span>03</span> DATA</p><h2 id="data-title">Data files</h2></div>
+                <p>Schema v1 records time, identifier, source, and quality, and publishes a SHA-256 checksum.</p>
             </header>
             <div class="data-layout">
                 <div class="format-grid">
@@ -237,10 +237,7 @@
                 </div>
                 <div class="code-card">
                     <div class="code-card__head"><span>EXAMPLE</span><button type="button" data-copy-target="curl-example">COPY</button></div>
-                    <pre id="curl-example"><code>curl -s https://hylouis233.github.io/epic-site-pages/data/v1/records.json \
-  | jq '.[] | select(.disease_id == "dengue") | {
-      event_id, location, event_start_date, cases, source
-    }'</code></pre>
+                    <pre id="curl-example"><code>curl -s https://epicdemic.hylouis.top/data/v1/records.json | jq '.[] | select(.disease_id == "dengue") | {event_id, location, event_start_date, cases, source}'</code></pre>
                     <div class="code-card__meta">
                         <span>RECORDS <strong id="data-record-count">—</strong></span>
                         <span>SOURCES <strong id="data-source-count">—</strong></span>
@@ -250,15 +247,15 @@
             </div>
             <div class="license-note">
                 <strong>LICENCE</strong>
-                <p>The event records are published for consultation. The source may be read. Copying, modification, and redistribution are not permitted. Third-party sources follow their own terms.</p>
+                <p>Event records are published for consultation. Third-party sources follow their own terms.</p>
                 <a href="./LICENSE">Read the license →</a>
             </div>
         </section>
 
         <section class="agent-section" id="agent-query" aria-labelledby="agent-title">
             <div class="agent-copy">
-                <p class="section-index"><span>03</span> QUERY</p>
-                <h2 id="agent-title">Search by field.</h2>
+                <p class="section-index"><span>04</span> QUERY</p>
+                <h2 id="agent-title">Search by field</h2>
                 <p>Records can be filtered by disease, place, and date. Results include the source and the data status.</p>
                 <div class="agent-actions">
                     <a class="button button--primary" href="./skills/epic-disease-query/SKILL.md">Query notes</a>
@@ -266,7 +263,7 @@
                 </div>
             </div>
             <div class="agent-demo" aria-label="Query example">
-                <div class="agent-demo__bar"><span>QUERY</span><span class="agent-demo__lights"><i></i><i></i><i></i></span></div>
+                <div class="agent-demo__bar"><span>EXAMPLE</span></div>
                 <div class="agent-message agent-message--user"><small>REQUEST</small><p>List dengue events in Asia, sort by case count, and keep the source.</p></div>
                 <div class="agent-message agent-message--epic"><small>RESULT</small><p>Schema v1 is loaded. Matched <strong id="agent-match-count">—</strong> records.</p></div>
                 <div class="agent-demo__foot">SOURCE INCLUDED · STATUS INCLUDED · SCHEMA CHECKED</div>
@@ -275,14 +272,14 @@
 
         <section class="method-section" id="methodology" aria-labelledby="method-title">
             <header class="section-heading section-heading--split">
-                <div><p class="section-index"><span>04</span> METHOD</p><h2 id="method-title">How records are prepared.</h2></div>
+                <div><p class="section-index"><span>05</span> METHOD</p><h2 id="method-title">How records are prepared</h2></div>
                 <p>Time, source, and quality checks are stored with each record.</p>
             </header>
             <div class="method-grid">
                 <article><span>TIME</span><h3>Separate the time fields</h3><p>Build time, the data-as-of date, and the time of the last successful collection are stored separately. An empty collection keeps the previous snapshot.</p></article>
                 <article><span>FIELDS</span><h3>Standardize the fields</h3><p>Event date, reporting period, and publication date stay distinct. Disease names are assigned to one category. Counts are split into cases, deaths, and hospitalizations.</p></article>
                 <article><span>CHECK</span><h3>Check before release</h3><p>Future dates, sudden drops in record count, source addresses, coordinates, duplicate records, and schema validity are checked before release.</p></article>
-                <article><span>SCOPE</span><h3>Scope</h3><p>Coverage follows the sources included. Extraction and geocoding can be wrong. Some coordinates are given only at country level.</p></article>
+                <article><span>SCOPE</span><h3>Coordinates</h3><p>Coverage follows the sources included. Extraction and geocoding can be wrong. Some coordinates are given only at country level.</p></article>
             </div>
             <div class="method-links">
                 <a href="./methodology.html">Methodology</a>
@@ -300,7 +297,7 @@
 
         <section class="panel panel--intel" aria-labelledby="epietl-title">
             <div class="panel-heading">
-                <div><p class="panel-label">RISK ORDER</p><h3 id="epietl-title">Risk summary</h3></div>
+                <div><p class="section-index"><span>06</span> RISK</p><h3 id="epietl-title">Risk summary</h3></div>
                 <div class="panel-heading__meta" id="epietl-meta">Loading the summary</div>
             </div>
             <p class="intel-disclaimer">Scores order events for research. Check the original source and the method version before use.</p>
@@ -319,7 +316,7 @@
 
     <footer class="site-footer">
         <div class="site-footer__brand"><strong>CTModelling</strong><p>Infectious-disease event records from public reports, for search and citation.</p></div>
-        <div class="site-footer__links"><a href="./rss.xml">RSS</a><a href="./data/v1/manifest.json">Manifest</a><a href="./BACKUP/2026-08-14.md">Daily archive</a><a href="./README.md">Docs</a><a href="./LICENSE">License</a><a href="https://github.com/Hylouis233/epic-site-pages">GitHub</a></div>
+        <div class="site-footer__links"><a href="./rss.xml">RSS</a><a href="./data/v1/manifest.json">Data manifest</a><a href="./BACKUP/2026-08-14.md">Daily archive</a><a href="./README.md">Documentation</a><a href="./LICENSE">Licence</a><a href="https://github.com/Hylouis233/epic-site-pages">GitHub</a></div>
         <div class="site-footer__legal"><span>© 2026 Hong Liu</span><span>The source may be read. Redistribution is not permitted.</span></div>
     </footer>
 
@@ -335,7 +332,7 @@
     </script>
     <link rel="stylesheet" href="./assets/epic/vendor/leaflet/leaflet.css?v=20260815-rebuild">
     <script src="./assets/epic/vendor/leaflet/leaflet.js?v=20260815-rebuild"></script>
-    <script src="./assets/epic/js/i18n.js?v=20260924-amap"></script>
-    <script src="./assets/epic/js/dashboard.js?v=20260924-wheel2"></script>
+    <script src="./assets/epic/js/i18n.js?v=20260924-read"></script>
+    <script src="./assets/epic/js/dashboard.js?v=20260924-read2"></script>
 </body>
 </html>

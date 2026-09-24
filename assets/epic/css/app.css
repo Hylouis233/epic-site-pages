@@ -209,7 +209,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
 /* === Section headings === */
 .section-heading { margin-bottom: 20px; }
-.section-heading--split { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(240px,.5fr); gap: 24px; align-items: end; }
+.section-heading--split { display: grid; grid-template-columns: minmax(0, 72ch); gap: 8px; align-items: start; }
 .section-heading h2 { max-width: 640px; margin: 0; font-size: clamp(1.25rem,2vw,1.6rem); font-weight: 650; letter-spacing: -.025em; line-height: 1.25; }
 .section-heading > p { margin: 0; color: var(--text-2); font-size: 12.5px; line-height: 1.55; }
 
@@ -519,8 +519,9 @@ body[data-density="comfortable"] .data-table td { padding-top: 12px; padding-bot
 
 /* === EpiETL === */
 .intel-disclaimer { margin: 0; padding: 8px 16px; border-bottom: 1px solid var(--line-0); color: var(--text-3); font-size: 11px; }
-.intel-grid { display: grid; grid-template-columns: 220px 1fr 1.4fr; max-height: 560px; }
-.intel-metrics { display: grid; grid-template-columns: 1fr; align-content: start; gap: 1px; border-right: 1px solid var(--line-0); background: var(--line-0); }
+.panel--intel { margin: 0 0 28px; }
+.intel-grid { display: grid; grid-template-columns: minmax(260px, .85fr) minmax(0, 1.4fr); }
+.intel-metrics { display: grid; grid-template-columns: repeat(4, 1fr); grid-column: 1 / -1; align-content: start; gap: 1px; border-right: 0; border-bottom: 1px solid var(--line-0); background: var(--line-0); }
 .intel-metrics .metric-card { min-height: 60px; padding: 10px 14px; }
 .intel-metrics .metric-card__value { font-size: 18px; }
 .intel-block { min-height: 280px; padding: 12px; border-right: 1px solid var(--line-0); overflow: auto; }
@@ -547,8 +548,9 @@ body[data-density="comfortable"] .data-table td { padding-top: 12px; padding-bot
 
 /* === Footer === */
 .site-footer {
-    display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: start;
-    max-width: var(--max); margin: 0 auto; padding: 24px; border-top: 1px solid var(--line-0);
+    display: grid; grid-template-columns: minmax(180px, 280px) 1fr auto; gap: 24px; align-items: start;
+    max-width: var(--max); margin: 0 auto; padding: 28px 24px 36px; border-top: 1px solid var(--line-0);
+    background: var(--bg-1); position: relative; clear: both;
 }
 .site-footer__brand strong { font-family: var(--mono); font-size: 14px; font-weight: 700; }
 .site-footer__brand p { margin: 2px 0 0; color: var(--text-2); font-size: 11px; }

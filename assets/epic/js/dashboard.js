@@ -1783,6 +1783,45 @@
         }
     }
 
+    const COUNTRY_ZH = {
+        "Afghanistan": "阿富汗",
+        "Angola": "安哥拉",
+        "Argentina": "阿根廷",
+        "Bangladesh": "孟加拉国",
+        "Brazil": "巴西",
+        "Burkina Faso": "布基纳法索",
+        "Canada": "加拿大",
+        "Central African Republic": "中非共和国",
+        "Chad": "乍得",
+        "China": "中国",
+        "Dem. Rep. Congo": "刚果民主共和国",
+        "Democratic Republic of the Congo": "刚果民主共和国",
+        "Guinea-Bissau": "几内亚比绍",
+        "Japan": "日本",
+        "Malawi": "马拉维",
+        "Malaysia": "马来西亚",
+        "Mexico": "墨西哥",
+        "Mozambique": "莫桑比克",
+        "Multi-Country": "多国",
+        "Nigeria": "尼日利亚",
+        "Pakistan": "巴基斯坦",
+        "Peru": "秘鲁",
+        "Philippines": "菲律宾",
+        "Somalia": "索马里",
+        "South Africa": "南非",
+        "Suriname": "苏里南",
+        "Uganda": "乌干达",
+        "United States of America": "美国",
+        "United States": "美国",
+        "Vietnam": "越南",
+    };
+
+    function displayPlaceName(name) {
+        const text = String(name || "");
+        if (document.documentElement.dataset.language !== "zh-CN") return text;
+        return COUNTRY_ZH[text] || text;
+    }
+
     function renderEpietl(payload) {
         const meta = payload && payload.meta ? payload.meta : {};
         const riskSummary = payload && payload.risk_summary ? payload.risk_summary : {};
@@ -1790,16 +1829,15 @@
         const countryRisks = Array.isArray(riskSummary.country_risks) ? riskSummary.country_risks : [];
 
         const metrics = [
-            { marker: "CHN", label: t("Monitoring channels", "监测通道"), value: formatCount(meta.channel_count) },
-            { marker: "RPT", label: t("Total reports", "累计报告"), value: formatCount(meta.total_reports) },
-            { marker: "PDG", label: t("Pending", "待处理"), value: formatCount(meta.pending_reports) },
-            { marker: "RSK", label: t("Risk events", "风险事件"), value: formatCount(events.length) },
+            { marker: "通", label: t("Monitoring channels", "监测通道"), value: formatCount(meta.channel_count) },
+            { marker: "报", label: t("Total reports", "累计报告"), value: formatCount(meta.total_reports) },
+            { marker: "待", label: t("Pending", "待处理"), value: formatCount(meta.pending_reports) },
+            { marker: "险", label: t("Risk events", "风险事件"), value: formatCount(events.length) },
         ];
 
         elements.epietlMetrics.innerHTML = metrics.map(function (card) {
             return `
                 <article class="metric-card">
-                    <span class="metric-card__marker">${card.marker}</span>
                     <p class="metric-card__label">${card.label}</p>
                     <h2 class="metric-card__value">${escapeHtml(card.value)}</h2>
                 </article>
@@ -1825,7 +1863,7 @@
                 return `
                     <article class="intel-item">
                         <div class="intel-item__row">
-                            <strong>${escapeHtml(item.country || t("Unknown region", "未知地区"))}</strong>
+                            <strong>${escapeHtml(displayPlaceName(item.country) || t("Unknown region", "未知地区"))}</strong>
                             <span class="intel-item__score">${formatCount(item.score)}</span>
                         </div>
                         <div class="intel-item__row intel-item__row--meta">
@@ -1849,7 +1887,7 @@
         if (events.length) {
             elements.epietlEvents.innerHTML = events.map(function (item) {
                 const regionText = Array.isArray(item.regions) && item.regions.length
-                    ? item.regions.join(" / ")
+                    ? item.regions.map(displayPlaceName).join(" / ")
                     : t("Unspecified region", "未标注地区");
                 const sourceLink = item.source_url
                     ? `<a href="${escapeHtml(item.source_url)}" target="_blank" rel="noopener noreferrer" class="table-cell__link">${t("View source", "查看来源")}</a>`
