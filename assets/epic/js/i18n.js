@@ -224,7 +224,7 @@
         "Loading the map": "正在载入地图",
         "Point size and colour show the number of records at that place. Select a region on the right to filter the list.": "点的大小和颜色表示该地点的记录数。选择右侧地区可筛选列表。",
         "RECORD COUNT": "记录数",
-        "The basemap shows land outline only. Some points are country or administrative centroids.": "底图只绘陆地轮廓。部分点位为国家或行政区中心。",
+        "Basemap: Amap. Some points are country or administrative centroids.": "底图：高德地图。部分点位为国家或行政区中心。",
         "EVENT LIST": "事件列表",
         "Event list": "事件列表",
         "Loads on entry": "进入后载入",

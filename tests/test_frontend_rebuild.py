@@ -55,7 +55,8 @@ class FrontendRebuildBrowserTests(unittest.TestCase):
             # Real map: land silhouette and clustered markers must exist.
             page.locator("#map-panel").scroll_into_view_if_needed()
             page.wait_for_timeout(1200)
-            self.assertGreater(page.locator(".land-shape").count(), 0)
+            self.assertGreater(page.locator(".leaflet-tile").count(), 0)
+            self.assertIn("Amap", page.locator(".map-footnote").inner_text())
             self.assertGreater(page.locator(".cluster-badge").count(), 0)
             self.assertGreater(page.locator(".region-sidebar__item").count(), 0)
 
@@ -76,7 +77,7 @@ class FrontendRebuildBrowserTests(unittest.TestCase):
             # Chinese switch keeps the compliance footnote localised.
             page.goto(self.base_url + "?lang=zh-CN", wait_until="networkidle")
             page.wait_for_timeout(900)
-            self.assertIn("行政区中心", page.locator(".map-footnote").inner_text())
+            self.assertIn("高德地图", page.locator(".map-footnote").inner_text())
 
             context.close()
 

@@ -23,6 +23,18 @@
         "儿童急性呼吸道疾病": "Pediatric acute respiratory illness",
         "创伤弧菌感染": "Vibrio vulnificus infection",
         "埃博拉": "Ebola virus disease",
+        "埃博拉病毒病": "Ebola virus disease",
+        "基孔肯雅热": "Chikungunya",
+        "寨卡病毒病": "Zika virus disease",
+        "手足口病": "Hand, foot and mouth disease",
+        "梅毒": "Syphilis",
+        "沙门氏菌感染": "Salmonellosis",
+        "流行性腮腺炎": "Mumps",
+        "病毒性胃肠炎": "Viral gastroenteritis",
+        "肠道病毒感染": "Enterovirus infection",
+        "艾滋病": "HIV/AIDS",
+        "西尼罗病毒病": "West Nile virus disease",
+        "甲型流感": "Influenza A",
         "急性上呼吸道感染": "Acute upper respiratory infection",
         "急性腹泻病": "Acute diarrheal disease",
         "恙虫病": "Scrub typhus",
@@ -1014,12 +1026,50 @@
             displaySourceOrg(record),
             record.source,
         ];
-        return searchableParts.join(" ").toLowerCase().includes(keywordLower);
+        if (searchableParts.join(" ").toLowerCase().includes(keywordLower)) {
+            return true;
+        }
+        const canonical = matchDiseaseToken(keyword);
+        if (!canonical) {
+            return false;
+        }
+        const recordNames = expandDiseases(record.disease).concat(expandDiseases(record.disease_raw));
+        if (recordNames.indexOf(canonical) < 0) {
+            return false;
+        }
+        const place = placePrefix(keyword);
+        if (!place) {
+            return true;
+        }
+        const blob = [
+            record.location,
+            record.continent,
+            record.country,
+            record.description_cn,
+        ].join(" ");
+        if (place === "非洲") {
+            return record.continent === "非洲" || blob.indexOf("非洲") >= 0;
+        }
+        return blob.indexOf(place) >= 0;
+    }
+
+    function placePrefix(text) {
+        const raw = String(text || "").trim();
+        const prefixes = DISEASE_PREFIXES.slice().sort(function (left, right) {
+            return right.length - left.length;
+        });
+        for (let index = 0; index < prefixes.length; index += 1) {
+            const prefix = prefixes[index];
+            if (raw.startsWith(prefix) && raw.length > prefix.length) {
+                return prefix;
+            }
+        }
+        return "";
     }
 
     const DISEASE_GROUPS = [
         ["梅毒", "syphilis"],
-        ["西尼罗病毒病", "西尼罗病毒", "西尼罗病毒感染", "west nile virus", "west nile", "wnv"],
+        ["西尼罗病毒病", "西尼罗病毒", "西尼罗病毒感染", "西尼罗河热", "西尼罗河病毒", "西尼罗热", "west nile virus", "west nile", "wnv"],
         ["流行性感冒", "季节性流感", "流感", "influenza", "seasonal influenza", "flu"],
         ["甲型流感", "甲型H1N1流感", "influenza a"],
         ["禽流感", "人感染禽流感A(H9N2)病毒"],
@@ -1313,13 +1363,13 @@
             failed: "Failed",
         };
         const englishMessages = {
-            healthy: "Upstream ingestion and public-data quality checks passed.",
-            degraded: "Upstream ingestion did not pass the quality gate; the latest successful snapshot remains available.",
-            stale: "The data snapshot is older than the freshness threshold. Use it with caution.",
-            failed: "No public data snapshot is available.",
+            healthy: "",
+            degraded: "The latest collection did not pass the check. The previous snapshot remains in use.",
+            stale: "The snapshot is older than the update limit.",
+            failed: "No data snapshot is available.",
         };
         const label = t(englishLabels[status] || "Unknown", manifest.source_status_label || "未知");
-        const message = t(
+        const message = status === "healthy" ? "" : t(
             manifest.status_message_en || englishMessages[status] || "Data status is unavailable.",
             manifest.status_message_zh || "数据状态不可用。",
         );
@@ -1334,15 +1384,16 @@
         }
         if (elements.statusMessage) {
             elements.statusMessage.textContent = message;
+            elements.statusMessage.hidden = !message;
         }
         if (elements.statusDetail) {
             elements.statusDetail.textContent = t(
-                `Data as of ${formatDate(manifest.data_as_of)}; last successful ingest ${formatDateTime(manifest.last_successful_ingest_at)}; snapshot age ${formatHours(manifest.staleness_hours)}.`,
-                `数据截至 ${formatDate(manifest.data_as_of)}；最近成功采集 ${formatDateTime(manifest.last_successful_ingest_at)}；快照年龄 ${formatHours(manifest.staleness_hours)}。`,
+                `Data as of ${formatDate(manifest.data_as_of)}; last collection ${formatDateTime(manifest.last_successful_ingest_at)}; data lag ${formatHours(manifest.staleness_hours)}.`,
+                `数据截至 ${formatDate(manifest.data_as_of)}；最近采集 ${formatDateTime(manifest.last_successful_ingest_at)}；数据时滞 ${formatHours(manifest.staleness_hours)}。`,
             );
         }
         if (elements.briefStatus) {
-            elements.briefStatus.textContent = status.toUpperCase();
+            elements.briefStatus.textContent = label;
         }
         if (elements.heroRecordCount) {
             elements.heroRecordCount.textContent = formatCount(manifest.record_count);
@@ -1518,6 +1569,41 @@
         return state.staticLandPromise;
     }
 
+    function outOfChina(latitude, longitude) {
+        return longitude < 72.004 || longitude > 137.8347 || latitude < 0.8293 || latitude > 55.8271;
+    }
+
+    function transformLatitude(x, y) {
+        let value = -100 + 2 * x + 3 * y + 0.2 * y * y + 0.1 * x * y + 0.2 * Math.sqrt(Math.abs(x));
+        value += (20 * Math.sin(6 * x * Math.PI) + 20 * Math.sin(2 * x * Math.PI)) * 2 / 3;
+        value += (20 * Math.sin(y * Math.PI) + 40 * Math.sin(y / 3 * Math.PI)) * 2 / 3;
+        value += (160 * Math.sin(y / 12 * Math.PI) + 320 * Math.sin(y * Math.PI / 30)) * 2 / 3;
+        return value;
+    }
+
+    function transformLongitude(x, y) {
+        let value = 300 + x + 2 * y + 0.1 * x * x + 0.1 * x * y + 0.1 * Math.sqrt(Math.abs(x));
+        value += (20 * Math.sin(6 * x * Math.PI) + 20 * Math.sin(2 * x * Math.PI)) * 2 / 3;
+        value += (20 * Math.sin(x * Math.PI) + 40 * Math.sin(x / 3 * Math.PI)) * 2 / 3;
+        value += (150 * Math.sin(x / 12 * Math.PI) + 300 * Math.sin(x / 30 * Math.PI)) * 2 / 3;
+        return value;
+    }
+
+    function wgs84ToGcj02(latitude, longitude) {
+        if (outOfChina(latitude, longitude)) return [latitude, longitude];
+        const axis = 6378245;
+        const eccentricity = 0.00669342162296594323;
+        let deltaLatitude = transformLatitude(longitude - 105, latitude - 35);
+        let deltaLongitude = transformLongitude(longitude - 105, latitude - 35);
+        const radian = latitude / 180 * Math.PI;
+        let magic = Math.sin(radian);
+        magic = 1 - eccentricity * magic * magic;
+        const sqrtMagic = Math.sqrt(magic);
+        deltaLatitude = (deltaLatitude * 180) / ((axis * (1 - eccentricity)) / (magic * sqrtMagic) * Math.PI);
+        deltaLongitude = (deltaLongitude * 180) / (axis / sqrtMagic * Math.cos(radian) * Math.PI);
+        return [latitude + deltaLatitude, longitude + deltaLongitude];
+    }
+
     function ensureLeafletMap() {
         if (!elements.map || !window.L) return false;
         if (state.leafletMap) return true;
@@ -1526,23 +1612,19 @@
             center: [20, 10],
             zoom: 2,
             minZoom: 2,
-            maxZoom: 6,
+            maxZoom: 16,
             zoomControl: true,
             scrollWheelZoom: false,
             touchZoom: true,
             worldCopyJump: true,
-            attributionControl: false,
+            attributionControl: true,
         });
-
-        loadStaticLandPayload().then(function (payload) {
-            if (!payload || !state.leafletMap) return;
-            state.leafletLandLayer = window.L.geoJSON(payload, {
-                interactive: false,
-                style: { className: "land-shape", stroke: false, fill: true },
-            });
-            state.leafletLandLayer.addTo(state.leafletMap);
-            state.leafletLandLayer.bringToBack();
-        });
+        window.L.tileLayer("https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}", {
+            subdomains: ["1", "2", "3", "4"],
+            minZoom: 2,
+            maxZoom: 16,
+            attribution: "© 高德地图",
+        }).addTo(state.leafletMap);
 
         state.leafletMap.on("zoomend", function () {
             if (state.lastMapItems) {
@@ -1593,7 +1675,8 @@
         state.leafletClusterLayer = window.L.layerGroup();
         clusters.forEach(function (cluster) {
             const iconSize = cluster.size;
-            const marker = window.L.marker([cluster.latitude, cluster.longitude], {
+            const markerPoint = wgs84ToGcj02(cluster.latitude, cluster.longitude);
+            const marker = window.L.marker(markerPoint, {
                 keyboard: true,
                 title: t(`${formatCount(cluster.count)} events`, `${formatCount(cluster.count)} 条事件`),
                 icon: window.L.divIcon({
@@ -1612,7 +1695,7 @@
             marker.on("click", function () {
                 if (cluster.count > 1 && state.leafletMap.getZoom() < state.leafletMap.getMaxZoom()) {
                     const bounds = window.L.latLngBounds(cluster.items.map(function (item) {
-                        return [item.latitude, item.longitude];
+                        return wgs84ToGcj02(item.latitude, item.longitude);
                     }));
                     if (bounds.isValid()) {
                         state.leafletMap.fitBounds(bounds.pad(0.4), { maxZoom: state.leafletMap.getMaxZoom() });
