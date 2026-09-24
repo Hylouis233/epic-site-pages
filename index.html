@@ -108,36 +108,35 @@
         <section class="hero-section hero-section--compact" aria-labelledby="hero-title">
             <div class="hero-grid" aria-hidden="true"></div>
             <div class="hero-copy">
-                <p class="section-index"><span>01</span> PUBLIC-SOURCE EVENT INTELLIGENCE</p>
-                <h1 id="hero-title">Global infectious-disease <em>event monitor.</em></h1>
+                <p class="section-index"><span>01</span> PUBLIC EVENT MONITORING</p>
+                <h1 id="hero-title">Global infectious-disease <em>event monitoring.</em></h1>
                 <p class="hero-copy__lead">
-                    EPIC brings together health-agency notices, ProMED, RSS feeds, and open reporting for public-health monitoring and early-warning research—with source provenance, map search, versioned data, and agent-ready access.
+                    Records come from health-agency notices, ProMED, and other public reports. Each record keeps its source, date, and place. Counts are event reports in this snapshot, not disease burden.
                 </p>
 
                 <div class="hero-chips" aria-label="Current data status">
                     <span class="hero-chip"><small>DATA AS OF</small><strong id="data-as-of">LOADING</strong></span>
-                    <span class="hero-chip"><small>LAST GOOD INGEST</small><strong id="last-successful-ingest">LOADING</strong></span>
+                    <span class="hero-chip"><small>LAST COLLECTION</small><strong id="last-successful-ingest">LOADING</strong></span>
                     <span class="hero-chip"><small>RECORDS</small><strong id="hero-record-count">—</strong></span>
-                    <span class="hero-chip"><small>SNAPSHOT AGE</small><strong id="staleness-hours">LOADING</strong></span>
+                    <span class="hero-chip"><small>DATA LAG</small><strong id="staleness-hours">LOADING</strong></span>
                     <span class="hero-chip"><small>SCHEMA</small><strong id="schema-version">v—</strong></span>
                     <span class="hero-chip hero-chip--status"><small>STATUS</small><strong id="brief-status">VERIFYING</strong></span>
                 </div>
 
                 <div class="hero-actions">
-                    <a class="button button--primary" href="#table-panel">View the register <span>↓</span></a>
+                    <a class="button button--primary" href="#table-panel">View records <span>↓</span></a>
                     <a class="button button--paper" href="./data/v1/events.csv">Download CSV</a>
                     <a class="button button--text" href="./rss.xml">RSS ↗</a>
-                    <a class="button button--text" href="#data-access">Data contract →</a>
+                    <a class="button button--text" href="#data-access">Data files →</a>
                 </div>
-                <p class="hero-caveat">EVENT-BASED OPEN-SOURCE MONITORING · INCOMPLETE COVERAGE · NOT AN OFFICIAL ALERT · NOT MEDICAL ADVICE</p>
                 <p class="hero-build" id="build-generated">READING BUILD TIME</p>
             </div>
         </section>
 
         <section class="monitor-section" id="events" aria-labelledby="monitor-title">
             <header class="section-heading section-heading--split">
-                <div><p class="section-index"><span>02</span> EVENT MONITOR</p><h2 id="monitor-title">Public-source event register</h2></div>
-                <p>Filters are reflected in the URL for sharing and citation. Counts describe this public snapshot—not global disease burden.</p>
+                <div><p class="section-index"><span>02</span> EVENT RECORDS</p><h2 id="monitor-title">Event records</h2></div>
+                <p>Filter terms are stored in the page address for citation.</p>
             </header>
 
             <div class="status-banner" id="status-banner">
@@ -148,14 +147,14 @@
 
             <section class="overview-grid" id="overview-grid" aria-label="Monitoring summary">
                 <article class="metric-card"><span class="metric-card__marker">REC</span><p class="metric-card__label">TOTAL RECORDS</p><h3 class="metric-card__value skeleton-line">—</h3></article>
-                <article class="metric-card"><span class="metric-card__marker">DIS</span><p class="metric-card__label">DISEASE CATEGORIES</p><h3 class="metric-card__value skeleton-line">—</h3></article>
+                <article class="metric-card"><span class="metric-card__marker">DIS</span><p class="metric-card__label">DISEASES</p><h3 class="metric-card__value skeleton-line">—</h3></article>
                 <article class="metric-card"><span class="metric-card__marker">CON</span><p class="metric-card__label">CONTINENTS</p><h3 class="metric-card__value skeleton-line">—</h3></article>
-                <article class="metric-card"><span class="metric-card__marker">DAT</span><p class="metric-card__label">LATEST FILTERED DATE</p><h3 class="metric-card__value skeleton-line">—</h3></article>
+                <article class="metric-card"><span class="metric-card__marker">DAT</span><p class="metric-card__label">LATEST DATE</p><h3 class="metric-card__value skeleton-line">—</h3></article>
             </section>
 
             <section class="control-panel" aria-labelledby="filters-title">
                 <div class="control-panel__head">
-                    <div><p class="panel-label">FILTER / EVENT SEARCH</p><h3 id="filters-title">Narrow the signal set</h3></div>
+                    <div><p class="panel-label">SEARCH</p><h3 id="filters-title">Search events</h3></div>
                     <div class="control-panel__actions">
                         <button class="text-button" id="copy-filter-link" type="button">Copy filter link</button>
                         <button class="text-button" id="reset-filters" type="button">Clear filters</button>
@@ -168,18 +167,18 @@
                     <label class="field"><span class="field__label">FROM</span><input id="date-from-input" name="date_from" type="text" inputmode="numeric" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" data-zh-placeholder="YYYY-MM-DD" aria-label="Start date in YYYY-MM-DD format" data-zh-aria-label="开始日期，格式为 YYYY-MM-DD"></label>
                     <label class="field"><span class="field__label">TO</span><input id="date-to-input" name="date_to" type="text" inputmode="numeric" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" data-zh-placeholder="YYYY-MM-DD" aria-label="End date in YYYY-MM-DD format" data-zh-aria-label="结束日期，格式为 YYYY-MM-DD"></label>
                 </form>
-                <div class="filter-summary"><span>CURRENT FILTER</span><strong id="filter-summary-text">No filters applied.</strong><em id="filter-result">Ready</em></div>
+                <div class="filter-summary"><span>FILTER</span><strong id="filter-summary-text">No filter is set.</strong><em id="filter-result">Ready</em></div>
             </section>
 
             <section class="panel panel--map" id="map-panel" aria-labelledby="map-title">
                 <div class="panel-heading">
-                    <div><p class="panel-label">ATLAS / EVENT DISTRIBUTION</p><h3 id="map-title">Geographic distribution of events</h3></div>
-                    <div class="panel-heading__meta" id="map-meta">Preparing mapped records</div>
+                    <div><p class="panel-label">GEOGRAPHY</p><h3 id="map-title">Where events were reported</h3></div>
+                    <div class="panel-heading__meta" id="map-meta">Loading the map</div>
                 </div>
                 <div class="map-toolbar">
-                    <p>Dot size and colour reflect the number of records aggregated at each location. Select a region on the right to filter the register.</p>
+                    <p>Point size and colour show the number of records at that place. Select a region on the right to filter the list.</p>
                     <div class="map-legend" aria-label="Cluster intensity legend">
-                        <span class="map-legend__label">AGGREGATION INTENSITY</span>
+                        <span class="map-legend__label">RECORD COUNT</span>
                         <span class="map-legend__item"><i class="cluster-dot cluster-dot--small"></i>1–2</span>
                         <span class="map-legend__item"><i class="cluster-dot cluster-dot--medium"></i>3–5</span>
                         <span class="map-legend__item"><i class="cluster-dot cluster-dot--elevated"></i>6–11</span>
@@ -194,20 +193,20 @@
                     </div>
                     <aside class="region-sidebar" id="region-sidebar" aria-label="Regional index"></aside>
                 </div>
-                <p class="map-footnote">Basemap shows land outline only—no borders or place labels. Dots mark event report locations and imply no sovereignty position.</p>
+                <p class="map-footnote">The basemap shows land outline only. Some points are country or administrative centroids.</p>
             </section>
 
             <section class="panel panel--table" id="table-panel" aria-labelledby="table-title">
                 <div class="panel-heading">
-                    <div><p class="panel-label">REGISTER / EVENT RECORDS</p><h3 id="table-title">Traceable event details</h3></div>
-                    <div class="panel-heading__meta" id="table-meta">Loads when this section enters view</div>
+                    <div><p class="panel-label">EVENT LIST</p><h3 id="table-title">Event list</h3></div>
+                    <div class="panel-heading__meta" id="table-meta">Loads on entry</div>
                 </div>
                 <div class="density-toggle" role="group" aria-label="Table density">
                     <span>DENSITY</span>
                     <button type="button" id="density-compact" class="density-toggle__button is-active" aria-pressed="true">Compact</button>
                     <button type="button" id="density-comfortable" class="density-toggle__button" aria-pressed="false">Comfortable</button>
                 </div>
-                <div class="table-placeholder" id="table-placeholder"><span></span><span></span><span></span><p>Paginated details load on entry; the homepage does not prefetch full records.</p></div>
+                <div class="table-placeholder" id="table-placeholder"><span></span><span></span><span></span><p>Records load by page.</p></div>
                 <div class="table-shell hidden" id="table-shell">
                     <div class="table-status-row"><span id="table-count">0 records</span><span id="table-page-status">Page 1</span></div>
                     <div class="table-scroll">
@@ -224,20 +223,20 @@
 
         <section class="data-section" id="data-access" aria-labelledby="data-title">
             <header class="section-heading section-heading--split section-heading--light">
-                <div><p class="section-index"><span>03</span> DATA &amp; AGENT ACCESS</p><h2 id="data-title">From files to a versioned data contract.</h2></div>
-                <p>Schema v1 defines time semantics, stable identifiers, source-rights notes, quality fields, and SHA-256 checksums.</p>
+                <div><p class="section-index"><span>03</span> DATA</p><h2 id="data-title">Data files.</h2></div>
+                <p>Schema v1 specifies time fields, record identifiers, source and quality fields, and SHA-256 checksums.</p>
             </header>
             <div class="data-layout">
                 <div class="format-grid">
-                    <a class="format-card" href="./data/v1/records.json"><span>JSON</span><strong>Complete event records</strong><small>Apps &amp; scripts</small></a>
-                    <a class="format-card" href="./data/v1/events.csv"><span>CSV</span><strong>Flat analysis table</strong><small>Excel / R / Python</small></a>
-                    <a class="format-card" href="./data/v1/events.parquet"><span>PARQUET</span><strong>Columnar data</strong><small>DuckDB / Arrow</small></a>
-                    <a class="format-card" href="./data/v1/events.geojson"><span>GEOJSON</span><strong>Spatial features</strong><small>GIS / MapLibre</small></a>
-                    <a class="format-card" href="./data/v1/events.ndjson"><span>NDJSON</span><strong>Streaming records</strong><small>CLI / Agent</small></a>
-                    <a class="format-card" href="./data/v1/schema.json"><span>SCHEMA</span><strong>Data constraints</strong><small>JSON Schema 2020-12</small></a>
+                    <a class="format-card" href="./data/v1/records.json"><span>JSON</span><strong>Event records</strong><small>Programs</small></a>
+                    <a class="format-card" href="./data/v1/events.csv"><span>CSV</span><strong>Analysis table</strong><small>Excel / R / Python</small></a>
+                    <a class="format-card" href="./data/v1/events.parquet"><span>PARQUET</span><strong>Column table</strong><small>DuckDB / Arrow</small></a>
+                    <a class="format-card" href="./data/v1/events.geojson"><span>GEOJSON</span><strong>Map data</strong><small>GIS</small></a>
+                    <a class="format-card" href="./data/v1/events.ndjson"><span>NDJSON</span><strong>Line records</strong><small>Command line</small></a>
+                    <a class="format-card" href="./data/v1/schema.json"><span>SCHEMA</span><strong>Field rules</strong><small>JSON Schema 2020-12</small></a>
                 </div>
                 <div class="code-card">
-                    <div class="code-card__head"><span>TRY IT / 30 SECONDS</span><button type="button" data-copy-target="curl-example">COPY</button></div>
+                    <div class="code-card__head"><span>EXAMPLE</span><button type="button" data-copy-target="curl-example">COPY</button></div>
                     <pre id="curl-example"><code>curl -s https://hylouis233.github.io/epic-site-pages/data/v1/records.json \
   | jq '.[] | select(.disease_id == "dengue") | {
       event_id, location, event_start_date, cases, source
@@ -250,40 +249,40 @@
                 </div>
             </div>
             <div class="license-note">
-                <strong>LICENSE NOTICE</strong>
-                <p>This repository is a publicly accessible demonstration and data preview. Its source can be inspected, but it is not open source; no permission is granted to copy, modify, redistribute, or build derivatives. Third-party sources remain subject to their own terms.</p>
+                <strong>LICENCE</strong>
+                <p>The event records are published for consultation. The source may be read. Copying, modification, and redistribution are not permitted. Third-party sources follow their own terms.</p>
                 <a href="./LICENSE">Read the license →</a>
             </div>
         </section>
 
         <section class="agent-section" id="agent-query" aria-labelledby="agent-title">
             <div class="agent-copy">
-                <p class="section-index"><span>03</span> AI-NATIVE ACCESS</p>
-                <h2 id="agent-title">Built for people—and for agents that ask precisely.</h2>
-                <p>The EPIC query skill filters by keyword, disease, continent, and date, then returns JSON or Markdown with source provenance and data status attached.</p>
+                <p class="section-index"><span>03</span> QUERY</p>
+                <h2 id="agent-title">Search by field.</h2>
+                <p>Records can be filtered by disease, place, and date. Results include the source and the data status.</p>
                 <div class="agent-actions">
-                    <a class="button button--primary" href="./skills/epic-disease-query/SKILL.md">View the agent skill</a>
-                    <a class="button button--paper" href="./data/v1/manifest.json">Read the manifest</a>
+                    <a class="button button--primary" href="./skills/epic-disease-query/SKILL.md">Query notes</a>
+                    <a class="button button--paper" href="./data/v1/manifest.json">Data manifest</a>
                 </div>
             </div>
-            <div class="agent-demo" aria-label="Agent query example">
-                <div class="agent-demo__bar"><span>EPIC / QUERY</span><span class="agent-demo__lights"><i></i><i></i><i></i></span></div>
-                <div class="agent-message agent-message--user"><small>USER</small><p>Find dengue events in Asia, sort by case count, retain sources, and explain data confidence.</p></div>
-                <div class="agent-message agent-message--epic"><small>EPIC AGENT</small><p>Schema v1 and source status loaded. The source is currently degraded, so results come from the latest successful snapshot. Matched <strong id="agent-match-count">—</strong> records…</p></div>
-                <div class="agent-demo__foot">SOURCE-AWARE · STATUS-AWARE · SCHEMA-VALIDATED</div>
+            <div class="agent-demo" aria-label="Query example">
+                <div class="agent-demo__bar"><span>QUERY</span><span class="agent-demo__lights"><i></i><i></i><i></i></span></div>
+                <div class="agent-message agent-message--user"><small>REQUEST</small><p>List dengue events in Asia, sort by case count, and keep the source.</p></div>
+                <div class="agent-message agent-message--epic"><small>RESULT</small><p>Schema v1 is loaded. Matched <strong id="agent-match-count">—</strong> records.</p></div>
+                <div class="agent-demo__foot">SOURCE INCLUDED · STATUS INCLUDED · SCHEMA CHECKED</div>
             </div>
         </section>
 
         <section class="method-section" id="methodology" aria-labelledby="method-title">
             <header class="section-heading section-heading--split">
-                <div><p class="section-index"><span>04</span> METHOD &amp; LIMITS</p><h2 id="method-title">Make uncertainty part of the product.</h2></div>
-                <p>EPIC is research infrastructure for open-source monitoring—not a validated official warning system. Every user should be able to see where data came from, how old it is, and which checks it passed.</p>
+                <div><p class="section-index"><span>04</span> METHOD</p><h2 id="method-title">How records are prepared.</h2></div>
+                <p>Time, source, and quality checks are stored with each record.</p>
             </header>
             <div class="method-grid">
-                <article><span>INGEST</span><h3>Separate freshness clocks</h3><p>Build time, data-as-of time, and last successful ingest are tracked separately. A zero-record upstream response keeps the last-known-good snapshot without advancing data time.</p></article>
-                <article><span>NORMALIZE</span><h3>Normalize event fields</h3><p>Dates are separated into event, reporting-period, and publication semantics; disease aliases are canonicalized; scale is split into cases, deaths, and hospitalizations.</p></article>
-                <article><span>VALIDATE</span><h3>Apply quality gates</h3><p>Future dates, sudden record drops, source URLs, coordinates, duplicate signals, and schema validity are checked before publication.</p></article>
-                <article><span>LIMIT</span><h3>State the boundaries</h3><p>Coverage is incomplete, extraction can be wrong, geocoding may stop at country level, and risk ranking has not been validated for official public-health use.</p></article>
+                <article><span>TIME</span><h3>Separate the time fields</h3><p>Build time, the data-as-of date, and the time of the last successful collection are stored separately. An empty collection keeps the previous snapshot.</p></article>
+                <article><span>FIELDS</span><h3>Standardize the fields</h3><p>Event date, reporting period, and publication date stay distinct. Disease names are assigned to one category. Counts are split into cases, deaths, and hospitalizations.</p></article>
+                <article><span>CHECK</span><h3>Check before release</h3><p>Future dates, sudden drops in record count, source addresses, coordinates, duplicate records, and schema validity are checked before release.</p></article>
+                <article><span>SCOPE</span><h3>Scope</h3><p>Coverage follows the sources included. Extraction and geocoding can be wrong. Some coordinates are given only at country level.</p></article>
             </div>
             <div class="method-links">
                 <a href="./methodology.html">Methodology</a>
@@ -293,18 +292,18 @@
                 <a href="./CITATION.cff">How to cite</a>
             </div>
             <div class="who-strip" aria-label="Who it serves">
-                <span><strong>RESEARCH</strong> Reproduce event-based analyses with provenance and quality fields.</span>
-                <span><strong>PRACTICE</strong> Scan public signals, then return to the original notice to verify.</span>
-                <span><strong>BUILD</strong> Connect versioned endpoints, checksums, and agent queries.</span>
+                <span><strong>RESEARCH</strong> Use the source and quality fields in event analysis.</span>
+                <span><strong>APPLICATION</strong> Read the record, then check the original notice.</span>
+                <span><strong>DATA</strong> Use the versioned files, schema, and checksums.</span>
             </div>
         </section>
 
         <section class="panel panel--intel" aria-labelledby="epietl-title">
             <div class="panel-heading">
-                <div><p class="panel-label">RESEARCH RANKING</p><h3 id="epietl-title">EpiETL public risk summary</h3></div>
-                <div class="panel-heading__meta" id="epietl-meta">Synchronizing public intelligence snapshot</div>
+                <div><p class="panel-label">RISK ORDER</p><h3 id="epietl-title">Risk summary</h3></div>
+                <div class="panel-heading__meta" id="epietl-meta">Loading the summary</div>
             </div>
-            <p class="intel-disclaimer">Risk scores support research ranking only; they are not official risk levels. Verify original sources, method version, and uncertainty before use.</p>
+            <p class="intel-disclaimer">Scores order events for research. Check the original source and the method version before use.</p>
             <div class="intel-grid">
                 <div class="intel-metrics" id="epietl-metrics">
                     <article class="metric-card"><span class="metric-card__marker">CHN</span><p class="metric-card__label">CHANNELS</p><h3 class="metric-card__value skeleton-line">—</h3></article>
@@ -319,9 +318,9 @@
     </main>
 
     <footer class="site-footer">
-        <div class="site-footer__brand"><strong>CTModelling</strong><p>Infectious-disease event intelligence infrastructure for public-health monitoring and early-warning research.</p></div>
+        <div class="site-footer__brand"><strong>CTModelling</strong><p>Infectious-disease event records from public reports, for search and citation.</p></div>
         <div class="site-footer__links"><a href="./rss.xml">RSS</a><a href="./data/v1/manifest.json">Manifest</a><a href="./BACKUP/2026-08-14.md">Daily archive</a><a href="./README.md">Docs</a><a href="./LICENSE">License</a><a href="https://github.com/Hylouis233/epic-site-pages">GitHub</a></div>
-        <div class="site-footer__legal"><span>© 2026 Hong Liu · All rights reserved.</span><span>Publicly accessible demonstration · Source-available for viewing · Not open source.</span></div>
+        <div class="site-footer__legal"><span>© 2026 Hong Liu</span><span>The source may be read. Redistribution is not permitted.</span></div>
     </footer>
 
     <script>
@@ -329,14 +328,14 @@
             siteMode: "static",
             generatedAt: "2026-08-13T04:22:42Z",
             staticDataUrl: "./data/records.json",
-            staticManifestUrl: "./data/v1/manifest.json",
+            staticManifestUrl: "./data/v1/manifest.json?v=20260924-copy",
             staticEpietlUrl: "./data/epietl_public.json",
             staticLandUrl: "./data/v1/land-110m.geojson"
         };
     </script>
     <link rel="stylesheet" href="./assets/epic/vendor/leaflet/leaflet.css?v=20260815-rebuild">
     <script src="./assets/epic/vendor/leaflet/leaflet.js?v=20260815-rebuild"></script>
-    <script src="./assets/epic/js/i18n.js?v=20260815-console"></script>
-    <script src="./assets/epic/js/dashboard.js?v=20260924-align"></script>
+    <script src="./assets/epic/js/i18n.js?v=20260924-copy"></script>
+    <script src="./assets/epic/js/dashboard.js?v=20260924-copy2"></script>
 </body>
 </html>

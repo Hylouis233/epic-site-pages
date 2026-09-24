@@ -19,8 +19,8 @@
     <main>
       <header class="detail-hero">
         <p class="detail-hero__signal">METHODOLOGY / SCHEMA V1</p>
-        <h1 data-zh="把不确定性写进数据合同。">Write uncertainty into the data contract.</h1>
-        <p class="detail-hero__summary" data-zh="EPIC 将公开来源信号规范为事件级摘要，同时保持时间、来源、修订和质量状态可追溯。它是研究性监测基础设施，不是正式公共卫生预警。">EPIC normalizes public-source signals into event-level summaries while keeping time, provenance, revision, and quality status traceable. It is research monitoring infrastructure—not an official public-health alert.</p>
+        <h1 data-zh="记录中的时间、来源与质量。">Time, source, and quality in the record.</h1>
+        <p class="detail-hero__summary" data-zh="公开报道按事件记录保存。时间、来源、修订和质量状态与记录一并保存。">Public reports are stored as event records. Time, source, revision, and quality status stay with the record.</p>
         <div class="detail-actions"><a class="button button--primary" href="./data/v1/quality-report.json" data-zh="本次质量报告">Current quality report</a><a class="button button--paper" href="./METHODOLOGY.md" data-zh="查看 Markdown 原文">Read the Markdown source</a></div>
       </header>
       <section class="detail-grid">
@@ -28,7 +28,7 @@
         <article class="detail-card"><p class="panel-heading__eyebrow">02 / ENTITY</p><h2 data-zh="规范疾病与事件">Normalize diseases and events</h2><p data-zh="疾病别名映射到稳定 disease_id；多疾病公报保留 aggregate 标记；event、signal 与 cluster 使用不同的稳定 ID。">Disease aliases map to stable disease_id values. Multi-disease bulletins retain an aggregate marker, while event, signal, and cluster identities remain distinct.</p></article>
         <article class="detail-card"><p class="panel-heading__eyebrow">03 / SCALE</p><h2 data-zh="不混用数量口径">Keep quantities distinct</h2><p data-zh="自然语言规模保留为 scale_raw，并尽可能拆分病例、死亡和住院。单条事件记录不是患者记录，也不等于全球疾病负担。">Natural-language scale is retained as scale_raw and, where possible, separated into cases, deaths, and hospitalizations. An event record is not a patient record or a measure of global burden.</p></article>
         <article class="detail-card"><p class="panel-heading__eyebrow">04 / PROVENANCE</p><h2 data-zh="保留来源链路">Preserve provenance</h2><p data-zh="公开记录保留稳定来源 URL、来源机构、来源类型、权利提示和内容哈希。第三方全文不会重新发布。">Public records retain a stable source URL, organization, type, rights note, and content hash. Full third-party source text is not republished.</p></article>
-        <article class="detail-card"><p class="panel-heading__eyebrow">05 / QUALITY</p><h2 data-zh="先过质量闸门">Gate before publishing</h2><p data-zh="构建检查未来日期、记录骤降、来源 URL、坐标、重复信号和 Schema。一旦上游异常，保留最近成功快照并明确标为 degraded。">Builds check future dates, sudden record drops, source URLs, coordinates, duplicate signals, and schema validity. Upstream anomalies retain the last successful snapshot and are explicitly marked degraded.</p></article>
+        <article class="detail-card"><p class="panel-heading__eyebrow">05 / QUALITY</p><h2 data-zh="发布前检查">Check before release</h2><p data-zh="发布前检查未来日期、记录数骤降、来源网址、坐标、重复记录和 Schema。采集异常时保留上一份有效数据。">Future dates, sudden drops in record count, source addresses, coordinates, duplicate records, and schema validity are checked before release. If collection fails, the previous snapshot is kept.</p></article>
         <article class="detail-card"><p class="panel-heading__eyebrow">06 / REPRODUCE</p><h2 data-zh="让状态可复现">Make status reproducible</h2><p data-zh="Manifest 区分 build_generated_at、data_as_of 和 last_successful_ingest_at，并为每个版本化产物提供 SHA-256 校验和。">The manifest separates build_generated_at, data_as_of, and last_successful_ingest_at, and publishes SHA-256 checksums for every versioned artifact.</p></article>
       </section>
     </main>

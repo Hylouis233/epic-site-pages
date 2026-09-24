@@ -76,7 +76,7 @@ class FrontendRebuildBrowserTests(unittest.TestCase):
             # Chinese switch keeps the compliance footnote localised.
             page.goto(self.base_url + "?lang=zh-CN", wait_until="networkidle")
             page.wait_for_timeout(900)
-            self.assertIn("不代表任何主权主张", page.locator(".map-footnote").inner_text())
+            self.assertIn("行政区中心", page.locator(".map-footnote").inner_text())
 
             context.close()
 
