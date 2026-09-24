@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EPIC — Traceable infectious-disease event intelligence</title>
+    <title>CTModelling 传染病事件监测</title>
     <meta name="description" content="EPIC turns public outbreak signals from health agencies, ProMED, RSS feeds, and open reporting into queryable, traceable, machine-readable event data.">
     <meta name="theme-color" content="#0d0f12">
     <meta name="color-scheme" content="light dark">
@@ -13,7 +13,7 @@
     <link rel="alternate" hreflang="zh-CN" href="https://hylouis233.github.io/epic-site-pages/?lang=zh-CN">
     <link rel="alternate" hreflang="x-default" href="https://hylouis233.github.io/epic-site-pages/">
     <link rel="alternate" type="application/rss+xml" title="EPIC daily event updates" href="./rss.xml">
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./assets/epic/brand-logo.png" type="image/png">
     <link rel="manifest" href="./manifest.webmanifest">
 
     <meta property="og:type" content="website">
@@ -32,7 +32,7 @@
     <meta name="twitter:description" content="Open-source-signal event intelligence for public-health monitoring and early-warning research.">
     <meta name="twitter:image" content="https://hylouis233.github.io/epic-site-pages/og-image.png">
 
-    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260924-bar">
+    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260924-brand">
     <script>
         (function () {
             try {
@@ -46,9 +46,9 @@
                 document.documentElement.dataset.language = language;
                 document.documentElement.lang = language;
                 const savedTheme = window.localStorage.getItem("epic-theme");
-            document.documentElement.dataset.theme = savedTheme || "dark";
+            document.documentElement.dataset.theme = savedTheme || "light";
         } catch (error) {
-            document.documentElement.dataset.theme = "dark";
+            document.documentElement.dataset.theme = "light";
         }
         })();
     </script>
@@ -85,9 +85,9 @@
     </div>
 
     <header class="site-header">
-        <a class="brand" href="./" aria-label="EPIC home">
-            <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span>
-            <span class="brand__type"><strong>EPIC</strong><small>Event intelligence</small></span>
+        <a class="brand" href="./" aria-label="CTModelling">
+            <img class="brand-logo" src="./assets/epic/brand-logo.png" alt="" width="51" height="36">
+            <span class="brand__type"><strong>CTModelling</strong><small>传染病事件监测</small></span>
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
             <a href="#events">Events</a>
@@ -319,7 +319,7 @@
     </main>
 
     <footer class="site-footer">
-        <div class="site-footer__brand"><strong>EPIC</strong><p>Infectious-disease event intelligence infrastructure for public-health monitoring and early-warning research.</p></div>
+        <div class="site-footer__brand"><strong>CTModelling</strong><p>Infectious-disease event intelligence infrastructure for public-health monitoring and early-warning research.</p></div>
         <div class="site-footer__links"><a href="./rss.xml">RSS</a><a href="./data/v1/manifest.json">Manifest</a><a href="./BACKUP/2026-08-14.md">Daily archive</a><a href="./README.md">Docs</a><a href="./LICENSE">License</a><a href="https://github.com/Hylouis233/epic-site-pages">GitHub</a></div>
         <div class="site-footer__legal"><span>© 2026 Hong Liu · All rights reserved.</span><span>Publicly accessible demonstration · Source-available for viewing · Not open source.</span></div>
     </footer>
