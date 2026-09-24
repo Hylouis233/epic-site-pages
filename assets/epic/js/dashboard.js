@@ -1614,10 +1614,10 @@
             minZoom: 2,
             maxZoom: 16,
             zoomControl: true,
-            scrollWheelZoom: false,
+            scrollWheelZoom: true,
             touchZoom: true,
             worldCopyJump: true,
-            attributionControl: true,
+            attributionControl: { prefix: false },
         });
         window.L.tileLayer("https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}", {
             subdomains: ["1", "2", "3", "4"],
@@ -1625,6 +1625,9 @@
             maxZoom: 16,
             attribution: "© 高德地图",
         }).addTo(state.leafletMap);
+        if (state.leafletMap.attributionControl) {
+            state.leafletMap.attributionControl.setPrefix(false);
+        }
 
         state.leafletMap.on("zoomend", function () {
             if (state.lastMapItems) {
