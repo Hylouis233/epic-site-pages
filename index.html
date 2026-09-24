@@ -32,7 +32,7 @@
     <meta name="twitter:description" content="Open-source-signal event intelligence for public-health monitoring and early-warning research.">
     <meta name="twitter:image" content="https://hylouis233.github.io/epic-site-pages/og-image.png">
 
-    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260924-plain">
+    <link rel="stylesheet" href="./assets/epic/css/app.css?v=20260924-links">
     <script>
         (function () {
             try {
@@ -224,16 +224,16 @@
         <section class="data-section" id="data-access" aria-labelledby="data-title">
             <header class="section-heading section-heading--split section-heading--light">
                 <div><p class="section-index"><span>03</span> DATA</p><h2 id="data-title">Data files</h2></div>
-                <p>Six files. Field definitions are in Schema v1. Each release includes a SHA-256.</p>
+                <p>Schema v1 records time, identifier, source, and quality.</p>
             </header>
             <div class="data-layout">
                 <div class="format-grid">
-                    <a class="format-card" href="./data/v1/records.json"><span>JSON</span><strong>Records</strong></a>
-                    <a class="format-card" href="./data/v1/events.csv"><span>CSV</span><strong>Table</strong></a>
-                    <a class="format-card" href="./data/v1/events.parquet"><span>PARQUET</span><strong>Columns</strong></a>
-                    <a class="format-card" href="./data/v1/events.geojson"><span>GEOJSON</span><strong>Points</strong></a>
-                    <a class="format-card" href="./data/v1/events.ndjson"><span>NDJSON</span><strong>Lines</strong></a>
-                    <a class="format-card" href="./data/v1/schema.json"><span>SCHEMA</span><strong>Fields</strong></a>
+                    <a class="format-card" href="./data/v1/records.json"><span>JSON</span><strong>Event records</strong><small>Programs</small></a>
+                    <a class="format-card" href="./data/v1/events.csv"><span>CSV</span><strong>Analysis table</strong><small>Excel / R / Python</small></a>
+                    <a class="format-card" href="./data/v1/events.parquet"><span>PARQUET</span><strong>Column table</strong><small>DuckDB / Arrow</small></a>
+                    <a class="format-card" href="./data/v1/events.geojson"><span>GEOJSON</span><strong>Map data</strong><small>GIS</small></a>
+                    <a class="format-card" href="./data/v1/events.ndjson"><span>NDJSON</span><strong>Line records</strong><small>Command line</small></a>
+                    <a class="format-card" href="./data/v1/schema.json"><span>SCHEMA</span><strong>Field rules</strong><small>JSON Schema 2020-12</small></a>
                 </div>
                 <div class="code-card">
                     <div class="code-card__head"><span>EXAMPLE</span><button type="button" data-copy-target="curl-example">COPY</button></div>
@@ -246,32 +246,39 @@
                 </div>
             </div>
             <div class="license-note">
-                <a href="./LICENSE">Licence</a>
+                <strong>LICENCE</strong>
+                <p>Event records are published for consultation. Third-party sources follow their own terms.</p>
+                <a href="./LICENSE">Read the license →</a>
             </div>
         </section>
 
         <section class="agent-section" id="agent-query" aria-labelledby="agent-title">
             <div class="agent-copy">
                 <p class="section-index"><span>04</span> QUERY</p>
-                <h2 id="agent-title">Field filter</h2>
-                <p>Filter by disease, place, and date.</p>
-                <p>Dengue in Asia <strong id="agent-match-count">—</strong></p>
+                <h2 id="agent-title">Search by field</h2>
+                <p>Records can be filtered by disease, place, and date. Results include the source and the data status.</p>
                 <div class="agent-actions">
                     <a class="button button--primary" href="./skills/epic-disease-query/SKILL.md">Query notes</a>
                     <a class="button button--paper" href="./data/v1/manifest.json">Data manifest</a>
                 </div>
             </div>
+            <div class="agent-demo" aria-label="Query example">
+                <div class="agent-demo__bar"><span>EXAMPLE</span></div>
+                <div class="agent-message agent-message--user"><small>REQUEST</small><p>List dengue events in Asia, sort by case count, and keep the source.</p></div>
+                <div class="agent-message agent-message--epic"><small>RESULT</small><p>Matched <strong id="agent-match-count">—</strong> records.</p></div>
+            </div>
         </section>
 
         <section class="method-section" id="methodology" aria-labelledby="method-title">
             <header class="section-heading section-heading--split">
-                <div><p class="section-index"><span>05</span> METHOD</p><h2 id="method-title">Processing</h2></div>
+                <div><p class="section-index"><span>05</span> METHOD</p><h2 id="method-title">How records are prepared</h2></div>
+                <p>Time, source, and quality checks are stored with each record.</p>
             </header>
             <div class="method-grid">
-                <article><h3>Time</h3><p>Build time, data-as-of date, and last collection are stored separately. An empty collection keeps the previous file.</p></article>
-                <article><h3>Fields</h3><p>Event date, reporting period, and publication date are separate. Disease names use one category. Counts are cases, deaths, and hospitalizations.</p></article>
-                <article><h3>Checks</h3><p>Before release: future dates, sudden drops in record count, source addresses, coordinates, duplicate records, schema.</p></article>
-                <article><h3>Coordinates</h3><p>Some points are only at country level. Geocoding has error.</p></article>
+                <article><span>TIME</span><h3>Separate the time fields</h3><p>Build time, the data-as-of date, and the time of the last successful collection are stored separately. An empty collection keeps the previous snapshot.</p></article>
+                <article><span>FIELDS</span><h3>Standardize the fields</h3><p>Event date, reporting period, and publication date stay distinct. Disease names are assigned to one category. Counts are split into cases, deaths, and hospitalizations.</p></article>
+                <article><span>CHECK</span><h3>Check before release</h3><p>Future dates, sudden drops in record count, source addresses, coordinates, duplicate records, and schema validity are checked before release.</p></article>
+                <article><span>SCOPE</span><h3>Coordinates</h3><p>Some coordinates are given only at country level.</p></article>
             </div>
             <div class="method-links">
                 <a href="./methodology.html">Methodology</a>
@@ -279,6 +286,11 @@
                 <a href="./DATA_DICTIONARY.md">Data dictionary</a>
                 <a href="./data/v1/quality-report.json">Current quality report</a>
                 <a href="./CITATION.cff">How to cite</a>
+            </div>
+            <div class="who-strip" aria-label="Who it serves">
+                <span><strong>RESEARCH</strong> Use the source and quality fields in event analysis.</span>
+                <span><strong>APPLICATION</strong> Read the record, then check the original notice.</span>
+                <span><strong>DATA</strong> Use the versioned files and the schema.</span>
             </div>
         </section>
 
@@ -319,7 +331,7 @@
     </script>
     <link rel="stylesheet" href="./assets/epic/vendor/leaflet/leaflet.css?v=20260815-rebuild">
     <script src="./assets/epic/vendor/leaflet/leaflet.js?v=20260815-rebuild"></script>
-    <script src="./assets/epic/js/i18n.js?v=20260924-plain"></script>
+    <script src="./assets/epic/js/i18n.js?v=20260924-links2"></script>
     <script src="./assets/epic/js/dashboard.js?v=20260924-read2"></script>
 </body>
 </html>
