@@ -101,8 +101,8 @@ button { font-family: inherit; font-size: inherit; color: inherit; }
 /* === Status bar === */
 .site-status { background: var(--bg-0); border-bottom: 1px solid var(--line-0); font-size: 12px; }
 .site-status__inner {
-    display: flex; gap: 12px; align-items: center;
-    max-width: var(--max); min-height: 32px; margin: 0 auto; padding: 0 24px;
+    display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center;
+    max-width: var(--max); min-height: 32px; margin: 0 auto; padding: 6px 24px;
     font-family: var(--mono); font-size: 11px;
 }
 .status-orb { width: 7px; height: 7px; flex-shrink: 0; border-radius: 50%; background: var(--warn); }
@@ -110,7 +110,7 @@ button { font-family: inherit; font-size: inherit; color: inherit; }
 .site-status[data-status="failed"] .status-orb { background: var(--danger); }
 .site-status strong { color: var(--text-0); font-weight: 600; }
 .site-status span { color: var(--text-2); }
-.site-status a { margin-left: auto; color: var(--text-2); }
+.site-status a { margin-left: auto; color: var(--text-2); white-space: nowrap; flex-shrink: 0; }
 .site-status a:hover { color: var(--accent); }
 .status--good { color: var(--good); }
 .status--danger { color: var(--danger); }
