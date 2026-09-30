@@ -39,8 +39,7 @@ def render_poster():
             page.screenshot(path=str(POSTER_PATH), type="jpeg", quality=94)
 
             page.goto(f"{base_url}/", wait_until="networkidle")
-            # The site defaults to the dark monitoring console; the social-card
-            # capture intentionally renders the light variant.
+            # Keep the surface checks in light mode, independent of saved preferences.
             page.evaluate("localStorage.setItem('epic-theme', 'light'); location.reload();")
             page.wait_for_load_state("networkidle")
             assert page.locator("html").get_attribute("lang") == "en"
@@ -76,7 +75,9 @@ def render_poster():
             assert page.locator("#date-from-input").get_attribute("aria-invalid") is None
 
             page.locator("#map-panel").scroll_into_view_if_needed()
-            page.wait_for_selector(".land-shape")
+            # The dashboard uses Leaflet tiles, not the retired SVG land layer.
+            page.wait_for_selector("#map.leaflet-container .leaflet-tile", state="attached")
+            page.wait_for_selector("#map .leaflet-control-zoom")
             page.wait_for_selector(".cluster-badge")
             assert page.locator(".region-sidebar__item").count() > 0
             assert page.locator(".abstract-world").count() == 0
