@@ -1,4 +1,5 @@
 import functools
+import re
 import threading
 import unittest
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -41,7 +42,7 @@ class FrontendRebuildBrowserTests(unittest.TestCase):
 
             context = browser.new_context(viewport={"width": 1440, "height": 1000})
             page = context.new_page()
-            page.on("request", lambda request: external_requests.append(request.url) if request.url.startswith("http") and not request.url.startswith(self.base_url) else None)
+            context.on("request", lambda request: external_requests.append(request.url) if request.url.startswith("http") and not request.url.startswith(self.base_url) else None)
             page.goto(self.base_url, wait_until="networkidle")
             page.wait_for_timeout(1200)
 
@@ -52,9 +53,11 @@ class FrontendRebuildBrowserTests(unittest.TestCase):
             self.assertLessEqual(page.locator("#overview-grid").bounding_box()["y"], 1000)
             self.assertLessEqual(page.locator("#filters-form").bounding_box()["y"], 1000)
 
-            # Real map: land silhouette and clustered markers must exist.
+            # Real map: Leaflet tile layer, controls and event markers must exist.
             page.locator("#map-panel").scroll_into_view_if_needed()
-            page.wait_for_timeout(1200)
+            page.wait_for_selector("#map.leaflet-container .leaflet-tile", state="attached")
+            page.wait_for_selector("#map .leaflet-control-zoom")
+            page.wait_for_selector("#map .cluster-badge")
             self.assertGreater(page.locator(".leaflet-tile").count(), 0)
             self.assertIn("Amap", page.locator(".map-footnote").inner_text())
             self.assertGreater(page.locator(".cluster-badge").count(), 0)
@@ -82,6 +85,7 @@ class FrontendRebuildBrowserTests(unittest.TestCase):
             context.close()
 
             context = browser.new_context(viewport={"width": 390, "height": 844})
+            context.on("request", lambda request: external_requests.append(request.url) if request.url.startswith("http") and not request.url.startswith(self.base_url) else None)
             page = context.new_page()
             page.goto(self.base_url, wait_until="networkidle")
             page.wait_for_timeout(900)
@@ -96,7 +100,10 @@ class FrontendRebuildBrowserTests(unittest.TestCase):
             context.close()
             browser.close()
 
-        self.assertEqual(external_requests, [])
+        # Leaflet is self-hosted; only the configured Amap raster tiles may be external.
+        allowed_tiles = re.compile(r"^https://webrd0[1-4]\.is\.autonavi\.com/appmaptile\?")
+        self.assertTrue(external_requests, "the basemap did not request any tiles")
+        self.assertEqual([url for url in external_requests if not allowed_tiles.match(url)], [])
 
 
 if __name__ == "__main__":

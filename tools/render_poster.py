@@ -76,7 +76,9 @@ def render_poster():
             assert page.locator("#date-from-input").get_attribute("aria-invalid") is None
 
             page.locator("#map-panel").scroll_into_view_if_needed()
-            page.wait_for_selector(".land-shape")
+            # The dashboard uses Leaflet tiles, not the retired SVG land layer.
+            page.wait_for_selector("#map.leaflet-container .leaflet-tile", state="attached")
+            page.wait_for_selector("#map .leaflet-control-zoom")
             page.wait_for_selector(".cluster-badge")
             assert page.locator(".region-sidebar__item").count() > 0
             assert page.locator(".abstract-world").count() == 0

@@ -94,9 +94,11 @@ def validate_english_surface():
 
     required_surface_markers = {
         'id="event-cards"': "responsive event cards",
-        "ATLAS / EVENT DISTRIBUTION": "interactive event map",
-        "land-110m.geojson": "self-hosted land basemap",
-        "Basemap shows land outline only": "map sovereignty footnote",
+        'id="map"': "interactive event map",
+        "assets/epic/vendor/leaflet/leaflet.css": "self-hosted Leaflet styles",
+        "assets/epic/vendor/leaflet/leaflet.js": "self-hosted Leaflet runtime",
+        "Basemap: Amap.": "map provider attribution",
+        "Some points are country or administrative centroids.": "map precision footnote",
         'id="density-compact"': "table density switch",
         'type="text" inputmode="numeric"': "locale-neutral date inputs",
         'placeholder="YYYY-MM-DD"': "ISO date guidance",
@@ -120,6 +122,9 @@ def validate_english_surface():
         "displayMeasures",
         "displayTransmission",
         "renderEventCards",
+        "window.L.map(elements.map",
+        "window.L.tileLayer",
+        "renderLeafletClusters",
     ):
         if marker not in dashboard_text:
             fail(f"dashboard regression: missing {marker}")
