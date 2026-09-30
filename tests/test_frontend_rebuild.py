@@ -47,7 +47,14 @@ class FrontendRebuildBrowserTests(unittest.TestCase):
             page.wait_for_timeout(1200)
 
             self.assertEqual(page.locator("html").get_attribute("lang"), "en")
+            self.assertEqual(page.locator("html").get_attribute("data-theme"), "light")
+            # The current header defaults to light; both themes remain supported.
+            page.locator("#theme-toggle").click()
             self.assertEqual(page.locator("html").get_attribute("data-theme"), "dark")
+            page.reload(wait_until="networkidle")
+            self.assertEqual(page.locator("html").get_attribute("data-theme"), "dark")
+            page.locator("#theme-toggle").click()
+            self.assertEqual(page.locator("html").get_attribute("data-theme"), "light")
 
             # First-screen density: metrics and filters must sit above the fold.
             self.assertLessEqual(page.locator("#overview-grid").bounding_box()["y"], 1000)

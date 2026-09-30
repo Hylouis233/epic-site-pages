@@ -39,8 +39,7 @@ def render_poster():
             page.screenshot(path=str(POSTER_PATH), type="jpeg", quality=94)
 
             page.goto(f"{base_url}/", wait_until="networkidle")
-            # The site defaults to the dark monitoring console; the social-card
-            # capture intentionally renders the light variant.
+            # Keep the surface checks in light mode, independent of saved preferences.
             page.evaluate("localStorage.setItem('epic-theme', 'light'); location.reload();")
             page.wait_for_load_state("networkidle")
             assert page.locator("html").get_attribute("lang") == "en"
