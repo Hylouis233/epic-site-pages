@@ -811,7 +811,12 @@
     }
 
     function syncFiltersToUrl() {
-        const query = buildQuery();
+        const searchParams = new URLSearchParams(buildQuery());
+        const language = new URLSearchParams(window.location.search).get("lang");
+        if (language) {
+            searchParams.set("lang", language);
+        }
+        const query = searchParams.toString();
         const nextUrl = `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash || "#events"}`;
         window.history.replaceState({}, "", nextUrl);
     }
@@ -828,6 +833,14 @@
         Object.keys(fields).forEach(function (key) {
             const value = searchParams.get(key) || "";
             if (fields[key]) {
+                // Options arrive with the overview. Keep a URL selection available
+                // until syncSelectOptions replaces it with the dataset options.
+                if (value && fields[key].tagName === "SELECT") {
+                    const option = document.createElement("option");
+                    option.value = value;
+                    option.textContent = key === "disease" ? displayDisease(value) : displayContinent(value);
+                    fields[key].appendChild(option);
+                }
                 fields[key].value = value;
             }
         });
@@ -863,6 +876,10 @@
     }
 
     function readFiltersFromDom() {
+        const headerKeyword = document.getElementById("header-keyword");
+        if (headerKeyword) {
+            headerKeyword.value = elements.keywordInput.value;
+        }
         const dateFrom = elements.dateFromInput.value.trim();
         const dateTo = elements.dateToInput.value.trim();
         const formatMessage = t("Enter a real date as YYYY-MM-DD.", "请输入有效日期，格式为 YYYY-MM-DD。");
@@ -991,7 +1008,13 @@
         defaultOption.textContent = placeholder;
         selectElement.appendChild(defaultOption);
 
-        (Array.isArray(options) ? options : []).forEach((item) => {
+        const availableOptions = Array.isArray(options) ? options.slice() : [];
+        // Older shared links can reference a value absent from this snapshot.
+        // Keep that active filter visible rather than showing an unfiltered select.
+        if (currentValue && !availableOptions.includes(currentValue)) {
+            availableOptions.push(currentValue);
+        }
+        availableOptions.forEach((item) => {
             const option = document.createElement("option");
             option.value = item;
             option.textContent = selectElement === elements.diseaseSelect
