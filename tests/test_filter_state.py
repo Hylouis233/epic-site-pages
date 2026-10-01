@@ -7,7 +7,7 @@ import test_frontend_rebuild as frontend
 PLAYWRIGHT_AVAILABLE = frontend.PLAYWRIGHT_AVAILABLE
 
 if PLAYWRIGHT_AVAILABLE:
-    from playwright.sync_api import sync_playwright
+    from playwright.sync_api import expect, sync_playwright
 
 
 @unittest.skipUnless(PLAYWRIGHT_AVAILABLE, "playwright is not installed")
@@ -19,7 +19,7 @@ class FilterStateBrowserTests(unittest.TestCase):
         page = browser.new_page(viewport={"width": width, "height": 1000})
         page.route("https://webrd*.is.autonavi.com/**", lambda route: route.abort())
         page.goto(self.base_url + query)
-        page.wait_for_function("document.querySelector('#disease-select').options.length > 1")
+        page.locator("#overview-grid .metric-card").first.wait_for()
         return page
 
     def test_shared_select_filters_survive_reload_and_language_switch(self):
@@ -39,12 +39,12 @@ class FilterStateBrowserTests(unittest.TestCase):
                 self.assertNotEqual(expected, '0 matches')
                 for action in (lambda: page.reload(), lambda: page.locator('#language-toggle').click()):
                     action()
-                    page.wait_for_function("document.querySelector('#disease-select').options.length > 1")
+                    page.locator("#overview-grid .metric-card").first.wait_for()
                     self.assertEqual(page.locator('#disease-select').input_value(), disease)
                     self.assertEqual(page.locator('#continent-select').input_value(), continent)
                 page.goto(self.base_url + '?' + urlencode({'disease': disease, 'continent': continent, 'lang': 'en'}))
-                page.wait_for_function("document.querySelector('#disease-select').options.length > 1")
-                self.assertEqual(page.locator('#filter-result').inner_text(), expected)
+                page.locator("#overview-grid .metric-card").first.wait_for()
+                expect(page.locator('#filter-result')).to_have_text(expected)
 
     def test_reset_clears_both_search_fields_on_desktop_and_mobile(self):
         with sync_playwright() as playwright:
@@ -71,7 +71,21 @@ class FilterStateBrowserTests(unittest.TestCase):
                 page.wait_for_timeout(400)
                 self.assertEqual(parse_qs(urlparse(page.url).query).get('lang'), ['zh-CN'])
                 page.reload()
-                page.wait_for_function("document.querySelector('#disease-select').options.length > 1")
+                page.locator("#overview-grid .metric-card").first.wait_for()
                 self.assertEqual(page.locator('html').get_attribute('lang'), 'zh-CN')
                 page.locator('#reset-filters').click()
                 self.assertEqual(parse_qs(urlparse(page.url).query).get('lang'), ['zh-CN'])
+
+    def test_old_shared_link_keeps_unavailable_filters_visible(self):
+        with sync_playwright() as playwright:
+            with playwright.chromium.launch() as browser:
+                page = self.open_page(browser, '?' + urlencode({
+                    'disease': 'Retired disease', 'continent': 'Retired region',
+                }))
+                expect(page.locator('#disease-select')).to_have_value('Retired disease')
+                expect(page.locator('#continent-select')).to_have_value('Retired region')
+                expect(page.locator('#filter-result')).to_have_text('0 matches')
+                page.locator('#reset-filters').click()
+                expect(page.locator('#disease-select')).to_have_value('')
+                expect(page.locator('#continent-select')).to_have_value('')
+                expect(page.locator('#filter-result')).not_to_have_text('0 matches')
