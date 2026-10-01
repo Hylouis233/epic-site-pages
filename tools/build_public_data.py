@@ -1307,22 +1307,53 @@ def fetch_table_records(base_url):
     records = []
     page = 1
     total = None
+    seen_records = set()
     while True:
         payload = fetch_json(base_url, f"/api/data/table/?page={page}&page_size={MAX_TABLE_PAGE_SIZE}")
         if not isinstance(payload, dict):
             raise ValueError("table data response must be an object")
-        items = payload.get("items") or []
-        if not isinstance(items, list):
-            raise ValueError("table data items must be a list")
-        records.extend([item for item in items if isinstance(item, dict)])
-        try:
-            total = int(payload.get("total") or len(records))
-        except Exception:
-            total = len(records)
-        if not items or len(records) >= total:
-            break
+        items = payload.get("items")
+        if not isinstance(items, list) or any(not isinstance(item, dict) for item in items):
+            raise ValueError("table data items must be a list of objects")
+
+        raw_total = payload.get("total")
+        if raw_total is not None:
+            try:
+                page_total = int(raw_total)
+            except (TypeError, ValueError, OverflowError) as exc:
+                raise ValueError("table data total must be a non-negative integer") from exc
+            if (
+                isinstance(raw_total, bool)
+                or page_total < 0
+                or (isinstance(raw_total, float) and raw_total != page_total)
+            ):
+                raise ValueError("table data total must be a non-negative integer")
+            if total is not None and page_total != total:
+                raise ValueError(f"table data total changed during pagination: {total} to {page_total}")
+            total = page_total
+
+        if not items:
+            if total is not None and len(records) != total:
+                raise ValueError(f"table data incomplete: received {len(records)} of {total} records")
+            return records
+
+        # Replayed or overlapping pages must not pad a partial snapshot up to
+        # its total. Within-page duplicates remain the quality gate's concern.
+        page_records = {
+            hashlib.sha256(json.dumps(item, sort_keys=True).encode("utf-8")).hexdigest()
+            for item in items
+        }
+        if seen_records.intersection(page_records):
+            raise ValueError(f"table data repeated records across pages at page {page}")
+        seen_records.update(page_records)
+        records.extend(items)
+        if total is not None:
+            if len(records) > total:
+                raise ValueError(f"table data record count {len(records)} exceeds declared total {total}")
+            if len(records) == total:
+                return records
+        # When total is absent, only an explicit empty page proves completion.
         page += 1
-    return records
 
 
 def rewrite_rss_site_url(rss_text, public_site_url):
@@ -1823,7 +1854,6 @@ def resolve_bootstrap_last_success(previous_meta):
     return (
         clean_text(previous_meta.get("last_successful_ingest_at"))
         or clean_text(os.getenv("EPIC_BOOTSTRAP_LAST_SUCCESSFUL_INGEST_AT"))
-        or "2026-07-11T05:23:39Z"
     )
 
 
@@ -1831,9 +1861,6 @@ def build_from_existing(build_utc, public_site_url, warnings=None):
     warnings = list(warnings or [])
     raw_records = read_json(DATA_DIR / "records.json", list)
     previous_meta = read_json(DATA_DIR / "build_meta.json", dict)
-    observed_at = clean_text(previous_meta.get("last_successful_ingest_at")) or resolve_bootstrap_last_success(
-        previous_meta
-    )
     records = normalize_records(
         raw_records,
         build_utc=build_utc,

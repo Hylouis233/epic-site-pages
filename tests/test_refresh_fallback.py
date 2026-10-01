@@ -58,6 +58,7 @@ class RefreshFallbackTests(unittest.TestCase):
             stack.enter_context(patch.dict(os.environ, {
                 "EPIC_PUBLIC_SOURCE_BASE_URL": "https://example.invalid/",
                 "EPIC_PUBLIC_SITE_URL": builder.PUBLIC_SITE_URL,
+                "EPIC_BOOTSTRAP_LAST_SUCCESSFUL_INGEST_AT": "",
             }))
             fetch_mock = stack.enter_context(patch.object(builder, "fetch_json", side_effect=fetch))
             stack.enter_context(contextlib.redirect_stdout(io.StringIO()))
@@ -122,6 +123,55 @@ class RefreshFallbackTests(unittest.TestCase):
         self.assert_retained(manifest)
         self.assertEqual(fetch_mock.call_count, 3)
 
+    def test_early_empty_page_preserves_snapshot_and_failure_diagnostics(self):
+        # This prefix is large enough to pass the ordinary record-drop gate.
+        partial_count = len(self.previous_records) * 4 // 5
+        manifest, fetch_mock = self.run_refresh({
+            "/api/data/": TimeoutError("primary timeout"),
+            self.TABLE_PATH: {
+                "items": self.previous_records[:partial_count],
+                "total": len(self.previous_records),
+            },
+            "/api/data/table/?page=2&page_size=200": {
+                "items": [], "total": len(self.previous_records),
+            },
+        })
+        self.assert_retained(manifest)
+        self.assertIn("incomplete", " ".join(manifest["warnings"]))
+        self.assertEqual(fetch_mock.call_count, 3)
+
+    def test_healthy_primary_remains_accepted_when_table_is_incomplete(self):
+        responses = self.healthy_responses()
+        responses[self.TABLE_PATH] = {
+            "items": self.previous_records[:1], "total": len(self.previous_records),
+        }
+        responses["/api/data/table/?page=2&page_size=200"] = {
+            "items": [], "total": len(self.previous_records),
+        }
+        manifest, _ = self.run_refresh(responses)
+        validator.validate_fresh_ingest(manifest)
+        self.assertEqual(manifest["record_count"], len(self.previous_records))
+        self.assertEqual(manifest["last_successful_ingest_at"], self.build_at)
+        self.assertIn("incomplete", " ".join(manifest["warnings"]))
+
+    def test_overlapping_pages_cannot_make_partial_snapshot_look_complete(self):
+        partial_count = len(self.previous_records) * 4 // 5
+        missing_count = len(self.previous_records) - partial_count
+        manifest, fetch_mock = self.run_refresh({
+            "/api/data/": TimeoutError("primary timeout"),
+            self.TABLE_PATH: {
+                "items": self.previous_records[:partial_count],
+                "total": len(self.previous_records),
+            },
+            "/api/data/table/?page=2&page_size=200": {
+                "items": self.previous_records[:missing_count],
+                "total": len(self.previous_records),
+            },
+        })
+        self.assert_retained(manifest)
+        self.assertIn("repeated", " ".join(manifest["warnings"]))
+        self.assertEqual(fetch_mock.call_count, 3)
+
     def test_invalid_primary_and_table_payloads_retain_snapshot(self):
         manifest, fetch_mock = self.run_refresh({
             "/api/data/": {"error": "unavailable"},
@@ -164,6 +214,37 @@ class RefreshFallbackTests(unittest.TestCase):
         )
         with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
             validator.validate_fresh_ingest(manifest)
+
+    def test_outage_without_snapshot_or_metadata_does_not_invent_ingest_time(self):
+        for name in ("records.json", "data.json", "build_meta.json"):
+            (self.data / name).unlink()
+        manifest, _ = self.run_refresh({
+            "/api/data/": TimeoutError("primary timeout"),
+            self.TABLE_PATH: TimeoutError("table timeout"),
+        })
+        self.assertEqual(manifest["source_status"], "failed")
+        self.assertEqual(manifest["record_count"], 0)
+        self.assertFalse(manifest["quality_gate"]["passed"])
+        self.assertFalse(manifest["quality_gate"]["ingest_accepted"])
+        self.assertEqual(manifest["last_successful_ingest_at"], "")
+        self.assertEqual(manifest["data_as_of"], "")
+        self.assertIsNone(manifest["staleness_hours"])
+        self.assertEqual(self.read_json("build_meta.json")["last_successful_ingest_at"], "")
+
+
+class BootstrapTimestampTests(unittest.TestCase):
+    def test_absent_metadata_and_configuration_leave_timestamp_unknown(self):
+        with patch.dict(os.environ, {"EPIC_BOOTSTRAP_LAST_SUCCESSFUL_INGEST_AT": ""}):
+            self.assertEqual(builder.resolve_bootstrap_last_success({}), "")
+
+    def test_explicit_bootstrap_remains_supported_without_overriding_metadata(self):
+        with patch.dict(os.environ, {
+            "EPIC_BOOTSTRAP_LAST_SUCCESSFUL_INGEST_AT": "2026-08-01T00:00:00Z",
+        }):
+            self.assertEqual(builder.resolve_bootstrap_last_success({}), "2026-08-01T00:00:00Z")
+            self.assertEqual(builder.resolve_bootstrap_last_success({
+                "last_successful_ingest_at": "2026-09-01T00:00:00Z",
+            }), "2026-09-01T00:00:00Z")
 
 
 if __name__ == "__main__":
