@@ -31,11 +31,13 @@ The website and documentation are English-first. A persistent **中文** switch 
 - `data_as_of` — latest validated date represented in the snapshot;
 - `last_successful_ingest_at` — most recent upstream ingest accepted by the quality gate;
 - `source_status` — `healthy`, `degraded`, `stale`, or `failed`;
-- `staleness_hours` — time since the last accepted ingest;
+- `staleness_hours` — time since the last accepted ingest, measured at build time;
 - `warnings` — build and upstream warnings;
 - `quality_gate` — whether this refresh passed and accepted upstream data.
 
 Build time is never presented as data time. An empty, unavailable, or anomalously small upstream response retains the last-known-good snapshot and makes the scheduled GitHub Actions refresh fail visibly instead of reporting false success.
+
+The dashboard calculates the displayed data age from `last_successful_ingest_at` and the viewer's clock. A published `healthy` snapshot becomes `stale` in the dashboard once its age exceeds `stale_after_hours` (72 hours by default). The display updates every minute while visible and when the page is shown again. Published `degraded`, `failed`, and `stale` states are never upgraded by the browser; missing or future collection times display unknown age. This is freshness of the published snapshot, not a live upstream availability check. Downloaded manifests and generated event pages retain their build-time status.
 
 ## Quick examples
 
