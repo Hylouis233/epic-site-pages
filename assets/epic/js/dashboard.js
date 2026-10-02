@@ -757,17 +757,21 @@
     }
 
     function formatHours(value) {
-        const hours = Number(value);
-        if (!Number.isFinite(hours)) {
+        if (value === null || value === undefined || String(value).trim() === "") {
             return t("Unknown", "未知");
         }
-        if (hours >= 48) {
+        const hours = Number(value);
+        if (!Number.isFinite(hours) || hours < 0) {
+            return t("Unknown", "未知");
+        }
+        const roundedHours = Math.round(hours);
+        if (roundedHours >= 48) {
             return t(
-                `${Math.floor(hours / 24)}d ${Math.round(hours % 24)}h`,
-                `${Math.floor(hours / 24)} 天 ${Math.round(hours % 24)} 小时`,
+                `${Math.floor(roundedHours / 24)}d ${roundedHours % 24}h`,
+                `${Math.floor(roundedHours / 24)} 天 ${roundedHours % 24} 小时`,
             );
         }
-        return t(`${Math.round(hours)}h`, `${Math.round(hours)} 小时`);
+        return t(`${roundedHours}h`, `${roundedHours} 小时`);
     }
 
     function formatCount(value) {
@@ -1377,7 +1381,37 @@
         return state.staticManifestPromise;
     }
 
-    function renderManifest(manifest) {
+    function resolveManifestFreshness(manifest, now = Date.now()) {
+        // The manifest records build-time status. A static publication can age
+        // without another build, so derive display freshness without rewriting it.
+        const ingestTime = typeof manifest.last_successful_ingest_at === "string"
+            ? Date.parse(manifest.last_successful_ingest_at) : NaN;
+        const ageHours = Number.isFinite(ingestTime) && Number.isFinite(now) && ingestTime <= now
+            ? (now - ingestTime) / 3600000 : null;
+        const configuredThreshold = Number(manifest.stale_after_hours);
+        const threshold = manifest.stale_after_hours !== null && manifest.stale_after_hours !== ""
+            && Number.isFinite(configuredThreshold) && configuredThreshold >= 0
+            ? configuredThreshold : 72;
+        const display = { ...manifest, staleness_hours: ageHours };
+        // Never upgrade a published failure/degradation, or infer a new ingest.
+        if (manifest.source_status === "healthy" && (ageHours === null || ageHours > threshold)) {
+            Object.assign(display, {
+                source_status: "stale",
+                source_status_label: "陈旧",
+                source_status_label_en: "Stale",
+                status_message_en: ageHours === null
+                    ? "Freshness cannot be verified from the last successful collection time."
+                    : "The snapshot is older than the update limit.",
+                status_message_zh: ageHours === null
+                    ? "无法根据最近一次成功采集时间核验数据新鲜度。"
+                    : "数据快照已超过新鲜度阈值，请谨慎使用。",
+            });
+        }
+        return display;
+    }
+
+    function renderManifest(publishedManifest) {
+        const manifest = resolveManifestFreshness(publishedManifest);
         const status = manifest.source_status || "failed";
         const englishLabels = {
             healthy: "Healthy",
@@ -1447,6 +1481,22 @@
         }
         const tone = status === "healthy" ? "status--good" : status === "failed" ? "status--danger" : "status--warning";
         setHeroStatus(t(`Data status: ${label}`, `数据状态：${label}`), tone);
+    }
+
+    function refreshManifestFreshness() {
+        if (state.staticManifestPayload) {
+            renderManifest(state.staticManifestPayload);
+        }
+    }
+
+    function setupManifestFreshnessUpdates() {
+        window.setInterval(function () {
+            if (!document.hidden) refreshManifestFreshness();
+        }, 60000);
+        document.addEventListener("visibilitychange", function () {
+            if (!document.hidden) refreshManifestFreshness();
+        });
+        window.addEventListener("pageshow", refreshManifestFreshness);
     }
 
     async function loadManifest() {
@@ -2422,6 +2472,7 @@
         setupDensityToggle();
         setupLazyTableLoad();
         loadManifest();
+        setupManifestFreshnessUpdates();
         loadOverview();
         loadEpietl();
         loadMap();
