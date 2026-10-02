@@ -39,13 +39,13 @@
     },
     {
       "id": "duplicate_signals",
-      "status": "pass",
-      "value": 0,
+      "status": "warning",
+      "value": 3,
       "threshold": "0 after normalization"
     }
   ],
   "upstream_record_count": 61,
-  "accepted_record_count": 61,
+  "accepted_record_count": 58,
   "quarantined_record_count": 0,
   "quarantined": []
 }
