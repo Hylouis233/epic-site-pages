@@ -106,6 +106,24 @@ class TablePaginationTests(unittest.TestCase):
         records, _ = self.fetch_pages([{"items": rows, "total": 2}])
         self.assertEqual(records, rows)
 
+    def test_changed_metadata_cannot_hide_cross_page_overlap(self):
+        row = {"source": "https://example.org/report", "disease": "influenza", "location": "Example"}
+        with self.assertRaisesRegex(ValueError, "repeated"):
+            self.fetch_pages([
+                {"items": [row], "total": 2},
+                {"items": [{**row, "updated_at": "2026-10-02T00:00:00Z"}], "total": 2},
+            ])
+
+    def test_different_disease_or_location_at_same_source_remains_distinct(self):
+        row = {"source": "https://example.org/report", "disease": "influenza", "location": "Example"}
+        for other in ({**row, "disease": "measles"}, {**row, "location": "Elsewhere"}):
+            with self.subTest(other=other):
+                records, _ = self.fetch_pages([
+                    {"items": [row], "total": 2},
+                    {"items": [other], "total": 2},
+                ])
+                self.assertEqual(records, [row, other])
+
     def test_malformed_items_cannot_be_silently_discarded(self):
         for items in (None, {}, "", [None], [{"id": "first"}, "invalid"]):
             with self.subTest(items=items), self.assertRaises(ValueError):

@@ -1308,6 +1308,7 @@ def fetch_table_records(base_url):
     page = 1
     total = None
     seen_records = set()
+    seen_identities = set()
     while True:
         payload = fetch_json(base_url, f"/api/data/table/?page={page}&page_size={MAX_TABLE_PAGE_SIZE}")
         if not isinstance(payload, dict):
@@ -1343,9 +1344,20 @@ def fetch_table_records(base_url):
             hashlib.sha256(json.dumps(item, sort_keys=True).encode("utf-8")).hexdigest()
             for item in items
         }
-        if seen_records.intersection(page_records):
+        # Timestamps and other mutable fields can change between requests.
+        # Use the source/disease/location identity too when those fields are
+        # available, so an updated overlapping row cannot hide a missing row.
+        page_identities = set()
+        for item in items:
+            source = normalize_source_url(get_record_value(item, "source", FIELD_SOURCE))
+            disease = clean_text(get_record_value(item, "disease_raw", "disease", FIELD_DISEASE))
+            location = clean_text(get_record_value(item, "location", FIELD_LOCATION))
+            if is_public_http_url(source) and disease and location:
+                page_identities.add((source, disease, location))
+        if seen_records.intersection(page_records) or seen_identities.intersection(page_identities):
             raise ValueError(f"table data repeated records across pages at page {page}")
         seen_records.update(page_records)
+        seen_identities.update(page_identities)
         records.extend(items)
         if total is not None:
             if len(records) > total:

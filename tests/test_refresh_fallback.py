@@ -180,6 +180,26 @@ class RefreshFallbackTests(unittest.TestCase):
         self.assert_retained(manifest)
         self.assertEqual(fetch_mock.call_count, 2)
 
+    def test_updated_overlapping_rows_cannot_advance_freshness(self):
+        partial_count = len(self.previous_records) * 4 // 5
+        repeated = [
+            {**row, "updated_at": self.build_at}
+            for row in self.previous_records[:len(self.previous_records) - partial_count]
+        ]
+        manifest, fetch_mock = self.run_refresh({
+            "/api/data/": TimeoutError("primary timeout"),
+            self.TABLE_PATH: {
+                "items": self.previous_records[:partial_count],
+                "total": len(self.previous_records),
+            },
+            "/api/data/table/?page=2&page_size=200": {
+                "items": repeated, "total": len(self.previous_records),
+            },
+        })
+        self.assert_retained(manifest)
+        self.assertIn("repeated", " ".join(manifest["warnings"]))
+        self.assertEqual(fetch_mock.call_count, 3)
+
     def test_healthy_table_fallback_remains_accepted(self):
         responses = self.healthy_responses()
         responses["/api/data/"] = TimeoutError("primary timeout")
