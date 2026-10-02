@@ -1964,7 +1964,7 @@ def main(argv=None):
     previous_records = read_json(DATA_DIR / "records.json", list)
     previous_meta = read_json(DATA_DIR / "build_meta.json", dict)
 
-    table_records = []
+    compatibility_payload = []
     try:
         raw_records = fetch_json(public_base, "/api/data/")
         if not isinstance(raw_records, list):
@@ -1972,21 +1972,19 @@ def main(argv=None):
         compatibility_payload = ensure_compatibility_payload(raw_records)
     except Exception as exc:
         warnings.append(f"api data fetch failed, fell back to table endpoint: {exc}")
-        table_records = fetch_table_records(public_base)
-        compatibility_payload = [table_record_to_compatibility_record(record) for record in table_records]
-        warnings.append(f"table fallback loaded {len(table_records)} records")
 
-    if not table_records:
-        try:
-            table_records = fetch_table_records(public_base)
-        except Exception as exc:
-            warnings.append(f"table data fetch failed, normalized compatibility payload instead: {exc}")
-            table_records = normalize_records(
-                compatibility_payload,
-                build_utc=build_utc,
-                observed_at=format_utc_timestamp(build_utc),
-                previous_records=previous_records,
-            )
+    # Both endpoints may be unavailable. Keep failures inside the same fallback
+    # path so the retained snapshot and failed-ingest diagnostics are written.
+    try:
+        table_records = fetch_table_records(public_base)
+    except Exception as exc:
+        warnings.append(f"table data fetch failed, normalized compatibility payload instead: {exc}")
+        table_records = normalize_records(
+            compatibility_payload,
+            build_utc=build_utc,
+            observed_at=format_utc_timestamp(build_utc),
+            previous_records=previous_records,
+        )
     (
         compatibility_payload,
         table_records,
