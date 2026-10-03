@@ -3,6 +3,318 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_1f874de02bca3233c6bd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_1f874de02bca3233c6bd",
+        "published_at": "2026-10-02",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "皮纳拉斯县,帕斯科县,希尔斯伯勒县",
+        "continent": "北美洲",
+        "source_org": "Bay News 9",
+        "source_type": "news_media",
+        "source": "https://baynews9.com/fl/tampa/news/2026/10/01/pinellas-county-urges-residents-to-do-their-part-as-dengue-west-nile-activity-grows",
+        "description_cn": "美国佛罗里达州坦帕湾地区报告179例登革热确诊病例,两县延长紧急状态以加强灭蚊。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_723c48019408f381304e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.4,
+          36.8
+        ]
+      },
+      "properties": {
+        "event_id": "evt_723c48019408f381304e",
+        "published_at": "2026-10-02",
+        "disease_id": "unclassified-0dd445de",
+        "disease_name_zh": "流行性腮腺炎",
+        "location": "美国加利福尼亚州圣地亚哥州立大学",
+        "continent": "北美洲",
+        "source_org": "Yahoo Sports / SI",
+        "source_type": "news_media",
+        "source": "https://sports.yahoo.com/articles/college-football-program-lists-32-200702677.html",
+        "description_cn": "美国圣地亚哥州立大学橄榄球队暴发腮腺炎疫情,至少14人确诊,32名球员被列入伤病报告。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_55c31515183a3855d259",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_55c31515183a3855d259",
+        "published_at": "2026-10-02",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "Newtalk新闻（引述台湾疾管署）",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/nXpqWKJ",
+        "description_cn": "台湾彰化县新增1例本土登革热病例,距首例住家约110米,初步研判为社区群聚。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_f3fe27c4a1abbb53f1e9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_f3fe27c4a1abbb53f1e9",
+        "published_at": "2026-10-02",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "台湾卫福部疾管署",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/JPy02ry",
+        "description_cn": "台湾彰化县出现3年来首起本土登革热社区群聚,新增1例确诊,距首例住家约110米,患者住院治疗中。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_7c04da75f9a1d56d13e0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.1,
+          37.4
+        ]
+      },
+      "properties": {
+        "event_id": "evt_7c04da75f9a1d56d13e0",
+        "published_at": "2026-10-02",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国河南省",
+        "continent": "亚洲",
+        "source_org": "Outbreak News Today",
+        "source_type": "news_media",
+        "source": "https://outbreaknewstoday.substack.com/p/china-reports-two-additional-h9n2-8f2",
+        "description_cn": "中国新增2例H9N2禽流感病例,均为1岁女童,分别来自河南和广东,均为轻度病例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_5435946c8c340e473119",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.3,
+          23.1
+        ]
+      },
+      "properties": {
+        "event_id": "evt_5435946c8c340e473119",
+        "published_at": "2026-10-02",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国广东省",
+        "continent": "亚洲",
+        "source_org": "Outbreak News Today",
+        "source_type": "news_media",
+        "source": "https://outbreaknewstoday.substack.com/p/china-reports-two-additional-h9n2-8f2",
+        "description_cn": "中国新增2例H9N2禽流感病例,均为1岁女童,分别来自河南和广东,均为轻度病例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_f09c23fcb33d3efc3863",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_f09c23fcb33d3efc3863",
+        "published_at": "2026-10-02",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "旺得富",
+        "source_type": "other_open_source",
+        "source": "https://wantrich.chinatimes.com/news/20261002900102-420501",
+        "description_cn": "台湾流感疫情升温,5岁男童感染A流后家人相继染疫,阿嬷发展肺炎住院两周,专家建议及早接种疫苗。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_8ec0da20acf001b866b0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_8ec0da20acf001b866b0",
+        "published_at": "2026-10-02",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "自由时报",
+        "source_type": "other_open_source",
+        "source": "https://health.ltn.com.tw/article/breakingnews/5592305",
+        "description_cn": "台南新增1例越南境外移入登革热病例,返台后发烧确诊为第1型,为今年第8例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_4e16fd11037c3061ca1c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_4e16fd11037c3061ca1c",
+        "published_at": "2026-10-02",
+        "disease_id": "mpox",
+        "disease_name_zh": "猴痘",
+        "location": "法属",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/ocean-indien/bulletin-regional/surveillance-sanitaire-a-la-reunion-bulletin-du-2-octobre-2026",
+        "description_cn": "法属留尼汪2026年10月卫生监测公报:流感疫情活跃,钩端螺旋体病累计246例3死亡,Mpox 24例输入5例本土。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_263b0eb27059d0c105f6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_263b0eb27059d0c105f6",
+        "published_at": "2026-10-02",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "彰化县政府卫生局",
+        "source_type": "other_open_source",
+        "source": "https://molihua.org/mh-2578586",
+        "description_cn": "台湾彰化市新增1例本土登革热,为今年第2例本土个案,初步认定为社区群聚事件。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_219dae5fd66d4b3ba1b7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.1,
+          3.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_219dae5fd66d4b3ba1b7",
+        "published_at": "2026-10-02",
+        "disease_id": "unclassified-2b4038da",
+        "disease_name_zh": "基孔肯雅热",
+        "location": "法属圭亚那",
+        "continent": "南美洲",
+        "source_org": "Santepubliquefrance",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/guyane/bulletin-regional/chikungunya-et-dengue-en-guyane-bulletin-du-2-octobre-2026",
+        "description_cn": "法属圭亚那基孔肯雅热疫情持续,累计确诊2017例,多个区域仍处于流行或聚集阶段。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_95e09e956ca5295b900b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.3,
+          35.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_95e09e956ca5295b900b",
+        "published_at": "2026-10-02",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "巴基斯坦开伯尔-普什图省",
+        "continent": "亚洲",
+        "source_org": "DAWN",
+        "source_type": "other_open_source",
+        "source": "https://www.dawn.com/news/2034084/kohat-continues-to-record-highest-number-of-dengue-cases",
+        "description_cn": "巴基斯坦开伯尔-普什图省本周新增446例登革热,累计2,219例,科哈特县为疫情最严重地区。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_69b2b45cf4cdfd2cdb92",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6,
+          25.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_69b2b45cf4cdfd2cdb92",
+        "published_at": "2026-10-02",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "台北",
+        "continent": "亚洲",
+        "source_org": "Chinatimes",
+        "source_type": "other_open_source",
+        "source": "https://www.chinatimes.com/newspapers/20261002000582-260114",
+        "description_cn": "台湾流感季家庭传播预防提醒文章,以个案为例说明接种疫苗重要性。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_14d12d507149dde439a8",
       "geometry": {
         "type": "Point",
@@ -22,6 +334,30 @@
         "source_type": "other_open_source",
         "source": "https://www.314action.org/news/press-releases/pennsylvania-reports-fifth-measles-death-amid-worst-outbreak-in-u-s",
         "description_cn": "美国宾夕法尼亚州发生35年来最严重麻疹疫情,已致943人感染、176人住院、5人死亡。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_66bd15e855ce11dd2ebd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_66bd15e855ce11dd2ebd",
+        "published_at": "2026-10-01",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "卫福部疾病管制署",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/BEmp9KW",
+        "description_cn": "台湾彰化县新增1例本土登革热病例,初步研判与9月18日个案形成社区群聚。",
         "data_quality_score": 92
       }
     },
@@ -51,30 +387,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_d4adb869a88e298337b7",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -77.7,
-          41.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_d4adb869a88e298337b7",
-        "published_at": "2026-10-01",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国宾夕法尼亚州",
-        "continent": "北美洲",
-        "source_org": "WHYY News",
-        "source_type": "news_media",
-        "source": "https://whyy.org/articles/5th-measles-deaths-pennsylvania",
-        "description_cn": "美国宾夕法尼亚州麻疹疫情持续蔓延,已出现第5例死亡病例,疫区集中在兰开斯特县。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_2339d42b06d5241b5f72",
       "geometry": {
         "type": "Point",
@@ -89,6 +401,30 @@
         "disease_id": "measles",
         "disease_name_zh": "麻疹",
         "location": "美国宾夕法尼亚州兰开斯特县",
+        "continent": "北美洲",
+        "source_org": "WHYY News",
+        "source_type": "news_media",
+        "source": "https://whyy.org/articles/5th-measles-deaths-pennsylvania",
+        "description_cn": "美国宾夕法尼亚州麻疹疫情持续蔓延,已出现第5例死亡病例,疫区集中在兰开斯特县。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_d4adb869a88e298337b7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.7,
+          41.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_d4adb869a88e298337b7",
+        "published_at": "2026-10-01",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "美国宾夕法尼亚州",
         "continent": "北美洲",
         "source_org": "WHYY News",
         "source_type": "news_media",
@@ -123,6 +459,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_83e6a71e244c3d8ab1b1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.774,
+          12.8797
+        ]
+      },
+      "properties": {
+        "event_id": "evt_83e6a71e244c3d8ab1b1",
+        "published_at": "2026-10-01",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "菲律宾奎松市",
+        "continent": "亚洲",
+        "source_org": "菲律宾论坛报",
+        "source_type": "other_open_source",
+        "source": "https://tribune.net.ph/2026/10/01/qc-logs-alarming-dengue-cases-spike",
+        "description_cn": "奎松市今年1至9月报告5589例登革热感染和24例死亡,近期周感染率上升。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_426255ab2a56bfcad1ac",
       "geometry": {
         "type": "Point",
@@ -143,6 +503,30 @@
         "source": "https://www.wtsp.com/article/news/health/tampa-dengue-survivor-illness-story/67-8251c098-2ea7-4d68-8d5f-5705082e6fb9",
         "description_cn": "美国佛罗里达州希尔斯伯勒县出现登革热病例,当地确诊第3例。",
         "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_9ef2ba01d57806665f8b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0,
+          51.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_9ef2ba01d57806665f8b",
+        "published_at": "2026-10-01",
+        "disease_id": "unclassified-b2b15e0a",
+        "disease_name_zh": "辛德比斯病毒",
+        "location": "德国巴登-符腾堡州",
+        "continent": "欧洲",
+        "source_org": "RKI",
+        "source_type": "other_open_source",
+        "source": "https://www.rki.de/DE/Aktuelles/Publikationen/Epidemiologisches-Bulletin/2026/40_26.html",
+        "description_cn": "2026年10月01日 德国巴登-符腾堡州发生辛德比斯病毒感染相关疫情,1例(首例本土有症状病例)",
+        "data_quality_score": 80
       }
     },
     {
@@ -214,6 +598,30 @@
         "source_type": "news_media",
         "source": "https://outbreaknewstoday.substack.com/p/philippines-agusan-del-sur-health",
         "description_cn": "菲律宾阿古桑德尔苏尔省宣布全省登革热暴发,7个多月674例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_b35364af798338eaab99",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.5,
+          22.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_b35364af798338eaab99",
+        "published_at": "2026-10-01",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国澳门",
+        "continent": "亚洲",
+        "source_org": "GOV",
+        "source_type": "other_open_source",
+        "source": "https://www.gov.mo/zh-hant/news/1270957",
+        "description_cn": "澳门一中学班级8名学生出现流感样症状,4人甲流阳性。",
         "data_quality_score": 92
       }
     },
@@ -339,30 +747,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_76fedd686f1b5e54cd66",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.774,
-          12.8797
-        ]
-      },
-      "properties": {
-        "event_id": "evt_76fedd686f1b5e54cd66",
-        "published_at": "2026-09-29",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "菲律宾卡马里内斯苏尔省",
-        "continent": "亚洲",
-        "source_org": "菲律宾星报",
-        "source_type": "other_open_source",
-        "source": "https://www.philstar.com/nation/2026/09/29/2559763/camsur-declares-state-calamity-amid-rising-dengue-cases",
-        "description_cn": "菲律宾卡马里内斯苏尔省因登革热激增宣布灾难状态,已有1233例确诊和18例死亡。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_d32bba085bd2a370bc78",
       "geometry": {
         "type": "Point",
@@ -401,6 +785,30 @@
         "disease_id": "dengue",
         "disease_name_zh": "登革热",
         "location": "菲律宾那牙市",
+        "continent": "亚洲",
+        "source_org": "菲律宾星报",
+        "source_type": "other_open_source",
+        "source": "https://www.philstar.com/nation/2026/09/29/2559763/camsur-declares-state-calamity-amid-rising-dengue-cases",
+        "description_cn": "菲律宾卡马里内斯苏尔省因登革热激增宣布灾难状态,已有1233例确诊和18例死亡。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_76fedd686f1b5e54cd66",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.774,
+          12.8797
+        ]
+      },
+      "properties": {
+        "event_id": "evt_76fedd686f1b5e54cd66",
+        "published_at": "2026-09-29",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "菲律宾卡马里内斯苏尔省",
         "continent": "亚洲",
         "source_org": "菲律宾星报",
         "source_type": "other_open_source",
@@ -483,6 +891,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_06c5a309156b4729f000",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.9,
+          6.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_06c5a309156b4729f000",
+        "published_at": "2026-09-29",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "科伦坡",
+        "continent": "亚洲",
+        "source_org": "新华社",
+        "source_type": "other_open_source",
+        "source": "http://www.xinhuanet.com/english/asiapacific/20260929/ac27d2e53cd8482390a4ec3ca0eae890/c.html",
+        "description_cn": "斯里兰卡卫生部通报,2026年截至9月底累计报告超10万例登革热病例,77人死亡。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_bd3448a1359004bd3cdb",
       "geometry": {
         "type": "Point",
@@ -497,30 +929,6 @@
         "disease_id": "dengue",
         "disease_name_zh": "登革热",
         "location": "加姆帕哈",
-        "continent": "亚洲",
-        "source_org": "新华社",
-        "source_type": "other_open_source",
-        "source": "http://www.xinhuanet.com/english/asiapacific/20260929/ac27d2e53cd8482390a4ec3ca0eae890/c.html",
-        "description_cn": "斯里兰卡卫生部通报,2026年截至9月底累计报告超10万例登革热病例,77人死亡。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_916a3271939b2e0a6067",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          79.9,
-          6.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_916a3271939b2e0a6067",
-        "published_at": "2026-09-29",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "斯里兰卡西部省",
         "continent": "亚洲",
         "source_org": "新华社",
         "source_type": "other_open_source",
@@ -555,7 +963,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_06c5a309156b4729f000",
+      "id": "evt_916a3271939b2e0a6067",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -564,11 +972,11 @@
         ]
       },
       "properties": {
-        "event_id": "evt_06c5a309156b4729f000",
+        "event_id": "evt_916a3271939b2e0a6067",
         "published_at": "2026-09-29",
         "disease_id": "dengue",
         "disease_name_zh": "登革热",
-        "location": "科伦坡",
+        "location": "斯里兰卡西部省",
         "continent": "亚洲",
         "source_org": "新华社",
         "source_type": "other_open_source",
@@ -603,30 +1011,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_b100466dd9b750530b10",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          79.9,
-          6.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_b100466dd9b750530b10",
-        "published_at": "2026-09-29",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "西部省",
-        "continent": "亚洲",
-        "source_org": "中国日报",
-        "source_type": "other_open_source",
-        "source": "https://www.chinadaily.com.cn/a/202609/29/WS6abb6825e4b06d4aa0560cdd.html",
-        "description_cn": "斯里兰卡2026年累计报告超10万例登革热病例,77人死亡,西部省疫情最严重。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_e494e0664ac9c9304415",
       "geometry": {
         "type": "Point",
@@ -651,20 +1035,20 @@
     },
     {
       "type": "Feature",
-      "id": "evt_c5fbf68a97ae10cc06d3",
+      "id": "evt_b100466dd9b750530b10",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          80.8,
-          7.9
+          79.9,
+          6.9
         ]
       },
       "properties": {
-        "event_id": "evt_c5fbf68a97ae10cc06d3",
+        "event_id": "evt_b100466dd9b750530b10",
         "published_at": "2026-09-29",
         "disease_id": "dengue",
         "disease_name_zh": "登革热",
-        "location": "斯里兰卡",
+        "location": "西部省",
         "continent": "亚洲",
         "source_org": "中国日报",
         "source_type": "other_open_source",
@@ -689,6 +1073,30 @@
         "disease_id": "dengue",
         "disease_name_zh": "登革热",
         "location": "加姆帕哈",
+        "continent": "亚洲",
+        "source_org": "中国日报",
+        "source_type": "other_open_source",
+        "source": "https://www.chinadaily.com.cn/a/202609/29/WS6abb6825e4b06d4aa0560cdd.html",
+        "description_cn": "斯里兰卡2026年累计报告超10万例登革热病例,77人死亡,西部省疫情最严重。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_c5fbf68a97ae10cc06d3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8,
+          7.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_c5fbf68a97ae10cc06d3",
+        "published_at": "2026-09-29",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "斯里兰卡",
         "continent": "亚洲",
         "source_org": "中国日报",
         "source_type": "other_open_source",
@@ -867,30 +1275,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_037dd7d48e9f47927ae3",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.2,
-          47.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_037dd7d48e9f47927ae3",
-        "published_at": "2026-09-28",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "美国华盛顿州",
-        "continent": "北美洲",
-        "source_org": "KUOW（西雅图公共电台）",
-        "source_type": "other_open_source",
-        "source": "https://www.kuow.org/health/2026-09-28/the-flu-has-arrived-early-in-washington-state",
-        "description_cn": "华盛顿州流感季提前到来,9月19日当周233人因确诊流感就诊急诊。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_af748754b193a0e8ce99",
       "geometry": {
         "type": "Point",
@@ -905,6 +1289,30 @@
         "disease_id": "influenza",
         "disease_name_zh": "流行性感冒",
         "location": "西雅图",
+        "continent": "北美洲",
+        "source_org": "KUOW（西雅图公共电台）",
+        "source_type": "other_open_source",
+        "source": "https://www.kuow.org/health/2026-09-28/the-flu-has-arrived-early-in-washington-state",
+        "description_cn": "华盛顿州流感季提前到来,9月19日当周233人因确诊流感就诊急诊。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_037dd7d48e9f47927ae3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.2,
+          47.3
+        ]
+      },
+      "properties": {
+        "event_id": "evt_037dd7d48e9f47927ae3",
+        "published_at": "2026-09-28",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "美国华盛顿州",
         "continent": "北美洲",
         "source_org": "KUOW（西雅图公共电台）",
         "source_type": "other_open_source",
@@ -1179,30 +1587,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_a61ffb25857ddde666d8",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.5,
-          -21.1
-        ]
-      },
-      "properties": {
-        "event_id": "evt_a61ffb25857ddde666d8",
-        "published_at": "2026-09-25",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "法属留尼汪岛",
-        "continent": "非洲",
-        "source_org": "法国公共卫生局",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/ocean-indien/bulletin-regional/surveillance-sanitaire-a-la-reunion-bulletin-du-25-septembre-2026",
-        "description_cn": "留尼汪流感疫情加剧,钩端螺旋体病246例3死亡,猴痘29例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_0496f6c9581c6debb079",
       "geometry": {
         "type": "Point",
@@ -1223,30 +1607,6 @@
         "source": "https://www.gov.mo/zh-hant/news/1269094",
         "description_cn": "澳门一小学4名学生集体感染胃肠炎,疑似病毒引发,无重症。",
         "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_c7417c2f05ace0ddc7d1",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -53.1,
-          3.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_c7417c2f05ace0ddc7d1",
-        "published_at": "2026-09-25",
-        "disease_id": "unclassified-2b4038da",
-        "disease_name_zh": "基孔肯雅热",
-        "location": "法属圭亚那",
-        "continent": "南美洲",
-        "source_org": "Santepubliquefrance",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/guyane/bulletin-regional/chikungunya-et-dengue-en-guyane-bulletin-du-24-septembre-2026",
-        "description_cn": "法属圭亚那基孔肯雅热疫情仍在持续,自2026年1月底以来累计确诊1968例,部分地区疫情趋于减缓。",
-        "data_quality_score": 80
       }
     },
     {
@@ -1299,30 +1659,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_5b67a282ea38c6d4352e",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -53.1,
-          3.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_5b67a282ea38c6d4352e",
-        "published_at": "2026-09-24",
-        "disease_id": "covid-19",
-        "disease_name_zh": "新型冠状病毒感染",
-        "location": "法属圭亚那",
-        "continent": "南美洲",
-        "source_org": "法国公共卫生局",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/guyane/bulletin-regional/surveillance-sanitaire-en-guyane-bulletin-du-24-septembre-2026",
-        "description_cn": "法属圭亚那9月24日卫生公报:近两周疟疾3例,流感及新冠各1例阳性,年初疟疾累计154例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_766b03341d02ef251e15",
       "geometry": {
         "type": "Point",
@@ -1342,30 +1678,6 @@
         "source_type": "news_media",
         "source": "https://today.line.me/tw/v3/article/5yvkWLV",
         "description_cn": "台湾彰化县今年累计15例登革热,较去年同期倍增,卫生部门已启动防疫总动员。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_93da179c94f5217a42dd",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.5,
-          22.2
-        ]
-      },
-      "properties": {
-        "event_id": "evt_93da179c94f5217a42dd",
-        "published_at": "2026-09-24",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国澳门",
-        "continent": "亚洲",
-        "source_org": "GOV",
-        "source_type": "other_open_source",
-        "source": "https://www.gov.mo/zh-hant/news/1268696",
-        "description_cn": "澳门2所学校暴发流感群集性感染,共17名学生发病,6人甲流阳性。",
         "data_quality_score": 92
       }
     },

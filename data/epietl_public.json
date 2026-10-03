@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-10-01T17:46:26.330786+08:00",
+    "fetched_at": "2026-10-02T17:48:24.309323+08:00",
     "base_url": "https://epietl.com",
     "dashboard_days": 60,
     "channel_count": 143,
@@ -8,7 +8,7 @@
     "complete_reports": 6936,
     "pending_reports": 0,
     "failed_reports": 0,
-    "reports_analyzed": 83,
+    "reports_analyzed": 75,
     "risk_generated_at": "2026-10-01T02:09:27",
     "health": {
       "status": "ok",
@@ -245,40 +245,6 @@
       "source_url": "https://www.chinacdc.cn/jksj/jksj03/202609/P020260917406029692394.pdf"
     },
     {
-      "title": "Measles Outbreak in DRC and Somalia",
-      "severity": "critical",
-      "category": "other",
-      "pathogen": "Measles morbillivirus",
-      "summary": "Africa CDC (02 Aug 2026): DRC reports 102k measles cases; Somalia reports 285 new cases with 3 deaths.",
-      "epi_week": "2026-W31",
-      "regions": [
-        "Dem. Rep. Congo",
-        "Somalia",
-        "South Africa",
-        "Malawi",
-        "Mozambique"
-      ],
-      "source_org": "Africa CDC",
-      "source_url": "https://africacdc.org/download/africa-cdc-epidemic-intelligence-weekly-report-august-2026/?wpdmdl=27546&ind=1786625056542&refresh=34c8f86e&filename=Africa_CDC_Weekly_Epidemic_Report_2Aug2026.pdf"
-    },
-    {
-      "title": "Cholera Surge in Mozambique and Angola",
-      "severity": "critical",
-      "category": "other",
-      "pathogen": "Vibrio cholerae",
-      "summary": "Africa CDC (02 Aug 2026): Mozambique cholera cases up 205%; Angola cases up 116% in last four weeks.",
-      "epi_week": "2026-W31",
-      "regions": [
-        "Mozambique",
-        "Angola",
-        "Chad",
-        "Central African Republic",
-        "Somalia"
-      ],
-      "source_org": "Africa CDC",
-      "source_url": "https://africacdc.org/download/africa-cdc-epidemic-intelligence-weekly-report-august-2026/?wpdmdl=27546&ind=1786625056542&refresh=34c8f86e&filename=Africa_CDC_Weekly_Epidemic_Report_2Aug2026.pdf"
-    },
-    {
       "title": "Suriname Chikungunya Outbreak Surge",
       "severity": "high",
       "category": "vector_borne",
@@ -329,6 +295,38 @@
       ],
       "source_org": "Taiwan CDC",
       "source_url": "https://www.cdc.gov.tw/File/Get/QxrFqqkUxEap9vPk1zLd9w"
+    },
+    {
+      "title": "Influenza A (H1N1) circulating in Taiwan with severe cases",
+      "severity": "high",
+      "category": "respiratory",
+      "pathogen": "Influenza A virus",
+      "summary": "Taiwan CDC (20 Sep 2026): Influenza activity stable at epidemic levels, dominated by A/H1N1; 115 severe cases reported in week 38.",
+      "epi_week": "2026-W38",
+      "regions": [
+        "Taiwan"
+      ],
+      "source_org": "Taiwan CDC",
+      "source_url": "https://www.cdc.gov.tw/File/Get/pS8a_7BpWTgutkuYwyYHbg"
+    },
+    {
+      "title": "Clade I mpox spread in Europe and Asia",
+      "severity": "high",
+      "category": "other",
+      "pathogen": "Monkeypox virus",
+      "summary": "UKHSA (24 Sep 2026): ECDC reports 209 clade I mpox cases in EU/EEA; South Korea detects first clade Ib case.",
+      "epi_week": "2026-W38",
+      "regions": [
+        "Estonia",
+        "Iceland",
+        "Malta",
+        "Portugal",
+        "Spain",
+        "South Korea",
+        "Germany"
+      ],
+      "source_org": "UKHSA",
+      "source_url": "https://www.gov.uk/government/publications/outbreaks-under-monitoring-in-2026/outbreaks-under-monitoring-week-38-week-ending-20-september-2026"
     }
   ],
   "channels": [
