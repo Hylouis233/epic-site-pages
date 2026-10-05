@@ -2,18 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hylouis233.github.io/epic-site-pages/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hylouis233.github.io/epic-site-pages/methodology.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hylouis233.github.io/epic-site-pages/limitations.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_4040eacc87199c7d06fb/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_b6824d2f0ae11e414e28/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_f7af29d4cd30732019e9/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_bcb1ca399b5cc4ff5b93/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_63e4328a808823ccf4ee/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_98bf730d6ac01449542b/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hylouis233.github.io/epic-site-pages/events/evt_8c0a4de2e1b1c9103250/</loc>
@@ -26,13 +56,18 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_98bf730d6ac01449542b/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_f3dcfa4ad8cfd4d0e28c/</loc>
+    <lastmod>2026-10-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_63e4328a808823ccf4ee/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_9e36f4999ef876f05e5e/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_22e3135e491d16533a69/</loc>
+    <lastmod>2026-10-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -43,6 +78,21 @@
   <url>
     <loc>https://hylouis233.github.io/epic-site-pages/events/evt_d3f2984a069994eae567/</loc>
     <lastmod>2026-10-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_f1a493f4a1141f977b89/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_b23c84acd4c33cd89563/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_5f85605b8a97702fe97d/</loc>
+    <lastmod>2026-10-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -101,12 +151,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_7c04da75f9a1d56d13e0/</loc>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_5435946c8c340e473119/</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_5435946c8c340e473119/</loc>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_7c04da75f9a1d56d13e0/</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.7</priority>
   </url>
@@ -123,6 +173,11 @@
   <url>
     <loc>https://hylouis233.github.io/epic-site-pages/events/evt_8ec0da20acf001b866b0/</loc>
     <lastmod>2026-10-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_d6e7fe0abd6f13759d53/</loc>
+    <lastmod>2026-10-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -161,6 +216,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_75676ba887e81ac100de/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_518a2e885986a7b6858e/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_ee4a2914a18a491ba4d9/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://hylouis233.github.io/epic-site-pages/events/evt_66bd15e855ce11dd2ebd/</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.7</priority>
@@ -171,12 +241,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_2339d42b06d5241b5f72/</loc>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_d4adb869a88e298337b7/</loc>
     <lastmod>2026-10-02</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_d4adb869a88e298337b7/</loc>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_2339d42b06d5241b5f72/</loc>
     <lastmod>2026-10-02</lastmod>
     <priority>0.7</priority>
   </url>
@@ -256,12 +326,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_76fedd686f1b5e54cd66/</loc>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_d32bba085bd2a370bc78/</loc>
     <lastmod>2026-09-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_d32bba085bd2a370bc78/</loc>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_76fedd686f1b5e54cd66/</loc>
     <lastmod>2026-09-30</lastmod>
     <priority>0.7</priority>
   </url>
@@ -281,12 +351,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_c33b5b3a63dc950bfc82/</loc>
-    <lastmod>2026-09-30</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_916a3271939b2e0a6067/</loc>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_06c5a309156b4729f000/</loc>
     <lastmod>2026-09-30</lastmod>
     <priority>0.7</priority>
   </url>
@@ -296,7 +361,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_06c5a309156b4729f000/</loc>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_c33b5b3a63dc950bfc82/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_916a3271939b2e0a6067/</loc>
     <lastmod>2026-09-30</lastmod>
     <priority>0.7</priority>
   </url>
@@ -311,6 +381,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_5031bc824b926fa66f71/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://hylouis233.github.io/epic-site-pages/events/evt_e494e0664ac9c9304415/</loc>
     <lastmod>2026-09-30</lastmod>
     <priority>0.7</priority>
@@ -321,8 +396,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_5031bc824b926fa66f71/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_8d7abd541fc79d7eb2f8/</loc>
+    <lastmod>2026-10-02</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -331,17 +406,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_8d7abd541fc79d7eb2f8/</loc>
+    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_d25f91dcfa6973453b69/</loc>
     <lastmod>2026-10-02</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hylouis233.github.io/epic-site-pages/events/evt_e165641fc363950be282/</loc>
-    <lastmod>2026-10-02</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hylouis233.github.io/epic-site-pages/events/evt_d25f91dcfa6973453b69/</loc>
     <lastmod>2026-10-02</lastmod>
     <priority>0.7</priority>
   </url>
