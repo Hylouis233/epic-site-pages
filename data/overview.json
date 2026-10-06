@@ -1,10 +1,11 @@
 {
-  "total_records": 96,
-  "disease_count": 16,
-  "continent_count": 6,
-  "latest_date": "2026-10-04",
+  "total_records": 97,
+  "disease_count": 17,
+  "continent_count": 5,
+  "latest_date": "2026-10-05",
   "filter_options": {
     "diseases": [
+      "军团菌病",
       "呼吸道合胞病毒(RSV)",
       "埃博拉",
       "基孔肯雅热",
@@ -26,15 +27,14 @@
       "亚洲",
       "北美洲",
       "南美洲",
-      "大洋洲",
       "欧洲",
       "非洲"
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-10-05T09:15:05Z",
-  "data_as_of": "2026-10-04",
-  "last_successful_ingest_at": "2026-10-05T09:15:05Z",
+  "build_generated_at": "2026-10-06T09:07:46Z",
+  "data_as_of": "2026-10-05",
+  "last_successful_ingest_at": "2026-10-06T09:07:46Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -43,5 +43,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-10-04"
+  "last_modified": "2026-10-05"
 }
