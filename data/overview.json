@@ -1,10 +1,12 @@
 {
-  "total_records": 97,
-  "disease_count": 17,
+  "total_records": 96,
+  "disease_count": 19,
   "continent_count": 5,
-  "latest_date": "2026-10-05",
+  "latest_date": "2026-10-06",
   "filter_options": {
     "diseases": [
+      "不明原因肺炎",
+      "伤寒",
       "军团菌病",
       "呼吸道合胞病毒(RSV)",
       "埃博拉",
@@ -32,9 +34,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-10-06T09:07:46Z",
-  "data_as_of": "2026-10-05",
-  "last_successful_ingest_at": "2026-10-06T09:07:46Z",
+  "build_generated_at": "2026-10-07T08:53:41Z",
+  "data_as_of": "2026-10-06",
+  "last_successful_ingest_at": "2026-10-07T08:53:41Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -43,5 +45,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-10-05"
+  "last_modified": "2026-10-06"
 }

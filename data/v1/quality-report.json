@@ -4,13 +4,13 @@
     {
       "id": "upstream_nonzero",
       "status": "pass",
-      "value": 100,
+      "value": 96,
       "threshold": "> 0"
     },
     {
       "id": "record_count_change",
       "status": "pass",
-      "value": 1.042,
+      "value": 0.99,
       "threshold": ">= 0.5"
     },
     {
@@ -39,13 +39,13 @@
     },
     {
       "id": "duplicate_signals",
-      "status": "warning",
-      "value": 3,
+      "status": "pass",
+      "value": 0,
       "threshold": "0 after normalization"
     }
   ],
-  "upstream_record_count": 100,
-  "accepted_record_count": 97,
+  "upstream_record_count": 96,
+  "accepted_record_count": 96,
   "quarantined_record_count": 0,
   "quarantined": []
 }
