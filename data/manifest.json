@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-10-07T08:53:41Z",
-  "data_as_of": "2026-10-06",
-  "last_successful_ingest_at": "2026-10-07T08:53:41Z",
+  "build_generated_at": "2026-10-08T09:10:00Z",
+  "data_as_of": "2026-10-07",
+  "last_successful_ingest_at": "2026-10-08T09:10:00Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -11,11 +11,11 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "record_count": 96,
-  "event_count": 96,
-  "signal_count": 96,
-  "source_count": 81,
-  "disease_count": 19,
+  "record_count": 102,
+  "event_count": 102,
+  "signal_count": 102,
+  "source_count": 88,
+  "disease_count": 23,
   "continent_count": 5,
   "formats": {
     "json": "records.json",
@@ -27,13 +27,13 @@
     "parquet": "events.parquet"
   },
   "checksums_sha256": {
-    "records.json": "b8328c171c4d9faf89162e633cf8fcff5e2a8137bac8d73ae5973f3196d179fc",
-    "events.ndjson": "e0ad62e6a3a6e5097e5f6a5eb9de0fd8f83bc6ad59dce7254ca91a1c8bc793e2",
-    "events.csv": "46f8146f4a7ace45ca239eb82010a6f5705ec813e59d7a54751013973897ae4b",
-    "events.geojson": "96e07e3eab4a5c1fc12e355952dbdd3225c07231393eca4efbaac93b04629c7e",
+    "records.json": "d9bf32adbed49c96992df4e6779bb138c504b181b328a8eff24d364f1c7382cb",
+    "events.ndjson": "b13aedf18ee9efdb24e22bba4a68f2521b6ed86331eca511f9b472309aabce0c",
+    "events.csv": "2422c71166597647ef2f66b41d38ba2839a88dea065f3d3c6adbd05c357cd31a",
+    "events.geojson": "5e0df6d20b157fad4b1a7606eaecd76fe280a944c9c1ee5a9a5d996d8aa98f6b",
     "schema.json": "07670fe85c758949d7bdc8dcb29942d1243485be3add880ce68ac16cc1c96aa6",
-    "quality-report.json": "4cbb001d1d082077d97672ecff4722389c04aa06fbddbe083f25378ae7da8d84",
-    "events.parquet": "136fe363c530274566af33c29388a27e11444fb29181bb07595a79e1db63e220"
+    "quality-report.json": "9fd71f5a848c4c9357e691d590c37d96c7ad349cad2222686e914450b7366815",
+    "events.parquet": "e712b5c58c0d95b1cb1a6eb022161eb01481a073c5da8dd0ec1879d468661cc8"
   },
   "license": {
     "repository": "proprietary-source-available",
@@ -43,7 +43,7 @@
   "quality_gate": {
     "passed": true,
     "ingest_accepted": true,
-    "accepted_record_count": 96,
+    "accepted_record_count": 102,
     "quarantined_record_count": 0
   }
 }

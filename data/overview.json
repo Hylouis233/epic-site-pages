@@ -1,29 +1,33 @@
 {
-  "total_records": 96,
-  "disease_count": 19,
+  "total_records": 102,
+  "disease_count": 23,
   "continent_count": 5,
-  "latest_date": "2026-10-06",
+  "latest_date": "2026-10-07",
   "filter_options": {
     "diseases": [
       "不明原因肺炎",
+      "不明原因肺炎(疑似肺鼠疫,未确认)",
+      "不明原因肺炎(疑涉鼠疫,后未确认)",
       "伤寒",
       "军团菌病",
       "呼吸道合胞病毒(RSV)",
       "埃博拉",
       "基孔肯雅热",
       "新型冠状病毒感染",
+      "未明确(严重肺炎,病原体待查)",
       "流行性感冒",
       "流行性腮腺炎",
       "猴痘",
       "疟疾",
       "登革热",
-      "禽流感",
       "类鼻疽",
       "肠病毒感染",
       "脑膜炎球菌B群病",
       "辛德比斯病毒",
+      "退伍军人症",
       "霍乱",
-      "麻疹"
+      "麻疹",
+      "鼠疫(疑似)"
     ],
     "continents": [
       "亚洲",
@@ -34,9 +38,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-10-07T08:53:41Z",
-  "data_as_of": "2026-10-06",
-  "last_successful_ingest_at": "2026-10-07T08:53:41Z",
+  "build_generated_at": "2026-10-08T09:10:00Z",
+  "data_as_of": "2026-10-07",
+  "last_successful_ingest_at": "2026-10-08T09:10:00Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -45,5 +49,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-10-06"
+  "last_modified": "2026-10-07"
 }
