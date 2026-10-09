@@ -1,8 +1,8 @@
 {
-  "total_records": 102,
-  "disease_count": 23,
+  "total_records": 97,
+  "disease_count": 24,
   "continent_count": 5,
-  "latest_date": "2026-10-07",
+  "latest_date": "2026-10-08",
   "filter_options": {
     "diseases": [
       "不明原因肺炎",
@@ -23,11 +23,12 @@
       "类鼻疽",
       "肠病毒感染",
       "脑膜炎球菌B群病",
+      "西尼罗病毒",
       "辛德比斯病毒",
       "退伍军人症",
-      "霍乱",
       "麻疹",
-      "鼠疫(疑似)"
+      "鼠疫(疑似)",
+      "鼠疫疑似/不明原因肺炎"
     ],
     "continents": [
       "亚洲",
@@ -38,9 +39,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-10-08T09:10:00Z",
-  "data_as_of": "2026-10-07",
-  "last_successful_ingest_at": "2026-10-08T09:10:00Z",
+  "build_generated_at": "2026-10-09T09:18:11Z",
+  "data_as_of": "2026-10-08",
+  "last_successful_ingest_at": "2026-10-09T09:18:11Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -49,5 +50,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-10-07"
+  "last_modified": "2026-10-08"
 }

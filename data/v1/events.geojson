@@ -3,6 +3,54 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_83058387af90b7d3996e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_83058387af90b7d3996e",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-bd2aa534",
+        "disease_name_zh": "鼠疫疑似/不明原因肺炎",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "台湾卫生福利部疾病管制署",
+        "source_type": "official_health_authority",
+        "source": "https://www.cdc.gov.tw/Bulletin/Detail/ZSgA4XCBC3WbeC0Wb8Em-g?typeId=9",
+        "description_cn": "俄罗斯伊尔库茨克州鼠疫研究所员工疑似不明原因肺炎2例死亡,WHO称当地未确认鼠疫。",
+        "data_quality_score": 88
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_6dbaecd9037276086c7e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0,
+          23.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_6dbaecd9037276086c7e",
+        "published_at": "2026-10-08",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "中国台湾",
+        "continent": "亚洲",
+        "source_org": "台湾卫生福利部疾病管制署",
+        "source_type": "official_health_authority",
+        "source": "https://www.cdc.gov.tw/Bulletin/Detail/JvaaM_Xplh7dCJenqv0xiw?typeId=9",
+        "description_cn": "台湾屏东县新增1例本土登革热第四型病例,患者住院治疗中,卫生单位已开展化学防治及孳生源清除。",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_284b49768a9631175eb1",
       "geometry": {
         "type": "Point",
@@ -75,6 +123,102 @@
     },
     {
       "type": "Feature",
+      "id": "evt_44f052d655820cd818c2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_44f052d655820cd818c2",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "法国普罗旺斯-阿尔卑斯-蓝色海岸大区",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
+        "description_cn": "法国Paca大区西尼罗病毒活跃传播,累计66例感染,近半住院。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_9bcd657c158d364edace",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2,
+          44.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_9bcd657c158d364edace",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "沃克吕兹省",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
+        "description_cn": "法国Paca大区西尼罗病毒活跃传播,累计66例感染,近半住院。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_5e3806bce83900c003ab",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_5e3806bce83900c003ab",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "瓦尔省",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
+        "description_cn": "法国Paca大区西尼罗病毒活跃传播,累计66例感染,近半住院。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_1851dace5e3ea8344323",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4,
+          43.3
+        ]
+      },
+      "properties": {
+        "event_id": "evt_1851dace5e3ea8344323",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "罗讷河口省",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
+        "description_cn": "法国Paca大区西尼罗病毒活跃传播,累计66例感染,近半住院。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_33544669df95900fa239",
       "geometry": {
         "type": "Point",
@@ -99,30 +243,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_133c53dc07c739d7a70f",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.8,
-          40.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_133c53dc07c739d7a70f",
-        "published_at": "2026-10-07",
-        "disease_id": "unclassified-1cdde71e",
-        "disease_name_zh": "退伍军人症",
-        "location": "美国纽约皇后区",
-        "continent": "北美洲",
-        "source_org": "世界日报",
-        "source_type": "academic",
-        "source": "https://www.worldjournal.com/wj/story/121390/9799584",
-        "description_cn": "纽约市皇后区北岸大厦2名居民确诊退伍军人症,史泰登岛一公寓供水系统检出退伍军人菌,卫生局已介入调查。",
-        "data_quality_score": 88
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_9f38a60a88a4cd045142",
       "geometry": {
         "type": "Point",
@@ -137,6 +257,30 @@
         "disease_id": "unclassified-1cdde71e",
         "disease_name_zh": "退伍军人症",
         "location": "美国纽约史泰登岛",
+        "continent": "北美洲",
+        "source_org": "世界日报",
+        "source_type": "academic",
+        "source": "https://www.worldjournal.com/wj/story/121390/9799584",
+        "description_cn": "纽约市皇后区北岸大厦2名居民确诊退伍军人症,史泰登岛一公寓供水系统检出退伍军人菌,卫生局已介入调查。",
+        "data_quality_score": 88
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_133c53dc07c739d7a70f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8,
+          40.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_133c53dc07c739d7a70f",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-1cdde71e",
+        "disease_name_zh": "退伍军人症",
+        "location": "美国纽约皇后区",
         "continent": "北美洲",
         "source_org": "世界日报",
         "source_type": "academic",
@@ -213,7 +357,7 @@
         "source_org": "澳门卫生局",
         "source_type": "other_open_source",
         "source": "https://www.gov.mo/zh-hant/news/1272076",
-        "description_cn": "澳门圣罗撒女子中学幼儿班7名学生感染甲型流感,4人确诊,病情较轻。",
+        "description_cn": "澳门一所女子中学发生流感样疾病群集,7名学生发病,其中4人甲流感病毒阳性。",
         "data_quality_score": 92
       }
     },
@@ -651,20 +795,20 @@
     },
     {
       "type": "Feature",
-      "id": "evt_67e7ae08bd00ad1f7f99",
+      "id": "evt_05f496f862ffb6b8b60a",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -64.0,
-          -34.0
+          -55.0,
+          -10.0
         ]
       },
       "properties": {
-        "event_id": "evt_67e7ae08bd00ad1f7f99",
+        "event_id": "evt_05f496f862ffb6b8b60a",
         "published_at": "2026-10-05",
         "disease_id": "unclassified-2b4038da",
         "disease_name_zh": "基孔肯雅热",
-        "location": "阿根廷",
+        "location": "巴西",
         "continent": "南美洲",
         "source_org": "欧洲疾病预防控制中心",
         "source_type": "official_health_authority",
@@ -699,20 +843,20 @@
     },
     {
       "type": "Feature",
-      "id": "evt_05f496f862ffb6b8b60a",
+      "id": "evt_67e7ae08bd00ad1f7f99",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -55.0,
-          -10.0
+          -64.0,
+          -34.0
         ]
       },
       "properties": {
-        "event_id": "evt_05f496f862ffb6b8b60a",
+        "event_id": "evt_67e7ae08bd00ad1f7f99",
         "published_at": "2026-10-05",
         "disease_id": "unclassified-2b4038da",
         "disease_name_zh": "基孔肯雅热",
-        "location": "巴西",
+        "location": "阿根廷",
         "continent": "南美洲",
         "source_org": "欧洲疾病预防控制中心",
         "source_type": "official_health_authority",
@@ -1011,30 +1155,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_8c0a4de2e1b1c9103250",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.4,
-          35.4
-        ]
-      },
-      "properties": {
-        "event_id": "evt_8c0a4de2e1b1c9103250",
-        "published_at": "2026-10-03",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "日本神奈川县",
-        "continent": "亚洲",
-        "source_org": "TEEPR亮新闻（引述日本厚生劳动省、台湾疾管署）",
-        "source_type": "other_open_source",
-        "source": "https://www.teepr.com/1941322/mollylin/%E7%A7%8B%E5%86%AC%E7%96%BE%E7%97%85",
-        "description_cn": "日本流感疫情连续9周上升,第38周通报31428例,冲绳、东京、爱知等地病例激增,逼近警报水平。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_63e4328a808823ccf4ee",
       "geometry": {
         "type": "Point",
@@ -1097,6 +1217,30 @@
         "disease_id": "influenza",
         "disease_name_zh": "流行性感冒",
         "location": "日本爱知县",
+        "continent": "亚洲",
+        "source_org": "TEEPR亮新闻（引述日本厚生劳动省、台湾疾管署）",
+        "source_type": "other_open_source",
+        "source": "https://www.teepr.com/1941322/mollylin/%E7%A7%8B%E5%86%AC%E7%96%BE%E7%97%85",
+        "description_cn": "日本流感疫情连续9周上升,第38周通报31428例,冲绳、东京、爱知等地病例激增,逼近警报水平。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_8c0a4de2e1b1c9103250",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4,
+          35.4
+        ]
+      },
+      "properties": {
+        "event_id": "evt_8c0a4de2e1b1c9103250",
+        "published_at": "2026-10-03",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "日本神奈川县",
         "continent": "亚洲",
         "source_org": "TEEPR亮新闻（引述日本厚生劳动省、台湾疾管署）",
         "source_type": "other_open_source",
@@ -1971,54 +2115,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_14d12d507149dde439a8",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -77.7,
-          41.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_14d12d507149dde439a8",
-        "published_at": "2026-10-01",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国宾夕法尼亚州",
-        "continent": "北美洲",
-        "source_org": "314 Action",
-        "source_type": "other_open_source",
-        "source": "https://www.314action.org/news/press-releases/pennsylvania-reports-fifth-measles-death-amid-worst-outbreak-in-u-s",
-        "description_cn": "美国宾夕法尼亚州发生35年来最严重麻疹疫情,已致943人感染、176人住院、5人死亡。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_518a2e885986a7b6858e",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.5,
-          50.8
-        ]
-      },
-      "properties": {
-        "event_id": "evt_518a2e885986a7b6858e",
-        "published_at": "2026-10-01",
-        "disease_id": "unclassified-5132833c",
-        "disease_name_zh": "脑膜炎球菌B群病",
-        "location": "英国多塞特郡",
-        "continent": "欧洲",
-        "source_org": "英国卫生安全局（UKHSA）",
-        "source_type": "other_open_source",
-        "source": "https://www.gov.uk/government/news/over-212000-get-the-first-menb-dose-but-almost-75-missing-out",
-        "description_cn": "英国今年发生3起脑膜炎B群暴发,造成3人死亡,UKHSA发布青年疫苗接种覆盖率报告。",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_ee4a2914a18a491ba4d9",
       "geometry": {
         "type": "Point",
@@ -2067,6 +2163,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_518a2e885986a7b6858e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5,
+          50.8
+        ]
+      },
+      "properties": {
+        "event_id": "evt_518a2e885986a7b6858e",
+        "published_at": "2026-10-01",
+        "disease_id": "unclassified-5132833c",
+        "disease_name_zh": "脑膜炎球菌B群病",
+        "location": "英国多塞特郡",
+        "continent": "欧洲",
+        "source_org": "英国卫生安全局（UKHSA）",
+        "source_type": "other_open_source",
+        "source": "https://www.gov.uk/government/news/over-212000-get-the-first-menb-dose-but-almost-75-missing-out",
+        "description_cn": "英国今年发生3起脑膜炎B群暴发,造成3人死亡,UKHSA发布青年疫苗接种覆盖率报告。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_66bd15e855ce11dd2ebd",
       "geometry": {
         "type": "Point",
@@ -2087,102 +2207,6 @@
         "source": "https://today.line.me/tw/v3/article/BEmp9KW",
         "description_cn": "台湾彰化县新增1例本土登革热病例,初步研判与9月18日个案形成社区群聚。",
         "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_6d03c396bc9898e5501e",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_6d03c396bc9898e5501e",
-        "published_at": "2026-10-01",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国佛罗里达州皮纳拉斯县",
-        "continent": "北美洲",
-        "source_org": "WFLA",
-        "source_type": "other_open_source",
-        "source": "https://www.wfla.com/news/pinellas-county/pinellas-county-extends-state-of-local-emergency-for-dengue-fever/amp",
-        "description_cn": "美国佛州皮纳拉斯县因登革热疫情延长地方紧急状态,8月以来确诊7例,坦帕湾地区共179例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_d4adb869a88e298337b7",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -77.7,
-          41.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_d4adb869a88e298337b7",
-        "published_at": "2026-10-01",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国宾夕法尼亚州",
-        "continent": "北美洲",
-        "source_org": "WHYY News",
-        "source_type": "news_media",
-        "source": "https://whyy.org/articles/5th-measles-deaths-pennsylvania",
-        "description_cn": "美国宾夕法尼亚州麻疹疫情持续蔓延,已出现第5例死亡病例,疫区集中在兰开斯特县。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_2339d42b06d5241b5f72",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.0,
-          38.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_2339d42b06d5241b5f72",
-        "published_at": "2026-10-01",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国宾夕法尼亚州兰开斯特县",
-        "continent": "北美洲",
-        "source_org": "WHYY News",
-        "source_type": "news_media",
-        "source": "https://whyy.org/articles/5th-measles-deaths-pennsylvania",
-        "description_cn": "美国宾夕法尼亚州麻疹疫情持续蔓延,已出现第5例死亡病例,疫区集中在兰开斯特县。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_a349294875be263e0283",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.0,
-          35.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_a349294875be263e0283",
-        "published_at": "2026-10-01",
-        "disease_id": "unclassified-72cae785",
-        "disease_name_zh": "霍乱",
-        "location": "赞比亚",
-        "continent": "亚洲",
-        "source_org": "央广网",
-        "source_type": "other_open_source",
-        "source": "https://www.cnr.cn/newscenter/sq/20261001/t20261001_527830774.shtml",
-        "description_cn": "赞比亚暴发霍乱疫情,5省共报告304例病例,含11例死亡。",
-        "data_quality_score": 80
       }
     },
     {
@@ -2211,30 +2235,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_426255ab2a56bfcad1ac",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_426255ab2a56bfcad1ac",
-        "published_at": "2026-10-01",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国佛罗里达州希尔斯伯勒县",
-        "continent": "北美洲",
-        "source_org": "WTSP",
-        "source_type": "other_open_source",
-        "source": "https://www.wtsp.com/article/news/health/tampa-dengue-survivor-illness-story/67-8251c098-2ea7-4d68-8d5f-5705082e6fb9",
-        "description_cn": "美国佛罗里达州希尔斯伯勒县出现登革热病例,当地确诊第3例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_9ef2ba01d57806665f8b",
       "geometry": {
         "type": "Point",
@@ -2255,78 +2255,6 @@
         "source": "https://www.rki.de/DE/Aktuelles/Publikationen/Epidemiologisches-Bulletin/2026/40_26.html",
         "description_cn": "2026年10月01日 德国巴登-符腾堡州发生辛德比斯病毒感染相关疫情,1例(首例本土有症状病例)",
         "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_b07241919883f22b9b46",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_b07241919883f22b9b46",
-        "published_at": "2026-10-01",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "CDC",
-        "source_type": "official_health_authority",
-        "source": "https://www.cdc.gov.tw/Bulletin/Detail/CdbgopQoFEjbaRObY4JebA?typeId=9",
-        "description_cn": "台湾彰化县新增1例本土登革热病例,为2023年以来首起社区群聚事件。",
-        "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_fa0dd49ecde5a9f1c899",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -77.7,
-          41.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_fa0dd49ecde5a9f1c899",
-        "published_at": "2026-10-01",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国宾夕法尼亚州",
-        "continent": "北美洲",
-        "source_org": "Nbcmiami",
-        "source_type": "other_open_source",
-        "source": "https://www.nbcmiami.com/news/national-international/pennsylvania-reports-5th-measles-related-death/3866596",
-        "description_cn": "宾夕法尼亚州报告第5例麻疹相关死亡病例,全州累计943例确诊感染。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_c0f9e35f1f107e92b5c5",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.774,
-          12.8797
-        ]
-      },
-      "properties": {
-        "event_id": "evt_c0f9e35f1f107e92b5c5",
-        "published_at": "2026-10-01",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "菲律宾阿古桑德尔苏尔省",
-        "continent": "亚洲",
-        "source_org": "Substack",
-        "source_type": "news_media",
-        "source": "https://outbreaknewstoday.substack.com/p/philippines-agusan-del-sur-health",
-        "description_cn": "菲律宾阿古桑德尔苏尔省宣布全省登革热暴发,7个多月674例。",
-        "data_quality_score": 92
       }
     },
     {
@@ -2374,54 +2302,6 @@
         "source_type": "official_health_authority",
         "source": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
         "description_cn": "刚果(金)持续暴发本迪布焦型埃博拉疫情,累计确诊逾八千例,死亡近四千例,疫情波及七省63个卫生区。",
-        "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_76ebb3444d9598e61cdc",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.5,
-          48.8
-        ]
-      },
-      "properties": {
-        "event_id": "evt_76ebb3444d9598e61cdc",
-        "published_at": "2026-09-30",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "法国",
-        "continent": "欧洲",
-        "source_org": "法国公共卫生局",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/maladies-a-transmission-vectorielle/chikungunya/bulletin-national/chikungunya-dengue-zika-et-25",
-        "description_cn": "法国本土报告基孔肯雅热、登革热、西尼罗病毒等多种蚊媒传染病本地传播病例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_b1a55bd55146f543950b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          29.9,
-          1.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_b1a55bd55146f543950b",
-        "published_at": "2019-09-29",
-        "disease_id": "ebola-virus-disease",
-        "disease_name_zh": "埃博拉",
-        "location": "刚果民主共和国伊图里省",
-        "continent": "非洲",
-        "source_org": "CIDRAP",
-        "source_type": "academic",
-        "source": "https://www.cidrap.umn.edu/ebola/dr-congo-ebola-outbreak-tops-8000-cases-48-death-rate",
-        "description_cn": "刚果民主共和国埃博拉疫情病例达8067例,死亡3901例,为历史第二大且增长最快的疫情。",
         "data_quality_score": 100
       }
     }
