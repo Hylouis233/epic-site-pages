@@ -3,6 +3,342 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_441e60e4f40cf4e7b44a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_441e60e4f40cf4e7b44a",
+        "published_at": "2026-10-09",
+        "disease_id": "unclassified-0e99bdca",
+        "disease_name_zh": "疑似肺鼠疫",
+        "location": "俄罗斯伊尔库茨克",
+        "continent": "北美洲",
+        "source_org": "美联社",
+        "source_type": "news_media",
+        "source": "https://apnews.com/article/russia-plague-irkutsk-who-pneumonia-defe48862d80e6d4724be52215fb1c42",
+        "description_cn": "俄罗斯伊尔库茨克反鼠疫研究所一名28岁女工疑似感染肺鼠疫死亡,俄方称未检出危险病原体。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_e498e122abbc701b2778",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.8,
+          16.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_e498e122abbc701b2778",
+        "published_at": "2026-10-09",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "俄罗斯莫斯科州",
+        "continent": "亚洲",
+        "source_org": "ProMED",
+        "source_type": "promed",
+        "source": "https://www.promedmail.org/?alert_id=8735624",
+        "description_cn": "俄罗斯游客在越南旅游期间感染登革热,回国后在莫斯科州住院治疗。",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_75cad9371ff45b482953",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.8,
+          16.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_75cad9371ff45b482953",
+        "published_at": "2026-10-09",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "越南",
+        "continent": "亚洲",
+        "source_org": "ProMED",
+        "source_type": "promed",
+        "source": "https://www.promedmail.org/?alert_id=8735624",
+        "description_cn": "俄罗斯游客在越南旅游期间感染登革热,回国后在莫斯科州住院治疗。",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_cfa97a97e596a47bf09c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_cfa97a97e596a47bf09c",
+        "published_at": "2026-10-09",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "美国俄亥俄州芬德利",
+        "continent": "北美洲",
+        "source_org": "Medical Daily",
+        "source_type": "other_open_source",
+        "source": "https://www.medicaldaily.com/findlay-ohio-measles-exposure-urgent-care-blanchard-valley-er-479709",
+        "description_cn": "美国俄亥俄州芬德利出现1例麻疹病例,紧急护理中心和医院急诊科接触者被要求症状监测。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_222a60af7bf34354f2ee",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.7,
+          22.4
+        ]
+      },
+      "properties": {
+        "event_id": "evt_222a60af7bf34354f2ee",
+        "published_at": "2026-10-09",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "印度古吉拉特邦",
+        "continent": "亚洲",
+        "source_org": "NDTV",
+        "source_type": "other_open_source",
+        "source": "https://www.ndtv.com/health/gujarat-87-admitted-in-10-days-amid-dengue-cases-among-ekta-diwas-parade-contingent-12160030",
+        "description_cn": "印度古吉拉特邦参加团结日游行的安保人员中暴发登革热,10天内87人住院。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_fb45dec5414cc1431ece",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0,
+          40.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_fb45dec5414cc1431ece",
+        "published_at": "2026-10-09",
+        "disease_id": "mpox",
+        "disease_name_zh": "猴痘",
+        "location": "西班牙",
+        "continent": "欧洲",
+        "source_org": "Promedmail",
+        "source_type": "promed",
+        "source": "https://www.promedmail.org/?alert_id=8735616",
+        "description_cn": "2026年10月09日 西班牙发生猴痘(MPOX)相关疫情,1例死亡",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_dab04d7c30861ce69e4c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0,
+          40.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_dab04d7c30861ce69e4c",
+        "published_at": "2026-10-09",
+        "disease_id": "mpox",
+        "disease_name_zh": "猴痘",
+        "location": "吉普斯夸省",
+        "continent": "欧洲",
+        "source_org": "Promedmail",
+        "source_type": "promed",
+        "source": "https://www.promedmail.org/?alert_id=8735616",
+        "description_cn": "2026年10月09日 西班牙发生猴痘(MPOX)相关疫情,1例死亡",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_fbc031a2cef28a0ba692",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6,
+          43.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_fbc031a2cef28a0ba692",
+        "published_at": "2026-10-09",
+        "disease_id": "mpox",
+        "disease_name_zh": "猴痘",
+        "location": "巴斯克自治区",
+        "continent": "欧洲",
+        "source_org": "Promedmail",
+        "source_type": "promed",
+        "source": "https://www.promedmail.org/?alert_id=8735616",
+        "description_cn": "2026年10月09日 西班牙发生猴痘(MPOX)相关疫情,1例死亡",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_11c43e6f2baf0c5fa810",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.0,
+          35.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_11c43e6f2baf0c5fa810",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-0dd845c6",
+        "disease_name_zh": "肺鼠疫",
+        "location": "伊尔库茨克",
+        "continent": "亚洲",
+        "source_org": "美联社",
+        "source_type": "news_media",
+        "source": "https://apnews.com/article/russia-plague-trump-who-irkutsk-5aa82b8bc3d8300c551cd0e1bf91e32c",
+        "description_cn": "俄罗斯西伯利亚一鼠疫实验室研究员疑似因意外暴露感染肺鼠疫死亡,约200名接触者已被隔离观察。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_1a1381ff68dd20307780",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.0,
+          60.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_1a1381ff68dd20307780",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-0dd845c6",
+        "disease_name_zh": "肺鼠疫",
+        "location": "西伯利亚",
+        "continent": "亚洲",
+        "source_org": "美联社",
+        "source_type": "news_media",
+        "source": "https://apnews.com/article/russia-plague-trump-who-irkutsk-5aa82b8bc3d8300c551cd0e1bf91e32c",
+        "description_cn": "俄罗斯西伯利亚一鼠疫实验室研究员疑似因意外暴露感染肺鼠疫死亡,约200名接触者已被隔离观察。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_0ffd9554d9b48d495cd6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.0,
+          35.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_0ffd9554d9b48d495cd6",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-0dd845c6",
+        "disease_name_zh": "肺鼠疫",
+        "location": "俄罗斯",
+        "continent": "亚洲",
+        "source_org": "美联社",
+        "source_type": "news_media",
+        "source": "https://apnews.com/article/russia-plague-trump-who-irkutsk-5aa82b8bc3d8300c551cd0e1bf91e32c",
+        "description_cn": "俄罗斯西伯利亚一鼠疫实验室研究员疑似因意外暴露感染肺鼠疫死亡,约200名接触者已被隔离观察。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_51eacf6f9ba4e655d5b2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_51eacf6f9ba4e655d5b2",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-2b4038da",
+        "disease_name_zh": "基孔肯雅热",
+        "location": "法国法兰西岛大区马恩河谷省诺让-苏尔-马尔讷",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局法兰西岛大区分局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/ile-de-france/bulletin-regional/surveillance-sanitaire-en-ile-de-france-bulletin-du-8-octobre-2026",
+        "description_cn": "法国法兰西岛诺让-苏尔-马尔讷发生基孔肯雅热本土聚集疫情,确诊6例,为该地区首次。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_c571359b92cb46ba5023",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.3,
+          52.3
+        ]
+      },
+      "properties": {
+        "event_id": "evt_c571359b92cb46ba5023",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-34114b01",
+        "disease_name_zh": "鼠疫(疑似)",
+        "location": "俄罗斯伊尔库次克州",
+        "continent": "亚洲",
+        "source_org": "台湾疾病管制署（转述WHO及俄罗斯当局资讯）",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/0MWY13P",
+        "description_cn": "俄罗斯伊尔库次克州鼠疫研究所一名员工疑似因肺鼠疫死亡,并传出第二例疑似病例,俄罗斯当局否认,WHO正持续查证。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_211f54f9c418b67bf2a6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.3,
+          52.3
+        ]
+      },
+      "properties": {
+        "event_id": "evt_211f54f9c418b67bf2a6",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-14ad767a",
+        "disease_name_zh": "不明原因肺炎(疑似鼠疫,未确诊)",
+        "location": "俄罗斯伊尔库茨克州",
+        "continent": "亚洲",
+        "source_org": "台湾卫生福利部疾病管制署",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/JPyvj8P",
+        "description_cn": "俄伊尔库茨克州鼠疫研究所1名员工患严重肺炎,2例疑似鼠疫死亡未获官方证实,WHO正调查。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_83058387af90b7d3996e",
       "geometry": {
         "type": "Point",
@@ -46,6 +382,150 @@
         "source_type": "official_health_authority",
         "source": "https://www.cdc.gov.tw/Bulletin/Detail/JvaaM_Xplh7dCJenqv0xiw?typeId=9",
         "description_cn": "台湾屏东县新增1例本土登革热第四型病例,患者住院治疗中,卫生单位已开展化学防治及孳生源清除。",
+        "data_quality_score": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_396a4e30606f6011143c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.3,
+          52.3
+        ]
+      },
+      "properties": {
+        "event_id": "evt_396a4e30606f6011143c",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-8fe954f5",
+        "disease_name_zh": "不明原因肺炎(疑似鼠疫)",
+        "location": "俄罗斯西伯利亚伊尔库茨克州",
+        "continent": "亚洲",
+        "source_org": "自由时报",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/oqp8qQq",
+        "description_cn": "俄罗斯伊尔库茨克州鼠疫防治研究所发生不明原因肺炎,已致1死1疑死。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_cccd57507d234a21933f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.5,
+          22.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_cccd57507d234a21933f",
+        "published_at": "2026-10-08",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "中国澳门",
+        "continent": "亚洲",
+        "source_org": "澳门卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.gov.mo/zh-hant/news/1272444",
+        "description_cn": "澳门两所学校发生流感群集性感染,共14名学生患病,部分检测甲流阳性。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_d526acd6754363de0aff",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.0,
+          35.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_d526acd6754363de0aff",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-0c12aca6",
+        "disease_name_zh": "鼠疫(疑似肺鼠疫)",
+        "location": "伊尔库茨克",
+        "continent": "亚洲",
+        "source_org": "NOWNEWS今日新闻",
+        "source_type": "news_media",
+        "source": "https://today.line.me/tw/v3/article/Nv53eKG",
+        "description_cn": "俄罗斯一研究所女技术员离奇死亡,WHO确认当地无鼠疫病例报告,台湾疾管署加强边境检疫。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_4669419401d0c977e62b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_4669419401d0c977e62b",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-0dd845c6",
+        "disease_name_zh": "肺鼠疫",
+        "location": "俄罗斯伊尔库茨克",
+        "continent": "北美洲",
+        "source_org": "BBC",
+        "source_type": "other_open_source",
+        "source": "https://www.bbc.com/zhongwen/articles/ckwyq35pnxjno/trad",
+        "description_cn": "俄罗斯西伯利亚一名28岁女实验室技术员疑似感染肺鼠疫死亡,约200名接触者被隔离。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_a0f56e30969d528c7192",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.6,
+          51.8
+        ]
+      },
+      "properties": {
+        "event_id": "evt_a0f56e30969d528c7192",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-0dd845c6",
+        "disease_name_zh": "肺鼠疫",
+        "location": "俄罗斯布里亚特",
+        "continent": "亚洲",
+        "source_org": "BBC",
+        "source_type": "other_open_source",
+        "source": "https://www.bbc.com/zhongwen/articles/ckwyq35pnxjno/trad",
+        "description_cn": "俄罗斯西伯利亚一名28岁女实验室技术员疑似感染肺鼠疫死亡,约200名接触者被隔离。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_6ccca4bd3648d4701835",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.8,
+          16.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_6ccca4bd3648d4701835",
+        "published_at": "2026-10-08",
+        "disease_id": "mpox",
+        "disease_name_zh": "猴痘",
+        "location": "俄罗斯莫斯科州",
+        "continent": "亚洲",
+        "source_org": "Promedmail",
+        "source_type": "promed",
+        "source": "https://www.promedmail.org/?alert_id=8735605",
+        "description_cn": "2026年10月08日 俄罗斯莫斯科州发生猴痘相关疫情,1例确诊",
         "data_quality_score": 100
       }
     },
@@ -123,20 +603,20 @@
     },
     {
       "type": "Feature",
-      "id": "evt_44f052d655820cd818c2",
+      "id": "evt_1851dace5e3ea8344323",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.0,
-          46.0
+          5.4,
+          43.3
         ]
       },
       "properties": {
-        "event_id": "evt_44f052d655820cd818c2",
+        "event_id": "evt_1851dace5e3ea8344323",
         "published_at": "2026-10-07",
         "disease_id": "unclassified-63fe91f7",
         "disease_name_zh": "西尼罗病毒",
-        "location": "法国普罗旺斯-阿尔卑斯-蓝色海岸大区",
+        "location": "罗讷河口省",
         "continent": "欧洲",
         "source_org": "法国公共卫生局",
         "source_type": "other_open_source",
@@ -171,6 +651,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_44f052d655820cd818c2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_44f052d655820cd818c2",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "法国普罗旺斯-阿尔卑斯-蓝色海岸大区",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
+        "description_cn": "法国Paca大区西尼罗病毒活跃传播,累计66例感染,近半住院。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_5e3806bce83900c003ab",
       "geometry": {
         "type": "Point",
@@ -185,30 +689,6 @@
         "disease_id": "unclassified-63fe91f7",
         "disease_name_zh": "西尼罗病毒",
         "location": "瓦尔省",
-        "continent": "欧洲",
-        "source_org": "法国公共卫生局",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
-        "description_cn": "法国Paca大区西尼罗病毒活跃传播,累计66例感染,近半住院。",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_1851dace5e3ea8344323",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.4,
-          43.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_1851dace5e3ea8344323",
-        "published_at": "2026-10-07",
-        "disease_id": "unclassified-63fe91f7",
-        "disease_name_zh": "西尼罗病毒",
-        "location": "罗讷河口省",
         "continent": "欧洲",
         "source_org": "法国公共卫生局",
         "source_type": "other_open_source",
@@ -406,6 +886,30 @@
         "source_type": "news_media",
         "source": "https://tw.news.yahoo.com/%E4%BB%8A%E5%B9%B4%E9%A6%96%E4%BE%8B%E6%9C%AC%E5%9C%9F%E5%82%B7%E5%AF%92-%E6%9B%BE%E5%90%83%E7%94%9F%E9%AD%9A%E7%89%87-4%E5%BA%A6%E5%B0%B1%E9%86%AB%E6%89%8D%E7%A2%BA%E8%A8%BA-%E7%96%BE%E7%AE%A1%E7%BD%B2%E6%8F%AD%E9%A0%90%E9%98%B2%E9%97%9C%E9%8D%B5-084043598.html",
         "description_cn": "台湾疾管署公布今年首例本土伤寒病例,中部30多岁女性生食海鲜后感染,住院一周康复出院。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_eeae3b1baaba2458d2fe",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_eeae3b1baaba2458d2fe",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-e2429767",
+        "disease_name_zh": "肺鼠疫(疑似,实际确诊为肺炎)",
+        "location": "俄罗斯伊尔库茨克",
+        "continent": "北美洲",
+        "source_org": "France24",
+        "source_type": "other_open_source",
+        "source": "https://www.france24.com/en/europe/20261006-trump-says-he-will-speak-to-putin-over-reported-plague-death-in-russia",
+        "description_cn": "俄罗斯伊尔库茨克一所抗鼠疫研究所一名28岁女员工疑似因实验室事故感染肺鼠疫死亡,病因未确认。",
         "data_quality_score": 80
       }
     },
@@ -627,6 +1131,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_4d13012b2dbef6aa7900",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9,
+          1.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_4d13012b2dbef6aa7900",
+        "published_at": "2026-10-06",
+        "disease_id": "ebola-virus-disease",
+        "disease_name_zh": "埃博拉",
+        "location": "刚果民主共和国伊图里省",
+        "continent": "非洲",
+        "source_org": "Medicalxpress",
+        "source_type": "other_open_source",
+        "source": "https://medicalxpress.com/news/2026-10-kenya-ebola-death.html",
+        "description_cn": "肯尼亚报告首例埃博拉死亡病例,一名在刚果(金)生活的肯尼亚男子经乌干达飞往内罗毕后确诊并去世。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_035e132239be6512799e",
       "geometry": {
         "type": "Point",
@@ -747,30 +1275,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_788ad4724845f0b8c070",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -75.8,
-          43.2
-        ]
-      },
-      "properties": {
-        "event_id": "evt_788ad4724845f0b8c070",
-        "published_at": "2026-10-06",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "美国纽约州",
-        "continent": "北美洲",
-        "source_org": "France24",
-        "source_type": "other_open_source",
-        "source": "https://www.france24.com/en/americas/20261005-new-york-declares-statewide-disaster-emergency-as-measles-cases-rise",
-        "description_cn": "纽约州因麻疹疫情宣布灾难紧急状态,今年已报告108例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_1c9f9093680ed43e0fe6",
       "geometry": {
         "type": "Point",
@@ -785,6 +1289,30 @@
         "disease_id": "measles",
         "disease_name_zh": "麻疹",
         "location": "美国宾夕法尼亚州",
+        "continent": "北美洲",
+        "source_org": "France24",
+        "source_type": "other_open_source",
+        "source": "https://www.france24.com/en/americas/20261005-new-york-declares-statewide-disaster-emergency-as-measles-cases-rise",
+        "description_cn": "纽约州因麻疹疫情宣布灾难紧急状态,今年已报告108例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_788ad4724845f0b8c070",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.8,
+          43.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_788ad4724845f0b8c070",
+        "published_at": "2026-10-06",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "美国纽约州",
         "continent": "北美洲",
         "source_org": "France24",
         "source_type": "other_open_source",
@@ -843,30 +1371,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_67e7ae08bd00ad1f7f99",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -64.0,
-          -34.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_67e7ae08bd00ad1f7f99",
-        "published_at": "2026-10-05",
-        "disease_id": "unclassified-2b4038da",
-        "disease_name_zh": "基孔肯雅热",
-        "location": "阿根廷",
-        "continent": "南美洲",
-        "source_org": "欧洲疾病预防控制中心",
-        "source_type": "official_health_authority",
-        "source": "https://www.ecdc.europa.eu/en/chikungunya-monthly",
-        "description_cn": "2026年多国持续暴发基孔肯雅热疫情,美洲近20万例死亡87例,亚洲非洲也大量报告。",
-        "data_quality_score": 88
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_0bdd60500830bf07309e",
       "geometry": {
         "type": "Point",
@@ -882,6 +1386,30 @@
         "disease_name_zh": "基孔肯雅热",
         "location": "毛里求斯",
         "continent": "非洲",
+        "source_org": "欧洲疾病预防控制中心",
+        "source_type": "official_health_authority",
+        "source": "https://www.ecdc.europa.eu/en/chikungunya-monthly",
+        "description_cn": "2026年多国持续暴发基孔肯雅热疫情,美洲近20万例死亡87例,亚洲非洲也大量报告。",
+        "data_quality_score": 88
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_67e7ae08bd00ad1f7f99",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.0,
+          -34.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_67e7ae08bd00ad1f7f99",
+        "published_at": "2026-10-05",
+        "disease_id": "unclassified-2b4038da",
+        "disease_name_zh": "基孔肯雅热",
+        "location": "阿根廷",
+        "continent": "南美洲",
         "source_org": "欧洲疾病预防控制中心",
         "source_type": "official_health_authority",
         "source": "https://www.ecdc.europa.eu/en/chikungunya-monthly",
@@ -910,6 +1438,30 @@
         "source_type": "other_open_source",
         "source": "https://www.ftnn.com.tw/news/584573",
         "description_cn": "台湾肠病毒疫情严峻,第37周门急诊就诊破万人次,今年累计7例重症含1例死亡,以克沙奇A6型为主。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_0e2c36e3552ca0f5873f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.8,
+          43.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_0e2c36e3552ca0f5873f",
+        "published_at": "2026-10-05",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "美国纽约州",
+        "continent": "北美洲",
+        "source_org": "Spectrum Noticias",
+        "source_type": "other_open_source",
+        "source": "https://spectrumnoticias.com/ny/nyc/mornings-on-1/2026/10/05/hochul-declares-state-disaster-emergency-over-growing-measles-cases",
+        "description_cn": "美国纽约州麻疹病例激增,州长宣布灾难紧急状态以加强疫苗接种。",
         "data_quality_score": 92
       }
     },
@@ -1155,30 +1707,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_63e4328a808823ccf4ee",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          128.0,
-          26.6
-        ]
-      },
-      "properties": {
-        "event_id": "evt_63e4328a808823ccf4ee",
-        "published_at": "2026-10-03",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "日本冲绳县",
-        "continent": "亚洲",
-        "source_org": "TEEPR亮新闻（引述日本厚生劳动省、台湾疾管署）",
-        "source_type": "other_open_source",
-        "source": "https://www.teepr.com/1941322/mollylin/%E7%A7%8B%E5%86%AC%E7%96%BE%E7%97%85",
-        "description_cn": "日本流感疫情连续9周上升,第38周通报31428例,冲绳、东京、爱知等地病例激增,逼近警报水平。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_98bf730d6ac01449542b",
       "geometry": {
         "type": "Point",
@@ -1203,20 +1731,20 @@
     },
     {
       "type": "Feature",
-      "id": "evt_a9d8fac2f261d2d63856",
+      "id": "evt_63e4328a808823ccf4ee",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.3,
-          35.0
+          128.0,
+          26.6
         ]
       },
       "properties": {
-        "event_id": "evt_a9d8fac2f261d2d63856",
+        "event_id": "evt_63e4328a808823ccf4ee",
         "published_at": "2026-10-03",
         "disease_id": "influenza",
         "disease_name_zh": "流行性感冒",
-        "location": "日本爱知县",
+        "location": "日本冲绳县",
         "continent": "亚洲",
         "source_org": "TEEPR亮新闻（引述日本厚生劳动省、台湾疾管署）",
         "source_type": "other_open_source",
@@ -1241,6 +1769,30 @@
         "disease_id": "influenza",
         "disease_name_zh": "流行性感冒",
         "location": "日本神奈川县",
+        "continent": "亚洲",
+        "source_org": "TEEPR亮新闻（引述日本厚生劳动省、台湾疾管署）",
+        "source_type": "other_open_source",
+        "source": "https://www.teepr.com/1941322/mollylin/%E7%A7%8B%E5%86%AC%E7%96%BE%E7%97%85",
+        "description_cn": "日本流感疫情连续9周上升,第38周通报31428例,冲绳、东京、爱知等地病例激增,逼近警报水平。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_a9d8fac2f261d2d63856",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.3,
+          35.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_a9d8fac2f261d2d63856",
+        "published_at": "2026-10-03",
+        "disease_id": "influenza",
+        "disease_name_zh": "流行性感冒",
+        "location": "日本爱知县",
         "continent": "亚洲",
         "source_org": "TEEPR亮新闻（引述日本厚生劳动省、台湾疾管署）",
         "source_type": "other_open_source",
@@ -1395,21 +1947,21 @@
     },
     {
       "type": "Feature",
-      "id": "evt_b23c84acd4c33cd89563",
+      "id": "evt_5f85605b8a97702fe97d",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          108.2,
-          16.1
+          8.0,
+          10.0
         ]
       },
       "properties": {
-        "event_id": "evt_b23c84acd4c33cd89563",
+        "event_id": "evt_5f85605b8a97702fe97d",
         "published_at": "2026-10-03",
         "disease_id": "malaria",
         "disease_name_zh": "疟疾",
-        "location": "越南岘港市",
-        "continent": "亚洲",
+        "location": "尼日利亚",
+        "continent": "非洲",
         "source_org": "越南通讯社",
         "source_type": "other_open_source",
         "source": "https://www.vietnam.vn/zh-cn/da-nang-ghi-nhan-2-ca-sot-ret-ngoai-lai-nguoi-benh-tung-o-chau-phi",
@@ -1443,21 +1995,21 @@
     },
     {
       "type": "Feature",
-      "id": "evt_5f85605b8a97702fe97d",
+      "id": "evt_b23c84acd4c33cd89563",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.0,
-          10.0
+          108.2,
+          16.1
         ]
       },
       "properties": {
-        "event_id": "evt_5f85605b8a97702fe97d",
+        "event_id": "evt_b23c84acd4c33cd89563",
         "published_at": "2026-10-03",
         "disease_id": "malaria",
         "disease_name_zh": "疟疾",
-        "location": "尼日利亚",
-        "continent": "非洲",
+        "location": "越南岘港市",
+        "continent": "亚洲",
         "source_org": "越南通讯社",
         "source_type": "other_open_source",
         "source": "https://www.vietnam.vn/zh-cn/da-nang-ghi-nhan-2-ca-sot-ret-ngoai-lai-nguoi-benh-tung-o-chau-phi",
@@ -1515,30 +2067,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_1f874de02bca3233c6bd",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.0,
-          38.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_1f874de02bca3233c6bd",
-        "published_at": "2026-10-02",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "皮纳拉斯县,帕斯科县,希尔斯伯勒县",
-        "continent": "北美洲",
-        "source_org": "Bay News 9",
-        "source_type": "news_media",
-        "source": "https://baynews9.com/fl/tampa/news/2026/10/01/pinellas-county-urges-residents-to-do-their-part-as-dengue-west-nile-activity-grows",
-        "description_cn": "美国佛罗里达州坦帕湾地区报告179例登革热确诊病例,两县延长紧急状态以加强灭蚊。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_cb27b47d902a99d2513e",
       "geometry": {
         "type": "Point",
@@ -1559,30 +2087,6 @@
         "source": "https://www.nicd.ac.za/weekly-measles-and-rubella-situation-report-week-38-of-2026",
         "description_cn": "南非2026年第38周麻疹周报显示全国累计报告5306例确诊病例,新增269例,多省均有分布。",
         "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_723c48019408f381304e",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -119.4,
-          36.8
-        ]
-      },
-      "properties": {
-        "event_id": "evt_723c48019408f381304e",
-        "published_at": "2026-10-02",
-        "disease_id": "unclassified-0dd445de",
-        "disease_name_zh": "流行性腮腺炎",
-        "location": "美国加利福尼亚州圣地亚哥州立大学",
-        "continent": "北美洲",
-        "source_org": "Yahoo Sports / SI",
-        "source_type": "news_media",
-        "source": "https://sports.yahoo.com/articles/college-football-program-lists-32-200702677.html",
-        "description_cn": "美国圣地亚哥州立大学橄榄球队暴发腮腺炎疫情,至少14人确诊,32名球员被列入伤病报告。",
-        "data_quality_score": 80
       }
     },
     {
@@ -1630,30 +2134,6 @@
         "source_type": "other_open_source",
         "source": "https://health-infobase.canada.ca/respiratory-virus-surveillance",
         "description_cn": "加拿大第38周呼吸道病毒监测:流感和新冠阳性率仍低但呈上升趋势,每周报告52起暴发。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_55c31515183a3855d259",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_55c31515183a3855d259",
-        "published_at": "2026-10-02",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "Newtalk新闻（引述台湾疾管署）",
-        "source_type": "news_media",
-        "source": "https://today.line.me/tw/v3/article/nXpqWKJ",
-        "description_cn": "台湾彰化县新增1例本土登革热病例,距首例住家约110米,初步研判为社区群聚。",
         "data_quality_score": 92
       }
     },
@@ -1755,74 +2235,26 @@
     },
     {
       "type": "Feature",
-      "id": "evt_f3fe27c4a1abbb53f1e9",
+      "id": "evt_5529a641f4e57e1f8555",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.0,
-          23.7
+          104.3,
+          52.3
         ]
       },
       "properties": {
-        "event_id": "evt_f3fe27c4a1abbb53f1e9",
+        "event_id": "evt_5529a641f4e57e1f8555",
         "published_at": "2026-10-02",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "中国台湾",
+        "disease_id": "unclassified-8fe954f5",
+        "disease_name_zh": "不明原因肺炎(疑似鼠疫)",
+        "location": "俄罗斯伊尔库茨克州",
         "continent": "亚洲",
-        "source_org": "台湾卫福部疾管署",
+        "source_org": "华视新闻",
         "source_type": "news_media",
-        "source": "https://today.line.me/tw/v3/article/JPy02ry",
-        "description_cn": "台湾彰化县出现3年来首起本土登革热社区群聚,新增1例确诊,距首例住家约110米,患者住院治疗中。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_7c04da75f9a1d56d13e0",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          118.1,
-          37.4
-        ]
-      },
-      "properties": {
-        "event_id": "evt_7c04da75f9a1d56d13e0",
-        "published_at": "2026-10-02",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国河南省",
-        "continent": "亚洲",
-        "source_org": "Outbreak News Today",
-        "source_type": "news_media",
-        "source": "https://outbreaknewstoday.substack.com/p/china-reports-two-additional-h9n2-8f2",
-        "description_cn": "中国新增2例H9N2禽流感病例,均为1岁女童,分别来自河南和广东,均为轻度病例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_5435946c8c340e473119",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.3,
-          23.1
-        ]
-      },
-      "properties": {
-        "event_id": "evt_5435946c8c340e473119",
-        "published_at": "2026-10-02",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国广东省",
-        "continent": "亚洲",
-        "source_org": "Outbreak News Today",
-        "source_type": "news_media",
-        "source": "https://outbreaknewstoday.substack.com/p/china-reports-two-additional-h9n2-8f2",
-        "description_cn": "中国新增2例H9N2禽流感病例,均为1岁女童,分别来自河南和广东,均为轻度病例。",
-        "data_quality_score": 92
+        "source": "https://today.line.me/tw/v3/article/kEpWmGk",
+        "description_cn": "俄罗斯伊尔库茨克州鼠疫研究所一名员工患重症肺炎死亡,疑似第二例死亡,病因尚未确认。",
+        "data_quality_score": 80
       }
     },
     {
@@ -1851,54 +2283,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_f09c23fcb33d3efc3863",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_f09c23fcb33d3efc3863",
-        "published_at": "2026-10-02",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "旺得富",
-        "source_type": "other_open_source",
-        "source": "https://wantrich.chinatimes.com/news/20261002900102-420501",
-        "description_cn": "台湾流感疫情升温,5岁男童感染A流后家人相继染疫,阿嬷发展肺炎住院两周,专家建议及早接种疫苗。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_8ec0da20acf001b866b0",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_8ec0da20acf001b866b0",
-        "published_at": "2026-10-02",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "自由时报",
-        "source_type": "other_open_source",
-        "source": "https://health.ltn.com.tw/article/breakingnews/5592305",
-        "description_cn": "台南新增1例越南境外移入登革热病例,返台后发烧确诊为第1型,为今年第8例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_d6e7fe0abd6f13759d53",
       "geometry": {
         "type": "Point",
@@ -1918,54 +2302,6 @@
         "source_type": "other_open_source",
         "source": "https://www.santepubliquefrance.fr/index.php/regions-et-territoires/ocean-indien/bulletin-regional/surveillance-sanitaire-a-la-reunion-bulletin-du-2-octobre-2026",
         "description_cn": "留尼汪发布卫生监测公报,多种传染病同步流行,流感疫情活跃。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_4e16fd11037c3061ca1c",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.0,
-          46.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_4e16fd11037c3061ca1c",
-        "published_at": "2026-10-02",
-        "disease_id": "mpox",
-        "disease_name_zh": "猴痘",
-        "location": "法属",
-        "continent": "欧洲",
-        "source_org": "法国公共卫生局",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/ocean-indien/bulletin-regional/surveillance-sanitaire-a-la-reunion-bulletin-du-2-octobre-2026",
-        "description_cn": "法属留尼汪2026年10月卫生监测公报:流感疫情活跃,钩端螺旋体病累计246例3死亡,Mpox 24例输入5例本土。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_263b0eb27059d0c105f6",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_263b0eb27059d0c105f6",
-        "published_at": "2026-10-02",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "彰化县政府卫生局",
-        "source_type": "other_open_source",
-        "source": "https://molihua.org/mh-2578586",
-        "description_cn": "台湾彰化市新增1例本土登革热,为今年第2例本土个案,初步认定为社区群聚事件。",
         "data_quality_score": 92
       }
     },
@@ -2043,78 +2379,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_219dae5fd66d4b3ba1b7",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -53.1,
-          3.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_219dae5fd66d4b3ba1b7",
-        "published_at": "2026-10-02",
-        "disease_id": "unclassified-2b4038da",
-        "disease_name_zh": "基孔肯雅热",
-        "location": "法属圭亚那",
-        "continent": "南美洲",
-        "source_org": "Santepubliquefrance",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/guyane/bulletin-regional/chikungunya-et-dengue-en-guyane-bulletin-du-2-octobre-2026",
-        "description_cn": "法属圭亚那基孔肯雅热疫情持续,累计确诊2017例,多个区域仍处于流行或聚集阶段。",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_95e09e956ca5295b900b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          72.3,
-          35.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_95e09e956ca5295b900b",
-        "published_at": "2026-10-02",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "巴基斯坦开伯尔-普什图省",
-        "continent": "亚洲",
-        "source_org": "DAWN",
-        "source_type": "other_open_source",
-        "source": "https://www.dawn.com/news/2034084/kohat-continues-to-record-highest-number-of-dengue-cases",
-        "description_cn": "巴基斯坦开伯尔-普什图省本周新增446例登革热,累计2,219例,科哈特县为疫情最严重地区。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_69b2b45cf4cdfd2cdb92",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.6,
-          25.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_69b2b45cf4cdfd2cdb92",
-        "published_at": "2026-10-02",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "台北",
-        "continent": "亚洲",
-        "source_org": "Chinatimes",
-        "source_type": "other_open_source",
-        "source": "https://www.chinatimes.com/newspapers/20261002000582-260114",
-        "description_cn": "台湾流感季家庭传播预防提醒文章,以个案为例说明接种疫苗重要性。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_ee4a2914a18a491ba4d9",
       "geometry": {
         "type": "Point",
@@ -2183,102 +2447,6 @@
         "source": "https://www.gov.uk/government/news/over-212000-get-the-first-menb-dose-but-almost-75-missing-out",
         "description_cn": "英国今年发生3起脑膜炎B群暴发,造成3人死亡,UKHSA发布青年疫苗接种覆盖率报告。",
         "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_66bd15e855ce11dd2ebd",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0,
-          23.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_66bd15e855ce11dd2ebd",
-        "published_at": "2026-10-01",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "卫福部疾病管制署",
-        "source_type": "news_media",
-        "source": "https://today.line.me/tw/v3/article/BEmp9KW",
-        "description_cn": "台湾彰化县新增1例本土登革热病例,初步研判与9月18日个案形成社区群聚。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_83e6a71e244c3d8ab1b1",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.774,
-          12.8797
-        ]
-      },
-      "properties": {
-        "event_id": "evt_83e6a71e244c3d8ab1b1",
-        "published_at": "2026-10-01",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "菲律宾奎松市",
-        "continent": "亚洲",
-        "source_org": "菲律宾论坛报",
-        "source_type": "other_open_source",
-        "source": "https://tribune.net.ph/2026/10/01/qc-logs-alarming-dengue-cases-spike",
-        "description_cn": "奎松市今年1至9月报告5589例登革热感染和24例死亡,近期周感染率上升。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_9ef2ba01d57806665f8b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.0,
-          51.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_9ef2ba01d57806665f8b",
-        "published_at": "2026-10-01",
-        "disease_id": "unclassified-b2b15e0a",
-        "disease_name_zh": "辛德比斯病毒",
-        "location": "德国巴登-符腾堡州",
-        "continent": "欧洲",
-        "source_org": "RKI",
-        "source_type": "other_open_source",
-        "source": "https://www.rki.de/DE/Aktuelles/Publikationen/Epidemiologisches-Bulletin/2026/40_26.html",
-        "description_cn": "2026年10月01日 德国巴登-符腾堡州发生辛德比斯病毒感染相关疫情,1例(首例本土有症状病例)",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_b35364af798338eaab99",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.5,
-          22.2
-        ]
-      },
-      "properties": {
-        "event_id": "evt_b35364af798338eaab99",
-        "published_at": "2026-10-01",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国澳门",
-        "continent": "亚洲",
-        "source_org": "GOV",
-        "source_type": "other_open_source",
-        "source": "https://www.gov.mo/zh-hant/news/1270957",
-        "description_cn": "澳门一中学班级8名学生出现流感样症状,4人甲流阳性。",
-        "data_quality_score": 92
       }
     },
     {

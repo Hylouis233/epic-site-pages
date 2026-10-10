@@ -5,71 +5,224 @@
     <link>https://hylouis233.github.io/epic-site-pages/</link>
     <description>Public-source infectious-disease event records first observed or updated in the current daily window.</description>
     <language>en-US</language>
-    <lastBuildDate>Fri, 09 Oct 2026 17:18:11 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 16:40:03 +0800</lastBuildDate>
     <generator>EPIC Public Pages Builder</generator>
     <ttl>1440</ttl>
     <item>
       <title>Unclassified event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_83058387af90b7d3996e/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_83058387af90b7d3996e/</guid>
-      <pubDate>Fri, 09 Oct 2026 09:18:11 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 2 cases, 2 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;中国台湾&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;2例疑似死亡病例(鼠疫防治研究所员工及第二例)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;台湾卫生福利部疾病管制署&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;88/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_441e60e4f40cf4e7b44a/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_441e60e4f40cf4e7b44a/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 1 cases, 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯伊尔库茨克&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡,另有1例疑似肺炎病例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;美联社&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
       <category>Unclassified</category>
-      <source url="https://www.cdc.gov.tw/Bulletin/Detail/ZSgA4XCBC3WbeC0Wb8Em-g?typeId=9">台湾卫生福利部疾病管制署</source>
+      <source url="https://apnews.com/article/russia-plague-irkutsk-who-pneumonia-defe48862d80e6d4724be52215fb1c42">美联社</source>
     </item>
     <item>
       <title>Dengue event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_6dbaecd9037276086c7e/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_6dbaecd9037276086c7e/</guid>
-      <pubDate>Fri, 09 Oct 2026 09:18:11 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Structured fields report 1 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;中国台湾&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;新增1例本土病例,全国累计188例(其中本土13例)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;台湾卫生福利部疾病管制署&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;100/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_e498e122abbc701b2778/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_e498e122abbc701b2778/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯莫斯科州&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例(俄罗斯游客在越南旅行期间感染,回国后住院)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;ProMED&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;100/100&lt;/li&gt;&lt;/ul&gt;</description>
       <category>Dengue</category>
-      <source url="https://www.cdc.gov.tw/Bulletin/Detail/JvaaM_Xplh7dCJenqv0xiw?typeId=9">台湾卫生福利部疾病管制署</source>
+      <source url="https://www.promedmail.org/?alert_id=8735624">ProMED</source>
+    </item>
+    <item>
+      <title>Dengue event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_75cad9371ff45b482953/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_75cad9371ff45b482953/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;越南&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例(俄罗斯游客在越南旅行期间感染,回国后住院)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;ProMED&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;100/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Dengue</category>
+      <source url="https://www.promedmail.org/?alert_id=8735624">ProMED</source>
+    </item>
+    <item>
+      <title>Measles event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_cfa97a97e596a47bf09c/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_cfa97a97e596a47bf09c/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source measles signal in this event snapshot. Structured fields report 1 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Measles&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;美国俄亥俄州芬德利&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例确诊,患者曾在紧急护理中心和医院急诊科暴露他人&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Medical Daily&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Measles</category>
+      <source url="https://www.medicaldaily.com/findlay-ohio-measles-exposure-urgent-care-blanchard-valley-er-479709">Medical Daily</source>
+    </item>
+    <item>
+      <title>Dengue event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_222a60af7bf34354f2ee/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_222a60af7bf34354f2ee/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source dengue signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Dengue&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;印度古吉拉特邦&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;87人住院(10天内)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;NDTV&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Dengue</category>
+      <source url="https://www.ndtv.com/health/gujarat-87-admitted-in-10-days-amid-dengue-cases-among-ekta-diwas-parade-contingent-12160030">NDTV</source>
+    </item>
+    <item>
+      <title>Mpox event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_fb45dec5414cc1431ece/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_fb45dec5414cc1431ece/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source mpox signal in this event snapshot. Structured fields report 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Mpox&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;西班牙&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Promedmail&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;100/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Mpox</category>
+      <source url="https://www.promedmail.org/?alert_id=8735616">Promedmail</source>
+    </item>
+    <item>
+      <title>Mpox event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_dab04d7c30861ce69e4c/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_dab04d7c30861ce69e4c/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source mpox signal in this event snapshot. Structured fields report 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Mpox&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;吉普斯夸省&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Promedmail&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;100/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Mpox</category>
+      <source url="https://www.promedmail.org/?alert_id=8735616">Promedmail</source>
+    </item>
+    <item>
+      <title>Mpox event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_fbc031a2cef28a0ba692/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_fbc031a2cef28a0ba692/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source mpox signal in this event snapshot. Structured fields report 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Mpox&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;巴斯克自治区&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Promedmail&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;100/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Mpox</category>
+      <source url="https://www.promedmail.org/?alert_id=8735616">Promedmail</source>
     </item>
     <item>
       <title>Unclassified event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_44f052d655820cd818c2/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_44f052d655820cd818c2/</guid>
-      <pubDate>Fri, 09 Oct 2026 09:18:11 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 66 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;法国普罗旺斯-阿尔卑斯-蓝色海岸大区&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;66例人类感染病例,其中近一半住院治疗&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;法国公共卫生局&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_11c43e6f2baf0c5fa810/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_11c43e6f2baf0c5fa810/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;伊尔库茨克&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1名28岁女性研究员死亡,约200名接触者被隔离,疑似第二例肺炎病例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;美联社&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
       <category>Unclassified</category>
-      <source url="https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026">法国公共卫生局</source>
+      <source url="https://apnews.com/article/russia-plague-trump-who-irkutsk-5aa82b8bc3d8300c551cd0e1bf91e32c">美联社</source>
     </item>
     <item>
       <title>Unclassified event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_9bcd657c158d364edace/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_9bcd657c158d364edace/</guid>
-      <pubDate>Fri, 09 Oct 2026 09:18:11 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 66 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;沃克吕兹省&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;66例人类感染病例,其中近一半住院治疗&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;法国公共卫生局&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_1a1381ff68dd20307780/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_1a1381ff68dd20307780/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;西伯利亚&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1名28岁女性研究员死亡,约200名接触者被隔离,疑似第二例肺炎病例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;美联社&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
       <category>Unclassified</category>
-      <source url="https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026">法国公共卫生局</source>
+      <source url="https://apnews.com/article/russia-plague-trump-who-irkutsk-5aa82b8bc3d8300c551cd0e1bf91e32c">美联社</source>
     </item>
     <item>
       <title>Unclassified event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_5e3806bce83900c003ab/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_5e3806bce83900c003ab/</guid>
-      <pubDate>Fri, 09 Oct 2026 09:18:11 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 66 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;瓦尔省&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;66例人类感染病例,其中近一半住院治疗&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;法国公共卫生局&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_0ffd9554d9b48d495cd6/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_0ffd9554d9b48d495cd6/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1名28岁女性研究员死亡,约200名接触者被隔离,疑似第二例肺炎病例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;美联社&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
       <category>Unclassified</category>
-      <source url="https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026">法国公共卫生局</source>
+      <source url="https://apnews.com/article/russia-plague-trump-who-irkutsk-5aa82b8bc3d8300c551cd0e1bf91e32c">美联社</source>
     </item>
     <item>
       <title>Unclassified event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_1851dace5e3ea8344323/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_1851dace5e3ea8344323/</guid>
-      <pubDate>Fri, 09 Oct 2026 09:18:11 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 66 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;罗讷河口省&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;66例人类感染病例,其中近一半住院治疗&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;法国公共卫生局&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_51eacf6f9ba4e655d5b2/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_51eacf6f9ba4e655d5b2/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 6 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;法国法兰西岛大区马恩河谷省诺让-苏尔-马尔讷&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-08-16&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;6例本土传播病例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;法国公共卫生局法兰西岛大区分局&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
       <category>Unclassified</category>
-      <source url="https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026">法国公共卫生局</source>
+      <source url="https://www.santepubliquefrance.fr/regions-et-territoires/ile-de-france/bulletin-regional/surveillance-sanitaire-en-ile-de-france-bulletin-du-8-octobre-2026">法国公共卫生局法兰西岛大区分局</source>
+    </item>
+    <item>
+      <title>Unclassified event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_c571359b92cb46ba5023/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_c571359b92cb46ba5023/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 1 cases, 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯伊尔库次克州&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡(疑似肺鼠疫)+1例疑似病例&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;台湾疾病管制署（转述WHO及俄罗斯当局资讯）&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Unclassified</category>
+      <source url="https://today.line.me/tw/v3/article/0MWY13P">台湾疾病管制署（转述WHO及俄罗斯当局资讯）</source>
+    </item>
+    <item>
+      <title>Unclassified event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_211f54f9c418b67bf2a6/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_211f54f9c418b67bf2a6/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯伊尔库茨克州&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例严重肺炎确诊,2例疑似鼠疫死亡未获俄方证实,所有接触者已排查&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;台湾卫生福利部疾病管制署&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Unclassified</category>
+      <source url="https://today.line.me/tw/v3/article/JPyvj8P">台湾卫生福利部疾病管制署</source>
+    </item>
+    <item>
+      <title>Unclassified event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_396a4e30606f6011143c/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_396a4e30606f6011143c/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯西伯利亚伊尔库茨克州&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例确诊死亡,1例疑似死亡,均为防治研究所员工&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;自由时报&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Unclassified</category>
+      <source url="https://today.line.me/tw/v3/article/oqp8qQq">自由时报</source>
     </item>
     <item>
       <title>Influenza event record</title>
-      <link>https://hylouis233.github.io/epic-site-pages/events/evt_cecc12c5f98988f3f412/</link>
-      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_cecc12c5f98988f3f412/</guid>
-      <pubDate>Fri, 09 Oct 2026 09:18:11 +0000</pubDate>
-      <description>&lt;p&gt;EPIC recorded a public-source influenza signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Influenza&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;中国澳门&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;共7名女学生患病,其中4人甲型流感病毒阳性;病情均较轻,未见重症或其他严重并发症&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;澳门卫生局&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_cccd57507d234a21933f/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_cccd57507d234a21933f/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source influenza signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Influenza&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;中国澳门&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-05&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;2宗群集性感染事件,共14名学生患病(各7人),其中4人甲流阳性&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;澳门卫生局&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
       <category>Influenza</category>
-      <source url="https://www.gov.mo/zh-hant/news/1272076">澳门卫生局</source>
+      <source url="https://www.gov.mo/zh-hant/news/1272444">澳门卫生局</source>
+    </item>
+    <item>
+      <title>Unclassified event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_d526acd6754363de0aff/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_d526acd6754363de0aff/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;伊尔库茨克&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;NOWNEWS今日新闻&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Unclassified</category>
+      <source url="https://today.line.me/tw/v3/article/Nv53eKG">NOWNEWS今日新闻</source>
+    </item>
+    <item>
+      <title>Unclassified event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_4669419401d0c977e62b/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_4669419401d0c977e62b/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯伊尔库茨克&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡,约200名接触者被隔离&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;BBC&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Unclassified</category>
+      <source url="https://www.bbc.com/zhongwen/articles/ckwyq35pnxjno/trad">BBC</source>
+    </item>
+    <item>
+      <title>Unclassified event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_a0f56e30969d528c7192/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_a0f56e30969d528c7192/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯布里亚特&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡,约200名接触者被隔离&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;BBC&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Unclassified</category>
+      <source url="https://www.bbc.com/zhongwen/articles/ckwyq35pnxjno/trad">BBC</source>
+    </item>
+    <item>
+      <title>Mpox event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_6ccca4bd3648d4701835/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_6ccca4bd3648d4701835/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source mpox signal in this event snapshot. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Mpox&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯莫斯科州&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-08&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例确诊&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Promedmail&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;100/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Mpox</category>
+      <source url="https://www.promedmail.org/?alert_id=8735605">Promedmail</source>
+    </item>
+    <item>
+      <title>Unclassified event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_eeae3b1baaba2458d2fe/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_eeae3b1baaba2458d2fe/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯伊尔库茨克&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-07&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡;据报道约200名接触者被隔离(俄方否认)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;France24&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Unclassified</category>
+      <source url="https://www.france24.com/en/europe/20261006-trump-says-he-will-speak-to-putin-over-reported-plague-death-in-russia">France24</source>
+    </item>
+    <item>
+      <title>Ebola virus disease event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_4d13012b2dbef6aa7900/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_4d13012b2dbef6aa7900/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source ebola virus disease signal in this event snapshot. Structured fields report 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Ebola virus disease&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;刚果民主共和国伊图里省&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-06&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-06&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡,28名接触者已追踪,另追踪同机23名乘客和4名机组人员&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Medicalxpress&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Ebola virus disease</category>
+      <source url="https://medicalxpress.com/news/2026-10-kenya-ebola-death.html">Medicalxpress</source>
+    </item>
+    <item>
+      <title>Measles event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_0e2c36e3552ca0f5873f/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_0e2c36e3552ca0f5873f/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source measles signal in this event snapshot. Structured fields report 48 cases. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Measles&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;美国纽约州&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-05&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-05&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;纽约市7例,纽约州101例,约为去年48例的两倍&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;Spectrum Noticias&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;92/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Measles</category>
+      <source url="https://spectrumnoticias.com/ny/nyc/mornings-on-1/2026/10/05/hochul-declares-state-disaster-emergency-over-growing-measles-cases">Spectrum Noticias</source>
+    </item>
+    <item>
+      <title>Unclassified event record</title>
+      <link>https://hylouis233.github.io/epic-site-pages/events/evt_5529a641f4e57e1f8555/</link>
+      <guid isPermaLink="true">https://hylouis233.github.io/epic-site-pages/events/evt_5529a641f4e57e1f8555/</guid>
+      <pubDate>Sat, 10 Oct 2026 08:40:03 +0000</pubDate>
+      <description>&lt;p&gt;EPIC recorded a public-source unclassified signal in this event snapshot. Structured fields report 1 deaths. Use the linked original source to verify context, definitions, and current status.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Disease: &lt;/strong&gt;Unclassified&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Location (source language): &lt;/strong&gt;俄罗斯伊尔库茨克州&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Event date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Publication date: &lt;/strong&gt;2026-10-02&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scale (source language): &lt;/strong&gt;1例死亡,1例疑似死亡&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Source organization: &lt;/strong&gt;华视新闻&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data quality: &lt;/strong&gt;80/100&lt;/li&gt;&lt;/ul&gt;</description>
+      <category>Unclassified</category>
+      <source url="https://today.line.me/tw/v3/article/kEpWmGk">华视新闻</source>
     </item>
   </channel>
 </rss>
