@@ -1,8 +1,8 @@
 {
-  "total_records": 107,
-  "disease_count": 28,
+  "total_records": 105,
+  "disease_count": 26,
   "continent_count": 5,
-  "latest_date": "2026-10-11",
+  "latest_date": "2026-10-12",
   "filter_options": {
     "diseases": [
       "不明原因肺炎",
@@ -12,7 +12,6 @@
       "不明原因肺炎(疑似鼠疫,未确诊)",
       "不明原因肺炎(疑涉鼠疫,后未确认)",
       "伤寒",
-      "军团菌病",
       "埃博拉",
       "基孔肯雅热",
       "基孔肯雅热、西尼罗病毒",
@@ -24,7 +23,6 @@
       "疑似肺鼠疫",
       "疟疾",
       "登革热",
-      "肠病毒感染",
       "肺鼠疫",
       "肺鼠疫(疑似,实际确诊为肺炎)",
       "西尼罗病毒",
@@ -43,9 +41,9 @@
     ]
   },
   "schema_version": "1.0.0",
-  "build_generated_at": "2026-10-12T09:26:18Z",
-  "data_as_of": "2026-10-11",
-  "last_successful_ingest_at": "2026-10-12T09:26:18Z",
+  "build_generated_at": "2026-10-13T09:34:13Z",
+  "data_as_of": "2026-10-12",
+  "last_successful_ingest_at": "2026-10-13T09:34:13Z",
   "source_status": "healthy",
   "source_status_label": "正常",
   "source_status_label_en": "Healthy",
@@ -54,5 +52,5 @@
   "staleness_hours": 0,
   "stale_after_hours": 72,
   "warnings": [],
-  "last_modified": "2026-10-11"
+  "last_modified": "2026-10-12"
 }

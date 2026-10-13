@@ -4,7 +4,7 @@
     {
       "id": "upstream_nonzero",
       "status": "pass",
-      "value": 108,
+      "value": 106,
       "threshold": "> 0"
     },
     {
@@ -34,7 +34,7 @@
     {
       "id": "coordinates",
       "status": "pass",
-      "value": 0.972,
+      "value": 0.971,
       "threshold": ">= 0.9 preferred"
     },
     {
@@ -44,8 +44,8 @@
       "threshold": "0 after normalization"
     }
   ],
-  "upstream_record_count": 108,
-  "accepted_record_count": 107,
+  "upstream_record_count": 106,
+  "accepted_record_count": 105,
   "quarantined_record_count": 0,
   "quarantined": []
 }

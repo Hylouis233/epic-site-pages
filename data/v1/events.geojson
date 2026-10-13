@@ -3,6 +3,54 @@
   "features": [
     {
       "type": "Feature",
+      "id": "evt_ff4f2a5b5b71c668ce5a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.0,
+          35.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_ff4f2a5b5b71c668ce5a",
+        "published_at": "2026-10-12",
+        "disease_id": "unclassified-c523729d",
+        "disease_name_zh": "不明原因肺炎",
+        "location": "俄罗斯",
+        "continent": "亚洲",
+        "source_org": "澎湃新闻",
+        "source_type": "other_open_source",
+        "source": "https://www.thepaper.cn/newsDetail_forward_34224984",
+        "description_cn": "俄罗斯鼠疫研究所28岁研究员死于不明原因肺炎,WHO称信息不足无法全面评估。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_cab6db4b139986906f16",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0,
+          54.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_cab6db4b139986906f16",
+        "published_at": "2026-10-12",
+        "disease_id": "salmonellosis",
+        "disease_name_zh": "沙门氏菌病",
+        "location": "英国",
+        "continent": "欧洲",
+        "source_org": "Thesun",
+        "source_type": "other_open_source",
+        "source": "https://www.thesun.co.uk/news/40647328/urgent-warning-eggs-ukraine-salmonella-outbreak",
+        "description_cn": "英国食品标准局警告消费者不要食用从乌克兰进口的受沙门氏菌污染的鸡蛋,已确认至少36例感染病例。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_07f7d3bda4fda1c05ae0",
       "geometry": {
         "type": "Point",
@@ -27,25 +75,25 @@
     },
     {
       "type": "Feature",
-      "id": "evt_2f02949df787d0381d50",
+      "id": "evt_e4939d9b53fb5f2b2a89",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.5,
-          27.7
+          90.4,
+          23.7
         ]
       },
       "properties": {
-        "event_id": "evt_2f02949df787d0381d50",
+        "event_id": "evt_e4939d9b53fb5f2b2a89",
         "published_at": "2026-10-11",
         "disease_id": "dengue",
         "disease_name_zh": "登革热",
-        "location": "美国佛罗里达州希尔斯伯勒县",
-        "continent": "北美洲",
-        "source_org": "茉莉花",
-        "source_type": "other_open_source",
-        "source": "https://molihua.org/zonghe-572",
-        "description_cn": "佛罗里达州坦帕地区暴发登革热疫情,截至10月3日报告296例本地感染病例,主要集中在希尔斯伯勒县,已有1人死亡,三个县宣",
+        "location": "孟加拉国",
+        "continent": "亚洲",
+        "source_org": "阿纳多卢通讯社",
+        "source_type": "news_media",
+        "source": "https://ua.news/cn/health/u-bangladesh-kilkist-smertei-vid-denge-zrosla-do-303-anadolu-agency",
+        "description_cn": "孟加拉国2026年登革热疫情持续,死亡303例,累计病例近10万例。",
         "data_quality_score": 92
       }
     },
@@ -65,6 +113,30 @@
         "disease_id": "dengue",
         "disease_name_zh": "登革热",
         "location": "美国佛罗里达州帕斯科县",
+        "continent": "北美洲",
+        "source_org": "茉莉花",
+        "source_type": "other_open_source",
+        "source": "https://molihua.org/zonghe-572",
+        "description_cn": "佛罗里达州坦帕地区暴发登革热疫情,截至10月3日报告296例本地感染病例,主要集中在希尔斯伯勒县,已有1人死亡,三个县宣",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_2f02949df787d0381d50",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5,
+          27.7
+        ]
+      },
+      "properties": {
+        "event_id": "evt_2f02949df787d0381d50",
+        "published_at": "2026-10-11",
+        "disease_id": "dengue",
+        "disease_name_zh": "登革热",
+        "location": "美国佛罗里达州希尔斯伯勒县",
         "continent": "北美洲",
         "source_org": "茉莉花",
         "source_type": "other_open_source",
@@ -195,6 +267,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_81ad357e236ce7d4a0f3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.0,
+          23.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_81ad357e236ce7d4a0f3",
+        "published_at": "2026-10-09",
+        "disease_id": "measles",
+        "disease_name_zh": "麻疹",
+        "location": "墨西哥",
+        "continent": "北美洲",
+        "source_org": "泛美卫生组织",
+        "source_type": "other_open_source",
+        "source": "https://www.paho.org/en/news/9-10-2026-paho-assesses-risk-measles-spread-very-high-ahead-religious-mass-gatherings-americas",
+        "description_cn": "泛美卫生组织警告美洲麻疹传播风险极高,17国累计报告55,792例确诊和77例死亡。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_81cbe0b8314fb9532f6d",
       "geometry": {
         "type": "Point",
@@ -210,30 +306,6 @@
         "disease_name_zh": "麻疹",
         "location": "美国",
         "continent": "北美洲",
-        "source_org": "泛美卫生组织",
-        "source_type": "other_open_source",
-        "source": "https://www.paho.org/en/news/9-10-2026-paho-assesses-risk-measles-spread-very-high-ahead-religious-mass-gatherings-americas",
-        "description_cn": "泛美卫生组织警告美洲麻疹传播风险极高,17国累计报告55,792例确诊和77例死亡。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_361cc46be56b72468207",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -55.0,
-          -10.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_361cc46be56b72468207",
-        "published_at": "2026-10-09",
-        "disease_id": "measles",
-        "disease_name_zh": "麻疹",
-        "location": "秘鲁",
-        "continent": "南美洲",
         "source_org": "泛美卫生组织",
         "source_type": "other_open_source",
         "source": "https://www.paho.org/en/news/9-10-2026-paho-assesses-risk-measles-spread-very-high-ahead-religious-mass-gatherings-americas",
@@ -267,21 +339,21 @@
     },
     {
       "type": "Feature",
-      "id": "evt_81ad357e236ce7d4a0f3",
+      "id": "evt_361cc46be56b72468207",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -102.0,
-          23.0
+          -55.0,
+          -10.0
         ]
       },
       "properties": {
-        "event_id": "evt_81ad357e236ce7d4a0f3",
+        "event_id": "evt_361cc46be56b72468207",
         "published_at": "2026-10-09",
         "disease_id": "measles",
         "disease_name_zh": "麻疹",
-        "location": "墨西哥",
-        "continent": "北美洲",
+        "location": "秘鲁",
+        "continent": "南美洲",
         "source_org": "泛美卫生组织",
         "source_type": "other_open_source",
         "source": "https://www.paho.org/en/news/9-10-2026-paho-assesses-risk-measles-spread-very-high-ahead-religious-mass-gatherings-americas",
@@ -359,6 +431,30 @@
         "source": "https://life.tw/article/%E5%9C%8B%E5%85%A7%E4%BB%8A%E5%B9%B4%E9%A6%96%E4%BE%8B%E6%9C%AC%E5%9C%9F%E5%82%B7%E5%AF%92-30%E5%A4%9A%E6%AD%B2%E5%A5%B34%E5%BA%A6%E5%B0%B1%E9%86%AB%E6%89%8D%E7%A2%BA%E8%A8%BA-%E6%84%9F%E6%9F%93%E4%BE%86%E6%BA%90%E5%BE%85%E6%9F%A5-3174584",
         "description_cn": "台湾今年首例本土伤寒,中部30多岁女性确诊住院,有生食海鲜史。",
         "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_e2baf24cede0de140561",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.1,
+          3.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_e2baf24cede0de140561",
+        "published_at": "2026-10-09",
+        "disease_id": "malaria",
+        "disease_name_zh": "疟疾",
+        "location": "法属圭亚那",
+        "continent": "南美洲",
+        "source_org": "法国公共卫生局圭亚那分部",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/index.php/regions-et-territoires/guyane/bulletin-regional/surveillance-sanitaire-en-guyane-bulletin-du-9-octobre-2026",
+        "description_cn": "法属圭亚那疟疾疫情稳定,近两周新增3例,年初至今累计157例,病例集中于金矿区。",
+        "data_quality_score": 92
       }
     },
     {
@@ -579,6 +675,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_2d16091f1788e65520e7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.1,
+          3.9
+        ]
+      },
+      "properties": {
+        "event_id": "evt_2d16091f1788e65520e7",
+        "published_at": "2026-10-09",
+        "disease_id": "unclassified-2b4038da",
+        "disease_name_zh": "基孔肯雅热",
+        "location": "法属圭亚那",
+        "continent": "南美洲",
+        "source_org": "Santepubliquefrance",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/guyane/bulletin-regional/chikungunya-et-dengue-en-guyane-bulletin-du-8-octobre-2026",
+        "description_cn": "法属圭亚那自2026年1月底以来累计确诊2065例基孔肯雅热病例,疫情仍在萨瓦讷和卡宴岛等地持续。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_222a60af7bf34354f2ee",
       "geometry": {
         "type": "Point",
@@ -603,20 +723,44 @@
     },
     {
       "type": "Feature",
-      "id": "evt_fbc031a2cef28a0ba692",
+      "id": "evt_427222ec3bb7f1fd9653",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.6,
-          43.0
+          -95.0,
+          60.0
         ]
       },
       "properties": {
-        "event_id": "evt_fbc031a2cef28a0ba692",
+        "event_id": "evt_427222ec3bb7f1fd9653",
+        "published_at": "2026-10-09",
+        "disease_id": "covid-19",
+        "disease_name_zh": "新型冠状病毒感染",
+        "location": "加拿大",
+        "continent": "北美洲",
+        "source_org": "Canada",
+        "source_type": "other_open_source",
+        "source": "https://health-infobase.canada.ca/respiratory-virus-surveillance",
+        "description_cn": "加拿大第39周流感及新冠活动上升,流感阳性率4.7%,新冠4.1%,周暴发57起。",
+        "data_quality_score": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_dab04d7c30861ce69e4c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0,
+          40.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_dab04d7c30861ce69e4c",
         "published_at": "2026-10-09",
         "disease_id": "mpox",
         "disease_name_zh": "猴痘",
-        "location": "巴斯克自治区",
+        "location": "吉普斯夸省",
         "continent": "欧洲",
         "source_org": "Promedmail",
         "source_type": "promed",
@@ -651,20 +795,20 @@
     },
     {
       "type": "Feature",
-      "id": "evt_dab04d7c30861ce69e4c",
+      "id": "evt_fbc031a2cef28a0ba692",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -4.0,
-          40.0
+          -2.6,
+          43.0
         ]
       },
       "properties": {
-        "event_id": "evt_dab04d7c30861ce69e4c",
+        "event_id": "evt_fbc031a2cef28a0ba692",
         "published_at": "2026-10-09",
         "disease_id": "mpox",
         "disease_name_zh": "猴痘",
-        "location": "吉普斯夸省",
+        "location": "巴斯克自治区",
         "continent": "欧洲",
         "source_org": "Promedmail",
         "source_type": "promed",
@@ -867,6 +1011,30 @@
     },
     {
       "type": "Feature",
+      "id": "evt_e19a54912729adc79f1a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8,
+          45.2
+        ]
+      },
+      "properties": {
+        "event_id": "evt_e19a54912729adc79f1a",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "法国奥弗涅-罗讷-阿尔卑斯大区",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/index.php/regions-et-territoires/auvergne-rhone-alpes/bulletin-regional/surveillance-sanitaire-en-auvergne-rhone-alpes-bulletin-du-8-octobre-2026",
+        "description_cn": "法国奥弗涅-罗讷-阿尔卑斯大区通报6例本地感染西尼罗病毒病例。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
       "id": "evt_c571359b92cb46ba5023",
       "geometry": {
         "type": "Point",
@@ -1059,30 +1227,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_a0f56e30969d528c7192",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          107.6,
-          51.8
-        ]
-      },
-      "properties": {
-        "event_id": "evt_a0f56e30969d528c7192",
-        "published_at": "2026-10-08",
-        "disease_id": "unclassified-0dd845c6",
-        "disease_name_zh": "肺鼠疫",
-        "location": "俄罗斯布里亚特",
-        "continent": "亚洲",
-        "source_org": "BBC",
-        "source_type": "other_open_source",
-        "source": "https://www.bbc.com/zhongwen/articles/ckwyq35pnxjno/trad",
-        "description_cn": "俄罗斯西伯利亚一名28岁女实验室技术员疑似感染肺鼠疫死亡,约200名接触者被隔离。",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_4669419401d0c977e62b",
       "geometry": {
         "type": "Point",
@@ -1098,6 +1242,30 @@
         "disease_name_zh": "肺鼠疫",
         "location": "俄罗斯伊尔库茨克",
         "continent": "北美洲",
+        "source_org": "BBC",
+        "source_type": "other_open_source",
+        "source": "https://www.bbc.com/zhongwen/articles/ckwyq35pnxjno/trad",
+        "description_cn": "俄罗斯西伯利亚一名28岁女实验室技术员疑似感染肺鼠疫死亡,约200名接触者被隔离。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_a0f56e30969d528c7192",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.6,
+          51.8
+        ]
+      },
+      "properties": {
+        "event_id": "evt_a0f56e30969d528c7192",
+        "published_at": "2026-10-08",
+        "disease_id": "unclassified-0dd845c6",
+        "disease_name_zh": "肺鼠疫",
+        "location": "俄罗斯布里亚特",
+        "continent": "亚洲",
         "source_org": "BBC",
         "source_type": "other_open_source",
         "source": "https://www.bbc.com/zhongwen/articles/ckwyq35pnxjno/trad",
@@ -1203,54 +1371,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_44f052d655820cd818c2",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.0,
-          46.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_44f052d655820cd818c2",
-        "published_at": "2026-10-07",
-        "disease_id": "unclassified-63fe91f7",
-        "disease_name_zh": "西尼罗病毒",
-        "location": "法国普罗旺斯-阿尔卑斯-蓝色海岸大区",
-        "continent": "欧洲",
-        "source_org": "法国公共卫生局",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
-        "description_cn": "法国Paca大区西尼罗病毒活跃传播,累计66例感染,近半住院。",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_1851dace5e3ea8344323",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.4,
-          43.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_1851dace5e3ea8344323",
-        "published_at": "2026-10-07",
-        "disease_id": "unclassified-63fe91f7",
-        "disease_name_zh": "西尼罗病毒",
-        "location": "罗讷河口省",
-        "continent": "欧洲",
-        "source_org": "法国公共卫生局",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
-        "description_cn": "法国Paca大区西尼罗病毒活跃传播,累计66例感染,近半住院。",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_9bcd657c158d364edace",
       "geometry": {
         "type": "Point",
@@ -1289,6 +1409,54 @@
         "disease_id": "unclassified-63fe91f7",
         "disease_name_zh": "西尼罗病毒",
         "location": "瓦尔省",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
+        "description_cn": "法国Paca大区西尼罗病毒活跃传播,累计66例感染,近半住院。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_44f052d655820cd818c2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_44f052d655820cd818c2",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "法国普罗旺斯-阿尔卑斯-蓝色海岸大区",
+        "continent": "欧洲",
+        "source_org": "法国公共卫生局",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
+        "description_cn": "法国Paca大区西尼罗病毒活跃传播,累计66例感染,近半住院。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_1851dace5e3ea8344323",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4,
+          43.3
+        ]
+      },
+      "properties": {
+        "event_id": "evt_1851dace5e3ea8344323",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-63fe91f7",
+        "disease_name_zh": "西尼罗病毒",
+        "location": "罗讷河口省",
         "continent": "欧洲",
         "source_org": "法国公共卫生局",
         "source_type": "other_open_source",
@@ -1347,30 +1515,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_9f38a60a88a4cd045142",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1,
-          40.6
-        ]
-      },
-      "properties": {
-        "event_id": "evt_9f38a60a88a4cd045142",
-        "published_at": "2026-10-07",
-        "disease_id": "unclassified-1cdde71e",
-        "disease_name_zh": "退伍军人症",
-        "location": "美国纽约史泰登岛",
-        "continent": "北美洲",
-        "source_org": "世界日报",
-        "source_type": "academic",
-        "source": "https://www.worldjournal.com/wj/story/121390/9799584",
-        "description_cn": "纽约市皇后区北岸大厦2名居民确诊退伍军人症,史泰登岛一公寓供水系统检出退伍军人菌,卫生局已介入调查。",
-        "data_quality_score": 88
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_133c53dc07c739d7a70f",
       "geometry": {
         "type": "Point",
@@ -1385,6 +1529,30 @@
         "disease_id": "unclassified-1cdde71e",
         "disease_name_zh": "退伍军人症",
         "location": "美国纽约皇后区",
+        "continent": "北美洲",
+        "source_org": "世界日报",
+        "source_type": "academic",
+        "source": "https://www.worldjournal.com/wj/story/121390/9799584",
+        "description_cn": "纽约市皇后区北岸大厦2名居民确诊退伍军人症,史泰登岛一公寓供水系统检出退伍军人菌,卫生局已介入调查。",
+        "data_quality_score": 88
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_9f38a60a88a4cd045142",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1,
+          40.6
+        ]
+      },
+      "properties": {
+        "event_id": "evt_9f38a60a88a4cd045142",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-1cdde71e",
+        "disease_name_zh": "退伍军人症",
+        "location": "美国纽约史泰登岛",
         "continent": "北美洲",
         "source_org": "世界日报",
         "source_type": "academic",
@@ -1515,30 +1683,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_7a29106f3bfec5ad46ec",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.2,
-          44.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_7a29106f3bfec5ad46ec",
-        "published_at": "2026-10-07",
-        "disease_id": "unclassified-ff8bd351",
-        "disease_name_zh": "基孔肯雅热、西尼罗病毒",
-        "location": "沃克吕兹省",
-        "continent": "欧洲",
-        "source_org": "Santepubliquefrance",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/index.php/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
-        "description_cn": "法国Paca大区基孔肯雅热本土传播及西尼罗病毒感染持续流行。",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_f87f7d5e5145df75a22a",
       "geometry": {
         "type": "Point",
@@ -1563,30 +1707,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_3120aabb85b435a37df0",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.0,
-          46.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_3120aabb85b435a37df0",
-        "published_at": "2026-10-07",
-        "disease_id": "unclassified-ff8bd351",
-        "disease_name_zh": "基孔肯雅热、西尼罗病毒",
-        "location": "瓦尔省",
-        "continent": "欧洲",
-        "source_org": "Santepubliquefrance",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/index.php/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
-        "description_cn": "法国Paca大区基孔肯雅热本土传播及西尼罗病毒感染持续流行。",
-        "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_a2e9796d24c4b5fb20a5",
       "geometry": {
         "type": "Point",
@@ -1601,6 +1721,54 @@
         "disease_id": "unclassified-ff8bd351",
         "disease_name_zh": "基孔肯雅热、西尼罗病毒",
         "location": "罗讷河口省",
+        "continent": "欧洲",
+        "source_org": "Santepubliquefrance",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/index.php/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
+        "description_cn": "法国Paca大区基孔肯雅热本土传播及西尼罗病毒感染持续流行。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_7a29106f3bfec5ad46ec",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2,
+          44.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_7a29106f3bfec5ad46ec",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-ff8bd351",
+        "disease_name_zh": "基孔肯雅热、西尼罗病毒",
+        "location": "沃克吕兹省",
+        "continent": "欧洲",
+        "source_org": "Santepubliquefrance",
+        "source_type": "other_open_source",
+        "source": "https://www.santepubliquefrance.fr/index.php/regions-et-territoires/provence-alpes-cote-dazur-et-corse/bulletin-regional/surveillance-sanitaire-en-paca-bulletin-du-7-octobre-2026",
+        "description_cn": "法国Paca大区基孔肯雅热本土传播及西尼罗病毒感染持续流行。",
+        "data_quality_score": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_3120aabb85b435a37df0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "event_id": "evt_3120aabb85b435a37df0",
+        "published_at": "2026-10-07",
+        "disease_id": "unclassified-ff8bd351",
+        "disease_name_zh": "基孔肯雅热、西尼罗病毒",
+        "location": "瓦尔省",
         "continent": "欧洲",
         "source_org": "Santepubliquefrance",
         "source_type": "other_open_source",
@@ -2067,30 +2235,6 @@
     },
     {
       "type": "Feature",
-      "id": "evt_05f496f862ffb6b8b60a",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -55.0,
-          -10.0
-        ]
-      },
-      "properties": {
-        "event_id": "evt_05f496f862ffb6b8b60a",
-        "published_at": "2026-10-05",
-        "disease_id": "unclassified-2b4038da",
-        "disease_name_zh": "基孔肯雅热",
-        "location": "巴西",
-        "continent": "南美洲",
-        "source_org": "欧洲疾病预防控制中心",
-        "source_type": "official_health_authority",
-        "source": "https://www.ecdc.europa.eu/en/chikungunya-monthly",
-        "description_cn": "2026年多国持续暴发基孔肯雅热疫情,美洲近20万例死亡87例,亚洲非洲也大量报告。",
-        "data_quality_score": 88
-      }
-    },
-    {
-      "type": "Feature",
       "id": "evt_c1e483297e7bfa4cb667",
       "geometry": {
         "type": "Point",
@@ -2115,21 +2259,21 @@
     },
     {
       "type": "Feature",
-      "id": "evt_0bdd60500830bf07309e",
+      "id": "evt_05f496f862ffb6b8b60a",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          57.5,
-          -20.2
+          -55.0,
+          -10.0
         ]
       },
       "properties": {
-        "event_id": "evt_0bdd60500830bf07309e",
+        "event_id": "evt_05f496f862ffb6b8b60a",
         "published_at": "2026-10-05",
         "disease_id": "unclassified-2b4038da",
         "disease_name_zh": "基孔肯雅热",
-        "location": "毛里求斯",
-        "continent": "非洲",
+        "location": "巴西",
+        "continent": "南美洲",
         "source_org": "欧洲疾病预防控制中心",
         "source_type": "official_health_authority",
         "source": "https://www.ecdc.europa.eu/en/chikungunya-monthly",
@@ -2163,26 +2307,26 @@
     },
     {
       "type": "Feature",
-      "id": "evt_08b678337151a86f80ad",
+      "id": "evt_0bdd60500830bf07309e",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.0,
-          23.7
+          57.5,
+          -20.2
         ]
       },
       "properties": {
-        "event_id": "evt_08b678337151a86f80ad",
+        "event_id": "evt_0bdd60500830bf07309e",
         "published_at": "2026-10-05",
-        "disease_id": "enterovirus-infection",
-        "disease_name_zh": "肠病毒感染",
-        "location": "中国台湾",
-        "continent": "亚洲",
-        "source_org": "镜周刊",
-        "source_type": "other_open_source",
-        "source": "https://www.ftnn.com.tw/news/584573",
-        "description_cn": "台湾肠病毒疫情严峻,第37周门急诊就诊破万人次,今年累计7例重症含1例死亡,以克沙奇A6型为主。",
-        "data_quality_score": 92
+        "disease_id": "unclassified-2b4038da",
+        "disease_name_zh": "基孔肯雅热",
+        "location": "毛里求斯",
+        "continent": "非洲",
+        "source_org": "欧洲疾病预防控制中心",
+        "source_type": "official_health_authority",
+        "source": "https://www.ecdc.europa.eu/en/chikungunya-monthly",
+        "description_cn": "2026年多国持续暴发基孔肯雅热疫情,美洲近20万例死亡87例,亚洲非洲也大量报告。",
+        "data_quality_score": 88
       }
     },
     {
@@ -2206,150 +2350,6 @@
         "source_type": "other_open_source",
         "source": "https://spectrumnoticias.com/ny/nyc/mornings-on-1/2026/10/05/hochul-declares-state-disaster-emergency-over-growing-measles-cases",
         "description_cn": "美国纽约州麻疹病例激增,州长宣布灾难紧急状态以加强疫苗接种。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_cd860a54a4c9639fe4e3",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.7,
-          19.3
-        ]
-      },
-      "properties": {
-        "event_id": "evt_cd860a54a4c9639fe4e3",
-        "published_at": "2026-10-05",
-        "disease_id": "mpox",
-        "disease_name_zh": "猴痘",
-        "location": "墨西哥韦拉克鲁斯州",
-        "continent": "北美洲",
-        "source_org": "ProMED",
-        "source_type": "promed",
-        "source": "https://www.promedmail.org/?alert_id=8735547",
-        "description_cn": "墨西哥韦拉克鲁斯州一名青少年疑似感染猴痘后死亡,家属质疑医疗救治情况,相关部门正在调查。",
-        "data_quality_score": 100
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_027d767a2ee22c5fca07",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_027d767a2ee22c5fca07",
-        "published_at": "2026-10-05",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国佛罗里达州",
-        "continent": "北美洲",
-        "source_org": "SMH",
-        "source_type": "other_open_source",
-        "source": "https://www.smh.com.au/national/i-thought-my-brain-would-explode-how-ella-s-family-hike-led-to-painful-disease-20261005-p61121.html",
-        "description_cn": "佛州登革热暴发致多县紧急状态,澳推荐新疫苗Qdenga",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_225e3ef50d560b7e78f1",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          107.8,
-          16.2
-        ]
-      },
-      "properties": {
-        "event_id": "evt_225e3ef50d560b7e78f1",
-        "published_at": "2026-10-05",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "越南庆和省北芽庄坊",
-        "continent": "亚洲",
-        "source_org": "Vietnam",
-        "source_type": "other_open_source",
-        "source": "https://www.vietnam.vn/zh-cn/chu-dong-giam-sat-de-phong-chong-dich-benh",
-        "description_cn": "越南庆和省北芽庄幼儿园9月6名儿童感染手足口病;全省累计手足口病3725例、登革热3023例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_b315241a18a78491a791",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.5,
-          27.7
-        ]
-      },
-      "properties": {
-        "event_id": "evt_b315241a18a78491a791",
-        "published_at": "2026-10-04",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "美国佛罗里达州",
-        "continent": "北美洲",
-        "source_org": "The Independent",
-        "source_type": "other_open_source",
-        "source": "https://www.independent.co.uk/news/health/florida-dengue-outbreak-largest-us-b3060926.html",
-        "description_cn": "佛罗里达州爆发数十年来最大登革热疫情,本地感染252例,死亡1例。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_f8ce154b5a9e8600608b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.5,
-          22.2
-        ]
-      },
-      "properties": {
-        "event_id": "evt_f8ce154b5a9e8600608b",
-        "published_at": "2026-10-04",
-        "disease_id": "legionellosis",
-        "disease_name_zh": "军团菌病",
-        "location": "中国澳门",
-        "continent": "亚洲",
-        "source_org": "GOV",
-        "source_type": "other_open_source",
-        "source": "https://www.gov.mo/zh-hant/news/1271036",
-        "description_cn": "澳门报告1例军团菌病病例,82岁男性有内地旅行史,住院治疗病情稳定。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_816fc70e00287595a6d2",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.5,
-          22.2
-        ]
-      },
-      "properties": {
-        "event_id": "evt_816fc70e00287595a6d2",
-        "published_at": "2026-10-04",
-        "disease_id": "influenza",
-        "disease_name_zh": "流行性感冒",
-        "location": "中国澳门",
-        "continent": "亚洲",
-        "source_org": "GOV",
-        "source_type": "other_open_source",
-        "source": "https://www.gov.mo/zh-hant/news/1271052",
-        "description_cn": "澳门报告1例甲型流感重症病例,69岁女性患者合并肺炎,需入住ICU,病情危重。",
         "data_quality_score": 92
       }
     },
@@ -2447,54 +2447,6 @@
         "source": "https://today.line.me/tw/v3/article/kEpWmGk",
         "description_cn": "俄罗斯伊尔库茨克州鼠疫研究所一名员工患重症肺炎死亡,疑似第二例死亡,病因尚未确认。",
         "data_quality_score": 80
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_3a7f1cd2d9a36885dceb",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.5,
-          48.8
-        ]
-      },
-      "properties": {
-        "event_id": "evt_3a7f1cd2d9a36885dceb",
-        "published_at": "2026-10-02",
-        "disease_id": "mpox",
-        "disease_name_zh": "猴痘",
-        "location": "法国",
-        "continent": "欧洲",
-        "source_org": "Santepubliquefrance",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/index.php/variole-b-mpox/bulletin-national/variole-b-mpox-en-france-du-1er-janvier-au-31-aout-2026",
-        "description_cn": "2026年1至8月法国报告359例猴痘病例,以clade Ib为主,9%住院。",
-        "data_quality_score": 92
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_2fb3ed07d7c4e19f8e6c",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -53.1,
-          3.9
-        ]
-      },
-      "properties": {
-        "event_id": "evt_2fb3ed07d7c4e19f8e6c",
-        "published_at": "2026-10-02",
-        "disease_id": "dengue",
-        "disease_name_zh": "登革热",
-        "location": "法属圭亚那",
-        "continent": "南美洲",
-        "source_org": "Santepubliquefrance",
-        "source_type": "other_open_source",
-        "source": "https://www.santepubliquefrance.fr/index.php/regions-et-territoires/guyane/bulletin-regional/chikungunya-et-dengue-en-guyane-bulletin-du-2-octobre-2026",
-        "description_cn": "法属圭亚那基孔肯雅热持续流行,自1月底累计确诊2017例。",
-        "data_quality_score": 92
       }
     }
   ]
