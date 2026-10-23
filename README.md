@@ -81,6 +81,15 @@ python skills/epic-disease-query/scripts/query.py \
   --sort cases:desc --format markdown
 ```
 
+### Live site skill
+
+[`skills/epic-harness`](skills/epic-harness/SKILL.md) queries the live public sites [epicdemic.hylouis.top](https://epicdemic.hylouis.top/) and [epicintel.hylouis.top](https://epicintel.hylouis.top/). Those hosts do not publish a separate MCP URL. The skill calls their public read-only HTTP APIs and keeps the internal MCP write, approval, and alert tools off limits.
+
+```bash
+python skills/epic-harness/scripts/query.py demic-overview
+python skills/epic-harness/scripts/query.py intel-health
+```
+
 ## Public data contract
 
 | Artifact | Purpose |
