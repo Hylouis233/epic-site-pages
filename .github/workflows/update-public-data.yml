@@ -14,7 +14,8 @@ concurrency:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    # Playwright 1.60.0 does not support Ubuntu 26.04 yet.
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - name: Check out repository
